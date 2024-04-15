@@ -1,0 +1,98 @@
+
+#wpsm_accordion_1713 .wpsm_panel-heading{
+	padding:0px !important;
+}
+#wpsm_accordion_1713 .wpsm_panel-title {
+	margin:0px !important; 
+	text-transform:none !important;
+	line-height: 1 !important;
+}
+#wpsm_accordion_1713 .wpsm_panel-title a{
+	text-decoration:none;
+	overflow:hidden;
+	display:block;
+	padding:0px;
+	font-size: 18px !important;
+	font-family: 0 !important;
+	color:#0e0e0e !important;
+	border-bottom:0px !important;
+}
+
+#wpsm_accordion_1713 .wpsm_panel-title a:focus {
+outline: 0px !important;
+}
+
+#wpsm_accordion_1713 .wpsm_panel-title a:hover, #wpsm_accordion_1713 .wpsm_panel-title a:focus {
+	color:#0e0e0e !important;
+}
+#wpsm_accordion_1713 .acc-a{
+	color: #0e0e0e !important;
+	background-color:#ffffff !important;
+	border-color: #ddd;
+}
+#wpsm_accordion_1713 .wpsm_panel-default > .wpsm_panel-heading{
+	color: #0e0e0e !important;
+	background-color: #ffffff !important;
+	border-color: #ffffff !important;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+#wpsm_accordion_1713 .wpsm_panel-default {
+		border:0px solid transparent !important;
+	}
+#wpsm_accordion_1713 {
+	margin-bottom: 20px;
+	overflow: hidden;
+	float: none;
+	width: 100%;
+	display: block;
+}
+#wpsm_accordion_1713 .ac_title_class{
+	display: block;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#wpsm_accordion_1713  .wpsm_panel {
+	overflow:hidden;
+	-webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, .05);
+	box-shadow: 0 0px 0px rgba(0, 0, 0, .05);
+			border-radius: 0px;
+	}
+#wpsm_accordion_1713  .wpsm_panel + .wpsm_panel {
+		margin-top: 0px;
+	}
+#wpsm_accordion_1713  .wpsm_panel-body{
+	/* background-color: !important; */
+	color:#0e0e0e !important;
+	border-top-color: #ffffff !important;
+	font-size:16px !important;
+	font-family: 0 !important;
+	overflow: hidden;
+		border: 2px solid transparent !important;
+	}
+
+#wpsm_accordion_1713 .ac_open_cl_icon{
+	background-color:#ffffff !important;
+	color: #0e0e0e !important;
+	float:right !important;
+	padding-top: 12px !important;
+	padding-bottom: 12px !important;
+	line-height: 1.0 !important;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+	display: inline-block !important;
+}
+
+			 #wpsm_accordion_1713 .wpsm_panel-heading {
+				background-image: url(https://scoresbymortgagebroker.com.au/wp-content/plugins/responsive-accordion-and-collapse/img/style-soft.png);
+				background-position: 0 0;
+				background-repeat: repeat-x;
+			}
+			#wpsm_accordion_1713 .ac_open_cl_icon{
+				background-image: url(https://scoresbymortgagebroker.com.au/wp-content/plugins/responsive-accordion-and-collapse/img/style-soft.png);
+				background-position: 0 0;
+				background-repeat: repeat-x;
+			}
+			
