@@ -3,7 +3,7 @@ import styles from "./page.module.css";
 import Head from "next/head";
 
 import Script from "next/script";
-import HomeComp from "@/app/Home/page";
+import HomeComp from "./Home/page";
 
 // import GlobalSiteCssJs from "@/app/globalSiteCssJs";
 export default function Home() {

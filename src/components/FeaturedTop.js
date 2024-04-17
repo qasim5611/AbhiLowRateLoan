@@ -1,6 +1,6 @@
 import React from "react";
 
-export function FeaturedTop(props) {
+export function FeaturedTop() {
   return (
     <>
       <div className="wp-block-kadence-rowlayout alignnone top-features">
@@ -32,7 +32,7 @@ export function FeaturedTop(props) {
                                         decoding="async"
                                         width="62"
                                         height="62"
-                                        src="http://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/cash-back-icon.svg"
+                                        src="/pics/featuredTop/cash-back-icon.svg"
                                         alt=""
                                         className="wp-image-3979"
                                       />
@@ -76,7 +76,7 @@ export function FeaturedTop(props) {
                                         loading="lazy"
                                         width="62"
                                         height="62"
-                                        src="http://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/icon-gift-card.svg"
+                                        src="/pics/featuredTop/icon-gift-card.svg"
                                         alt="icon gift card"
                                         className="wp-image-4355"
                                       />
@@ -100,13 +100,13 @@ export function FeaturedTop(props) {
                                       data-kb-block="kb-adv-heading_70bfd6-1b"
                                     >
                                       <a
-                                        href="http://scoresbymortgagebroker.com.au/gift-card-terms-condition/"
+                                        href="#"
                                         title="Gift Card Terms &amp; Condition"
                                       >
                                         upto{" "}
                                       </a>
                                       <a
-                                        href="http://54.206.5.202/gift-card-terms-condition/"
+                                        href="#"
                                         title="Gift Card Terms &amp; Condition"
                                       >
                                         <strong>$1,000</strong>
@@ -136,7 +136,7 @@ export function FeaturedTop(props) {
                                         loading="lazy"
                                         width="62"
                                         height="62"
-                                        src="http://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/icon-loan-long-term.svg"
+                                        src="/pics/featuredTop/icon-loan-long-term.svg"
                                         alt="icon long term loan"
                                         className="wp-image-4359"
                                       />
@@ -180,7 +180,7 @@ export function FeaturedTop(props) {
                                         loading="lazy"
                                         width="61"
                                         height="62"
-                                        src="http://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/loan-term-icon.svg"
+                                        src="/pics/featuredTop/loan-term-icon.svg"
                                         alt="loan term icon"
                                         className="wp-image-3981"
                                       />

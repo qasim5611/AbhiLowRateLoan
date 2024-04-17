@@ -6,16 +6,16 @@ import { Button, Container, Table } from "react-bootstrap";
 // import kadenceConfig from "./../../../kadenceConfig";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import { FeaturedTop } from "@/components/FeaturedTop";
-import { Hardwork } from "@/components/Hardwork";
-import { Testimonial } from "@/components/Testimonial";
-import { Faq } from "@/components/Faq";
-import { ContactForm } from "@/components/ContactForm";
-import { FeatureServices } from "@/components/FeatureServices";
+import Header from "./../../components/Header";
+import Footer from "./../../components/Footer";
+import { FeaturedTop } from "./../../components/FeaturedTop";
+import { Hardwork } from "./../../components/Hardwork";
+import { Testimonial } from "./../../components/Testimonial";
+import { Faq } from "./../../components/Faq";
+import { ContactForm } from "./../../components/ContactForm";
+import { FeatureServices } from "./../../components/FeatureServices";
 
-function Home({ data, update }) {
+function HomeComp({ data, update }) {
   // const todoArray = data ? JSON?.parse(data) : [];
   const router = useRouter();
 
@@ -474,4 +474,4 @@ function Home({ data, update }) {
   );
 }
 
-export default Home;
+export default HomeComp;
