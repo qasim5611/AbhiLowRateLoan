@@ -5,15 +5,15 @@ import "./globals.js";
 
 import "jsvectormap/dist/css/jsvectormap.css";
 import "flatpickr/dist/flatpickr.min.css";
-import "@/css/satoshi.css";
-import "@/css/style.css";
+import "./../css/satoshi.css";
+import "./../css/style.css";
 // import CircularProgress from '@mui/material/CircularProgress';
 import React, { useState, useEffect } from "react";
 import Loader from "./Loader";
 
 import Script from "next/script";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "./../components/Header";
+import Footer from "./../components/Footer";
 // import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 

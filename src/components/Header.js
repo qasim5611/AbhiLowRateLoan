@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Button, Container, Table } from "react-bootstrap";
-import Navbar from "@/components/NavBar";
+import Navbar from "./../components/NavBar";
 // import { deleteTodo } from "@/app/api/todoList/route";
 // import kadenceConfig from "./../../../kadenceConfig";
 import { useRouter } from "next/navigation";
