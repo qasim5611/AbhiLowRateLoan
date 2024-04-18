@@ -19,7 +19,7 @@ function Header({ data, update }) {
         className="site-header"
         role="banner"
         itemType="https://schema.org/WPHeader"
-        itemscope
+        itemScope
         style={{ position: "fixed", width: "100%" }}
       >
         <div id="main-header" className="site-header-wrap">

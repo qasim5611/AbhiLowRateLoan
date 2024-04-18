@@ -71,10 +71,10 @@ export function ContactForm(props) {
                                       </div>
                                       <form
                                         method="post"
-                                        enctype="multipart/form-data"
+                                        encType="multipart/form-data"
                                         id="gform_2"
                                         action="/"
-                                        novalidate
+                                        noValidate=""
                                       >
                                         <div className="gform_body gform-body">
                                           <div

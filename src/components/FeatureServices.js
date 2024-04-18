@@ -90,7 +90,7 @@ export function FeatureServices(props) {
                               src="http://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/buy-a-home.webp"
                               alt="first home buyer"
                               className="wp-image-3968"
-                              srcset="https://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/buy-a-home.webp 525w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/buy-a-home-259x300.webp 259w"
+                              srcSet="https://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/buy-a-home.webp 525w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/buy-a-home-259x300.webp 259w"
                               sizes="(max-width: 525px) 100vw, 525px"
                             />
                           </figure>
@@ -119,7 +119,7 @@ export function FeatureServices(props) {
                               src="http://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/refinance-home.webp"
                               alt="refinance your home"
                               className="wp-image-3966"
-                              srcset="https://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/refinance-home.webp 525w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/refinance-home-259x300.webp 259w"
+                              srcSet="https://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/refinance-home.webp 525w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/refinance-home-259x300.webp 259w"
                               sizes="(max-width: 525px) 100vw, 525px"
                             />
                           </figure>
@@ -148,7 +148,7 @@ export function FeatureServices(props) {
                               src="http://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/buy-investment-property.webp"
                               alt="buy investment property"
                               className="wp-image-3969"
-                              srcset="https://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/buy-investment-property.webp 527w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/buy-investment-property-260x300.webp 260w"
+                              srcSet="https://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/buy-investment-property.webp 527w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/buy-investment-property-260x300.webp 260w"
                               sizes="(max-width: 527px) 100vw, 527px"
                             />
                           </figure>

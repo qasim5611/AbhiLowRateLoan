@@ -118,7 +118,7 @@ function HomeComp({ data, update }) {
                                           src="http://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/home-loans-lenders-1024x432.webp"
                                           alt="home loans lenders list"
                                           className="kb-img wp-image-4131"
-                                          srcset="https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/home-loans-lenders-1024x432.webp 1024w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/home-loans-lenders-300x127.webp 300w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/home-loans-lenders-768x324.webp 768w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/home-loans-lenders.webp 1366w"
+                                          srcSet="https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/home-loans-lenders-1024x432.webp 1024w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/home-loans-lenders-300x127.webp 300w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/home-loans-lenders-768x324.webp 768w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/home-loans-lenders.webp 1366w"
                                           sizes="(max-width: 1024px) 100vw, 1024px"
                                         />
                                       </figure>
@@ -134,7 +134,7 @@ function HomeComp({ data, update }) {
                                           src="http://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/lenders-vertical.webp"
                                           alt="loan lenders"
                                           className="wp-image-4718"
-                                          srcset="https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/lenders-vertical.webp 594w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/lenders-vertical-215x300.webp 215w"
+                                          srcSet="https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/lenders-vertical.webp 594w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/lenders-vertical-215x300.webp 215w"
                                           sizes="(max-width: 594px) 100vw, 594px"
                                         />
                                       </figure>
