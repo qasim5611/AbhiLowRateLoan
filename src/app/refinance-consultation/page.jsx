@@ -1,6 +1,6 @@
-import { FeaturedTop } from "./../../components/FeaturedTop";
-import Footer from "./../../components/Footer";
-import Header from "./../../components/Header";
+import { FeaturedTop } from "@/../components/FeaturedTop";
+import Footer from "@/../components/Footer";
+import Header from "@/../components/Header";
 import React from "react";
 
 export default function RefinanceConsultation(props) {

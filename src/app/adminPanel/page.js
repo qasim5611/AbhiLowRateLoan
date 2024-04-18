@@ -1,15 +1,15 @@
-// import React from "react";
+import React from "react";
 
-// import Adminlayout from "../adminPanel/Adminlayout";
-// import DashboardEcommerce from "./../../components/Dashboard/E-commerce";
+import Adminlayout from "@/adminPanel/Adminlayout";
+import DashboardEcommerce from "@/../components/Dashboard/E-commerce";
 
-// export default function HeroSection(props) {
-//   return (
-//     <Adminlayout>
-//       <div style={{ marginTop: "65px", padding: "20px" }}>
-//         <h3>Dashboard Advanced here</h3>
-//         <DashboardEcommerce />
-//       </div>
-//     </Adminlayout>
-//   );
-// }
+export default function HeroSection(props) {
+  return (
+    <Adminlayout>
+      <div style={{ marginTop: "65px", padding: "20px" }}>
+        <h3>Dashboard Advanced here</h3>
+        <DashboardEcommerce />
+      </div>
+    </Adminlayout>
+  );
+}
