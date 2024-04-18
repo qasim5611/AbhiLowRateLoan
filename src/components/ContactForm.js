@@ -261,8 +261,8 @@ export function ContactForm(props) {
                                             id="gform_submit_button_2"
                                             className="gform_button button"
                                             value="Submit"
-                                            onclick='if(window["gf_submitting_2"]){return false;}  if( !jQuery("#gform_2")[0].checkValidity || jQuery("#gform_2")[0].checkValidity()){window["gf_submitting_2"]=true;}  '
-                                            onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_2"]){return false;} if( !jQuery("#gform_2")[0].checkValidity || jQuery("#gform_2")[0].checkValidity()){window["gf_submitting_2"]=true;}  jQuery("#gform_2").trigger("submit",[true]); }'
+                                            // onclick='if(window["gf_submitting_2"]){return false;}  if( !jQuery("#gform_2")[0].checkValidity || jQuery("#gform_2")[0].checkValidity()){window["gf_submitting_2"]=true;}  '
+                                            // onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_2"]){return false;} if( !jQuery("#gform_2")[0].checkValidity || jQuery("#gform_2")[0].checkValidity()){window["gf_submitting_2"]=true;}  jQuery("#gform_2").trigger("submit",[true]); }'
                                           />
                                           <input
                                             type="hidden"
