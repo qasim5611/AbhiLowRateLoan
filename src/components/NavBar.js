@@ -32,7 +32,7 @@ const navItems = ["Home", "About", "Contact"];
 // const navItems = [{}];
 
 function DrawerAppBar(props) {
-  const { window } = props;
+  // const { window } = props;
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(null);
 
@@ -92,8 +92,8 @@ function DrawerAppBar(props) {
     </Box>
   );
 
-  const container =
-    window !== undefined ? () => window().document.body : undefined;
+  // const container =
+  //   window !== undefined ? () => window().document.body : undefined;
 
   return (
     <Box sx={{ display: "flex" }}>
@@ -158,7 +158,7 @@ function DrawerAppBar(props) {
       </AppBar>
       <nav style={{ backgroundColor: "red" }}>
         <Drawer
-          container={container}
+          // container={container}
           //  variant="temporary"
           open={mobileOpen}
           onClose={handleDrawerToggle}
@@ -336,7 +336,7 @@ DrawerAppBar.propTypes = {
    * Injected by the documentation to work in an iframe.
    * You won't need it on your project.
    */
-  window: PropTypes.func,
+  // window: PropTypes.func,
 };
 
 export default DrawerAppBar;
