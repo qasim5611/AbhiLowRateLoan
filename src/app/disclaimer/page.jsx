@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { PageTitle } from "../../components/PageTitle";
 import { FeaturedTop } from "../../components/FeaturedTop";

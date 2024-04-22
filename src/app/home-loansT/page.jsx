@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { PageTitle } from "../../components/PageTitle";
 import { FeaturedTop } from "../../components/FeaturedTop";
@@ -16,9 +17,7 @@ export default function Castlecovemortgagebrokers(props) {
 sec and map, Manual */}
       {/* 1107 to 1138 */}
 
-      <div className="setstyle">
-        
-      </div>
+      <div className="setstyle"></div>
 
       <ReputableLenders />
       <FeatureServicesProvides />
@@ -27,11 +26,10 @@ sec and map, Manual */}
       {/* FAQ Tips / Manual */}
       {/* 1250-1345 */}
 
-      <div className="setstyle">
-      </div>
+      <div className="setstyle"></div>
 
       <Faq />
       <ContactForm />
-      </>
-);
-}               
+    </>
+  );
+}

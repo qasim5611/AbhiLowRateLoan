@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { PageTitle } from "../../components/PageTitle";
 import { FeaturedTop } from "../../components/FeaturedTop";
@@ -190,830 +191,879 @@ sec and map, Manual */}
       {/* FAQ Tips / Manual */}
       {/* 1250-1344 */}
 
-      <div className="setstyle"><>
-  <div className="wp-block-kadence-spacer aligncenter kt-block-spacer-_415c6a-08">
-    <div className="kt-block-spacer kt-block-spacer-halign-center">
-      <hr className="kt-divider" />
-    </div>
-  </div>
-  <div className="wp-block-kadence-rowlayout alignnone">
-    <div
-      id="kt-layout-id_5a621b-81"
-      className="kt-row-layout-inner kt-layout-id_5a621b-81"
-    >
-      <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row kb-theme-content-width">
-        <div className="wp-block-kadence-column inner-column-1 kadence-column_de30c2-e0">
-          <div className="kt-inside-inner-col">
-            <div className="wp-block-kadence-rowlayout alignnone">
-              <div
-                id="kt-layout-id_762e30-55"
-                className="kt-row-layout-inner kt-layout-id_762e30-55"
-              >
-                <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
-                  <div className="wp-block-kadence-column inner-column-1 kadence-column_8843dd-cd">
-                    <div className="kt-inside-inner-col">
-                      <h6
-                        className="kt-adv-heading_7cd518-d6 wp-block-kadence-advancedheading has-theme-palette-1-color has-text-color"
-                        data-kb-block="kb-adv-heading_7cd518-d6"
-                      >
-                        Tips &amp; Advice
-                      </h6>
-                      <h2
-                        className="kt-adv-heading_8fde56-d1 wp-block-kadence-advancedheading"
-                        data-kb-block="kb-adv-heading_8fde56-d1"
-                      >
-                        First-Time Home Buyers looking to buy a house in
-                        Wheelers Hill
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="wp-block-kadence-column inner-column-2 kadence-column_541262-22">
-                    <div className="kt-inside-inner-col" />
-                  </div>
-                </div>
-              </div>
+      <div className="setstyle">
+        <>
+          <div className="wp-block-kadence-spacer aligncenter kt-block-spacer-_415c6a-08">
+            <div className="kt-block-spacer kt-block-spacer-halign-center">
+              <hr className="kt-divider" />
             </div>
-            <div className="wp-block-kadence-rowlayout alignnone">
-              <div
-                id="kt-layout-id_77d94b-1d"
-                className="kt-row-layout-inner kt-layout-id_77d94b-1d"
-              >
-                <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
-                  <div className="wp-block-kadence-column inner-column-1 kadence-column_859025-ae">
-                    <div className="kt-inside-inner-col">
-                      <p>
-                        In the heart of Australia’s urban fabric, Wheelers Hill
-                        stands as a beacon of modern living amidst natural
-                        splendour. This locale weaves a tapestry of experiences
-                        that cater to diverse tastes and aspirations. The
-                        explorations begin at Jells Park, an expansive natural
-                        haven offering serene lakes, walking trails, and
-                        panoramic views. For a touch of history and elegance,
-                        the Wheelers Hill Library and Cultural Centre hosts
-                        cultural events that reflect the city’s vibrant spirit.
-                      </p>
-                      <p>
-                        As you transit through Wheelers Hill’s neighbourhoods,
-                        each enclave paints its unique picture. From the
-                        tranquillity of Lum Reserve to the family-friendly charm
-                        of Waverley Meadows, diversity flourishes.
-                      </p>
-                      <p>
-                        Wheelers Hill presents a medley of housing options, from
-                        contemporary homes to stylish apartments. Whether you’re
-                        searching for an idyllic residence or a shrewd
-                        investment, Wheelers Hill’s real estate landscape offers
-                        avenues to turn dreams into reality.
-                      </p>
-                      <p>
-                        Wheelers Hill invites you to relish its cultural
-                        richness, embrace its natural beauty, and leave your
-                        mark within its dynamic urban canvas. The path through
-                        its neighbourhoods and the world of real estate
-                        possibilities intertwine, creating a vibrant narrative
-                        that calls you to become a part of Wheelers Hill’s
-                        unfolding story.
-                      </p>
-                      <p>
-                        <a
-                          href="https://lowratehomeloan.com.au/contact/"
-                          title=""
-                        />
-                        <a href="https://lowratehomeloan.com.au/contact/">
-                          <strong>
-                            Book an appointment with an expert Mortgage Broker!
-                          </strong>
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                  <div className="wp-block-kadence-column inner-column-2 kadence-column_1fc698-6d">
-                    <div className="kt-inside-inner-col">
-                      <h5
-                        className="kt-adv-heading_a4772d-93 wp-block-kadence-advancedheading"
-                        data-kb-block="kb-adv-heading_a4772d-93"
+          </div>
+          <div className="wp-block-kadence-rowlayout alignnone">
+            <div
+              id="kt-layout-id_5a621b-81"
+              className="kt-row-layout-inner kt-layout-id_5a621b-81"
+            >
+              <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row kb-theme-content-width">
+                <div className="wp-block-kadence-column inner-column-1 kadence-column_de30c2-e0">
+                  <div className="kt-inside-inner-col">
+                    <div className="wp-block-kadence-rowlayout alignnone">
+                      <div
+                        id="kt-layout-id_762e30-55"
+                        className="kt-row-layout-inner kt-layout-id_762e30-55"
                       >
-                        Best Suburbs in Wheelers Hill for First Home Buyers and
-                        Investors
-                      </h5>
-                      <ul>
-                        <li>Mulgrave</li>
-                        <li>Notting Hill</li>
-                        <li>Glen Waverley</li>
-                        <li>Mount Waverley</li>
-                        <li>Scoresby</li>
-                        <li>Rowville</li>
-                        <li>Wantirna South</li>
-                        <li>Lum Reserve</li>
-                        <li>Waverley Meadows</li>
-                        <li>Caulfield Gardens</li>
-                      </ul>
+                        <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
+                          <div className="wp-block-kadence-column inner-column-1 kadence-column_8843dd-cd">
+                            <div className="kt-inside-inner-col">
+                              <h6
+                                className="kt-adv-heading_7cd518-d6 wp-block-kadence-advancedheading has-theme-palette-1-color has-text-color"
+                                data-kb-block="kb-adv-heading_7cd518-d6"
+                              >
+                                Tips &amp; Advice
+                              </h6>
+                              <h2
+                                className="kt-adv-heading_8fde56-d1 wp-block-kadence-advancedheading"
+                                data-kb-block="kb-adv-heading_8fde56-d1"
+                              >
+                                First-Time Home Buyers looking to buy a house in
+                                Wheelers Hill
+                              </h2>
+                            </div>
+                          </div>
+                          <div className="wp-block-kadence-column inner-column-2 kadence-column_541262-22">
+                            <div className="kt-inside-inner-col" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="wp-block-kadence-rowlayout alignnone">
+                      <div
+                        id="kt-layout-id_77d94b-1d"
+                        className="kt-row-layout-inner kt-layout-id_77d94b-1d"
+                      >
+                        <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
+                          <div className="wp-block-kadence-column inner-column-1 kadence-column_859025-ae">
+                            <div className="kt-inside-inner-col">
+                              <p>
+                                In the heart of Australia’s urban fabric,
+                                Wheelers Hill stands as a beacon of modern
+                                living amidst natural splendour. This locale
+                                weaves a tapestry of experiences that cater to
+                                diverse tastes and aspirations. The explorations
+                                begin at Jells Park, an expansive natural haven
+                                offering serene lakes, walking trails, and
+                                panoramic views. For a touch of history and
+                                elegance, the Wheelers Hill Library and Cultural
+                                Centre hosts cultural events that reflect the
+                                city’s vibrant spirit.
+                              </p>
+                              <p>
+                                As you transit through Wheelers Hill’s
+                                neighbourhoods, each enclave paints its unique
+                                picture. From the tranquillity of Lum Reserve to
+                                the family-friendly charm of Waverley Meadows,
+                                diversity flourishes.
+                              </p>
+                              <p>
+                                Wheelers Hill presents a medley of housing
+                                options, from contemporary homes to stylish
+                                apartments. Whether you’re searching for an
+                                idyllic residence or a shrewd investment,
+                                Wheelers Hill’s real estate landscape offers
+                                avenues to turn dreams into reality.
+                              </p>
+                              <p>
+                                Wheelers Hill invites you to relish its cultural
+                                richness, embrace its natural beauty, and leave
+                                your mark within its dynamic urban canvas. The
+                                path through its neighbourhoods and the world of
+                                real estate possibilities intertwine, creating a
+                                vibrant narrative that calls you to become a
+                                part of Wheelers Hill’s unfolding story.
+                              </p>
+                              <p>
+                                <a
+                                  href="https://lowratehomeloan.com.au/contact/"
+                                  title=""
+                                />
+                                <a href="https://lowratehomeloan.com.au/contact/">
+                                  <strong>
+                                    Book an appointment with an expert Mortgage
+                                    Broker!
+                                  </strong>
+                                </a>
+                              </p>
+                            </div>
+                          </div>
+                          <div className="wp-block-kadence-column inner-column-2 kadence-column_1fc698-6d">
+                            <div className="kt-inside-inner-col">
+                              <h5
+                                className="kt-adv-heading_a4772d-93 wp-block-kadence-advancedheading"
+                                data-kb-block="kb-adv-heading_a4772d-93"
+                              >
+                                Best Suburbs in Wheelers Hill for First Home
+                                Buyers and Investors
+                              </h5>
+                              <ul>
+                                <li>Mulgrave</li>
+                                <li>Notting Hill</li>
+                                <li>Glen Waverley</li>
+                                <li>Mount Waverley</li>
+                                <li>Scoresby</li>
+                                <li>Rowville</li>
+                                <li>Wantirna South</li>
+                                <li>Lum Reserve</li>
+                                <li>Waverley Meadows</li>
+                                <li>Caulfield Gardens</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div className="wp-block-kadence-spacer aligncenter kt-block-spacer-_00bbb5-dc">
-    <div className="kt-block-spacer kt-block-spacer-halign-center">
-      <hr className="kt-divider" />
-    </div>
-  </div>
-  <div className="wp-block-kadence-rowlayout alignnone">
-    <div
-      id="kt-layout-id_350612-cd"
-      className="kt-row-layout-inner kt-layout-id_350612-cd"
-    >
-      <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row kb-theme-content-width">
-        <div className="wp-block-kadence-column inner-column-1 kadence-column_c723a7-5d">
-          <div className="kt-inside-inner-col">
-            <div className="wp-block-kadence-rowlayout alignnone">
-              <div
-                id="kt-layout-id_281e13-9f"
-                className="kt-row-layout-inner kt-layout-id_281e13-9f"
-              >
-                <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
-                  <div className="wp-block-kadence-column inner-column-1 kadence-column_7b3a08-52">
-                    <div className="kt-inside-inner-col">
-                      <h6
-                        className="kt-adv-heading_dfb7ea-7c wp-block-kadence-advancedheading has-theme-palette-1-color has-text-color"
-                        data-kb-block="kb-adv-heading_dfb7ea-7c"
-                      >
-                        FAQ
-                      </h6>
-                      <h2
-                        className="kt-adv-heading_4895c4-1e wp-block-kadence-advancedheading"
-                        data-kb-block="kb-adv-heading_4895c4-1e"
-                      >
-                        Tips for Discovering Top Mortgage Brokers in Wheelers
-                        Hill
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="wp-block-kadence-column inner-column-2 kadence-column_5bec05-e7">
-                    <div className="kt-inside-inner-col" />
-                  </div>
-                </div>
-              </div>
+          <div className="wp-block-kadence-spacer aligncenter kt-block-spacer-_00bbb5-dc">
+            <div className="kt-block-spacer kt-block-spacer-halign-center">
+              <hr className="kt-divider" />
             </div>
-            <div className="wp-block-kadence-rowlayout alignnone">
-              <div
-                id="kt-layout-id_30b118-9e"
-                className="kt-row-layout-inner kt-layout-id_30b118-9e"
-              >
-                <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
-                  <div className="wp-block-kadence-column inner-column-1 kadence-column_df85cb-a2">
-                    <div className="kt-inside-inner-col">
-                      <p>
-                        These are 10 practical and essential tips for finding
-                        top-notch mortgage brokers across your local estate:
-                      </p>
-                      <ol>
-                        <li>
-                          <strong>Research and Recommendations:</strong> Begin
-                          by asking friends, family, and colleagues for
-                          recommendations. Online reviews and forums can also
-                          provide insights into reputable brokers.
-                        </li>
-                        <li>
-                          <strong>Check Credentials:</strong> Ensure the broker
-                          holds the necessary licences and qualifications. They
-                          should be registered with relevant authorities and
-                          industry associations.
-                        </li>
-                        <li>
-                          <strong>Expertise in Wheelers Hill:</strong> Look for
-                          brokers familiar with the Wheelers Hill area. Local
-                          expertise can help you navigate the nuances of the
-                          market more effectively.
-                        </li>
-                        <li>
-                          <strong>Transparent Communication: </strong>Seek
-                          brokers who communicate clearly and openly about their
-                          services, fees, and the mortgage process. This
-                          transparency builds trust.
-                        </li>
-                        <li>
-                          <strong>Range of Lenders:</strong> A quality broker
-                          will have access to a wide network of lenders. This
-                          ensures you have a variety of loan options tailored to
-                          your needs.
-                        </li>
-                        <li>
-                          <strong>Track Record:</strong> Inquire about the
-                          broker’s track record. How many successful loans have
-                          they facilitated? Positive past experiences often
-                          indicate a skilled professional.
-                        </li>
-                        <li>
-                          <strong>Client References:</strong> Ask for references
-                          from previous clients. Speaking with individuals
-                          who’ve worked with the broker can provide valuable
-                          insights.
-                        </li>
-                        <li>
-                          <strong>Personalised Approach: </strong>A top broker
-                          will take the time to understand your unique financial
-                          situation and tailor solutions accordingly.
-                        </li>
-                        <li>
-                          <strong>Timely Responses: </strong>A responsive broker
-                          is crucial. They should promptly address your
-                          questions and keep you informed throughout the
-                          mortgage process.
-                        </li>
-                        <li>
-                          <strong>Face-to-Face Consultation:</strong> Arrange an
-                          in-person meeting. This allows you to gauge the
-                          broker’s professionalism, ask questions, and discuss
-                          your goals.
-                        </li>
-                      </ol>
-                      <p>
-                        <a href="https://lowratehomeloan.com.au/contact/">
-                          <strong>
-                            Find the Best Home Mortgage Solutions with Us. Call
-                            Us Today!
-                          </strong>
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                  <div className="wp-block-kadence-column inner-column-2 kadence-column_ff0f28-50">
-                    <div className="kt-inside-inner-col">
-                      <h5
-                        className="kt-adv-heading_3bd5ed-9d wp-block-kadence-advancedheading"
-                        data-kb-block="kb-adv-heading_3bd5ed-9d"
+          </div>
+          <div className="wp-block-kadence-rowlayout alignnone">
+            <div
+              id="kt-layout-id_350612-cd"
+              className="kt-row-layout-inner kt-layout-id_350612-cd"
+            >
+              <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row kb-theme-content-width">
+                <div className="wp-block-kadence-column inner-column-1 kadence-column_c723a7-5d">
+                  <div className="kt-inside-inner-col">
+                    <div className="wp-block-kadence-rowlayout alignnone">
+                      <div
+                        id="kt-layout-id_281e13-9f"
+                        className="kt-row-layout-inner kt-layout-id_281e13-9f"
                       >
-                        According to realestate.com.au, Wheelers Hill Property
-                        Prices:
-                      </h5>
-                      <h2 className="wp-block-heading">
-                        Wheelers Hill Property Market Insights
-                      </h2>
-                      <p>
-                        In the past month, Wheelers Hill had 30 homes available
-                        for rent and 56 homes for sale. Over the past year,
-                        median property prices ranged from $1,425,500 for houses
-                        to $973,000 for units.&nbsp;
-                      </p>
-                      <p>
-                        For those considering investing, keep in mind that
-                        houses in Wheelers Hill could fetch around $615 per week
-                        in rent, with an annual rental return of 2.5%. For
-                        units, you might get about $500 per week, with a rental
-                        return of 3.5%.&nbsp;
-                      </p>
-                      <p>
-                        Considering the past five years of sales, the value of
-                        houses in Wheelers Hill has decreased by approximately
-                        -1.7%, while the value of units has decreased by about
-                        -13.0%.
-                      </p>
+                        <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
+                          <div className="wp-block-kadence-column inner-column-1 kadence-column_7b3a08-52">
+                            <div className="kt-inside-inner-col">
+                              <h6
+                                className="kt-adv-heading_dfb7ea-7c wp-block-kadence-advancedheading has-theme-palette-1-color has-text-color"
+                                data-kb-block="kb-adv-heading_dfb7ea-7c"
+                              >
+                                FAQ
+                              </h6>
+                              <h2
+                                className="kt-adv-heading_4895c4-1e wp-block-kadence-advancedheading"
+                                data-kb-block="kb-adv-heading_4895c4-1e"
+                              >
+                                Tips for Discovering Top Mortgage Brokers in
+                                Wheelers Hill
+                              </h2>
+                            </div>
+                          </div>
+                          <div className="wp-block-kadence-column inner-column-2 kadence-column_5bec05-e7">
+                            <div className="kt-inside-inner-col" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="wp-block-kadence-rowlayout alignnone">
+                      <div
+                        id="kt-layout-id_30b118-9e"
+                        className="kt-row-layout-inner kt-layout-id_30b118-9e"
+                      >
+                        <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
+                          <div className="wp-block-kadence-column inner-column-1 kadence-column_df85cb-a2">
+                            <div className="kt-inside-inner-col">
+                              <p>
+                                These are 10 practical and essential tips for
+                                finding top-notch mortgage brokers across your
+                                local estate:
+                              </p>
+                              <ol>
+                                <li>
+                                  <strong>Research and Recommendations:</strong>{" "}
+                                  Begin by asking friends, family, and
+                                  colleagues for recommendations. Online reviews
+                                  and forums can also provide insights into
+                                  reputable brokers.
+                                </li>
+                                <li>
+                                  <strong>Check Credentials:</strong> Ensure the
+                                  broker holds the necessary licences and
+                                  qualifications. They should be registered with
+                                  relevant authorities and industry
+                                  associations.
+                                </li>
+                                <li>
+                                  <strong>Expertise in Wheelers Hill:</strong>{" "}
+                                  Look for brokers familiar with the Wheelers
+                                  Hill area. Local expertise can help you
+                                  navigate the nuances of the market more
+                                  effectively.
+                                </li>
+                                <li>
+                                  <strong>Transparent Communication: </strong>
+                                  Seek brokers who communicate clearly and
+                                  openly about their services, fees, and the
+                                  mortgage process. This transparency builds
+                                  trust.
+                                </li>
+                                <li>
+                                  <strong>Range of Lenders:</strong> A quality
+                                  broker will have access to a wide network of
+                                  lenders. This ensures you have a variety of
+                                  loan options tailored to your needs.
+                                </li>
+                                <li>
+                                  <strong>Track Record:</strong> Inquire about
+                                  the broker’s track record. How many successful
+                                  loans have they facilitated? Positive past
+                                  experiences often indicate a skilled
+                                  professional.
+                                </li>
+                                <li>
+                                  <strong>Client References:</strong> Ask for
+                                  references from previous clients. Speaking
+                                  with individuals who’ve worked with the broker
+                                  can provide valuable insights.
+                                </li>
+                                <li>
+                                  <strong>Personalised Approach: </strong>A top
+                                  broker will take the time to understand your
+                                  unique financial situation and tailor
+                                  solutions accordingly.
+                                </li>
+                                <li>
+                                  <strong>Timely Responses: </strong>A
+                                  responsive broker is crucial. They should
+                                  promptly address your questions and keep you
+                                  informed throughout the mortgage process.
+                                </li>
+                                <li>
+                                  <strong>Face-to-Face Consultation:</strong>{" "}
+                                  Arrange an in-person meeting. This allows you
+                                  to gauge the broker’s professionalism, ask
+                                  questions, and discuss your goals.
+                                </li>
+                              </ol>
+                              <p>
+                                <a href="https://lowratehomeloan.com.au/contact/">
+                                  <strong>
+                                    Find the Best Home Mortgage Solutions with
+                                    Us. Call Us Today!
+                                  </strong>
+                                </a>
+                              </p>
+                            </div>
+                          </div>
+                          <div className="wp-block-kadence-column inner-column-2 kadence-column_ff0f28-50">
+                            <div className="kt-inside-inner-col">
+                              <h5
+                                className="kt-adv-heading_3bd5ed-9d wp-block-kadence-advancedheading"
+                                data-kb-block="kb-adv-heading_3bd5ed-9d"
+                              >
+                                According to realestate.com.au, Wheelers Hill
+                                Property Prices:
+                              </h5>
+                              <h2 className="wp-block-heading">
+                                Wheelers Hill Property Market Insights
+                              </h2>
+                              <p>
+                                In the past month, Wheelers Hill had 30 homes
+                                available for rent and 56 homes for sale. Over
+                                the past year, median property prices ranged
+                                from $1,425,500 for houses to $973,000 for
+                                units.&nbsp;
+                              </p>
+                              <p>
+                                For those considering investing, keep in mind
+                                that houses in Wheelers Hill could fetch around
+                                $615 per week in rent, with an annual rental
+                                return of 2.5%. For units, you might get about
+                                $500 per week, with a rental return of
+                                3.5%.&nbsp;
+                              </p>
+                              <p>
+                                Considering the past five years of sales, the
+                                value of houses in Wheelers Hill has decreased
+                                by approximately -1.7%, while the value of units
+                                has decreased by about -13.0%.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div className="wp-block-kadence-spacer aligncenter kt-block-spacer-_43eca4-fd">
-    <div className="kt-block-spacer kt-block-spacer-halign-center">
-      <hr className="kt-divider" />
-    </div>
-  </div>
-  <div className="kb-row-layout-wrap kb-row-layout-id1785_a623ed-cf alignnone kb-v-lg-hidden kb-v-md-hidden kb-v-sm-hidden wp-block-kadence-rowlayout">
-    <div className="kt-row-column-wrap kt-has-1-columns kt-row-layout-equal kt-tab-layout-inherit kt-mobile-layout-row kt-row-valign-top kb-theme-content-width">
-      <div className="wp-block-kadence-column kadence-column1785_3d58cf-13 inner-column-1">
-        <div className="kt-inside-inner-col">
-          <h6
-            className="kt-adv-heading1785_1f5112-0f wp-block-kadence-advancedheading has-theme-palette-1-color has-text-color"
-            data-kb-block="kb-adv-heading1785_1f5112-0f"
-          >
-            Clients Testimonials
-          </h6>
-          <h2
-            className="kt-adv-heading1785_d2847a-c9 wp-block-kadence-advancedheading"
-            data-kb-block="kb-adv-heading1785_d2847a-c9"
-          >
-            What our Clients are saying…
-          </h2>
-          <div
-            className="ti-widget ti-goog"
-            data-time-locale="%d %s ago|today|day|days|week|weeks|month|months|year|years"
-            data-layout-id={4}
-            data-set-id="light-background-large"
-            data-pid="b5167179c03e50ec942cb"
-            data-pager-autoplay-timeout={6}
-            data-review-target-width={300}
-          >
-            {" "}
-            <div className="ti-widget-container ti-col-3">
-              {" "}
-              <div className="ti-reviews-container">
-                {" "}
-                <div className="ti-controls">
-                  {" "}
-                  <div className="ti-next" /> <div className="ti-prev" />{" "}
-                </div>{" "}
-                <div className="ti-reviews-container-wrapper">
-                  {" "}
+          <div className="wp-block-kadence-spacer aligncenter kt-block-spacer-_43eca4-fd">
+            <div className="kt-block-spacer kt-block-spacer-halign-center">
+              <hr className="kt-divider" />
+            </div>
+          </div>
+          <div className="kb-row-layout-wrap kb-row-layout-id1785_a623ed-cf alignnone kb-v-lg-hidden kb-v-md-hidden kb-v-sm-hidden wp-block-kadence-rowlayout">
+            <div className="kt-row-column-wrap kt-has-1-columns kt-row-layout-equal kt-tab-layout-inherit kt-mobile-layout-row kt-row-valign-top kb-theme-content-width">
+              <div className="wp-block-kadence-column kadence-column1785_3d58cf-13 inner-column-1">
+                <div className="kt-inside-inner-col">
+                  <h6
+                    className="kt-adv-heading1785_1f5112-0f wp-block-kadence-advancedheading has-theme-palette-1-color has-text-color"
+                    data-kb-block="kb-adv-heading1785_1f5112-0f"
+                  >
+                    Clients Testimonials
+                  </h6>
+                  <h2
+                    className="kt-adv-heading1785_d2847a-c9 wp-block-kadence-advancedheading"
+                    data-kb-block="kb-adv-heading1785_d2847a-c9"
+                  >
+                    What our Clients are saying…
+                  </h2>
                   <div
-                    data-empty={0}
-                    data-time={1673395200}
-                    className="ti-review-item source-Google"
+                    className="ti-widget ti-goog"
+                    data-time-locale="%d %s ago|today|day|days|week|weeks|month|months|year|years"
+                    data-layout-id={4}
+                    data-set-id="light-background-large"
+                    data-pid="b5167179c03e50ec942cb"
+                    data-pager-autoplay-timeout={6}
+                    data-review-target-width={300}
                   >
                     {" "}
-                    <div className="ti-inner">
+                    <div className="ti-widget-container ti-col-3">
                       {" "}
-                      <div className="ti-review-header">
+                      <div className="ti-reviews-container">
                         {" "}
-                        <div className="ti-profile-img">
+                        <div className="ti-controls">
                           {" "}
-                          <img
-                            src="https://lh3.googleusercontent.com/a/AEdFTp5WfWZz8W1JRC2xC-JVY13esVb_K2B0x8h1c_wp=s120-c-c-rp-w64-h64-mo-br100"
-                            alt="Jose Martins"
-                          />{" "}
+                          <div className="ti-next" />{" "}
+                          <div className="ti-prev" />{" "}
                         </div>{" "}
-                        <div className="ti-profile-details">
+                        <div className="ti-reviews-container-wrapper">
                           {" "}
-                          <div className="ti-name"> Jose Martins </div>{" "}
-                          <div className="ti-date" />{" "}
-                        </div>{" "}
-                      </div>{" "}
-                      <span className="ti-stars">
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                      </span>{" "}
-                      <div className="ti-review-content">
-                        Thank you for the courteous, efficient and professional
-                        service and assistance that you have provided. The
-                        process went very well. Rahi did a great job, including
-                        working on weekends to meet the required timelines. Will
-                        definitely recommend them.
-                      </div>{" "}
-                      <span
-                        className="ti-read-more"
-                        data-container=".ti-review-content"
-                        data-collapse-text="Hide"
-                        data-open-text="Read more"
-                      />{" "}
-                    </div>{" "}
-                  </div>{" "}
-                  <div
-                    data-empty={0}
-                    data-time={1673308800}
-                    className="ti-review-item source-Google"
-                  >
-                    {" "}
-                    <div className="ti-inner">
-                      {" "}
-                      <div className="ti-review-header">
-                        {" "}
-                        <div className="ti-profile-img">
-                          {" "}
-                          <img
-                            src="https://lh3.googleusercontent.com/a-/AD5-WCn-sRC6ziDKx5dNNZwgngKURLv1CB6PoIxTqSx6lw=s120-c-c-rp-w64-h64-mo-br100"
-                            alt="BIGGIEX 75"
-                          />{" "}
-                        </div>{" "}
-                        <div className="ti-profile-details">
-                          {" "}
-                          <div className="ti-name"> BIGGIEX 75 </div>{" "}
-                          <div className="ti-date" />{" "}
-                        </div>{" "}
-                      </div>{" "}
-                      <span className="ti-stars">
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                      </span>{" "}
-                      <div className="ti-review-content">
-                        Highly recommended. Thanks to Low Rate Home Loan
-                        Pakenham and specially to our broker Fareen/Broker who
-                        assisted us to refinance our existing property and
-                        investment property. Fareen was very profession,
-                        friendly and he answered to all our calls on time. Also
-                        he went above and beyond to make sure we are fully
-                        happy. We'll definitely refer family and friends. Cheers
-                        team.
-                      </div>{" "}
-                      <span
-                        className="ti-read-more"
-                        data-container=".ti-review-content"
-                        data-collapse-text="Hide"
-                        data-open-text="Read more"
-                      />{" "}
-                    </div>{" "}
-                  </div>{" "}
-                  <div
-                    data-empty={0}
-                    data-time={1673222400}
-                    className="ti-review-item source-Google"
-                  >
-                    {" "}
-                    <div className="ti-inner">
-                      {" "}
-                      <div className="ti-review-header">
-                        {" "}
-                        <div className="ti-profile-img">
-                          {" "}
-                          <img
-                            src="https://lh3.googleusercontent.com/a/AEdFTp55ILW2z74AKoLKK0ZPO2gjanoIPiDnieZ1KrHJ=s120-c-c-rp-w64-h64-mo-br100"
-                            alt="David Martingale"
-                          />{" "}
-                        </div>{" "}
-                        <div className="ti-profile-details">
-                          {" "}
-                          <div className="ti-name"> David Martingale </div>{" "}
-                          <div className="ti-date" />{" "}
-                        </div>{" "}
-                      </div>{" "}
-                      <span className="ti-stars">
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                      </span>{" "}
-                      <div className="ti-review-content">
-                        Thank you Rahi, for your outstanding service. You have
-                        made refinancing our home loan very easy. We are very
-                        happy with the whole process. I highly recommend your
-                        service to all my friends and family
-                      </div>{" "}
-                      <span
-                        className="ti-read-more"
-                        data-container=".ti-review-content"
-                        data-collapse-text="Hide"
-                        data-open-text="Read more"
-                      />{" "}
-                    </div>{" "}
-                  </div>{" "}
-                  <div
-                    data-empty={0}
-                    data-time={1672704000}
-                    className="ti-review-item source-Google"
-                  >
-                    {" "}
-                    <div className="ti-inner">
-                      {" "}
-                      <div className="ti-review-header">
-                        {" "}
-                        <div className="ti-profile-img">
-                          {" "}
-                          <img
-                            src="https://lh3.googleusercontent.com/a/AEdFTp5N3bnuujhU-WwnqF0zBWL5GHLIJyxtO-ND4cFA=s120-c-c-rp-w64-h64-mo-br100"
-                            alt="Ukuma Huni"
-                          />{" "}
-                        </div>{" "}
-                        <div className="ti-profile-details">
-                          {" "}
-                          <div className="ti-name"> Ukuma Huni </div>{" "}
-                          <div className="ti-date" />{" "}
-                        </div>{" "}
-                      </div>{" "}
-                      <span className="ti-stars">
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                      </span>{" "}
-                      <div className="ti-review-content">
-                        They’re very trustworthy honesty helpful and quick to
-                        respond on everything I would like to recommend that
-                        they’re the best ,Low Rate Home Loan-Mortgage Broker in
-                        Australia.
-                      </div>{" "}
-                      <span
-                        className="ti-read-more"
-                        data-container=".ti-review-content"
-                        data-collapse-text="Hide"
-                        data-open-text="Read more"
-                      />{" "}
-                    </div>{" "}
-                  </div>{" "}
-                  <div
-                    data-empty={0}
-                    data-time={1672704000}
-                    className="ti-review-item source-Google"
-                  >
-                    {" "}
-                    <div className="ti-inner">
-                      {" "}
-                      <div className="ti-review-header">
-                        {" "}
-                        <div className="ti-profile-img">
-                          {" "}
-                          <img
-                            src="https://lh3.googleusercontent.com/a-/AD5-WCk10WpfLfORErXvmdWuCcBub1iA3y3vMH_rjSroTA=s120-c-c-rp-w64-h64-mo-br100"
-                            alt="Anupriya Balaji Vaidyanathan"
-                          />{" "}
-                        </div>{" "}
-                        <div className="ti-profile-details">
-                          {" "}
-                          <div className="ti-name">
+                          <div
+                            data-empty={0}
+                            data-time={1673395200}
+                            className="ti-review-item source-Google"
+                          >
                             {" "}
-                            Anupriya Balaji Vaidyanathan{" "}
+                            <div className="ti-inner">
+                              {" "}
+                              <div className="ti-review-header">
+                                {" "}
+                                <div className="ti-profile-img">
+                                  {" "}
+                                  <img
+                                    src="https://lh3.googleusercontent.com/a/AEdFTp5WfWZz8W1JRC2xC-JVY13esVb_K2B0x8h1c_wp=s120-c-c-rp-w64-h64-mo-br100"
+                                    alt="Jose Martins"
+                                  />{" "}
+                                </div>{" "}
+                                <div className="ti-profile-details">
+                                  {" "}
+                                  <div className="ti-name">
+                                    {" "}
+                                    Jose Martins{" "}
+                                  </div>{" "}
+                                  <div className="ti-date" />{" "}
+                                </div>{" "}
+                              </div>{" "}
+                              <span className="ti-stars">
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                              </span>{" "}
+                              <div className="ti-review-content">
+                                Thank you for the courteous, efficient and
+                                professional service and assistance that you
+                                have provided. The process went very well. Rahi
+                                did a great job, including working on weekends
+                                to meet the required timelines. Will definitely
+                                recommend them.
+                              </div>{" "}
+                              <span
+                                className="ti-read-more"
+                                data-container=".ti-review-content"
+                                data-collapse-text="Hide"
+                                data-open-text="Read more"
+                              />{" "}
+                            </div>{" "}
                           </div>{" "}
-                          <div className="ti-date" />{" "}
-                        </div>{" "}
-                      </div>{" "}
-                      <span className="ti-stars">
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                      </span>{" "}
-                      <div className="ti-review-content">
-                        Thank you to Shoaib, Low Rate Home Loan for making
-                        everything appear to be easy. Thank you for being so
-                        responsive and hardworking! I would highly recommend
-                        this service! 😊
-                      </div>{" "}
-                      <span
-                        className="ti-read-more"
-                        data-container=".ti-review-content"
-                        data-collapse-text="Hide"
-                        data-open-text="Read more"
-                      />{" "}
-                    </div>{" "}
-                  </div>{" "}
-                  <div
-                    data-empty={0}
-                    data-time={1672704000}
-                    className="ti-review-item source-Google"
-                  >
-                    {" "}
-                    <div className="ti-inner">
-                      {" "}
-                      <div className="ti-review-header">
-                        {" "}
-                        <div className="ti-profile-img">
-                          {" "}
-                          <img
-                            src="https://lh3.googleusercontent.com/a/AEdFTp7Yns2kqRCOQJKv4exDYE7K12b_aE-k_FSMBYV1=s120-c-c-rp-w64-h64-mo-br100"
-                            alt="Balaji Vaidyanathan"
-                          />{" "}
-                        </div>{" "}
-                        <div className="ti-profile-details">
-                          {" "}
-                          <div className="ti-name">
+                          <div
+                            data-empty={0}
+                            data-time={1673308800}
+                            className="ti-review-item source-Google"
+                          >
                             {" "}
-                            Balaji Vaidyanathan{" "}
+                            <div className="ti-inner">
+                              {" "}
+                              <div className="ti-review-header">
+                                {" "}
+                                <div className="ti-profile-img">
+                                  {" "}
+                                  <img
+                                    src="https://lh3.googleusercontent.com/a-/AD5-WCn-sRC6ziDKx5dNNZwgngKURLv1CB6PoIxTqSx6lw=s120-c-c-rp-w64-h64-mo-br100"
+                                    alt="BIGGIEX 75"
+                                  />{" "}
+                                </div>{" "}
+                                <div className="ti-profile-details">
+                                  {" "}
+                                  <div className="ti-name">
+                                    {" "}
+                                    BIGGIEX 75{" "}
+                                  </div>{" "}
+                                  <div className="ti-date" />{" "}
+                                </div>{" "}
+                              </div>{" "}
+                              <span className="ti-stars">
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                              </span>{" "}
+                              <div className="ti-review-content">
+                                Highly recommended. Thanks to Low Rate Home Loan
+                                Pakenham and specially to our broker
+                                Fareen/Broker who assisted us to refinance our
+                                existing property and investment property.
+                                Fareen was very profession, friendly and he
+                                answered to all our calls on time. Also he went
+                                above and beyond to make sure we are fully
+                                happy. We'll definitely refer family and
+                                friends. Cheers team.
+                              </div>{" "}
+                              <span
+                                className="ti-read-more"
+                                data-container=".ti-review-content"
+                                data-collapse-text="Hide"
+                                data-open-text="Read more"
+                              />{" "}
+                            </div>{" "}
                           </div>{" "}
-                          <div className="ti-date" />{" "}
+                          <div
+                            data-empty={0}
+                            data-time={1673222400}
+                            className="ti-review-item source-Google"
+                          >
+                            {" "}
+                            <div className="ti-inner">
+                              {" "}
+                              <div className="ti-review-header">
+                                {" "}
+                                <div className="ti-profile-img">
+                                  {" "}
+                                  <img
+                                    src="https://lh3.googleusercontent.com/a/AEdFTp55ILW2z74AKoLKK0ZPO2gjanoIPiDnieZ1KrHJ=s120-c-c-rp-w64-h64-mo-br100"
+                                    alt="David Martingale"
+                                  />{" "}
+                                </div>{" "}
+                                <div className="ti-profile-details">
+                                  {" "}
+                                  <div className="ti-name">
+                                    {" "}
+                                    David Martingale{" "}
+                                  </div>{" "}
+                                  <div className="ti-date" />{" "}
+                                </div>{" "}
+                              </div>{" "}
+                              <span className="ti-stars">
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                              </span>{" "}
+                              <div className="ti-review-content">
+                                Thank you Rahi, for your outstanding service.
+                                You have made refinancing our home loan very
+                                easy. We are very happy with the whole process.
+                                I highly recommend your service to all my
+                                friends and family
+                              </div>{" "}
+                              <span
+                                className="ti-read-more"
+                                data-container=".ti-review-content"
+                                data-collapse-text="Hide"
+                                data-open-text="Read more"
+                              />{" "}
+                            </div>{" "}
+                          </div>{" "}
+                          <div
+                            data-empty={0}
+                            data-time={1672704000}
+                            className="ti-review-item source-Google"
+                          >
+                            {" "}
+                            <div className="ti-inner">
+                              {" "}
+                              <div className="ti-review-header">
+                                {" "}
+                                <div className="ti-profile-img">
+                                  {" "}
+                                  <img
+                                    src="https://lh3.googleusercontent.com/a/AEdFTp5N3bnuujhU-WwnqF0zBWL5GHLIJyxtO-ND4cFA=s120-c-c-rp-w64-h64-mo-br100"
+                                    alt="Ukuma Huni"
+                                  />{" "}
+                                </div>{" "}
+                                <div className="ti-profile-details">
+                                  {" "}
+                                  <div className="ti-name">
+                                    {" "}
+                                    Ukuma Huni{" "}
+                                  </div>{" "}
+                                  <div className="ti-date" />{" "}
+                                </div>{" "}
+                              </div>{" "}
+                              <span className="ti-stars">
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                              </span>{" "}
+                              <div className="ti-review-content">
+                                They’re very trustworthy honesty helpful and
+                                quick to respond on everything I would like to
+                                recommend that they’re the best ,Low Rate Home
+                                Loan-Mortgage Broker in Australia.
+                              </div>{" "}
+                              <span
+                                className="ti-read-more"
+                                data-container=".ti-review-content"
+                                data-collapse-text="Hide"
+                                data-open-text="Read more"
+                              />{" "}
+                            </div>{" "}
+                          </div>{" "}
+                          <div
+                            data-empty={0}
+                            data-time={1672704000}
+                            className="ti-review-item source-Google"
+                          >
+                            {" "}
+                            <div className="ti-inner">
+                              {" "}
+                              <div className="ti-review-header">
+                                {" "}
+                                <div className="ti-profile-img">
+                                  {" "}
+                                  <img
+                                    src="https://lh3.googleusercontent.com/a-/AD5-WCk10WpfLfORErXvmdWuCcBub1iA3y3vMH_rjSroTA=s120-c-c-rp-w64-h64-mo-br100"
+                                    alt="Anupriya Balaji Vaidyanathan"
+                                  />{" "}
+                                </div>{" "}
+                                <div className="ti-profile-details">
+                                  {" "}
+                                  <div className="ti-name">
+                                    {" "}
+                                    Anupriya Balaji Vaidyanathan{" "}
+                                  </div>{" "}
+                                  <div className="ti-date" />{" "}
+                                </div>{" "}
+                              </div>{" "}
+                              <span className="ti-stars">
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                              </span>{" "}
+                              <div className="ti-review-content">
+                                Thank you to Shoaib, Low Rate Home Loan for
+                                making everything appear to be easy. Thank you
+                                for being so responsive and hardworking! I would
+                                highly recommend this service! 😊
+                              </div>{" "}
+                              <span
+                                className="ti-read-more"
+                                data-container=".ti-review-content"
+                                data-collapse-text="Hide"
+                                data-open-text="Read more"
+                              />{" "}
+                            </div>{" "}
+                          </div>{" "}
+                          <div
+                            data-empty={0}
+                            data-time={1672704000}
+                            className="ti-review-item source-Google"
+                          >
+                            {" "}
+                            <div className="ti-inner">
+                              {" "}
+                              <div className="ti-review-header">
+                                {" "}
+                                <div className="ti-profile-img">
+                                  {" "}
+                                  <img
+                                    src="https://lh3.googleusercontent.com/a/AEdFTp7Yns2kqRCOQJKv4exDYE7K12b_aE-k_FSMBYV1=s120-c-c-rp-w64-h64-mo-br100"
+                                    alt="Balaji Vaidyanathan"
+                                  />{" "}
+                                </div>{" "}
+                                <div className="ti-profile-details">
+                                  {" "}
+                                  <div className="ti-name">
+                                    {" "}
+                                    Balaji Vaidyanathan{" "}
+                                  </div>{" "}
+                                  <div className="ti-date" />{" "}
+                                </div>{" "}
+                              </div>{" "}
+                              <span className="ti-stars">
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                              </span>{" "}
+                              <div className="ti-review-content">
+                                We had a great experience with Low Rate Home
+                                Loan - Mortgage Broker Pakenham. It was our
+                                first home and Shoaib Afzali was really helpful
+                                through the process and made it look very easy.
+                                He was extremely responsive and made the
+                                complicated settlement look really easy. He
+                                worked really hard and was very dedicated
+                                through their services..I would give Shoaib
+                                Afzali a 7 star for his outstanding service...
+                              </div>{" "}
+                              <span
+                                className="ti-read-more"
+                                data-container=".ti-review-content"
+                                data-collapse-text="Hide"
+                                data-open-text="Read more"
+                              />{" "}
+                            </div>{" "}
+                          </div>{" "}
+                          <div
+                            data-empty={0}
+                            data-time={1672704000}
+                            className="ti-review-item source-Google"
+                          >
+                            {" "}
+                            <div className="ti-inner">
+                              {" "}
+                              <div className="ti-review-header">
+                                {" "}
+                                <div className="ti-profile-img">
+                                  {" "}
+                                  <img
+                                    src="https://lh3.googleusercontent.com/a/AEdFTp7dLg7zn2JDCPpGx34c26_0x3j5znQdjZmlg--O=s120-c-c-rp-w64-h64-mo-br100"
+                                    alt="Rubina Nishat"
+                                  />{" "}
+                                </div>{" "}
+                                <div className="ti-profile-details">
+                                  {" "}
+                                  <div className="ti-name">
+                                    {" "}
+                                    Rubina Nishat{" "}
+                                  </div>{" "}
+                                  <div className="ti-date" />{" "}
+                                </div>{" "}
+                              </div>{" "}
+                              <span className="ti-stars">
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                              </span>{" "}
+                              <div className="ti-review-content">
+                                I am very satisfied, great help. Siawash thank
+                                you for helping us with our home loan. You was
+                                very friendly, patient, always helped me with
+                                all my questions, very responsive. You are going
+                                a great job. Keep going bro. Good luck and
+                                Thanks once again.
+                              </div>{" "}
+                              <span
+                                className="ti-read-more"
+                                data-container=".ti-review-content"
+                                data-collapse-text="Hide"
+                                data-open-text="Read more"
+                              />{" "}
+                            </div>{" "}
+                          </div>{" "}
+                          <div
+                            data-empty={0}
+                            data-time={1671926400}
+                            className="ti-review-item source-Google"
+                          >
+                            {" "}
+                            <div className="ti-inner">
+                              {" "}
+                              <div className="ti-review-header">
+                                {" "}
+                                <div className="ti-profile-img">
+                                  {" "}
+                                  <img
+                                    src="https://lh3.googleusercontent.com/a/AEdFTp5vlbV2jJoLUU0BXvJV-ZfMyKKM2GEnl6GdL5mk=s120-c-c-rp-w64-h64-mo-br100"
+                                    alt="creswell narcis"
+                                  />{" "}
+                                </div>{" "}
+                                <div className="ti-profile-details">
+                                  {" "}
+                                  <div className="ti-name">
+                                    {" "}
+                                    creswell narcis{" "}
+                                  </div>{" "}
+                                  <div className="ti-date" />{" "}
+                                </div>{" "}
+                              </div>{" "}
+                              <span className="ti-stars">
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                              </span>{" "}
+                              <div className="ti-review-content">
+                                Thank you Rahi for your support, true to you
+                                word you called me and updated every time you
+                                said. Very hard working knowledgeable and given
+                                me good advice.
+                              </div>{" "}
+                              <span
+                                className="ti-read-more"
+                                data-container=".ti-review-content"
+                                data-collapse-text="Hide"
+                                data-open-text="Read more"
+                              />{" "}
+                            </div>{" "}
+                          </div>{" "}
+                          <div
+                            data-empty={0}
+                            data-time={1671667200}
+                            className="ti-review-item source-Google"
+                          >
+                            {" "}
+                            <div className="ti-inner">
+                              {" "}
+                              <div className="ti-review-header">
+                                {" "}
+                                <div className="ti-profile-img">
+                                  {" "}
+                                  <img
+                                    src="https://lh3.googleusercontent.com/a-/AD5-WCnMgFfdHtZRPmDJlm9B_bytrd1BukNgZd5dsxM3=s120-c-c-rp-w64-h64-mo-br100"
+                                    alt="Adelina Cota"
+                                  />{" "}
+                                </div>{" "}
+                                <div className="ti-profile-details">
+                                  {" "}
+                                  <div className="ti-name">
+                                    {" "}
+                                    Adelina Cota{" "}
+                                  </div>{" "}
+                                  <div className="ti-date" />{" "}
+                                </div>{" "}
+                              </div>{" "}
+                              <span className="ti-stars">
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                              </span>{" "}
+                              <div className="ti-review-content">
+                                Thanks to Fareen from Low Rate Home Loan
+                                Pakenham for refinancing my property. He kept me
+                                in the process from beginning to the completion
+                                of the process. He is very professional,
+                                transparent and honest. He got me cash back and
+                                much better rates. Outstanding service I would
+                                highly recommend him and his team. Thank you
+                                team.
+                              </div>{" "}
+                              <span
+                                className="ti-read-more"
+                                data-container=".ti-review-content"
+                                data-collapse-text="Hide"
+                                data-open-text="Read more"
+                              />{" "}
+                            </div>{" "}
+                          </div>{" "}
+                          <div
+                            data-empty={0}
+                            data-time={1671667200}
+                            className="ti-review-item source-Google"
+                          >
+                            {" "}
+                            <div className="ti-inner">
+                              {" "}
+                              <div className="ti-review-header">
+                                {" "}
+                                <div className="ti-profile-img">
+                                  {" "}
+                                  <img
+                                    src="https://lh3.googleusercontent.com/a/AEdFTp7xEL4ZS0xjMhOxPGP3bRL0Aj4isHNHeBGDkQ_o=s120-c-c-rp-w64-h64-mo-br100"
+                                    alt="dawood mir"
+                                  />{" "}
+                                </div>{" "}
+                                <div className="ti-profile-details">
+                                  {" "}
+                                  <div className="ti-name">
+                                    {" "}
+                                    dawood mir{" "}
+                                  </div>{" "}
+                                  <div className="ti-date" />{" "}
+                                </div>{" "}
+                              </div>{" "}
+                              <span className="ti-stars">
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                                <span className="ti-star f" />
+                              </span>{" "}
+                              <div className="ti-review-content">
+                                Thank you Siawash for helping us refinance our
+                                home loan. You have been a great help. Thank you
+                                for providing excellent service from day one.
+                                You were very friendly, courteous and patient
+                                throughout the entire process. You were very
+                                quick to respond to all my queries as well.
+                                Highly recommended. Good luck to you and your
+                                company. May you prosper more. 5 stars from me.
+                              </div>{" "}
+                              <span
+                                className="ti-read-more"
+                                data-container=".ti-review-content"
+                                data-collapse-text="Hide"
+                                data-open-text="Read more"
+                              />{" "}
+                            </div>{" "}
+                          </div>{" "}
+                        </div>{" "}
+                        <div className="ti-controls-line">
+                          {" "}
+                          <div className="dot" />{" "}
                         </div>{" "}
                       </div>{" "}
-                      <span className="ti-stars">
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                      </span>{" "}
-                      <div className="ti-review-content">
-                        We had a great experience with Low Rate Home Loan -
-                        Mortgage Broker Pakenham. It was our first home and
-                        Shoaib Afzali was really helpful through the process and
-                        made it look very easy. He was extremely responsive and
-                        made the complicated settlement look really easy. He
-                        worked really hard and was very dedicated through their
-                        services..I would give Shoaib Afzali a 7 star for his
-                        outstanding service...
-                      </div>{" "}
-                      <span
-                        className="ti-read-more"
-                        data-container=".ti-review-content"
-                        data-collapse-text="Hide"
-                        data-open-text="Read more"
-                      />{" "}
-                    </div>{" "}
-                  </div>{" "}
-                  <div
-                    data-empty={0}
-                    data-time={1672704000}
-                    className="ti-review-item source-Google"
-                  >
-                    {" "}
-                    <div className="ti-inner">
-                      {" "}
-                      <div className="ti-review-header">
+                      <div className="ti-footer">
                         {" "}
-                        <div className="ti-profile-img">
+                        <div className="ti-rating-text">
                           {" "}
-                          <img
-                            src="https://lh3.googleusercontent.com/a/AEdFTp7dLg7zn2JDCPpGx34c26_0x3j5znQdjZmlg--O=s120-c-c-rp-w64-h64-mo-br100"
-                            alt="Rubina Nishat"
-                          />{" "}
-                        </div>{" "}
-                        <div className="ti-profile-details">
-                          {" "}
-                          <div className="ti-name"> Rubina Nishat </div>{" "}
-                          <div className="ti-date" />{" "}
+                          <span className="nowrap">
+                            <strong>Google</strong> rating score:{" "}
+                          </span>
+                          <span className="nowrap">
+                            <strong>5.0</strong> of 5,{" "}
+                          </span>
+                          <span className="nowrap">
+                            based on <strong>47 reviews</strong>
+                          </span>{" "}
                         </div>{" "}
                       </div>{" "}
-                      <span className="ti-stars">
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                      </span>{" "}
-                      <div className="ti-review-content">
-                        I am very satisfied, great help. Siawash thank you for
-                        helping us with our home loan. You was very friendly,
-                        patient, always helped me with all my questions, very
-                        responsive. You are going a great job. Keep going bro.
-                        Good luck and Thanks once again.
-                      </div>{" "}
-                      <span
-                        className="ti-read-more"
-                        data-container=".ti-review-content"
-                        data-collapse-text="Hide"
-                        data-open-text="Read more"
-                      />{" "}
                     </div>{" "}
-                  </div>{" "}
-                  <div
-                    data-empty={0}
-                    data-time={1671926400}
-                    className="ti-review-item source-Google"
-                  >
-                    {" "}
-                    <div className="ti-inner">
-                      {" "}
-                      <div className="ti-review-header">
-                        {" "}
-                        <div className="ti-profile-img">
-                          {" "}
-                          <img
-                            src="https://lh3.googleusercontent.com/a/AEdFTp5vlbV2jJoLUU0BXvJV-ZfMyKKM2GEnl6GdL5mk=s120-c-c-rp-w64-h64-mo-br100"
-                            alt="creswell narcis"
-                          />{" "}
-                        </div>{" "}
-                        <div className="ti-profile-details">
-                          {" "}
-                          <div className="ti-name"> creswell narcis </div>{" "}
-                          <div className="ti-date" />{" "}
-                        </div>{" "}
-                      </div>{" "}
-                      <span className="ti-stars">
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                      </span>{" "}
-                      <div className="ti-review-content">
-                        Thank you Rahi for your support, true to you word you
-                        called me and updated every time you said. Very hard
-                        working knowledgeable and given me good advice.
-                      </div>{" "}
-                      <span
-                        className="ti-read-more"
-                        data-container=".ti-review-content"
-                        data-collapse-text="Hide"
-                        data-open-text="Read more"
-                      />{" "}
-                    </div>{" "}
-                  </div>{" "}
-                  <div
-                    data-empty={0}
-                    data-time={1671667200}
-                    className="ti-review-item source-Google"
-                  >
-                    {" "}
-                    <div className="ti-inner">
-                      {" "}
-                      <div className="ti-review-header">
-                        {" "}
-                        <div className="ti-profile-img">
-                          {" "}
-                          <img
-                            src="https://lh3.googleusercontent.com/a-/AD5-WCnMgFfdHtZRPmDJlm9B_bytrd1BukNgZd5dsxM3=s120-c-c-rp-w64-h64-mo-br100"
-                            alt="Adelina Cota"
-                          />{" "}
-                        </div>{" "}
-                        <div className="ti-profile-details">
-                          {" "}
-                          <div className="ti-name"> Adelina Cota </div>{" "}
-                          <div className="ti-date" />{" "}
-                        </div>{" "}
-                      </div>{" "}
-                      <span className="ti-stars">
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                      </span>{" "}
-                      <div className="ti-review-content">
-                        Thanks to Fareen from Low Rate Home Loan Pakenham for
-                        refinancing my property. He kept me in the process from
-                        beginning to the completion of the process. He is very
-                        professional, transparent and honest. He got me cash
-                        back and much better rates. Outstanding service I would
-                        highly recommend him and his team. Thank you team.
-                      </div>{" "}
-                      <span
-                        className="ti-read-more"
-                        data-container=".ti-review-content"
-                        data-collapse-text="Hide"
-                        data-open-text="Read more"
-                      />{" "}
-                    </div>{" "}
-                  </div>{" "}
-                  <div
-                    data-empty={0}
-                    data-time={1671667200}
-                    className="ti-review-item source-Google"
-                  >
-                    {" "}
-                    <div className="ti-inner">
-                      {" "}
-                      <div className="ti-review-header">
-                        {" "}
-                        <div className="ti-profile-img">
-                          {" "}
-                          <img
-                            src="https://lh3.googleusercontent.com/a/AEdFTp7xEL4ZS0xjMhOxPGP3bRL0Aj4isHNHeBGDkQ_o=s120-c-c-rp-w64-h64-mo-br100"
-                            alt="dawood mir"
-                          />{" "}
-                        </div>{" "}
-                        <div className="ti-profile-details">
-                          {" "}
-                          <div className="ti-name"> dawood mir </div>{" "}
-                          <div className="ti-date" />{" "}
-                        </div>{" "}
-                      </div>{" "}
-                      <span className="ti-stars">
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                        <span className="ti-star f" />
-                      </span>{" "}
-                      <div className="ti-review-content">
-                        Thank you Siawash for helping us refinance our home
-                        loan. You have been a great help. Thank you for
-                        providing excellent service from day one. You were very
-                        friendly, courteous and patient throughout the entire
-                        process. You were very quick to respond to all my
-                        queries as well. Highly recommended. Good luck to you
-                        and your company. May you prosper more. 5 stars from me.
-                      </div>{" "}
-                      <span
-                        className="ti-read-more"
-                        data-container=".ti-review-content"
-                        data-collapse-text="Hide"
-                        data-open-text="Read more"
-                      />{" "}
-                    </div>{" "}
-                  </div>{" "}
-                </div>{" "}
-                <div className="ti-controls-line">
-                  {" "}
-                  <div className="dot" />{" "}
-                </div>{" "}
-              </div>{" "}
-              <div className="ti-footer">
-                {" "}
-                <div className="ti-rating-text">
-                  {" "}
-                  <span className="nowrap">
-                    <strong>Google</strong> rating score:{" "}
-                  </span>
-                  <span className="nowrap">
-                    <strong>5.0</strong> of 5,{" "}
-                  </span>
-                  <span className="nowrap">
-                    based on <strong>47 reviews</strong>
-                  </span>{" "}
-                </div>{" "}
-              </div>{" "}
-            </div>{" "}
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        </>
       </div>
-    </div>
-  </div>
-</>
-</div>
 
       <Faq />
       <ContactForm />
