@@ -1,236 +1,208 @@
-import { FeaturedTop } from "@/../components/FeaturedTop";
 import React from "react";
+import { PageTitle } from "../../components/PageTitle";
+import { FeaturedTop } from "../../components/FeaturedTop";
+import { ReputableLenders } from "../../components/ReputableLenders";
+import { FeatureServicesProvides } from "../../components/FeatureServicesProvides";
+import { Faq } from "../../components/Faq";
+import { ContactForm } from "../../components/ContactForm";
 
-export default function BuyInvestementPropert(props) {
+export default function Castlecovemortgagebrokers(props) {
   return (
     <>
-      <div className="wp-block-kadence-rowlayout alignnone">
-        <>
-          <section className="entry-hero page-hero-section entry-hero-layout-fullwidth">
-            <div className="entry-hero-container-inner">
-              <div className="hero-section-overlay" />
-              <div className="hero-container site-container">
-                <header className="entry-header page-title title-align-inherit title-tablet-align-inherit title-mobile-align-inherit">
-                  <h1 className="entry-title">
-                    Investment Property Opportunities: Unlock Your Real Estate
-                    Potential
-                  </h1>{" "}
-                </header>
-                {/* .entry-header */}
-              </div>
-            </div>
-          </section>
-          {/* .entry-hero */}
-        </>
+      <PageTitle title="buy-investment-property" />
+      <FeaturedTop />
 
-        <FeaturedTop />
-        <div
-          id="kt-layout-id_d343fc-f7"
-          className="kt-row-layout-inner kt-layout-id_d343fc-f7"
-        >
-          <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-right-golden kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row  kt-custom-first-width-40  kt-custom-second-width-60 kb-theme-content-width">
-            <div className="wp-block-kadence-column inner-column-1 kadence-column_7f16ed-a0">
-              <div className="kt-inside-inner-col">
-                <h2>Maximise Returns: Find the Perfect Investment Property</h2>
-                <p>
-                  Australia’s real estate market is experiencing a surge in its
-                  value with more investors aiming to invest in the region.{" "}
-                </p>
-                <p>
-                  The primary reason for this surge is because of the country’s
-                  robust economy and stable political environment along with a
-                  favourable investment climate.{" "}
-                </p>
-                <p>
-                  Australia offers a diverse range of investment opportunities,
-                  from metropolitan areas to regional hotspots, catering to
-                  various investment preferences.{" "}
-                </p>
-                <p>
-                  The country’s strong population growth, high demand for
-                  housing, and limited housing supply contribute to a steady
-                  increase in property values.{" "}
-                </p>
-                <p>
-                  By partnering with our trusted Home Mortgage Broker Scoresby
-                  company, you gain access to expert advice, tailored financial
-                  solutions, and an extensive network of property options,
-                  ensuring a seamless and profitable investment journey in
-                  Australia’s thriving real estate market.
-                </p>
-                <h3>Why Invest in Australian Real Estate?</h3>
-                <ol>
-                  <li>
-                    <strong>Strong Market Growth:</strong> Australia’s real
-                    estate market has witnessed steady growth over the years,
-                    offering the potential for capital appreciation and
-                    long-term wealth creation.
-                  </li>
-                </ol>
-                <ol start={2}>
-                  <li>
-                    <strong>Stable Economy:</strong> Australia boasts a stable
-                    and resilient economy, providing a secure investment
-                    environment with low political risk and sound financial
-                    regulations.
-                  </li>
-                </ol>
-                <ol start={3}>
-                  <li>
-                    <strong>Population Growth:</strong> Rapid population growth,
-                    coupled with limited housing supply, creates strong demand
-                    for rental properties, ensuring a steady stream of income
-                    for investors.
-                  </li>
-                </ol>
-                <ol start={4}>
-                  <li>
-                    <strong>Favourable Rental Yields</strong>: Many Australian
-                    cities provide attractive rental yields, offering investors
-                    the opportunity to generate passive income and maximise
-                    their return on investment.
-                  </li>
-                </ol>
-                <ol start={5}>
-                  <li>
-                    <strong>Diverse Investment Options:</strong> From vibrant
-                    metropolitan areas to emerging regional hubs, Australia
-                    offers a diverse range of investment opportunities to suit
-                    different investment strategies and preferences.
-                  </li>
-                </ol>
-                <ol start={6}>
-                  <li>
-                    <strong>Favourable Tax Environment: </strong>Australia
-                    provides various tax benefits for real estate investors.
-                    These include deductions for mortgage interest, property
-                    expenses, depreciation, and capital gains tax concessions
-                    for long-term property ownership.
-                  </li>
-                </ol>
+      {/* Manual 2
+sec and map, Manual */}
+      {/* 1107 to 1138 */}
+
+      <div className="setstyle">
+        <div className="wp-block-kadence-rowlayout alignnone">
+          <div
+            id="kt-layout-id_d343fc-f7"
+            className="kt-row-layout-inner kt-layout-id_d343fc-f7"
+          >
+            <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-right-golden kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row  kt-custom-first-width-40  kt-custom-second-width-60 kb-theme-content-width">
+              <div className="wp-block-kadence-column inner-column-1 kadence-column_7f16ed-a0">
+                <div className="kt-inside-inner-col">
+                  <h2 className="wp-block-heading">
+                    If you’re considering investing in a property, here are a
+                    few factors that you should bear in mind.
+                  </h2>
+                  <p>
+                    When constructing your investment plan, be sure to factor in
+                    the acquisition of a profitable investment property that
+                    suits both your goals and risk tolerance.
+                  </p>
+                  <p>
+                    Once you identify an attractive prospect, calculate whether
+                    or not it will generate sufficient income after expenses –
+                    and if there is any shortfall, determine if you are able to
+                    bridge this gap indefinitely.
+                  </p>
+                  <p>
+                    On top of that, make provisions for times when no one may
+                    occupy the space temporarily. Finally, conduct market
+                    research before settling on a purchase; the type and
+                    location of where you buy could spell out potential returns
+                    over time.
+                  </p>
+                  <h3 className="wp-block-heading">Where to buy</h3>
+                  <ul>
+                    <li>
+                      Spending ample time researching familiar areas is highly
+                      advised.
+                    </li>
+                    <li>
+                      High-growth zones with appealing rental yields and low
+                      vacancy rates should be identified as potential locations
+                      for investment.
+                    </li>
+                    <li>
+                      Additionally, it’s important to discover any planned
+                      alterations in the suburb that could possibly alter future
+                      real estate prices.
+                    </li>
+                  </ul>
+                  <h3 className="wp-block-heading">What to buy</h3>
+                  <ul>
+                    <li>
+                      When searching for a property, be sure to pay attention to
+                      desirable features such as an additional bathroom, parking
+                      area and proximity to schools, stores and transportation.
+                    </li>
+                    <li>
+                      Additionally, determine the estimated maintenance costs
+                      based on its type and age along with any other special
+                      characteristics.
+                    </li>
+                  </ul>
+                  <h3 className="wp-block-heading">How to buy</h3>
+                  <ul>
+                    <li>
+                      Heed caution when it comes to obtaining property
+                      investment advice from a conglomerate of service
+                      providers.
+                    </li>
+                    <li>
+                      You must be aware that developers, accountants, attorneys
+                      and loan brokers may suggest each other’s services.
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div className="wp-block-kadence-column inner-column-2 kadence-column_76524a-2a">
-              <div className="kt-inside-inner-col">
-                <figure className="wp-block-image size-large">
-                  <img
-                    decoding="async"
-                    loading="lazy"
-                    width={1024}
-                    height={683}
-                    src="http://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/investment-property-1024x683.webp"
-                    alt="buy investment property"
-                    className="wp-image-3965"
-                    srcSet="https://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/investment-property-1024x683.webp 1024w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/investment-property-300x200.webp 300w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/investment-property-768x512.webp 768w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/investment-property.webp 1200w"
-                    sizes="(max-width: 1024px) 100vw, 1024px"
-                  />
-                </figure>
-                <h1>How Do We Help You Buy a Good Investment Property?</h1>
-                <p>
-                  Our Mortgage Broker Melbourne company can significantly help
-                  customers buy a good investment property by providing valuable
-                  assistance and expertise throughout the process. Here’s how we
-                  can help:
-                </p>
-                <ol>
-                  <li>
-                    <strong>Financial Guidance:</strong> We evaluate your
-                    financial situation and goals to determine your borrowing
-                    capacity and affordability, helping you understand your
-                    budget for an investment property.
-                  </li>
-                </ol>
-                <ol start={2}>
-                  <li>
-                    <strong>Loan Pre-Approval:</strong> We assist you in
-                    obtaining pre-approval for a loan, which gives you a clear
-                    idea of your purchasing power and helps you make competitive
-                    offers on properties.
-                  </li>
-                </ol>
-                <ol start={3}>
-                  <li>
-                    <strong>Access to Loan Options:</strong> We have access to a
-                    wide range of loan products and lenders, allowing us to find
-                    the most suitable loan options for your investment property
-                    purchase, including competitive interest rates and
-                    favourable terms.
-                  </li>
-                </ol>
-                <ol start={4}>
-                  <li>
-                    <strong>Market Insights:</strong> Our Mortgage Broker
-                    Scoresby experts provide valuable market insights and
-                    analysis, helping you identify areas with strong growth
-                    potential and properties that align with your investment
-                    strategy.
-                  </li>
-                </ol>
-                <ol start={5}>
-                  <li>
-                    <strong>Negotiation Support:</strong> Our expert negotiators
-                    can help you navigate the purchase process, ensuring you
-                    secure the finest possible deal on your investment property.
-                  </li>
-                </ol>
-                <ol start={6}>
-                  <li>
-                    <strong>Paperwork and Documentation:</strong> We assist with
-                    the complex paperwork and documentation involved in the
-                    property purchase, ensuring a smooth and efficient
-                    transaction.
-                  </li>
-                </ol>
-                <ol start={7}>
-                  <li>
-                    <strong>Coordination with Professionals:</strong> Our
-                    mortgage experts closely with real estate agents,
-                    solicitors, and other professionals involved in the
-                    transaction, ensuring seamless communication and
-                    coordination for a successful purchase.
-                  </li>
-                </ol>
-                <ol start={8}>
-                  <li>
-                    <strong>Post-Purchase Support:</strong> Our Mortgage Broker
-                    Scoresby services extend beyond the purchase, providing
-                    ongoing support and guidance on managing your investment
-                    property, refinancing options, and future investment
-                    strategies.
-                  </li>
-                </ol>
+              <div className="wp-block-kadence-column inner-column-2 kadence-column_76524a-2a">
+                <div className="kt-inside-inner-col">
+                  <figure className="wp-block-image size-large">
+                    <img
+                      decoding="async"
+                      loading="lazy"
+                      width={1024}
+                      height={683}
+                      src="https://lowratehomeloan.com.au/wp-content/uploads/2022/12/investment-property-1024x683.webp"
+                      alt="buy investment property"
+                      className="wp-image-3965"
+                      srcSet="https://lowratehomeloan.com.au/wp-content/uploads/2022/12/investment-property-1024x683.webp 1024w, https://lowratehomeloan.com.au/wp-content/uploads/2022/12/investment-property-300x200.webp 300w, https://lowratehomeloan.com.au/wp-content/uploads/2022/12/investment-property-768x512.webp 768w, https://lowratehomeloan.com.au/wp-content/uploads/2022/12/investment-property.webp 1200w"
+                      sizes="(max-width: 1024px) 100vw, 1024px"
+                    />
+                  </figure>
+                  <h1 className="wp-block-heading">
+                    Pros and cons of investing in property
+                  </h1>
+                  <p>
+                    Many view property investment as a safer option compared to
+                    other forms of investments. But even though it appears more
+                    straightforward, there are still risks that you must be
+                    aware of before investing in property. Here’s an overview of
+                    the considerations for successful and secure property
+                    investment.
+                  </p>
+                  <h2 className="wp-block-heading">Pros</h2>
+                  <ul>
+                    <li>
+                      Enhanced stability&nbsp;– Unlike other investments,
+                      property is generally less volatile and can be a reliable
+                      option for those seeking stability.
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      Generating revenue&nbsp;– Enjoy a steady stream of income
+                      when your property is leased to tenants.
+                    </li>
+                    <li>
+                      Long-term Financial Appreciation&nbsp;– When you
+                      eventually put your property up for sale, a rise in its
+                      value can result in an advantageous capital gain.
+                    </li>
+                    <li>
+                      <strong>Tax deductions</strong>&nbsp;– You can offset the
+                      majority of your property costs against rental income,
+                      including interest rates on any loan needed to purchase
+                      the real estate.
+                    </li>
+                    <li>
+                      Tangible asset&nbsp;– By investing in this tangible item,
+                      you’re able to see the impact of your decision.
+                    </li>
+                    <li>
+                      Easy to learn, no expertise necessary&nbsp;–Contrary to
+                      the majority of intricate investments, there is no
+                      requirement for any special expertise when investing in
+                      property. With some instruction and resources, anyone can
+                      easily become a shrewd real estate investor.
+                    </li>
+                  </ul>
+                  <h2 className="wp-block-heading">Cons</h2>
+                  <ul>
+                    <li>
+                      Budget–Although rental income may appear to be a
+                      dependable source of revenue, it may not necessarily cover
+                      all your mortgage payments and related expenses.
+                    </li>
+                    <li>
+                      <strong>Interest rates</strong>&nbsp;–When interest rates
+                      go up, the amount you have to pay back will increase while
+                      your disposable income dwindles.
+                    </li>
+                    <li>
+                      <strong>Vacancy</strong>&nbsp;–As a landlord, there may be
+                      instances when you must pay for expenses out of pocket in
+                      the absence of an occupant.
+                    </li>
+                    <li>
+                      Unbreakable.&nbsp;– When you require quick access to
+                      capital, selling off a bedroom is not an option.
+                    </li>
+                    <li>
+                      Decline in worth&nbsp;–If the property value drops, you
+                      may find yourself in a situation where you owe more money
+                      than your home is worth.
+                    </li>
+                    <li>
+                      Overwhelming upfront and exit expenses&nbsp;– Expenses
+                      such as stamp duty, legal costs and realtor commissions
+                      can add up quickly.
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <h2
-        style={{
-          paddingTop: "var(--wp--preset--spacing--30)",
-          paddingRight: "var(--wp--preset--spacing--30)",
-          paddingBottom: "var(--wp--preset--spacing--30)",
-          paddingLeft: "var(--wp--preset--spacing--30)",
-        }}
-      >
-        Ready to Buy an Investment Property?
-      </h2>
-      <p
-        style={{
-          paddingTop: "var(--wp--preset--spacing--30)",
-          paddingRight: "var(--wp--preset--spacing--30)",
-          paddingBottom: "var(--wp--preset--spacing--30)",
-          paddingLeft: "var(--wp--preset--spacing--30)",
-        }}
-      >
-        Our Mortgage Broker Melbourne Company is here to guide you every step of
-        the way, from financial analysis and loan pre-approval to property
-        selection and negotiation. We understand the importance of finding the
-        right investment property that aligns with your goals and financial
-        aspirations. Trust our expertise, industry connections, and personalised
-        service to help you navigate the real estate market and secure a
-        valuable investment. Partner with our Mortgage Broker Scoresby Firm
-        today.
-      </p>
+
+      <ReputableLenders />
+      <FeatureServicesProvides />
+
+      {/* Tips & Advice / Manual  */}
+      {/* FAQ Tips / Manual */}
+      {/* 1250-1345 */}
+
+      <div className="setstyle"></div>
+
+      <Faq />
+      <ContactForm />
     </>
   );
 }

@@ -1186,9 +1186,9 @@ img.wp-smiley,
             }
         }
 
-        .wp-block-kadence-spacer.kt-block-spacer-_8cd7b3-6e .kt-divider {
+        /* .wp-block-kadence-spacer.kt-block-spacer-_8cd7b3-6e .kt-divider {
             width: 73%;
-        }
+        } */
    
     /* <style id='kb-rowlayout_a82b5b-45-inline-css'> */
         #kt-layout-id_a82b5b-45>.kt-row-column-wrap.kb-theme-content-width {
@@ -2778,3 +2778,5 @@ img.wp-smiley,
         display: block !important;
         padding: 0px !important;
       }
+
+  

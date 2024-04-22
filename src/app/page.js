@@ -5,7 +5,7 @@ import Head from "next/head";
 import Script from "next/script";
 import HomeComp from "./Home/page";
 
-// import GlobalSiteCssJs from "@/app/globalSiteCssJs";
+import "@/../../public/assets/Css/style.css";
 export default function Home() {
   return (
     <div className={styles.main}>

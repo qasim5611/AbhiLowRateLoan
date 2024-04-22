@@ -333,7 +333,7 @@ export function ContactForm(props) {
                                         <img
                                           decoding="async"
                                           loading="lazy"
-                                          src="http://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/lowratehomeloan-logo.svg"
+                                          src="lowratehomeloan-logo.svg"
                                           alt="low rate home loan logo"
                                           className="wp-image-4604"
                                           width="198"
