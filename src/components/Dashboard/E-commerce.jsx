@@ -26,7 +26,7 @@ const ECommerce = () => {
     <>
       <Grid container spacing={2}>
         <Grid item xs={3}>
-          <CardDataStats
+          {/* <CardDataStats
             title="Total views"
             total="$3.456K"
             rate="0.43%"
@@ -49,10 +49,10 @@ const ECommerce = () => {
                 fill=""
               />
             </svg>
-          </CardDataStats>
+          </CardDataStats> */}
         </Grid>
         <Grid item xs={3}>
-          <CardDataStats
+          {/* <CardDataStats
             title="Total Profit"
             total="$45,2K"
             rate="4.35%"
@@ -79,10 +79,10 @@ const ECommerce = () => {
                 fill=""
               />
             </svg>
-          </CardDataStats>
+          </CardDataStats> */}
         </Grid>
         <Grid item xs={3}>
-          <CardDataStats
+          {/* <CardDataStats
             title="Total Product"
             total="2.450"
             rate="2.59%"
@@ -105,10 +105,10 @@ const ECommerce = () => {
                 fill=""
               />
             </svg>
-          </CardDataStats>
+          </CardDataStats> */}
         </Grid>
         <Grid item xs={3}>
-          <CardDataStats
+          {/* <CardDataStats
             title="Total Users"
             total="3.456"
             rate="0.95%"
@@ -135,7 +135,7 @@ const ECommerce = () => {
                 fill=""
               />
             </svg>
-          </CardDataStats>
+          </CardDataStats> */}
         </Grid>
       </Grid>
 
