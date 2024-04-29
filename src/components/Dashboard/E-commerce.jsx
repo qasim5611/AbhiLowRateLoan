@@ -5,7 +5,7 @@ import React from "react";
 // import ChartTwo from "../Charts/ChartTwo";
 // import ChatCard from "../Chat/ChatCard";
 // import TableOne from "../Tables/TableOne";
-// import CardDataStats from "../CardDataStats";
+import CardDataStats from "../CardDataStats";
 
 import Grid from "@mui/material/Grid";
 
@@ -14,7 +14,7 @@ const ECommerce = () => {
     <>
       <Grid container spacing={2}>
         <Grid item xs={3}>
-          {/* <CardDataStats
+          <CardDataStats
             title="Total views"
             total="$3.456K"
             rate="0.43%"
@@ -37,7 +37,7 @@ const ECommerce = () => {
                 fill=""
               />
             </svg>
-          </CardDataStats> */}
+          </CardDataStats>
         </Grid>
         <Grid item xs={3}>
           {/* <CardDataStats
