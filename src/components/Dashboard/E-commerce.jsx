@@ -3,7 +3,7 @@ import React from "react";
 // import ChartThree from "../Charts/ChartThree";
 // import ChartTwo from "../Charts/ChartTwo";
 // import ChatCard from "../Chat/ChatCard";
-import CardDataStats from "../CardDataStats";
+// import CardDataStats from "../CardDataStats";
 import MapOne from "../Maps/MapOne";
 
 import { styled } from "@mui/material/styles";
@@ -21,7 +21,7 @@ const Item = styled(Paper)(({ theme }) => ({
 const ECommerce = () => {
   return (
     <>
-      <Grid container spacing={2}>
+      {/* <Grid container spacing={2}>
         <Grid item xs={3}>
           <CardDataStats
             title="Total views"
@@ -134,7 +134,7 @@ const ECommerce = () => {
             </svg>
           </CardDataStats>
         </Grid>
-      </Grid>
+      </Grid> */}
 
       <Grid container spacing={2}>
         <Grid item xs={8}>
