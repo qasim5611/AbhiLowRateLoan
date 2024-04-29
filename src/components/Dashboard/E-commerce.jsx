@@ -4,7 +4,6 @@ import React from "react";
 // import ChartTwo from "../Charts/ChartTwo";
 // import ChatCard from "../Chat/ChatCard";
 // import CardDataStats from "../CardDataStats";
-import MapOne from "../Maps/MapOne";
 
 // import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
@@ -139,7 +138,6 @@ const ECommerce = () => {
       <Grid container spacing={2}>
         <Grid item xs={8}>
           {/* <ChartTwo /> */}
-          ooooooooooo
         </Grid>
         <Grid item xs={4}>
           {/* <ChartThree /> */}
@@ -148,7 +146,7 @@ const ECommerce = () => {
 
       <Grid container spacing={2}>
         <Grid item xs={12}>
-          <MapOne />
+          {/* <MapOne /> */}
         </Grid>
       </Grid>
 
