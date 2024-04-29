@@ -1,17 +1,17 @@
 "use client";
 import React from "react";
-import ChartOne from "../Charts/ChartOne";
-import ChartThree from "../Charts/ChartThree";
-import ChartTwo from "../Charts/ChartTwo";
-import ChatCard from "../Chat/ChatCard";
-import TableOne from "../Tables/TableOne";
-import CardDataStats from "../CardDataStats";
-import MapOne from "../Maps/MapOne";
+// import ChartOne from "../Charts/ChartOne";
+// import ChartThree from "../Charts/ChartThree";
+// import ChartTwo from "../Charts/ChartTwo";
+// import ChatCard from "../Chat/ChatCard";
+// import TableOne from "../Tables/TableOne";
+// import CardDataStats from "../CardDataStats";
+// import MapOne from "../Maps/MapOne";
 
-import { styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
-import Grid from "@mui/material/Grid";
+// import { styled } from "@mui/material/styles";
+// import Box from "@mui/material/Box";
+// import Paper from "@mui/material/Paper";
+// import Grid from "@mui/material/Grid";
 
 // const Item = styled(Paper)(({ theme }) => ({
 //   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -24,7 +24,7 @@ import Grid from "@mui/material/Grid";
 const ECommerce = () => {
   return (
     <>
-      <h1>Ecommerce Qasiom</h1>
+      <h1>Ecommerce Qasiom ok</h1>
       {/* <Grid container spacing={2}>
         <Grid item xs={3}>
           <CardDataStats
