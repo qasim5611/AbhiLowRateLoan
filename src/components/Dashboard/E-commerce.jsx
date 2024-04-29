@@ -6,7 +6,7 @@ import ChartTwo from "../Charts/ChartTwo";
 import ChatCard from "../Chat/ChatCard";
 import TableOne from "../Tables/TableOne";
 import CardDataStats from "../CardDataStats";
-import MapOne from "../Maps/MapOne";
+// import MapOne from "../Maps/MapOne";
 
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
@@ -142,7 +142,7 @@ const ECommerce = () => {
 
       <Grid container spacing={2}>
         <Grid item xs={12}>
-          <MapOne />
+          {/* <MapOne /> */}
         </Grid>
       </Grid>
 
