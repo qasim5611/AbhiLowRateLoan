@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect } from "react";
 
-import Adminlayout from "@/adminPanel/Adminlayout";
-import DashboardEcommerce from "@/../components/Dashboard/E-commerce";
+// import Adminlayout from "@/adminPanel/Adminlayout";
+// import DashboardEcommerce from "@/../components/Dashboard/E-commerce";
 
 export default function HeroSection() {
   return (
