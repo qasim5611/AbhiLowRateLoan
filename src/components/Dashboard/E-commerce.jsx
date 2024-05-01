@@ -8,7 +8,6 @@ import TableOne from "../Tables/TableOne";
 import CardDataStats from "../CardDataStats";
 
 import Grid from "@mui/material/Grid";
-import MapOne from "../Maps/MapOne";
 
 const ECommerce = () => {
   return (
@@ -139,7 +138,7 @@ const ECommerce = () => {
 
       <Grid container spacing={2}>
         <Grid item xs={12}>
-          <MapOne />
+          {/* <MapOne /> */}
         </Grid>
       </Grid>
 
