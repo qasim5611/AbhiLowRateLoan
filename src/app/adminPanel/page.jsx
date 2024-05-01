@@ -8,7 +8,7 @@ export default function HeroSection() {
   return (
     <Adminlayout>
       <div style={{ marginTop: "65px", padding: "20px" }}>
-        <h3>Dashboard Advanced here</h3>
+        {/* <h3>Dashboard Advanced here</h3> */}
         <DashboardEcommerce />
       </div>
     </Adminlayout>

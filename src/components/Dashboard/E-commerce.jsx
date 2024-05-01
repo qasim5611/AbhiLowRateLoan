@@ -3,11 +3,12 @@ import React from "react";
 // import ChartOne from "../Charts/ChartOne";
 // import ChartThree from "../Charts/ChartThree";
 // import ChartTwo from "../Charts/ChartTwo";
-// import ChatCard from "../Chat/ChatCard";
-// import TableOne from "../Tables/TableOne";
+import ChatCard from "../Chat/ChatCard";
+import TableOne from "../Tables/TableOne";
 import CardDataStats from "../CardDataStats";
 
 import Grid from "@mui/material/Grid";
+import MapOne from "../Maps/MapOne";
 
 const ECommerce = () => {
   return (
@@ -40,7 +41,7 @@ const ECommerce = () => {
           </CardDataStats>
         </Grid>
         <Grid item xs={3}>
-          {/* <CardDataStats
+          <CardDataStats
             title="Total Profit"
             total="$45,2K"
             rate="4.35%"
@@ -67,10 +68,10 @@ const ECommerce = () => {
                 fill=""
               />
             </svg>
-          </CardDataStats> */}
+          </CardDataStats>
         </Grid>
         <Grid item xs={3}>
-          {/* <CardDataStats
+          <CardDataStats
             title="Total Product"
             total="2.450"
             rate="2.59%"
@@ -93,10 +94,10 @@ const ECommerce = () => {
                 fill=""
               />
             </svg>
-          </CardDataStats> */}
+          </CardDataStats>
         </Grid>
         <Grid item xs={3}>
-          {/* <CardDataStats
+          <CardDataStats
             title="Total Users"
             total="3.456"
             rate="0.95%"
@@ -123,7 +124,7 @@ const ECommerce = () => {
                 fill=""
               />
             </svg>
-          </CardDataStats> */}
+          </CardDataStats>
         </Grid>
       </Grid>
 
@@ -138,14 +139,14 @@ const ECommerce = () => {
 
       <Grid container spacing={2}>
         <Grid item xs={12}>
-          {/* <MapOne /> */}
+          <MapOne />
         </Grid>
       </Grid>
 
-      {/* <div>
+      <div>
         <TableOne />
-      </div> */}
-      {/* <ChatCard /> */}
+      </div>
+      <ChatCard />
       <div className="mt-4 grid grid-cols-12 gap-4 md:mt-6 md:gap-6 2xl:mt-7.5 2xl:gap-7.5">
         {/* <ChartOne /> */}
         {/* <ChartTwo />
