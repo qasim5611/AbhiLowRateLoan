@@ -38,35 +38,20 @@ export function FeatureServices(props) {
                       <div className="wp-block-kadence-column inner-column-2 kadence-column_325881-f2">
                         <div className="kt-inside-inner-col">
                           <p>
-                            Our Mortgage Broker Melbourne firm is one of the
-                            leading mortgaging companies in the region and is
-                            certainly your trusted partner in navigating the
-                            world of home financing.{" "}
+                            Our Aussie mortgage brokers in Melbourne understand
+                            that the diverse needs of most people do not have
+                            “one-size-fits-all” answers.
+                            <br />
+                            <br />
+                            We will acquire the right loan to suit your specific
+                            requirements by getting to know you, understanding
+                            your circumstance, and collaborating with both banks
+                            and non-bank lenders.
+                            <br />
+                            <br />
+                            We have access to more than 53 lenders in order to
+                            find the right solution for you.
                           </p>
-
-                          <p>
-                            With years of expertise and a commitment to
-                            exceptional service, we are here to guide you
-                            through the mortgage process, offering personalised
-                            solutions to suit your unique needs. Whether
-                            you&#8217;re a first-time homebuyer or refinancing
-                            your existing loan, we strive to make your
-                            homeownership a reality.
-                          </p>
-
-                          <p>Our Mortgage Broker Scoresby company offers:</p>
-
-                          <ul>
-                            <li>Consulting on home mortgages.</li>
-
-                            <li>
-                              Multiple loan options from over 53+ lenders.
-                            </li>
-
-                            <li>Loan paperwork completion services.</li>
-
-                            <li>Mortgage settlement.</li>
-                          </ul>
                         </div>
                       </div>
                     </div>

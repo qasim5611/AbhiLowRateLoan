@@ -30,9 +30,7 @@ export function Hardwork(props) {
                             className="kt-adv-heading_d86969-75 wp-block-kadence-advancedheading"
                             data-kb-block="kb-adv-heading_d86969-75"
                           >
-                            <strong>
-                              Our Process-Driven Approach to Home Financing
-                            </strong>
+                            <strong>STRAIGHTFORWARD APPLICATION PROCESS</strong>
                           </h2>
                         </div>
                       </div>
@@ -71,13 +69,14 @@ export function Hardwork(props) {
                                       className="kt-adv-heading_6073dd-4d black-bold wp-block-kadence-advancedheading"
                                       data-kb-block="kb-adv-heading_6073dd-4d"
                                     >
-                                      <strong>Requirement Assessment</strong>
+                                      <strong>CONSULT</strong>
                                     </h6>
 
                                     <p>
-                                      We begin the process by discussing your
-                                      home loan requirements with our
-                                      experienced mortgage broker.
+                                      Initial consultation (via the phone,
+                                      skype, or face to face) wherever we have a
+                                      tendency to establish your motivations and
+                                      requirement
                                     </p>
                                   </div>
                                 </div>
@@ -108,14 +107,12 @@ export function Hardwork(props) {
                                       className="kt-adv-heading_d4af8e-45 black-bold wp-block-kadence-advancedheading"
                                       data-kb-block="kb-adv-heading_d4af8e-45"
                                     >
-                                      <strong>Lender Comparison</strong>
+                                      <strong>GATHER</strong>
                                     </h6>
 
                                     <p>
-                                      After analysing your mortgage needs, we
-                                      will provide you with the most suitable
-                                      loan products and options from our money
-                                      lenders.
+                                      Information gathering to verify your
+                                      monetary status
                                     </p>
                                   </div>
                                 </div>
@@ -146,15 +143,12 @@ export function Hardwork(props) {
                                       className="kt-adv-heading_c6531d-72 black-bold wp-block-kadence-advancedheading"
                                       data-kb-block="kb-adv-heading_c6531d-72"
                                     >
-                                      <strong>Application Preparation</strong>
+                                      <strong>REVIEW & PROPOSAL</strong>
                                     </h6>
 
                                     <p>
-                                      Upon selection of a lender, we will
-                                      further assist you in completing the
-                                      mortgage application which will include
-                                      personal and financial details, property
-                                      information, and supporting documents.
+                                      We provide credit assistance in relation
+                                      to a loan application.
                                     </p>
                                   </div>
                                 </div>
@@ -189,14 +183,14 @@ export function Hardwork(props) {
                                       className="kt-adv-heading_285c1a-be black-bold wp-block-kadence-advancedheading"
                                       data-kb-block="kb-adv-heading_285c1a-be"
                                     >
-                                      <strong>Loan Approval</strong>
+                                      <strong>AGREE & IMPLEMENT</strong>
                                     </h6>
 
                                     <p>
-                                      After analysing and verifying your details
-                                      and supporting documents, the lender will
-                                      either send approval or reject the loan
-                                      application.
+                                      Take the time to navigate through all our
+                                      lenders and find the possible available
+                                      low rate with desired features to save
+                                      clients money
                                     </p>
                                   </div>
                                 </div>
@@ -227,13 +221,12 @@ export function Hardwork(props) {
                                       className="kt-adv-heading_b7a6fe-86 black-bold wp-block-kadence-advancedheading"
                                       data-kb-block="kb-adv-heading_b7a6fe-86"
                                     >
-                                      <strong>Fund Dispersal</strong>
+                                      <strong>COMPLETE</strong>
                                     </h6>
 
                                     <p>
-                                      If approved, and the offer is selected by
-                                      you, the loan amount would be sanctioned
-                                      and transferred to your bank account.
+                                      Finalise approval (s), prepare formal
+                                      paperwork to be sign
                                     </p>
                                   </div>
                                 </div>
@@ -264,13 +257,11 @@ export function Hardwork(props) {
                                       className="kt-adv-heading_de4d95-57 black-bold wp-block-kadence-advancedheading"
                                       data-kb-block="kb-adv-heading_de4d95-57"
                                     >
-                                      <strong>Loan Settlement</strong>
+                                      <strong>SETTLE</strong>
                                     </h6>
 
                                     <p>
-                                      When the settlement date for the acquired
-                                      loan approaches, we will coordinate the
-                                      entire settlement process for you.
+                                      Coordination of the settlement process
                                     </p>
                                   </div>
                                 </div>

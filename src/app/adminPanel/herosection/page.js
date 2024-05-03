@@ -3,30 +3,51 @@
 import React from "react";
 
 import Adminlayout from "../Adminlayout";
-import FormElm from "@/../components/FormElements/index";
 
 import Breadcrumb from "@/../components/Breadcrumbs/Breadcrumb";
-import CheckboxFive from "@/../components/Checkboxes/CheckboxFive";
-import CheckboxFour from "@/../components/Checkboxes/CheckboxFour";
-import CheckboxOne from "@/../components/Checkboxes/CheckboxOne";
-import CheckboxThree from "@/../components/Checkboxes/CheckboxThree";
-import CheckboxTwo from "@/../components/Checkboxes/CheckboxTwo";
-import SwitcherFour from "@/../components/Switchers/SwitcherFour";
-import SwitcherOne from "@/../components/Switchers/SwitcherOne";
-import SwitcherThree from "@/../components/Switchers/SwitcherThree";
-import SwitcherTwo from "@/../components/Switchers/SwitcherTwo";
-import DatePickerTwo from "@/../components/FormElements/DatePicker/DatePickerTwo";
-import DatePickerOne from "@/../components/FormElements/DatePicker/DatePickerOne";
-import MultiSelect from "@/../components/FormElements/MultiSelect";
-import SelectGroupTwo from "@/../components/SelectGroup/SelectGroupTwo";
+import { Grid, TextField } from "@mui/material";
+
 export default function HeroSection(props) {
   return (
     <Adminlayout>
-      <div style={{ marginTop: "65px", padding: "20px" }}>
-        <Breadcrumb pageName="HeroSection" />
+      <div style={{ marginTop: "65px", padding: "20px", width: "100%" }}>
+        <Breadcrumb pageName="Home Banner" />
 
-        <h3>Hero Section</h3>
-        <FormElm />
+        <Grid container spacing={2}>
+          <Grid item xs={12}>
+            <label for="heroSec" className="lblform">
+              Banner Tag Line:
+            </label>
+
+            <textarea id="heroSec" name="w3review" rows="3" cols="30">
+              Please Enter:
+            </textarea>
+          </Grid>
+        </Grid>
+
+        <Grid container spacing={2}>
+          <Grid item xs={6}>
+            <label for="heroSec" className="lblform">
+              Refinance Button Text
+            </label>
+            <br />
+            <input type="text" className="textfild" placeholder="(Left)" />
+          </Grid>
+
+          <Grid item xs={6}>
+            <label for="heroSec" className="lblform">
+              Lown Button Text
+            </label>
+            <br />
+            <input type="text" className="textfild" placeholder="(Right)" />
+          </Grid>
+        </Grid>
+        <br />
+        <Grid container spacing={2}>
+          <Grid item>
+            <button>Update Home Banner</button>
+          </Grid>
+        </Grid>
       </div>
     </Adminlayout>
   );

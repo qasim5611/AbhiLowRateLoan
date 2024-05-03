@@ -53,9 +53,9 @@ function HomeComp({ data, update }) {
                                       className="kt-adv-heading_9de6d4-1d wp-block-kadence-advancedheading has-theme-palette-9-color has-text-color"
                                       data-kb-block="kb-adv-heading_9de6d4-1d"
                                     >
-                                      Mortgages that Fit Your Life: Tailored
-                                      Solutions by Trusted Mortgage Broker
-                                      Scoresby
+                                      We will get you the
+                                      <br />
+                                      right home loan in Australia
                                     </h1>
 
                                     <div className="is-content-justification-center is-layout-flex wp-container-1 wp-block-buttons">
@@ -67,9 +67,7 @@ function HomeComp({ data, update }) {
                                           }}
                                           className="wp-block-button__link wp-element-button"
                                         >
-                                          <strong>
-                                            Refinance Your Home Loan
-                                          </strong>
+                                          <strong>i want to refinance</strong>
                                         </button>
                                       </div>
 
@@ -78,7 +76,7 @@ function HomeComp({ data, update }) {
                                           className="wp-block-button__link has-theme-palette-1-background-color has-background wp-element-button"
                                           href="#"
                                         >
-                                          <strong>Get a New Home Loan</strong>
+                                          <strong>i want to buy a home</strong>
                                         </a>
                                       </div>
                                     </div>

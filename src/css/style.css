@@ -1310,6 +1310,15 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 
+.lblform{
+    color: #008000;
+}
 
+textarea, input[type="text"]{
+    border: 0.1px #ffd186 solid !important;
+    box-shadow: inset 5px 0px 0px #ffd186 !important;
+}
 
-
+.textfild{
+    width: 100%;
+}

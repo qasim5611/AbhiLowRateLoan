@@ -122,8 +122,7 @@ function Header({ data, update }) {
                                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3959"
                                       >
                                         <Link href={"/buy-a-new-home"}>
-                                          Buy a New Home: Mortgage Solutions
-                                          Tailored for New Home Buyers
+                                          Buy a new home
                                         </Link>
                                       </li>
                                       <li
@@ -131,8 +130,7 @@ function Header({ data, update }) {
                                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3958"
                                       >
                                         <Link href={"/refinance-home-loan"}>
-                                          Refinance Your Home &#8211; Lower Your
-                                          Payments!
+                                          Refinancemy home loan
                                         </Link>
                                       </li>
                                       <li
@@ -140,8 +138,7 @@ function Header({ data, update }) {
                                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3957"
                                       >
                                         <Link href={"/buy-investment-property"}>
-                                          Investment Property Opportunities:
-                                          Unlock Your Real Estate Potential
+                                          Buy an Investment Property
                                         </Link>
                                       </li>
                                       <li

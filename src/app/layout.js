@@ -221,6 +221,7 @@ export default function RootLayout({ children }) {
         className="home page-template-default page page-id-4 wp-custom-logo wp-embed-responsive footer-on-bottom animate-body-popup hide-focus-outline link-style-no-underline content-title-style-hide content-width-fullwidth content-style-unboxed content-vertical-padding-hide non-transparent-header mobile-non-transparent-header"
       >
         {pathname === "/adminPanel" ||
+        pathname === "/signup" ||
         pathname === "/adminPanel/herosection" ? null : (
           <Header />
         )}
@@ -230,6 +231,7 @@ export default function RootLayout({ children }) {
         {children}
 
         {pathname === "/adminPanel" ||
+        pathname === "/signup" ||
         pathname === "/adminPanel/herosection" ? null : (
           <Footer />
         )}

@@ -5,32 +5,83 @@ import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import API from "../url";
 
+// const token = localStorage.getItem("token");
 const cookies = new Cookies();
 
 const initialState = {
-  loading: false,
-  SignupMsg: null,
-  error: null,
-  RegEmail: null,
-
-  VerifyRegTokenMailMsg: null,
-
-  loginLoading: false,
-  LoginMsg: null,
-  LoginAuth: false,
-  LoginToken: null,
-
-  ForgLoading: false,
-  ForgPassMsg: null,
-  ForgPassMsgMail: null,
-
-  TokenMsgPassLoading: false,
-  TokenMsgPassUpdate: null,
-  TokenEmailPassUpdate: null,
-
-  resetPassLoading: false,
-  resetPassMsg: null,
+  SignupMsg: "",
+  LoginMsg: "",
+  Email: "",
+  TokenMsg: "",
+  data: {
+    created: "",
+    email: "",
+    id: "",
+    isVerified: "",
+    jwtToken: "",
+    msg: "",
+    name: "",
+    referral: "",
+    refreshToken: "",
+    role: "",
+  },
+  userDetail: "",
+  userInfo: "",
+  ForgPassMsg: "",
+  ForgPassMsgMail: "",
+  PassUpdateMsg: "",
+  TokenMsgPassUpdate: "",
 };
+
+export const authuser = createAsyncThunk("auth/authuser", async (body) => {
+  try {
+    const response = await axios.post(API + "/authenticate", body);
+    if (response.data.msg === "Login Successfull") {
+      return { type: "DATA_LOGIN", payload: response.data };
+    }
+    return { type: "MSG_LOGINS", payload: response.data };
+  } catch (error) {
+    console.error(error);
+    throw error;
+  }
+});
+
+export const logoutuser = createAsyncThunk("auth/logoutuser", async () => {
+  return { type: "LOGOUT" };
+});
+
+export const forgotpass = createAsyncThunk("auth/forgotpass", async (body) => {
+  try {
+    const response = await axios.post(API + "/forgot-password", body);
+    if (response.data.msg === "Email Not Found.") {
+      toast.error("Email Not Found", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    } else if (
+      response.data.msg === "Cool Email Found, Redirecting to Change Password"
+    ) {
+      toast.info("Redirecting to Change Password", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+      return { type: "FORG_PASSERR", payload: response.data };
+    }
+  } catch (error) {
+    console.error(error);
+    throw error;
+  }
+});
 
 export const signupdata = createAsyncThunk("auth/signupdata", async (body) => {
   try {
@@ -38,56 +89,55 @@ export const signupdata = createAsyncThunk("auth/signupdata", async (body) => {
     return response.data;
   } catch (error) {
     // Handle error
-    console.log(error);
-    throw error;
-  }
-});
-
-export const VerifySignupToken = createAsyncThunk(
-  "auth/VerifySignupToken",
-  async (body) => {
-    try {
-      const response = await axios.post(API + "/verifyEmailTokenSignup", body);
-      return response.data;
-    } catch (error) {
-      // Handle error
-      console.log(error);
-      throw error;
-    }
-  }
-);
-
-export const authuser = createAsyncThunk("auth/authuser", async (body) => {
-  try {
-    const response = await axios.post(API + "/authenticate", body);
-    return response.data;
-  } catch (error) {
-    // Handle error
-    console.log(error);
-    throw error;
-  }
-});
-
-export const forgotpass = createAsyncThunk("auth/forgotpass", async (body) => {
-  try {
-    const response = await axios.post(API + "/forgot-password", body);
-    return response.data;
-  } catch (error) {
-    // Handle error
-    console.log(error);
+    console.error(error);
     throw error;
   }
 });
 
 export const VerifyTokenForPass = createAsyncThunk(
-  "auth/VerifyTokenForPass",
+  "auth/signupdata",
   async (body) => {
     try {
-      const response = await axios.post(API + "/VerifyTokenforpass", body);
-      return response.data;
+      axios
+        .post(API + "/VerifyTokenforpass", body)
+        .then((resp) => {
+          console.log(resp.data);
+          if (resp.data.msg == "Sorry Your Token Is Not Correct") {
+            toast.error("Sorry Your Token Is Not Correct", {
+              position: "top-right",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+            });
+          } else if (
+            resp.data.msg ==
+            "You Have Been Verified for Password Update. Redirecting..."
+          ) {
+            toast.success(
+              "You Have Been Verified for Password Update. Redirecting...",
+              {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+              }
+            );
+
+            return { type: "ISTOKEN_OKTOEDIT", payload: { data: resp.data } };
+          }
+        })
+        .catch((err) => {
+          console.log(err);
+        });
     } catch (error) {
       // Handle error
-      console.log(error);
+      console.error(error);
       throw error;
     }
   }
@@ -97,146 +147,126 @@ export const resetpassw = createAsyncThunk(
   "auth/resetpassword",
   async (body) => {
     try {
-      const response = await axios.post(API + "/resetpassword", body);
-      return response.data;
+      axios
+        .post(API + "/resetpassword", body)
+        .then((resp) => {
+          console.log(resp.data);
+
+          if (resp.data.msg === "Password Updated") {
+            toast.success("Password Updated, You can Login Now!", {
+              position: "top-right",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+            });
+          }
+        })
+        .catch((err) => {
+          console.log(err);
+        });
     } catch (error) {
-      console.log(error);
+      console.error(error);
       throw error;
     }
   }
 );
-
 export const globalSlice = createSlice({
   name: "global",
   initialState,
   reducers: {
-    clearSignupMsg: (state) => {
-      state.loading = false;
-      state.SignupMsg = null;
+    DATA_LOGIN: (state, action) => {
+      console.log("reducer run login", action.payload);
+      console.log("reducer run", action.payload.jwtToken);
+      let date = new Date();
+      let mydate = date.now;
+      if (action.payload.jwtToken) {
+        cookies.set("jwtToken", action.payload.jwtToken);
+        cookies.set("myRole", action.payload.user.role);
+        console.log(cookies.get("jwtToken")); // Pacman
+      }
+      state.data = action.payload;
+    },
+    MSG_LOGINS: (state, action) => {
+      console.log("reducer run", action.payload);
+      state.LoginMsg = action.payload.msg;
+    },
+    LOGOUT: (state, action) => {
+      cookies.remove("jwtToken");
+    },
+    FORG_PASSERR: (state, action) => {
+      state.ForgPassMsg = action.payload.msg;
+      state.ForgPassMsgMail = action.payload.user.email;
+    },
+    FORG_PASS: (state, action) => {
+      state.ForgPassMsg = action.payload.msg;
+    },
+    ISTOKEN_OK: (state, action) => {
+      state.TokenMsg = action.payload.data.msg;
+    },
+    ISTOKEN_OKTOEDIT: (state, action) => {
+      state.TokenMsgPassUpdate = action.payload.data.msg;
+    },
+    UPDATEPASS_MSG: (state, action) => {
+      state.PassUpdateMsg = action.payload.data.msg;
+    },
+    CLEAR_STATE: (state, action) => {
+      state.PassUpdateMsg = action.payload.data;
     },
 
-    clearLoginMsg: (state) => {
-      state.loginLoading = false;
-      state.LoginMsg = null;
-    },
-    logoutusernow: (state) => {
-      state.LoginMsg = null;
-      state.LoginAuth = false;
-      state.LoginToken = null;
+    DUPERR_MSG: (state, action) => {
+      state.SignupMsg = action.payload.data.msg;
     },
 
-    clearForgotpassMsg: (state) => {
-      state.ForgLoading = false;
-      state.ForgPassMsg = null;
+    clearState: (state) => {
+      state.PassUpdateMsg = "";
     },
-
-    clearVerifyTokenMsg: (state) => {
-      state.TokenMsgPassLoading = false;
-      state.TokenMsgPassUpdate = null;
+    dupErrorMsg: (state, action) => {
+      state.SignupMsg = action.payload.data.msg;
+    },
+    clearStateUpdatePass: (state, action) => {
+      state.PassUpdateMsg = action.payload.data;
     },
   },
 
   extraReducers: (builder) => {
     builder
-      .addCase(signupdata.pending, (state) => {
-        state.loading = true;
-      })
-
-      .addCase(signupdata.fulfilled, (state, action) => {
-        state.loading = false;
-        state.SignupMsg = action.payload.msg;
-        state.RegEmail = action.payload.curruser;
-      })
-      .addCase(signupdata.rejected, (state, action) => {
-        state.loading = false;
-        state.error = action.error.message;
-      }) //////////////////////////////////////////////////////////////////////
-      .addCase(VerifySignupToken.fulfilled, (state, action) => {
-        console.log("Verify fulfilled", action.payload.msg);
-        state.loading = false;
-        state.VerifyRegTokenMailMsg = action.payload.msg;
-        // state.RegEmail = action.payload.curruser;
-      })
-      .addCase(VerifySignupToken.rejected, (state, action) => {
-        console.log("Verify rejected", action.payload.msg);
-        state.loading = false;
-        state.VerifyRegTokenMailMsg = action.payload.msg;
-        // state.RegEmail = action.payload.curruser;
-      }) //////////////////////////////////////////////////////////////////////////////
-      .addCase(authuser.pending, (state) => {
-        console.log("pending auth");
-        state.loginLoading = true;
-      })
       .addCase(authuser.fulfilled, (state, action) => {
-        state.loginLoading = false;
-
-        if (action.payload.token) {
-          // localStorage.setItem("jwtToken", action.payload.jwtToken);
-          cookies.set("jwtToken", action.payload.token);
-
-          console.log(cookies.get("jwtToken"));
-          state.LoginAuth = action.payload.auth;
-          state.LoginToken = action.payload.token;
-          state.LoginMsg = action.payload.msg;
-        } else {
-          state.LoginAuth = action.payload.auth;
-          state.LoginToken = action.payload.token;
-          state.LoginMsg = action.payload.msg;
-        }
+        state.data = action.payload;
       })
       .addCase(authuser.rejected, (state, action) => {
-        state.loginLoading = false;
+        state.LoginMsg = action.payload.msg;
       })
-      /////////////////////////////////////////////////////////////////////////
-      .addCase(forgotpass.pending, (state) => {
-        state.ForgLoading = true;
+      .addCase(logoutuser.fulfilled, (state) => {
+        cookies.remove("jwtToken");
+        state.data = "";
       })
-
       .addCase(forgotpass.fulfilled, (state, action) => {
-        state.ForgLoading = false;
-        console.log("action.payloa for ForgotPass", action.payload);
         state.ForgPassMsg = action.payload.msg;
-        state.ForgPassMsgMail = action.payload.user;
+        state.ForgPassMsgMail = action.payload.user.email;
       })
       .addCase(forgotpass.rejected, (state, action) => {
-        state.loading = false;
-      })
-      /////////////////////////////////////////////////////////////////////////
-      .addCase(VerifyTokenForPass.pending, (state) => {
-        state.TokenMsgPassLoading = true;
-      })
-
-      .addCase(VerifyTokenForPass.fulfilled, (state, action) => {
-        state.TokenMsgPassLoading = false;
-        console.log("VerifyTokenForPass", action.payload);
-
-        state.TokenMsgPassUpdate = action.payload.msg;
-        state.TokenEmailPassUpdate = action.payload.email;
-      })
-      .addCase(VerifyTokenForPass.rejected, (state, action) => {
-        state.TokenMsgPassLoading = false;
-      }) //////////////////////////////////////////////////////////////////////
-
-      /////////////////////////////////////////////////////////////////////////
-      .addCase(resetpassw.pending, (state) => {
-        state.resetPassLoading = true;
-      })
-      .addCase(resetpassw.fulfilled, (state, action) => {
-        state.resetPassLoading = false;
-        state.resetPassMsg = action.payload.msg;
-      })
-      .addCase(resetpassw.rejected, (state, action) => {
-        state.resetPassLoading = false;
-      }); //////////////////////////////////////////////////////////////////////
+        console.error(action.payload);
+      });
   },
 });
 
 export const {
-  clearSignupMsg,
-  clearLoginMsg,
-  logoutusernow,
-  clearForgotpassMsg,
-  clearVerifyTokenMsg,
+  DATA_LOGIN,
+  MSG_LOGINS,
+  LOGOUT,
+  FORG_PASSERR,
+  FORG_PASS,
+  ISTOKEN_OK,
+  ISTOKEN_OKTOEDIT,
+  UPDATEPASS_MSG,
+  CLEAR_STATE,
+  DUPERR_MSG,
+  clearState,
+  dupErrorMsg,
+  clearStateUpdatePass,
 } = globalSlice.actions;
 
 export const selectCurrentUser = (state) => state.global.user;

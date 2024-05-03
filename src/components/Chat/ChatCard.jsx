@@ -61,7 +61,7 @@ const ChatCard = () => {
       </h4>
 
       <Grid container>
-        {chatData.map((chat, key) => (
+        {chatData.slice(0, 4).map((chat, key) => (
           <Link
             href="/"
             className="flex items-center gap-5 px-7.5 py-3 hover:bg-gray-3 dark:hover:bg-meta-4"

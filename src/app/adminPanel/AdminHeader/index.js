@@ -41,10 +41,17 @@ export default function AdminHeader({ open, setOpen }) {
   }));
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box>
       {/* <CssBaseline /> */}
       <AppBar position="fixed" open={open} style={{ backgroundColor: "green" }}>
-        <Toolbar>
+        <Toolbar
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "space-between",
+          }}
+        >
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -58,14 +65,23 @@ export default function AdminHeader({ open, setOpen }) {
             <MenuIcon />
           </IconButton>
 
-          <Link
-            href="/adminPanel"
-            style={{ textDecoration: "none", color: "white" }}
-          >
-            <Typography variant="h6" noWrap component="div">
-              Admin Panel
-            </Typography>
-          </Link>
+          <Box>
+            <Link
+              href="/adminPanel"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              <Typography variant="h6" noWrap component="div">
+                Admin Panel (Low Rate Home Loan)
+              </Typography>
+            </Link>
+          </Box>
+          <Box>
+            <Link href="/" style={{ textDecoration: "none", color: "white" }}>
+              <Typography variant="h6" noWrap component="div">
+                Logout
+              </Typography>
+            </Link>
+          </Box>
         </Toolbar>
       </AppBar>
     </Box>
