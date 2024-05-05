@@ -1,5 +1,6 @@
 import { FeaturedTop } from "@/../components/FeaturedTop";
 import React from "react";
+import { ContactForm } from "../../components/ContactForm";
 
 export default function BuyNewHome(props) {
   return (
@@ -10,10 +11,7 @@ export default function BuyNewHome(props) {
             <div className="hero-section-overlay" />
             <div className="hero-container site-container">
               <header className="entry-header page-title title-align-inherit title-tablet-align-inherit title-mobile-align-inherit">
-                <h1 className="entry-title">
-                  Buy a New Home: Mortgage Solutions Tailored for New Home
-                  Buyers
-                </h1>{" "}
+                <h1 className="entry-title">Buy a new home</h1>{" "}
               </header>
               {/* .entry-header */}
             </div>
@@ -41,47 +39,47 @@ export default function BuyNewHome(props) {
                           <div className="wp-block-kadence-column inner-column-1 kadence-column_7f16ed-a0">
                             <div className="kt-inside-inner-col">
                               <p>
-                                Our Mortgage Broker Scoresby understands that
-                                finding the right mortgage solution is crucial
-                                for new home buyers, and that’s why we are here
-                                to assist you every step of the way. Our
-                                tailored mortgage solutions are designed to meet
-                                the unique needs of new home buyers, offering
-                                competitive rates, flexible terms, and expert
-                                guidance.&nbsp;
+                                Purchasing a new home can cause a wide range of
+                                emotions. It can be daunting and very
+                                challenging.
+                                <br />
+                                There are too many things to consider, including
+                                how much you can afford, the type of house you
+                                desire, and all those extra appointments you’ll
+                                need to fit into your busy schedule.
+                                <br />
+                                <br />
+                                Our mortgage brokers at Low Rate Home Loan can
+                                help you with all aspects of the home loan
+                                process
+                                <br />
+                                <br />
+                                Establishing how much you can afford to borrow
+                                and the options available to you.
+                                <br />
+                                <br />
+                                Helping you apply for the Government’s First
+                                Home Owners Grant if you are eligible.
+                                <br />
+                                <br />
+                                Determining what fees/costs are involved
+                                including stamp duty, legal fees, building and
+                                pest inspections, property valuation and
+                                lender´s mortgage insurance.
+                                <br />
+                                <br />
+                                Finding what type of loan is right for you from
+                                hundreds of different home loans from our wide
+                                panel of lenders.
+                                <br />
+                                <br />
+                                Completing all the necessary documents.
+                                <br />
+                                <br />
+                                Running around for you, from pre-approval right
+                                through to settlement of your new home so you
+                                can spend more time looking for the right home.
                               </p>
-                              <p>
-                                Whether you’re a first-time buyer or upgrading
-                                to a new home, we are committed to making your
-                                home-buying journey smooth and fulfilling. So,
-                                explore our range of mortgage solutions and
-                                begin your path to homeownership today.
-                              </p>
-                              <ul>
-                                <li>
-                                  Certified and experienced team of mortgage
-                                  experts.
-                                </li>
-                                <li>
-                                  Hassle-free loan experience for the clients.
-                                </li>
-                                <li>
-                                  No brokerage fees from the customers.&nbsp;
-                                </li>
-                                <li>
-                                  53+ Money lending options
-                                  available.&nbsp;&nbsp;
-                                </li>
-                                <li>Loan application Preparation.&nbsp;</li>
-                                <li>
-                                  High proficiency in real estate mortgaging.
-                                </li>
-                                <li>
-                                  Assistance in Government’s First Home Owners
-                                  Grant Scheme (if eligible)
-                                </li>
-                                <li>Responsive customer service support.</li>
-                              </ul>
                             </div>
                           </div>
                           <div className="wp-block-kadence-column inner-column-2 kadence-column_76524a-2a">
@@ -111,6 +109,8 @@ export default function BuyNewHome(props) {
           </main>
         </div>
       </div>
+
+      <ContactForm />
     </>
   );
 }

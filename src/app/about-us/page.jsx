@@ -2,6 +2,8 @@ import { FeaturedTop } from "@/../components/FeaturedTop";
 import Footer from "@/../components/Footer";
 import Header from "@/../components/Header";
 import React from "react";
+import { Hardwork } from "../../components/Hardwork";
+import { ContactForm } from "../../components/ContactForm";
 
 export default function AboutUs(props) {
   return (
@@ -337,6 +339,8 @@ export default function AboutUs(props) {
           </div>
         </div>
       </div>
+      <Hardwork />
+      <ContactForm />
     </>
   );
 }

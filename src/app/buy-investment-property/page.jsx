@@ -9,7 +9,7 @@ import { ContactForm } from "../../components/ContactForm";
 export default function Page(props) {
   return (
     <>
-      <PageTitle title="buy-investment-property" />
+      <PageTitle title="Buy an investment property" />
       <FeaturedTop />
 
       {/* Manual 2
@@ -192,16 +192,6 @@ sec and map, Manual */}
         </div>
       </div>
 
-      <ReputableLenders />
-      <FeatureServicesProvides />
-
-      {/* Tips & Advice / Manual  */}
-      {/* FAQ Tips / Manual */}
-      {/* 1250-1345 */}
-
-      <div className="setstyle"></div>
-
-      <Faq />
       <ContactForm />
     </>
   );

@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "@/../components/Header";
 import Footer from "@/../components/Footer";
+import { FeatureServices } from "../../components/FeatureServices";
+import { ReputableLenders } from "../../components/ReputableLenders";
 
 export default function AreasServices(props) {
   return (
@@ -730,10 +732,30 @@ export default function AreasServices(props) {
                                         </div>
                                       </div>
                                       <div className="wp-block-kadence-column inner-column-3 kadence-column_60aaa7-0d">
-                                        <div className="kt-inside-inner-col" />
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_45d315-0b wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_45d315-0b"
+                                          >
+                                            <a href="#" title="">
+                                              Perth
+                                            </a>{" "}
+                                            WA 6000
+                                          </h5>{" "}
+                                        </div>
                                       </div>
                                       <div className="wp-block-kadence-column inner-column-4 kadence-column_14a5dc-fb">
-                                        <div className="kt-inside-inner-col" />
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_45d315-0b wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_45d315-0b"
+                                          >
+                                            <a href="#" title="">
+                                              Adelaide
+                                            </a>{" "}
+                                            SA 5000
+                                          </h5>{" "}
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
@@ -743,6 +765,718 @@ export default function AreasServices(props) {
                           </div>
                         </div>
                       </div>
+
+                      <div className="wp-block-kadence-rowlayout alignnone">
+                        <div
+                          id="kt-layout-id_b18a39-5b"
+                          className="kt-row-layout-inner kt-layout-id_b18a39-5b"
+                        >
+                          <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row kb-theme-content-width">
+                            <div className="wp-block-kadence-column inner-column-1 kadence-column_99bbbe-ba">
+                              <div className="kt-inside-inner-col">
+                                <div className="wp-block-kadence-rowlayout alignnone suburb">
+                                  <div
+                                    id="kt-layout-id_c876b8-f3"
+                                    className="kt-row-layout-inner kt-layout-id_c876b8-f3"
+                                  >
+                                    <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
+                                      <div className="wp-block-kadence-column inner-column-1 kadence-column_d7761b-68">
+                                        <div className="kt-inside-inner-col">
+                                          <h2
+                                            className="kt-adv-heading_4c4444-a9 wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_4c4444-a9"
+                                          >
+                                            Join our happy clients across
+                                            Australia including{" "}
+                                          </h2>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-2 kadence-column_dbec36-ea">
+                                        <div className="kt-inside-inner-col" />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="wp-block-kadence-rowlayout alignnone suburb">
+                                  <div
+                                    id="kt-layout-id_01af8e-af"
+                                    className="kt-row-layout-inner kt-layout-id_01af8e-af"
+                                  >
+                                    <div className="kt-row-column-wrap kt-has-4-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-two-grid">
+                                      <div className="wp-block-kadence-column inner-column-1 kadence-column_7d89d8-6c">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_3bb33c-05 wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_3bb33c-05"
+                                          >
+                                            <a href="#" title="">
+                                              Brisbane QLD
+                                            </a>{" "}
+                                            5000
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-2 kadence-column_b9e230-22">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_415de0-dd wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_415de0-dd"
+                                          >
+                                            <a
+                                              href="http://scoresbymortgagebroker.com.au/mortgage-broker-berwick/"
+                                              title="Mortgage Broker Berwick"
+                                            >
+                                              Lansvale, NSW
+                                            </a>{" "}
+                                            2165
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-3 kadence-column_a4d31f-9c">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_196225-2d wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_196225-2d"
+                                          >
+                                            <a href="#" title="">
+                                              Sutherland,
+                                            </a>{" "}
+                                            NSW 2232
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-4 kadence-column_d20f8e-99">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_113c0c-74 wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_113c0c-74"
+                                          >
+                                            <a href="#" title="">
+                                              Turramurra
+                                            </a>{" "}
+                                            NSW 2074
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="wp-block-kadence-rowlayout alignnone suburb">
+                                  <div
+                                    id="kt-layout-id_f5efb3-c6"
+                                    className="kt-row-layout-inner kt-layout-id_f5efb3-c6"
+                                  >
+                                    <div className="kt-row-column-wrap kt-has-4-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-two-grid">
+                                      <div className="wp-block-kadence-column inner-column-1 kadence-column_77af43-90">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_fc46f6-c4 wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_fc46f6-c4"
+                                          >
+                                            <a href="#" title="">
+                                              Gold Coast QLD
+                                            </a>{" "}
+                                            4217
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-2 kadence-column_6e28ab-8f">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_059d7c-75 wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_059d7c-75"
+                                          >
+                                            <a href="#" title="">
+                                              Hoxton Park
+                                            </a>{" "}
+                                            NSW 2174
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-3 kadence-column_0b7f8f-85">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_91324e-c1 wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_91324e-c1"
+                                          >
+                                            <a href="#" title="">
+                                              Hornsby
+                                            </a>{" "}
+                                            NSW 2077
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-4 kadence-column_19cc14-4e">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_c58685-5f wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_c58685-5f"
+                                          >
+                                            <a href="#" title="">
+                                              Lane Cove
+                                            </a>{" "}
+                                            NSW 2065
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="wp-block-kadence-rowlayout alignnone suburb">
+                                  <div
+                                    id="kt-layout-id_fa6a65-38"
+                                    className="kt-row-layout-inner kt-layout-id_fa6a65-38"
+                                  >
+                                    <div className="kt-row-column-wrap kt-has-4-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-two-grid">
+                                      <div className="wp-block-kadence-column inner-column-3 kadence-column_395e9e-f3">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_257d2d-83 wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_257d2d-83"
+                                          >
+                                            <a href="#" title="">
+                                              Liverpool
+                                            </a>{" "}
+                                            NSW 2170
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-4 kadence-column_89a543-b6">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_5fd7d9-cb wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_5fd7d9-cb"
+                                          >
+                                            <a href="#" title="">
+                                              Moorebank
+                                            </a>{" "}
+                                            NSW 2175
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-3 kadence-column_7c285a-86">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_a46c8b-01 wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_a46c8b-01"
+                                          >
+                                            <a href="#" title="">
+                                              North Sydney
+                                            </a>{" "}
+                                            NSW 2060
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-4 kadence-column_e6a0e8-dd">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_d92687-30 wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_d92687-30"
+                                          >
+                                            <a href="#" title="">
+                                              Mosman
+                                            </a>
+                                            NSW 2088
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="wp-block-kadence-rowlayout alignnone suburb">
+                                  <div
+                                    id="kt-layout-id_8276a4-96"
+                                    className="kt-row-layout-inner kt-layout-id_8276a4-96"
+                                  >
+                                    <div className="kt-row-column-wrap kt-has-4-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-two-grid">
+                                      <div className="wp-block-kadence-column inner-column-1 kadence-column_936e53-d7">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_a16730-51 wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_a16730-51"
+                                          >
+                                            <a href="#" title="">
+                                              Cabramatta
+                                            </a>
+                                            NSW 2166
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-2 kadence-column_ae1c38-62">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_3de068-36 wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_3de068-36"
+                                          >
+                                            <a href="#" title="">
+                                              Abbotsbury
+                                            </a>{" "}
+                                            NSW 2176
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-3 kadence-column_b773f2-24">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_6f2d34-57 wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_6f2d34-57"
+                                          >
+                                            <a href="#" title="">
+                                              St Ives
+                                            </a>{" "}
+                                            NSW 2076
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-4 kadence-column_6ceb19-4f">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_1c202a-31 wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_1c202a-31"
+                                          >
+                                            <a href="#" title="">
+                                              Waitara
+                                            </a>{" "}
+                                            NSW 2077
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="wp-block-kadence-rowlayout alignnone suburb">
+                                  <div
+                                    id="kt-layout-id_974345-8f"
+                                    className="kt-row-layout-inner kt-layout-id_974345-8f"
+                                  >
+                                    <div className="kt-row-column-wrap kt-has-4-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-two-grid">
+                                      <div className="wp-block-kadence-column inner-column-3 kadence-column_416c7e-13">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_d5b9b7-9a wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_d5b9b7-9a"
+                                          >
+                                            <a href="#" title="">
+                                              Prestons
+                                            </a>{" "}
+                                            NSW 2170
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-4 kadence-column_58be5a-22">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_955fdf-64 wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_955fdf-64"
+                                          >
+                                            <a href="#" title="">
+                                              Len Waters Estate,
+                                            </a>{" "}
+                                            NSW 2171
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-3 kadence-column_649d56-7b">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_337dc8-76 wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_337dc8-76"
+                                          >
+                                            <a
+                                              href="http://scoresbymortgagebroker.com.au/mortgage-broker-pakenham/"
+                                              title="Mortgage Broker Pakenham"
+                                            >
+                                              Crows Nest,
+                                            </a>{" "}
+                                            NSW 2065
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-4 kadence-column_0546a0-21">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_61b249-69 wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_61b249-69"
+                                          >
+                                            <a href="#" title="">
+                                              Castle Cove,
+                                            </a>{" "}
+                                            NSW 2069
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="wp-block-kadence-rowlayout alignnone suburb">
+                                  <div
+                                    id="kt-layout-id_806612-5a"
+                                    className="kt-row-layout-inner kt-layout-id_806612-5a"
+                                  >
+                                    <div className="kt-row-column-wrap kt-has-4-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-two-grid">
+                                      <div className="wp-block-kadence-column inner-column-1 kadence-column_e8f7fc-55">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_027f07-16 wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_027f07-16"
+                                          >
+                                            <a href="#" title="">
+                                              Middleton Grange,
+                                            </a>{" "}
+                                            2171
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-2 kadence-column_96a9bb-9e">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_553142-5a wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_553142-5a"
+                                          >
+                                            <a href="#" title="">
+                                              Ashcroft{" "}
+                                            </a>
+                                            NSW 2168
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-3 kadence-column_579330-41">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_541fc1-3a wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_541fc1-3a"
+                                          >
+                                            <a href="#" title="">
+                                              Artarmon,
+                                            </a>{" "}
+                                            NSW 1510
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-4 kadence-column_a9c73f-34">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_77d18f-e1 wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_77d18f-e1"
+                                          >
+                                            <a href="#" title="">
+                                              Bondi Junction,
+                                            </a>{" "}
+                                            NSW 2022
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="wp-block-kadence-rowlayout alignnone suburb">
+                                  <div
+                                    id="kt-layout-id_0c7783-69"
+                                    className="kt-row-layout-inner kt-layout-id_0c7783-69"
+                                  >
+                                    <div className="kt-row-column-wrap kt-has-4-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-two-grid">
+                                      <div className="wp-block-kadence-column inner-column-1 kadence-column_b47335-26">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_f52ffe-54 wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_f52ffe-54"
+                                          >
+                                            <a href="#" title="">
+                                              Lurnea,
+                                            </a>{" "}
+                                            NSW 2170
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-2 kadence-column_8ae4c1-3a">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_50e1e8-ee wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_50e1e8-ee"
+                                          >
+                                            <a href="#" title="">
+                                              Parramatta,
+                                            </a>{" "}
+                                            NSW 2150
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-3 kadence-column_74fe9a-74">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_718d81-bf wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_718d81-bf"
+                                          >
+                                            <a href="#" title="">
+                                              Chatswood,
+                                            </a>
+                                            NSW 2067
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-4 kadence-column_654c3d-12">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_a34b58-7b wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_a34b58-7b"
+                                          >
+                                            <a href="#" title="">
+                                              Randwick,
+                                            </a>{" "}
+                                            NSW 2031
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="wp-block-kadence-rowlayout alignnone suburb">
+                                  <div
+                                    id="kt-layout-id_d77f02-fb"
+                                    className="kt-row-layout-inner kt-layout-id_d77f02-fb"
+                                  >
+                                    <div className="kt-row-column-wrap kt-has-4-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-two-grid">
+                                      <div className="wp-block-kadence-column inner-column-1 kadence-column_e44da7-8b">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_3f1958-8e wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_3f1958-8e"
+                                          >
+                                            <a href="#" title="">
+                                              Casula,
+                                            </a>{" "}
+                                            NSW 2170
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-2 kadence-column_c95e5b-c7">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_45d315-0b wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_45d315-0b"
+                                          >
+                                            <a href="#" title="">
+                                              Ryde,
+                                            </a>{" "}
+                                            NSW 2113
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-3 kadence-column_60aaa7-0d">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_45d315-0b wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_45d315-0b"
+                                          >
+                                            <a href="#" title="">
+                                              Kirribilli,
+                                            </a>{" "}
+                                            NSW 2061
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-4 kadence-column_14a5dc-fb">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_45d315-0b wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_45d315-0b"
+                                          >
+                                            <a href="#" title="">
+                                              Clovelly,
+                                            </a>{" "}
+                                            NSW 2036
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div className="wp-block-kadence-rowlayout alignnone suburb">
+                                  <div
+                                    id="kt-layout-id_d77f02-fb"
+                                    className="kt-row-layout-inner kt-layout-id_d77f02-fb"
+                                  >
+                                    <div className="kt-row-column-wrap kt-has-4-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-two-grid">
+                                      <div className="wp-block-kadence-column inner-column-1 kadence-column_e44da7-8b">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_3f1958-8e wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_3f1958-8e"
+                                          >
+                                            <a href="#" title="">
+                                              Bellevue Hill,
+                                            </a>{" "}
+                                            NSW 2023
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-2 kadence-column_c95e5b-c7">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_45d315-0b wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_45d315-0b"
+                                          >
+                                            <a href="#" title="">
+                                              Paddington,
+                                            </a>{" "}
+                                            NSW 2021
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-3 kadence-column_60aaa7-0d">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_45d315-0b wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_45d315-0b"
+                                          >
+                                            <a href="#" title="">
+                                              Double Bay,
+                                            </a>{" "}
+                                            NSW 2028
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-4 kadence-column_14a5dc-fb">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_45d315-0b wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_45d315-0b"
+                                          >
+                                            <a href="#" title="">
+                                              Darling Point,
+                                            </a>{" "}
+                                            NSW 2027
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div className="wp-block-kadence-rowlayout alignnone suburb">
+                                  <div
+                                    id="kt-layout-id_d77f02-fb"
+                                    className="kt-row-layout-inner kt-layout-id_d77f02-fb"
+                                  >
+                                    <div className="kt-row-column-wrap kt-has-4-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-two-grid">
+                                      <div className="wp-block-kadence-column inner-column-1 kadence-column_e44da7-8b">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_3f1958-8e wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_3f1958-8e"
+                                          >
+                                            <a href="#" title="">
+                                              Dover Heights,
+                                            </a>{" "}
+                                            NSW 2030
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-2 kadence-column_c95e5b-c7">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_45d315-0b wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_45d315-0b"
+                                          >
+                                            <a href="#" title="">
+                                              Bondi Beach,
+                                            </a>{" "}
+                                            NSW 2026
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-3 kadence-column_60aaa7-0d">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_45d315-0b wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_45d315-0b"
+                                          >
+                                            <a href="#" title="">
+                                              Coogee,
+                                            </a>{" "}
+                                            NSW 2034
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-4 kadence-column_14a5dc-fb">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_45d315-0b wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_45d315-0b"
+                                          >
+                                            <a href="#" title="">
+                                              Point Piper,
+                                            </a>{" "}
+                                            NSW 2027
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div className="wp-block-kadence-rowlayout alignnone suburb">
+                                  <div
+                                    id="kt-layout-id_d77f02-fb"
+                                    className="kt-row-layout-inner kt-layout-id_d77f02-fb"
+                                  >
+                                    <div className="kt-row-column-wrap kt-has-4-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-two-grid">
+                                      <div className="wp-block-kadence-column inner-column-1 kadence-column_e44da7-8b">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_3f1958-8e wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_3f1958-8e"
+                                          >
+                                            <a href="#" title="">
+                                              Rose Bay,
+                                            </a>{" "}
+                                            NSW 2029
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-2 kadence-column_c95e5b-c7">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_45d315-0b wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_45d315-0b"
+                                          >
+                                            <a href="#" title="">
+                                              &nbsp;
+                                            </a>{" "}
+                                            &nbsp;
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-3 kadence-column_60aaa7-0d">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_45d315-0b wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_45d315-0b"
+                                          >
+                                            &nbsp;
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                      <div className="wp-block-kadence-column inner-column-4 kadence-column_14a5dc-fb">
+                                        <div className="kt-inside-inner-col">
+                                          <h5
+                                            className="kt-adv-heading_45d315-0b wp-block-kadence-advancedheading"
+                                            data-kb-block="kb-adv-heading_45d315-0b"
+                                          >
+                                            &nbsp;
+                                          </h5>{" "}
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
                       <div className="wp-block-kadence-spacer aligncenter kt-block-spacer-_255787-22">
                         <div className="kt-block-spacer kt-block-spacer-halign-center">
                           <hr className="kt-divider" />
@@ -757,6 +1491,9 @@ export default function AreasServices(props) {
         </div>
       </div>
       {/* <Footer /> */}
+
+      <FeatureServices />
+      <ReputableLenders />
     </div>
   );
 }
