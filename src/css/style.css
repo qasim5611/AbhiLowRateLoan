@@ -1327,3 +1327,7 @@ textarea, input[type="text"]{
 .site-footer-bottom-section-4{
     padding-top: 25px !important;
 }
+
+.wp-block-kadence-image{
+    display: block !important;
+}
