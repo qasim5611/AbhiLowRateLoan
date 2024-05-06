@@ -35,21 +35,21 @@ export function ReputableLenders(props) {
                   </figure>
                 </div>
 
-                {/* <div className="wp-block-image mobile-lender-img">
-                                      <figure className="aligncenter size-full">
-                                        <img
-                                          decoding="async"
-                                          loading="lazy"
-                                          width="594"
-                                          height="829"
-                                          src="http://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/lenders-vertical.webp"
-                                          alt="loan lenders"
-                                          className="wp-image-4718"
-                                          srcSet="https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/lenders-vertical.webp 594w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/lenders-vertical-215x300.webp 215w"
-                                          sizes="(max-width: 594px) 100vw, 594px"
-                                        />
-                                      </figure>
-                                    </div> */}
+                <div className="wp-block-image mobile-lender-img">
+                  <figure className="aligncenter size-full">
+                    <img
+                      decoding="async"
+                      loading="lazy"
+                      width="594"
+                      height="829"
+                      src="http://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/lenders-vertical.webp"
+                      alt="loan lenders"
+                      className="wp-image-4718"
+                      srcSet="https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/lenders-vertical.webp 594w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/lenders-vertical-215x300.webp 215w"
+                      sizes="(max-width: 594px) 100vw, 594px"
+                    />
+                  </figure>
+                </div>
 
                 <div className="wp-block-kadence-spacer aligncenter kt-block-spacer-_a8a064-c7">
                   <div className="kt-block-spacer kt-block-spacer-halign-center">

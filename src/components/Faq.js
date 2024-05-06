@@ -1,6 +1,12 @@
-import React from "react";
-
+import { React, useState } from "react";
+import AddIcon from "@mui/icons-material/Add";
+import RemoveIcon from "@mui/icons-material/Remove";
 export function Faq(props) {
+  const [open, setOpen] = useState(false);
+
+  const toogleFaq = () => {
+    setOpen(!open);
+  };
   return (
     <>
       <>
@@ -39,15 +45,25 @@ export function Faq(props) {
                     <div className="wpsm_panel-heading" role="tab">
                       <h4 className="wpsm_panel-title">
                         <a
-                          className=""
+                          className="collapsed"
                           data-toggle="collapse"
                           data-parent="#wpsm_accordion_1713 "
                           href="javascript:void(0)"
                           data-target="#ac_1713_collapse1"
                           onclick="do_resize()"
                         >
-                          <span className="ac_open_cl_icon fa fa-minus" />
-                          <span className="ac_title_class">
+                          {/* <span className="ac_open_cl_icon fa fa-minus" /> */}
+                          <span className="ac_open_cl_icon fa fa-minus">
+                            {open ? (
+                              <AddIcon sx={{ fontSize: "25px" }} />
+                            ) : (
+                              <RemoveIcon sx={{ fontSize: "25px" }} />
+                            )}
+                          </span>
+
+                          {/* <div onClick={toogleFaq}>hy</div> */}
+
+                          <span className="ac_title_class" onClick={toogleFaq}>
                             Is it better to go through a mortgage broker in
                             Australia?{" "}
                           </span>
@@ -84,7 +100,13 @@ export function Faq(props) {
                           data-target="#ac_1713_collapse2"
                           onclick="do_resize()"
                         >
-                          <span className="ac_open_cl_icon fa fa-plus" />
+                          <span className="ac_open_cl_icon fa fa-plus">
+                            {open ? (
+                              <AddIcon sx={{ fontSize: "25px" }} />
+                            ) : (
+                              <RemoveIcon sx={{ fontSize: "25px" }} />
+                            )}
+                          </span>
                           <span className="ac_title_class">
                             What is a mortgage broker?{" "}
                           </span>
@@ -133,7 +155,13 @@ export function Faq(props) {
                           data-target="#ac_1713_collapse3"
                           onclick="do_resize()"
                         >
-                          <span className="ac_open_cl_icon fa fa-plus" />
+                          <span className="ac_open_cl_icon fa fa-plus">
+                            {open ? (
+                              <AddIcon sx={{ fontSize: "25px" }} />
+                            ) : (
+                              <RemoveIcon sx={{ fontSize: "25px" }} />
+                            )}
+                          </span>
                           <span className="ac_title_class">
                             What does a mortgage broker do?{" "}
                           </span>
@@ -193,7 +221,13 @@ export function Faq(props) {
                           data-target="#ac_1713_collapse4"
                           onclick="do_resize()"
                         >
-                          <span className="ac_open_cl_icon fa fa-plus" />
+                          <span className="ac_open_cl_icon fa fa-plus">
+                            {open ? (
+                              <AddIcon sx={{ fontSize: "25px" }} />
+                            ) : (
+                              <RemoveIcon sx={{ fontSize: "25px" }} />
+                            )}
+                          </span>
                           <span className="ac_title_class">
                             Pros and cons of using a mortgage broker in
                             Australia?{" "}
@@ -240,7 +274,13 @@ export function Faq(props) {
                           data-target="#ac_1713_collapse5"
                           onclick="do_resize()"
                         >
-                          <span className="ac_open_cl_icon fa fa-plus" />
+                          <span className="ac_open_cl_icon fa fa-plus">
+                            {open ? (
+                              <AddIcon sx={{ fontSize: "25px" }} />
+                            ) : (
+                              <RemoveIcon sx={{ fontSize: "25px" }} />
+                            )}
+                          </span>
                           <span className="ac_title_class">
                             Is it better to get a mortgage from a bank or broker
                             in Australia?{" "}
@@ -282,7 +322,13 @@ export function Faq(props) {
                           data-target="#ac_1713_collapse6"
                           onclick="do_resize()"
                         >
-                          <span className="ac_open_cl_icon fa fa-plus" />
+                          <span className="ac_open_cl_icon fa fa-plus">
+                            {open ? (
+                              <AddIcon sx={{ fontSize: "25px" }} />
+                            ) : (
+                              <RemoveIcon sx={{ fontSize: "25px" }} />
+                            )}
+                          </span>
                           <span className="ac_title_class">
                             Why choose a mortgage broker over a bank?{" "}
                           </span>
@@ -335,7 +381,13 @@ export function Faq(props) {
                           data-target="#ac_1713_collapse7"
                           onclick="do_resize()"
                         >
-                          <span className="ac_open_cl_icon fa fa-plus" />
+                          <span className="ac_open_cl_icon fa fa-plus">
+                            {open ? (
+                              <AddIcon sx={{ fontSize: "25px" }} />
+                            ) : (
+                              <RemoveIcon sx={{ fontSize: "25px" }} />
+                            )}
+                          </span>
                           <span className="ac_title_class">
                             Do mortgage brokers charge a fee? How much does a
                             mortgage broker cost?{" "}
@@ -404,7 +456,13 @@ export function Faq(props) {
                           data-target="#ac_1713_collapse8"
                           onclick="do_resize()"
                         >
-                          <span className="ac_open_cl_icon fa fa-plus" />
+                          <span className="ac_open_cl_icon fa fa-plus">
+                            {open ? (
+                              <AddIcon sx={{ fontSize: "25px" }} />
+                            ) : (
+                              <RemoveIcon sx={{ fontSize: "25px" }} />
+                            )}
+                          </span>
                           <span className="ac_title_class">
                             Why use a mortgage broker?{" "}
                           </span>
@@ -445,7 +503,13 @@ export function Faq(props) {
                           data-target="#ac_1713_collapse9"
                           onclick="do_resize()"
                         >
-                          <span className="ac_open_cl_icon fa fa-plus" />
+                          <span className="ac_open_cl_icon fa fa-plus">
+                            {open ? (
+                              <AddIcon sx={{ fontSize: "25px" }} />
+                            ) : (
+                              <RemoveIcon sx={{ fontSize: "25px" }} />
+                            )}
+                          </span>
                           <span className="ac_title_class">
                             What makes Low Rate Home Loan Mortgage Broker
                             different?{" "}
@@ -494,7 +558,13 @@ export function Faq(props) {
                           data-target="#ac_1713_collapse10"
                           onclick="do_resize()"
                         >
-                          <span className="ac_open_cl_icon fa fa-plus" />
+                          <span className="ac_open_cl_icon fa fa-plus">
+                            {open ? (
+                              <AddIcon sx={{ fontSize: "25px" }} />
+                            ) : (
+                              <RemoveIcon sx={{ fontSize: "25px" }} />
+                            )}
+                          </span>
                           <span className="ac_title_class">
                             What happens in my first meeting with Mortgage
                             Broker?{" "}
@@ -543,7 +613,13 @@ export function Faq(props) {
                           data-target="#ac_1713_collapse11"
                           onclick="do_resize()"
                         >
-                          <span className="ac_open_cl_icon fa fa-plus" />
+                          <span className="ac_open_cl_icon fa fa-plus">
+                            {open ? (
+                              <AddIcon sx={{ fontSize: "25px" }} />
+                            ) : (
+                              <RemoveIcon sx={{ fontSize: "25px" }} />
+                            )}
+                          </span>
                           <span className="ac_title_class">
                             Does a Broker just help me get to settlement or do
                             they provide an ongoing service?{" "}
