@@ -3,7 +3,7 @@ import { React, useState } from "react";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 export function Faq(props) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   const toogleFaq = () => {
     setOpen(!open);
