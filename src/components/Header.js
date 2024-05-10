@@ -218,10 +218,10 @@ function Header({ data, update }) {
                                 rel="home"
                                 aria-label="Low Rate Home Loan"
                               >
-                                <img
+                                <Image
                                   width="396"
                                   height="310"
-                                  src="https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/lowratehomeloan-logo.svg"
+                                  src="/pics/mobLogo.png"
                                   className="custom-logo svg-logo-image"
                                   alt="low rate home loan logo"
                                   decoding="async"

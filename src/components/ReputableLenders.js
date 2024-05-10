@@ -42,10 +42,10 @@ export function ReputableLenders(props) {
                       loading="lazy"
                       width="594"
                       height="829"
-                      src="http://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/lenders-vertical.webp"
+                      src="/images/lenders-vertical.webp"
                       alt="loan lenders"
                       className="wp-image-4718"
-                      srcSet="https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/lenders-vertical.webp 594w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/lenders-vertical-215x300.webp 215w"
+                      srcSet="/images/lenders-vertical.webp"
                       sizes="(max-width: 594px) 100vw, 594px"
                     />
                   </figure>
