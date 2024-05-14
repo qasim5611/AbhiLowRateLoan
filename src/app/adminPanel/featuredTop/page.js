@@ -1,6 +1,6 @@
 import React from "react";
 
-import Adminlayout from "../layout";
+import Adminlayout from "../Adminlayout";
 
 export default function HeroSection(props) {
   return (

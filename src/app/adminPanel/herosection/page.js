@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import Adminlayout from "../layout";
+import Adminlayout from "../Adminlayout";
 
 import Breadcrumb from "@/../components/Breadcrumbs/Breadcrumb";
 import { Grid, TextField } from "@mui/material";
