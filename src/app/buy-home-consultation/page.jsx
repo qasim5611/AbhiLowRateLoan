@@ -10,7 +10,7 @@ import { Email } from "@mui/icons-material";
 import { SendContactForm } from "../../lib/api";
 // import { SendContactForm } from "./../../lib/api";
 
-export default function RefinanceConsultation(props) {
+export default function BuyHomeConsultaion(props) {
   const [state, setState] = useState({
     loanAmount: "",
     interestRate: "",
@@ -236,7 +236,7 @@ export default function RefinanceConsultation(props) {
                             data-js-reload="field_3_3"
                           >
                             <label className="gfield_label" htmlFor="input_3_3">
-                              What is your current loan amount?
+                              What is your expected purchase price?
                               <span className="gfield_required">
                                 <span className="gfield_required gfield_required_asterisk">
                                   *
@@ -296,7 +296,7 @@ export default function RefinanceConsultation(props) {
                             data-js-reload="field_3_4"
                           >
                             <label className="gfield_label" htmlFor="input_3_4">
-                              What is your current interest rate?
+                              How much deposit do you have?
                               <span className="gfield_required">
                                 <span className="gfield_required gfield_required_asterisk">
                                   *
@@ -367,7 +367,7 @@ export default function RefinanceConsultation(props) {
                           data-js-reload="field_3_8"
                         >
                           <legend className="gfield_label">
-                            Why are you refinancing?
+                            Why best describes your home buying situation?
                             <span className="gfield_required">
                               <span className="gfield_required gfield_required_asterisk">
                                 *

@@ -222,6 +222,8 @@ export default function RootLayout({ children }) {
       >
         {pathname === "/adminPanel" ||
         pathname === "/signup" ||
+        pathname === "/buy-home-consultation" ||
+        pathname === "/refinance-consultation" ||
         pathname === "/adminPanel/herosection" ? null : (
           <Header />
         )}
@@ -232,6 +234,8 @@ export default function RootLayout({ children }) {
 
         {pathname === "/adminPanel" ||
         pathname === "/signup" ||
+        pathname === "/buy-home-consultation" ||
+        pathname === "/refinance-consultation" ||
         pathname === "/adminPanel/herosection" ? null : (
           <Footer />
         )}

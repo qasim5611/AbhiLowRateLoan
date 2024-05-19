@@ -60,24 +60,21 @@ function HomeComp({ data, update }) {
 
                                     <div className="is-content-justification-center is-layout-flex wp-container-1 wp-block-buttons">
                                       <div className="wp-block-button has-custom-width wp-block-button__width-50">
-                                        <button
-                                          onclick={() => {
-                                            // router.push("/about"),
-                                            console.log("fun chala");
-                                          }}
+                                        <Link
+                                          href="/refinance-consultation"
                                           className="wp-block-button__link wp-element-button"
                                         >
                                           <strong>i want to refinance</strong>
-                                        </button>
+                                        </Link>
                                       </div>
 
                                       <div className="wp-block-button has-custom-width wp-block-button__width-50 is-style-outline">
-                                        <a
+                                        <Link
                                           className="wp-block-button__link has-theme-palette-1-background-color has-background wp-element-button"
-                                          href="#"
+                                          href="/buy-home-consultation"
                                         >
                                           <strong>i want to buy a home</strong>
-                                        </a>
+                                        </Link>
                                       </div>
                                     </div>
                                   </div>
