@@ -7,8 +7,7 @@ import "./refinance-consultation.css";
 import Link from "next/link";
 import Image from "next/image";
 import { Email } from "@mui/icons-material";
-import { SendContactForm } from "../../lib/api";
-// import { SendContactForm } from "./../../lib/api";
+import { sendEmail } from "./../../lib/page";
 
 export default function BuyHomeConsultaion(props) {
   const [state, setState] = useState({
@@ -103,7 +102,24 @@ export default function BuyHomeConsultaion(props) {
         state,
         radioState,
       };
-      SendContactForm(obj);
+      try {
+        // const req = await SendEmail(state, radioState);
+        const req = await sendEmail(
+          "info@lowratehomeloan.com.au",
+          "Buy Home Consultation Form",
+          obj
+        );
+        console.log("ok", req);
+        if (req.data.status == "ok" || req.status == 200) {
+          setshowFirstForm(false);
+          setShowSecondForm(false);
+          setShowThirdForm(false);
+          setShowFourthForm(false);
+          setShowFifthForm(true);
+        }
+      } catch (e) {
+        console.log(e);
+      }
     }
   };
 
@@ -311,7 +327,7 @@ export default function BuyHomeConsultaion(props) {
                                 // defaultValue=""
                                 className="medium"
                                 tabIndex={51}
-                                placeholder="%"
+                                placeholder="$"
                                 // aria-required="true"
                                 // aria-invalid="false"
                                 onChange={onChangeHandler}
@@ -427,7 +443,7 @@ export default function BuyHomeConsultaion(props) {
                                       <g />
                                       <g />
                                     </svg>{" "}
-                                    <h3>Decrease repayment</h3>
+                                    <h3>Just exploring options</h3>
                                   </div>
                                 </label>
                               </div>
@@ -484,7 +500,7 @@ export default function BuyHomeConsultaion(props) {
                                       <g />
                                       <g />
                                     </svg>{" "}
-                                    <h3>Pay off loan faster</h3>
+                                    <h3>Plan to buy in the next 6 months</h3>
                                   </div>
                                 </label>
                               </div>
@@ -540,7 +556,7 @@ export default function BuyHomeConsultaion(props) {
                                       <g />
                                       <g />
                                     </svg>{" "}
-                                    <h3>Consolidate debt / get cash out</h3>
+                                    <h3>Actively looking / Made an offer</h3>
                                   </div>
                                 </label>
                               </div>
@@ -596,7 +612,7 @@ export default function BuyHomeConsultaion(props) {
                           className="gfield gfield--width-full gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below field_description_below gfield_visibility_visible"
                           data-js-reload="field_3_14"
                         >
-                          <p>
+                          <p style={{ color: "white" }}>
                             Please provide us with some quick details about you.
                           </p>
                         </div>
@@ -604,6 +620,7 @@ export default function BuyHomeConsultaion(props) {
                           id="field_3_9"
                           className="gfield gfield--width-full gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"
                           data-js-reload="field_3_9"
+                          style={{ textAlign: "center" }}
                         >
                           <label className="gfield_label" htmlFor="input_3_9">
                             Full Name
@@ -636,6 +653,7 @@ export default function BuyHomeConsultaion(props) {
                           id="field_3_15"
                           className="gfield gfield--width-full gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"
                           data-js-reload="field_3_15"
+                          style={{ textAlign: "center" }}
                         >
                           <label className="gfield_label" htmlFor="input_3_15">
                             Mobile Number
@@ -668,6 +686,7 @@ export default function BuyHomeConsultaion(props) {
                           id="field_3_12"
                           className="gfield gfield--width-full gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"
                           data-js-reload="field_3_12"
+                          style={{ textAlign: "center" }}
                         >
                           <label className="gfield_label" htmlFor="input_3_12">
                             Email

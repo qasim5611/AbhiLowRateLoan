@@ -7,7 +7,9 @@ import "./refinance-consultation.css";
 import Link from "next/link";
 import Image from "next/image";
 import { Email } from "@mui/icons-material";
-import { SendContactForm } from "../../lib/api";
+// import { SendEmail } from "../api/mailer/route";
+import { sendEmail } from "./../../lib/page";
+
 // import { SendContactForm } from "./../../lib/api";
 
 export default function RefinanceConsultation(props) {
@@ -29,6 +31,7 @@ export default function RefinanceConsultation(props) {
   const [showSecondForm, setShowSecondForm] = useState(false);
   const [showThirdForm, setShowThirdForm] = useState(false);
   const [showFourthForm, setShowFourthForm] = useState(false);
+  const [showFifthForm, setShowFifthForm] = useState(false);
 
   const [loanAmountErr, setloanAmountErr] = useState("");
   const [interestRateErr, setinterestRateErr] = useState("");
@@ -103,10 +106,40 @@ export default function RefinanceConsultation(props) {
         state,
         radioState,
       };
-      SendContactForm(obj);
+      // SendContactForm(obj);
+
+      try {
+        // const req = await SendEmail(state, radioState);
+        const req = await sendEmail(
+          "info@lowratehomeloan.com.au",
+          "Refinance Consultation Form",
+          obj
+        );
+        console.log("ok", req);
+        if (req.data.status == "ok" || req.status == 200) {
+          setshowFirstForm(false);
+          setShowSecondForm(false);
+          setShowThirdForm(false);
+          setShowFourthForm(false);
+          setShowFifthForm(true);
+        }
+      } catch (e) {
+        console.log(e);
+      }
     }
   };
 
+  const ClickForSixthForm = async (e) => {
+    e.preventDefault();
+    var isFormvalid = validate();
+    if (isFormvalid) {
+      setshowFirstForm(false);
+      setShowSecondForm(false);
+      setShowThirdForm(false);
+      setShowFourthForm(false);
+      setShowFifthForm(true);
+    }
+  };
   const validate = () => {
     console.log("validate called");
     let isvalid = true;
@@ -596,7 +629,7 @@ export default function RefinanceConsultation(props) {
                           className="gfield gfield--width-full gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below field_description_below gfield_visibility_visible"
                           data-js-reload="field_3_14"
                         >
-                          <p>
+                          <p style={{ color: "white" }}>
                             Please provide us with some quick details about you.
                           </p>
                         </div>
@@ -604,6 +637,7 @@ export default function RefinanceConsultation(props) {
                           id="field_3_9"
                           className="gfield gfield--width-full gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"
                           data-js-reload="field_3_9"
+                          style={{ textAlign: "center" }}
                         >
                           <label className="gfield_label" htmlFor="input_3_9">
                             Full Name
@@ -636,6 +670,7 @@ export default function RefinanceConsultation(props) {
                           id="field_3_15"
                           className="gfield gfield--width-full gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"
                           data-js-reload="field_3_15"
+                          style={{ textAlign: "center" }}
                         >
                           <label className="gfield_label" htmlFor="input_3_15">
                             Mobile Number
@@ -668,6 +703,7 @@ export default function RefinanceConsultation(props) {
                           id="field_3_12"
                           className="gfield gfield--width-full gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"
                           data-js-reload="field_3_12"
+                          style={{ textAlign: "center" }}
                         >
                           <label className="gfield_label" htmlFor="input_3_12">
                             Email
@@ -791,6 +827,39 @@ export default function RefinanceConsultation(props) {
                         name="gform_field_values"
                         defaultValue=""
                       />
+                    </div>
+                  </div>
+                ) : null}
+
+                {showFifthForm === true ? (
+                  <div
+                    id="gform_page_3_4"
+                    className="gform_page"
+                    // style={{ display: "none" }}
+                  >
+                    <div className="gform_page_fields">
+                      <div
+                        id="gform_fields_3_4"
+                        className="gform_fields top_label form_sublabel_below description_below"
+                      >
+                        <div
+                          id="field_3_14"
+                          className="gfield gfield--width-full gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below field_description_below gfield_visibility_visible"
+                          data-js-reload="field_3_14"
+                        >
+                          <br />
+                          <br />
+                          <br />
+
+                          <h3>Thank you for contacting us !</h3>
+                          <br />
+                          <h4>We will get in touch with you shortly.</h4>
+                          <br />
+                          <br />
+                          <br />
+                          <br />
+                        </div>
+                      </div>
                     </div>
                   </div>
                 ) : null}
