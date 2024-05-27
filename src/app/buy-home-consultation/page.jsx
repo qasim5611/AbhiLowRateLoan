@@ -28,6 +28,7 @@ export default function BuyHomeConsultaion(props) {
   const [showSecondForm, setShowSecondForm] = useState(false);
   const [showThirdForm, setShowThirdForm] = useState(false);
   const [showFourthForm, setShowFourthForm] = useState(false);
+  const [showFifthForm, setShowFifthForm] = useState(false);
 
   const [loanAmountErr, setloanAmountErr] = useState("");
   const [interestRateErr, setinterestRateErr] = useState("");
@@ -810,6 +811,39 @@ export default function BuyHomeConsultaion(props) {
                         name="gform_field_values"
                         defaultValue=""
                       />
+                    </div>
+                  </div>
+                ) : null}
+
+                {showFifthForm === true ? (
+                  <div
+                    id="gform_page_3_4"
+                    className="gform_page"
+                    // style={{ display: "none" }}
+                  >
+                    <div className="gform_page_fields">
+                      <div
+                        id="gform_fields_3_4"
+                        className="gform_fields top_label form_sublabel_below description_below"
+                      >
+                        <div
+                          id="field_3_14"
+                          className="gfield gfield--width-full gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below field_description_below gfield_visibility_visible"
+                          data-js-reload="field_3_14"
+                        >
+                          <br />
+                          <br />
+                          <br />
+
+                          <h3>Thank you for contacting us !</h3>
+                          <br />
+                          <h4>We will get in touch with you shortly.</h4>
+                          <br />
+                          <br />
+                          <br />
+                          <br />
+                        </div>
+                      </div>
                     </div>
                   </div>
                 ) : null}
