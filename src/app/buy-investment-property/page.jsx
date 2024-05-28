@@ -99,10 +99,11 @@ sec and map, Manual */}
                       loading="lazy"
                       width={1024}
                       height={683}
-                      src="https://lowratehomeloan.com.au/wp-content/uploads/2022/12/investment-property-1024x683.webp"
+                      src="investment-property.webp"
+                      // src="https://lowratehomeloan.com.au/wp-content/uploads/2022/12/investment-property-1024x683.webp"
                       alt="buy investment property"
                       className="wp-image-3965"
-                      srcSet="https://lowratehomeloan.com.au/wp-content/uploads/2022/12/investment-property-1024x683.webp 1024w, https://lowratehomeloan.com.au/wp-content/uploads/2022/12/investment-property-300x200.webp 300w, https://lowratehomeloan.com.au/wp-content/uploads/2022/12/investment-property-768x512.webp 768w, https://lowratehomeloan.com.au/wp-content/uploads/2022/12/investment-property.webp 1200w"
+                      // srcSet="https://lowratehomeloan.com.au/wp-content/uploads/2022/12/investment-property-1024x683.webp 1024w, https://lowratehomeloan.com.au/wp-content/uploads/2022/12/investment-property-300x200.webp 300w, https://lowratehomeloan.com.au/wp-content/uploads/2022/12/investment-property-768x512.webp 768w, https://lowratehomeloan.com.au/wp-content/uploads/2022/12/investment-property.webp 1200w"
                       sizes="(max-width: 1024px) 100vw, 1024px"
                     />
                   </figure>

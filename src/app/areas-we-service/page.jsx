@@ -3,6 +3,7 @@ import Header from "@/../components/Header";
 import Footer from "@/../components/Footer";
 import { FeatureServices } from "../../components/FeatureServices";
 import { ReputableLenders } from "../../components/ReputableLenders";
+import Link from "next/link";
 
 export default function AreasServices(props) {
   return (
@@ -278,9 +279,12 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_3bb33c-05 wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_3bb33c-05"
                                           >
-                                            <a href="#" title="">
+                                            <Link
+                                              href="/mortgage-broker-altona"
+                                              title=""
+                                            >
                                               Altona
-                                            </a>{" "}
+                                            </Link>{" "}
                                             VIC 3018
                                           </h5>{" "}
                                         </div>
@@ -291,12 +295,12 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_415de0-dd wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_415de0-dd"
                                           >
-                                            <a
-                                              href="http://scoresbymortgagebroker.com.au/mortgage-broker-berwick/"
+                                            <Link
+                                              href="/mortgage-broker-berwick"
                                               title="Mortgage Broker Berwick"
                                             >
                                               Berwick
-                                            </a>{" "}
+                                            </Link>{" "}
                                             VIC 3806
                                           </h5>{" "}
                                         </div>

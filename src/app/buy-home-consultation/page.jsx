@@ -834,7 +834,6 @@ export default function BuyHomeConsultaion(props) {
                           <br />
                           <br />
                           <br />
-
                           <h3>Thank you for contacting us !</h3>
                           <br />
                           <h4>We will get in touch with you shortly.</h4>

@@ -13,7 +13,7 @@ export function Faq(props) {
       <>
         <div className="wp-block-kadence-spacer aligncenter kt-block-spacer-4_e82d30-17">
           <div className="kt-block-spacer kt-block-spacer-halign-center">
-            <hr className="kt-divider" />
+            {/* <hr className="kt-divider" /> */}
           </div>
         </div>
         <div className="kb-row-layout-wrap kb-row-layout-id1786_f1cfc2-83 alignnone wp-block-kadence-rowlayout">

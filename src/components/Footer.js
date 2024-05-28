@@ -61,24 +61,22 @@ function Footer({ data, update }) {
 
                                   <p>
                                     <a
-                                      href="/home-loans/buy-a-new-home/"
+                                      href="/buy-a-new-home"
                                       data-type="page"
                                       data-id="1635"
                                     >
                                       Buy a new Home
                                     </a>
                                     <br />
-                                    <a href="/home-loans/refinance-home-loan/">
+                                    <a href="/refinance-home-loan">
                                       Refinance home loan
                                     </a>
                                     <br />
-                                    <a href="/home-loans/buy-investment-property/">
+                                    <a href="/buy-investment-property">
                                       Buy investment property
                                     </a>
                                     <br />
-                                    <a href="/home-loans/compare-rates/">
-                                      Compare rates
-                                    </a>
+                                    <a href="/compare-rates">Compare rates</a>
                                   </p>
                                 </div>
                               </div>
@@ -93,46 +91,46 @@ function Footer({ data, update }) {
                                   </h6>
 
                                   <p>
-                                    <a
-                                      href="http://scoresbymortgagebroker.com.au/privacy-policy/"
+                                    <Link
+                                      href="/privacy-policy"
                                       data-type="page"
                                       data-id="3"
                                     >
                                       Privacy Policy
-                                    </a>
+                                    </Link>
                                     <br />
-                                    <a
-                                      href="http://scoresbymortgagebroker.com.au/faqs/"
+                                    <Link
+                                      href="/faqs"
                                       data-type="page"
                                       data-id="4525"
                                     >
                                       FAQ's
-                                    </a>
+                                    </Link>
                                     <br />
-                                    <a
-                                      href="http://scoresbymortgagebroker.com.au/blog/"
+                                    <Link
+                                      href="/blog"
                                       data-type="page"
                                       data-id="1955"
                                     >
                                       {" "}
                                       Blog
-                                    </a>
+                                    </Link>
                                     <br />
-                                    <a
-                                      href="http://scoresbymortgagebroker.com.au/compliments-and-concerns/"
+                                    <Link
+                                      href="/compliments-and-concerns"
                                       data-type="page"
                                       data-id="4512"
                                     >
                                       Compliments &amp; Concerns
-                                    </a>
+                                    </Link>
                                     <br />
-                                    <a
-                                      href="http://scoresbymortgagebroker.com.au/gift-card-terms-condition/"
+                                    <Link
+                                      href="/gift-card-terms-condition"
                                       data-type="page"
                                       data-id="4217"
                                     >
                                       Gift Card Terms &amp; Conditions
-                                    </a>
+                                    </Link>
                                   </p>
                                 </div>
                               </div>
@@ -184,13 +182,13 @@ function Footer({ data, update }) {
                                   <p className="has-text-align-left">
                                     Altona
                                     <br />
-                                    <a
-                                      href="http://scoresbymortgagebroker.com.au/mortgage-broker-berwick/"
+                                    <Link
+                                      href="/mortgage-broker-berwick/"
                                       data-type="page"
                                       data-id="4546"
                                     >
                                       Berwick
-                                    </a>
+                                    </Link>
                                     <br />
                                     Burwood
                                     <br />
@@ -237,7 +235,7 @@ function Footer({ data, update }) {
                                     Mount Waverley
                                     <br />
                                     <a
-                                      href="http://scoresbymortgagebroker.com.au/mortgage-broker-pakenham/"
+                                      href="/mortgage-broker-pakenham"
                                       data-type="page"
                                       data-id="1921"
                                     >

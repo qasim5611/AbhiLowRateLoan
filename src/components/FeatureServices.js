@@ -84,7 +84,7 @@ export function FeatureServices(props) {
                             <div className="wp-block-button is-style-fill">
                               <a
                                 className="wp-block-button__link has-theme-palette-2-background-color has-background wp-element-button"
-                                href="/home-loans/buy-a-new-home/"
+                                href="/buy-a-new-home/"
                               >
                                 Buy a home
                               </a>
@@ -113,7 +113,7 @@ export function FeatureServices(props) {
                             <div className="wp-block-button">
                               <a
                                 className="wp-block-button__link has-theme-palette-2-background-color has-background wp-element-button"
-                                href="/home-loans/refinance-home-loan/"
+                                href="/refinance-home-loan/"
                               >
                                 Refinance your home
                               </a>
@@ -142,7 +142,7 @@ export function FeatureServices(props) {
                             <div className="wp-block-button">
                               <a
                                 className="wp-block-button__link has-theme-palette-2-background-color has-background wp-element-button"
-                                href="/home-loans/buy-investment-property/"
+                                href="/buy-investment-property"
                               >
                                 Buy Investment Property
                               </a>

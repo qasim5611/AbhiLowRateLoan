@@ -96,7 +96,7 @@ function DrawerAppBar(props) {
   //   window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "none" }}>
       <CssBaseline />
       <AppBar
         component="nav"

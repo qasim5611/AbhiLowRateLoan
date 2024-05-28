@@ -9,7 +9,7 @@ import { ContactForm } from "../../components/ContactForm";
 export default function Page(props) {
   return (
     <>
-      <PageTitle title="Bondi Junction Mortgage Brokers" />
+      <PageTitle title="FAQs" />
       <FeaturedTop />
 
       {/* Manual 2
@@ -18,14 +18,14 @@ sec and map, Manual */}
 
       <div className="setstyle"></div>
 
-      <ReputableLenders />
-      <FeatureServicesProvides />
+      {/* <ReputableLenders /> */}
+      {/* <FeatureServicesProvides /> */}
 
       {/* Tips & Advice / Manual  */}
       {/* FAQ Tips / Manual */}
       {/* 1250-1345 */}
 
-      <div className="setstyle"></div>
+      {/* <div className="setstyle"></div> */}
 
       <Faq />
       <ContactForm />

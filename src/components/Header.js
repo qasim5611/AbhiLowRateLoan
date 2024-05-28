@@ -47,6 +47,7 @@ function Header({ data, update }) {
                                   decoding="async"
                                   width={396}
                                   height={310}
+                                  style={{ cursor: "pointer" }}
                                 />
                               </Link>
                             </div>

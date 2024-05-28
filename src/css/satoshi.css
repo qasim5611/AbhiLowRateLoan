@@ -1213,14 +1213,18 @@ iframe{
 
 .setstyle h5,
 .setstyle h2,
-.setstyle p {
+.setstyle p,
+.setstyle h2,
+.setstyle h1,
+.setstyle h3
+ {
     padding: 0px 20px !important;
 
 }
-.setstyle ul {
+/* .setstyle ul {
     padding: 20px 60px !important;
 
-}
+} */
 .setstyle ol {
     padding: 20px 20px !important;
 
