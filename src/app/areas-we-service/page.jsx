@@ -838,7 +838,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_45d315-0b wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_45d315-0b"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/mortgage-broker-adelaide"
+                                              title=""
+                                            >
                                               Adelaide
                                             </Link>{" "}
                                             SA 5000
@@ -897,7 +900,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_3bb33c-05 wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_3bb33c-05"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/mortgage-broker-brisbane"
+                                              title=""
+                                            >
                                               Brisbane QLD
                                             </Link>{" "}
                                             5000
@@ -911,7 +917,7 @@ export default function AreasServices(props) {
                                             data-kb-block="kb-adv-heading_415de0-dd"
                                           >
                                             <Link
-                                              href="http://scoresbymortgagebroker.com.au/mortgage-broker-berwick/"
+                                              href="/mortgage-broker-lansvale-nsw"
                                               title="Mortgage Broker Berwick"
                                             >
                                               Lansvale, NSW
@@ -926,7 +932,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_196225-2d wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_196225-2d"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/mortgage-brokers-in-sutherland-nsw"
+                                              title=""
+                                            >
                                               Sutherland,
                                             </Link>{" "}
                                             NSW 2232
@@ -939,7 +948,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_113c0c-74 wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_113c0c-74"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/turramurra-mortgage-brokers"
+                                              title=""
+                                            >
                                               Turramurra
                                             </Link>{" "}
                                             NSW 2074
@@ -961,7 +973,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_fc46f6-c4 wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_fc46f6-c4"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/mortgage-broker-gold-coast"
+                                              title=""
+                                            >
                                               Gold Coast QLD
                                             </Link>{" "}
                                             4217
@@ -974,7 +989,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_059d7c-75 wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_059d7c-75"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/mortgage-broker-hoxton-park-nsw"
+                                              title=""
+                                            >
                                               Hoxton Park
                                             </Link>{" "}
                                             NSW 2174
@@ -987,7 +1005,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_91324e-c1 wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_91324e-c1"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/hornsby-mortgage-brokers"
+                                              title=""
+                                            >
                                               Hornsby
                                             </Link>{" "}
                                             NSW 2077
@@ -1022,7 +1043,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_257d2d-83 wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_257d2d-83"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/mortgage-broker-liverpool-nsw-2170"
+                                              title=""
+                                            >
                                               Liverpool
                                             </Link>{" "}
                                             NSW 2170
@@ -1035,7 +1059,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_5fd7d9-cb wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_5fd7d9-cb"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/mortgage-broker-moorebank"
+                                              title=""
+                                            >
                                               Moorebank
                                             </Link>{" "}
                                             NSW 2175
@@ -1048,7 +1075,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_a46c8b-01 wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_a46c8b-01"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/north-sydney-mortgage-brokers"
+                                              title=""
+                                            >
                                               North Sydney
                                             </Link>{" "}
                                             NSW 2060
@@ -1061,7 +1091,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_d92687-30 wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_d92687-30"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/mosman-mortgage-brokers"
+                                              title=""
+                                            >
                                               Mosman
                                             </Link>
                                             NSW 2088
@@ -1083,7 +1116,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_a16730-51 wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_a16730-51"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/mortgage-brokers-cabramatta"
+                                              title=""
+                                            >
                                               Cabramatta
                                             </Link>
                                             NSW 2166
@@ -1096,7 +1132,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_3de068-36 wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_3de068-36"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/mortgage-broker-abbotsbury"
+                                              title=""
+                                            >
                                               Abbotsbury
                                             </Link>{" "}
                                             NSW 2176
@@ -1109,7 +1148,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_6f2d34-57 wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_6f2d34-57"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/st-ives-mortgage-brokers-nsw-2075"
+                                              title=""
+                                            >
                                               St Ives
                                             </Link>{" "}
                                             NSW 2076
@@ -1122,7 +1164,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_1c202a-31 wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_1c202a-31"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/waitara-mortgage-brokers"
+                                              title=""
+                                            >
                                               Waitara
                                             </Link>{" "}
                                             NSW 2077
@@ -1144,7 +1189,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_d5b9b7-9a wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_d5b9b7-9a"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/mortgage-broker-prestons-nsw-2170"
+                                              title=""
+                                            >
                                               Prestons
                                             </Link>{" "}
                                             NSW 2170
@@ -1157,7 +1205,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_955fdf-64 wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_955fdf-64"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/mortgage-brokers-len-waters-estate-nsw"
+                                              title=""
+                                            >
                                               Len Waters Estate,
                                             </Link>{" "}
                                             NSW 2171
@@ -1171,7 +1222,7 @@ export default function AreasServices(props) {
                                             data-kb-block="kb-adv-heading_337dc8-76"
                                           >
                                             <Link
-                                              href="http://scoresbymortgagebroker.com.au/mortgage-broker-pakenham/"
+                                              href="/crows-nest-mortgage-brokers"
                                               title="Mortgage Broker Pakenham"
                                             >
                                               Crows Nest,
@@ -1186,7 +1237,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_61b249-69 wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_61b249-69"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/castle-cove-mortgage-brokers"
+                                              title=""
+                                            >
                                               Castle Cove,
                                             </Link>{" "}
                                             NSW 2069
@@ -1208,7 +1262,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_027f07-16 wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_027f07-16"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/mortgage-broker-middleton-grange"
+                                              title=""
+                                            >
                                               Middleton Grange,
                                             </Link>{" "}
                                             2171
@@ -1221,7 +1278,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_553142-5a wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_553142-5a"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/ashcroft-mortgage-brokers"
+                                              title=""
+                                            >
                                               Ashcroft{" "}
                                             </Link>
                                             NSW 2168
@@ -1234,7 +1294,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_541fc1-3a wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_541fc1-3a"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/artarmon-mortgage-brokers"
+                                              title=""
+                                            >
                                               Artarmon,
                                             </Link>{" "}
                                             NSW 1510
@@ -1247,7 +1310,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_77d18f-e1 wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_77d18f-e1"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/bondi-junction-mortgage-brokers"
+                                              title=""
+                                            >
                                               Bondi Junction,
                                             </Link>{" "}
                                             NSW 2022
@@ -1269,7 +1335,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_f52ffe-54 wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_f52ffe-54"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/mortgage-broker-lurnea-nsw"
+                                              title=""
+                                            >
                                               Lurnea,
                                             </Link>{" "}
                                             NSW 2170
@@ -1282,7 +1351,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_50e1e8-ee wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_50e1e8-ee"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/mortgage-brokers-in-parramatta-nsw"
+                                              title=""
+                                            >
                                               Parramatta,
                                             </Link>{" "}
                                             NSW 2150
@@ -1295,7 +1367,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_718d81-bf wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_718d81-bf"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/chatswood-mortgage-brokers"
+                                              title=""
+                                            >
                                               Chatswood,
                                             </Link>
                                             NSW 2067
@@ -1308,7 +1383,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_a34b58-7b wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_a34b58-7b"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/randwick-mortgage-brokers"
+                                              title=""
+                                            >
                                               Randwick,
                                             </Link>{" "}
                                             NSW 2031
@@ -1330,7 +1408,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_3f1958-8e wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_3f1958-8e"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/mortgage-broker-casula-nsw"
+                                              title=""
+                                            >
                                               Casula,
                                             </Link>{" "}
                                             NSW 2170
@@ -1343,7 +1424,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_45d315-0b wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_45d315-0b"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/mortgage-brokers-in-ryde-nsw"
+                                              title=""
+                                            >
                                               Ryde,
                                             </Link>{" "}
                                             NSW 2113
@@ -1356,7 +1440,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_45d315-0b wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_45d315-0b"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/kirribilli-mortgage-brokers"
+                                              title=""
+                                            >
                                               Kirribilli,
                                             </Link>{" "}
                                             NSW 2061
@@ -1369,7 +1456,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_45d315-0b wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_45d315-0b"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/clovelly-mortgage-brokers"
+                                              title=""
+                                            >
                                               Clovelly,
                                             </Link>{" "}
                                             NSW 2036
@@ -1392,7 +1482,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_3f1958-8e wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_3f1958-8e"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/bellevue-hill-mortgage-brokers"
+                                              title=""
+                                            >
                                               Bellevue Hill,
                                             </Link>{" "}
                                             NSW 2023
@@ -1405,7 +1498,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_45d315-0b wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_45d315-0b"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/paddington-mortgage-brokers"
+                                              title=""
+                                            >
                                               Paddington,
                                             </Link>{" "}
                                             NSW 2021
@@ -1418,7 +1514,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_45d315-0b wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_45d315-0b"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/double-bay-mortgage-brokers"
+                                              title=""
+                                            >
                                               Double Bay,
                                             </Link>{" "}
                                             NSW 2028
@@ -1431,7 +1530,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_45d315-0b wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_45d315-0b"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/darling-point-mortgage-brokers"
+                                              title=""
+                                            >
                                               Darling Point,
                                             </Link>{" "}
                                             NSW 2027
@@ -1454,7 +1556,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_3f1958-8e wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_3f1958-8e"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/dover-heights-mortgage-brokers"
+                                              title=""
+                                            >
                                               Dover Heights,
                                             </Link>{" "}
                                             NSW 2030
@@ -1467,7 +1572,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_45d315-0b wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_45d315-0b"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/bondi-beach-mortgage-brokers"
+                                              title=""
+                                            >
                                               Bondi Beach,
                                             </Link>{" "}
                                             NSW 2026
@@ -1480,7 +1588,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_45d315-0b wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_45d315-0b"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/coogee-mortgage-brokers"
+                                              title=""
+                                            >
                                               Coogee,
                                             </Link>{" "}
                                             NSW 2034
@@ -1493,7 +1604,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_45d315-0b wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_45d315-0b"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/point-piper-mortgage-brokers"
+                                              title=""
+                                            >
                                               Point Piper,
                                             </Link>{" "}
                                             NSW 2027
@@ -1516,7 +1630,10 @@ export default function AreasServices(props) {
                                             className="kt-adv-heading_3f1958-8e wp-block-kadence-advancedheading"
                                             data-kb-block="kb-adv-heading_3f1958-8e"
                                           >
-                                            <Link href="#" title="">
+                                            <Link
+                                              href="/rose-bay-mortgage-brokers"
+                                              title=""
+                                            >
                                               Rose Bay,
                                             </Link>{" "}
                                             NSW 2029
