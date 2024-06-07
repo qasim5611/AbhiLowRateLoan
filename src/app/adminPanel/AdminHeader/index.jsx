@@ -15,6 +15,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function AdminHeader({ open, setOpen }) {
+  // Ensure this component only runs on the client side
+  if (typeof window === "undefined") {
+    return null; // Or return some loading or fallback component if needed
+  }
   const drawerWidth = 240;
   //   const [open, setOpen] = useState(false);
 

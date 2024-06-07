@@ -22,6 +22,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function AdminPanel({ open, setOpen }) {
+  // Ensure this component only runs on the client side
+  if (typeof window === "undefined") {
+    return null; // Or return some loading or fallback component if needed
+  }
+
   const theme = useTheme();
   const [submenuOpen, setSubmenuOpen] = useState(false);
   const [submenuOpen2, setSubmenuOpen2] = useState(false);

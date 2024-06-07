@@ -27,6 +27,10 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Image from "next/image";
 
 export default function AdminPanel() {
+  // Ensure this component only runs on the client side
+  if (typeof window === "undefined") {
+    return null; // Or return some loading or fallback component if needed
+  }
   const theme = useTheme();
   const [open, setOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);

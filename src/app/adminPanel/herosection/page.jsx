@@ -8,6 +8,10 @@ import Breadcrumb from "@/../components/Breadcrumbs/Breadcrumb";
 import { Grid, TextField } from "@mui/material";
 
 export default function HeroSection(props) {
+  // Ensure this component only runs on the client side
+  if (typeof window === "undefined") {
+    return null; // Or return some loading or fallback component if needed
+  }
   return (
     <Adminlayout>
       <div style={{ marginTop: "65px", padding: "20px", width: "100%" }}>

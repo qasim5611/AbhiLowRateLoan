@@ -6,6 +6,10 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 
 const AdminLayout = ({ children }) => {
+  // Ensure this component only runs on the client side
+  if (typeof window === "undefined") {
+    return null; // Or return some loading or fallback component if needed
+  }
   const [open, setOpen] = useState(true);
 
   return (
