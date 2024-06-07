@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import ReactApexChart from "react-apexcharts";
 
@@ -62,6 +63,9 @@ const options = {
 };
 
 const ChartTwo = () => {
+  if (typeof window === "undefined") {
+    return null; // Or return some loading or fallback component if needed
+  }
   const [state, setState] = useState({
     series: [
       {

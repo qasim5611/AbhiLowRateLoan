@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Grid } from "@mui/material";
@@ -54,6 +56,9 @@ const chatData = [
 ];
 
 const ChatCard = () => {
+  if (typeof window === "undefined") {
+    return null; // Or return some loading or fallback component if needed
+  }
   return (
     <div className="col-span-12 rounded-sm border border-stroke bg-white py-6 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
       <h4 className="mb-6 px-7.5 text-xl font-semibold text-black dark:text-white">
