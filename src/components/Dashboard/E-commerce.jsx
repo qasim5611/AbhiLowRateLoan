@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import ChartOne from "../Charts/ChartOne";
 import ChartThree from "../Charts/ChartThree";
 import ChartTwo from "../Charts/ChartTwo";
 import ChatCard from "../Chat/ChatCard";
@@ -9,9 +10,6 @@ import CardDataStats from "../CardDataStats";
 import Grid from "@mui/material/Grid";
 
 const ECommerce = () => {
-  if (typeof window === "undefined") {
-    return null; // Or return some loading or fallback component if needed
-  }
   return (
     <>
       <Grid container spacing={2}>
