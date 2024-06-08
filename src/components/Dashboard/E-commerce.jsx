@@ -2,7 +2,7 @@
 import React from "react";
 // import ChartOne from "../Charts/ChartOne";
 // import ChartThree from "../Charts/ChartThree";
-// import ChartTwo from "../Charts/ChartTwo";
+import ChartTwo from "../Charts/ChartTwo";
 // import ChatCard from "../Chat/ChatCard";
 // import TableOne from "../Tables/TableOne";
 import CardDataStats from "../CardDataStats";
@@ -132,7 +132,7 @@ const ECommerce = () => {
 
       <Grid container spacing={2}>
         <Grid item xs={8}>
-          {/* <ChartTwo /> */}
+          <ChartTwo />
         </Grid>
         <Grid item xs={4}>
           {/* <ChartThree /> */}
