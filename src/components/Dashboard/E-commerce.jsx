@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 // import ChartOne from "../Charts/ChartOne";
-import ChartThree from "../Charts/ChartThree";
-// import ChartTwo from "../Charts/ChartTwo";
+import LineChart from "../Charts/ChartThree";
+import PieChart from "../Charts/PieChart";
 // import ChatCard from "../Chat/ChatCard";
 // import TableOne from "../Tables/TableOne";
 import CardDataStats from "../CardDataStats";
@@ -14,9 +14,9 @@ const ECommerce = () => {
     return null; // Or return some loading or fallback component if needed
   }
   return (
-    <>
-      <Grid container spacing={2}>
-        <Grid item xs={3}>
+    <div style={{ padding: "20px 20px 0px 20px", width: "100%" }}>
+      <Grid container>
+        <Grid item xs={3} lg={3}>
           <CardDataStats
             title="Total views"
             total="$3.456K"
@@ -42,7 +42,7 @@ const ECommerce = () => {
             </svg>
           </CardDataStats>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={3} lg={3}>
           <CardDataStats
             title="Total Profit"
             total="$45,2K"
@@ -72,7 +72,7 @@ const ECommerce = () => {
             </svg>
           </CardDataStats>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={3} lg={3}>
           <CardDataStats
             title="Total Product"
             total="2.450"
@@ -98,7 +98,7 @@ const ECommerce = () => {
             </svg>
           </CardDataStats>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={3} lg={3}>
           <CardDataStats
             title="Total Users"
             total="3.456"
@@ -130,12 +130,25 @@ const ECommerce = () => {
         </Grid>
       </Grid>
 
-      <Grid container spacing={2}>
-        <Grid item xs={8}>
-          {/* <ChartTwo /> */}
+      <br />
+      <br />
+      <br />
+      <br />
+      <Grid container>
+        <Grid item xs={12} lg={6}>
+          <LineChart />
         </Grid>
-        <Grid item xs={4}>
-          <ChartThree />
+        <Grid item xs={12} lg={4}>
+          <PieChart />
+        </Grid>
+        <Grid item xs={12} lg={2}>
+          &nbsp;
+        </Grid>
+      </Grid>
+
+      <Grid container spacing={2}>
+        <Grid item xs={12} lg={12}>
+          dfghjk
         </Grid>
       </Grid>
 
@@ -159,7 +172,7 @@ const ECommerce = () => {
         <div className="col-span-12 xl:col-span-8">{/* <TableOne /> */}</div>
         {/* <ChatCard /> */}
       </div>
-    </>
+    </div>
   );
 };
 

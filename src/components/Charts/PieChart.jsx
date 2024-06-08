@@ -1,35 +1,27 @@
-// charts.tsx/jsx
-
 "use client"; // if you use app dir, don't forget this line
 
 import dynamic from "next/dynamic";
 const ApexChart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 export default function DonutChart() {
-  const option = {
+  const options = {
     chart: {
       id: "apexchart-example",
+      type: "donut", // Change chart type to donut
     },
-    xaxis: {
-      categories: ["June24", "May24", "April24", "March24", "Feb24", "Jan24"],
-    },
-    colors: ["#FFA500"], // Change line color to orange
+    labels: ["Refinanced Users", "Buy Home Users"], // Labels for each data point
+    colors: ["#008000", "#ffd085"],
   };
 
-  const series = [
-    {
-      name: "series-1",
-      data: [30, 40, 35, 50, 49, 60],
-    },
-  ];
+  const series = [30, 40]; // Series data
 
   return (
     <>
       <ApexChart
-        type="line"
-        options={option}
+        options={options}
         series={series}
-        height={230}
+        type="donut"
+        height={250}
         width={500}
       />
     </>
