@@ -14,7 +14,7 @@
     "@mui/icons-material": "^5.15.14",
     "@mui/material": "^5.15.14",
     "@reduxjs/toolkit": "^2.2.3",
-    "apexcharts": "^3.48.0",
+    "apexcharts": "^3.49.1",
     "axios": "^1.6.8",
     "flatpickr": "^4.6.13",
     "jsvectormap": "^1.5.3",
