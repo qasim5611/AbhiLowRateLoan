@@ -180,7 +180,9 @@ function Footer({ data, update }) {
                               <div className="wp-block-kadence-column inner-column-1 kadence-column_3d25e0-92">
                                 <div className="kt-inside-inner-col">
                                   <p className="has-text-align-left">
-                                    Altona
+                                    <Link href="/mortgage-broker-altona">
+                                      Altona
+                                    </Link>
                                     <br />
                                     <Link
                                       href="/mortgage-broker-berwick/"
@@ -190,17 +192,29 @@ function Footer({ data, update }) {
                                       Berwick
                                     </Link>
                                     <br />
-                                    Burwood
+                                    <Link href="/mortgage-broker-burwood">
+                                      Burwood
+                                    </Link>
                                     <br />
-                                    Caroline Springs
+                                    <Link href="/mortgage-broker-caroline-springs">
+                                      Caroline Springs
+                                    </Link>
                                     <br />
-                                    Clyde
+                                    <Link href="/mortgage-broker-clyde">
+                                      Clyde
+                                    </Link>
                                     <br />
-                                    Craigieburn
+                                    <Link href="/mortgage-broker-craigieburn">
+                                      Craigieburn
+                                    </Link>
                                     <br />
-                                    Cranbourne
+                                    <Link href="/mortgage-broker-cranbourne">
+                                      Cranbourne
+                                    </Link>
                                     <br />
-                                    Dandenong
+                                    <Link href="/mortgage-broker-dandenong">
+                                      Dandenong
+                                    </Link>
                                   </p>
                                 </div>
                               </div>
@@ -208,21 +222,37 @@ function Footer({ data, update }) {
                               <div className="wp-block-kadence-column inner-column-2 kadence-column_7332ef-10">
                                 <div className="kt-inside-inner-col">
                                   <p className="has-text-align-left">
-                                    Fitzroy
+                                    <Link href="/mortgage-broker-fitzroy">
+                                      Fitzroy
+                                    </Link>
                                     <br />
-                                    Footscray
+                                    <Link href="/mortgage-broker-footscray">
+                                      Footscray
+                                    </Link>
                                     <br />
-                                    Glen Waverley
+                                    <Link href="/mortgage-broker-glen-waverley">
+                                      Glen Waverley
+                                    </Link>
                                     <br />
-                                    Hampton Park
+                                    <Link href="/mortgage-broker-glen-waverley">
+                                      Hampton Park
+                                    </Link>
                                     <br />
-                                    Hoppers Crossing
+                                    <Link href="/mortgage-broker-hoppers-crossing">
+                                      Hoppers Crossing
+                                    </Link>
                                     <br />
-                                    Keysborough
+                                    <Link href="/mortgage-broker-keysborough">
+                                      Keysborough
+                                    </Link>
                                     <br />
-                                    Laverton
+                                    <Link href="/mortgage-broker-laverton">
+                                      Laverton
+                                    </Link>
                                     <br />
-                                    Mitcham
+                                    <Link href="/mortgage-broker-mitcham">
+                                      Mitcham
+                                    </Link>
                                   </p>
                                 </div>
                               </div>
@@ -230,25 +260,36 @@ function Footer({ data, update }) {
                               <div className="wp-block-kadence-column inner-column-3 kadence-column_616dbe-16">
                                 <div className="kt-inside-inner-col">
                                   <p className="has-text-align-left">
-                                    Mornington Peninsula
+                                    <Link href="/mortgage-broker-mornington-peninsula">
+                                      Mornington Peninsula
+                                    </Link>
                                     <br />
-                                    Mount Waverley
+                                    <Link href="/mortgage-broker-mount-waverley">
+                                      Mount Waverley
+                                    </Link>
                                     <br />
-                                    <a
-                                      href="/mortgage-broker-pakenham"
-                                      data-type="page"
-                                      data-id="1921"
-                                    >
+                                    <Link href="/mortgage-broker-pakenham">
                                       Pakenham
-                                    </a>
+                                    </Link>
                                     <br />
-                                    Ringwood
+                                    <Link href="/mortgage-broker-pakenham">
+                                      Ringwood
+                                    </Link>
+
                                     <br />
-                                    Rockbank
+                                    <Link href="/mortgage-broker-rockbank">
+                                      Rockbank
+                                    </Link>
+
                                     <br />
-                                    Scoresby
+                                    <Link href="/mortgage-broker-scoresby">
+                                      Scoresby
+                                    </Link>
+
                                     <br />
-                                    South Yarra
+                                    <Link href="/mortgage-broker-south-yarra">
+                                      South Yarra
+                                    </Link>
                                   </p>
                                 </div>
                               </div>
@@ -256,19 +297,38 @@ function Footer({ data, update }) {
                               <div className="wp-block-kadence-column inner-column-4 kadence-column_c1298d-ed">
                                 <div className="kt-inside-inner-col">
                                   <p>
-                                    Springvale
+                                    <Link href="/mortgage-broker-springvale">
+                                      Springvale
+                                    </Link>
                                     <br />
-                                    Tarneit
+                                    <Link href="/mortgage-broker-tarneit">
+                                      Tarneit
+                                    </Link>
+
                                     <br />
-                                    Werribee
+                                    <Link href="/mortgage-broker-werribee">
+                                      Werribee
+                                    </Link>
+
                                     <br />
-                                    Wheelers Hill
+                                    <Link href="/mortgage-broker-wheelers-hill">
+                                      Wheelers Hill
+                                    </Link>
+
                                     <br />
-                                    Williams Landing
+                                    <Link href="/mortgage-broker-williams-landing">
+                                      Williams Landing
+                                    </Link>
+
                                     <br />
-                                    Wyndham Vale
+                                    <Link href="/mortgage-broker-wyndham-vale">
+                                      Wyndham Vale
+                                    </Link>
+
                                     <br />
-                                    Sydney NSW
+                                    <Link href="/mortgage-broker-sydney-nsw">
+                                      Sydney NSW
+                                    </Link>
                                   </p>
                                 </div>
                               </div>

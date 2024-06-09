@@ -10,7 +10,7 @@ import { ContactForm } from "../../components/ContactForm";
 export default function Castlecovemortgagebrokers(props) {
   return (
     <>
-      <PageTitle title="Bondi Junction Mortgage Brokers" />
+      <PageTitle title="Waitara Mortgage Brokers" />
       <FeaturedTop />
 
       {/* Manual 2

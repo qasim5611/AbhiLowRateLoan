@@ -9,11 +9,11 @@ export default function DonutChart() {
       id: "apexchart-example",
       type: "donut", // Change chart type to donut
     },
-    labels: ["Refinanced Users", "Buy Home Users"], // Labels for each data point
+    labels: ["Users Wants to Refinance", "Users Wants to Buy Home"], // Labels for each data point
     colors: ["#008000", "#ffd085"],
   };
 
-  const series = [30, 40]; // Series data
+  const series = [70, 30]; // Series data
 
   return (
     <>

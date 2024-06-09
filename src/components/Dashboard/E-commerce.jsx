@@ -3,11 +3,12 @@ import React from "react";
 // import ChartOne from "../Charts/ChartOne";
 import LineChart from "../Charts/ChartThree";
 import PieChart from "../Charts/PieChart";
-// import ChatCard from "../Chat/ChatCard";
+import BusinnesMap from "../Charts/BusinnesMap";
 // import TableOne from "../Tables/TableOne";
 import CardDataStats from "../CardDataStats";
 
 import Grid from "@mui/material/Grid";
+import { Box } from "@mui/material";
 
 const ECommerce = () => {
   if (typeof window === "undefined") {
@@ -137,6 +138,7 @@ const ECommerce = () => {
       <Grid container>
         <Grid item xs={12} lg={6}>
           <LineChart />
+          <Box>Overall Users</Box>
         </Grid>
         <Grid item xs={12} lg={4}>
           <PieChart />
@@ -146,32 +148,11 @@ const ECommerce = () => {
         </Grid>
       </Grid>
 
-      <Grid container spacing={2}>
+      <Grid container>
         <Grid item xs={12} lg={12}>
-          dfghjk
+          {/* <BusinnesMap /> */}
         </Grid>
       </Grid>
-
-      <Grid container spacing={2}>
-        <Grid item xs={8}>
-          {/* <ChartTwo /> */}
-        </Grid>
-        <Grid item xs={3}>
-          {/* <ChartThree /> */}
-        </Grid>
-        <Grid item xs={1}>
-          &nbsp;
-        </Grid>
-      </Grid>
-
-      {/* <ChatCard /> */}
-      <div className="mt-4 grid grid-cols-12 gap-4 md:mt-6 md:gap-6 2xl:mt-7.5 2xl:gap-7.5">
-        {/* <ChartOne /> */}
-
-        {/* <MapOne /> */}
-        <div className="col-span-12 xl:col-span-8">{/* <TableOne /> */}</div>
-        {/* <ChatCard /> */}
-      </div>
     </div>
   );
 };

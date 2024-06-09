@@ -9,7 +9,7 @@ import { ContactForm } from "../../components/ContactForm";
 export default function Page(props) {
   return (
     <>
-      <PageTitle title="Compare rates" />
+      <PageTitle title="Clovelly Mortgage Brokers" />
       <FeaturedTop />
 
       {/* Manual 2

@@ -9,10 +9,7 @@ import { ContactForm } from "../../components/ContactForm";
 export default function Page(props) {
   return (
     <>
-      <PageTitle
-        title="Mortgage Broker Abbotsbury
-"
-      />
+      <PageTitle title="Mortgage Broker Abbotsbury" />
       <FeaturedTop />
 
       {/* Manual 2
