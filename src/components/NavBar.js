@@ -24,17 +24,17 @@ import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import Link from "next/link";
 import { BorderBottom } from "@mui/icons-material";
-
+import useMediaQuery from "@mui/material/useMediaQuery";
 import { styled } from "@mui/material";
 
 const drawerWidth = 350;
 const navItems = ["Home", "About", "Contact"];
 // const navItems = [{}];
-
 function DrawerAppBar(props) {
   // const { window } = props;
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(null);
+  const matches = useMediaQuery("(max-width:600px)");
 
   const handleLinkClick = (index) => {
     setActiveIndex(index);
@@ -67,6 +67,7 @@ function DrawerAppBar(props) {
   };
 
   const handleDrawerToggle = () => {
+    console.log("Ok");
     setMobileOpen((prevState) => !prevState);
   };
 
@@ -96,7 +97,7 @@ function DrawerAppBar(props) {
   //   window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "none" }}>
+    <Box sx={matches ? { display: "block" } : { display: "none" }}>
       <CssBaseline />
       <AppBar
         component="nav"
