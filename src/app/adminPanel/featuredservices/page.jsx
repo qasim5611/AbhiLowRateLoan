@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Adminlayout from "../Adminlayout";
 import { useSelector, useDispatch } from "react-redux";
 
-import Breadcrumb from "@/../components/Breadcrumbs/Breadcrumb";
+import Breadcrumb from "./../../../components/Breadcrumbs/Breadcrumb";
 import { Grid, TextField } from "@mui/material";
 import {
   editHeroSection,
