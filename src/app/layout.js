@@ -4,7 +4,7 @@ import "./globals.css";
 import "./globals.js";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "jsvectormap/dist/css/jsvectormap.css";
+// import "jsvectormap/dist/css/jsvectormap.css";
 import "flatpickr/dist/flatpickr.min.css";
 import "./../css/satoshi.css";
 import "./../css/style.css";
