@@ -21,7 +21,7 @@ export default function AboutUs(props) {
           </div>
         </section>
         {/* .entry-hero */}
-        <div id="primary" className="content-area">
+        <div id="primary" className="content-area haha">
           <div className="content-container site-container">
             <main id="main" className="site-main" role="main">
               <div className="content-wrap">

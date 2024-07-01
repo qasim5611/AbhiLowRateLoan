@@ -48,7 +48,7 @@ export function ContactForm(props) {
       try {
         // const req = await SendEmail(state, radioState);
         const req = await talkToUs(
-          "qasimtahir5611@gmail.com",
+          "info@lowratehomeloan.com.au",
           "Talk-To-Us User Form",
           obj
         );
