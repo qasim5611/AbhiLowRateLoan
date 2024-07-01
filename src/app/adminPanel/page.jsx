@@ -5,12 +5,12 @@ import React, { useEffect, useState } from "react";
 // import { useSession, signIn, signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
 
-import Adminlayout from "@/adminPanel/Adminlayout";
-import DashboardEcommerce from "@/../components/Dashboard/E-commerce";
+import Adminlayout from "./../adminPanel/Adminlayout";
+import DashboardEcommerce from "./../../components/Dashboard/E-commerce";
 
 export default function HeroSection() {
   // const { data: session, status } = useSession();
-  const router = useRouter();
+  // const router = useRouter();
   const [isLoading, setIsLoading] = useState(true);
 
   // useEffect(() => {
@@ -26,7 +26,6 @@ export default function HeroSection() {
   // if (isLoading) {
   //   return <div>Loading...</div>; // Show loading while checking auth status
   // }
-
   return (
     <Adminlayout>
       <div style={{ marginTop: "65px", padding: "20px", width: "100%" }}>

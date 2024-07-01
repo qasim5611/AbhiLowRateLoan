@@ -1,4 +1,4 @@
-import { FeaturedTop } from "@/../components/FeaturedTop";
+import { FeaturedTop } from "./../../components/FeaturedTop";
 import React from "react";
 import { ContactForm } from "../../components/ContactForm";
 

@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "@/../components/Header";
-import Footer from "@/../components/Footer";
+import Header from "./../../components/Header";
+import Footer from "./../../components/Footer";
 import { FeatureServices } from "../../components/FeatureServices";
 import { ReputableLenders } from "../../components/ReputableLenders";
 import Link from "next/link";

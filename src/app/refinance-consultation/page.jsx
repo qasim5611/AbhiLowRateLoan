@@ -1,7 +1,7 @@
 "use client";
-import { FeaturedTop } from "@/../components/FeaturedTop";
-import Footer from "@/../components/Footer";
-import Header from "@/../components/Header";
+import { FeaturedTop } from "./../../components/FeaturedTop";
+import Footer from "./../../components/Footer";
+import Header from "./../../components/Header";
 import React, { useState } from "react";
 import "./refinance-consultation.css";
 import Link from "next/link";
@@ -111,7 +111,7 @@ export default function RefinanceConsultation(props) {
       try {
         // const req = await SendEmail(state, radioState);
         const req = await sendEmail(
-          "info@lowratehomeloan.com.au",
+          "qasimtahir5611@gmail.com",
           "Refinance Consultation Form",
           obj
         );

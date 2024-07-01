@@ -35,7 +35,11 @@ const initialState = {
 
 export const authuser = createAsyncThunk("auth/authuser", async (body) => {
   try {
-    const response = await axios.post(API + "/authenticate", body);
+    // const response = await axios.post(API + "/authenticate", body);
+    console.log("body at global Slice", body);
+    let response = await axios.post("/api/user/login", body);
+    console.log("response at global Slice", response);
+
     if (response.data.msg === "Login Successfull") {
       return { type: "DATA_LOGIN", payload: response.data };
     }
@@ -46,9 +50,24 @@ export const authuser = createAsyncThunk("auth/authuser", async (body) => {
   }
 });
 
-export const logoutuser = createAsyncThunk("auth/logoutuser", async () => {
-  return { type: "LOGOUT" };
-});
+export const logoutuserNow = createAsyncThunk(
+  "auth/logoutuserNow",
+  async () => {
+    console.log("logout");
+    // return { type: "LOGOUT" };
+    // let response = await axios.post("/api/user/logout");
+    let body = {
+      name: "LowRateloanLogout",
+    };
+    let response = await axios.post("/api/user/logout", body);
+
+    console.log("response logoutuserNow", response);
+
+    // if (response.data.msg === "Login Successfull") {
+    //   return { type: "DATA_LOGIN", payload: response.data };
+    // }
+  }
+);
 
 export const forgotpass = createAsyncThunk("auth/forgotpass", async (body) => {
   try {
@@ -85,8 +104,14 @@ export const forgotpass = createAsyncThunk("auth/forgotpass", async (body) => {
 
 export const signupdata = createAsyncThunk("auth/signupdata", async (body) => {
   try {
-    const response = await axios.post(API + "/register", body);
-    return response.data;
+    console.log(
+      ".................................>> SignUp Global Slice",
+      body
+    );
+
+    let res = await axios.post("/api/user/Signup", body);
+    console.log(res);
+    return res;
   } catch (error) {
     // Handle error
     console.error(error);
@@ -173,6 +198,86 @@ export const resetpassw = createAsyncThunk(
     }
   }
 );
+
+export const editHeroSection = createAsyncThunk(
+  "auth/editHeroSection",
+  async (body) => {
+    try {
+      console.log(
+        ".................................>> editHeroSection Global Slice",
+        body
+      );
+
+      let res = await axios.post("/api/useradmin/HeroBanner", body);
+      console.log("res", res);
+      return res;
+    } catch (error) {
+      // Handle error
+      console.error(error);
+      throw error;
+    }
+  }
+);
+
+export const editFeatureTopSection = createAsyncThunk(
+  "auth/editFeatureTopSection",
+  async (body) => {
+    try {
+      console.log(
+        ".................................>> FeatureTop Global Slice",
+        body
+      );
+      const config = {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      };
+      let formData = new FormData();
+      for (var item in body) {
+        formData.append(item, body[item]);
+      }
+      console.log("formData", formData);
+
+      let res = await axios.post("/api/useradmin/featuretop", formData, config);
+      console.log("res", res);
+      return res;
+    } catch (error) {
+      // Handle error
+      console.error(error);
+      throw error;
+    }
+  }
+);
+
+export const getHeroSection = createAsyncThunk(
+  "auth/getHeroSection",
+  async (body) => {
+    try {
+      let res = await axios.get("/api/useradmin/HeroBannerGet");
+      // console.log(res);
+      return res;
+    } catch (error) {
+      // Handle error
+      console.error(error);
+      throw error;
+    }
+  }
+);
+
+export const getFeatureSection = createAsyncThunk(
+  "auth/getFeatureSection",
+  async (body) => {
+    try {
+      let res = await axios.get("/api/useradmin/FeatureSectionGet");
+      console.log(res);
+      return res;
+    } catch (error) {
+      console.error(error);
+      throw error;
+    }
+  }
+);
+
 export const globalSlice = createSlice({
   name: "global",
   initialState,
@@ -194,7 +299,8 @@ export const globalSlice = createSlice({
       state.LoginMsg = action.payload.msg;
     },
     LOGOUT: (state, action) => {
-      cookies.remove("jwtToken");
+      console.log("cookies removed");
+      cookies.remove("token");
     },
     FORG_PASSERR: (state, action) => {
       state.ForgPassMsg = action.payload.msg;
@@ -238,10 +344,6 @@ export const globalSlice = createSlice({
       })
       .addCase(authuser.rejected, (state, action) => {
         state.LoginMsg = action.payload.msg;
-      })
-      .addCase(logoutuser.fulfilled, (state) => {
-        cookies.remove("jwtToken");
-        state.data = "";
       })
       .addCase(forgotpass.fulfilled, (state, action) => {
         state.ForgPassMsg = action.payload.msg;

@@ -38,7 +38,7 @@ import "react-toastify/dist/ReactToastify.css";
 // import { HashLink } from "react-router-hash-link";
 // import { BsCheckCircleFill } from "react-icons/bs";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-// import { signupdata } from "./../../redux/slices/globalSlice.js";
+import { signupdata } from "./../../redux/slices/globalSlice.js";
 // import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 // import { BsCheckCircleFill } from "react-icons/bi";
 
@@ -73,10 +73,11 @@ const Signup = () => {
       closeOnClick: true,
       pauseOnHover: true,
       draggable: true,
+
       progress: undefined,
     });
 
-  // let dispatch = useDispatch();
+  let dispatch = useDispatch();
 
   const [isRecapVerfid, setisRecapVerfid] = useState(true);
 
@@ -168,11 +169,12 @@ const Signup = () => {
   const createAccounct = (e) => {
     e.preventDefault();
 
+    console.log("Regiter comp", values);
     var isFormvalid = validate();
     console.log("isvalid", isFormvalid);
     window.scrollTo(0, 200);
     if (isFormvalid) {
-      // dispatch(signupdata(values));
+      dispatch(signupdata(values));
     }
 
     //  inputRef.current.focus();
@@ -395,8 +397,8 @@ const Signup = () => {
 
           <Button
             disabled={!isRecapVerfid}
-            // onClick={createAccounct}   // leading to db
-            onClick={notify}
+            onClick={createAccounct} // leading to db
+            // onClick={notify}
             sx={{
               borderRadius: "30px",
               background: "#ff5100",

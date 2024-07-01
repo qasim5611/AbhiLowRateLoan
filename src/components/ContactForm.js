@@ -1,6 +1,196 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import { talkToUs } from "./../lib/page";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export function ContactForm(props) {
+  const [radioState, setRadioState] = useState({
+    loanType: "",
+  });
+
+  const [state, setState] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    loanType: "",
+    message: "",
+  });
+
+  const [nameErr, setnameErr] = useState("");
+  const [emailErr, setemailErr] = useState("");
+  const [phoneErr, setphoneErr] = useState("");
+  const [loanTypeErr, setloanTypeErr] = useState("");
+  const [messageErr, setmessageErr] = useState("");
+
+  const errmsg = {
+    color: "red",
+    position: "relative",
+    top: "11px",
+    fontSize: "13px",
+  };
+  const onChangeHandler = (e) => {
+    if (e.target.name == "image") {
+      let val = e.target.files[0];
+      setState({ ...state, [e.target.name]: val });
+    } else {
+      setState({ ...state, [e.target.name]: e.target.value });
+    }
+  };
+  const SubmitForm = async (e) => {
+    e.preventDefault();
+    var isFormvalid = validate();
+    if (isFormvalid) {
+      let obj = {
+        state,
+      };
+
+      try {
+        // const req = await SendEmail(state, radioState);
+        const req = await talkToUs(
+          "qasimtahir5611@gmail.com",
+          "Talk-To-Us User Form",
+          obj
+        );
+        console.log("ok", req);
+        if (req.data.status == "ok" || req.status == 200) {
+          toast.success("Form Send Successfully", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+
+            progress: undefined,
+          });
+        }
+      } catch (e) {
+        console.log(e);
+      }
+    }
+  };
+
+  const validate = () => {
+    const re =
+      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const isemailVer = re.test(state.email);
+    console.log("isemailVer", isemailVer);
+
+    let isvalid = true;
+
+    if (!isemailVer) {
+      isvalid = false;
+      setemailErr("Your Email is not Correct!");
+      setnameErr("");
+      setphoneErr("");
+      setloanTypeErr("");
+      setmessageErr("");
+
+      toast.error("Please Fill Form Correctly", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+
+        progress: undefined,
+      });
+    } else if (
+      state.name.length < 5 ||
+      state.name.length > 40 ||
+      state.name.length == 0
+    ) {
+      isvalid = false;
+      setnameErr("Required Field!");
+      setemailErr("");
+      setphoneErr("");
+      setloanTypeErr("");
+      setmessageErr("");
+      toast.error("Please Fill Form Correctly", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+
+        progress: undefined,
+      });
+    } else if (
+      state.phone.length < 5 ||
+      state.phone.length > 40 ||
+      state.phone.length == 0
+    ) {
+      isvalid = false;
+      setnameErr("");
+      setemailErr("");
+      setphoneErr("Required Field!");
+      setloanTypeErr("");
+      setmessageErr("");
+      toast.error("Please Fill Form Correctly", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+
+        progress: undefined,
+      });
+    } else if (
+      state.loanType.length < 5 ||
+      state.loanType.length > 40 ||
+      state.loanType.length == 0
+    ) {
+      isvalid = false;
+      setnameErr("");
+      setemailErr("");
+      setphoneErr("");
+      setloanTypeErr("Required Field!");
+      setmessageErr("");
+      toast.error("Please Fill Form Correctly", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+
+        progress: undefined,
+      });
+    } else if (
+      state.message.length < 5 ||
+      state.message.length > 40 ||
+      state.message.length == 0
+    ) {
+      isvalid = false;
+      setnameErr("");
+      setemailErr("");
+      setphoneErr("");
+      setloanTypeErr("");
+      setmessageErr("Required Field!");
+      toast.error("Please Fill Form Correctly", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+
+        progress: undefined,
+      });
+    } else {
+      setnameErr("");
+      setemailErr("");
+      setphoneErr("");
+      setloanTypeErr("");
+      setmessageErr("");
+    }
+
+    return isvalid;
+  };
   return (
     <>
       <div className="wp-block-kadence-rowlayout alignnone">
@@ -99,15 +289,23 @@ export function ContactForm(props) {
                                               </label>
                                               <div className="ginput_container ginput_container_text">
                                                 <input
-                                                  name="input_1"
+                                                  name="name"
                                                   id="input_2_1"
                                                   type="text"
-                                                  value=""
+                                                  value={state.name}
                                                   className="large"
                                                   aria-required="true"
                                                   aria-invalid="false"
+                                                  onChange={onChangeHandler}
                                                 />{" "}
                                               </div>
+                                              <center>
+                                                {nameErr ? (
+                                                  <div style={errmsg}>
+                                                    {nameErr}
+                                                  </div>
+                                                ) : null}
+                                              </center>
                                             </div>
                                             <div
                                               id="field_2_7"
@@ -127,15 +325,23 @@ export function ContactForm(props) {
                                               </label>
                                               <div className="ginput_container ginput_container_email">
                                                 <input
-                                                  name="input_7"
+                                                  name="email"
                                                   id="input_2_7"
                                                   type="email"
-                                                  value=""
+                                                  value={state.email}
                                                   className="large"
                                                   aria-required="true"
                                                   aria-invalid="false"
+                                                  onChange={onChangeHandler}
                                                 />
                                               </div>
+                                              <center>
+                                                {emailErr ? (
+                                                  <div style={errmsg}>
+                                                    {emailErr}
+                                                  </div>
+                                                ) : null}
+                                              </center>
                                             </div>
                                             <div
                                               id="field_2_11"
@@ -155,15 +361,23 @@ export function ContactForm(props) {
                                               </label>
                                               <div className="ginput_container ginput_container_text">
                                                 <input
-                                                  name="input_11"
+                                                  name="phone"
                                                   id="input_2_11"
                                                   type="text"
-                                                  value=""
+                                                  value={state.phone}
                                                   className="large"
                                                   aria-required="true"
                                                   aria-invalid="false"
+                                                  onChange={onChangeHandler}
                                                 />{" "}
                                               </div>
+                                              <center>
+                                                {phoneErr ? (
+                                                  <div style={errmsg}>
+                                                    {phoneErr}
+                                                  </div>
+                                                ) : null}
+                                              </center>
                                             </div>
                                             <div
                                               id="field_2_9"
@@ -178,10 +392,11 @@ export function ContactForm(props) {
                                               </label>
                                               <div className="ginput_container ginput_container_select">
                                                 <select
-                                                  name="input_9"
+                                                  name="loanType"
                                                   id="input_2_9"
                                                   className="large gfield_select"
                                                   aria-invalid="false"
+                                                  onChange={onChangeHandler}
                                                 >
                                                   <option value="New Home Loan">
                                                     New Home Loan
@@ -194,6 +409,13 @@ export function ContactForm(props) {
                                                   </option>
                                                 </select>
                                               </div>
+                                              <center>
+                                                {loanTypeErr ? (
+                                                  <div style={errmsg}>
+                                                    {loanTypeErr}
+                                                  </div>
+                                                ) : null}
+                                              </center>
                                             </div>
                                             <div
                                               id="field_2_6"
@@ -213,7 +435,9 @@ export function ContactForm(props) {
                                               </label>
                                               <div className="ginput_container ginput_container_textarea">
                                                 <textarea
-                                                  name="input_6"
+                                                  name="message"
+                                                  value={state.message}
+                                                  onChange={onChangeHandler}
                                                   id="input_2_6"
                                                   className="textarea small"
                                                   aria-required="true"
@@ -222,6 +446,13 @@ export function ContactForm(props) {
                                                   cols="50"
                                                 ></textarea>
                                               </div>
+                                              <center>
+                                                {messageErr ? (
+                                                  <div style={errmsg}>
+                                                    {messageErr}
+                                                  </div>
+                                                ) : null}
+                                              </center>
                                             </div>
                                             <div
                                               id="field_2_12"
@@ -261,6 +492,8 @@ export function ContactForm(props) {
                                             id="gform_submit_button_2"
                                             className="gform_button button"
                                             value="Submit"
+                                            onClick={SubmitForm}
+
                                             // onclick='if(window["gf_submitting_2"]){return false;}  if( !jQuery("#gform_2")[0].checkValidity || jQuery("#gform_2")[0].checkValidity()){window["gf_submitting_2"]=true;}  '
                                             // onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_2"]){return false;} if( !jQuery("#gform_2")[0].checkValidity || jQuery("#gform_2")[0].checkValidity()){window["gf_submitting_2"]=true;}  jQuery("#gform_2").trigger("submit",[true]); }'
                                           />

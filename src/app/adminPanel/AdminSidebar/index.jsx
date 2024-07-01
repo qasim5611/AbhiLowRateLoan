@@ -206,112 +206,150 @@ export default function AdminPanel({ open, setOpen }) {
               </ListItem>
 
               <ListItem disablePadding sx={{ display: "block" }}>
-                <ListItemButton
-                  sx={{
-                    minHeight: 48,
-                    justifyContent: open ? "initial" : "center",
-                    px: 2.5,
-                    textAlign: "center",
-                  }}
+                <Link
+                  href={"/adminPanel/features"}
+                  style={{ textDecoration: "none" }}
                 >
-                  <ListItemText
-                    primary="Featured Top"
-                    sx={{ opacity: open ? 1 : 0 }}
-                  />
-                </ListItemButton>
+                  <ListItemButton
+                    sx={{
+                      minHeight: 48,
+                      justifyContent: open ? "initial" : "center",
+                      px: 2.5,
+                      textAlign: "center",
+                    }}
+                  >
+                    <ListItemText
+                      primary="Featured Top"
+                      sx={{ opacity: open ? 1 : 0 }}
+                    />
+                  </ListItemButton>
+                </Link>
               </ListItem>
 
               <ListItem disablePadding sx={{ display: "block" }}>
-                <ListItemButton
-                  sx={{
-                    minHeight: 48,
-                    justifyContent: open ? "initial" : "center",
-                    px: 2.5,
-                    textAlign: "center",
-                  }}
+                <Link
+                  href={"/adminPanel/reputableLenders"}
+                  style={{ textDecoration: "none" }}
                 >
-                  <ListItemText
-                    primary="Lenders Banner"
-                    sx={{ opacity: open ? 1 : 0 }}
-                  />
-                </ListItemButton>
+                  <ListItemButton
+                    sx={{
+                      minHeight: 48,
+                      justifyContent: open ? "initial" : "center",
+                      px: 2.5,
+                      textAlign: "center",
+                    }}
+                  >
+                    <ListItemText
+                      primary="Lenders Banner"
+                      sx={{ opacity: open ? 1 : 0 }}
+                    />
+                  </ListItemButton>
+                </Link>
               </ListItem>
 
               <ListItem disablePadding sx={{ display: "block" }}>
-                <ListItemButton
-                  sx={{
-                    minHeight: 48,
-                    justifyContent: open ? "initial" : "center",
-                    px: 2.5,
-                    textAlign: "center",
-                  }}
+                <Link
+                  href={"/adminPanel/featuredservices"}
+                  style={{ textDecoration: "none" }}
                 >
-                  <ListItemText
-                    primary="Featured Service"
-                    sx={{ opacity: open ? 1 : 0 }}
-                  />
-                </ListItemButton>
+                  <ListItemButton
+                    sx={{
+                      minHeight: 48,
+                      justifyContent: open ? "initial" : "center",
+                      px: 2.5,
+                      textAlign: "center",
+                    }}
+                  >
+                    <ListItemText
+                      primary="Featured Service"
+                      sx={{ opacity: open ? 1 : 0 }}
+                    />
+                  </ListItemButton>
+                </Link>
               </ListItem>
 
               <ListItem disablePadding sx={{ display: "block" }}>
-                <ListItemButton
-                  sx={{
-                    minHeight: 48,
-                    justifyContent: open ? "initial" : "center",
-                    px: 2.5,
-                    textAlign: "center",
-                  }}
+                <Link
+                  href={"/adminPanel/applicationprocess"}
+                  style={{ textDecoration: "none" }}
                 >
-                  <ListItemText
-                    primary="Application Process"
-                    sx={{ opacity: open ? 1 : 0 }}
-                  />
-                </ListItemButton>
+                  <ListItemButton
+                    sx={{
+                      minHeight: 48,
+                      justifyContent: open ? "initial" : "center",
+                      px: 2.5,
+                      textAlign: "center",
+                    }}
+                  >
+                    <ListItemText
+                      primary="Application Process"
+                      sx={{ opacity: open ? 1 : 0 }}
+                    />
+                  </ListItemButton>
+                </Link>
               </ListItem>
 
               <ListItem disablePadding sx={{ display: "block" }}>
-                <ListItemButton
-                  sx={{
-                    minHeight: 48,
-                    justifyContent: open ? "initial" : "center",
-                    px: 2.5,
-                    textAlign: "center",
-                  }}
+                <Link
+                  href={"/adminPanel/testimonials"}
+                  style={{ textDecoration: "none" }}
                 >
-                  <ListItemText
-                    primary="Testimonials"
-                    sx={{ opacity: open ? 1 : 0 }}
-                  />
-                </ListItemButton>
+                  <ListItemButton
+                    sx={{
+                      minHeight: 48,
+                      justifyContent: open ? "initial" : "center",
+                      px: 2.5,
+                      textAlign: "center",
+                    }}
+                  >
+                    <ListItemText
+                      primary="Testimonials"
+                      sx={{ opacity: open ? 1 : 0 }}
+                    />
+                  </ListItemButton>
+                </Link>
               </ListItem>
 
               <ListItem disablePadding sx={{ display: "block" }}>
-                <ListItemButton
-                  sx={{
-                    minHeight: 48,
-                    justifyContent: open ? "initial" : "center",
-                    px: 2.5,
-                    textAlign: "center",
-                  }}
+                <Link
+                  href={"/adminPanel/faqs"}
+                  style={{ textDecoration: "none" }}
                 >
-                  <ListItemText primary="FAQs" sx={{ opacity: open ? 1 : 0 }} />
-                </ListItemButton>
+                  <ListItemButton
+                    sx={{
+                      minHeight: 48,
+                      justifyContent: open ? "initial" : "center",
+                      px: 2.5,
+                      textAlign: "center",
+                    }}
+                  >
+                    <ListItemText
+                      primary="FAQs"
+                      sx={{ opacity: open ? 1 : 0 }}
+                    />
+                  </ListItemButton>
+                </Link>
               </ListItem>
 
               <ListItem disablePadding sx={{ display: "block" }}>
-                <ListItemButton
-                  sx={{
-                    minHeight: 48,
-                    justifyContent: open ? "initial" : "center",
-                    px: 2.5,
-                    textAlign: "center",
-                  }}
+                <Link
+                  href={"/adminPanel/freeconsultation"}
+                  style={{ textDecoration: "none" }}
                 >
-                  <ListItemText
-                    primary="Consultation Form"
-                    sx={{ opacity: open ? 1 : 0 }}
-                  />
-                </ListItemButton>
+                  <ListItemButton
+                    sx={{
+                      minHeight: 48,
+                      justifyContent: open ? "initial" : "center",
+                      px: 2.5,
+                      textAlign: "center",
+                    }}
+                  >
+                    <ListItemText
+                      primary="Consultation Form"
+                      sx={{ opacity: open ? 1 : 0 }}
+                    />
+                  </ListItemButton>
+                </Link>
               </ListItem>
 
               <List>
@@ -437,51 +475,66 @@ export default function AdminPanel({ open, setOpen }) {
               </List>
 
               <ListItem disablePadding sx={{ display: "block" }}>
-                <ListItemButton
-                  sx={{
-                    minHeight: 48,
-                    justifyContent: open ? "initial" : "center",
-                    px: 2.5,
-                    textAlign: "center",
-                  }}
+                <Link
+                  href={"/adminPanel/services"}
+                  style={{ textDecoration: "none" }}
                 >
-                  <ListItemText
-                    primary="Services"
-                    sx={{ opacity: open ? 1 : 0 }}
-                  />
-                </ListItemButton>
+                  <ListItemButton
+                    sx={{
+                      minHeight: 48,
+                      justifyContent: open ? "initial" : "center",
+                      px: 2.5,
+                      textAlign: "center",
+                    }}
+                  >
+                    <ListItemText
+                      primary="Services"
+                      sx={{ opacity: open ? 1 : 0 }}
+                    />
+                  </ListItemButton>
+                </Link>
               </ListItem>
 
               <ListItem disablePadding sx={{ display: "block" }}>
-                <ListItemButton
-                  sx={{
-                    minHeight: 48,
-                    justifyContent: open ? "initial" : "center",
-                    px: 2.5,
-                    textAlign: "center",
-                  }}
+                <Link
+                  href={"/adminPanel/aboutus"}
+                  style={{ textDecoration: "none" }}
                 >
-                  <ListItemText
-                    primary="About Us"
-                    sx={{ opacity: open ? 1 : 0 }}
-                  />
-                </ListItemButton>
+                  <ListItemButton
+                    sx={{
+                      minHeight: 48,
+                      justifyContent: open ? "initial" : "center",
+                      px: 2.5,
+                      textAlign: "center",
+                    }}
+                  >
+                    <ListItemText
+                      primary="About Us"
+                      sx={{ opacity: open ? 1 : 0 }}
+                    />
+                  </ListItemButton>
+                </Link>
               </ListItem>
 
               <ListItem disablePadding sx={{ display: "block" }}>
-                <ListItemButton
-                  sx={{
-                    minHeight: 48,
-                    justifyContent: open ? "initial" : "center",
-                    px: 2.5,
-                    textAlign: "center",
-                  }}
+                <Link
+                  href={"/adminPanel/talktoUs"}
+                  style={{ textDecoration: "none" }}
                 >
-                  <ListItemText
-                    primary="Talk To Us"
-                    sx={{ opacity: open ? 1 : 0 }}
-                  />
-                </ListItemButton>
+                  <ListItemButton
+                    sx={{
+                      minHeight: 48,
+                      justifyContent: open ? "initial" : "center",
+                      px: 2.5,
+                      textAlign: "center",
+                    }}
+                  >
+                    <ListItemText
+                      primary="Talk To Us"
+                      sx={{ opacity: open ? 1 : 0 }}
+                    />
+                  </ListItemButton>
+                </Link>
               </ListItem>
               {/* Add more submenu items as needed */}
             </List>

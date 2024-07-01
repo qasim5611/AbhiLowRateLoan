@@ -1,13 +1,13 @@
 "use client";
-import { FeaturedTop } from "@/../components/FeaturedTop";
-import Footer from "@/../components/Footer";
-import Header from "@/../components/Header";
+import { FeaturedTop } from "./../../components/FeaturedTop";
+import Footer from "./../../components/Footer";
+import Header from "./../../components/Header";
 import React, { useState } from "react";
 import "./refinance-consultation.css";
 import Link from "next/link";
 import Image from "next/image";
 import { Email } from "@mui/icons-material";
-import { sendEmail } from "./../../lib/page";
+import { sendEmailBuyHome } from "./../../lib/page";
 
 export default function BuyHomeConsultaion(props) {
   const [state, setState] = useState({
@@ -105,8 +105,9 @@ export default function BuyHomeConsultaion(props) {
       };
       try {
         // const req = await SendEmail(state, radioState);
-        const req = await sendEmail(
-          "info@lowratehomeloan.com.au",
+        const req = await sendEmailBuyHome(
+          // "info@lowratehomeloan.com.au",
+          "qasimtahir5611@gmail.com",
           "Buy Home Consultation Form",
           obj
         );

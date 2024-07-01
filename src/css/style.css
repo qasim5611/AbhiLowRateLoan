@@ -1332,3 +1332,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .fa-minus:before ,.fa-plus:before{
    display: none !important;
 }
+
+/* input[type="text"]{
+    border: none !important
+} */

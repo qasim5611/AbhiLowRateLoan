@@ -10,9 +10,6 @@ export const POST = async (request) => {
   if (email && subject && message) {
     async function sendEmail(to, title, text) {
       try {
-        let message = `<p>Please click the below link to verify your email address:</p>
-        <p><a href="#">erty</a></p>`;
-
         var smtpTransport = nodemailer.createTransport({
           service: "gmail",
           host: "smtp.gmail.com",
