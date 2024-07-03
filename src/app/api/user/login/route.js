@@ -58,7 +58,7 @@ export async function POST(NextRequest) {
         userName: user.name,
         email: user.email,
       };
-      const jwtToken = jwt.sign(tokenData, process.env.jwt_secret_key, {
+      const jwtToken = jwt.sign(tokenData, "lowrateloansecret", {
         expiresIn: "1d",
       });
       // return token
