@@ -11,12 +11,12 @@ export async function GET(NextRequest) {
     await Connect();
     // console.log("Hero Banner >>>>>>>>>>>>>>>>>>", body);
 
-    // let mydata = await HeroSection.find();
-    // console.log("mydata", mydata);
+    let mydata = await HeroSection.find();
+    console.log("mydata", mydata);
 
     return NextResponse.json({
       msg: "Get Successful",
-      // mydata,
+      mydata,
     });
   } catch (error) {
     return NextResponse.json({ error: error.message });

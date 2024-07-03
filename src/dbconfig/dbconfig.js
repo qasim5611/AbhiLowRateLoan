@@ -3,9 +3,7 @@ import mongoose from "mongoose";
 
 export async function Connect() {
   try {
-    mongoose.connect(
-      "mongodb+srv://serverBoiler:BrxyutmzqiCM4U6c@cluster0.t30x6.mongodb.net/lowrateloan?retryWrites=true&w=majority&appName=Cluster0"
-    );
+    mongoose.connect(process.env.MONG_URL);
     const connection = mongoose.connection;
 
     connection.on("connected", () => {
