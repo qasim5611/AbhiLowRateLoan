@@ -7,6 +7,8 @@ export const POST = async (request) => {
   const { email, subject, message } = await request.json();
   console.log("request body chali", email, subject, message);
 
+  let result = null;
+
   if (email && subject && message) {
     async function sendEmail(to, title, text) {
       try {
@@ -70,25 +72,20 @@ export const POST = async (request) => {
 `,
         };
         console.log(mailOptions);
-        smtpTransport.sendMail(mailOptions, function (error, response) {
-          if (error) {
-            console.log(error);
-            return false;
-          } else {
-            console.log(response);
-            return true;
-          }
-        });
-      } catch (err) {
-        return {
-          status: false,
-          message: err,
-        };
+        const response = await smtpTransport.sendMail(mailOptions);
+        console.log("Mail Response:", response);
+        result = true;
+        return true;
+      } catch (error) {
+        console.error("Error sending email:", error);
+        result = false;
+        return false;
       }
     }
 
     sendEmail(email, subject, message);
+  } else {
+    result = false;
   }
-
-  return NextResponse.json({ status: "ok" });
+  return NextResponse.json({ status: "200", result: result });
 };

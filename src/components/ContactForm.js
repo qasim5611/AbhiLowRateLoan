@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { talkToUs } from "./../lib/page";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { CircularProgress } from "@mui/material";
 
 export function ContactForm(props) {
   const [radioState, setRadioState] = useState({
@@ -16,6 +17,8 @@ export function ContactForm(props) {
     loanType: "",
     message: "",
   });
+
+  const [loader, setLoader] = useState(true);
 
   const [nameErr, setnameErr] = useState("");
   const [emailErr, setemailErr] = useState("");
@@ -38,6 +41,7 @@ export function ContactForm(props) {
     }
   };
   const SubmitForm = async (e) => {
+    setLoader(true);
     e.preventDefault();
     var isFormvalid = validate();
     if (isFormvalid) {
@@ -57,6 +61,8 @@ export function ContactForm(props) {
         );
         console.log("ok", req);
         if (req.data.result == true || req.status == 200) {
+          setLoader(false);
+
           toast.success("Form Send Successfully", {
             position: "top-right",
             autoClose: 5000,
@@ -68,6 +74,8 @@ export function ContactForm(props) {
             progress: undefined,
           });
         } else {
+          setLoader(false);
+
           toast.error("Error On SMTP Mailer!", {
             position: "top-right",
             autoClose: 5000,
@@ -174,11 +182,7 @@ export function ContactForm(props) {
 
         progress: undefined,
       });
-    } else if (
-      state.message.length < 5 ||
-      state.message.length > 40 ||
-      state.message.length == 0
-    ) {
+    } else if (state.message.length == 0) {
       isvalid = false;
       setnameErr("");
       setemailErr("");
@@ -501,7 +505,7 @@ export function ContactForm(props) {
                                         </div>
                                         <div className="gform_footer top_label">
                                           {" "}
-                                          <input
+                                          {/* <input
                                             type="submit"
                                             id="gform_submit_button_2"
                                             className="gform_button button"
@@ -510,7 +514,22 @@ export function ContactForm(props) {
 
                                             // onclick='if(window["gf_submitting_2"]){return false;}  if( !jQuery("#gform_2")[0].checkValidity || jQuery("#gform_2")[0].checkValidity()){window["gf_submitting_2"]=true;}  '
                                             // onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_2"]){return false;} if( !jQuery("#gform_2")[0].checkValidity || jQuery("#gform_2")[0].checkValidity()){window["gf_submitting_2"]=true;}  jQuery("#gform_2").trigger("submit",[true]); }'
-                                          />
+                                          /> */}
+                                          <button
+                                            id="gform_submit_button_2"
+                                            className="gform_button button"
+                                            onClick={SubmitForm}
+                                          >
+                                            submit{" "}
+                                            {loader == true ? (
+                                              <div>
+                                                <CircularProgress
+                                                  size={20}
+                                                  color="inherit"
+                                                />
+                                              </div>
+                                            ) : null}
+                                          </button>
                                           <input
                                             type="hidden"
                                             className="gform_hidden"

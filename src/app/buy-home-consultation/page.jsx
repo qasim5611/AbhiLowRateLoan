@@ -112,7 +112,7 @@ export default function BuyHomeConsultaion(props) {
           obj
         );
         console.log("ok", req);
-        if (req.data.status == "ok" || req.status == 200) {
+        if (req.data.result == true || req.status == 200) {
           setshowFirstForm(false);
           setShowSecondForm(false);
           setShowThirdForm(false);

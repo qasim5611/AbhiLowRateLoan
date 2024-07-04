@@ -36,23 +36,23 @@ export const POST = async (request) => {
             <div style="width: 600px;">
               <div style="width: 100%; background-color: #ffd08654; margin-bottom: 10px; height: 25px; padding-top: 7px;">
                 <div style="width: 50%; text-align: center; float: left">User Name</div>
-                <div style="width: 50%; text-align: center; float: left">${text.name}</div>
+                <div style="width: 50%; text-align: center; float: left">${text.state.name}</div>
               </div>
               <div style="width: 100%; background-color: white; margin-bottom: 10px; height: 25px; padding-top: 7px;">
                 <div style="width: 50%; text-align: center; float: left">Email</div>
-                <div style="width: 50%; text-align: center; float: left">${text.email}</div>
+                <div style="width: 50%; text-align: center; float: left">${text.state.email}</div>
               </div>
               <div style="width: 100%; background-color: #ffd08654; margin-bottom: 10px; height: 25px; padding-top: 7px;">
                 <div style="width: 50%; text-align: center; float: left">Phone</div>
-                <div style="width: 50%; text-align: center; float: left">${text.phone}</div>
+                <div style="width: 50%; text-align: center; float: left">${text.state.phone}</div>
               </div>
               <div style="width: 100%; background-color: white; margin-bottom: 10px; height: 25px; padding-top: 7px;">
                 <div style="width: 50%; text-align: center; float: left">Loan Type</div>
-                <div style="width: 50%; text-align: center; float: left">${text.loanType}</div>
+                <div style="width: 50%; text-align: center; float: left">${text.state.loanType}</div>
               </div>
               <div style="width: 100%; background-color: #ffd08654; margin-bottom: 10px; height: 25px; padding-top: 7px;">
                 <div style="width: 50%; text-align: center; float: left">Message</div>
-                <div style="width: 50%; text-align: center; float: left">${text.message}</div>
+                <div style="width: 50%; text-align: center; float: left">${text.state.message}</div>
               </div>
             </div>
           `,
