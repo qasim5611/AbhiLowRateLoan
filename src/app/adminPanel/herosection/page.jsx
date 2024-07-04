@@ -24,6 +24,8 @@ export default function HeroSection(props) {
       let resp = await dispatch(getHeroSection());
       console.log("herosection", resp?.payload?.data?.mydata);
       console.log("herosection", resp?.payload?.data?.mydata[0].tagline);
+      console.log("qasim", resp?.payload?.data?.mydata[0].tagline);
+
       setrecord(resp?.payload?.data?.mydata);
       setidtoUpdate(resp?.payload?.data?.mydata[0]._id);
     };
@@ -184,7 +186,7 @@ export default function HeroSection(props) {
             })}
           </>
         ) : (
-          <>Loading...</>
+          <div style={{ color: "red" }}>Loading...</div>
         )}
       </div>
     </Adminlayout>
