@@ -20,7 +20,7 @@ export default function HeroSection(props) {
   const [idtoUpdate, setidtoUpdate] = useState(false);
 
   useEffect(() => {
-    return async () => {
+    const fetchData = async () => {
       let resp = await dispatch(getHeroSection());
       console.log("herosection", resp?.payload?.data?.mydata);
       console.log("herosection", resp?.payload?.data?.mydata[0].tagline);
@@ -29,6 +29,8 @@ export default function HeroSection(props) {
       setrecord(resp?.payload?.data?.mydata);
       setidtoUpdate(resp?.payload?.data?.mydata[0]._id);
     };
+
+    fetchData();
   }, []);
 
   const [state, setState] = useState({
@@ -120,17 +122,16 @@ export default function HeroSection(props) {
       <div style={{ marginTop: "65px", padding: "20px", width: "100%" }}>
         <Breadcrumb pageName="Home Banner" />
 
-        {record ? (
+        {record.length > 0 ? (
           <>
             {record.map((item, index) => {
               return (
-                <>
+                <React.Fragment key={index}>
                   <Grid container spacing={2}>
                     <Grid item xs={12}>
-                      <label for="heroSec" className="lblform">
+                      <label htmlFor="heroSec" className="lblform">
                         Banner Tag Line:
                       </label>
-
                       <textarea
                         id="heroSec"
                         name="tagline"
@@ -141,10 +142,9 @@ export default function HeroSection(props) {
                       ></textarea>
                     </Grid>
                   </Grid>
-
                   <Grid container spacing={2}>
                     <Grid item xs={6}>
-                      <label for="heroSec" className="lblform">
+                      <label htmlFor="heroSec" className="lblform">
                         Refinance Button Text
                       </label>
                       <br />
@@ -157,9 +157,8 @@ export default function HeroSection(props) {
                         defaultValue={item.refinancebtn}
                       />
                     </Grid>
-
                     <Grid item xs={6}>
-                      <label for="heroSec" className="lblform">
+                      <label htmlFor="heroSec" className="lblform">
                         Lown Button Text
                       </label>
                       <br />
@@ -181,12 +180,12 @@ export default function HeroSection(props) {
                       </button>
                     </Grid>
                   </Grid>
-                </>
+                </React.Fragment>
               );
             })}
           </>
         ) : (
-          <div style={{ color: "red" }}>Loading...</div>
+          <div>Loading...</div>
         )}
       </div>
     </Adminlayout>
