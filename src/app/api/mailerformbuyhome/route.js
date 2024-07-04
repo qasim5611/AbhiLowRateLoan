@@ -83,7 +83,7 @@ export const POST = async (request) => {
       }
     }
 
-    sendEmail(email, subject, message);
+    result = await sendEmail(email, subject, message);
   } else {
     result = false;
   }

@@ -116,7 +116,7 @@ export default function RefinanceConsultation(props) {
           obj
         );
         console.log("ok", req);
-        if (req.data.result == true || req.status == 200) {
+        if (req.data.result == true) {
           setshowFirstForm(false);
           setShowSecondForm(false);
           setShowThirdForm(false);
