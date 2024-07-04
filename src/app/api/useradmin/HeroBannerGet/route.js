@@ -10,8 +10,14 @@ export async function GET(NextRequest) {
   try {
     await Connect();
     // console.log("Hero Banner >>>>>>>>>>>>>>>>>>", body);
+    // console.log("Hero Banner >>>>>>>>>>>>>>>>>>", body);
+    // console.log("Hero Banner >>>>>>>>>>>>>>>>>>", body);
+    // console.log("Hero Banner >>>>>>>>>>>>>>>>>>", body);
+    // console.log("Hero Banner >>>>>>>>>>>>>>>>>>", body);
 
     let mydata = await HeroSection.find();
+    console.log("mydata", mydata);
+    console.log("mydata", mydata);
     console.log("mydata", mydata);
 
     return NextResponse.json({
