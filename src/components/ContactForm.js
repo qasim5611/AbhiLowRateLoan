@@ -56,8 +56,19 @@ export function ContactForm(props) {
           obj
         );
         console.log("ok", req);
-        if (req.data.status == "ok" || req.status == 200) {
+        if (req.data.result == true || req.status == 200) {
           toast.success("Form Send Successfully", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+
+            progress: undefined,
+          });
+        } else {
+          toast.error("Error On SMTP Mailer!", {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
