@@ -25,6 +25,11 @@ export const POST = async (request) => {
         });
 
         console.log("smtpTransport", smtpTransport);
+        // console.log("smtpTransport", smtpTransport);
+        // console.log("smtpTransport", smtpTransport);
+        // console.log("smtpTransport", smtpTransport);
+        // console.log("smtpTransport", smtpTransport);
+        // console.log("smtpTransport", smtpTransport);
 
         const mailOptions = {
           from: `"LowRateHomeLoan Refinance Consultation" ${text.state.email}`,
