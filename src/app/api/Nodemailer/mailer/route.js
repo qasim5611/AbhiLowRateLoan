@@ -24,13 +24,6 @@ export const POST = async (request) => {
           tls: { rejectUnauthorized: false },
         });
 
-        console.log("smtpTransport", smtpTransport);
-        // console.log("smtpTransport", smtpTransport);
-        // console.log("smtpTransport", smtpTransport);
-        // console.log("smtpTransport", smtpTransport);
-        // console.log("smtpTransport", smtpTransport);
-        // console.log("smtpTransport", smtpTransport);
-
         const mailOptions = {
           from: `"LowRateHomeLoan Refinance Consultation" ${text.state.email}`,
           to: `${to}`,
