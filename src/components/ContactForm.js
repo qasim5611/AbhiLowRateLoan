@@ -89,6 +89,9 @@ export function ContactForm(props) {
       /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     const isemailVer = re.test(state.email);
     console.log("isemailVer", isemailVer);
+    console.log("isemailVer", isemailVer);
+    console.log("isemailVer", isemailVer);
+    console.log("isemailVer", isemailVer);
 
     let isvalid = true;
 
