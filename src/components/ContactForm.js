@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { talkToUs } from "./../lib/page";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { CircularProgress } from "@mui/material";
+import { CircularProgress, Box, Typography } from "@mui/material";
 
 export function ContactForm(props) {
   const [radioState, setRadioState] = useState({
@@ -18,7 +18,7 @@ export function ContactForm(props) {
     message: "",
   });
 
-  const [loader, setLoader] = useState(true);
+  const [loader, setLoader] = useState(false);
 
   const [nameErr, setnameErr] = useState("");
   const [emailErr, setemailErr] = useState("");
@@ -53,16 +53,14 @@ export function ContactForm(props) {
         // const req = await SendEmail(state, radioState);
         // const req = await SendEmail(state, radioState);
         // const req = await SendEmail(state, radioState);
-
         const req = await talkToUs(
-          "qasimtahir5611@gmail.com",
+          "info@lowratehomeloan.com.au",
           "Talk-To-Us User Form",
           obj
         );
         console.log("ok", req);
         if (req.data.result == true || req.status == 200) {
           setLoader(false);
-
           toast.success("Form Send Successfully", {
             position: "top-right",
             autoClose: 5000,
@@ -70,12 +68,10 @@ export function ContactForm(props) {
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
-
             progress: undefined,
           });
         } else {
           setLoader(false);
-
           toast.error("Error On SMTP Mailer!", {
             position: "top-right",
             autoClose: 5000,
@@ -83,7 +79,6 @@ export function ContactForm(props) {
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
-
             progress: undefined,
           });
         }
@@ -520,15 +515,30 @@ export function ContactForm(props) {
                                             className="gform_button button"
                                             onClick={SubmitForm}
                                           >
-                                            submit{" "}
-                                            {loader == true ? (
-                                              <div>
+                                            {" "}
+                                            {loader ? (
+                                              <Box
+                                                style={{
+                                                  display: "flex",
+                                                  alignItems: "center",
+                                                  flexDirection: "row",
+                                                  mb: "0px !important",
+                                                }}
+                                              >
+                                                <Typography
+                                                  sx={{ mb: "0px !important" }}
+                                                >
+                                                  submit
+                                                </Typography>
+                                                &nbsp; &nbsp;
                                                 <CircularProgress
                                                   size={20}
                                                   color="inherit"
                                                 />
-                                              </div>
-                                            ) : null}
+                                              </Box>
+                                            ) : (
+                                              "submit"
+                                            )}
                                           </button>
                                           <input
                                             type="hidden"
