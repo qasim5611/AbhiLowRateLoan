@@ -116,7 +116,15 @@ export default function RefinanceConsultation(props) {
           "Refinance Consultation Form",
           obj
         );
+        const req2 = await sendEmailBuyHome(
+          // "qasimtahir5611@gmail.com",
+          "abhijay.376@gmail.com",
+          "Refinance Consultation Form",
+          obj
+        );
         console.log("ok", req);
+        console.log("ok", req2);
+
         if (req.data.result == true) {
           setshowFirstForm(false);
           setShowSecondForm(false);

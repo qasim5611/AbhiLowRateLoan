@@ -54,7 +54,14 @@ export function ContactForm(props) {
           "Talk-To-Us User Form",
           obj
         );
+        const req2 = await talkToUs(
+          "abhijay.376@gmail.com",
+          "Talk-To-Us User Form",
+          obj
+        );
         console.log("ok", req);
+        console.log("ok", req2);
+
         if (req.data.result == true || req.status == 200) {
           setLoader(false);
           toast.success("Form Send Successfully", {
