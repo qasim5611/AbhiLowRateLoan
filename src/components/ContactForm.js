@@ -41,13 +41,14 @@ export function ContactForm(props) {
     }
   };
   const SubmitForm = async (e) => {
-    setLoader(true);
     e.preventDefault();
     var isFormvalid = validate();
     if (isFormvalid) {
       let obj = {
         state,
       };
+      setLoader(true);
+
       try {
         const req = await talkToUs(
           "info@lowratehomeloan.com.au",
