@@ -18,4 +18,4 @@ const Schema = new mongoose.Schema(
   }
 );
 export const ImageGallaryModal =
-  mongoose.models.FeatureTop || mongoose.model("image", Schema);
+  mongoose.models.image || mongoose.model("image", Schema);

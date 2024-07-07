@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Button, Container, Table } from "react-bootstrap";
-
+import Parallax from "./../../components/Parallex/parallex";
 // import { deleteTodo } from "@/app/api/todoList/route";
 // import kadenceConfig from "./../../../kadenceConfig";
 import { useRouter } from "next/navigation";
@@ -95,7 +95,7 @@ function HomeComp({ data, update }) {
 
                           <Faq />
 
-                          <div className="wp-block-kadence-rowlayout alignnone">
+                          {/* <div className="wp-block-kadence-rowlayout alignnone">
                             <div
                               id="kt-layout-id_7a5f35-04"
                               className="kt-row-layout-inner kt-row-has-bg kt-layout-id_7a5f35-04 kt-jarallax"
@@ -106,7 +106,9 @@ function HomeComp({ data, update }) {
                                 </div>
                               </div>
                             </div>
-                          </div>
+                          </div> */}
+
+                          <Parallax />
                           <ContactForm />
                         </div>
                       </div>

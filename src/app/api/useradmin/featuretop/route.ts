@@ -4,8 +4,6 @@ import { UploadImage } from "./../../../../lib/upload-images";
 import { ImageGallaryModal } from "../../../../modals/FeatureTopModel";
 
 
-
-
 export const POST = async(req: NextRequest)=>{ 
   const formData = await req.formData(); 
   console.log("formData", formData);

@@ -264,19 +264,19 @@ export const getHeroSection = createAsyncThunk(
   }
 );
 
-// export const getFeatureSection = createAsyncThunk(
-//   "auth/getFeatureSection",
-//   async (body) => {
-//     try {
-//       let res = await axios.get("/api/useradmin/FeatureSectionGet");
-//       console.log(res);
-//       return res;
-//     } catch (error) {
-//       console.error(error);
-//       throw error;
-//     }
-//   }
-// );
+export const getFeatureSection = createAsyncThunk(
+  "auth/getFeatureSection",
+  async (body) => {
+    try {
+      let res = await axios.get("/api/useradmin/featuretopget");
+      console.log(res);
+      return res;
+    } catch (error) {
+      console.error(error);
+      throw error;
+    }
+  }
+);
 
 export const globalSlice = createSlice({
   name: "global",

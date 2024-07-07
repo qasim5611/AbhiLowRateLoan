@@ -230,7 +230,7 @@ export default function RootLayout({ children }) {
           pathname === "/buy-home-consultation" ||
           pathname === "/refinance-consultation" ||
           pathname === "/adminPanel/herosection" ||
-          pathname === "/adminPanel/features" ? null : (
+          pathname === "/adminPanel/featuresTop" ? null : (
             <Header />
           )}
           {/* <p>Current route: {pathname}</p> */}
@@ -239,7 +239,7 @@ export default function RootLayout({ children }) {
           {children}
 
           {pathname === "/adminPanel" ||
-          pathname === "/adminPanel/features" ||
+          pathname === "/adminPanel/featuresTop" ||
           pathname === "/signup" ||
           pathname === "/login" ||
           pathname === "/buy-home-consultation" ||

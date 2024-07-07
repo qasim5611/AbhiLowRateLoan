@@ -207,7 +207,7 @@ export default function AdminPanel({ open, setOpen }) {
 
               <ListItem disablePadding sx={{ display: "block" }}>
                 <Link
-                  href={"/adminPanel/features"}
+                  href={"/adminPanel/featuresTop"}
                   style={{ textDecoration: "none" }}
                 >
                   <ListItemButton
