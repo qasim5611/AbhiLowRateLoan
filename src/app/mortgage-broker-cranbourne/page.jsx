@@ -75,12 +75,12 @@ sec and map, Manual */}
                         loading="lazy"
                         width={1024}
                         height={683}
-                        src="http://vxs.com.au/wp-content/uploads/2023/03/CRANBOURNE-1024x683.webp"
+                        src="/inside2023/CRANBOURNE-1024x683.webp"
                         alt="mortgage broker Cranbourne
 City of Casey
 Royal Botanic Gardens Cranbourne | City of Casey"
                         className="wp-image-4880"
-                        srcSet="http://vxs.com.au/wp-content/uploads/2023/03/CRANBOURNE-1024x683.webp 1024w, http://vxs.com.au/wp-content/uploads/2023/03/CRANBOURNE-300x200.webp 300w, http://vxs.com.au/wp-content/uploads/2023/03/CRANBOURNE-768x512.webp 768w, http://vxs.com.au/wp-content/uploads/2023/03/CRANBOURNE.webp 1174w"
+                        srcSet="/inside2023/CRANBOURNE-1024x683.webp 1024w, /inside2023/CRANBOURNE-300x200.webp 300w, /inside2023/CRANBOURNE-768x512.webp 768w, /inside2023/CRANBOURNE.webp 1174w"
                         sizes="(max-width: 1024px) 100vw, 1024px"
                       />
                       <figcaption className="wp-element-caption">
@@ -282,7 +282,7 @@ Royal Botanic Gardens Cranbourne | City of Casey"
                                                 loading="lazy"
                                                 width={70}
                                                 height={70}
-                                                src="http://vxs.com.au/wp-content/uploads/2022/12/home-loan-icon.svg"
+                                                src="/insider2022/12/home-loan-icon.svg"
                                                 alt="home loan icon"
                                                 className="wp-image-3976"
                                               />
@@ -347,7 +347,7 @@ Royal Botanic Gardens Cranbourne | City of Casey"
                                                 loading="lazy"
                                                 width={70}
                                                 height={70}
-                                                src="http://vxs.com.au/wp-content/uploads/2022/12/refinancing-icon.svg"
+                                                src="/insider2022/12/refinancing-icon.svg"
                                                 alt="refinancing icon"
                                                 className="wp-image-3973"
                                               />
@@ -411,7 +411,7 @@ Royal Botanic Gardens Cranbourne | City of Casey"
                                                 loading="lazy"
                                                 width={70}
                                                 height={70}
-                                                src="http://vxs.com.au/wp-content/uploads/2022/12/first-home-buyer-icon.svg"
+                                                src="/insider2022/12/first-home-buyer-icon.svg"
                                                 alt="first home buyer icon"
                                                 className="wp-image-3975"
                                               />
@@ -483,7 +483,7 @@ Royal Botanic Gardens Cranbourne | City of Casey"
                                                 loading="lazy"
                                                 width={70}
                                                 height={70}
-                                                src="http://vxs.com.au/wp-content/uploads/2022/12/low-deposit-home-loan-icon.svg"
+                                                src="/insider2022/12/low-deposit-home-loan-icon.svg"
                                                 alt="low deposit home loan icon"
                                                 className="wp-image-3972"
                                               />
@@ -545,7 +545,7 @@ Royal Botanic Gardens Cranbourne | City of Casey"
                                                 loading="lazy"
                                                 width={70}
                                                 height={70}
-                                                src="http://vxs.com.au/wp-content/uploads/2022/12/debt-consolidation.svg"
+                                                src="/insider2022/12/debt-consolidation.svg"
                                                 alt="debt consolidation"
                                                 className="wp-image-3974"
                                               />

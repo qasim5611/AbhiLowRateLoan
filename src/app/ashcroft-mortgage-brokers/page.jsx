@@ -44,7 +44,7 @@ export default function AshcroftMortgageBrokers(props) {
                                                   decoding="async"
                                                   width={62}
                                                   height={62}
-                                                  src="http://vxs.com.au/wp-content/uploads/2022/12/cash-back-icon.svg"
+                                                  src="/insider2022/12/cash-back-icon.svg"
                                                   alt=""
                                                   className="wp-image-3979"
                                                 />
@@ -79,7 +79,7 @@ export default function AshcroftMortgageBrokers(props) {
                                                   decoding="async"
                                                   width={62}
                                                   height={62}
-                                                  src="http://vxs.com.au/wp-content/uploads/2023/01/icon-gift-card.svg"
+                                                  src="/inside2023/icon-gift-card.svg"
                                                   alt="icon gift card"
                                                   className="wp-image-4355"
                                                 />
@@ -130,7 +130,7 @@ export default function AshcroftMortgageBrokers(props) {
                                                   decoding="async"
                                                   width={62}
                                                   height={62}
-                                                  src="http://vxs.com.au/wp-content/uploads/2023/01/icon-loan-long-term.svg"
+                                                  src="/inside2023/icon-loan-long-term.svg"
                                                   alt="icon long term loan"
                                                   className="wp-image-4359"
                                                 />
@@ -166,7 +166,7 @@ export default function AshcroftMortgageBrokers(props) {
                                                   loading="lazy"
                                                   width={61}
                                                   height={62}
-                                                  src="http://vxs.com.au/wp-content/uploads/2022/12/loan-term-icon.svg"
+                                                  src="/insider2022/12/loan-term-icon.svg"
                                                   alt="loan term icon"
                                                   className="wp-image-3981"
                                                 />
@@ -373,10 +373,10 @@ export default function AshcroftMortgageBrokers(props) {
                                     loading="lazy"
                                     width={1024}
                                     height={432}
-                                    src="http://vxs.com.au/wp-content/uploads/2023/01/home-loans-lenders-1024x432.webp"
+                                    src="/inside2023/home-loans-lenders-1024x432.webp"
                                     alt="home loans lenders list"
                                     className="kb-img wp-image-4131"
-                                    srcSet="http://vxs.com.au/wp-content/uploads/2023/01/home-loans-lenders-1024x432.webp 1024w, http://vxs.com.au/wp-content/uploads/2023/01/home-loans-lenders-300x127.webp 300w, http://vxs.com.au/wp-content/uploads/2023/01/home-loans-lenders-768x324.webp 768w, http://vxs.com.au/wp-content/uploads/2023/01/home-loans-lenders.webp 1366w"
+                                    srcSet="/inside2023/home-loans-lenders-1024x432.webp 1024w, /inside2023/home-loans-lenders-300x127.webp 300w, /inside2023/home-loans-lenders-768x324.webp 768w, /inside2023/home-loans-lenders.webp 1366w"
                                     sizes="(max-width: 1024px) 100vw, 1024px"
                                   />
                                 </figure>
@@ -388,10 +388,10 @@ export default function AshcroftMortgageBrokers(props) {
                                     loading="lazy"
                                     width={594}
                                     height={829}
-                                    src="http://vxs.com.au/wp-content/uploads/2023/01/lenders-vertical.webp"
+                                    src="/inside2023/lenders-vertical.webp"
                                     alt="loan lenders"
                                     className="wp-image-4718"
-                                    srcSet="http://vxs.com.au/wp-content/uploads/2023/01/lenders-vertical.webp 594w, http://vxs.com.au/wp-content/uploads/2023/01/lenders-vertical-215x300.webp 215w"
+                                    srcSet="/inside2023/lenders-vertical.webp 594w, /inside2023/lenders-vertical-215x300.webp 215w"
                                     sizes="(max-width: 594px) 100vw, 594px"
                                   />
                                 </figure>
@@ -466,7 +466,7 @@ export default function AshcroftMortgageBrokers(props) {
                                                             loading="lazy"
                                                             width={70}
                                                             height={70}
-                                                            src="http://vxs.com.au/wp-content/uploads/2022/12/home-loan-icon.svg"
+                                                            src="/insider2022/12/home-loan-icon.svg"
                                                             alt="home loan icon"
                                                             className="wp-image-3976"
                                                           />
@@ -532,7 +532,7 @@ export default function AshcroftMortgageBrokers(props) {
                                                             loading="lazy"
                                                             width={70}
                                                             height={70}
-                                                            src="http://vxs.com.au/wp-content/uploads/2022/12/refinancing-icon.svg"
+                                                            src="/insider2022/12/refinancing-icon.svg"
                                                             alt="refinancing icon"
                                                             className="wp-image-3973"
                                                           />
@@ -597,7 +597,7 @@ export default function AshcroftMortgageBrokers(props) {
                                                             loading="lazy"
                                                             width={70}
                                                             height={70}
-                                                            src="http://vxs.com.au/wp-content/uploads/2022/12/first-home-buyer-icon.svg"
+                                                            src="/insider2022/12/first-home-buyer-icon.svg"
                                                             alt="first home buyer icon"
                                                             className="wp-image-3975"
                                                           />
@@ -672,7 +672,7 @@ export default function AshcroftMortgageBrokers(props) {
                                                             loading="lazy"
                                                             width={70}
                                                             height={70}
-                                                            src="http://vxs.com.au/wp-content/uploads/2022/12/low-deposit-home-loan-icon.svg"
+                                                            src="/insider2022/12/low-deposit-home-loan-icon.svg"
                                                             alt="low deposit home loan icon"
                                                             className="wp-image-3972"
                                                           />
@@ -736,7 +736,7 @@ export default function AshcroftMortgageBrokers(props) {
                                                             loading="lazy"
                                                             width={70}
                                                             height={70}
-                                                            src="http://vxs.com.au/wp-content/uploads/2022/12/debt-consolidation.svg"
+                                                            src="/insider2022/12/debt-consolidation.svg"
                                                             alt="debt consolidation"
                                                             className="wp-image-3974"
                                                           />
@@ -2718,7 +2718,7 @@ export default function AshcroftMortgageBrokers(props) {
                                                     loading="lazy"
                                                     width={396}
                                                     height={310}
-                                                    src="http://vxs.com.au/wp-content/uploads/2023/01/lowratehomeloan-logo.svg"
+                                                    src="/inside2023/lowratehomeloan-logo.svg"
                                                     alt="low rate home loan logo"
                                                     className="wp-image-4604"
                                                     style={{

@@ -89,10 +89,10 @@ sec and map, Manual */}
                         loading="lazy"
                         width={837}
                         height={558}
-                        src="http://vxs.com.au/wp-content/uploads/2023/01/Berwick-Mortgage-Brokers.webp"
+                        src="/inside2023/Berwick-Mortgage-Brokers.webp"
                         alt="Berwick Mortgage Brokers"
                         className="wp-image-4572"
-                        srcSet="http://vxs.com.au/wp-content/uploads/2023/01/Berwick-Mortgage-Brokers.webp 837w, http://vxs.com.au/wp-content/uploads/2023/01/Berwick-Mortgage-Brokers-300x200.webp 300w, http://vxs.com.au/wp-content/uploads/2023/01/Berwick-Mortgage-Brokers-768x512.webp 768w"
+                        srcSet="/inside2023/Berwick-Mortgage-Brokers.webp 837w, /inside2023/Berwick-Mortgage-Brokers-300x200.webp 300w, /inside2023/Berwick-Mortgage-Brokers-768x512.webp 768w"
                         sizes="(max-width: 837px) 100vw, 837px"
                       />
                     </figure>
@@ -289,7 +289,7 @@ sec and map, Manual */}
                                 loading="lazy"
                                 width={70}
                                 height={70}
-                                src="http://vxs.com.au/wp-content/uploads/2022/12/debt-consolidation.svg"
+                                src="/insider2022/12/debt-consolidation.svg"
                                 alt="debt consolidation"
                                 className="wp-image-3974"
                               />

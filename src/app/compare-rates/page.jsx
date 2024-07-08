@@ -68,10 +68,10 @@ sec and map, Manual */}
                       loading="lazy"
                       width={1024}
                       height={658}
-                      src="http://vxs.com.au/wp-content/uploads/2022/12/mortgage-broker-melbourne-1024x658.jpeg"
+                      src="/insider2022/12/mortgage-broker-melbourne-1024x658.jpeg"
                       alt="mortgage broker melbourne"
                       className="wp-image-3657"
-                      srcSet="http://vxs.com.au/wp-content/uploads/2022/12/mortgage-broker-melbourne-1024x658.jpeg 1024w, http://vxs.com.au/wp-content/uploads/2022/12/mortgage-broker-melbourne-300x193.jpeg 300w, http://vxs.com.au/wp-content/uploads/2022/12/mortgage-broker-melbourne-768x494.jpeg 768w, http://vxs.com.au/wp-content/uploads/2022/12/mortgage-broker-melbourne.jpeg 1400w"
+                      srcSet="/insider2022/12/mortgage-broker-melbourne-1024x658.jpeg 1024w, /insider2022/12/mortgage-broker-melbourne-300x193.jpeg 300w, /insider2022/12/mortgage-broker-melbourne-768x494.jpeg 768w, /insider2022/12/mortgage-broker-melbourne.jpeg 1400w"
                       sizes="(max-width: 1024px) 100vw, 1024px"
                     />
                   </figure>

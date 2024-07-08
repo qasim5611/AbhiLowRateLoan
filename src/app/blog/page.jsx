@@ -34,12 +34,12 @@ export default function BlogPage(props) {
                                 loading="lazy"
                                 width={2560}
                                 height={2560}
-                                src="http://vxs.com.au/wp-content/uploads/2023/07/2-scaled.jpg"
+                                src="/inside2023/2-scaled.jpg"
                                 className="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                 alt="5 Benefits of Refinancing Your Home Loan"
                                 decoding="async"
                                 style={{ objectFit: "cover" }}
-                                srcSet="http://vxs.com.au/wp-content/uploads/2023/07/2-scaled.jpg 2560w, http://vxs.com.au/wp-content/uploads/2023/07/2-300x300.jpg 300w, http://vxs.com.au/wp-content/uploads/2023/07/2-1024x1024.jpg 1024w, http://vxs.com.au/wp-content/uploads/2023/07/2-150x150.jpg 150w, http://vxs.com.au/wp-content/uploads/2023/07/2-768x768.jpg 768w, http://vxs.com.au/wp-content/uploads/2023/07/2-1536x1536.jpg 1536w, http://vxs.com.au/wp-content/uploads/2023/07/2-2048x2048.jpg 2048w"
+                                srcSet="/inside2023/2-scaled.jpg 2560w, /inside2023/2-300x300.jpg 300w, /inside2023/2-1024x1024.jpg 1024w, /inside2023/2-150x150.jpg 150w, /inside2023/2-768x768.jpg 768w, /inside2023/2-1536x1536.jpg 1536w, /inside2023/2-2048x2048.jpg 2048w"
                                 sizes="(max-width: 2560px) 100vw, 2560px"
                               />
                             </a>

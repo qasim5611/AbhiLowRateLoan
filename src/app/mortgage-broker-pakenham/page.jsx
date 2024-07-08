@@ -58,10 +58,10 @@ sec and map, Manual */}
                         loading="lazy"
                         width={837}
                         height={558}
-                        src="http://vxs.com.au/wp-content/uploads/2023/01/pakenham-station.webp"
+                        src="/inside2023/pakenham-station.webp"
                         alt="pakenham mortgage brokers"
                         className="wp-image-4472"
-                        srcSet="http://vxs.com.au/wp-content/uploads/2023/01/pakenham-station.webp 837w, http://vxs.com.au/wp-content/uploads/2023/01/pakenham-station-300x200.webp 300w, http://vxs.com.au/wp-content/uploads/2023/01/pakenham-station-768x512.webp 768w"
+                        srcSet="/inside2023/pakenham-station.webp 837w, /inside2023/pakenham-station-300x200.webp 300w, /inside2023/pakenham-station-768x512.webp 768w"
                         sizes="(max-width: 837px) 100vw, 837px"
                       />
                     </figure>
@@ -207,7 +207,7 @@ sec and map, Manual */}
                                 loading="lazy"
                                 width={70}
                                 height={70}
-                                src="http://vxs.com.au/wp-content/uploads/2022/12/debt-consolidation.svg"
+                                src="/insider2022/12/debt-consolidation.svg"
                                 alt="debt consolidation"
                                 className="wp-image-3974"
                               />
@@ -220,7 +220,7 @@ sec and map, Manual */}
                               className="kt-adv-heading_a8491c-92 black-bold wp-block-kadence-advancedheading"
                               data-kb-block="kb-adv-heading_a8491c-92"
                             >
-                              Debt Consolidation
+                              Debt Consolidations
                             </h6>
                           </div>
                         </div>

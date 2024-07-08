@@ -68,10 +68,10 @@ sec and map, Manual */}
                         loading="lazy"
                         width={1024}
                         height={575}
-                        src="http://vxs.com.au/wp-content/uploads/2023/08/image-1-1024x575.png"
+                        src="/inside2023/image-1-1024x575.png"
                         alt=""
                         className="wp-image-4997"
-                        srcSet="http://vxs.com.au/wp-content/uploads/2023/08/image-1-1024x575.png 1024w, http://vxs.com.au/wp-content/uploads/2023/08/image-1-300x169.png 300w, http://vxs.com.au/wp-content/uploads/2023/08/image-1-768x431.png 768w, http://vxs.com.au/wp-content/uploads/2023/08/image-1-1536x863.png 1536w, http://vxs.com.au/wp-content/uploads/2023/08/image-1-2048x1150.png 2048w"
+                        srcSet="/inside2023/image-1-1024x575.png 1024w, /inside2023/image-1-300x169.png 300w, /inside2023/image-1-768x431.png 768w, /inside2023/image-1-1536x863.png 1536w, /inside2023/image-1-2048x1150.png 2048w"
                         sizes="(max-width: 1024px) 100vw, 1024px"
                       />
                     </figure>

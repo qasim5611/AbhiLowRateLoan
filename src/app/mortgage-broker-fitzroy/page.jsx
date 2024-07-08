@@ -67,10 +67,10 @@ sec and map, Manual */}
                         loading="lazy"
                         width={600}
                         height={400}
-                        src="http://vxs.com.au/wp-content/uploads/2023/07/Brunswick-Street-Fitzroy.jpg"
+                        src="/inside2023/Brunswick-Street-Fitzroy.jpg"
                         alt=""
                         className="wp-image-4951"
-                        srcSet="http://vxs.com.au/wp-content/uploads/2023/07/Brunswick-Street-Fitzroy.jpg 600w, http://vxs.com.au/wp-content/uploads/2023/07/Brunswick-Street-Fitzroy-300x200.jpg 300w"
+                        srcSet="/inside2023/Brunswick-Street-Fitzroy.jpg 600w, /inside2023/Brunswick-Street-Fitzroy-300x200.jpg 300w"
                         sizes="(max-width: 600px) 100vw, 600px"
                       />
                     </figure>

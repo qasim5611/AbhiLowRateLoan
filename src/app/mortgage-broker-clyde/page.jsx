@@ -80,10 +80,10 @@ sec and map, Manual */}
                         loading="lazy"
                         width={800}
                         height={514}
-                        src="http://vxs.com.au/wp-content/uploads/2023/02/mortgage-broker-Clyde.webp"
+                        src="/inside2023/mortgage-broker-Clyde.webp"
                         alt=""
                         className="wp-image-4858"
-                        srcSet="http://vxs.com.au/wp-content/uploads/2023/02/mortgage-broker-Clyde.webp 800w, http://vxs.com.au/wp-content/uploads/2023/02/mortgage-broker-Clyde-300x193.webp 300w, http://vxs.com.au/wp-content/uploads/2023/02/mortgage-broker-Clyde-768x493.webp 768w"
+                        srcSet="/inside2023/mortgage-broker-Clyde.webp 800w, /inside2023/mortgage-broker-Clyde-300x193.webp 300w, /inside2023/mortgage-broker-Clyde-768x493.webp 768w"
                         sizes="(max-width: 800px) 100vw, 800px"
                       />
                     </figure>

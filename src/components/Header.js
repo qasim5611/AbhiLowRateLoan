@@ -64,7 +64,7 @@ function Header({ data, update }) {
                                   <a href="tel:0370645204">
                                     {/* <img
                                       className="alignnone size-medium wp-image-4211"
-                                      src="http://vxs.com.au/wp-content/uploads/2023/01/phone.svg"
+                                      src="/inside2023/phone.svg"
                                       alt=""
                                     /> */}
                                   </a>
