@@ -11,8 +11,13 @@ export const POST = async(req: NextRequest)=>{
   const image = formData.get("image1") as unknown as File; 
 
   const tagline = formData.get("tagline1") as unknown as File; 
+  const idtoUpdate = formData.get("idtoUpdate") as unknown as File; 
+
   console.log("image", {image});
   console.log("tagline", tagline);
+  console.log("idtoUpdate", idtoUpdate);
+
+
 
  const data:any =  await UploadImage(image, "nextjs-imagegallary");
  console.log("image_url", data?.secure_url);

@@ -30,6 +30,10 @@ export default function FeaturTop(props) {
   ]);
   const [images, setImages] = useState([{ image: null }]);
   const [record1, setrecord1] = useState([]);
+  const [record2, setrecord2] = useState(false);
+  const [record3, setrecord3] = useState(false);
+  const [record4, setrecord4] = useState(false);
+
   const [idtoUpdate1, setidtoUpdate1] = useState(false);
 
   const [ImageSrc1, setImageSrc1] = useState(false);
@@ -54,9 +58,12 @@ export default function FeaturTop(props) {
     image4: null,
   });
 
-  const [loader, setLoader] = useState(false);
+  const [loader1, setLoader1] = useState(false);
+  const [loader2, setLoader2] = useState(false);
+  const [loader3, setLoader3] = useState(false);
+  const [loader4, setLoader4] = useState(false);
 
-  const [ImagePreview, setImagePreview] = useState(null);
+  const [ImagePreview1, setImagePreview1] = useState(null);
   const [ImagePreview2, setImagePreview2] = useState(null);
   const [ImagePreview3, setImagePreview3] = useState(null);
   const [ImagePreview4, setImagePreview4] = useState(null);
@@ -67,7 +74,7 @@ export default function FeaturTop(props) {
 
       const url = URL.createObjectURL(val);
       console.log("url", url);
-      setImagePreview(url);
+      setImagePreview1(url);
       setState1({ ...state1, [e.target.name]: val });
     } else {
       setState1({ ...state1, [e.target.name]: e.target.value });
@@ -115,15 +122,15 @@ export default function FeaturTop(props) {
 
   const dispatch = useDispatch();
   useEffect(() => {
-    return async () => {
+    const fetchData = async () => {
       let resp = await dispatch(getFeatureSection());
       console.log("herosection", resp?.payload?.data?.images);
-      // console.log("data1", resp?.payload?.data?.mydata[0]);
-      // console.log("image1", resp?.payload?.data?.mydata[0].cashBackImage);
-      // setrecord1(resp?.payload?.data?.mydata);
-      // setidtoUpdate1(resp?.payload?.data?.mydata[0]._id);
+      console.log("herosection", resp?.payload?.data?.images[0]);
+      setrecord1(resp?.payload?.data?.images);
     };
-  }, []);
+
+    fetchData();
+  }, [dispatch]);
 
   const handleAddFAQ = () => {
     if (faqs.length >= 4) {
@@ -161,8 +168,9 @@ export default function FeaturTop(props) {
     setFaqs(newFaqs);
   };
 
-  const updateFeatureTop = async (e) => {
+  const updateFeatureTop = async (e, id) => {
     e.preventDefault();
+    console.log("id", id);
 
     if (!state1.image1) {
       toast.error("Please Upload Image!", {
@@ -192,18 +200,18 @@ export default function FeaturTop(props) {
 
     let obj = {
       ...state1,
-      // idtoUpdate1,
+      idtoUpdate: id,
     };
 
     try {
-      setLoader(true);
+      setLoader1(true);
       let result = await dispatch(editFeatureTopSection(obj));
 
       console.log("result", result);
 
       // result = await result.json();
       if (result) {
-        setLoader(false);
+        setLoader1(false);
         toast.success("Feature Top Updated Successfully", {
           position: "top-right",
           autoClose: 5000,
@@ -216,7 +224,7 @@ export default function FeaturTop(props) {
 
         // setImagePreview(result.imageUrl);
       } else {
-        setLoader(false);
+        setLoader1(false);
         toast.error("Feature Top Updated Failed!", {
           position: "top-right",
           autoClose: 5000,
@@ -241,23 +249,6 @@ export default function FeaturTop(props) {
     <Adminlayout>
       <div style={{ marginTop: "65px", padding: "20px", width: "100%" }}>
         <Breadcrumb pageName="Feature Top" />
-
-        {/* {record1
-          ? record1.map((item, index) => {
-              console.log("item", item);
-              return (
-                // <div key={index}>
-                //   <img
-                //     src={item.cashBackImage}
-                //     alt="image"
-                //     style={{ width: "100%" }}
-                //   />
-                // </div>
-
-             
-              );
-            })
-          : null} */}
         <Box component="form" noValidate autoComplete="off">
           <Box
             // key={index}
@@ -266,414 +257,117 @@ export default function FeaturTop(props) {
             mb={2}
             flexDirection="column"
           >
-            <Grid
-              container
-              spacing={2}
-              style={{
-                borderLeft: "6px #fcc26e solid",
-                /* background: green; */
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-              }}
-            >
-              <Grid item sm={12} md={7} lg={7}>
-                <textarea
-                  label="Tagline"
-                  variant="outlined"
-                  // defaultValue={item.cashBack}
-                  name="tagline1"
-                  onChange={onChangeHandler1}
-                  fullWidth
-                  sx={{ mb: 2 }}
-                />
-              </Grid>
-              <Grid item sm={12} md={3} lg={3} style={{ textAlign: "center" }}>
-                <Button
-                  variant="contained"
-                  component="label"
-                  sx={{
-                    mb: 2,
-                    backgroundColor: "#fcc26e",
-                    "&:hover": {
-                      backgroundColor: "black",
-                      color: "white",
-                    },
-                  }}
-                >
-                  <CenterFocusStrongIcon /> Upload Image
-                  <input
-                    sx={{
-                      mb: 2,
-                      backgroundColor: "#fcc26e",
-                    }}
-                    type="file"
-                    hidden
-                    name="image1"
-                    // onChange={(e) => handleImageChange(index, e)}
-                    onChange={onChangeHandler1}
-                  />
-                </Button>
-
-                <Typography variant="body2" color="textSecondary">
-                  {ImagePreview && (
-                    <img
-                      src={ImagePreview}
+            {record1.length > 0 ? (
+              <>
+                {record1.map((itm, index) => {
+                  return (
+                    <Grid
+                      container
+                      spacing={2}
                       style={{
-                        height: "100px",
-                        width: "100px",
-                        margin: "0px auto",
-                      }}
-                    />
-                  )}
-                </Typography>
-              </Grid>
-              <Grid item sm={12} md={2} lg={2}>
-                {" "}
-                <button
-                  onClick={updateFeatureTop}
-                  // onClick={onSubmit}
-                  style={{
-                    padding: "0px 15px 7px 15px",
-                    display: "flex",
-                    flexDirection: "row",
-                    alignItems: "baseline",
-                    "&:hover": {
-                      backgroundColor: "black",
-                      color: "white",
-                    },
-                  }}
-                >
-                  <CloudSyncIcon
-                    style={{
-                      position: "relative",
-                      top: "5px",
-                      right: "3px",
-                    }}
-                  />{" "}
-                  {loader ? (
-                    <Box
-                      style={{
+                        borderLeft: "6px #fcc26e solid",
+                        /* background: green; */
                         display: "flex",
-                        alignItems: "center",
                         flexDirection: "row",
+                        alignItems: "center",
                       }}
                     >
-                      <Typography>Update First</Typography>
-                      &nbsp; &nbsp;
-                      <CircularProgress size={20} color="inherit" />
-                    </Box>
-                  ) : (
-                    "Update First"
-                  )}
-                </button>
-              </Grid>
-            </Grid>
-          </Box>
-
-          <Box
-            // key={index}
-            display="flex"
-            alignItems="center"
-            mb={2}
-            flexDirection="column"
-          >
-            <Grid
-              container
-              spacing={2}
-              style={{
-                borderLeft: "6px #fcc26e solid",
-                /* background: green; */
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-              }}
-            >
-              <Grid item sm={12} md={8} lg={8}>
-                <textarea
-                  label="Tagline"
-                  variant="outlined"
-                  // defaultValue={item.cashBack}
-                  name="tagline2"
-                  onChange={onChangeHandler2}
-                  fullWidth
-                  sx={{ mb: 2 }}
-                />
-              </Grid>
-              <Grid item sm={12} md={3} lg={3} style={{ textAlign: "center" }}>
-                <Button
-                  variant="contained"
-                  component="label"
-                  sx={{
-                    mb: 2,
-                    backgroundColor: "#fcc26e",
-                    "&:hover": {
-                      backgroundColor: "black",
-                      color: "white",
-                    },
-                  }}
-                >
-                  <CenterFocusStrongIcon /> Upload Image
-                  <input
-                    sx={{
-                      mb: 2,
-                      backgroundColor: "#fcc26e",
-                    }}
-                    type="file"
-                    hidden
-                    name="image2"
-                    // onChange={(e) => handleImageChange(index, e)}
-                    onChange={onChangeHandler2}
-                  />
-                </Button>
-
-                <Typography variant="body2" color="textSecondary">
-                  {ImagePreview2 && (
-                    <img
-                      src={ImagePreview2}
-                      style={{
-                        height: "200px",
-                        width: "200px",
-                        margin: "0px auto",
-                      }}
-                    />
-                  )}
-                </Typography>
-              </Grid>
-              <Grid item sm={12} md={1} lg={1}>
-                {/* <IconButton
-                                onClick={() => handleRemoveFAQ(index)}
-                                sx={{
-                                  mb: 2,
-                                  backgroundColor: "#008000",
-                                  color: "white",
-                                  "&:hover": {
-                                    backgroundColor: "black",
-                                    color: "white",
-                                  },
-                                }}
-                              >
-                                <Remove />
-                              </IconButton> */}
-              </Grid>
-            </Grid>
-          </Box>
-
-          <Box
-            // key={index}
-            display="flex"
-            alignItems="center"
-            mb={2}
-            flexDirection="column"
-          >
-            <Grid
-              container
-              spacing={2}
-              style={{
-                borderLeft: "6px #fcc26e solid",
-                /* background: green; */
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-              }}
-            >
-              <Grid item sm={12} md={8} lg={8}>
-                <textarea
-                  label="Tagline"
-                  variant="outlined"
-                  // defaultValue={item.cashBack}
-                  name="tagline3"
-                  onChange={onChangeHandler3}
-                  fullWidth
-                  sx={{ mb: 2 }}
-                />
-              </Grid>
-              <Grid item sm={12} md={3} lg={3} style={{ textAlign: "center" }}>
-                <Button
-                  variant="contained"
-                  component="label"
-                  sx={{
-                    mb: 2,
-                    backgroundColor: "#fcc26e",
-                    "&:hover": {
-                      backgroundColor: "black",
-                      color: "white",
-                    },
-                  }}
-                >
-                  <CenterFocusStrongIcon /> Upload Image
-                  <input
-                    sx={{
-                      mb: 2,
-                      backgroundColor: "#fcc26e",
-                    }}
-                    type="file"
-                    hidden
-                    name="image3"
-                    // onChange={(e) => handleImageChange(index, e)}
-                    onChange={onChangeHandler3}
-                  />
-                </Button>
-
-                <Typography variant="body2" color="textSecondary">
-                  {ImagePreview3 && (
-                    <img
-                      src={ImagePreview3}
-                      style={{
-                        height: "200px",
-                        width: "200px",
-                        margin: "0px auto",
-                      }}
-                    />
-                  )}
-                  {/* {
-                          <img
-                            src={`data:${item.contentType};base64,${Buffer.from(
-                              item.data
-                            ).toString("base64")}`}
-                            alt={item.name}
-                            style={{ maxHeight: "200px", maxWidth: "200px" }}
+                      <Grid item sm={12} md={4} lg={4}>
+                        <textarea
+                          label="Tagline"
+                          variant="outlined"
+                          defaultValue={itm.tagline}
+                          name="tagline1"
+                          onChange={onChangeHandler1}
+                          fullWidth
+                          sx={{ mb: 2 }}
+                        />
+                      </Grid>
+                      <Grid
+                        item
+                        sm={12}
+                        md={6}
+                        lg={6}
+                        style={{ textAlign: "center" }}
+                      >
+                        <Button
+                          variant="contained"
+                          component="label"
+                          sx={{
+                            zIndex: "9999",
+                            mb: 2,
+                            backgroundColor: "#fcc26e",
+                            "&:hover": {
+                              backgroundColor: "black",
+                              color: "white",
+                            },
+                          }}
+                        >
+                          <CenterFocusStrongIcon /> Upload Image
+                          <input
+                            sx={{
+                              mb: 2,
+                              backgroundColor: "#fcc26e",
+                            }}
+                            type="file"
+                            // hidden
+                            name="image1"
+                            // onChange={(e) => handleImageChange(index, e)}
+                            onChange={onChangeHandler1}
                           />
-                        } */}
-                  {}
-                </Typography>
-              </Grid>
-              <Grid item sm={12} md={1} lg={1}>
-                {/* <IconButton
-                                onClick={() => handleRemoveFAQ(index)}
-                                sx={{
-                                  mb: 2,
-                                  backgroundColor: "#008000",
-                                  color: "white",
-                                  "&:hover": {
-                                    backgroundColor: "black",
-                                    color: "white",
-                                  },
-                                }}
-                              >
-                                <Remove />
-                              </IconButton> */}
-              </Grid>
-            </Grid>
-          </Box>
+                        </Button>
 
-          <Box
-            // key={index}
-            display="flex"
-            alignItems="center"
-            mb={2}
-            flexDirection="column"
-          >
-            <Grid
-              container
-              spacing={2}
-              style={{
-                borderLeft: "6px #fcc26e solid",
-                /* background: green; */
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-              }}
-            >
-              <Grid item sm={12} md={8} lg={8}>
-                <textarea
-                  label="Tagline"
-                  variant="outlined"
-                  // defaultValue={item.cashBack}
-                  name="tagline4"
-                  onChange={onChangeHandler4}
-                  fullWidth
-                  sx={{ mb: 2 }}
-                />
-              </Grid>
-              <Grid item sm={12} md={3} lg={3} style={{ textAlign: "center" }}>
-                <Button
-                  variant="contained"
-                  component="label"
-                  sx={{
-                    mb: 2,
-                    backgroundColor: "#fcc26e",
-                    "&:hover": {
-                      backgroundColor: "black",
-                      color: "white",
-                    },
-                  }}
-                >
-                  <CenterFocusStrongIcon /> Upload Image
-                  <input
-                    sx={{
-                      mb: 2,
-                      backgroundColor: "#fcc26e",
-                    }}
-                    type="file"
-                    hidden
-                    name="image4"
-                    // onChange={(e) => handleImageChange(index, e)}
-                    onChange={onChangeHandler4}
-                  />
-                </Button>
-
-                <Typography variant="body2" color="textSecondary">
-                  {ImagePreview4 && (
-                    <img
-                      src={ImagePreview4}
-                      style={{
-                        height: "200px",
-                        width: "200px",
-                        margin: "0px auto",
-                      }}
-                    />
-                  )}
-                  {/* {
-                          <img
-                            src={`data:${item.contentType};base64,${Buffer.from(
-                              item.data
-                            ).toString("base64")}`}
-                            alt={item.name}
-                            style={{ maxHeight: "200px", maxWidth: "200px" }}
-                          />
-                        } */}
-                  {}
-                </Typography>
-              </Grid>
-              <Grid item sm={12} md={1} lg={1}>
-                {/* <IconButton
-                                onClick={() => handleRemoveFAQ(index)}
-                                sx={{
-                                  mb: 2,
-                                  backgroundColor: "#008000",
-                                  color: "white",
-                                  "&:hover": {
-                                    backgroundColor: "black",
-                                    color: "white",
-                                  },
-                                }}
-                              >
-                                <Remove />
-                              </IconButton> */}
-              </Grid>
-            </Grid>
-          </Box>
-          <Box
-            sx={{ display: "flex", flexDirection: "row", alignItems: "center" }}
-          >
-            <Button
-              variant="contained"
-              color="primary"
-              startIcon={<Add />}
-              onClick={handleAddFAQ}
-              sx={{
-                backgroundColor: "#008000",
-                color: "white",
-                "&:hover": {
-                  backgroundColor: "black",
-                  color: "white",
-                },
-              }}
-            >
-              Add Feature
-            </Button>
-            &nbsp; &nbsp;
+                        <Typography
+                          variant="body2"
+                          color="textSecondary"
+                        ></Typography>
+                      </Grid>
+                      <Grid item sm={12} md={2} lg={2}>
+                        <button
+                          // onClick={updateFeatureTop(itm._id)}
+                          onClick={(e) => updateFeatureTop(e, itm._id)}
+                          style={{
+                            padding: "1px 25px 4px 25px",
+                            display: "flex",
+                            flexDirection: "row",
+                            alignItems: "baseline",
+                            "&:hover": {
+                              backgroundColor: "black",
+                              color: "white",
+                            },
+                          }}
+                        >
+                          <CloudSyncIcon
+                            style={{
+                              position: "relative",
+                              top: "5px",
+                              right: "3px",
+                            }}
+                          />{" "}
+                          {loader1 ? (
+                            <Box
+                              style={{
+                                display: "flex",
+                                alignItems: "center",
+                                flexDirection: "row",
+                              }}
+                            >
+                              <Typography>Update </Typography>
+                              &nbsp; &nbsp;
+                              <CircularProgress size={20} color="inherit" />
+                            </Box>
+                          ) : (
+                            "Update"
+                          )}
+                        </button>
+                      </Grid>
+                    </Grid>
+                  );
+                })}
+              </>
+            ) : (
+              <>Loading...</>
+            )}
           </Box>
         </Box>
       </div>
