@@ -64,7 +64,7 @@ export default function HomeLoans(props) {
                                             loading="lazy"
                                             width={70}
                                             height={70}
-                                            src="https://13.238.116.203/wp-content/uploads/2022/12/home-loan-icon.svg"
+                                            src="http://vxs.com.au/wp-content/uploads/2022/12/home-loan-icon.svg"
                                             alt="home loan icon"
                                             className="wp-image-3976"
                                           />
@@ -121,7 +121,7 @@ export default function HomeLoans(props) {
                                             loading="lazy"
                                             width={70}
                                             height={70}
-                                            src="https://13.238.116.203/wp-content/uploads/2022/12/low-deposit-home-loan-icon.svg"
+                                            src="http://vxs.com.au/wp-content/uploads/2022/12/low-deposit-home-loan-icon.svg"
                                             alt="low deposit home loan icon"
                                             className="wp-image-3972"
                                           />
@@ -181,7 +181,7 @@ export default function HomeLoans(props) {
                                             loading="lazy"
                                             width={70}
                                             height={70}
-                                            src="https://13.238.116.203/wp-content/uploads/2022/12/refinancing-icon.svg"
+                                            src="http://vxs.com.au/wp-content/uploads/2022/12/refinancing-icon.svg"
                                             alt="refinancing icon"
                                             className="wp-image-3973"
                                           />
@@ -237,7 +237,7 @@ export default function HomeLoans(props) {
                                             loading="lazy"
                                             width={70}
                                             height={70}
-                                            src="https://13.238.116.203/wp-content/uploads/2022/12/debt-consolidation.svg"
+                                            src="http://vxs.com.au/wp-content/uploads/2022/12/debt-consolidation.svg"
                                             alt="debt consolidation"
                                             className="wp-image-3974"
                                           />
@@ -297,7 +297,7 @@ export default function HomeLoans(props) {
                                             loading="lazy"
                                             width={70}
                                             height={70}
-                                            src="https://13.238.116.203/wp-content/uploads/2022/12/first-home-buyer-icon.svg"
+                                            src="http://vxs.com.au/wp-content/uploads/2022/12/first-home-buyer-icon.svg"
                                             alt="first home buyer icon"
                                             className="wp-image-3975"
                                           />

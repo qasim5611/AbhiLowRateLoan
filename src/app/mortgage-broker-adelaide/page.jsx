@@ -80,10 +80,10 @@ sec and map, Manual */}
                         loading="lazy"
                         width={1024}
                         height={683}
-                        src="https://13.238.116.203/wp-content/uploads/2023/07/mortage-broker-Perth-1024x683.jpg"
+                        src="http://vxs.com.au/wp-content/uploads/2023/07/mortage-broker-Perth-1024x683.jpg"
                         alt=""
                         className="wp-image-4967"
-                        srcSet="https://13.238.116.203/wp-content/uploads/2023/07/mortage-broker-Perth-1024x683.jpg 1024w, https://13.238.116.203/wp-content/uploads/2023/07/mortage-broker-Perth-300x200.jpg 300w, https://13.238.116.203/wp-content/uploads/2023/07/mortage-broker-Perth-768x512.jpg 768w, https://13.238.116.203/wp-content/uploads/2023/07/mortage-broker-Perth.jpg 1200w"
+                        srcSet="http://vxs.com.au/wp-content/uploads/2023/07/mortage-broker-Perth-1024x683.jpg 1024w, http://vxs.com.au/wp-content/uploads/2023/07/mortage-broker-Perth-300x200.jpg 300w, http://vxs.com.au/wp-content/uploads/2023/07/mortage-broker-Perth-768x512.jpg 768w, http://vxs.com.au/wp-content/uploads/2023/07/mortage-broker-Perth.jpg 1200w"
                         sizes="(max-width: 1024px) 100vw, 1024px"
                       />
                     </figure>

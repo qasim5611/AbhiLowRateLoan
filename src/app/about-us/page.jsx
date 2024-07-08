@@ -82,7 +82,7 @@ export default function AboutUs(props) {
                                     loading="lazy"
                                     width={1024}
                                     height={768}
-                                    src="https://13.238.116.203/wp-content/uploads/2023/01/low-rate-home-loan-pakenham-office-1024x768.webp"
+                                    src="http://vxs.com.au/wp-content/uploads/2023/01/low-rate-home-loan-pakenham-office-1024x768.webp"
                                     alt="low rate home loan pakenham office"
                                     className="wp-image-4651"
                                     srcSet="https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/low-rate-home-loan-pakenham-office-1024x768.webp 1024w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/low-rate-home-loan-pakenham-office-300x225.webp 300w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/low-rate-home-loan-pakenham-office-768x576.webp 768w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/low-rate-home-loan-pakenham-office.webp 1200w"
