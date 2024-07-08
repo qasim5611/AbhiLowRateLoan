@@ -238,7 +238,11 @@ export const editFeatureTopSection = createAsyncThunk(
       }
       console.log("formData", formData);
 
-      let res = await axios.post("/api/useradmin/featuretop", formData, config);
+      let res = await axios.post(
+        "/api/useradmin/featuretopedit",
+        formData,
+        config
+      );
       console.log("res", res);
       return res;
     } catch (error) {

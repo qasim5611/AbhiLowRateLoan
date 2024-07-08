@@ -89,10 +89,10 @@ sec and map, Manual */}
                         loading="lazy"
                         width={837}
                         height={558}
-                        src="https://lowratehomeloan.com.au/wp-content/uploads/2023/01/Berwick-Mortgage-Brokers.webp"
+                        src="https://13.238.116.203/wp-content/uploads/2023/01/Berwick-Mortgage-Brokers.webp"
                         alt="Berwick Mortgage Brokers"
                         className="wp-image-4572"
-                        srcSet="https://lowratehomeloan.com.au/wp-content/uploads/2023/01/Berwick-Mortgage-Brokers.webp 837w, https://lowratehomeloan.com.au/wp-content/uploads/2023/01/Berwick-Mortgage-Brokers-300x200.webp 300w, https://lowratehomeloan.com.au/wp-content/uploads/2023/01/Berwick-Mortgage-Brokers-768x512.webp 768w"
+                        srcSet="https://13.238.116.203/wp-content/uploads/2023/01/Berwick-Mortgage-Brokers.webp 837w, https://13.238.116.203/wp-content/uploads/2023/01/Berwick-Mortgage-Brokers-300x200.webp 300w, https://13.238.116.203/wp-content/uploads/2023/01/Berwick-Mortgage-Brokers-768x512.webp 768w"
                         sizes="(max-width: 837px) 100vw, 837px"
                       />
                     </figure>
@@ -289,7 +289,7 @@ sec and map, Manual */}
                                 loading="lazy"
                                 width={70}
                                 height={70}
-                                src="https://lowratehomeloan.com.au/wp-content/uploads/2022/12/debt-consolidation.svg"
+                                src="https://13.238.116.203/wp-content/uploads/2022/12/debt-consolidation.svg"
                                 alt="debt consolidation"
                                 className="wp-image-3974"
                               />

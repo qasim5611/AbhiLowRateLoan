@@ -207,7 +207,7 @@ sec and map, Manual */}
                                 loading="lazy"
                                 width={70}
                                 height={70}
-                                src="https://lowratehomeloan.com.au/wp-content/uploads/2022/12/debt-consolidation.svg"
+                                src="https://13.238.116.203/wp-content/uploads/2022/12/debt-consolidation.svg"
                                 alt="debt consolidation"
                                 className="wp-image-3974"
                               />

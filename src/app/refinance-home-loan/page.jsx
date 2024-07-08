@@ -107,10 +107,10 @@ export default function RefiinanceHomeLoan(props) {
                       width={1024}
                       height={683}
                       src="refinance-your-home.webp"
-                      // src="https://lowratehomeloan.com.au/wp-content/uploads/2022/12/refinance-your-home-1024x683.webp"
+                      // src="https://13.238.116.203/wp-content/uploads/2022/12/refinance-your-home-1024x683.webp"
                       alt=""
                       className="wp-image-3967"
-                      // srcSet="https://lowratehomeloan.com.au/wp-content/uploads/2022/12/refinance-your-home-1024x683.webp 1024w, https://lowratehomeloan.com.au/wp-content/uploads/2022/12/refinance-your-home-300x200.webp 300w, https://lowratehomeloan.com.au/wp-content/uploads/2022/12/refinance-your-home-768x512.webp 768w, https://lowratehomeloan.com.au/wp-content/uploads/2022/12/refinance-your-home.webp 1200w"
+                      // srcSet="https://13.238.116.203/wp-content/uploads/2022/12/refinance-your-home-1024x683.webp 1024w, https://13.238.116.203/wp-content/uploads/2022/12/refinance-your-home-300x200.webp 300w, https://13.238.116.203/wp-content/uploads/2022/12/refinance-your-home-768x512.webp 768w, https://13.238.116.203/wp-content/uploads/2022/12/refinance-your-home.webp 1200w"
                       sizes="(max-width: 1024px) 100vw, 1024px"
                     />
                   </figure>

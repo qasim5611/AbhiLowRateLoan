@@ -66,10 +66,10 @@ sec and map, Manual */}
                         loading="lazy"
                         width={1024}
                         height={683}
-                        src="https://lowratehomeloan.com.au/wp-content/uploads/2023/07/mortage-broker-Perth-1024x683.jpg"
+                        src="https://13.238.116.203/wp-content/uploads/2023/07/mortage-broker-Perth-1024x683.jpg"
                         alt=""
                         className="wp-image-4967"
-                        srcSet="https://lowratehomeloan.com.au/wp-content/uploads/2023/07/mortage-broker-Perth-1024x683.jpg 1024w, https://lowratehomeloan.com.au/wp-content/uploads/2023/07/mortage-broker-Perth-300x200.jpg 300w, https://lowratehomeloan.com.au/wp-content/uploads/2023/07/mortage-broker-Perth-768x512.jpg 768w, https://lowratehomeloan.com.au/wp-content/uploads/2023/07/mortage-broker-Perth.jpg 1200w"
+                        srcSet="https://13.238.116.203/wp-content/uploads/2023/07/mortage-broker-Perth-1024x683.jpg 1024w, https://13.238.116.203/wp-content/uploads/2023/07/mortage-broker-Perth-300x200.jpg 300w, https://13.238.116.203/wp-content/uploads/2023/07/mortage-broker-Perth-768x512.jpg 768w, https://13.238.116.203/wp-content/uploads/2023/07/mortage-broker-Perth.jpg 1200w"
                         sizes="(max-width: 1024px) 100vw, 1024px"
                       />
                     </figure>

@@ -67,10 +67,10 @@ sec and map, Manual */}
                         loading="lazy"
                         width={600}
                         height={400}
-                        src="https://lowratehomeloan.com.au/wp-content/uploads/2023/07/Brunswick-Street-Fitzroy.jpg"
+                        src="https://13.238.116.203/wp-content/uploads/2023/07/Brunswick-Street-Fitzroy.jpg"
                         alt=""
                         className="wp-image-4951"
-                        srcSet="https://lowratehomeloan.com.au/wp-content/uploads/2023/07/Brunswick-Street-Fitzroy.jpg 600w, https://lowratehomeloan.com.au/wp-content/uploads/2023/07/Brunswick-Street-Fitzroy-300x200.jpg 300w"
+                        srcSet="https://13.238.116.203/wp-content/uploads/2023/07/Brunswick-Street-Fitzroy.jpg 600w, https://13.238.116.203/wp-content/uploads/2023/07/Brunswick-Street-Fitzroy-300x200.jpg 300w"
                         sizes="(max-width: 600px) 100vw, 600px"
                       />
                     </figure>

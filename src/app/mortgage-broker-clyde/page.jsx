@@ -80,10 +80,10 @@ sec and map, Manual */}
                         loading="lazy"
                         width={800}
                         height={514}
-                        src="https://lowratehomeloan.com.au/wp-content/uploads/2023/02/mortgage-broker-Clyde.webp"
+                        src="https://13.238.116.203/wp-content/uploads/2023/02/mortgage-broker-Clyde.webp"
                         alt=""
                         className="wp-image-4858"
-                        srcSet="https://lowratehomeloan.com.au/wp-content/uploads/2023/02/mortgage-broker-Clyde.webp 800w, https://lowratehomeloan.com.au/wp-content/uploads/2023/02/mortgage-broker-Clyde-300x193.webp 300w, https://lowratehomeloan.com.au/wp-content/uploads/2023/02/mortgage-broker-Clyde-768x493.webp 768w"
+                        srcSet="https://13.238.116.203/wp-content/uploads/2023/02/mortgage-broker-Clyde.webp 800w, https://13.238.116.203/wp-content/uploads/2023/02/mortgage-broker-Clyde-300x193.webp 300w, https://13.238.116.203/wp-content/uploads/2023/02/mortgage-broker-Clyde-768x493.webp 768w"
                         sizes="(max-width: 800px) 100vw, 800px"
                       />
                     </figure>

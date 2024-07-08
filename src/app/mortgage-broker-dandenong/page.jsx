@@ -67,10 +67,10 @@ sec and map, Manual */}
                         loading="lazy"
                         width={1024}
                         height={531}
-                        src="https://lowratehomeloan.com.au/wp-content/uploads/2023/07/dandenong-mortgage-brokers-1024x531.jpg"
+                        src="https://13.238.116.203/wp-content/uploads/2023/07/dandenong-mortgage-brokers-1024x531.jpg"
                         alt=""
                         className="wp-image-4958"
-                        srcSet="https://lowratehomeloan.com.au/wp-content/uploads/2023/07/dandenong-mortgage-brokers-1024x531.jpg 1024w, https://lowratehomeloan.com.au/wp-content/uploads/2023/07/dandenong-mortgage-brokers-300x156.jpg 300w, https://lowratehomeloan.com.au/wp-content/uploads/2023/07/dandenong-mortgage-brokers-768x398.jpg 768w, https://lowratehomeloan.com.au/wp-content/uploads/2023/07/dandenong-mortgage-brokers-1536x796.jpg 1536w, https://lowratehomeloan.com.au/wp-content/uploads/2023/07/dandenong-mortgage-brokers-2048x1062.jpg 2048w"
+                        srcSet="https://13.238.116.203/wp-content/uploads/2023/07/dandenong-mortgage-brokers-1024x531.jpg 1024w, https://13.238.116.203/wp-content/uploads/2023/07/dandenong-mortgage-brokers-300x156.jpg 300w, https://13.238.116.203/wp-content/uploads/2023/07/dandenong-mortgage-brokers-768x398.jpg 768w, https://13.238.116.203/wp-content/uploads/2023/07/dandenong-mortgage-brokers-1536x796.jpg 1536w, https://13.238.116.203/wp-content/uploads/2023/07/dandenong-mortgage-brokers-2048x1062.jpg 2048w"
                         sizes="(max-width: 1024px) 100vw, 1024px"
                       />
                     </figure>
