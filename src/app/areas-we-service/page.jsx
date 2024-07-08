@@ -61,7 +61,7 @@ export default function AreasServices(props) {
                                                         decoding="async"
                                                         width={62}
                                                         height={62}
-                                                        src="http://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/cash-back-icon.svg"
+                                                        src="https://13.238.116.203/wp-content/uploads/2022/12/cash-back-icon.svg"
                                                         alt=""
                                                         className="wp-image-3979"
                                                       />
@@ -103,7 +103,7 @@ export default function AreasServices(props) {
                                                         loading="lazy"
                                                         width={62}
                                                         height={62}
-                                                        src="http://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/icon-gift-card.svg"
+                                                        src="https://13.238.116.203/wp-content/uploads/2023/01/icon-gift-card.svg"
                                                         alt="icon gift card"
                                                         className="wp-image-4355"
                                                       />
@@ -150,7 +150,7 @@ export default function AreasServices(props) {
                                                         loading="lazy"
                                                         width={62}
                                                         height={62}
-                                                        src="http://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/icon-loan-long-term.svg"
+                                                        src="https://13.238.116.203/wp-content/uploads/2023/01/icon-loan-long-term.svg"
                                                         alt="icon long term loan"
                                                         className="wp-image-4359"
                                                       />
@@ -192,7 +192,7 @@ export default function AreasServices(props) {
                                                         loading="lazy"
                                                         width={61}
                                                         height={62}
-                                                        src="http://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/loan-term-icon.svg"
+                                                        src="https://13.238.116.203/wp-content/uploads/2022/12/loan-term-icon.svg"
                                                         alt="loan term icon"
                                                         className="wp-image-3981"
                                                       />

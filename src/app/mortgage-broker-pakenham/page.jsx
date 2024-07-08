@@ -58,10 +58,10 @@ sec and map, Manual */}
                         loading="lazy"
                         width={837}
                         height={558}
-                        src="http://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/pakenham-station.webp"
+                        src="https://13.238.116.203/wp-content/uploads/2023/01/pakenham-station.webp"
                         alt="pakenham mortgage brokers"
                         className="wp-image-4472"
-                        srcSet="http://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/pakenham-station.webp 837w, http://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/pakenham-station-300x200.webp 300w, http://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/pakenham-station-768x512.webp 768w"
+                        srcSet="https://13.238.116.203/wp-content/uploads/2023/01/pakenham-station.webp 837w, https://13.238.116.203/wp-content/uploads/2023/01/pakenham-station-300x200.webp 300w, https://13.238.116.203/wp-content/uploads/2023/01/pakenham-station-768x512.webp 768w"
                         sizes="(max-width: 837px) 100vw, 837px"
                       />
                     </figure>
