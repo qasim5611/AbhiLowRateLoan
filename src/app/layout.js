@@ -230,12 +230,17 @@ export default function RootLayout({ children }) {
           pathname === "/buy-home-consultation" ||
           pathname === "/refinance-consultation" ||
           pathname === "/adminPanel/herosection" ||
-          pathname === "/adminPanel/featuresTop" ? null : (
+          pathname === "/adminPanel/featuresTop" ||
+          pathname === "/adminPanel/reputableLenders" ||
+          pathname === "/adminPanel/featuredservices" ||
+          pathname === "/adminPanel/applicationprocess" ||
+          pathname === "/adminPanel/testimonials" ||
+          pathname === "/adminPanel/faqs" ||
+          pathname === "/adminPanel/freeconsultation" ? null : (
             <Header />
           )}
           {/* <p>Current route: {pathname}</p> */}
           {/* <p>Current route: {pathname}</p> */}
-
           {children}
 
           {pathname === "/adminPanel" ||
@@ -245,7 +250,13 @@ export default function RootLayout({ children }) {
           pathname === "/buy-home-consultation" ||
           pathname === "/refinance-consultation" ||
           pathname === "/adminPanel/herosection" ||
-          pathname === "/adminPanel/featuredtop" ? null : (
+          pathname === "/adminPanel/featuredtop" ||
+          pathname === "/adminPanel/reputableLenders" ||
+          pathname === "/adminPanel/featuredservices" ||
+          pathname === "/adminPanel/applicationprocess" ||
+          pathname === "/adminPanel/testimonials" ||
+          pathname === "/adminPanel/faqs" ||
+          pathname === "/adminPanel/freeconsultation" ? null : (
             <Footer />
           )}
 

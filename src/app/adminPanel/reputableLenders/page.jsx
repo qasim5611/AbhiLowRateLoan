@@ -5,12 +5,20 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Adminlayout from "../Adminlayout";
 import { useSelector, useDispatch } from "react-redux";
+import CenterFocusStrongIcon from "@mui/icons-material/CenterFocusStrong";
 
 import Breadcrumb from "./../../../components/Breadcrumbs/Breadcrumb";
-import { Grid, TextField } from "@mui/material";
 import {
-  editHeroSection,
-  getHeroSection,
+  Box,
+  Button,
+  CircularProgress,
+  Grid,
+  TextField,
+  Typography,
+} from "@mui/material";
+import {
+  editReputeableBanner,
+  getReputeableBanner,
 } from "../../../redux/slices/globalSlice";
 import axios from "axios";
 
@@ -19,25 +27,31 @@ export default function ReputeableLenders(props) {
   const [record, setrecord] = useState([]);
   const [idtoUpdate, setidtoUpdate] = useState(false);
 
+  const [loader, setLoader] = useState(false);
+
   useEffect(() => {
     return async () => {
-      let resp = await dispatch(getHeroSection());
-      console.log("herosection", resp?.payload?.data?.mydata);
-      console.log("herosection", resp?.payload?.data?.mydata[0].tagline);
-      setrecord(resp?.payload?.data?.mydata);
-      setidtoUpdate(resp?.payload?.data?.mydata[0]._id);
+      let resp = await dispatch(getReputeableBanner());
+      console.log("getReputeableBanner", resp);
+      setrecord(resp?.payload?.data?.data);
+      setidtoUpdate(resp?.payload?.data?.data[0]._id);
     };
   }, []);
 
   const [state, setState] = useState({
     tagline: "",
-    refinancebtn: "",
-    lownbtn: "",
+    image: null,
   });
+
+  const [ImagePreview, setImagePreview] = useState(null);
 
   const onChangeHandler = (e) => {
     if (e.target.name == "image") {
       let val = e.target.files[0];
+      const url = URL.createObjectURL(val);
+      console.log("url", url);
+      setImagePreview(url);
+
       setState({ ...state, [e.target.name]: val });
     } else {
       setState({ ...state, [e.target.name]: e.target.value });
@@ -46,14 +60,15 @@ export default function ReputeableLenders(props) {
 
   const updateHomeBanner = async (e) => {
     e.preventDefault();
-    console.log("Regiter state", state);
+    console.log("Reputeable Lender state", state);
     let obj = {
       ...state,
       idtoUpdate,
     };
-    let resp = await dispatch(editHeroSection(obj));
-    console.log("resp editHeroSection", resp.payload.data.msg);
-    if (resp.payload.data.msg == "Updated Successful") {
+    setLoader(true);
+    let resp = await dispatch(editReputeableBanner(obj));
+    console.log("resp editReputeableBanner", resp);
+    if (resp.payload.status == 200) {
       toast.success("Updated Successful", {
         position: "top-right",
         autoClose: 5000,
@@ -64,6 +79,19 @@ export default function ReputeableLenders(props) {
 
         progress: undefined,
       });
+      setLoader(false);
+    } else if (!resp.payload.status == 200) {
+      toast.error("Updated Fail!", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+
+        progress: undefined,
+      });
+      setLoader(false);
     }
   };
 
@@ -82,11 +110,10 @@ export default function ReputeableLenders(props) {
               return (
                 <>
                   <Grid container spacing={2}>
-                    <Grid item xs={12}>
+                    <Grid item xs={7}>
                       <label for="heroSec" className="lblform">
                         Banner Tag Line:
                       </label>
-
                       <textarea
                         id="heroSec"
                         name="tagline"
@@ -94,46 +121,75 @@ export default function ReputeableLenders(props) {
                         cols="30"
                         onChange={onChangeHandler}
                         defaultValue={item.tagline || "Please Enter:"}
+                        // defaultValue={"Please Enter:"}
                       ></textarea>
                     </Grid>
+                    <Grid item xs={5}>
+                      &nbsp;
+                    </Grid>
                   </Grid>
-
-                  <Grid container spacing={2}>
-                    <Grid item xs={6}>
-                      <label for="heroSec" className="lblform">
-                        Refinance Button Text
-                      </label>
-                      <br />
+                  <br />
+                  <Grid
+                    item
+                    sm={12}
+                    md={12}
+                    lg={12}
+                    style={{ textAlign: "left" }}
+                  >
+                    <label for="heroSec" className="lblform">
+                      Upload Banner Image
+                    </label>
+                    <br />
+                    <Button
+                      variant="contained"
+                      component="label"
+                      sx={{
+                        zIndex: "9999",
+                        mb: 2,
+                        backgroundColor: "#fcc26e",
+                        "&:hover": {
+                          backgroundColor: "black",
+                          color: "white",
+                        },
+                      }}
+                    >
+                      <CenterFocusStrongIcon /> Upload Image
                       <input
-                        type="text"
-                        name="refinancebtn"
-                        className="textfild"
-                        placeholder="(Left)"
+                        sx={{ mb: 2, backgroundColor: "#fcc26e" }}
+                        type="file"
+                        name="image"
+                        hidden
                         onChange={onChangeHandler}
-                        defaultValue={item.refinancebtn}
                       />
-                    </Grid>
+                    </Button>
 
-                    <Grid item xs={6}>
-                      <label for="heroSec" className="lblform">
-                        Lown Button Text
-                      </label>
-                      <br />
-                      <input
-                        type="text"
-                        name="lownbtn"
-                        className="textfild"
-                        placeholder="(Right)"
-                        onChange={onChangeHandler}
-                        defaultValue={item.lownbtn}
+                    {ImagePreview && (
+                      <img
+                        src={ImagePreview}
+                        alt="Preview"
+                        style={{ width: "100px", height: "100px" }}
                       />
-                    </Grid>
+                    )}
                   </Grid>
                   <br />
                   <Grid container spacing={2}>
                     <Grid item>
                       <button onClick={updateHomeBanner}>
-                        Update Home Banner
+                        {loader ? (
+                          <Box
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              flexDirection: "row",
+                            }}
+                          >
+                            <Typography>Update Reputable Lenders </Typography>
+                            &nbsp; &nbsp;
+                            <CircularProgress size={20} color="inherit" />
+                          </Box>
+                        ) : (
+                          "Update Reputable Lenders"
+                        )}
                       </button>
                     </Grid>
                   </Grid>
@@ -142,7 +198,7 @@ export default function ReputeableLenders(props) {
             })}
           </>
         ) : (
-          <>Loading...</>
+          <div>Loading...</div>
         )}
       </div>
     </Adminlayout>

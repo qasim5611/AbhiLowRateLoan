@@ -27,7 +27,7 @@ import { BorderBottom } from "@mui/icons-material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { styled } from "@mui/material";
 
-const drawerWidth = 350;
+const drawerWidth = 385;
 const navItems = ["Home", "About", "Contact"];
 // const navItems = [{}];
 function DrawerAppBar(props) {
@@ -46,24 +46,29 @@ function DrawerAppBar(props) {
   const submenuStyl = {
     paddingLeft: "50px",
     fontSize: "24px",
-    textTransform: "uppercase",
+    // textTransform: "uppercase",
     borderBottom: "1px #222528 solid",
+    // padding: "0px 51px !important",
     // color: "white",
+    height: "35px !important",
   };
   const submenuStylMain = {
     fontSize: "24px",
-    textTransform: "uppercase",
+    // textTransform: "uppercase",
     borderBottom: "1px #222528 solid",
     // color: "white",
     padding: "0px !important",
-    marginBottom: "30px",
+    height: "43px !important",
+
+    // marginBottom: "30px",
   };
 
   const submenuStylMainDrop = {
     fontSize: "24px",
-    textTransform: "uppercase",
+    // textTransform: "uppercase",
     // color: "white",
     padding: "0px !important",
+    height: "43px !important",
   };
 
   const handleDrawerToggle = () => {
@@ -162,6 +167,7 @@ function DrawerAppBar(props) {
           // container={container}
           //  variant="temporary"
           open={mobileOpen}
+          anchor="right"
           onClose={handleDrawerToggle}
           ModalProps={{
             keepMounted: true, // Better open performance on mobile.
@@ -192,17 +198,17 @@ function DrawerAppBar(props) {
             <CloseIcon />
           </Typography>
 
-          <List>
+          <List sx={{ padding: "8px 24px !important" }}>
             <ListItem
               button
               onClick={handleClick}
               style={{
                 display: "flex",
                 justifyContent: "fkexStart",
-                marginBottom: "30px",
-                marginTop: "50px",
-
+                // marginBottom: "30px",
+                marginTop: "20px",
                 borderBottom: "1px #222528 solid",
+                padding: "0px",
               }}
             >
               <Link href={"/home-loans"}>
@@ -210,7 +216,7 @@ function DrawerAppBar(props) {
                   style={submenuStylMainDrop}
                   sx={{
                     color: activeIndex === 0 ? "green" : "white",
-                    padding: "0px",
+                    padding: "5px 0px",
                   }}
                 >
                   Home Loans
@@ -233,10 +239,12 @@ function DrawerAppBar(props) {
                   <ListItem
                     button
                     style={submenuStyl}
-                    sx={{ color: activeIndex === 1 ? "green" : "white" }}
+                    sx={{
+                      color: activeIndex === 1 ? "green" : "white",
+                      padding: "0px",
+                    }}
                   >
-                    Buy a New Home: Mortgage Solutions Tailored for New Home
-                    Buyers
+                    Buy a new home
                   </ListItem>
                 </Link>
                 <Link
@@ -246,9 +254,12 @@ function DrawerAppBar(props) {
                 >
                   <ListItem
                     style={submenuStyl}
-                    sx={{ color: activeIndex === 2 ? "green" : "white" }}
+                    sx={{
+                      color: activeIndex === 2 ? "green" : "white",
+                      padding: "5px 0px",
+                    }}
                   >
-                    Refinance Your Home – Lower Your Payments!
+                    Refinance my home loan
                   </ListItem>
                 </Link>
 
@@ -259,10 +270,12 @@ function DrawerAppBar(props) {
                 >
                   <ListItem
                     style={submenuStyl}
-                    sx={{ color: activeIndex === 3 ? "green" : "white" }}
+                    sx={{
+                      color: activeIndex === 3 ? "green" : "white",
+                      padding: "5px 0px",
+                    }}
                   >
-                    Investment Property Opportunities: Unlock Your Real Estate
-                    Potential
+                    Buy an investment property
                   </ListItem>
                 </Link>
                 <Link
@@ -272,7 +285,10 @@ function DrawerAppBar(props) {
                 >
                   <ListItem
                     style={submenuStyl}
-                    sx={{ color: activeIndex === 4 ? "green" : "white" }}
+                    sx={{
+                      color: activeIndex === 4 ? "green" : "white",
+                      padding: "5px 0px",
+                    }}
                   >
                     Compare Rates
                   </ListItem>
@@ -290,9 +306,10 @@ function DrawerAppBar(props) {
                 style={submenuStylMain}
                 sx={{
                   color: activeIndex === 5 ? "green" : "white",
+                  padding: "5px 0px",
                 }}
               >
-                AREAS WE SERVICES
+                Areas we Service
               </ListItem>
             </Link>
 
@@ -304,9 +321,12 @@ function DrawerAppBar(props) {
             >
               <ListItem
                 style={submenuStylMain}
-                sx={{ color: activeIndex === 6 ? "green" : "white" }}
+                sx={{
+                  color: activeIndex === 6 ? "green" : "white",
+                  padding: "5px 0px",
+                }}
               >
-                ABOUT US
+                About Us
               </ListItem>
             </Link>
 
@@ -318,9 +338,12 @@ function DrawerAppBar(props) {
             >
               <ListItem
                 style={submenuStylMain}
-                sx={{ color: activeIndex === 7 ? "green" : "white" }}
+                sx={{
+                  color: activeIndex === 7 ? "green" : "white",
+                  padding: "0px 0px",
+                }}
               >
-                TALK TO US
+                Talk to Us
               </ListItem>
             </Link>
           </List>

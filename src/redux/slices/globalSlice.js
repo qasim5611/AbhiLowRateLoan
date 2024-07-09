@@ -253,6 +253,40 @@ export const editFeatureTopSection = createAsyncThunk(
   }
 );
 
+export const editReputeableBanner = createAsyncThunk(
+  "auth/editReputeableBanner",
+  async (body) => {
+    try {
+      console.log(
+        ".................................>> editReputeableBanner Global Slice",
+        body
+      );
+      const config = {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      };
+      let formData = new FormData();
+      for (var item in body) {
+        formData.append(item, body[item]);
+      }
+      console.log("formData", formData);
+
+      let res = await axios.post(
+        "/api/useradmin/reputeable-edit",
+        formData,
+        config
+      );
+      console.log("res", res);
+      return res;
+    } catch (error) {
+      // Handle error
+      console.error(error);
+      throw error;
+    }
+  }
+);
+
 export const getHeroSection = createAsyncThunk(
   "auth/getHeroSection",
   async (body) => {
@@ -273,6 +307,20 @@ export const getFeatureSection = createAsyncThunk(
   async (body) => {
     try {
       let res = await axios.get("/api/useradmin/featuretopget");
+      console.log(res);
+      return res;
+    } catch (error) {
+      console.error(error);
+      throw error;
+    }
+  }
+);
+
+export const getReputeableBanner = createAsyncThunk(
+  "auth/getReputeableBanner",
+  async (body) => {
+    try {
+      let res = await axios.get("/api/useradmin/reputeable-get");
       console.log(res);
       return res;
     } catch (error) {
