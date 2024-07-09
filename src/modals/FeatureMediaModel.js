@@ -6,7 +6,10 @@ const Schema = new mongoose.Schema(
     tagline: {
       type: String,
     },
-    desc: {
+    image_url: {
+      type: String,
+    },
+    public_id: {
       type: String,
     },
   },
@@ -14,5 +17,5 @@ const Schema = new mongoose.Schema(
     timestamps: { createdAt: "created_at", updatedAt: "updated_at" },
   }
 );
-export const FeatureContentModal =
-  mongoose.models.featurecontent || mongoose.model("featurecontent", Schema);
+export const FeatureMediaModel =
+  mongoose.models.featuremedia || mongoose.model("featuremedia", Schema);

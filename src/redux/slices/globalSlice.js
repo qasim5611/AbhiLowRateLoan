@@ -253,6 +253,40 @@ export const editFeatureTopSection = createAsyncThunk(
   }
 );
 
+export const editFeatureMedia = createAsyncThunk(
+  "auth/editFeatureMedia",
+  async (body) => {
+    try {
+      console.log(
+        ".................................>> FeatureTop Global Slice",
+        body
+      );
+      const config = {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      };
+      let formData = new FormData();
+      for (var item in body) {
+        formData.append(item, body[item]);
+      }
+      console.log("formData", formData);
+
+      let res = await axios.post(
+        "/api/useradmin/featuremediaedit",
+        formData,
+        config
+      );
+      console.log("res", res);
+      return res;
+    } catch (error) {
+      // Handle error
+      console.error(error);
+      throw error;
+    }
+  }
+);
+
 export const editReputeableBanner = createAsyncThunk(
   "auth/editReputeableBanner",
   async (body) => {
@@ -287,6 +321,39 @@ export const editReputeableBanner = createAsyncThunk(
   }
 );
 
+export const editServiceContent = createAsyncThunk(
+  "auth/featureservice-save",
+  async (body) => {
+    try {
+      console.log(
+        ".................................>> editServiceContent Slice",
+        body
+      );
+      const config = {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      };
+      let formData = new FormData();
+      for (var item in body) {
+        formData.append(item, body[item]);
+      }
+      console.log("formData", formData);
+
+      let res = await axios.post(
+        "/api/useradmin/featureservice-edit",
+        formData,
+        config
+      );
+      console.log("res", res);
+      return res;
+    } catch (error) {
+      // Handle error
+      console.error(error);
+      throw error;
+    }
+  }
+);
 export const getHeroSection = createAsyncThunk(
   "auth/getHeroSection",
   async (body) => {
@@ -316,6 +383,20 @@ export const getFeatureSection = createAsyncThunk(
   }
 );
 
+export const getFeatureMedia = createAsyncThunk(
+  "auth/getFeatureMedia",
+  async (body) => {
+    try {
+      let res = await axios.get("/api/useradmin/featuremediaget");
+      console.log(res);
+      return res;
+    } catch (error) {
+      console.error(error);
+      throw error;
+    }
+  }
+);
+
 export const getReputeableBanner = createAsyncThunk(
   "auth/getReputeableBanner",
   async (body) => {
@@ -330,6 +411,19 @@ export const getReputeableBanner = createAsyncThunk(
   }
 );
 
+export const getServiceContent = createAsyncThunk(
+  "auth/getServiceContent",
+  async (body) => {
+    try {
+      let res = await axios.get("/api/useradmin/featureservice-get");
+      console.log(res);
+      return res;
+    } catch (error) {
+      console.error(error);
+      throw error;
+    }
+  }
+);
 export const globalSlice = createSlice({
   name: "global",
   initialState,
