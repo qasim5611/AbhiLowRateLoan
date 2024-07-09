@@ -215,7 +215,7 @@ function Header({ data, update }) {
                             <div className="site-branding mobile-site-branding branding-layout-standard branding-tablet-layout-inherit site-brand-logo-only branding-mobile-layout-inherit">
                               <Link
                                 className="brand has-logo-image"
-                                href={"/"}
+                                href="/"
                                 rel="home"
                                 aria-label="Low Rate Home Loan"
                               >

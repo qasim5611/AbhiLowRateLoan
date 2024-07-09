@@ -31,22 +31,32 @@ sec and map, Manual */}
                       className="kt-adv-heading_193f8b-bc wp-block-kadence-advancedheading"
                       data-kb-block="kb-adv-heading_193f8b-bc"
                     >
-                      Get your Unconditional Approval within Hours
+                      Low Rate Home Loan in Pakenham
                     </h2>
                     <p>
-                      At Low Rate Home Loan our Mortgage Brokers in Pakenham
-                      strongly believe in the importance of developing and
-                      maintaining strong relationships with our customers.
+                      Thank you for visiting our site. If you are looking to
+                      purchase your first home or thinking to join the wonderful
+                      Estate of Pakenham, you have come to the right place. If
+                      you’re already a resident of fabulous Pakenham and looking
+                      to Refinance, Debt Consolidate or wanting to Buy an
+                      Investment Property you are on the right track.
                     </p>
+
+                    <h2
+                      className="kt-adv-heading_193f8b-bc wp-block-kadence-advancedheading"
+                      data-kb-block="kb-adv-heading_193f8b-bc"
+                    >
+                      Multiple Award Winning Home Loan Service Providers in
+                      Pakenham
+                    </h2>
                     <p>
-                      We take the time to understand your current situation,
-                      goals, and needs so that we can provide you with tailored
-                      options that are perfectly suited to you.
-                    </p>
-                    <p>
-                      No matter what stage you are at, get in touch with us, and
-                      we would be pleased to assist you. This is an obligation
-                      FREE service.
+                      Our team of Mortgage Brokers in Pakenham focus on
+                      providing excellent customer satisfaction by assessing
+                      their needs and objectives to find them the right products
+                      and services. We help our valuable clients to save on
+                      their Home Loans as we Have access to 53+ Banks which
+                      enables us to find you the right Home Loan from over 3000+
+                      products.
                     </p>
                   </div>
                 </div>
