@@ -26,11 +26,11 @@ export function ReputableLenders(props) {
                       loading="lazy"
                       width="1024"
                       height="432"
-                      src="/pics/home-loans-lenders-1024x432.webp"
+                      src="/pics/home-loans-lenders.webp"
                       alt="home loans lenders list"
                       className="kb-img wp-image-4131"
                       // srcSet="https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/home-loans-lenders-1024x432.webp 1024w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/home-loans-lenders-300x127.webp 300w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/home-loans-lenders-768x324.webp 768w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/home-loans-lenders.webp 1366w"
-                      sizes="(max-width: 1024px) 100vw, 1024px"
+                      // sizes="(max-width: 1024px) 100vw, 1024px"
                     />
                   </figure>
                 </div>

@@ -1,0 +1,1056 @@
+/*!
+Theme Name: Low Rate Home Loan
+Theme URI: https://www.lowratehomeloan.com.au
+Template: kadence
+Author: Tripty Jogoo
+Author URI: https://www.triptyrasaily.com
+Description: Child Theme of Kadence Theme is a lightweight yet full featured WordPress theme for creating beautiful fast loading and accessible websites, easier than ever. It features an easy to use drag and drop header and footer builder to build any type of header in minutes. It features a full library of gorgeous starter templates that are easy to modify with our intelligent global font and color controls. With extensive integration with the most popular 3rd party plugins, you can quickly build impressive ecommerce websites, course websites, business websites, and more.
+Tags: translation-ready,two-columns,right-sidebar,left-sidebar,footer-widgets,blog,custom-logo,custom-background,custom-menu,rtl-language-support,editor-style,threaded-comments,custom-colors,featured-images,wide-blocks,full-width-template,theme-options,e-commerce
+Version: 1.0.0.1670993131
+Updated: 2022-12-14 04:45:31
+License: GNU General Public License v3.0 (or later)
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: kadence-child
+*/
+
+/* Theme customization starts here
+-------------------------------------------------------------- */
+
+
+
+
+.site-container {
+
+    max-width: 100%;
+    padding: 0 6%;
+
+}
+
+h5{
+	text-transform:uppercase;
+	color:#000;
+
+}
+
+body .site-branding {
+  padding: 12px 0px 0px 0px;
+}
+
+#primary-menu, #mobile-menu{
+	text-transform:uppercase;
+}
+
+.menu-item:hover{
+	background:#00A651;
+}
+
+.menu-item {
+	margin-top:50px;
+}
+
+.sub-menu .menu-item{
+    margin-top:0;
+}
+
+
+.header-navigation .header-menu-container .sub-menu li.menu-item.current-menu-item  a {
+	color:#fff;
+}
+.header-navigation .header-menu-container ul ul li.menu-item, .header-menu-container ul.menu > li.kadence-menu-mega-enabled > ul > li.menu-item > a {
+    border:none!important;
+}
+
+
+
+/* .primary-menu-container li:last-child{
+	margin-left: 16px;
+}
+ */
+.site-header-section{
+	position:relative;
+}
+.top-features a{
+	color:#fff;
+}
+
+
+.top-features span{
+	font-size:1.2em;
+}
+
+
+.top-button .kt-row-layout-inner{
+	cursor:pointer;
+}
+
+/* .top-button .kt-row-layout-inner:hover a{
+	color:#00a651;
+
+} */
+
+.top-button .kt-row-layout-inner:hover a img{
+/* filter: invert(43%) sepia(53%) saturate(3775%) hue-rotate(126deg) brightness(60%) contrast(101%); */
+	filter:invert(43%) sepia(53%) saturate(3775%) hue-rotate(106deg) brightness(65%) contrast(101%);
+}
+
+
+
+#primary-menu li:last-child{
+	background-color:#0e0e0e;
+	
+}
+#primary-menu li:last-child a{
+	color:#fff;
+}
+
+#primary-menu li:last-child a:hover{
+color:#00A651;
+}
+
+
+.main-navigation .primary-menu-container > ul > li.menu-item > a{
+  color: var(--global-palette1);
+}
+
+.main-navigation .primary-menu-container > ul > li.menu-item.current-menu-ancestor > a {
+  color: var(--global-palette1)!important;
+}
+
+
+ header .main-navigation .primary-menu-container > ul > li.menu-item.current-menu-item > a{
+    color:#0e0e0e;
+/* 		#00a651; */
+}
+ 
+header .main-navigation .primary-menu-container > ul > li.menu-item.current-menu-item > a:hover {
+    color: #fff;
+}
+
+
+.site-container .header-navigation .menu {
+  padding-top: 2em;
+}
+
+.header-navigation .header-menu-container ul ul li.menu-item > a{
+	font-size:16px;
+}
+
+.entry-content .pos-rel .alignfull{
+	margin-left: 0;
+	margin-right: 0;
+	max-width: 100%;
+}
+
+#phone{
+	display:inline-block;
+	margin-left:0.5em;
+	letter-spacing:2px;
+}
+
+#phone a{
+	text-decoration:none;
+}
+
+
+
+.pos-button{
+	display: block;
+	text-align: center;
+}
+
+
+
+.wp-block-button__link{
+    
+    padding:1em 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    border-radius: 0.5em;
+    border: 1px solid #0E0E0E;
+}
+
+.has-theme-palette-2-background-color {
+  border: 1px solid var(--global-palette2);
+
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link{
+    padding:1em 2em;
+    border-color: #fff; 
+}
+
+header .wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color){
+    color: #fff;
+}
+
+
+header .wp-block-button__link:hover, .wp-block-button.is-style-outline .wp-block-button__link:hover {
+    background: #fff;
+    color:#0E0E0E!important;
+    filter: drop-shadow(2px 2px 50px #959595);
+    border-color: #fff; 
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link {
+    border-color:#fff!important;
+	color:#fff!important;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link:hover, .wp-block-button__link:hover {
+    background-color :#fff!important;
+	color:#000!important;
+	border:2px solid #fff!important;
+}
+
+.wp-block-button__link{
+	border:2px solid #000!important;
+}
+
+.btn-over-img{
+    position: absolute;
+    width:100%;
+    bottom:15%;
+    left:0;
+    right:0;
+}
+
+.btn-over-img .wp-block-button__link{
+	border:2px solid #00A651!important;
+}
+
+.btn-over-img .wp-block-button__link:hover{
+	border:2px solid #fff!important;
+}
+
+.btn-over-img div{
+	width:90%;
+	background-color: #00a651;
+}
+
+.btn-over-img a{
+	width:100%;
+	font-size:17px;
+	line-height: 1.1em;
+	padding:1em;
+}
+
+
+
+.site-header-row {
+	grid-template-columns: 25% 75%!important;
+}
+
+
+h1 {
+    font-weight: 500;
+}
+#icon-phone{
+	margin-right:2em;
+	font-size:17px;
+	
+}
+
+#icon-phone img{
+	width:8%;
+	
+}
+
+#phone{
+	display:inline-block;
+	font-weight:bold;
+	position:relative;
+    padding-bottom:0.55em;
+}
+
+
+.site-header-section-right .site-header-item .header-html{
+	margin-top:auto;	
+}
+
+/* #phone:before{
+	content:"aaa";
+	position:absolute;
+	right:50px;
+	
+} */
+
+.entry-hero .entry-hero-container-inner{
+	background-color: #00A651;
+}
+
+.entry-hero .hero-container h1{
+	color: #fff;
+		line-height: 1em;
+}
+
+
+.main-navigation .primary-menu-container > ul li.menu-item > a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  font-family: var(--global-primary-nav-font-family);
+}
+
+.header-navigation[class*="header-navigation-style-underline"] .header-menu-container > ul > li > a::after {
+    content:none;
+}
+
+.main-navigation .primary-menu-container > ul li.menu-item > a {
+  letter-spacing: 0.2em;
+}
+
+
+
+.header-navigation .header-menu-container ul ul li.menu-item > a {
+  width: 380px;
+    background:#0E0E0E;
+}
+
+.header-navigation .header-menu-container ul ul li.menu-item > a {
+  padding-left: 1.5em;
+    padding-right:  1.5em;
+}
+
+.sub-menu .menu-item {
+  padding-top: 0;
+
+}
+
+a .nav-drop-title-wrap:hover{
+	color:#fff;
+}
+
+
+.header-navigation .header-menu-container ul ul li.menu-item a:hover{
+    color:#00a651;
+    background:#0E0E0E;
+    
+}
+
+/* .wp-container-1{
+    gap:1.5em;
+} */
+
+.single-content p{
+    margin-bottom: 0;
+}
+
+
+.single-content .google-review p{
+	letter-spacing:0;
+	line-height:20px;
+	color:#000;
+	margin-bottom:0;
+}
+
+.google-review strong{
+	font-size:0.8em;
+	color:#000;
+}
+
+.google-review .read-more{
+	margin:0;
+	padding:0;
+	font-size:0.8em;
+	color:#ABA6AB;
+}
+
+.google-review p.read-more {
+ color :#767676;
+}
+
+.refinance-consultation h3, .refinance-consultation h4{
+	color:#fff!important;
+}
+
+#main .wp-gr .grw-slider .grw-slider-header-inner, .wp-gr .grw-slider .grw-slider-review-inner {
+
+    margin: 24px!important;
+    padding: 48px!important;
+}
+
+#main .wp-gr .grw-slider:not(.wp-dark) .grw-slider-review-inner.grw-slider-review-border{
+	box-shadow:none!important;
+}
+
+.entry-content-wrap .single-content h6:first-child{
+text-transform: uppercase;
+    color:var(--global-palette2);
+   
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+
+
+.header-navigation .header-menu-container ul ul li.menu-item > a {
+  font-size: 15px!important;
+}
+
+.header-navigation .header-menu-container ul ul li.menu-item > a {
+  width: 360px!important;
+}
+
+
+.single-content h6.white-bold{
+    font-weight: bold;
+    font-size:1.2em;
+    letter-spacing: 1px;
+    color:#fff;
+    margin:0 auto;
+    text-transform: uppercase;
+	display:inline-block;
+	margin-left:0.5px;
+	line-height:5px;
+}
+
+.wp-block-kadence-icon{
+	display:inline-block;
+}
+
+#main .gform_wrapper .gform_validation_errors, #main .gform_wrapper .gfield_validation_message, .gform_wrapper .validation_message{
+	background-color: transparent;
+	border:none;
+	box-shadow:none;
+	padding:0 0 16px 24px;
+}
+
+#main .gform_wrapper .gform_validation_errors>h2{
+	font-weight:bold;
+	font-size:0.9em;
+	line-height:1.2em;
+}
+
+#main .gform_wrapper .gform_validation_errors>h2 .gform-icon {
+    font-size: 36px;
+    left: -12px;
+    top: -8px;
+}
+
+
+#main .gform_wrapper .gfield_validation_message, .gform_wrapper .validation_message {
+    padding: 0;
+}
+
+.contact a {
+	color:#fff!important;
+}
+
+.contact a:hover{
+	text-underline-position: under;
+	text-decoration:underline!important;
+} 
+
+
+.block-inline{
+	display: inline-block;
+}
+
+
+.bullets{
+    display:inline-block!important;
+    padding:4px 15px;
+    font-weight: bold;
+    font-size: 1.5em;
+    color:#fff;
+    background:var(--global-palette1);
+}
+
+
+.wpsm_panel  .wpsm_panel-body{
+    border-bottom:1px solid var(--global-palette1)!important;
+    margin-left:15px;
+}
+
+
+
+#wpsm_accordion_1713  .ac_title_class{
+   color:var(--global-palette2);
+    font-weight: bold;
+}
+
+#wpsm_accordion_1713 .collapsed .ac_title_class{
+   color:var(--global-palette1);
+}
+
+#wpsm_accordion_1713 .wpsm_panel-default{
+    border-bottom:1px solid #CBCBCB!important;
+    margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.pos-rel{
+    position: relative;
+}
+
+
+#main-header{
+  margin-bottom: 1em;
+}
+
+ #mobile-header {
+  margin-bottom: 0.5em;
+}
+
+.entry-content-wrap{
+padding:0;    
+}
+
+.content-area{
+    margin:0 auto;
+}
+
+.gravity-theme{
+    margin-top:2em;
+}
+
+#colophon .footer-html {
+    color:#0E0E0E;
+}
+
+.spacing{
+    letter-spacing: 2px;
+}
+
+
+.single-content  h6.black-bold:first-child, h6.black-bold{
+    font-weight: bold;
+    font-size:1.2em;
+    letter-spacing: 1px;
+    color:#0e0e0e;
+}
+
+.suburb h5{
+	display:block;
+	border:1px solid #00a651;
+	padding:15% 5%;
+	
+}
+
+.suburb h5:hover {
+	background-color:#00a651;
+	color:#fff;
+	cursor:pointer;
+	
+}
+
+.suburb h5 a {
+	display:block;
+	width:100%;
+}
+
+.suburb h5 a:hover {
+
+	color:#fff;	
+}
+
+.single-suburb .wp-block-kadence-column{
+	justify-content: start!important;
+}
+
+
+.single-content h5{
+	margin-bottom:2em!important;
+}
+
+
+.site-bottom-footer-wrap .site-footer-row-container-inner a, .site-bottom-footer-wrap .site-footer-row-container-inner p, .site-bottom-footer-inner-wrap .footer-widget-area-inner {
+    color:#0e0e0e;
+	font-size:13px;
+}
+
+
+.site-bottom-footer-wrap .site-footer-row-container-inner a:hover{
+    color:#fff!important;
+}
+
+.refinance-consultation{
+    margin:0 auto;
+    padding-top: 100px;
+	padding-bottom: 260px;
+	overflow: hidden;
+	position: relative;
+    position: relative;
+    
+}
+
+.refinance-consultation .container{
+    width:960px;
+    padding-left:24px;
+    padding-right:24px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.refinance-consultation .gform_wrapper .get-started-title span {
+  display: block;
+  text-align: center;
+  font-size: 32px;
+  color: #fff;
+  line-height: 50px;
+  margin-bottom: 26px;
+
+}
+
+.refinance-consultation h5{
+    color:#fff;
+}
+
+.refinance-consultation span{
+  display: block;
+  text-align: center;
+  font-size: 32px;
+
+/*   line-height: 50px;*/
+  margin-bottom: 24px; 
+}
+
+
+#gform_page_3_4{
+	text-align:left;
+}
+
+.gform_page_footer{
+	text-align:center;
+}
+
+
+
+.refinance-consultation .gform_wrapper.gravity-theme .gfield_label{
+    font-size: 24px;
+}
+
+.single-content figure.wp-block-image {
+   margin-bottom:0!important;
+}
+
+
+.page-template-refinance-template, .page-template-buy-home-template {
+    background-color: #00a651;
+    color: #ffffff;
+}
+.close-form{
+  position: absolute;
+  right: 70px;
+  top: 70px;
+}
+ 
+.refinance-consultation .button:hover{
+	background:#000;
+	color:#00a651;
+}
+
+
+
+.refinance-consultation label h3{
+	color:#000!important;
+}
+
+.refinance-consultation .gform_wrapper .gform_previous_button {
+    display:none;
+}
+
+.refinance-consultation .gform_wrapper .gfield_error label {
+    color:#fff;
+}
+
+.refinance-consultation .gform_wrapper .gform_validation_errors{
+    border-color:#FEC0C2;
+    background-color: #FDE4E4;
+box-shadow: none;
+    
+}
+
+.refinance-consultation .gform_wrapper .gform_validation_errors > h2{
+    font-weight: bold;
+    font-size:16px;
+    letter-spacing: 1px;
+}
+
+.refinance-consultation .gform_wrapper .gfield_validation_message, .gform_wrapper .validation_message{
+  background: transparent;
+  border: none;
+    color:#fff;
+}
+
+.refinance-consultation .gform_wrapper ul.gfield_radio li {
+  width: 220px;
+  background: #fff;
+  border: 0 solid #fff;
+  position: relative;
+  text-align: center;
+  padding: 30px 36px !important;
+  display: flex;
+  align-items: flex-center;
+  justify-content: center;
+  min-height: 220px;
+  margin: 0 12px 20px !important;
+  border-radius: 6px;
+}
+
+.refinance-consultation .gform_wrapper ul.gfield_radio li input[type="radio"] {
+  position: absolute;
+  width: 100% !important;
+  height: 100%;
+  margin: 0;
+  -webkit-appearance: none;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  border: 0 !important;
+  border-radius: 6px;
+}
+
+
+.refinance-consultation .ginput_container{
+    position:relative;
+}
+
+
+.refinance-consultation .gform_wrapper .gfield_radio {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+	 align-items: center;
+    justify-content: center;
+}
+
+
+.refinance-consultation .gform_wrapper .gchoice {
+  width: 220px;
+  background: #fff;
+  border: 0 solid #fff;
+  position: relative;
+  text-align: center;
+  padding: 30px 36px !important;
+  display: flex;
+  justify-content: center;
+  min-height: 220px;
+  margin: 0 12px 20px !important;
+  border-radius: 6px;
+    cursor: pointer;
+}
+
+.refinance-consultation .gform_wrapper .gfield_radio input[type="radio"] {
+  position: absolute;
+  width: 100% !important;
+  height: 100%;
+  margin: 0;
+  -webkit-appearance: none;
+  cursor: pointer;
+
+  border-radius: 6px;
+}
+
+.refinance-consultation .gform_wrapper.gravity-theme .gform_fields{
+    place-items:  center;
+}
+
+.refinance-consultation .img-lbl{
+   cursor: pointer; 
+}
+
+.refinance-consultation input:checked{
+    background: #00A651;
+	border:1px solid #fff!important;
+}
+
+    
+.refinance-consultation .gform_wrapper .gfield_radio label {
+  margin: 0;
+  background: 0 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  padding-top: 30px;
+}
+
+.refinance-consultation .gform_wrapper .gfield_radio .img-lbl svg {
+  max-width: 80px;
+  min-height: 80px;
+  width: 80px;
+}
+
+.refinance-consultation .gform_wrapper .gfield_radio label, .refinance-consultation .gfield_radio  p, .refinance-consultation .gfield_radio  h3 {
+  font-size: 18px;
+  font-weight: bold;
+
+  margin-top: 10px;
+  margin-bottom: 24px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.refinance-consultation .gform_page_3_4  .gfield_label{
+  display: inline;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1px;
+  margin-bottom: 0;
+}
+
+.refinance-consultation .gform_wrapper.gravity-theme .gfield_label {
+  display: inline;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1px;
+  margin-bottom: 0;
+}
+
+.refinance-consultation .gform_page_3_4 span {
+  display: inline;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1px;
+  margin-bottom: 0;
+}
+
+
+
+footer, footer a{
+	color:#fff;
+	
+}
+
+footer p{
+	font-size:15px;
+	line-height:24px;
+}
+
+footer a:hover{
+	color:#00A651!important;
+	text-decoration:underline;
+}
+
+
+
+
+footer .site-top-footer-inner-wrap {
+  padding-top: 48px;
+}
+
+footer .site-bottom-footer-inner-wrap {
+	padding:0;
+}
+
+footer h6{
+	color:#00A651;
+	text-transform:uppercase;
+	letter-spacing:1px;
+}
+
+footer .widget-area a:where(:not(.button):not(.wp-block-button__link):not(.wp-element-button)) {
+    color: #fff;
+
+}
+
+footer .site-footer-row.site-footer-row-columns-1 .site-footer-section {
+	text-align:left;
+}
+
+.wp-block-button.wp-block-button__width-50 {
+    width: calc(40% - var(--wp--style--block-gap, .5em)*0.5)!important;
+    }
+
+
+
+#wpsm_accordion_1713 .wpsm_panel-default {
+	border-bottom: 1px solid #CBCBCB !important;
+margin-bottom: 10px;
+padding-bottom: 10px;
+}
+
+.single-content .top-features p{
+	margin-bottom:0!important;
+	
+	
+}
+
+
+.mobile-lender-img{
+	display:none;
+}
+
+
+/* tablet */
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	#mobile-menu ul li.current-menu-item > a{
+    	color: #00a651;
+	}
+	
+		.menu-item:hover {
+    	background: none;
+	}
+		#mobile-menu ul li.current-menu-item > a:hover {
+    	color: #00a651;
+	}
+		.top-features .wp-block-kadence-column {
+		padding-left:5%;
+	}
+	
+	
+}
+	
+	
+@media only screen and (max-width: 880px) {
+.top-features img{
+		width:36px;
+		height:36px;
+	}
+	
+	.top-features .wp-block-kadence-column {
+		padding-left:5%;
+	}
+	
+	
+	
+	.refinance-consultation .container{
+    width:100%;
+	}
+	
+	.top-features p{
+		font-size:13px;
+	}
+	
+	.top-features span{
+		font-size:16px;
+	}
+	
+	.mobile-toggle-open-container .menu-toggle-open .menu-toggle-icon{
+		margin-top:0.8em;
+		font-size:2.2em!important;
+	}
+	
+	.btn-over-img div{
+		height:90px;
+		line-height:90px;
+	}
+	
+		#mobile-menu ul li.current-menu-item > a{
+		color: #00a651;
+	}
+	
+	
+	#mobile-menu ul li.current-menu-item > a:hover {
+    	color: #fff;
+	}
+	
+	.menu-item:hover {
+    	background: none;
+	}
+
+}
+
+/* mobile */
+
+@media only screen and (max-width: 600px) {
+	.h2-first{
+		font-size:1.8em!important;
+		font-weight:bold!important;
+		padding-top:1em;
+	}
+	
+	.desktop-lender-img{
+		display:none;
+	}
+	
+	.mobile-lender-img{
+		display:block;
+	}
+	
+	.kt-gutter-default:not(.kt-mobile-layout-row)>.wp-block-kadence-column {
+     margin-right: 0!important;
+	}
+	
+	.entry-hero .hero-container h1 {	
+
+    padding: 0.6em 0;
+	}
+	
+	h2{
+		line-height:1em!important;
+		font-size:30px!important;
+	}
+	
+
+	
+	.footer-email{
+		font-size:17px;
+	}
+	
+	.top-features span{
+		font-size:15px;
+	}
+	
+	.menu-toggle-icon .kadence-svg-iconset svg {
+		 height: 1.5em;
+		 width: 1.5em;
+	}
+	
+	.top-features .wp-block-kadence-column {
+		padding-left:0;
+	}
+	
+	
+	.mobile-toggle-open-container .menu-toggle-open .menu-toggle-icon{
+		margin-top:0.8em;
+		font-size:1.5em!important;
+	}
+	
+	
+	.wpsm_panel-heading {
+		padding:0!important;
+	}
+	
+/* 	.top-features{
+		display:none;
+	} */
+	
+/* 	.top-features .wp-block-kadence-column:first-of-type .kt-row-column-wrap:first-of-type, .top-features .wp-block-kadence-column:first-of-type .kt-row-column-wrap:nth-of-type(2)  {
+	 padding-bottom:0px;
+	}
+	 */
+	
+	.mobile-navigation ul li.current-menu-item > a{
+		color: #00a651!important;
+	}
+
+	
+	.kt-mobile-layout-two-grid.kt-v-gutter-default>.wp-block-kadence-column:nth-child(-n+2) {
+    	margin-bottom: 0!important;
+	}
+	
+	.suburb h5{
+		height:115px!important;
+		font-size:16px!important;
+	}
+	
+	.kt-row-column-wrap{
+		padding:10px 0 10px 0;
+	}
+	
+	.footer-html-inner, .textwidget{
+		text-align:center!important;
+	}
+	
+	.wp-block-kadence-column.kadence-column_ff0f28-50 > .kt-inside-inner-col, 
+.wp-block-kadence-column.kadence-column_1fc698-6d > .kt-inside-inner-col {
+	margin-left:0!important;
+}
+
+.single-content h5 {
+    margin-bottom: 0!important;
+}
+	
+.single-content .suburb h5 {
+    margin-bottom:1em!important;
+}
+	
+	.wp-block-button.wp-block-button__width-50 {
+    width: calc(100% - var(--wp--style--block-gap, .5em)*0.5)!important;
+    }
+}

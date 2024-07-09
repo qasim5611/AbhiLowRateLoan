@@ -69,14 +69,14 @@ export function Hardwork(props) {
                                       className="kt-adv-heading_6073dd-4d black-bold wp-block-kadence-advancedheading"
                                       data-kb-block="kb-adv-heading_6073dd-4d"
                                     >
-                                      <strong>CONSULT</strong>
+                                      <strong>Initial Consultation</strong>
                                     </h6>
 
                                     <p>
-                                      Initial consultation (via the phone,
-                                      skype, or face to face) wherever we have a
-                                      tendency to establish your motivations and
-                                      requirement
+                                      Begin with a consultation (via phone,
+                                      video conference, or face-to-face) to
+                                      understand your motivations and
+                                      requirements.
                                     </p>
                                   </div>
                                 </div>
@@ -107,12 +107,12 @@ export function Hardwork(props) {
                                       className="kt-adv-heading_d4af8e-45 black-bold wp-block-kadence-advancedheading"
                                       data-kb-block="kb-adv-heading_d4af8e-45"
                                     >
-                                      <strong>GATHER</strong>
+                                      <strong>Document Gathering</strong>
                                     </h6>
 
                                     <p>
-                                      Information gathering to verify your
-                                      monetary status
+                                      Collect the necessary documents to verify
+                                      and assess your financial situation.
                                     </p>
                                   </div>
                                 </div>
@@ -143,12 +143,15 @@ export function Hardwork(props) {
                                       className="kt-adv-heading_c6531d-72 black-bold wp-block-kadence-advancedheading"
                                       data-kb-block="kb-adv-heading_c6531d-72"
                                     >
-                                      <strong>REVIEW & PROPOSAL</strong>
+                                      <strong>Preliminary Assessment</strong>
                                     </h6>
 
                                     <p>
-                                      We provide credit assistance in relation
-                                      to a loan application.
+                                      We will review your documents to navigate
+                                      our network of lenders, determine your
+                                      eligibility, obtain upfront valuations,
+                                      and negotiate pricing to identify the best
+                                      lending strategies for your needs.
                                     </p>
                                   </div>
                                 </div>
@@ -183,14 +186,14 @@ export function Hardwork(props) {
                                       className="kt-adv-heading_285c1a-be black-bold wp-block-kadence-advancedheading"
                                       data-kb-block="kb-adv-heading_285c1a-be"
                                     >
-                                      <strong>AGREE & IMPLEMENT</strong>
+                                      <strong>Credit Proposal</strong>
                                     </h6>
 
                                     <p>
-                                      Take the time to navigate through all our
-                                      lenders and find the possible available
-                                      low rate with desired features to save
-                                      clients money
+                                      We'll discuss potential strategies,
+                                      outlining the pros and cons of each
+                                      product and lender, to help you make an
+                                      informed decision.
                                     </p>
                                   </div>
                                 </div>
@@ -221,12 +224,14 @@ export function Hardwork(props) {
                                       className="kt-adv-heading_b7a6fe-86 black-bold wp-block-kadence-advancedheading"
                                       data-kb-block="kb-adv-heading_b7a6fe-86"
                                     >
-                                      <strong>COMPLETE</strong>
+                                      <strong>Application Submission</strong>
                                     </h6>
 
                                     <p>
-                                      Finalise approval (s), prepare formal
-                                      paperwork to be sign
+                                      Once you've made an informed decision,
+                                      we'll submit your application to the
+                                      chosen lender and manage the entire
+                                      process until your loan is settled.
                                     </p>
                                   </div>
                                 </div>
@@ -257,11 +262,14 @@ export function Hardwork(props) {
                                       className="kt-adv-heading_de4d95-57 black-bold wp-block-kadence-advancedheading"
                                       data-kb-block="kb-adv-heading_de4d95-57"
                                     >
-                                      <strong>SETTLE</strong>
+                                      <strong>Aftercare Program</strong>
                                     </h6>
 
                                     <p>
-                                      Coordination of the settlement process
+                                      After your loan is settled, we'll invite
+                                      you to annual reviews of your financial
+                                      situation to ensure your needs and
+                                      requirements are continually met.
                                     </p>
                                   </div>
                                 </div>

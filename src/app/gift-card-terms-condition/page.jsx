@@ -46,40 +46,52 @@ sec and map, Manual */}
                 </h2>
                 <br />
                 <ol>
-                  <li>
-                    Your application for finance must be submitted to the
-                    recommended lender by December 31<sup>st</sup> 2023.
+                  <li style={{ marginBottom: "5px" }}>
+                    To receive $2,000 bonus from us your combined loan amount
+                    must be above One & a half Million ($1,500,000).
                   </li>
-                  <li>
+                  <li style={{ marginBottom: "5px" }}>
+                    To receive $1,000 bonus from us your loan amount must be
+                    above seven hundred & fifty thousand ($750,000).
+                  </li>
+                  <li style={{ marginBottom: "5px" }}>
+                    To receive $500 bonus from us your loan amount must be above
+                    four hundred & fifty thousand dollars ($450,000).
+                  </li>
+                </ol>
+                <h2
+                  className="kt-adv-heading_828586-b8 wp-block-kadence-advancedheading"
+                  data-kb-block="kb-adv-heading_828586-b8"
+                >
+                  Rebate Agreement Clauses:
+                </h2>
+                <br />
+                <ol>
+                  <li style={{ marginBottom: "5px" }}>
+                    - Your finance application must be submitted to the
+                    recommended lender by 31 JULY 2025.
+                  </li>
+                  <li style={{ marginBottom: "5px" }}>
                     Your reward is payable within 60 days of settlement of your
                     new loan.
                   </li>
-                  <li>
-                    To Receive $2,000 Bonus from us your combined loan amount
-                    must be above one million dollars ($1,000,000).
-                  </li>
-                  <li>
-                    To Receive $1,000 Bonus from us your&nbsp; loan amount must
-                    be above seven hundred and fifty thousand ($750,000).
-                  </li>
-                  <li>
-                    To Receive $500 from us your loan amount must be above four
-                    hundred &amp; fifty thousand dollars ($450,000).
-                  </li>
-                  <li>
-                    In the event that the applicant(s) decide to refinance their
-                    loan with another lender or broker within 24 months of
-                    settlement, kindly note that the reward, graciously given to
-                    you by us, will be payable to Melbourne Low Rate Home Loan.
-                  </li>
-                  <li>
-                    For more information regarding the bonuses please contact
-                    us.
+                  <li style={{ marginBottom: "5px" }}>
+                    If the borrower(s) refinances the loan(s) with another
+                    lender or broker within 24 months from the settlement date,
+                    any incentive or reward received from Melbourne Low Rate
+                    Home Loan Pty Ltd shall be promptly refunded to Melbourne
+                    Low Rate Home Loan Pty Ltd.
                   </li>
                 </ol>
+                <p>
+                  For more information regarding the bonuses please contact us.
+                </p>
               </div>
             </div>
-            <div className="wp-block-kadence-column inner-column-2 kadence-column_faac02-72">
+            <div
+              className="wp-block-kadence-column inner-column-2 kadence-column_faac02-72"
+              style={{ display: "none" }}
+            >
               <div className="kt-inside-inner-col" />
             </div>
           </div>

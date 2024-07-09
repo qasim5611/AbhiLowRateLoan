@@ -7,6 +7,7 @@ import Navbar from "./../components/NavBar";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+
 function Header({ data, update }) {
   // const todoArray = data ? JSON?.parse(data) : [];
   const router = useRouter();
@@ -92,12 +93,14 @@ function Header({ data, update }) {
                                     id="menu-item-3960"
                                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3960"
                                   >
-                                    <a href="#">
+                                    <a
+                                      href="/home-loans"
+                                      className="drophovercol"
+                                    >
                                       <span className="nav-drop-title-wrap">
-                                        <Link href={"/home-loans"}>
-                                          Home Loans
-                                        </Link>
-
+                                        {/* <Link href={"/home-loans"}> */}
+                                        Home Loans
+                                        {/* </Link> */}
                                         <span className="dropdown-nav-toggle">
                                           <span className="kadence-svg-iconset svg-baseline">
                                             <svg
@@ -131,7 +134,7 @@ function Header({ data, update }) {
                                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3958"
                                       >
                                         <Link href={"/refinance-home-loan"}>
-                                          Refinancemy home loan
+                                          Refinance my home loan
                                         </Link>
                                       </li>
                                       <li

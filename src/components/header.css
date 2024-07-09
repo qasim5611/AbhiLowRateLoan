@@ -1,0 +1,9 @@
+/* #menu-item-3960:hover > a:hover{
+    color: white;
+    text-decoration: none;
+} */
+
+.drophovercol:hover{
+    color: white !important;
+
+}

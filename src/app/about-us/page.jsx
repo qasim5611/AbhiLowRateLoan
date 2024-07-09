@@ -77,7 +77,7 @@ export default function AboutUs(props) {
                             <div className="wp-block-kadence-column inner-column-2 kadence-column_5f521d-62">
                               <div className="kt-inside-inner-col">
                                 <figure className="wp-block-image size-large">
-                                  <img
+                                  {/* <img
                                     decoding="async"
                                     loading="lazy"
                                     width={1024}
@@ -87,7 +87,7 @@ export default function AboutUs(props) {
                                     className="wp-image-4651"
                                     srcSet="https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/low-rate-home-loan-pakenham-office-1024x768.webp 1024w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/low-rate-home-loan-pakenham-office-300x225.webp 300w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/low-rate-home-loan-pakenham-office-768x576.webp 768w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/low-rate-home-loan-pakenham-office.webp 1200w"
                                     sizes="(max-width: 1024px) 100vw, 1024px"
-                                  />
+                                  /> */}
                                 </figure>
                               </div>
                             </div>

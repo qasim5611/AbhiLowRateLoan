@@ -38,7 +38,7 @@ export default function BuyNewHome(props) {
                         <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-right-golden kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row  kt-custom-first-width-40  kt-custom-second-width-60 kb-theme-content-width">
                           <div className="wp-block-kadence-column inner-column-1 kadence-column_7f16ed-a0">
                             <div className="kt-inside-inner-col">
-                              <p>
+                              <p style={{ textAlign: "justify" }}>
                                 Purchasing a new home can cause a wide range of
                                 emotions. It can be daunting and very
                                 challenging.

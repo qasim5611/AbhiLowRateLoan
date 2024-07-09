@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./../../public/scrorsStyle.css";
 export function FeatureServices(props) {
   return (
     <>
@@ -38,19 +38,18 @@ export function FeatureServices(props) {
                       <div className="wp-block-kadence-column inner-column-2 kadence-column_325881-f2">
                         <div className="kt-inside-inner-col">
                           <p>
-                            Our Aussie mortgage brokers in Melbourne understand
-                            that the diverse needs of most people do not have
-                            “one-size-fits-all” answers.
+                            Our dedicated Home Loan Specialists understand that
+                            every client has unique needs, and a
+                            ”one-size-fits-all” approach simply doesn’t work.
                             <br />
                             <br />
-                            We will acquire the right loan to suit your specific
-                            requirements by getting to know you, understanding
-                            your circumstance, and collaborating with both banks
-                            and non-bank lenders.
+                            We take the time to get to know you and understand
+                            your specific circumstances, collaborating closely
+                            with both major banks and non-bank lenders.
                             <br />
                             <br />
-                            We have access to more than 53 lenders in order to
-                            find the right solution for you.
+                            With access to over 53 lenders, we are committed to
+                            finding the perfect solution for you.
                           </p>
                         </div>
                       </div>

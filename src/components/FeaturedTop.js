@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export function FeaturedTop() {
@@ -85,34 +86,20 @@ export function FeaturedTop() {
                                 </div>
 
                                 <div className="wp-block-kadence-column inner-column-2 kadence-column_c32719-db">
-                                  <div className="kt-inside-inner-col">
-                                    <p className="spacing has-theme-palette-9-color has-text-color">
-                                      <a
-                                        href="#"
-                                        title="Gift Card Terms &amp; Condition"
-                                      >
-                                        GIFT CARD
-                                      </a>
-                                    </p>
+                                  <Link href={"/gift-card-terms-condition"}>
+                                    <div className="kt-inside-inner-col">
+                                      <p className="spacing has-theme-palette-9-color has-text-color">
+                                        BONUS
+                                      </p>
 
-                                    <span
-                                      className="kt-adv-heading_70bfd6-1b wp-block-kadence-advancedheading has-theme-palette-9-color has-text-color"
-                                      data-kb-block="kb-adv-heading_70bfd6-1b"
-                                    >
-                                      <a
-                                        href="#"
-                                        title="Gift Card Terms &amp; Condition"
+                                      <span
+                                        className="kt-adv-heading_70bfd6-1b wp-block-kadence-advancedheading has-theme-palette-9-color has-text-color"
+                                        data-kb-block="kb-adv-heading_70bfd6-1b"
                                       >
-                                        upto{" "}
-                                      </a>
-                                      <a
-                                        href="#"
-                                        title="Gift Card Terms &amp; Condition"
-                                      >
-                                        <strong>$1,000</strong>
-                                      </a>
-                                    </span>
-                                  </div>
+                                        upto <strong>$2,000</strong>
+                                      </span>
+                                    </div>
+                                  </Link>
                                 </div>
                               </div>
                             </div>
@@ -198,7 +185,7 @@ export function FeaturedTop() {
                                       className="kt-adv-heading_26473f-72 wp-block-kadence-advancedheading has-theme-palette-9-color has-text-color"
                                       data-kb-block="kb-adv-heading_26473f-72"
                                     >
-                                      upto <strong>8 hours</strong>
+                                      upto <strong>2 hours</strong>
                                     </span>
                                   </div>
                                 </div>

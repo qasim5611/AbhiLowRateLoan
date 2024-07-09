@@ -253,9 +253,9 @@ export function ContactForm(props) {
                                     </h2>
 
                                     <p>
-                                      Call us on 03 7064 5204 or fill up the
+                                      Call us on 03 7064 5204 or fill out the
                                       form below and we will get back to you
-                                      within 12 hours.
+                                      within 2 business hours.
                                     </p>
                                   </div>
                                 </div>

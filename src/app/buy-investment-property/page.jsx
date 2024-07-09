@@ -29,18 +29,18 @@ sec and map, Manual */}
                     If you’re considering investing in a property, here are a
                     few factors that you should bear in mind.
                   </h2>
-                  <p>
+                  <p style={{ textAlign: "justify" }}>
                     When constructing your investment plan, be sure to factor in
                     the acquisition of a profitable investment property that
                     suits both your goals and risk tolerance.
                   </p>
-                  <p>
+                  <p style={{ textAlign: "justify" }}>
                     Once you identify an attractive prospect, calculate whether
                     or not it will generate sufficient income after expenses –
                     and if there is any shortfall, determine if you are able to
                     bridge this gap indefinitely.
                   </p>
-                  <p>
+                  <p style={{ textAlign: "justify" }}>
                     On top of that, make provisions for times when no one may
                     occupy the space temporarily. Finally, conduct market
                     research before settling on a purchase; the type and
@@ -64,7 +64,7 @@ sec and map, Manual */}
                       real estate prices.
                     </li>
                   </ul>
-                  <h3 className="wp-block-heading">What to buy</h3>
+                  <h2 className="wp-block-heading">What to buy</h2>
                   <ul>
                     <li>
                       When searching for a property, be sure to pay attention to
@@ -77,7 +77,7 @@ sec and map, Manual */}
                       characteristics.
                     </li>
                   </ul>
-                  <h3 className="wp-block-heading">How to buy</h3>
+                  <h2 className="wp-block-heading">How to buy</h2>
                   <ul>
                     <li>
                       Heed caution when it comes to obtaining property
@@ -110,7 +110,7 @@ sec and map, Manual */}
                   <h1 className="wp-block-heading">
                     Pros and cons of investing in property
                   </h1>
-                  <p>
+                  <p style={{ textAlign: "justify" }}>
                     Many view property investment as a safer option compared to
                     other forms of investments. But even though it appears more
                     straightforward, there are still risks that you must be

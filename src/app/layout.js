@@ -125,13 +125,13 @@ export default function RootLayout({ children }) {
           <link
             rel="stylesheet"
             id="child-theme-css"
-            href="https://scoresbymortgagebroker.com.au/wp-content/themes/lowratehomeloan/style.css?ver=100"
+            href="/scrorsStyle.css"
             media="all"
           />
           <link
             rel="stylesheet"
             id="kadence-global-css"
-            href="https://scoresbymortgagebroker.com.au/wp-content/themes/kadence/assets/css/global.min.css?ver=1.1.31"
+            href="/kadenceAssetGlobal.css"
             media="all"
           />
           <link

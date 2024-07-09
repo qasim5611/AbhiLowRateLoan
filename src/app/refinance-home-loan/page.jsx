@@ -32,31 +32,40 @@ export default function RefiinanceHomeLoan(props) {
                   <h2 className="wp-block-heading">
                     Refinance Now and Save with Low Rate Home Loan!
                   </h2>
-                  <p>
+                  <br />
+                  <p style={{ textAlign: "justify" }}>
                     By refinancing your existing home loan, you could benefit
                     from considerable savings with lower interest rates and
                     fees. This is a fantastic approach to reduce the amount of
                     money that goes towards paying off your mortgage each month!
                   </p>
-                  <h3 className="wp-block-heading">
+                  <br />
+                  <h2 className="wp-block-heading">
                     Discover how you can reduce your monthly mortgage payments
                     with ease.
-                  </h3>
-                  <p>
+                  </h2>
+                  <br />
+
+                  <p style={{ textAlign: "justify" }}>
                     Here, we’ll explain all the details you need to know when
                     considering if refinancing is right for you.
                   </p>
+                  <br />
+
                   <h2 className="wp-block-heading">
                     Have you been wondering what refinancing entails?
                   </h2>
-                  <p>
+                  <br />
+
+                  <p style={{ textAlign: "justify" }}>
                     Refinancing is the process of replacing your existing
                     mortgage with a new loan. Whether you need a refinance
                     broker or want to explore refinance mortgage brokers near
                     you, we’ve got you covered. Refinancing can happen with the
                     same lender or by changing providers.
                   </p>
-                  <p>
+                  <br />
+                  <p style={{ textAlign: "justify" }}>
                     There are numerous reasons why homeowners opt for
                     refinancing:
                   </p>
@@ -72,30 +81,41 @@ export default function RefiinanceHomeLoan(props) {
                       their loan.
                     </li>
                   </ul>
-                  <h3 className="wp-block-heading">
+                  <br />
+
+                  <h2 className="wp-block-heading">
                     What’s needed to refinance a home?
-                  </h3>
-                  <p>
+                  </h2>
+                  <br />
+
+                  <p style={{ textAlign: "justify" }}>
                     When you’re assessing different home loan options, there are
                     a few key criteria to consider:
                   </p>
-                  <p>• Your current financial situation</p>
-                  <p>• Your credit history</p>
-                  <p>• The amount that you’re looking to refinance</p>
-                  <p>• Loan term length</p>
-                  <p>
+                  <p style={{ textAlign: "justify" }}>
+                    • Your current financial situation
+                  </p>
+                  <p style={{ textAlign: "justify" }}>• Your credit history</p>
+                  <p style={{ textAlign: "justify" }}>
+                    • The amount that you’re looking to refinance
+                  </p>
+                  <p style={{ textAlign: "justify" }}>• Loan term length</p>
+                  <br />
+                  <p style={{ textAlign: "justify" }}>
                     Taking the time to review these details will help you obtain
                     an informed decision about refinancing your home.
                     Ultimately, it’s important that any loan fits your needs and
                     budget.
                   </p>
-                  <p>
+                  <br />
+                  <p style={{ textAlign: "justify" }}>
                     At Low Rate Home Loan, we take great pride in providing our
                     customers with competitive rates and discounts for their
                     refinancing needs. Our experienced team is here to assist
                     with every step of the process so you can find the best home
                     loan option for you.
                   </p>
+                  <br />
                 </div>
               </div>
               <div className="wp-block-kadence-column inner-column-2 kadence-column_36d3ae-1d">
@@ -117,33 +137,43 @@ export default function RefiinanceHomeLoan(props) {
                   <h2 className="wp-block-heading">
                     Are you considering refinancing your home loan?
                   </h2>
-                  <p>If so, the process can be simple.</p>
-                  <p>
+                  <br />
+
+                  <p style={{ textAlign: "justify" }}>
+                    If so, the process can be simple.
+                  </p>
+                  <p style={{ textAlign: "justify" }}>
                     Start by comparing different lenders and their options
                     before applying for a new loan.
                   </p>
-                  <p>
+                  <p style={{ textAlign: "justify" }}>
                     Additionally, it’s important to research all of the benefits
                     this could have on your financial situation: such as
                     securing an introductory or fixed rate that is more
                     competitive than your current interest rate.
                   </p>
-                  <p>
+                  <br />
+                  <p style={{ textAlign: "justify" }}>
                     Refinancing may be beneficial in many ways; however, take
                     into consideration all factors before making any final
                     decisions about changing lenders.
                   </p>
-                  <p>
+                  <br />
+                  <p style={{ textAlign: "justify" }}>
                     Before refinancing your home, it’s vital to consider what
                     you’re aiming for. Is it to gain access to lower interest
                     rates? Fortunately, our service can help simplify the
                     process by providing tailored results that compare a range
                     of loan options available.
                   </p>
+                  <br />
+
                   <h2 className="wp-block-heading">
                     Ready to refinance your home?
                   </h2>
-                  <p>
+                  <br />
+
+                  <p style={{ textAlign: "justify" }}>
                     At Low Rate Home Loan, we prioritise your best interests.
                     Our{" "}
                     <a href="/" title="">

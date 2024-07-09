@@ -4,10 +4,51 @@ import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 export function Faq(props) {
   const [open, setOpen] = useState(true);
+  const [open2, setOpen2] = useState(true);
+  const [open3, setOpen3] = useState(true);
+  const [open4, setOpen4] = useState(true);
+  const [open5, setOpen5] = useState(true);
+  const [open6, setOpen6] = useState(true);
+  const [open7, setOpen7] = useState(true);
+  const [open8, setOpen8] = useState(true);
+  const [open9, setOpen9] = useState(true);
+  const [open10, setOpen10] = useState(true);
+  const [open11, setOpen11] = useState(true);
 
   const toogleFaq = () => {
     setOpen(!open);
   };
+  const toogleFaq2 = () => {
+    setOpen2(!open2);
+  };
+  const toogleFaq3 = () => {
+    setOpen3(!open3);
+  };
+  const toogleFaq4 = () => {
+    setOpen4(!open4);
+  };
+  const toogleFaq5 = () => {
+    setOpen5(!open5);
+  };
+  const toogleFaq6 = () => {
+    setOpen6(!open6);
+  };
+  const toogleFaq7 = () => {
+    setOpen7(!open7);
+  };
+  const toogleFaq8 = () => {
+    setOpen8(!open8);
+  };
+  const toogleFaq9 = () => {
+    setOpen9(!open9);
+  };
+  const toogleFaq10 = () => {
+    setOpen10(!open10);
+  };
+  const toogleFaq11 = () => {
+    setOpen11(!open11);
+  };
+
   return (
     <>
       <>
@@ -73,14 +114,14 @@ export function Faq(props) {
                     </div>
                     <div
                       id="ac_1713_collapse1"
-                      className="wpsm_panel-collapse collapse in"
+                      className="wpsm_panel-collapse collapse "
                     >
                       <div className="wpsm_panel-body">
                         There's no easy answer to this question. It depends on
                         your individual circumstances and what you're looking
                         for in a mortgage broker. If you're not sure what you
                         want or need, then going through a mortgage broker may
-                        be a good idea.They can help you compare different loan
+                        be a good idea. They can help you compare different loan
                         products and find the one that most suitable for your
                         needs. However, if you're confident about what you want
                         and don't need help comparing different loans, then
@@ -102,13 +143,13 @@ export function Faq(props) {
                           onclick="do_resize()"
                         >
                           <span className="ac_open_cl_icon fa fa-plus">
-                            {open ? (
+                            {open2 ? (
                               <AddIcon sx={{ fontSize: "25px" }} />
                             ) : (
                               <RemoveIcon sx={{ fontSize: "25px" }} />
                             )}
                           </span>
-                          <span className="ac_title_class">
+                          <span className="ac_title_class" onClick={toogleFaq2}>
                             What is a mortgage broker?{" "}
                           </span>
                         </a>
@@ -157,13 +198,13 @@ export function Faq(props) {
                           onclick="do_resize()"
                         >
                           <span className="ac_open_cl_icon fa fa-plus">
-                            {open ? (
+                            {open3 ? (
                               <AddIcon sx={{ fontSize: "25px" }} />
                             ) : (
                               <RemoveIcon sx={{ fontSize: "25px" }} />
                             )}
                           </span>
-                          <span className="ac_title_class">
+                          <span className="ac_title_class" onClick={toogleFaq3}>
                             What does a mortgage broker do?{" "}
                           </span>
                         </a>
@@ -223,13 +264,13 @@ export function Faq(props) {
                           onclick="do_resize()"
                         >
                           <span className="ac_open_cl_icon fa fa-plus">
-                            {open ? (
+                            {open4 ? (
                               <AddIcon sx={{ fontSize: "25px" }} />
                             ) : (
                               <RemoveIcon sx={{ fontSize: "25px" }} />
                             )}
                           </span>
-                          <span className="ac_title_class">
+                          <span className="ac_title_class" onClick={toogleFaq4}>
                             Pros and cons of using a mortgage broker in
                             Australia?{" "}
                           </span>
@@ -276,13 +317,13 @@ export function Faq(props) {
                           onclick="do_resize()"
                         >
                           <span className="ac_open_cl_icon fa fa-plus">
-                            {open ? (
+                            {open5 ? (
                               <AddIcon sx={{ fontSize: "25px" }} />
                             ) : (
                               <RemoveIcon sx={{ fontSize: "25px" }} />
                             )}
                           </span>
-                          <span className="ac_title_class">
+                          <span className="ac_title_class" onClick={toogleFaq5}>
                             Is it better to get a mortgage from a bank or broker
                             in Australia?{" "}
                           </span>
@@ -324,13 +365,13 @@ export function Faq(props) {
                           onclick="do_resize()"
                         >
                           <span className="ac_open_cl_icon fa fa-plus">
-                            {open ? (
+                            {open5 ? (
                               <AddIcon sx={{ fontSize: "25px" }} />
                             ) : (
                               <RemoveIcon sx={{ fontSize: "25px" }} />
                             )}
                           </span>
-                          <span className="ac_title_class">
+                          <span className="ac_title_class" onClick={toogleFaq5}>
                             Why choose a mortgage broker over a bank?{" "}
                           </span>
                         </a>
@@ -383,13 +424,13 @@ export function Faq(props) {
                           onclick="do_resize()"
                         >
                           <span className="ac_open_cl_icon fa fa-plus">
-                            {open ? (
+                            {open6 ? (
                               <AddIcon sx={{ fontSize: "25px" }} />
                             ) : (
                               <RemoveIcon sx={{ fontSize: "25px" }} />
                             )}
                           </span>
-                          <span className="ac_title_class">
+                          <span className="ac_title_class" onClick={toogleFaq6}>
                             Do mortgage brokers charge a fee? How much does a
                             mortgage broker cost?{" "}
                           </span>
@@ -458,13 +499,13 @@ export function Faq(props) {
                           onclick="do_resize()"
                         >
                           <span className="ac_open_cl_icon fa fa-plus">
-                            {open ? (
+                            {open7 ? (
                               <AddIcon sx={{ fontSize: "25px" }} />
                             ) : (
                               <RemoveIcon sx={{ fontSize: "25px" }} />
                             )}
                           </span>
-                          <span className="ac_title_class">
+                          <span className="ac_title_class" onClick={toogleFaq7}>
                             Why use a mortgage broker?{" "}
                           </span>
                         </a>
@@ -505,13 +546,13 @@ export function Faq(props) {
                           onclick="do_resize()"
                         >
                           <span className="ac_open_cl_icon fa fa-plus">
-                            {open ? (
+                            {open8 ? (
                               <AddIcon sx={{ fontSize: "25px" }} />
                             ) : (
                               <RemoveIcon sx={{ fontSize: "25px" }} />
                             )}
                           </span>
-                          <span className="ac_title_class">
+                          <span className="ac_title_class" onClick={toogleFaq8}>
                             What makes Low Rate Home Loan Mortgage Broker
                             different?{" "}
                           </span>
@@ -560,13 +601,13 @@ export function Faq(props) {
                           onclick="do_resize()"
                         >
                           <span className="ac_open_cl_icon fa fa-plus">
-                            {open ? (
+                            {open9 ? (
                               <AddIcon sx={{ fontSize: "25px" }} />
                             ) : (
                               <RemoveIcon sx={{ fontSize: "25px" }} />
                             )}
                           </span>
-                          <span className="ac_title_class">
+                          <span className="ac_title_class" onClick={toogleFaq9}>
                             What happens in my first meeting with Mortgage
                             Broker?{" "}
                           </span>
@@ -615,13 +656,16 @@ export function Faq(props) {
                           onclick="do_resize()"
                         >
                           <span className="ac_open_cl_icon fa fa-plus">
-                            {open ? (
+                            {open10 ? (
                               <AddIcon sx={{ fontSize: "25px" }} />
                             ) : (
                               <RemoveIcon sx={{ fontSize: "25px" }} />
                             )}
                           </span>
-                          <span className="ac_title_class">
+                          <span
+                            className="ac_title_class"
+                            onClick={toogleFaq10}
+                          >
                             Does a Broker just help me get to settlement or do
                             they provide an ongoing service?{" "}
                           </span>

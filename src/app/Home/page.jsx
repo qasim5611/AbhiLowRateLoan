@@ -91,8 +91,8 @@ function HomeComp({ data, update }) {
 
                           <Hardwork />
 
-                          <Testimonial />
-
+                          {/* <Testimonial /> */}
+                          {/* after 500 */}
                           <Faq />
 
                           {/* <div className="wp-block-kadence-rowlayout alignnone">

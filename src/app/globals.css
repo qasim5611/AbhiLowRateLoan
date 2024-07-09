@@ -1387,6 +1387,12 @@ body .is-layout-flex > * {
   max-width: 1440px;
 }
 
+@media(min-width: 1400px){
+  #kt-layout-id_9132fd-60 > .kt-row-column-wrap.kb-theme-content-width {
+    max-width: 1840px !important;
+  }
+}
+
 .kt-layout-id_9132fd-60 > .kb-theme-content-width {
   padding-left: var(--global-content-edge-padding);
   padding-right: var(--global-content-edge-padding);
