@@ -121,23 +121,34 @@ function DrawerAppBar(props) {
           }}
         >
           <IconButton
-            color="inherit"
+            // color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" }, backgroundColor: "black" }}
+            sx={{
+              mr: 2,
+              display: { sm: "none" },
+              backgroundColor: "transparent",
+              "&:hover": {
+                backgroundColor: "transparent", // Change this to your desired hover color
+              },
+              "&:focus": {
+                backgroundColor: "#00a6510a", // oloChange this to your desired click color
+              },
+            }}
           >
             <MenuIcon
               sx={{
                 color: "white",
 
-                background: "black",
+                // background: "black",
 
                 position: "absolute",
                 height: "47px",
                 width: "49px",
                 borderRadius: "50%",
                 padding: "8px",
+                top: "-1px",
               }}
             />
           </IconButton>
