@@ -3,7 +3,7 @@ import { UploadImage } from "../../../../lib/upload-images";
 import { DeleteImage } from "../../../../lib/upload-images";
 
 // import { FeatureTopSection } from "../../../../modals/FeatureTopModel";
-import { ImageGallaryModal } from "../../../../modals/FeatureTopModel";
+import { FeatureMediaModel } from "../../../../modals/FeatureMediaModel";
 
 
 export const POST = async(req: NextRequest)=>{ 
@@ -20,7 +20,7 @@ export const POST = async(req: NextRequest)=>{
   console.log("idtoUpdate", idtoUpdate);
 
 
-let mydata = await ImageGallaryModal.findOne({
+let mydata = await FeatureMediaModel.findOne({
   _id: idtoUpdate});
 
   console.log("mydata", mydata);
@@ -41,7 +41,7 @@ let mydata = await ImageGallaryModal.findOne({
  
 
 
- const data = await ImageGallaryModal.findByIdAndUpdate(
+ const data = await FeatureMediaModel.findByIdAndUpdate(
   idtoUpdate, // ID of the record you want to update
   {
     image_url: updatedRecord?.secure_url,

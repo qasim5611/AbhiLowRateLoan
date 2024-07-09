@@ -236,6 +236,7 @@ export default function RootLayout({ children }) {
           pathname === "/adminPanel/applicationprocess" ||
           pathname === "/adminPanel/testimonials" ||
           pathname === "/adminPanel/faqs" ||
+          pathname === "/adminPanel/featuredservicesImages" ||
           pathname === "/adminPanel/freeconsultation" ? null : (
             <Header />
           )}
@@ -256,6 +257,7 @@ export default function RootLayout({ children }) {
           pathname === "/adminPanel/applicationprocess" ||
           pathname === "/adminPanel/testimonials" ||
           pathname === "/adminPanel/faqs" ||
+          pathname === "/adminPanel/featuredservicesImages" ||
           pathname === "/adminPanel/freeconsultation" ? null : (
             <Footer />
           )}

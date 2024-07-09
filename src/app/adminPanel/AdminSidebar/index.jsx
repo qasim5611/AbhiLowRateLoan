@@ -270,6 +270,27 @@ export default function AdminPanel({ open, setOpen }) {
 
               <ListItem disablePadding sx={{ display: "block" }}>
                 <Link
+                  href={"/adminPanel/featuredservicesImages"}
+                  style={{ textDecoration: "none" }}
+                >
+                  <ListItemButton
+                    sx={{
+                      minHeight: 48,
+                      justifyContent: open ? "initial" : "center",
+                      px: 2.5,
+                      textAlign: "center",
+                    }}
+                  >
+                    <ListItemText
+                      primary="Services Images"
+                      sx={{ opacity: open ? 1 : 0 }}
+                    />
+                  </ListItemButton>
+                </Link>
+              </ListItem>
+
+              <ListItem disablePadding sx={{ display: "block" }}>
+                <Link
                   href={"/adminPanel/applicationprocess"}
                   style={{ textDecoration: "none" }}
                 >
