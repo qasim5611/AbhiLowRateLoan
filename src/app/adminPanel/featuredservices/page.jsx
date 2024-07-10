@@ -43,9 +43,9 @@ export default function ReputeableLenders(props) {
     return async () => {
       let resp = await dispatch(getServiceContent());
       console.log("getReputeableBanner", resp);
-      const images = resp?.payload?.data?.data || [];
+      // const images = resp?.payload?.data?.data || [];
 
-      setrecord(images);
+      setrecord(resp?.payload?.data?.data);
       setidtoUpdate(resp?.payload?.data?.data[0]._id);
     };
   }, []);
@@ -119,6 +119,7 @@ export default function ReputeableLenders(props) {
     <Adminlayout>
       <div style={{ marginTop: "65px", padding: "20px", width: "100%" }}>
         <Breadcrumb pageName="Featured Services" />
+        {record ? <div> Ok</div> : <>not ok</>}
 
         {record.length > 0 ? (
           <>
