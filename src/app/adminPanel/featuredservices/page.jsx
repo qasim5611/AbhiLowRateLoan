@@ -122,7 +122,7 @@ export default function ReputeableLenders(props) {
 
         {record.length > 0 ? (
           <>
-            {record.map((item, index) => {
+            {record.map((itm, index) => {
               return (
                 <React.Fragment key={index}>
                   <Grid container spacing={2}>
@@ -136,7 +136,7 @@ export default function ReputeableLenders(props) {
                         rows="3"
                         cols="30"
                         onChange={onChangeHandler}
-                        defaultValue={item.tagline || "Please Enter:"}
+                        defaultValue={itm.tagline || "Please Enter:"}
                         // defaultValue={"Please Enter:"}
                       ></textarea>
                     </Grid>
@@ -167,7 +167,7 @@ export default function ReputeableLenders(props) {
                           buttonList: complex,
                         }}
                         onChange={handleChange}
-                        defaultValue={item.desc}
+                        defaultValue={itm.desc}
                       />
                     </Grid>
                     <Grid

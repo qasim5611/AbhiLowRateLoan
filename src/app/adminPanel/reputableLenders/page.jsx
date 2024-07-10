@@ -24,7 +24,7 @@ import axios from "axios";
 
 export default function ReputeableLenders(props) {
   let dispatch = useDispatch();
-  const [record, setrecord] = useState([]);
+  const [record2, setrecord2] = useState([]);
   const [idtoUpdate, setidtoUpdate] = useState(false);
 
   const [loader, setLoader] = useState(false);
@@ -32,8 +32,8 @@ export default function ReputeableLenders(props) {
   useEffect(() => {
     return async () => {
       let resp = await dispatch(getReputeableBanner());
-      console.log("getReputeableBanner", resp);
-      setrecord(resp?.payload?.data?.data);
+      console.log("getReputeableBanner", resp?.payload?.data?.data);
+      setrecord2(resp?.payload?.data?.data);
       setidtoUpdate(resp?.payload?.data?.data[0]._id);
     };
   }, []);
@@ -104,9 +104,9 @@ export default function ReputeableLenders(props) {
       <div style={{ marginTop: "65px", padding: "20px", width: "100%" }}>
         <Breadcrumb pageName="Reputeable Lenders" />
 
-        {record ? (
+        {record2 ? (
           <>
-            {record.map((item, index) => {
+            {record2.map((itm, index) => {
               return (
                 <>
                   <React.Fragment key={index}>
@@ -121,7 +121,7 @@ export default function ReputeableLenders(props) {
                           rows="3"
                           cols="30"
                           onChange={onChangeHandler}
-                          defaultValue={item.tagline || "Please Enter:"}
+                          defaultValue={itm.tagline || "Please Enter:"}
                           // defaultValue={"Please Enter:"}
                         ></textarea>
                       </Grid>
