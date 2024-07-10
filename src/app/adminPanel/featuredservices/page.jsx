@@ -43,7 +43,9 @@ export default function ReputeableLenders(props) {
     return async () => {
       let resp = await dispatch(getServiceContent());
       console.log("getReputeableBanner", resp);
-      setrecord(resp?.payload?.data?.data);
+      const images = resp?.payload?.data?.data || [];
+
+      setrecord(images);
       setidtoUpdate(resp?.payload?.data?.data[0]._id);
     };
   }, []);
@@ -118,11 +120,11 @@ export default function ReputeableLenders(props) {
       <div style={{ marginTop: "65px", padding: "20px", width: "100%" }}>
         <Breadcrumb pageName="Featured Services" />
 
-        {record ? (
+        {record.length > 0 ? (
           <>
             {record.map((item, index) => {
               return (
-                <>
+                <div>
                   <Grid container spacing={2}>
                     <Grid item xs={8}>
                       <label for="heroSec" className="lblform">
@@ -202,7 +204,7 @@ export default function ReputeableLenders(props) {
                       </button>
                     </Grid>
                   </Grid>
-                </>
+                </div>
               );
             })}
           </>
