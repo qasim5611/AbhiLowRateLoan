@@ -30,12 +30,16 @@ export default function ReputeableLenders(props) {
   const [loader, setLoader] = useState(false);
 
   useEffect(() => {
-    return async () => {
+    const fetchData = async () => {
       let resp = await dispatch(getReputeableBanner());
       console.log("getReputeableBanner", resp?.payload?.data?.data);
+      console.log("qasim", resp?.payload?.data?.data);
+
       setrecord2(resp?.payload?.data?.data);
       setidtoUpdate(resp?.payload?.data?.data[0]._id);
     };
+
+    fetchData();
   }, []);
 
   const [state, setState] = useState({
