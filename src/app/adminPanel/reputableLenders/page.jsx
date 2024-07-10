@@ -109,96 +109,98 @@ export default function ReputeableLenders(props) {
             {record.map((item, index) => {
               return (
                 <>
-                  <Grid container spacing={2}>
-                    <Grid item xs={7}>
-                      <label for="heroSec" className="lblform">
-                        Banner Tag Line:
-                      </label>
-                      <textarea
-                        id="heroSec"
-                        name="tagline"
-                        rows="3"
-                        cols="30"
-                        onChange={onChangeHandler}
-                        defaultValue={item.tagline || "Please Enter:"}
-                        // defaultValue={"Please Enter:"}
-                      ></textarea>
+                  <React.Fragment key={index}>
+                    <Grid container spacing={2}>
+                      <Grid item xs={7}>
+                        <label for="heroSec" className="lblform">
+                          Banner Tag Line:
+                        </label>
+                        <textarea
+                          id="heroSec"
+                          name="tagline"
+                          rows="3"
+                          cols="30"
+                          onChange={onChangeHandler}
+                          defaultValue={item.tagline || "Please Enter:"}
+                          // defaultValue={"Please Enter:"}
+                        ></textarea>
+                      </Grid>
+                      <Grid item xs={5}>
+                        &nbsp;
+                      </Grid>
                     </Grid>
-                    <Grid item xs={5}>
-                      &nbsp;
-                    </Grid>
-                  </Grid>
-                  <br />
-                  <Grid
-                    item
-                    sm={12}
-                    md={12}
-                    lg={12}
-                    style={{ textAlign: "left" }}
-                  >
-                    <label for="heroSec" className="lblform">
-                      Upload Banner Image
-                    </label>
                     <br />
-                    <Button
-                      variant="contained"
-                      component="label"
-                      sx={{
-                        zIndex: "9999",
-                        mb: 2,
-                        backgroundColor: "#fcc26e",
-                        "&:hover": {
-                          backgroundColor: "black",
-                          color: "white",
-                        },
-                      }}
+                    <Grid
+                      item
+                      sm={12}
+                      md={12}
+                      lg={12}
+                      style={{ textAlign: "left" }}
                     >
-                      <CenterFocusStrongIcon /> Upload Image
-                      <input
-                        sx={{ mb: 2, backgroundColor: "#fcc26e" }}
-                        type="file"
-                        name="image"
-                        hidden
-                        onChange={onChangeHandler}
-                      />
-                    </Button>
+                      <label for="heroSec" className="lblform">
+                        Upload Banner Image
+                      </label>
+                      <br />
+                      <Button
+                        variant="contained"
+                        component="label"
+                        sx={{
+                          zIndex: "9999",
+                          mb: 2,
+                          backgroundColor: "#fcc26e",
+                          "&:hover": {
+                            backgroundColor: "black",
+                            color: "white",
+                          },
+                        }}
+                      >
+                        <CenterFocusStrongIcon /> Upload Image
+                        <input
+                          sx={{ mb: 2, backgroundColor: "#fcc26e" }}
+                          type="file"
+                          name="image"
+                          hidden
+                          onChange={onChangeHandler}
+                        />
+                      </Button>
 
-                    {ImagePreview && (
-                      <img
-                        src={ImagePreview}
-                        alt="Preview"
-                        style={{ width: "100px", height: "100px" }}
-                      />
-                    )}
-                  </Grid>
-                  <br />
-                  <Grid container spacing={2}>
-                    <Grid item>
-                      <button onClick={updateHomeBanner}>
-                        {loader ? (
-                          <Box
-                            style={{
-                              display: "flex",
-                              alignItems: "center",
-                              flexDirection: "row",
-                            }}
-                          >
-                            <Typography>Update Reputable Lenders </Typography>
-                            &nbsp; &nbsp;
-                            <CircularProgress size={20} color="inherit" />
-                          </Box>
-                        ) : (
-                          "Update Reputable Lenders"
-                        )}
-                      </button>
+                      {ImagePreview && (
+                        <img
+                          src={ImagePreview}
+                          alt="Preview"
+                          style={{ width: "100px", height: "100px" }}
+                        />
+                      )}
                     </Grid>
-                  </Grid>
+                    <br />
+                    <Grid container spacing={2}>
+                      <Grid item>
+                        <button onClick={updateHomeBanner}>
+                          {loader ? (
+                            <Box
+                              style={{
+                                display: "flex",
+                                alignItems: "center",
+                                flexDirection: "row",
+                              }}
+                            >
+                              <Typography>Update Reputable Lenders </Typography>
+                              &nbsp; &nbsp;
+                              <CircularProgress size={20} color="inherit" />
+                            </Box>
+                          ) : (
+                            "Update Reputable Lenders"
+                          )}
+                        </button>
+                      </Grid>
+                    </Grid>
+                  </React.Fragment>
                 </>
               );
             })}
           </>
         ) : (
-          <div>Loading...</div>
+          <div style={{ textAlign: "center" }}>Loading...</div>
         )}
       </div>
     </Adminlayout>

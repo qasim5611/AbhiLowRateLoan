@@ -119,13 +119,12 @@ export default function ReputeableLenders(props) {
     <Adminlayout>
       <div style={{ marginTop: "65px", padding: "20px", width: "100%" }}>
         <Breadcrumb pageName="Featured Services" />
-        {record ? <div> Ok</div> : <>not ok</>}
 
         {record.length > 0 ? (
           <>
             {record.map((item, index) => {
               return (
-                <div>
+                <React.Fragment key={index}>
                   <Grid container spacing={2}>
                     <Grid item xs={8}>
                       <label for="heroSec" className="lblform">
@@ -205,12 +204,12 @@ export default function ReputeableLenders(props) {
                       </button>
                     </Grid>
                   </Grid>
-                </div>
+                </React.Fragment>
               );
             })}
           </>
         ) : (
-          <div>Loading...</div>
+          <div style={{ textAlign: "center" }}>Loading...</div>
         )}
       </div>
     </Adminlayout>
