@@ -107,7 +107,7 @@ function Footer({ data, update }) {
                                       FAQ's
                                     </Link>
                                     <br />
-                                    <Link
+                                    {/* <Link
                                       href="/blog"
                                       data-type="page"
                                       data-id="1955"
@@ -115,7 +115,7 @@ function Footer({ data, update }) {
                                       {" "}
                                       Blog
                                     </Link>
-                                    <br />
+                                    <br /> */}
                                     <Link
                                       href="/compliments-and-concerns"
                                       data-type="page"
@@ -275,25 +275,22 @@ function Footer({ data, update }) {
                                     <Link href="/mortgage-broker-pakenham">
                                       Ringwood
                                     </Link>
-
                                     <br />
                                     <Link href="/mortgage-broker-rockbank">
                                       Rockbank
                                     </Link>
-
                                     <br />
                                     <Link href="/mortgage-broker-scoresby">
                                       Scoresby
                                     </Link>
-
                                     <br />
                                     <Link href="/mortgage-broker-south-yarra">
                                       South Yarra
                                     </Link>
                                     <br />
-                                    <Link href="/mortgage-broker-south-yarra">
-                                      WA & QLD
-                                    </Link>
+                                    {/* <Link href="/mortgage-broker-south-yarra"> */}
+                                    WA & QLD
+                                    {/* </Link> */}
                                   </p>
                                 </div>
                               </div>

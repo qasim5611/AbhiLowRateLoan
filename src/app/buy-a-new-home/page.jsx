@@ -1,6 +1,7 @@
 import { FeaturedTop } from "./../../components/FeaturedTop";
 import React from "react";
 import { ContactForm } from "../../components/ContactForm";
+import { Testimonial } from "../../components/Testimonial";
 
 export default function BuyNewHome(props) {
   return (

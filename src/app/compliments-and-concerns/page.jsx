@@ -5,6 +5,7 @@ import { ReputableLenders } from "../../components/ReputableLenders";
 import { FeatureServicesProvides } from "../../components/FeatureServicesProvides";
 import { Faq } from "../../components/Faq";
 import { ContactForm } from "../../components/ContactForm";
+import { Testimonial } from "../../components/Testimonial";
 
 export default function Page(props) {
   return (
@@ -62,6 +63,7 @@ sec and map, Manual */}
                       know using the details below, so that we can further
                       encourage them via this feedback process.
                     </p>
+                    <br />
                     <p>
                       <strong>Concerns</strong>
                     </p>
@@ -80,14 +82,14 @@ sec and map, Manual */}
                     </p>
                     <p>
                       Online:&nbsp;
-                      <a href="http://scoresbymortgagebroker.com.au/">
-                        http://scoresbymortgagebroker.com.au/
+                      <a href="https://lowratehomeloan.com.au/">
+                        https://lowratehomeloan.com.au/
                       </a>
                     </p>
                     <p>
                       Email:&nbsp;
-                      <a href="mailto:info@scoresbymortgagebroker.com.au">
-                        info@scoresbymortgagebroker.com.au
+                      <a href="mailto:info@lowratehomeloan.com.au">
+                        info@lowratehomeloan.com.au
                       </a>
                     </p>
                     <p>
@@ -95,6 +97,8 @@ sec and map, Manual */}
                     </p>
                     <p />
                     <p />
+                    <br />
+
                     <p>
                       <strong>Need an update on your complaint</strong>
                     </p>
@@ -124,6 +128,8 @@ sec and map, Manual */}
                       When we have completed our investigation, we will write to
                       let you know the outcome and the reasons for our decision.
                     </p>
+                    <br />
+
                     <p>
                       <strong>Taking it further</strong>
                     </p>
@@ -148,6 +154,8 @@ sec and map, Manual */}
                       <br />
                       GPO Box 3, Melbourne VIC 3001
                     </p>
+                    <br />
+
                     <p>
                       Time limits may apply to complain to AFCA and so you
                       should act promptly or otherwise consult the AFCA website

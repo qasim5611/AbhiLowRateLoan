@@ -72,7 +72,7 @@ const Signup = () => {
   if (loginMsg == "Login Successfull") {
     // setauthloginMsg("");
     setTimeout(() => {
-      navigate("/blog", { replace: true });
+      // navigate("/blog", { replace: true });
     }, 5000);
   }
 

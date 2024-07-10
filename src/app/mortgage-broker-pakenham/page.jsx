@@ -12,11 +12,9 @@ export default function Page(props) {
     <>
       <PageTitle title="Mortgage Broker Pakenham" />
       <FeaturedTop />
-
       {/* Manual 2
 sec and map, Manual */}
       {/* 1107 to 1138 */}
-
       <div className="setstyle">
         <>
           <div className="wp-block-kadence-rowlayout alignnone single-suburb">
@@ -33,14 +31,17 @@ sec and map, Manual */}
                     >
                       Low Rate Home Loan in Pakenham
                     </h2>
+                    <br />
                     <p>
                       Thank you for visiting our site. If you are looking to
                       purchase your first home or thinking to join the wonderful
-                      Estate of Pakenham, you have come to the right place. If
-                      you’re already a resident of fabulous Pakenham and looking
-                      to Refinance, Debt Consolidate or wanting to Buy an
-                      Investment Property you are on the right track.
+                      Estate of Pakenham, you have come to the right place.
+                      <br /> <br /> If you’re already a resident of fabulous
+                      Pakenham and looking to Refinance, Debt Consolidate or
+                      wanting to Buy an Investment Property you are on the right
+                      track.
                     </p>
+                    <br />
 
                     <h2
                       className="kt-adv-heading_193f8b-bc wp-block-kadence-advancedheading"
@@ -53,10 +54,11 @@ sec and map, Manual */}
                       Our team of Mortgage Brokers in Pakenham focus on
                       providing excellent customer satisfaction by assessing
                       their needs and objectives to find them the right products
-                      and services. We help our valuable clients to save on
-                      their Home Loans as we Have access to 53+ Banks which
-                      enables us to find you the right Home Loan from over 3000+
-                      products.
+                      and services. <br />
+                      <br />
+                      We help our valuable clients to save on their Home Loans
+                      as we Have access to 53+ Banks which enables us to find
+                      you the right Home Loan from over 3000+ products.
                     </p>
                   </div>
                 </div>
@@ -189,77 +191,13 @@ sec and map, Manual */}
           </div>
         </>
       </div>
-
       <ReputableLenders />
       <FeatureServicesProvides />
-
       {/* Tips & Advice / Manual  */}
       {/* FAQ Tips / Manual */}
       {/* 1250-1345 */}
-
       <div className="setstyle">
         <>
-          <div className="wp-block-kadence-column inner-column-2 kadence-column_db9ea7-7d">
-            <div className="kt-inside-inner-col">
-              <div className="wp-block-kadence-column inner-column-1 kadence-column_973e63-55">
-                <div className="kt-inside-inner-col">
-                  <div className="wp-block-kadence-rowlayout alignnone">
-                    <div
-                      id="kt-layout-id_146812-6b"
-                      className="kt-row-layout-inner kt-layout-id_146812-6b"
-                    >
-                      <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-right-golden kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-right-golden  kt-custom-first-width-20  kt-custom-second-width-80">
-                        <div className="wp-block-kadence-column inner-column-1 kadence-column_6d1bbf-92">
-                          <div className="kt-inside-inner-col">
-                            <figure className="wp-block-image size-large is-style-default">
-                              <img
-                                decoding="async"
-                                loading="lazy"
-                                width={70}
-                                height={70}
-                                src="/insider2022/12/debt-consolidation.svg"
-                                alt="debt consolidation"
-                                className="wp-image-3974"
-                              />
-                            </figure>
-                          </div>
-                        </div>
-                        <div className="wp-block-kadence-column inner-column-2 kadence-column_026516-13">
-                          <div className="kt-inside-inner-col">
-                            <h6
-                              className="kt-adv-heading_a8491c-92 black-bold wp-block-kadence-advancedheading"
-                              data-kb-block="kb-adv-heading_a8491c-92"
-                            >
-                              Debt Consolidations
-                            </h6>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="wp-block-kadence-rowlayout alignnone">
-                    <div
-                      id="kt-layout-id_126662-c2"
-                      className="kt-row-layout-inner kt-layout-id_126662-c2"
-                    >
-                      <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
-                        <div className="wp-block-kadence-column inner-column-1 kadence-column_9a9b46-32">
-                          <div className="kt-inside-inner-col">
-                            <p>
-                              Debt Consolidation is a perfect option for you if
-                              you have more than one loan for example Car Loan,
-                              Personal Loan and Home Loan. We can help you to
-                              bring all your existing loans into one.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
           <div className="wp-block-kadence-column inner-column-3 kadence-column_252156-9f">
             <div className="kt-inside-inner-col" />
           </div>
@@ -295,7 +233,7 @@ sec and map, Manual */}
                                 data-kb-block="kb-adv-heading_e7be30-31"
                               >
                                 First-Time Home Buyers looking to buy a house in
-                                Berwick
+                                Pakenham
                               </h2>
                             </div>
                           </div>
@@ -314,38 +252,35 @@ sec and map, Manual */}
                           <div className="wp-block-kadence-column inner-column-1 kadence-column_859025-ae">
                             <div className="kt-inside-inner-col">
                               <p>
-                                Berwick 3806 is a vibrant and progressive suburb
-                                in Melbourne’s south-east with something to
-                                offer everyone. Located within the City of
-                                Casey, Berwick is only 41 km from the CBD and
-                                has easy access to major roads such as the M1
-                                Freeway.
+                                The Charm of Living in Pakenham – A Town Rich in
+                                History, Natural Beauty and Community Spirit”
+                                <br />
+                                Located roughly 53 kilometres south-east of the
+                                Melbourne CBD, Pakenham is a thriving and
+                                growing community that has become a popular
+                                destination for families due to its unique blend
+                                of rural and suburban life. With an abundance of
+                                schools, a convenient transportation network,
+                                and close access to the freeway, Pakenham
+                                provides the perfect setting for young parents
+                                to raise their children while still enjoying the
+                                benefits of living in the city.
                               </p>
                               <p>
-                                The area was originally part of Cardinia Shire
-                                and is home to a diverse range of people who
-                                enjoy the variety of amenities on offer. With
-                                many parks, sporting facilities and modern
-                                shopping districts.
-                              </p>
-                              <p>
-                                From cardinia reservoir park with its lush
-                                forests and calming waterways all the way down
-                                to Casey Fields sporting reserve complete with
-                                exciting team sports and excellent facilities –
-                                there is something out there waiting just for
-                                you!
+                                For family getaways, Pakenham is close to the
+                                Dandenong Ranges and Yarra Valley, making it an
+                                ideal place to explore the outdoors together.
                               </p>
                               <p>
                                 <a
+                                  href="http://localhost/LowRateHomeLoan/contact/"
                                   data-type="page"
                                   data-id={1455}
-                                  href="http://localhost/LowRateHomeLoan/contact/"
                                   target="_blank"
                                   rel="noopener"
                                 >
                                   Book an appointment with our expert Mortgage
-                                  Brokers in Berwick today for your home loan.
+                                  Brokers in Pakenham today for your home loan.
                                 </a>
                               </p>
                             </div>
@@ -525,7 +460,7 @@ sec and map, Manual */}
           </div>
         </>
       </div>
-      <Testimonial />
+      {/*  <Testimonial /> */}
       <Faq />
       <ContactForm />
     </>

@@ -159,7 +159,6 @@ const Login = () => {
         draggable: true,
         progress: undefined,
       });
-      //  navigate(to="/blog");
       console.log("Login Successfull");
       // navigate("/adminPanel", { replace: true });
       router.push("/adminPanel");
@@ -176,7 +175,6 @@ const Login = () => {
         draggable: true,
         progress: undefined,
       });
-      //  navigate(to="/blog");
       // navigate("/logo", { replace: true });
     } else if (LoginMsg?.data?.payload?.msg == "Not available email") {
       // dispatch(setSnackbar(true, "error", "Not available email"));

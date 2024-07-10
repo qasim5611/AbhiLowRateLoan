@@ -368,8 +368,53 @@ export function FeatureServicesProvides(props) {
                           </div>
                         </div>
                       </div>
-                      <div className="wp-block-kadence-column inner-column-3 kadence-column_252156-9f">
-                        <div className="kt-inside-inner-col" />
+                      <div className="wp-block-kadence-column inner-column-2 kadence-column_db9ea7-7d">
+                        <div className="kt-inside-inner-col">
+                          <div className="wp-block-kadence-column inner-column-1 kadence-column_973e63-55">
+                            <div className="kt-inside-inner-col">
+                              <div className="wp-block-kadence-rowlayout alignnone">
+                                <div
+                                  id="kt-layout-id_146812-6b"
+                                  className="kt-row-layout-inner kt-layout-id_146812-6b"
+                                >
+                                  <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-right-golden kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-right-golden  kt-custom-first-width-20  kt-custom-second-width-80">
+                                    <div className="wp-block-kadence-column inner-column-1 kadence-column_6d1bbf-92">
+                                      <div className="kt-inside-inner-col">
+                                        <figure className="wp-block-image size-large is-style-default">
+                                          &nbsp;
+                                        </figure>
+                                      </div>
+                                    </div>
+                                    <div className="wp-block-kadence-column inner-column-2 kadence-column_026516-13">
+                                      <div className="kt-inside-inner-col">
+                                        <h6
+                                          className="kt-adv-heading_a8491c-92 black-bold wp-block-kadence-advancedheading"
+                                          data-kb-block="kb-adv-heading_a8491c-92"
+                                        >
+                                          &nbsp;
+                                        </h6>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="wp-block-kadence-rowlayout alignnone">
+                                <div
+                                  id="kt-layout-id_126662-c2"
+                                  className="kt-row-layout-inner kt-layout-id_126662-c2"
+                                >
+                                  <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
+                                    <div className="wp-block-kadence-column inner-column-1 kadence-column_9a9b46-32">
+                                      <div className="kt-inside-inner-col">
+                                        <p>&nbsp;</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>

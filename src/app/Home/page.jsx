@@ -82,19 +82,13 @@ function HomeComp({ data, update }) {
                               </div>
                             </div>
                           </div>
-
                           <FeaturedTop />
-
                           <ReputableLenders />
-
                           <FeatureServices />
-
                           <Hardwork />
-
-                          {/* <Testimonial /> */}
+                          {/*  <Testimonial /> */}
                           {/* after 500 */}
                           <Faq />
-
                           {/* <div className="wp-block-kadence-rowlayout alignnone">
                             <div
                               id="kt-layout-id_7a5f35-04"
@@ -107,7 +101,6 @@ function HomeComp({ data, update }) {
                               </div>
                             </div>
                           </div> */}
-
                           <Parallax />
                           <ContactForm />
                         </div>

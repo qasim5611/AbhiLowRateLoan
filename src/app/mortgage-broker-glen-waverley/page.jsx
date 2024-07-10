@@ -5,6 +5,7 @@ import { ReputableLenders } from "../../components/ReputableLenders";
 import { FeatureServicesProvides } from "../../components/FeatureServicesProvides";
 import { Faq } from "../../components/Faq";
 import { ContactForm } from "../../components/ContactForm";
+import { Testimonial } from "../../components/Testimonial";
 
 export default function Page(props) {
   return (
@@ -191,310 +192,326 @@ sec and map, Manual */}
       {/* 1250-1345 */}
 
       <div className="setstyle">
-      <>
-  <div className="wp-block-kadence-spacer aligncenter kt-block-spacer-_415c6a-08">
-    <div className="kt-block-spacer kt-block-spacer-halign-center">
-      <hr className="kt-divider" />
-    </div>
-  </div>
-  <div className="wp-block-kadence-rowlayout alignnone">
-    <div
-      id="kt-layout-id_5a621b-81"
-      className="kt-row-layout-inner kt-layout-id_5a621b-81"
-    >
-      <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row kb-theme-content-width">
-        <div className="wp-block-kadence-column inner-column-1 kadence-column_de30c2-e0">
-          <div className="kt-inside-inner-col">
-            <div className="wp-block-kadence-rowlayout alignnone">
-              <div
-                id="kt-layout-id_762e30-55"
-                className="kt-row-layout-inner kt-layout-id_762e30-55"
-              >
-                <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
-                  <div className="wp-block-kadence-column inner-column-1 kadence-column_8843dd-cd">
-                    <div className="kt-inside-inner-col">
-                      <h6
-                        className="kt-adv-heading_7cd518-d6 wp-block-kadence-advancedheading has-theme-palette-1-color has-text-color"
-                        data-kb-block="kb-adv-heading_7cd518-d6"
-                      >
-                        Tips &amp; Advice
-                      </h6>
-                      <h2
-                        className="kt-adv-heading_8fde56-d1 wp-block-kadence-advancedheading"
-                        data-kb-block="kb-adv-heading_8fde56-d1"
-                      >
-                        First-Time Home Buyers looking to buy a house in Glen
-                        Waverley
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="wp-block-kadence-column inner-column-2 kadence-column_541262-22">
-                    <div className="kt-inside-inner-col" />
-                  </div>
-                </div>
-              </div>
+        <>
+          <div className="wp-block-kadence-spacer aligncenter kt-block-spacer-_415c6a-08">
+            <div className="kt-block-spacer kt-block-spacer-halign-center">
+              <hr className="kt-divider" />
             </div>
-            <div className="wp-block-kadence-rowlayout alignnone">
-              <div
-                id="kt-layout-id_77d94b-1d"
-                className="kt-row-layout-inner kt-layout-id_77d94b-1d"
-              >
-                <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
-                  <div className="wp-block-kadence-column inner-column-1 kadence-column_859025-ae">
-                    <div className="kt-inside-inner-col">
-                      <p>
-                        Nestled in the southeastern suburbs of Melbourne,
-                        Australia, Glen Waverley stands as a prime example of a
-                        harmonious blend of modern living, natural beauty, and
-                        diverse amenities. This bustling suburban gem has gained
-                        a reputation as a sought-after residential destination,
-                        enticing both home seekers and investors with its unique
-                        charm and abundant opportunities.
-                      </p>
-                      <p>
-                        Glen Waverley’s real estate landscape is a captivating
-                        fusion of architectural styles, ranging from
-                        contemporary townhouses to elegant family homes.
-                        Tree-lined streets and well-manicured gardens contribute
-                        to the suburb’s aesthetic appeal, creating an inviting
-                        environment for residents and visitors alike. The area’s
-                        diverse housing options cater to a wide range of
-                        preferences and lifestyles, making it an ideal choice
-                        for families, professionals, and individuals seeking a
-                        serene yet convenient living experience.
-                      </p>
-                      <p>
-                        One of the standout features of Glen Waverley is its
-                        exceptional amenities. The Glen Shopping Centre, a
-                        prominent retail hub, offers an array of high-end shops,
-                        boutiques, and dining options.&nbsp;
-                      </p>
-                      <p>
-                        Residents can explore an eclectic mix of cuisines, shop
-                        for luxury brands, and indulge in entertainment
-                        activities, all within the convenience of their
-                        neighbourhood. Glen Waverley, Australia, stands as a
-                        captivating destination in the realm of real estate,
-                        boasting a harmonious blend of modernity, natural
-                        beauty, and exceptional amenities.
-                      </p>
-                      <p>
-                        <a
-                          href="https://lowratehomeloan.com.au/contact/"
-                          title=""
-                        />
-                        <a href="https://lowratehomeloan.com.au/contact/">
-                          Book an appointment with an experienced Mortgage
-                          Broker today!
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                  <div className="wp-block-kadence-column inner-column-2 kadence-column_1fc698-6d">
-                    <div className="kt-inside-inner-col">
-                      <h5
-                        className="kt-adv-heading_a4772d-93 wp-block-kadence-advancedheading"
-                        data-kb-block="kb-adv-heading_a4772d-93"
+          </div>
+          <div className="wp-block-kadence-rowlayout alignnone">
+            <div
+              id="kt-layout-id_5a621b-81"
+              className="kt-row-layout-inner kt-layout-id_5a621b-81"
+            >
+              <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row kb-theme-content-width">
+                <div className="wp-block-kadence-column inner-column-1 kadence-column_de30c2-e0">
+                  <div className="kt-inside-inner-col">
+                    <div className="wp-block-kadence-rowlayout alignnone">
+                      <div
+                        id="kt-layout-id_762e30-55"
+                        className="kt-row-layout-inner kt-layout-id_762e30-55"
                       >
-                        Best suburbs in Glen Waverley for First Home Buyers and
-                        Investor
-                      </h5>
-                      <ul>
-                        <li>Vermont South</li>
-                        <li>Vermont</li>
-                        <li>Mulgrave</li>
-                        <li>Notting Hill</li>
-                        <li>Wheelers Hill</li>
-                        <li>Mount Waverley</li>
-                        <li>Forest Hill</li>
-                        <li>Burwood East</li>
-                        <li>Kingsway</li>
-                        <li>Brentwood Park</li>
-                      </ul>
+                        <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
+                          <div className="wp-block-kadence-column inner-column-1 kadence-column_8843dd-cd">
+                            <div className="kt-inside-inner-col">
+                              <h6
+                                className="kt-adv-heading_7cd518-d6 wp-block-kadence-advancedheading has-theme-palette-1-color has-text-color"
+                                data-kb-block="kb-adv-heading_7cd518-d6"
+                              >
+                                Tips &amp; Advice
+                              </h6>
+                              <h2
+                                className="kt-adv-heading_8fde56-d1 wp-block-kadence-advancedheading"
+                                data-kb-block="kb-adv-heading_8fde56-d1"
+                              >
+                                First-Time Home Buyers looking to buy a house in
+                                Glen Waverley
+                              </h2>
+                            </div>
+                          </div>
+                          <div className="wp-block-kadence-column inner-column-2 kadence-column_541262-22">
+                            <div className="kt-inside-inner-col" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="wp-block-kadence-rowlayout alignnone">
+                      <div
+                        id="kt-layout-id_77d94b-1d"
+                        className="kt-row-layout-inner kt-layout-id_77d94b-1d"
+                      >
+                        <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
+                          <div className="wp-block-kadence-column inner-column-1 kadence-column_859025-ae">
+                            <div className="kt-inside-inner-col">
+                              <p>
+                                Nestled in the southeastern suburbs of
+                                Melbourne, Australia, Glen Waverley stands as a
+                                prime example of a harmonious blend of modern
+                                living, natural beauty, and diverse amenities.
+                                This bustling suburban gem has gained a
+                                reputation as a sought-after residential
+                                destination, enticing both home seekers and
+                                investors with its unique charm and abundant
+                                opportunities.
+                              </p>
+                              <p>
+                                Glen Waverley’s real estate landscape is a
+                                captivating fusion of architectural styles,
+                                ranging from contemporary townhouses to elegant
+                                family homes. Tree-lined streets and
+                                well-manicured gardens contribute to the
+                                suburb’s aesthetic appeal, creating an inviting
+                                environment for residents and visitors alike.
+                                The area’s diverse housing options cater to a
+                                wide range of preferences and lifestyles, making
+                                it an ideal choice for families, professionals,
+                                and individuals seeking a serene yet convenient
+                                living experience.
+                              </p>
+                              <p>
+                                One of the standout features of Glen Waverley is
+                                its exceptional amenities. The Glen Shopping
+                                Centre, a prominent retail hub, offers an array
+                                of high-end shops, boutiques, and dining
+                                options.&nbsp;
+                              </p>
+                              <p>
+                                Residents can explore an eclectic mix of
+                                cuisines, shop for luxury brands, and indulge in
+                                entertainment activities, all within the
+                                convenience of their neighbourhood. Glen
+                                Waverley, Australia, stands as a captivating
+                                destination in the realm of real estate,
+                                boasting a harmonious blend of modernity,
+                                natural beauty, and exceptional amenities.
+                              </p>
+                              <p>
+                                <a
+                                  href="https://lowratehomeloan.com.au/contact/"
+                                  title=""
+                                />
+                                <a href="https://lowratehomeloan.com.au/contact/">
+                                  Book an appointment with an experienced
+                                  Mortgage Broker today!
+                                </a>
+                              </p>
+                            </div>
+                          </div>
+                          <div className="wp-block-kadence-column inner-column-2 kadence-column_1fc698-6d">
+                            <div className="kt-inside-inner-col">
+                              <h5
+                                className="kt-adv-heading_a4772d-93 wp-block-kadence-advancedheading"
+                                data-kb-block="kb-adv-heading_a4772d-93"
+                              >
+                                Best suburbs in Glen Waverley for First Home
+                                Buyers and Investor
+                              </h5>
+                              <ul>
+                                <li>Vermont South</li>
+                                <li>Vermont</li>
+                                <li>Mulgrave</li>
+                                <li>Notting Hill</li>
+                                <li>Wheelers Hill</li>
+                                <li>Mount Waverley</li>
+                                <li>Forest Hill</li>
+                                <li>Burwood East</li>
+                                <li>Kingsway</li>
+                                <li>Brentwood Park</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div className="wp-block-kadence-spacer aligncenter kt-block-spacer-_00bbb5-dc">
-    <div className="kt-block-spacer kt-block-spacer-halign-center">
-      <hr className="kt-divider" />
-    </div>
-  </div>
-  <div className="wp-block-kadence-rowlayout alignnone">
-    <div
-      id="kt-layout-id_350612-cd"
-      className="kt-row-layout-inner kt-layout-id_350612-cd"
-    >
-      <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row kb-theme-content-width">
-        <div className="wp-block-kadence-column inner-column-1 kadence-column_c723a7-5d">
-          <div className="kt-inside-inner-col">
-            <div className="wp-block-kadence-rowlayout alignnone">
-              <div
-                id="kt-layout-id_281e13-9f"
-                className="kt-row-layout-inner kt-layout-id_281e13-9f"
-              >
-                <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
-                  <div className="wp-block-kadence-column inner-column-1 kadence-column_7b3a08-52">
-                    <div className="kt-inside-inner-col">
-                      <h6
-                        className="kt-adv-heading_dfb7ea-7c wp-block-kadence-advancedheading has-theme-palette-1-color has-text-color"
-                        data-kb-block="kb-adv-heading_dfb7ea-7c"
-                      >
-                        FAQ
-                      </h6>
-                      <h2
-                        className="kt-adv-heading_4895c4-1e wp-block-kadence-advancedheading"
-                        data-kb-block="kb-adv-heading_4895c4-1e"
-                      >
-                        Tips for Discovering Top Mortgage Brokers in Glen
-                        Waverley
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="wp-block-kadence-column inner-column-2 kadence-column_5bec05-e7">
-                    <div className="kt-inside-inner-col" />
-                  </div>
-                </div>
-              </div>
+          <div className="wp-block-kadence-spacer aligncenter kt-block-spacer-_00bbb5-dc">
+            <div className="kt-block-spacer kt-block-spacer-halign-center">
+              <hr className="kt-divider" />
             </div>
-            <div className="wp-block-kadence-rowlayout alignnone">
-              <div
-                id="kt-layout-id_30b118-9e"
-                className="kt-row-layout-inner kt-layout-id_30b118-9e"
-              >
-                <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
-                  <div className="wp-block-kadence-column inner-column-1 kadence-column_df85cb-a2">
-                    <div className="kt-inside-inner-col">
-                      <p>
-                        Our curated list of essential tips will help you
-                        discover top-notch professionals who understand the
-                        local real estate landscape inside out. Here are some of
-                        the tips to follow:
-                      </p>
-                      <ol>
-                        <li>
-                          <strong>Local Expertise:</strong> Prioritise brokers
-                          that are well-versed in the local real estate market.
-                          Their familiarity with the area’s trends and
-                          intricacies ensures tailored advice.
-                        </li>
-                        <li>
-                          <strong>Credibility and Reputation:</strong> Seek
-                          brokers with a proven track record and positive
-                          reputation. Client testimonials and referrals
-                          highlight their reliability.
-                        </li>
-                        <li>
-                          <strong>Professional Credentials: </strong>Opt for
-                          brokers holding industry accreditations or
-                          memberships. These credentials signify adherence to
-                          high standards of professionalism.
-                        </li>
-                        <li>
-                          <strong>Lender Relationships:</strong> Select brokers
-                          with a robust network of lenders. This connection
-                          provides you access to a diverse range of loan options
-                          and competitive rates.
-                        </li>
-                        <li>
-                          <strong>Personalised Approach:</strong> Look for
-                          brokers who take the time to understand your financial
-                          goals and unique circumstances. Their tailored
-                          approach ensures suitable solutions.
-                        </li>
-                        <li>
-                          <strong>Clear Communication:</strong> Prioritise
-                          brokers who communicate transparently and
-                          consistently. Effective communication streamlines the
-                          mortgage process and minimises confusion.
-                        </li>
-                        <li>
-                          <strong>Fee Transparency:</strong> Ensure brokers
-                          provide a clear breakdown of their fees and charges.
-                          Transparent fee structures help you make well-informed
-                          decisions.
-                        </li>
-                        <li>
-                          <strong>Market Insights: </strong>Choose brokers with
-                          up-to-date knowledge of Burwood’s real estate market.
-                          Their insights guide you in navigating fluctuating
-                          property values and investment potential.
-                        </li>
-                        <li>
-                          <strong>Accessibility and Responsiveness:</strong> Opt
-                          for brokers who are readily accessible and responsive.
-                          Prompt communication ensures a smooth mortgage
-                          application and approval process.
-                        </li>
-                        <li>
-                          <strong>Professional Network:</strong> Consider
-                          brokers with a strong network of local real estate
-                          professionals, such as realtors and solicitors. Their
-                          connections enhance your overall home-buying
-                          experience.
-                        </li>
-                      </ol>
-                      <p>
-                        <a
-                          href="https://lowratehomeloan.com.au/contact/"
-                          title=""
-                        />
-                        <a href="https://lowratehomeloan.com.au/contact/">
-                          <strong>
-                            Find the Best Home Mortgage Solutions in Glen
-                            Waverly. Call Us Today!
-                          </strong>
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                  <div className="wp-block-kadence-column inner-column-2 kadence-column_ff0f28-50">
-                    <div className="kt-inside-inner-col">
-                      <h5
-                        className="kt-adv-heading_c02e4d-6e wp-block-kadence-advancedheading"
-                        data-kb-block="kb-adv-heading_c02e4d-6e"
+          </div>
+          <div className="wp-block-kadence-rowlayout alignnone">
+            <div
+              id="kt-layout-id_350612-cd"
+              className="kt-row-layout-inner kt-layout-id_350612-cd"
+            >
+              <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row kb-theme-content-width">
+                <div className="wp-block-kadence-column inner-column-1 kadence-column_c723a7-5d">
+                  <div className="kt-inside-inner-col">
+                    <div className="wp-block-kadence-rowlayout alignnone">
+                      <div
+                        id="kt-layout-id_281e13-9f"
+                        className="kt-row-layout-inner kt-layout-id_281e13-9f"
                       >
-                        According to realestate.com.au Glen Waverley Property
-                        Prices:
-                      </h5>
-                      <h2 className="wp-block-heading">
-                        Glen Waverley Property Market Insights
-                      </h2>
-                      <p>
-                        In the previous month, Glen Waverley saw 157 properties
-                        available for lease and 223 properties listed for
-                        purchase. Median property prices in the past year have
-                        spanned from $1,628,000 for houses to $891,500 for
-                        units. If you’re considering an investment property,
-                        it’s worth noting that houses in Glen Waverley are
-                        averagely leased at $600 per week, yielding an annual
-                        rental return of 2.1%, while units are leased at $570
-                        per week, generating a rental yield of 3.4%.
-                      </p>
-                      <p>
-                        Considering five years’ sales data, Glen Waverley’s real
-                        estate landscape has experienced a compound growth rate
-                        of -0.3% for houses, and for units, there has been a
-                        compound growth rate of -0.9%.
-                      </p>
+                        <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
+                          <div className="wp-block-kadence-column inner-column-1 kadence-column_7b3a08-52">
+                            <div className="kt-inside-inner-col">
+                              <h6
+                                className="kt-adv-heading_dfb7ea-7c wp-block-kadence-advancedheading has-theme-palette-1-color has-text-color"
+                                data-kb-block="kb-adv-heading_dfb7ea-7c"
+                              >
+                                FAQ
+                              </h6>
+                              <h2
+                                className="kt-adv-heading_4895c4-1e wp-block-kadence-advancedheading"
+                                data-kb-block="kb-adv-heading_4895c4-1e"
+                              >
+                                Tips for Discovering Top Mortgage Brokers in
+                                Glen Waverley
+                              </h2>
+                            </div>
+                          </div>
+                          <div className="wp-block-kadence-column inner-column-2 kadence-column_5bec05-e7">
+                            <div className="kt-inside-inner-col" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="wp-block-kadence-rowlayout alignnone">
+                      <div
+                        id="kt-layout-id_30b118-9e"
+                        className="kt-row-layout-inner kt-layout-id_30b118-9e"
+                      >
+                        <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
+                          <div className="wp-block-kadence-column inner-column-1 kadence-column_df85cb-a2">
+                            <div className="kt-inside-inner-col">
+                              <p>
+                                Our curated list of essential tips will help you
+                                discover top-notch professionals who understand
+                                the local real estate landscape inside out. Here
+                                are some of the tips to follow:
+                              </p>
+                              <ol>
+                                <li>
+                                  <strong>Local Expertise:</strong> Prioritise
+                                  brokers that are well-versed in the local real
+                                  estate market. Their familiarity with the
+                                  area’s trends and intricacies ensures tailored
+                                  advice.
+                                </li>
+                                <li>
+                                  <strong>Credibility and Reputation:</strong>{" "}
+                                  Seek brokers with a proven track record and
+                                  positive reputation. Client testimonials and
+                                  referrals highlight their reliability.
+                                </li>
+                                <li>
+                                  <strong>Professional Credentials: </strong>Opt
+                                  for brokers holding industry accreditations or
+                                  memberships. These credentials signify
+                                  adherence to high standards of
+                                  professionalism.
+                                </li>
+                                <li>
+                                  <strong>Lender Relationships:</strong> Select
+                                  brokers with a robust network of lenders. This
+                                  connection provides you access to a diverse
+                                  range of loan options and competitive rates.
+                                </li>
+                                <li>
+                                  <strong>Personalised Approach:</strong> Look
+                                  for brokers who take the time to understand
+                                  your financial goals and unique circumstances.
+                                  Their tailored approach ensures suitable
+                                  solutions.
+                                </li>
+                                <li>
+                                  <strong>Clear Communication:</strong>{" "}
+                                  Prioritise brokers who communicate
+                                  transparently and consistently. Effective
+                                  communication streamlines the mortgage process
+                                  and minimises confusion.
+                                </li>
+                                <li>
+                                  <strong>Fee Transparency:</strong> Ensure
+                                  brokers provide a clear breakdown of their
+                                  fees and charges. Transparent fee structures
+                                  help you make well-informed decisions.
+                                </li>
+                                <li>
+                                  <strong>Market Insights: </strong>Choose
+                                  brokers with up-to-date knowledge of Burwood’s
+                                  real estate market. Their insights guide you
+                                  in navigating fluctuating property values and
+                                  investment potential.
+                                </li>
+                                <li>
+                                  <strong>
+                                    Accessibility and Responsiveness:
+                                  </strong>{" "}
+                                  Opt for brokers who are readily accessible and
+                                  responsive. Prompt communication ensures a
+                                  smooth mortgage application and approval
+                                  process.
+                                </li>
+                                <li>
+                                  <strong>Professional Network:</strong>{" "}
+                                  Consider brokers with a strong network of
+                                  local real estate professionals, such as
+                                  realtors and solicitors. Their connections
+                                  enhance your overall home-buying experience.
+                                </li>
+                              </ol>
+                              <p>
+                                <a
+                                  href="https://lowratehomeloan.com.au/contact/"
+                                  title=""
+                                />
+                                <a href="https://lowratehomeloan.com.au/contact/">
+                                  <strong>
+                                    Find the Best Home Mortgage Solutions in
+                                    Glen Waverly. Call Us Today!
+                                  </strong>
+                                </a>
+                              </p>
+                            </div>
+                          </div>
+                          <div className="wp-block-kadence-column inner-column-2 kadence-column_ff0f28-50">
+                            <div className="kt-inside-inner-col">
+                              <h5
+                                className="kt-adv-heading_c02e4d-6e wp-block-kadence-advancedheading"
+                                data-kb-block="kb-adv-heading_c02e4d-6e"
+                              >
+                                According to realestate.com.au Glen Waverley
+                                Property Prices:
+                              </h5>
+                              <h2 className="wp-block-heading">
+                                Glen Waverley Property Market Insights
+                              </h2>
+                              <p>
+                                In the previous month, Glen Waverley saw 157
+                                properties available for lease and 223
+                                properties listed for purchase. Median property
+                                prices in the past year have spanned from
+                                $1,628,000 for houses to $891,500 for units. If
+                                you’re considering an investment property, it’s
+                                worth noting that houses in Glen Waverley are
+                                averagely leased at $600 per week, yielding an
+                                annual rental return of 2.1%, while units are
+                                leased at $570 per week, generating a rental
+                                yield of 3.4%.
+                              </p>
+                              <p>
+                                Considering five years’ sales data, Glen
+                                Waverley’s real estate landscape has experienced
+                                a compound growth rate of -0.3% for houses, and
+                                for units, there has been a compound growth rate
+                                of -0.9%.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</>
-
+        </>
       </div>
 
       <Faq />

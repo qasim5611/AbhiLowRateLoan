@@ -6,6 +6,7 @@ import { ReputableLenders } from "../../components/ReputableLenders";
 import { FeatureServicesProvides } from "../../components/FeatureServicesProvides";
 import { Faq } from "../../components/Faq";
 import { ContactForm } from "../../components/ContactForm";
+import { Testimonial } from "../../components/Testimonial";
 
 export default function Page(props) {
   return (
@@ -27,11 +28,13 @@ export default function Page(props) {
                   and practices in relation to the handling and use of personal
                   information.
                 </p>
-                <p>
-                  <strong>
-                    What information do we collect and how do we use it?
-                  </strong>
-                </p>
+                <br />
+
+                <h2 class="wp-block-heading">
+                  What information do we collect and how do we use it?
+                </h2>
+                <br />
+
                 <p>
                   We will ask you for personal information when we assist you
                   with your finance.&nbsp;Personal information may include any
@@ -42,6 +45,8 @@ export default function Page(props) {
                   information to the companies with whom you choose to deal (and
                   their representatives).
                 </p>
+                <br />
+
                 <p>
                   We also use your information to send you requested product
                   information and to enable us to manage your ongoing
@@ -52,35 +57,37 @@ export default function Page(props) {
                 <p>
                   We may occasionally notify you about promotions, new services
                   and special offers, events or articles we think will be of
-                  interest to you. We may send you regular updates by email or
-                  by post. If you would rather not receive this information,
-                  email or write to us.
+                  interest to you. <br />
+                  <br /> We may send you regular updates by email or by post. If
+                  you would rather not receive this information, email or write
+                  to us. We may also use your information internally to help us
+                  improve our services and help resolve any problems.
                 </p>
-                <p>
-                  We may also use your information internally to help us improve
-                  our services and help resolve any problems.
-                </p>
-                <p>
-                  <strong>
-                    What if you don’t provide some information to us?
-                  </strong>
-                </p>
+                <br />
+
+                <h2 class="wp-block-heading">
+                  What if you don’t provide some information to us?
+                </h2>
+
+                <br />
                 <p>
                   If you don’t provide us with full information, we can’t
                   properly advise or assist you with your credit needs.
                 </p>
-                <p>
-                  <strong>How do we hold and protect your information?</strong>
-                </p>
+                <br />
+
+                <h2 class="wp-block-heading">
+                  How do we hold and protect your information?
+                </h2>
+                <br />
+
                 <p>
                   We strive to maintain the reliability, accuracy, completeness,
                   and currency of the personal information we hold and to
                   protect its privacy and security. We keep personal information
                   only for as long as is reasonably necessary for the purpose
                   for which it was collected or to comply with any applicable
-                  legal or ethical reporting or document retention requirements
-                </p>
-                <p>
+                  legal or ethical reporting or document retention requirements.
                   We hold the information we collect from you electronically
                   with secure password access.
                 </p>
@@ -88,11 +95,12 @@ export default function Page(props) {
                   We ensure that your information is safe by ensuring our
                   systems are regularly backed up with password access only.
                 </p>
-                <p>
-                  <strong>
-                    Will we disclose the information we collect to anyone?
-                  </strong>
-                </p>
+                <br />
+                <h2 class="wp-block-heading">
+                  Will we disclose the information we collect to anyone?
+                </h2>
+                <br />
+
                 <p>
                   We do not sell, trade, or rent your personal information to
                   others.
@@ -106,17 +114,21 @@ export default function Page(props) {
                   similar event.&nbsp; However, we will do our best to ensure
                   that they protect your information in the same way that we do.
                 </p>
+                <br />
+
                 <p>
                   We may also provide your information to others if we are
                   required to do so by law or under some unusual other
                   circumstances which the Privacy Act permits.
                 </p>
-                <p>
-                  <strong>
-                    How can you check, update or change the information we are
-                    holding?
-                  </strong>
-                </p>
+                <br />
+
+                <h2 class="wp-block-heading">
+                  How can you check, update or change the information we are
+                  holding?
+                </h2>
+
+                <br />
                 <p>
                   Upon receipt of your written request and enough information to
                   allow us to identify the information, we will disclose to you
@@ -124,6 +136,8 @@ export default function Page(props) {
                   correct, amend or delete any personal information that we
                   agree is inaccurate.
                 </p>
+                <br />
+
                 <p>
                   If you wish to access or correct your personal information
                   please write to Privacy Officer.
@@ -134,25 +148,33 @@ export default function Page(props) {
                   request. We do not charge for providing access to personal
                   information.
                 </p>
-                <p>
-                  <strong>Your consent</strong>
-                </p>
+                <br />
+
+                <h2 class="wp-block-heading">Your consent</h2>
+
+                <br />
                 <p>
                   By asking us to assist with your credit needs, you consent to
                   the collection and use of the information you have provided to
                   us for the purposes described above.
                 </p>
-                <p>
-                  <strong>Tell us what you think</strong>
-                </p>
+                <br />
+
+                <h2 class="wp-block-heading">Tell us what you think</h2>
+                <br />
+
                 <p>
                   We welcome your questions and comments about privacy. If you
                   have any concerns or complaints, please contact our Privacy
                   Officer.
                 </p>
+                <br />
+
                 <h2 className="wp-block-heading">
                   <strong>Complaints</strong>
                 </h2>
+                <br />
+
                 <p>
                   <strong>Internal Dispute Resolution</strong>
                 </p>
@@ -176,21 +198,27 @@ export default function Page(props) {
                   complaint, we will attempt to resolve it promptly.
                 </p>
                 <p>
+                  <br />
+
                   <strong>Tell us what you think</strong>
                 </p>
                 <p>
                   We welcome your questions and comments about privacy. If you
                   have any concerns or complaints, please contact us on 03 706
                   452 04 or email{" "}
-                  <a href="/cdn-cgi/l/email-protection#1e777078715e7271696c7f6a7b7671737b72717f70307d7173307f6b">
+                  {/* <a href="/cdn-cgi/l/email-protection#1e777078715e7271696c7f6a7b7671737b72717f70307d7173307f6b">
                     <span
                       className="__cf_email__"
                       data-cfemail="6900070f062905061e1b081d0c0106040c05060807470a060447081c"
                     >
                       [email&nbsp;protected]
                     </span>
+                  </a> */}
+                  <a href="mailto:info@lowratehomeloan.com.au">
+                    info@lowratehomeloan.com.au
                   </a>
                 </p>
+                <br />
               </div>
             </div>
           </div>

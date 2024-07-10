@@ -5,6 +5,7 @@ import { ReputableLenders } from "../../components/ReputableLenders";
 import { FeatureServicesProvides } from "../../components/FeatureServicesProvides";
 import { Faq } from "../../components/Faq";
 import { ContactForm } from "../../components/ContactForm";
+import { Testimonial } from "../../components/Testimonial";
 
 export default function Page(props) {
   return (

@@ -5,6 +5,7 @@ import { ReputableLenders } from "../../components/ReputableLenders";
 import { FeatureServicesProvides } from "../../components/FeatureServicesProvides";
 import { Faq } from "../../components/Faq";
 import { ContactForm } from "../../components/ContactForm";
+import { Testimonial } from "../../components/Testimonial";
 
 export default function Page(props) {
   return (
@@ -191,303 +192,322 @@ sec and map, Manual */}
       {/* 1250-1345 */}
 
       <div className="setstyle">
-      <>
-  <div className="wp-block-kadence-spacer aligncenter kt-block-spacer-_415c6a-08">
-    <div className="kt-block-spacer kt-block-spacer-halign-center">
-      <hr className="kt-divider" />
-    </div>
-  </div>
-  <div className="wp-block-kadence-rowlayout alignnone">
-    <div
-      id="kt-layout-id_5a621b-81"
-      className="kt-row-layout-inner kt-layout-id_5a621b-81"
-    >
-      <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row kb-theme-content-width">
-        <div className="wp-block-kadence-column inner-column-1 kadence-column_de30c2-e0">
-          <div className="kt-inside-inner-col">
-            <div className="wp-block-kadence-rowlayout alignnone">
-              <div
-                id="kt-layout-id_762e30-55"
-                className="kt-row-layout-inner kt-layout-id_762e30-55"
-              >
-                <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
-                  <div className="wp-block-kadence-column inner-column-1 kadence-column_8843dd-cd">
-                    <div className="kt-inside-inner-col">
-                      <h6
-                        className="kt-adv-heading_7cd518-d6 wp-block-kadence-advancedheading has-theme-palette-1-color has-text-color"
-                        data-kb-block="kb-adv-heading_7cd518-d6"
-                      >
-                        Tips &amp; Advice
-                      </h6>
-                      <h2
-                        className="kt-adv-heading_8fde56-d1 wp-block-kadence-advancedheading"
-                        data-kb-block="kb-adv-heading_8fde56-d1"
-                      >
-                        First-Time Home Buyers looking to buy a house in
-                        Rockbank
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="wp-block-kadence-column inner-column-2 kadence-column_541262-22">
-                    <div className="kt-inside-inner-col" />
-                  </div>
-                </div>
-              </div>
+        <>
+          <div className="wp-block-kadence-spacer aligncenter kt-block-spacer-_415c6a-08">
+            <div className="kt-block-spacer kt-block-spacer-halign-center">
+              <hr className="kt-divider" />
             </div>
-            <div className="wp-block-kadence-rowlayout alignnone">
-              <div
-                id="kt-layout-id_77d94b-1d"
-                className="kt-row-layout-inner kt-layout-id_77d94b-1d"
-              >
-                <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
-                  <div className="wp-block-kadence-column inner-column-1 kadence-column_859025-ae">
-                    <div className="kt-inside-inner-col">
-                      <p>
-                        Embraced by the scenic beauty of Australia, Rockbank
-                        emerges as a dynamic tapestry woven with nature’s charm
-                        and urban delights. This captivating destination invites
-                        exploration, featuring a diverse array of attractions,
-                        thriving neighbourhoods, and promising real estate
-                        avenues that cater to various aspirations.
-                      </p>
-                      <p>
-                        Immerse yourself in the allure of Organ Pipes National
-                        Park, where majestic rock formations and indigenous
-                        flora create a mesmerising natural spectacle. At the
-                        heart of Rockbank lies a vibrant community spirit,
-                        evidenced by its bustling local markets and charming
-                        eateries.&nbsp;
-                      </p>
-                      <p>
-                        The suburb’s seamless connection to Caroline Springs
-                        offers additional shopping, dining, and recreational
-                        options, enhancing its livability. Neighbourhoods within
-                        Rockbank each carry a distinct character. The scenic
-                        beauty and modernity of Thornhill Park attract families
-                        seeking an elevated lifestyle, while nearby Bridgefield
-                        offers spacious homes and an inviting atmosphere.&nbsp;
-                      </p>
-                      <p>
-                        In the realm of real estate, Rockbank holds a treasure
-                        trove of opportunities. From picturesque family homes to
-                        modern townhouses, the spectrum of properties caters to
-                        diverse preferences. This creates a canvas where
-                        potential homebuyers and investors can find their unique
-                        place amidst Rockbank’s captivating landscape.
-                      </p>
-                      <p>
-                        <a
-                          href="https://lowratehomeloan.com.au/contact/"
-                          title=""
-                        >
-                          Book an appointment with our expert Mortgage Brokers
-                          today for your home loan.
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                  <div className="wp-block-kadence-column inner-column-2 kadence-column_1fc698-6d">
-                    <div className="kt-inside-inner-col">
-                      <h5
-                        className="kt-adv-heading_a4772d-93 wp-block-kadence-advancedheading"
-                        data-kb-block="kb-adv-heading_a4772d-93"
+          </div>
+          <div className="wp-block-kadence-rowlayout alignnone">
+            <div
+              id="kt-layout-id_5a621b-81"
+              className="kt-row-layout-inner kt-layout-id_5a621b-81"
+            >
+              <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row kb-theme-content-width">
+                <div className="wp-block-kadence-column inner-column-1 kadence-column_de30c2-e0">
+                  <div className="kt-inside-inner-col">
+                    <div className="wp-block-kadence-rowlayout alignnone">
+                      <div
+                        id="kt-layout-id_762e30-55"
+                        className="kt-row-layout-inner kt-layout-id_762e30-55"
                       >
-                        Best Suburbs in Rockbank for First Home Buyers and
-                        Investors
-                      </h5>
-                      <ul>
-                        <li>Thornhill Park</li>
-                        <li>Truganina</li>
-                        <li>Plumpton</li>
-                        <li>Deanside</li>
-                        <li>Ravenhall</li>
-                        <li>Kurunjang</li>
-                        <li>Aintree</li>
-                        <li>Melton</li>
-                        <li>Bridgefield</li>
-                        <li>Bonnie Brook</li>
-                      </ul>
+                        <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
+                          <div className="wp-block-kadence-column inner-column-1 kadence-column_8843dd-cd">
+                            <div className="kt-inside-inner-col">
+                              <h6
+                                className="kt-adv-heading_7cd518-d6 wp-block-kadence-advancedheading has-theme-palette-1-color has-text-color"
+                                data-kb-block="kb-adv-heading_7cd518-d6"
+                              >
+                                Tips &amp; Advice
+                              </h6>
+                              <h2
+                                className="kt-adv-heading_8fde56-d1 wp-block-kadence-advancedheading"
+                                data-kb-block="kb-adv-heading_8fde56-d1"
+                              >
+                                First-Time Home Buyers looking to buy a house in
+                                Rockbank
+                              </h2>
+                            </div>
+                          </div>
+                          <div className="wp-block-kadence-column inner-column-2 kadence-column_541262-22">
+                            <div className="kt-inside-inner-col" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="wp-block-kadence-rowlayout alignnone">
+                      <div
+                        id="kt-layout-id_77d94b-1d"
+                        className="kt-row-layout-inner kt-layout-id_77d94b-1d"
+                      >
+                        <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
+                          <div className="wp-block-kadence-column inner-column-1 kadence-column_859025-ae">
+                            <div className="kt-inside-inner-col">
+                              <p>
+                                Embraced by the scenic beauty of Australia,
+                                Rockbank emerges as a dynamic tapestry woven
+                                with nature’s charm and urban delights. This
+                                captivating destination invites exploration,
+                                featuring a diverse array of attractions,
+                                thriving neighbourhoods, and promising real
+                                estate avenues that cater to various
+                                aspirations.
+                              </p>
+                              <p>
+                                Immerse yourself in the allure of Organ Pipes
+                                National Park, where majestic rock formations
+                                and indigenous flora create a mesmerising
+                                natural spectacle. At the heart of Rockbank lies
+                                a vibrant community spirit, evidenced by its
+                                bustling local markets and charming
+                                eateries.&nbsp;
+                              </p>
+                              <p>
+                                The suburb’s seamless connection to Caroline
+                                Springs offers additional shopping, dining, and
+                                recreational options, enhancing its livability.
+                                Neighbourhoods within Rockbank each carry a
+                                distinct character. The scenic beauty and
+                                modernity of Thornhill Park attract families
+                                seeking an elevated lifestyle, while nearby
+                                Bridgefield offers spacious homes and an
+                                inviting atmosphere.&nbsp;
+                              </p>
+                              <p>
+                                In the realm of real estate, Rockbank holds a
+                                treasure trove of opportunities. From
+                                picturesque family homes to modern townhouses,
+                                the spectrum of properties caters to diverse
+                                preferences. This creates a canvas where
+                                potential homebuyers and investors can find
+                                their unique place amidst Rockbank’s captivating
+                                landscape.
+                              </p>
+                              <p>
+                                <a
+                                  href="https://lowratehomeloan.com.au/contact/"
+                                  title=""
+                                >
+                                  Book an appointment with our expert Mortgage
+                                  Brokers today for your home loan.
+                                </a>
+                              </p>
+                            </div>
+                          </div>
+                          <div className="wp-block-kadence-column inner-column-2 kadence-column_1fc698-6d">
+                            <div className="kt-inside-inner-col">
+                              <h5
+                                className="kt-adv-heading_a4772d-93 wp-block-kadence-advancedheading"
+                                data-kb-block="kb-adv-heading_a4772d-93"
+                              >
+                                Best Suburbs in Rockbank for First Home Buyers
+                                and Investors
+                              </h5>
+                              <ul>
+                                <li>Thornhill Park</li>
+                                <li>Truganina</li>
+                                <li>Plumpton</li>
+                                <li>Deanside</li>
+                                <li>Ravenhall</li>
+                                <li>Kurunjang</li>
+                                <li>Aintree</li>
+                                <li>Melton</li>
+                                <li>Bridgefield</li>
+                                <li>Bonnie Brook</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div className="wp-block-kadence-spacer aligncenter kt-block-spacer-_00bbb5-dc">
-    <div className="kt-block-spacer kt-block-spacer-halign-center">
-      <hr className="kt-divider" />
-    </div>
-  </div>
-  <div className="wp-block-kadence-rowlayout alignnone">
-    <div
-      id="kt-layout-id_350612-cd"
-      className="kt-row-layout-inner kt-layout-id_350612-cd"
-    >
-      <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row kb-theme-content-width">
-        <div className="wp-block-kadence-column inner-column-1 kadence-column_c723a7-5d">
-          <div className="kt-inside-inner-col">
-            <div className="wp-block-kadence-rowlayout alignnone">
-              <div
-                id="kt-layout-id_281e13-9f"
-                className="kt-row-layout-inner kt-layout-id_281e13-9f"
-              >
-                <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
-                  <div className="wp-block-kadence-column inner-column-1 kadence-column_7b3a08-52">
-                    <div className="kt-inside-inner-col">
-                      <h6
-                        className="kt-adv-heading_dfb7ea-7c wp-block-kadence-advancedheading has-theme-palette-1-color has-text-color"
-                        data-kb-block="kb-adv-heading_dfb7ea-7c"
-                      >
-                        FAQ
-                      </h6>
-                      <h2
-                        className="kt-adv-heading_4895c4-1e wp-block-kadence-advancedheading"
-                        data-kb-block="kb-adv-heading_4895c4-1e"
-                      >
-                        Tips for Discovering Top Mortgage Brokers in Rockbank
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="wp-block-kadence-column inner-column-2 kadence-column_5bec05-e7">
-                    <div className="kt-inside-inner-col" />
-                  </div>
-                </div>
-              </div>
+          <div className="wp-block-kadence-spacer aligncenter kt-block-spacer-_00bbb5-dc">
+            <div className="kt-block-spacer kt-block-spacer-halign-center">
+              <hr className="kt-divider" />
             </div>
-            <div className="wp-block-kadence-rowlayout alignnone">
-              <div
-                id="kt-layout-id_30b118-9e"
-                className="kt-row-layout-inner kt-layout-id_30b118-9e"
-              >
-                <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
-                  <div className="wp-block-kadence-column inner-column-1 kadence-column_df85cb-a2">
-                    <div className="kt-inside-inner-col">
-                      <p>
-                        Here are 10 tailored tips for discovering top mortgage
-                        brokers in Rockbank, Australia, while considering your
-                        expertise in mortgage dealer services:
-                      </p>
-                      <ol>
-                        <li>
-                          <strong>Specialisation Match:</strong> Seek out
-                          mortgage brokers who align with your expertise in
-                          mortgage dealer services. They should have a deep
-                          understanding of the local market and the unique
-                          dynamics of the Mornington Peninsula.
-                        </li>
-                        <li>
-                          <strong>Client References:</strong> Request references
-                          from potential mortgage brokers to learn about their
-                          past collaborations with mortgage dealers. These
-                          references can shed light on their ability to navigate
-                          complex deals successfully.
-                        </li>
-                        <li>
-                          <strong>Industry Insights:</strong> Look for mortgage
-                          brokers who can provide valuable industry insights and
-                          trends specific to the Mornington Peninsula. A broker
-                          who is knowledgeable about market fluctuations can be
-                          a valuable partner.
-                        </li>
-                        <li>
-                          <strong>Networking Events:</strong> Attend local
-                          mortgage and real estate networking events in the
-                          Mornington Peninsula. These gatherings offer
-                          opportunities to connect with reputable mortgage
-                          brokers who understand the intricacies of mortgage
-                          dealer services.
-                        </li>
-                        <li>
-                          <strong>Digital Presence Evaluation:</strong> Assess
-                          the online presence of prospective mortgage brokers. A
-                          strong online presence, including informative blog
-                          posts or webinars, can showcase their commitment to
-                          educating clients and mortgage dealers.
-                        </li>
-                        <li>
-                          <strong>Customised Solutions:</strong> Opt for
-                          mortgage brokers who offer tailored solutions that
-                          complement your mortgage dealer services. They should
-                          be capable of matching your clients with suitable
-                          lenders and mortgage options.
-                        </li>
-                        <li>
-                          <strong>Client Success Stories:</strong> Inquire about
-                          the success stories of the mortgage brokers’ clients.
-                          A broker who has consistently secured favourable deals
-                          for their clients showcases their ability to deliver
-                          results.
-                        </li>
-                        <li>
-                          <strong>Collaboration and Communication:</strong>{" "}
-                          Gauge the brokers’ willingness to collaborate with
-                          mortgage dealers. Effective communication and
-                          collaboration are key to a seamless partnership that
-                          benefits all parties.
-                        </li>
-                        <li>
-                          <strong>Lender Relationships:</strong> Evaluate the
-                          mortgage brokers’ relationships with various lenders.
-                          Brokers with an extensive network of lender
-                          connections can offer your clients a broader range of
-                          options.
-                        </li>
-                        <li>
-                          <strong>Local Presence:</strong> Prioritise mortgage
-                          brokers who have a local presence in the Mornington
-                          Peninsula. Their physical presence can facilitate
-                          in-person interactions and foster stronger
-                          relationships between mortgage dealers and brokers.
-                        </li>
-                      </ol>
-                      <p>
-                        <a
-                          href="https://lowratehomeloan.com.au/contact/"
-                          title=""
-                        >
-                          Book an appointment with our expert Mortgage Brokers
-                          today for your home loan.
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                  <div className="wp-block-kadence-column inner-column-2 kadence-column_ff0f28-50">
-                    <div className="kt-inside-inner-col">
-                      <h5
-                        className="kt-adv-heading_d3437e-79 wp-block-kadence-advancedheading"
-                        data-kb-block="kb-adv-heading_d3437e-79"
+          </div>
+          <div className="wp-block-kadence-rowlayout alignnone">
+            <div
+              id="kt-layout-id_350612-cd"
+              className="kt-row-layout-inner kt-layout-id_350612-cd"
+            >
+              <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row kb-theme-content-width">
+                <div className="wp-block-kadence-column inner-column-1 kadence-column_c723a7-5d">
+                  <div className="kt-inside-inner-col">
+                    <div className="wp-block-kadence-rowlayout alignnone">
+                      <div
+                        id="kt-layout-id_281e13-9f"
+                        className="kt-row-layout-inner kt-layout-id_281e13-9f"
                       >
-                        According to realestate.com.au, Rockbank Property
-                        Prices:
-                      </h5>
-                      <h2 className="wp-block-heading">
-                        Rockbank’s Property Market Insights
-                      </h2>
-                      <p>
-                        In the past month, there were 38 homes to rent and 71
-                        homes for sale in Rockbank. The average price for houses
-                        sold last year was about $622,000. If you’re thinking
-                        about investing, renting out houses in Rockbank could
-                        bring in around $430 per week, with a yearly rental
-                        return of 3.6%. Looking at the past five years of sales,
-                        the value of houses in Rockbank has grown by about 0.3%.
-                      </p>
+                        <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
+                          <div className="wp-block-kadence-column inner-column-1 kadence-column_7b3a08-52">
+                            <div className="kt-inside-inner-col">
+                              <h6
+                                className="kt-adv-heading_dfb7ea-7c wp-block-kadence-advancedheading has-theme-palette-1-color has-text-color"
+                                data-kb-block="kb-adv-heading_dfb7ea-7c"
+                              >
+                                FAQ
+                              </h6>
+                              <h2
+                                className="kt-adv-heading_4895c4-1e wp-block-kadence-advancedheading"
+                                data-kb-block="kb-adv-heading_4895c4-1e"
+                              >
+                                Tips for Discovering Top Mortgage Brokers in
+                                Rockbank
+                              </h2>
+                            </div>
+                          </div>
+                          <div className="wp-block-kadence-column inner-column-2 kadence-column_5bec05-e7">
+                            <div className="kt-inside-inner-col" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="wp-block-kadence-rowlayout alignnone">
+                      <div
+                        id="kt-layout-id_30b118-9e"
+                        className="kt-row-layout-inner kt-layout-id_30b118-9e"
+                      >
+                        <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
+                          <div className="wp-block-kadence-column inner-column-1 kadence-column_df85cb-a2">
+                            <div className="kt-inside-inner-col">
+                              <p>
+                                Here are 10 tailored tips for discovering top
+                                mortgage brokers in Rockbank, Australia, while
+                                considering your expertise in mortgage dealer
+                                services:
+                              </p>
+                              <ol>
+                                <li>
+                                  <strong>Specialisation Match:</strong> Seek
+                                  out mortgage brokers who align with your
+                                  expertise in mortgage dealer services. They
+                                  should have a deep understanding of the local
+                                  market and the unique dynamics of the
+                                  Mornington Peninsula.
+                                </li>
+                                <li>
+                                  <strong>Client References:</strong> Request
+                                  references from potential mortgage brokers to
+                                  learn about their past collaborations with
+                                  mortgage dealers. These references can shed
+                                  light on their ability to navigate complex
+                                  deals successfully.
+                                </li>
+                                <li>
+                                  <strong>Industry Insights:</strong> Look for
+                                  mortgage brokers who can provide valuable
+                                  industry insights and trends specific to the
+                                  Mornington Peninsula. A broker who is
+                                  knowledgeable about market fluctuations can be
+                                  a valuable partner.
+                                </li>
+                                <li>
+                                  <strong>Networking Events:</strong> Attend
+                                  local mortgage and real estate networking
+                                  events in the Mornington Peninsula. These
+                                  gatherings offer opportunities to connect with
+                                  reputable mortgage brokers who understand the
+                                  intricacies of mortgage dealer services.
+                                </li>
+                                <li>
+                                  <strong>Digital Presence Evaluation:</strong>{" "}
+                                  Assess the online presence of prospective
+                                  mortgage brokers. A strong online presence,
+                                  including informative blog posts or webinars,
+                                  can showcase their commitment to educating
+                                  clients and mortgage dealers.
+                                </li>
+                                <li>
+                                  <strong>Customised Solutions:</strong> Opt for
+                                  mortgage brokers who offer tailored solutions
+                                  that complement your mortgage dealer services.
+                                  They should be capable of matching your
+                                  clients with suitable lenders and mortgage
+                                  options.
+                                </li>
+                                <li>
+                                  <strong>Client Success Stories:</strong>{" "}
+                                  Inquire about the success stories of the
+                                  mortgage brokers’ clients. A broker who has
+                                  consistently secured favourable deals for
+                                  their clients showcases their ability to
+                                  deliver results.
+                                </li>
+                                <li>
+                                  <strong>
+                                    Collaboration and Communication:
+                                  </strong>{" "}
+                                  Gauge the brokers’ willingness to collaborate
+                                  with mortgage dealers. Effective communication
+                                  and collaboration are key to a seamless
+                                  partnership that benefits all parties.
+                                </li>
+                                <li>
+                                  <strong>Lender Relationships:</strong>{" "}
+                                  Evaluate the mortgage brokers’ relationships
+                                  with various lenders. Brokers with an
+                                  extensive network of lender connections can
+                                  offer your clients a broader range of options.
+                                </li>
+                                <li>
+                                  <strong>Local Presence:</strong> Prioritise
+                                  mortgage brokers who have a local presence in
+                                  the Mornington Peninsula. Their physical
+                                  presence can facilitate in-person interactions
+                                  and foster stronger relationships between
+                                  mortgage dealers and brokers.
+                                </li>
+                              </ol>
+                              <p>
+                                <a
+                                  href="https://lowratehomeloan.com.au/contact/"
+                                  title=""
+                                >
+                                  Book an appointment with our expert Mortgage
+                                  Brokers today for your home loan.
+                                </a>
+                              </p>
+                            </div>
+                          </div>
+                          <div className="wp-block-kadence-column inner-column-2 kadence-column_ff0f28-50">
+                            <div className="kt-inside-inner-col">
+                              <h5
+                                className="kt-adv-heading_d3437e-79 wp-block-kadence-advancedheading"
+                                data-kb-block="kb-adv-heading_d3437e-79"
+                              >
+                                According to realestate.com.au, Rockbank
+                                Property Prices:
+                              </h5>
+                              <h2 className="wp-block-heading">
+                                Rockbank’s Property Market Insights
+                              </h2>
+                              <p>
+                                In the past month, there were 38 homes to rent
+                                and 71 homes for sale in Rockbank. The average
+                                price for houses sold last year was about
+                                $622,000. If you’re thinking about investing,
+                                renting out houses in Rockbank could bring in
+                                around $430 per week, with a yearly rental
+                                return of 3.6%. Looking at the past five years
+                                of sales, the value of houses in Rockbank has
+                                grown by about 0.3%.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</>
-
+        </>
       </div>
 
       <Faq />

@@ -4,6 +4,7 @@ import Header from "./../../components/Header";
 import React from "react";
 import { Hardwork } from "../../components/Hardwork";
 import { ContactForm } from "../../components/ContactForm";
+import { Testimonial } from "../../components/Testimonial";
 
 export default function AboutUs(props) {
   return (

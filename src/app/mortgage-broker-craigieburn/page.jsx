@@ -5,6 +5,7 @@ import { ReputableLenders } from "../../components/ReputableLenders";
 import { FeatureServicesProvides } from "../../components/FeatureServicesProvides";
 import { Faq } from "../../components/Faq";
 import { ContactForm } from "../../components/ContactForm";
+import { Testimonial } from "../../components/Testimonial";
 
 export default function Page(props) {
   return (
@@ -191,309 +192,323 @@ sec and map, Manual */}
       {/* 1250-1345 */}
 
       <div className="setstyle">
-      <>
-  <div className="wp-block-kadence-spacer aligncenter kt-block-spacer-_415c6a-08">
-    <div className="kt-block-spacer kt-block-spacer-halign-center">
-      <hr className="kt-divider" />
-    </div>
-  </div>
-  <div className="wp-block-kadence-rowlayout alignnone">
-    <div
-      id="kt-layout-id_5a621b-81"
-      className="kt-row-layout-inner kt-layout-id_5a621b-81"
-    >
-      <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row kb-theme-content-width">
-        <div className="wp-block-kadence-column inner-column-1 kadence-column_de30c2-e0">
-          <div className="kt-inside-inner-col">
-            <div className="wp-block-kadence-rowlayout alignnone">
-              <div
-                id="kt-layout-id_762e30-55"
-                className="kt-row-layout-inner kt-layout-id_762e30-55"
-              >
-                <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
-                  <div className="wp-block-kadence-column inner-column-1 kadence-column_8843dd-cd">
-                    <div className="kt-inside-inner-col">
-                      <h6
-                        className="kt-adv-heading_7cd518-d6 wp-block-kadence-advancedheading has-theme-palette-1-color has-text-color"
-                        data-kb-block="kb-adv-heading_7cd518-d6"
-                      >
-                        Tips &amp; Advice
-                      </h6>
-                      <h2
-                        className="kt-adv-heading_8fde56-d1 wp-block-kadence-advancedheading"
-                        data-kb-block="kb-adv-heading_8fde56-d1"
-                      >
-                        First-Time Home Buyers looking to buy a house in
-                        Craigieburn
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="wp-block-kadence-column inner-column-2 kadence-column_541262-22">
-                    <div className="kt-inside-inner-col" />
-                  </div>
-                </div>
-              </div>
+        <>
+          <div className="wp-block-kadence-spacer aligncenter kt-block-spacer-_415c6a-08">
+            <div className="kt-block-spacer kt-block-spacer-halign-center">
+              <hr className="kt-divider" />
             </div>
-            <div className="wp-block-kadence-rowlayout alignnone">
-              <div
-                id="kt-layout-id_77d94b-1d"
-                className="kt-row-layout-inner kt-layout-id_77d94b-1d"
-              >
-                <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
-                  <div className="wp-block-kadence-column inner-column-1 kadence-column_859025-ae">
-                    <div className="kt-inside-inner-col">
-                      <p>
-                        Located in the picturesque landscape of Victoria,
-                        Australia, Craigieburn emerges as a captivating
-                        destination for real estate enthusiasts seeking a
-                        harmonious blend of urban convenience and natural
-                        splendour. Situated approximately 26 kilometres north of
-                        Melbourne’s bustling city centre, this suburb offers a
-                        tranquil and family-friendly living experience while
-                        maintaining close proximity to essential amenities and
-                        transport links.
-                      </p>
-                      <p>
-                        Boasting a diverse real estate market, Craigieburn
-                        presents an array of housing options to cater to
-                        different preferences and lifestyles. The suburb
-                        showcases an eclectic mix of architectural styles,
-                        ranging from modern contemporary designs to more
-                        traditional structures, creating a visually appealing
-                        streetscape.&nbsp;
-                      </p>
-                      <p>
-                        One of Craigieburn’s notable attractions is its seamless
-                        integration of natural beauty and recreational spaces
-                        into the community’s fabric. The suburb is adorned with
-                        numerous parks, green belts, and reserves, providing
-                        residents with ample opportunities for outdoor
-                        activities, leisurely strolls, and picnics. The
-                        Craigieburn Central Park, a sprawling expanse of lush
-                        greenery, is a testament to the suburb’s commitment to
-                        preserving green spaces for residents to unwind and
-                        connect with nature.
-                      </p>
-                      <p>
-                        Families are drawn to Craigieburn due to its
-                        well-regarded educational institutions, ensuring access
-                        to quality education for children of all ages.
-                        Additionally, the suburb offers a vibrant shopping and
-                        dining scene, with local markets, boutiques, and
-                        restaurants contributing to a lively social atmosphere.
-                      </p>
-                      <p>
-                        <a href="https://lowratehomeloan.com.au/contact/">
-                          Book an Appointment With our Expert Mortgage Brokers
-                          Today!
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                  <div className="wp-block-kadence-column inner-column-2 kadence-column_1fc698-6d">
-                    <div className="kt-inside-inner-col">
-                      <h5
-                        className="kt-adv-heading_a4772d-93 wp-block-kadence-advancedheading"
-                        data-kb-block="kb-adv-heading_a4772d-93"
+          </div>
+          <div className="wp-block-kadence-rowlayout alignnone">
+            <div
+              id="kt-layout-id_5a621b-81"
+              className="kt-row-layout-inner kt-layout-id_5a621b-81"
+            >
+              <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row kb-theme-content-width">
+                <div className="wp-block-kadence-column inner-column-1 kadence-column_de30c2-e0">
+                  <div className="kt-inside-inner-col">
+                    <div className="wp-block-kadence-rowlayout alignnone">
+                      <div
+                        id="kt-layout-id_762e30-55"
+                        className="kt-row-layout-inner kt-layout-id_762e30-55"
                       >
-                        Best Suburbs in Craigieburn for Home Buyers and
-                        Investors
-                      </h5>
-                      <ul>
-                        <li>Roxburgh Park</li>
-                        <li>Yuroke</li>
-                        <li>Somerton</li>
-                        <li>Epping</li>
-                        <li>Donnybrook</li>
-                        <li>Greenvale</li>
-                        <li>Wollert</li>
-                        <li>Coolaroo</li>
-                        <li>Craigieburn Central</li>
-                        <li>Sapphire Waters</li>
-                      </ul>
+                        <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
+                          <div className="wp-block-kadence-column inner-column-1 kadence-column_8843dd-cd">
+                            <div className="kt-inside-inner-col">
+                              <h6
+                                className="kt-adv-heading_7cd518-d6 wp-block-kadence-advancedheading has-theme-palette-1-color has-text-color"
+                                data-kb-block="kb-adv-heading_7cd518-d6"
+                              >
+                                Tips &amp; Advice
+                              </h6>
+                              <h2
+                                className="kt-adv-heading_8fde56-d1 wp-block-kadence-advancedheading"
+                                data-kb-block="kb-adv-heading_8fde56-d1"
+                              >
+                                First-Time Home Buyers looking to buy a house in
+                                Craigieburn
+                              </h2>
+                            </div>
+                          </div>
+                          <div className="wp-block-kadence-column inner-column-2 kadence-column_541262-22">
+                            <div className="kt-inside-inner-col" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="wp-block-kadence-rowlayout alignnone">
+                      <div
+                        id="kt-layout-id_77d94b-1d"
+                        className="kt-row-layout-inner kt-layout-id_77d94b-1d"
+                      >
+                        <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
+                          <div className="wp-block-kadence-column inner-column-1 kadence-column_859025-ae">
+                            <div className="kt-inside-inner-col">
+                              <p>
+                                Located in the picturesque landscape of
+                                Victoria, Australia, Craigieburn emerges as a
+                                captivating destination for real estate
+                                enthusiasts seeking a harmonious blend of urban
+                                convenience and natural splendour. Situated
+                                approximately 26 kilometres north of Melbourne’s
+                                bustling city centre, this suburb offers a
+                                tranquil and family-friendly living experience
+                                while maintaining close proximity to essential
+                                amenities and transport links.
+                              </p>
+                              <p>
+                                Boasting a diverse real estate market,
+                                Craigieburn presents an array of housing options
+                                to cater to different preferences and
+                                lifestyles. The suburb showcases an eclectic mix
+                                of architectural styles, ranging from modern
+                                contemporary designs to more traditional
+                                structures, creating a visually appealing
+                                streetscape.&nbsp;
+                              </p>
+                              <p>
+                                One of Craigieburn’s notable attractions is its
+                                seamless integration of natural beauty and
+                                recreational spaces into the community’s fabric.
+                                The suburb is adorned with numerous parks, green
+                                belts, and reserves, providing residents with
+                                ample opportunities for outdoor activities,
+                                leisurely strolls, and picnics. The Craigieburn
+                                Central Park, a sprawling expanse of lush
+                                greenery, is a testament to the suburb’s
+                                commitment to preserving green spaces for
+                                residents to unwind and connect with nature.
+                              </p>
+                              <p>
+                                Families are drawn to Craigieburn due to its
+                                well-regarded educational institutions, ensuring
+                                access to quality education for children of all
+                                ages. Additionally, the suburb offers a vibrant
+                                shopping and dining scene, with local markets,
+                                boutiques, and restaurants contributing to a
+                                lively social atmosphere.
+                              </p>
+                              <p>
+                                <a href="https://lowratehomeloan.com.au/contact/">
+                                  Book an Appointment With our Expert Mortgage
+                                  Brokers Today!
+                                </a>
+                              </p>
+                            </div>
+                          </div>
+                          <div className="wp-block-kadence-column inner-column-2 kadence-column_1fc698-6d">
+                            <div className="kt-inside-inner-col">
+                              <h5
+                                className="kt-adv-heading_a4772d-93 wp-block-kadence-advancedheading"
+                                data-kb-block="kb-adv-heading_a4772d-93"
+                              >
+                                Best Suburbs in Craigieburn for Home Buyers and
+                                Investors
+                              </h5>
+                              <ul>
+                                <li>Roxburgh Park</li>
+                                <li>Yuroke</li>
+                                <li>Somerton</li>
+                                <li>Epping</li>
+                                <li>Donnybrook</li>
+                                <li>Greenvale</li>
+                                <li>Wollert</li>
+                                <li>Coolaroo</li>
+                                <li>Craigieburn Central</li>
+                                <li>Sapphire Waters</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div className="wp-block-kadence-spacer aligncenter kt-block-spacer-_00bbb5-dc">
-    <div className="kt-block-spacer kt-block-spacer-halign-center">
-      <hr className="kt-divider" />
-    </div>
-  </div>
-  <div className="wp-block-kadence-rowlayout alignnone">
-    <div
-      id="kt-layout-id_350612-cd"
-      className="kt-row-layout-inner kt-layout-id_350612-cd"
-    >
-      <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row kb-theme-content-width">
-        <div className="wp-block-kadence-column inner-column-1 kadence-column_c723a7-5d">
-          <div className="kt-inside-inner-col">
-            <div className="wp-block-kadence-rowlayout alignnone">
-              <div
-                id="kt-layout-id_281e13-9f"
-                className="kt-row-layout-inner kt-layout-id_281e13-9f"
-              >
-                <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
-                  <div className="wp-block-kadence-column inner-column-1 kadence-column_7b3a08-52">
-                    <div className="kt-inside-inner-col">
-                      <h6
-                        className="kt-adv-heading_dfb7ea-7c wp-block-kadence-advancedheading has-theme-palette-1-color has-text-color"
-                        data-kb-block="kb-adv-heading_dfb7ea-7c"
-                      >
-                        FAQ
-                      </h6>
-                      <h2
-                        className="kt-adv-heading_4895c4-1e wp-block-kadence-advancedheading"
-                        data-kb-block="kb-adv-heading_4895c4-1e"
-                      >
-                        Tips for Discovering Top Mortgage Brokers in Craigieburn
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="wp-block-kadence-column inner-column-2 kadence-column_5bec05-e7">
-                    <div className="kt-inside-inner-col" />
-                  </div>
-                </div>
-              </div>
+          <div className="wp-block-kadence-spacer aligncenter kt-block-spacer-_00bbb5-dc">
+            <div className="kt-block-spacer kt-block-spacer-halign-center">
+              <hr className="kt-divider" />
             </div>
-            <div className="wp-block-kadence-rowlayout alignnone">
-              <div
-                id="kt-layout-id_30b118-9e"
-                className="kt-row-layout-inner kt-layout-id_30b118-9e"
-              >
-                <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
-                  <div className="wp-block-kadence-column inner-column-1 kadence-column_df85cb-a2">
-                    <div className="kt-inside-inner-col">
-                      <p>
-                        Our curated list of essential tips will help you
-                        discover top-notch professionals who understand the
-                        local real estate landscape inside out. Here are some of
-                        the tips to follow:
-                      </p>
-                      <ol>
-                        <li>
-                          <strong>Local Expertise:</strong> Prioritise brokers
-                          that are well-versed in the local real estate market.
-                          Their familiarity with the area’s trends and
-                          intricacies ensures tailored advice.
-                        </li>
-                        <li>
-                          <strong>Credibility and Reputation:</strong> Seek
-                          brokers with a proven track record and positive
-                          reputation. Client testimonials and referrals
-                          highlight their reliability.
-                        </li>
-                        <li>
-                          <strong>Professional Credentials: </strong>Opt for
-                          brokers holding industry accreditations or
-                          memberships. These credentials signify adherence to
-                          high standards of professionalism.
-                        </li>
-                        <li>
-                          <strong>Lender Relationships:</strong> Select brokers
-                          with a robust network of lenders. This connection
-                          provides you access to a diverse range of loan options
-                          and competitive rates.
-                        </li>
-                        <li>
-                          <strong>Personalised Approach:</strong> Look for
-                          brokers who take the time to understand your financial
-                          goals and unique circumstances. Their tailored
-                          approach ensures suitable solutions.
-                        </li>
-                        <li>
-                          <strong>Clear Communication:</strong> Prioritise
-                          brokers who communicate transparently and
-                          consistently. Effective communication streamlines the
-                          mortgage process and minimises confusion.
-                        </li>
-                        <li>
-                          <strong>Fee Transparency:</strong> Ensure brokers
-                          provide a clear breakdown of their fees and charges.
-                          Transparent fee structures help you make well-informed
-                          decisions.
-                        </li>
-                        <li>
-                          <strong>Market Insights: </strong>Choose brokers with
-                          up-to-date knowledge of Burwood’s real estate market.
-                          Their insights guide you in navigating fluctuating
-                          property values and investment potential.
-                        </li>
-                        <li>
-                          <strong>Accessibility and Responsiveness:</strong> Opt
-                          for brokers who are readily accessible and responsive.
-                          Prompt communication ensures a smooth mortgage
-                          application and approval process.
-                        </li>
-                        <li>
-                          <strong>Professional Network:</strong> Consider
-                          brokers with a strong network of local real estate
-                          professionals, such as realtors and solicitors. Their
-                          connections enhance your overall home-buying
-                          experience.
-                        </li>
-                      </ol>
-                      <p>
-                        <a href="https://lowratehomeloan.com.au/contact/">
-                          <strong>
-                            Find the Best Home Mortgage Solutions in
-                            Craigieburn. Call Us Today!
-                          </strong>
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                  <div className="wp-block-kadence-column inner-column-2 kadence-column_ff0f28-50">
-                    <div className="kt-inside-inner-col">
-                      <h5
-                        className="kt-adv-heading_87827e-2e wp-block-kadence-advancedheading"
-                        data-kb-block="kb-adv-heading_87827e-2e"
+          </div>
+          <div className="wp-block-kadence-rowlayout alignnone">
+            <div
+              id="kt-layout-id_350612-cd"
+              className="kt-row-layout-inner kt-layout-id_350612-cd"
+            >
+              <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row kb-theme-content-width">
+                <div className="wp-block-kadence-column inner-column-1 kadence-column_c723a7-5d">
+                  <div className="kt-inside-inner-col">
+                    <div className="wp-block-kadence-rowlayout alignnone">
+                      <div
+                        id="kt-layout-id_281e13-9f"
+                        className="kt-row-layout-inner kt-layout-id_281e13-9f"
                       >
-                        <strong>
-                          According to realestate.com.au, Craigieburn Property
-                          Prices:
-                        </strong>
-                      </h5>
-                      <h2 className="wp-block-heading">
-                        Craigieburn Property Market Insights
-                      </h2>
-                      <p>
-                        In the previous month, there were 183 properties ready
-                        for leasing, and 306 properties were available for
-                        purchase in Craigieburn. The median property prices have
-                        displayed a spectrum over the past year, spanning from
-                        $630,000 for houses to $413,500 for units. For
-                        prospective investors directing attention to the housing
-                        market, Craigieburn presents houses for rent at a rate
-                        of $440 per week, contributing to an annual rental yield
-                        of 3.7%. Alternatively, units are rented out at $370 per
-                        week, showcasing a rental yield of 4.7%.
-                      </p>
-                      <p>
-                        Drawing on sales data spanning five years, the real
-                        estate landscape in Craigieburn has exhibited a compound
-                        growth rate of -3.1% for houses, while units have
-                        experienced a more positive trajectory with a growth
-                        rate of 2.1%.
-                      </p>
+                        <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
+                          <div className="wp-block-kadence-column inner-column-1 kadence-column_7b3a08-52">
+                            <div className="kt-inside-inner-col">
+                              <h6
+                                className="kt-adv-heading_dfb7ea-7c wp-block-kadence-advancedheading has-theme-palette-1-color has-text-color"
+                                data-kb-block="kb-adv-heading_dfb7ea-7c"
+                              >
+                                FAQ
+                              </h6>
+                              <h2
+                                className="kt-adv-heading_4895c4-1e wp-block-kadence-advancedheading"
+                                data-kb-block="kb-adv-heading_4895c4-1e"
+                              >
+                                Tips for Discovering Top Mortgage Brokers in
+                                Craigieburn
+                              </h2>
+                            </div>
+                          </div>
+                          <div className="wp-block-kadence-column inner-column-2 kadence-column_5bec05-e7">
+                            <div className="kt-inside-inner-col" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="wp-block-kadence-rowlayout alignnone">
+                      <div
+                        id="kt-layout-id_30b118-9e"
+                        className="kt-row-layout-inner kt-layout-id_30b118-9e"
+                      >
+                        <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
+                          <div className="wp-block-kadence-column inner-column-1 kadence-column_df85cb-a2">
+                            <div className="kt-inside-inner-col">
+                              <p>
+                                Our curated list of essential tips will help you
+                                discover top-notch professionals who understand
+                                the local real estate landscape inside out. Here
+                                are some of the tips to follow:
+                              </p>
+                              <ol>
+                                <li>
+                                  <strong>Local Expertise:</strong> Prioritise
+                                  brokers that are well-versed in the local real
+                                  estate market. Their familiarity with the
+                                  area’s trends and intricacies ensures tailored
+                                  advice.
+                                </li>
+                                <li>
+                                  <strong>Credibility and Reputation:</strong>{" "}
+                                  Seek brokers with a proven track record and
+                                  positive reputation. Client testimonials and
+                                  referrals highlight their reliability.
+                                </li>
+                                <li>
+                                  <strong>Professional Credentials: </strong>Opt
+                                  for brokers holding industry accreditations or
+                                  memberships. These credentials signify
+                                  adherence to high standards of
+                                  professionalism.
+                                </li>
+                                <li>
+                                  <strong>Lender Relationships:</strong> Select
+                                  brokers with a robust network of lenders. This
+                                  connection provides you access to a diverse
+                                  range of loan options and competitive rates.
+                                </li>
+                                <li>
+                                  <strong>Personalised Approach:</strong> Look
+                                  for brokers who take the time to understand
+                                  your financial goals and unique circumstances.
+                                  Their tailored approach ensures suitable
+                                  solutions.
+                                </li>
+                                <li>
+                                  <strong>Clear Communication:</strong>{" "}
+                                  Prioritise brokers who communicate
+                                  transparently and consistently. Effective
+                                  communication streamlines the mortgage process
+                                  and minimises confusion.
+                                </li>
+                                <li>
+                                  <strong>Fee Transparency:</strong> Ensure
+                                  brokers provide a clear breakdown of their
+                                  fees and charges. Transparent fee structures
+                                  help you make well-informed decisions.
+                                </li>
+                                <li>
+                                  <strong>Market Insights: </strong>Choose
+                                  brokers with up-to-date knowledge of Burwood’s
+                                  real estate market. Their insights guide you
+                                  in navigating fluctuating property values and
+                                  investment potential.
+                                </li>
+                                <li>
+                                  <strong>
+                                    Accessibility and Responsiveness:
+                                  </strong>{" "}
+                                  Opt for brokers who are readily accessible and
+                                  responsive. Prompt communication ensures a
+                                  smooth mortgage application and approval
+                                  process.
+                                </li>
+                                <li>
+                                  <strong>Professional Network:</strong>{" "}
+                                  Consider brokers with a strong network of
+                                  local real estate professionals, such as
+                                  realtors and solicitors. Their connections
+                                  enhance your overall home-buying experience.
+                                </li>
+                              </ol>
+                              <p>
+                                <a href="https://lowratehomeloan.com.au/contact/">
+                                  <strong>
+                                    Find the Best Home Mortgage Solutions in
+                                    Craigieburn. Call Us Today!
+                                  </strong>
+                                </a>
+                              </p>
+                            </div>
+                          </div>
+                          <div className="wp-block-kadence-column inner-column-2 kadence-column_ff0f28-50">
+                            <div className="kt-inside-inner-col">
+                              <h5
+                                className="kt-adv-heading_87827e-2e wp-block-kadence-advancedheading"
+                                data-kb-block="kb-adv-heading_87827e-2e"
+                              >
+                                <strong>
+                                  According to realestate.com.au, Craigieburn
+                                  Property Prices:
+                                </strong>
+                              </h5>
+                              <h2 className="wp-block-heading">
+                                Craigieburn Property Market Insights
+                              </h2>
+                              <p>
+                                In the previous month, there were 183 properties
+                                ready for leasing, and 306 properties were
+                                available for purchase in Craigieburn. The
+                                median property prices have displayed a spectrum
+                                over the past year, spanning from $630,000 for
+                                houses to $413,500 for units. For prospective
+                                investors directing attention to the housing
+                                market, Craigieburn presents houses for rent at
+                                a rate of $440 per week, contributing to an
+                                annual rental yield of 3.7%. Alternatively,
+                                units are rented out at $370 per week,
+                                showcasing a rental yield of 4.7%.
+                              </p>
+                              <p>
+                                Drawing on sales data spanning five years, the
+                                real estate landscape in Craigieburn has
+                                exhibited a compound growth rate of -3.1% for
+                                houses, while units have experienced a more
+                                positive trajectory with a growth rate of 2.1%.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</>
-
+        </>
       </div>
 
       <Faq />
