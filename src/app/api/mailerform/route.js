@@ -6,7 +6,7 @@ import { RefinanceConsultModel } from "./../../../modals/RefinanceConsultModel";
 
 export const POST = async (request) => {
   await Connect();
-  const { email, subject, message } = await request.json();
+  const { email, email2, subject, message } = await request.json();
   console.log("Request body:", email, subject, message);
 
   let result = null;
@@ -97,16 +97,6 @@ export const POST = async (request) => {
         const response = await smtpTransport.sendMail(mailOptions);
         console.log("Mail Response:", response);
 
-        let isclientSave = await RefinanceConsultModel.create({
-          name: `${text.state.name}`,
-          email: `${text.state.email}`,
-          phone: `${text.state.phone}`,
-          whyRefinnancing: `${text.radioState.whyRefinnancing}`,
-          loanAmount: `${text.state.loanAmount}`,
-          interestRate: `${text.state.interestRate}`,
-        });
-        console.log("isclientSave", isclientSave);
-
         return true;
       } catch (error) {
         console.error("Error sending email:", error);
@@ -115,6 +105,16 @@ export const POST = async (request) => {
     }
 
     result = await sendEmail(email, subject, message);
+    result = await sendEmail(email2, subject, message);
+    let isclientSave = await RefinanceConsultModel.create({
+      name: `${message.state.name}`,
+      email: `${message.state.email}`,
+      phone: `${message.state.phone}`,
+      whyRefinnancing: `${message.radioState.whyRefinnancing}`,
+      loanAmount: `${message.state.loanAmount}`,
+      interestRate: `${message.state.interestRate}`,
+    });
+    console.log("isclientSave", isclientSave);
   } else {
     result = false;
   }

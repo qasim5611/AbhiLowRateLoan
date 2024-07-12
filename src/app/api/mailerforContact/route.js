@@ -5,7 +5,7 @@ import { TalkToUsModel } from "./../../../modals/TalkToUsModel";
 export const POST = async (request) => {
   await Connect();
 
-  const { email, subject, message, state } = await request.json();
+  const { email, email2, subject, message, state } = await request.json();
   console.log("Request body:", email, subject, message);
 
   let result = null;
@@ -84,15 +84,6 @@ export const POST = async (request) => {
 
         //also save clien info to db
 
-        let isclientSave = await TalkToUsModel.create({
-          name: `${text.state.name}`,
-          email: `${text.state.email}`,
-          phone: `${text.state.phone}`,
-          loanType: `${text.state.loanType}`,
-          message: `${text.state.message}`,
-        });
-        console.log("isclientSave", isclientSave);
-
         return true;
       } catch (error) {
         console.error("Error sending email:", error);
@@ -102,6 +93,16 @@ export const POST = async (request) => {
     }
 
     await sendEmail(email, subject, message);
+    await sendEmail(email2, subject, message);
+
+    let isclientSave = await TalkToUsModel.create({
+      name: `${message.state.name}`,
+      email: `${message.state.email}`,
+      phone: `${message.state.phone}`,
+      loanType: `${message.state.loanType}`,
+      message: `${message.state.message}`,
+    });
+    console.log("isclientSave", isclientSave);
   } else {
     result = false;
   }

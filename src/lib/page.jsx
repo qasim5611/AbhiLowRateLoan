@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const sendEmail = async (email, subject, message) => {
+export const sendEmail = async (email, email2, subject, message) => {
   try {
     console.log("email", email);
     console.log("subject", subject);
@@ -8,6 +8,7 @@ export const sendEmail = async (email, subject, message) => {
 
     let res = await axios.post("/api/mailerform", {
       email: email,
+      email2: email2,
       subject: subject,
       message: message,
     });
@@ -18,7 +19,7 @@ export const sendEmail = async (email, subject, message) => {
   }
 };
 
-export const sendEmailBuyHome = async (email, subject, message) => {
+export const sendEmailBuyHome = async (email, email2, subject, message) => {
   try {
     console.log("email", email);
     console.log("subject", subject);
@@ -26,6 +27,7 @@ export const sendEmailBuyHome = async (email, subject, message) => {
 
     let res = await axios.post("/api/mailerformbuyhome", {
       email: email,
+      email2: email2,
       subject: subject,
       message: message,
     });
@@ -36,14 +38,16 @@ export const sendEmailBuyHome = async (email, subject, message) => {
   }
 };
 
-export const talkToUs = async (email, subject, message) => {
+export const talkToUs = async (email, email2, subject, message) => {
   try {
     console.log("email", email);
     console.log("subject", subject);
+
     console.log("message", message);
 
     let res = await axios.post("/api/mailerforContact", {
       email: email,
+      email2: email2,
       subject: subject,
       message: message,
     });

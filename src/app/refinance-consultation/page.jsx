@@ -117,17 +117,18 @@ export default function RefinanceConsultation(props) {
 
         const req = await sendEmail(
           "info@lowratehomeloan.com.au",
+          "abhijay.376@gmail.com",
           // "qasimtahir5611@gmail.com",
           "Refinance Consultation Form",
           obj
         );
-        const req2 = await sendEmailBuyHome(
-          "abhijay.376@gmail.com",
-          "Refinance Consultation Form",
-          obj
-        );
+        // const req2 = await sendEmailBuyHome(
+        //   "abhijay.376@gmail.com",
+        //   "Refinance Consultation Form",
+        //   obj
+        // );
         console.log("ok", req);
-        console.log("ok", req2);
+        // console.log("ok", req2);
 
         if (req.data.result == true) {
           setshowFirstForm(false);

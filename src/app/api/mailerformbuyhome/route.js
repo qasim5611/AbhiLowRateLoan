@@ -10,7 +10,7 @@ import { BuyHomeConsultModel } from "./../../../modals/BuyHomeConsultModel";
 export const POST = async (request) => {
   await Connect();
 
-  const { email, subject, message } = await request.json();
+  const { email, email2, subject, message } = await request.json();
   console.log("request body chali", email, subject, message);
 
   let result = null;
@@ -106,15 +106,6 @@ export const POST = async (request) => {
         console.log("Mail Response:", response);
         result = true;
 
-        let isclientSave = await BuyHomeConsultModel.create({
-          name: `${text.state.name}`,
-          email: `${text.state.email}`,
-          phone: `${text.state.phone}`,
-          loanAmount: `${text.state.loanAmount}`,
-          interestRate: `${text.state.interestRate}`,
-          whyRefinnancing: `${text.radioState.whyRefinnancing}`,
-        });
-        console.log("isclientSave", isclientSave);
         return true;
       } catch (error) {
         console.error("Error sending email:", error);
@@ -124,6 +115,17 @@ export const POST = async (request) => {
     }
 
     result = await sendEmail(email, subject, message);
+    result = await sendEmail(email2, subject, message);
+
+    let isclientSave = await BuyHomeConsultModel.create({
+      name: `${text.state.name}`,
+      email: `${text.state.email}`,
+      phone: `${text.state.phone}`,
+      loanAmount: `${text.state.loanAmount}`,
+      interestRate: `${text.state.interestRate}`,
+      whyRefinnancing: `${text.radioState.whyRefinnancing}`,
+    });
+    console.log("isclientSave", isclientSave);
   } else {
     result = false;
   }

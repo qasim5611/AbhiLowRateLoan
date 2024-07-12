@@ -112,17 +112,18 @@ export default function BuyHomeConsultaion(props) {
         const req = await sendEmailBuyHome(
           // "qasimtahir5611@gmail.com",
           "info@lowratehomeloan.com.au",
-          "Buy Home Consultation Form",
-          obj
-        );
-        const req2 = await sendEmailBuyHome(
-          // "qasimtahir5611@gmail.com",
           "abhijay.376@gmail.com",
           "Buy Home Consultation Form",
           obj
         );
+        // const req2 = await sendEmailBuyHome(
+        //   // "qasimtahir5611@gmail.com",
+        //   "abhijay.376@gmail.com",
+        //   "Buy Home Consultation Form",
+        //   obj
+        // );
         console.log("ok", req);
-        console.log("abhijay", req2);
+        // console.log("abhijay", req2);
 
         if (req.data.result == true || req.status == 200) {
           setloader(false);
