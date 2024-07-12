@@ -1,69 +1,108 @@
 "use client";
 
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Adminlayout from "../Adminlayout";
-import { useSelector, useDispatch } from "react-redux";
-
+import { useDispatch } from "react-redux";
 import Breadcrumb from "./../../../components/Breadcrumbs/Breadcrumb";
-import { Grid, TextField } from "@mui/material";
 import {
-  editHeroSection,
-  getHeroSection,
+  Box,
+  Button,
+  TextField,
+  IconButton,
+  Grid,
+  Typography,
+  CircularProgress,
+} from "@mui/material";
+import { Add, Remove } from "@mui/icons-material";
+import CloudSyncIcon from "@mui/icons-material/CloudSync";
+import DeleteIcon from "@mui/icons-material/Delete";
+import {
+  editApplicationProcess,
+  getApplicationProcess,
 } from "../../../redux/slices/globalSlice";
-import axios from "axios";
 
-export default function ReputeableLenders(props) {
-  let dispatch = useDispatch();
-  const [record, setrecord] = useState([]);
-  const [idtoUpdate, setidtoUpdate] = useState(false);
-
+export default function FeaturTop(props) {
+  const [faqs, setFaqs] = useState([]);
+  const [images, setImages] = useState([]);
+  const dispatch = useDispatch();
+  const [loader, setLoader] = useState(false);
   useEffect(() => {
-    return async () => {
-      let resp = await dispatch(getHeroSection());
-      console.log("herosection", resp?.payload?.data?.mydata);
-      console.log("herosection", resp?.payload?.data?.mydata[0].tagline);
-      setrecord(resp?.payload?.data?.mydata);
-      setidtoUpdate(resp?.payload?.data?.mydata[0]._id);
+    const fetchData = async () => {
+      let resp = await dispatch(getApplicationProcess());
+      console.log("getApplicationProcess,", resp);
+      console.log(
+        "getApplicationProcess",
+        resp?.payload?.data?.data[0]?.tagline
+      );
+      const data = resp?.payload?.data?.data || [];
+      // setRecord(data);
+      setFaqs(data.map((item) => ({ tagline: item.tagline, desc: item.desc })));
     };
-  }, []);
 
-  const [state, setState] = useState({
-    tagline: "",
-    refinancebtn: "",
-    lownbtn: "",
-  });
+    fetchData();
+  }, [dispatch]);
 
-  const onChangeHandler = (e) => {
-    if (e.target.name == "image") {
-      let val = e.target.files[0];
-      setState({ ...state, [e.target.name]: val });
-    } else {
-      setState({ ...state, [e.target.name]: e.target.value });
-    }
+  const handleAddFAQ = () => {
+    setFaqs([...faqs, { tagline: "", desc: "" }]);
+    setImages([...images, { image: null }]);
   };
 
-  const updateHomeBanner = async (e) => {
+  const handleRemoveFAQ = (index) => {
+    const newFaqs = faqs.filter((_, i) => i !== index);
+    setFaqs(newFaqs);
+
+    // delete function called here
+  };
+
+  const handleFAQChange = (index, field, value) => {
+    const newFaqs = [...faqs];
+    newFaqs[index][field] = value;
+    setFaqs(newFaqs);
+  };
+
+  const handleImageChange = (index, event) => {
+    const newFaqs = [...faqs];
+    newFaqs[index].image = event.target.files[0];
+    setFaqs(newFaqs);
+  };
+
+  const updateFeatureTop = async (e) => {
     e.preventDefault();
-    console.log("Regiter state", state);
+    console.log("faqs clicked", faqs);
     let obj = {
-      ...state,
-      idtoUpdate,
+      faqs,
+      // idtoUpdate,
     };
-    let resp = await dispatch(editHeroSection(obj));
-    console.log("resp editHeroSection", resp.payload.data.msg);
-    if (resp.payload.data.msg == "Updated Successful") {
-      toast.success("Updated Successful", {
+
+    setLoader(true);
+
+    let resp = await dispatch(editApplicationProcess(obj));
+    console.log("resp...", resp);
+
+    if (resp?.payload?.data?.msg == "Records created successfully") {
+      toast.success("Records created successfully", {
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
         draggable: true,
-
         progress: undefined,
       });
+      setLoader(false);
+    } else {
+      toast.error("Added Failed!", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+      setLoader(false);
     }
   };
 
@@ -76,74 +115,139 @@ export default function ReputeableLenders(props) {
       <div style={{ marginTop: "65px", padding: "20px", width: "100%" }}>
         <Breadcrumb pageName="Application Process" />
 
-        {record ? (
-          <>
-            {record.map((item, index) => {
-              return (
-                <>
-                  <Grid container spacing={2}>
-                    <Grid item xs={12}>
-                      <label for="heroSec" className="lblform">
-                        Banner Tag Line:
+        <Box component="form" noValidate autoComplete="off">
+          {faqs.length > 0 ? (
+            <>
+              {faqs.map((faqmn, index) => (
+                <Box
+                  key={index}
+                  display="flex"
+                  alignItems="center"
+                  mb={2}
+                  flexDirection="column"
+                >
+                  <Grid
+                    container
+                    spacing={2}
+                    style={{
+                      borderLeft: "6px #fcc26e solid",
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                    }}
+                  >
+                    <Grid item sm={12} md={3} lg={3}>
+                      <label htmlFor="heroSec" className="lblform">
+                        Step {index + 1}:
                       </label>
-
                       <textarea
-                        id="heroSec"
-                        name="tagline"
-                        rows="3"
-                        cols="30"
-                        onChange={onChangeHandler}
-                        defaultValue={item.tagline || "Please Enter:"}
-                      ></textarea>
-                    </Grid>
-                  </Grid>
-
-                  <Grid container spacing={2}>
-                    <Grid item xs={6}>
-                      <label for="heroSec" className="lblform">
-                        Refinance Button Text
-                      </label>
-                      <br />
-                      <input
-                        type="text"
-                        name="refinancebtn"
-                        className="textfild"
-                        placeholder="(Left)"
-                        onChange={onChangeHandler}
-                        defaultValue={item.refinancebtn}
+                        label="Tagline"
+                        variant="outlined"
+                        value={faqmn.tagline}
+                        onChange={(e) =>
+                          handleFAQChange(index, "tagline", e.target.value)
+                        }
+                        fullWidth
+                        sx={{ mb: 2 }}
                       />
                     </Grid>
-
-                    <Grid item xs={6}>
-                      <label for="heroSec" className="lblform">
-                        Lown Button Text
+                    <Grid item sm={12} md={8} lg={8}>
+                      <label htmlFor="heroSec" className="lblform">
+                        Description:
                       </label>
-                      <br />
-                      <input
-                        type="text"
-                        name="lownbtn"
-                        className="textfild"
-                        placeholder="(Right)"
-                        onChange={onChangeHandler}
-                        defaultValue={item.lownbtn}
+                      <textarea
+                        label="Description"
+                        variant="outlined"
+                        value={faqmn.desc}
+                        onChange={(e) =>
+                          handleFAQChange(index, "desc", e.target.value)
+                        }
+                        fullWidth
+                        sx={{ mb: 2 }}
                       />
                     </Grid>
-                  </Grid>
-                  <br />
-                  <Grid container spacing={2}>
-                    <Grid item>
-                      <button onClick={updateHomeBanner}>
-                        Update Home Banner
-                      </button>
+                    <Grid item sm={12} md={1} lg={1}>
+                      <IconButton
+                        onClick={() => handleRemoveFAQ(index)}
+                        sx={{
+                          mb: 2,
+                          backgroundColor: "#008000",
+                          color: "white",
+                          "&:hover": {
+                            backgroundColor: "black",
+                            color: "white",
+                          },
+                          position: "relative",
+                          top: "15px",
+                        }}
+                      >
+                        <DeleteIcon size={10} />
+                      </IconButton>
                     </Grid>
                   </Grid>
-                </>
-              );
-            })}
-          </>
-        ) : (
-          <>Loading...</>
-        )}
+                </Box>
+              ))}
+            </>
+          ) : (
+            <>Loading...</>
+          )}
+          <Box style={{ display: "flex", flexDirection: "row" }}>
+            <Button
+              variant="contained"
+              color="primary"
+              startIcon={<Add />}
+              onClick={handleAddFAQ}
+              sx={{
+                backgroundColor: "#008000",
+                color: "white",
+                "&:hover": {
+                  backgroundColor: "black",
+                  color: "white",
+                },
+              }}
+            >
+              Add Feature
+            </Button>
+            &nbsp;
+            <button
+              onClick={updateFeatureTop}
+              style={{
+                padding: "0px 20px 7px 20px",
+                "&:hover": {
+                  backgroundColor: "black",
+                  color: "white",
+                },
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+              }}
+            >
+              <CloudSyncIcon
+                style={{
+                  position: "relative",
+                  top: "3px",
+                  right: "3px",
+                }}
+              />{" "}
+              {loader ? (
+                <Box
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    flexDirection: "row",
+                    alignItems: "inherit",
+                  }}
+                >
+                  <Typography>Update Steps </Typography>
+                  &nbsp; &nbsp;
+                  <CircularProgress size={20} color="inherit" />
+                </Box>
+              ) : (
+                "Update Steps"
+              )}
+            </button>
+          </Box>
+        </Box>
       </div>
     </Adminlayout>
   );

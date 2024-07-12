@@ -1,9 +1,6 @@
 import { Connect } from "../../../../dbconfig/dbconfig";
-import User from "../../../../modals/userModel";
 import { NextRequest, NextResponse } from "next/server";
-import bcrypt from "bcrypt";
-import crypto from "crypto";
-import jwt from "jsonwebtoken";
+import { cookies } from "next/headers"; // Import cookies API
 
 var code = Math.floor(100000 + Math.random() * 900000);
 
@@ -12,23 +9,27 @@ export async function POST(request) {
   try {
     await Connect();
 
-    // Create the response object
-    const response = NextResponse.json({
-      msg: "Logout Successful",
-      success: true,
-    });
-
     // Clear the token cookie
-    response.cookies.set("token", "", {
+    const cookiesStore = cookies();
+    cookiesStore.set("token", "", {
       httpOnly: true,
       expires: new Date(0),
     });
 
-    // Set the redirection URL
-    // response.headers.set("Location", "/login");
-    // response.status(302);
-    // NextResponse.redirect("/login");
-    return response;
+    let isDeleted = await cookiesStore.get("token");
+
+    if (isDeleted.value == "") {
+      console.log("isDeleted", isDeleted.value);
+      return NextResponse.json({
+        msg: "Logout Successful",
+        success: true,
+      });
+    }
+
+    return NextResponse.json({
+      msg: "Logout Not",
+      success: false,
+    });
   } catch (error) {
     return NextResponse.json({ error: error.message });
   }

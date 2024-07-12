@@ -1,9 +1,13 @@
 import mongoose from "mongoose";
-// mongodb+srv://serverBoiler:BrxyutmzqiCM4U6c@cluster0.t30x6.mongodb.net/lowrateloan?retryWrites=true&w=majority&appName=Cluster0
 
 export async function Connect() {
   try {
-    mongoose.connect(process.env.MONG_URL);
+    await mongoose.connect(process.env.MONG_URL, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      serverSelectionTimeoutMS: 30000, // Increase timeout to 30 seconds
+    });
+
     const connection = mongoose.connection;
 
     connection.on("connected", () => {
@@ -11,10 +15,9 @@ export async function Connect() {
     });
 
     connection.on("error", (err) => {
-      console.log("MongoDb Error!", err);
-      process.exit();
+      console.error("MongoDb Connection Error:", err);
     });
   } catch (error) {
-    console.log("Something goes wrong On DB Connection", error);
+    console.error("Something went wrong with the DB connection:", error);
   }
 }

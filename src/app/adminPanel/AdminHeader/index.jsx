@@ -1,18 +1,18 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
 import MuiAppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Link from "next/link";
 import { Button } from "react-bootstrap";
+import { toast } from "react-toastify";
 
 import { logoutuserNow } from "../../../redux/slices/globalSlice";
+import { CircularProgress, Box, Typography } from "@mui/material";
 
 const drawerWidth = 240;
 
@@ -36,24 +36,32 @@ const AppBar = styled(MuiAppBar, {
 
 export default function AdminHeader({ open, setOpen }) {
   const dispatch = useDispatch();
+  const router = useRouter(); // Use the router inside the component
+
+  const [loader, setloader] = useState(false);
 
   const handleDrawerOpen = () => {
     setOpen(true);
   };
 
   const logoutUser = async () => {
-    dispatch(logoutuserNow());
-    // window.location.reload();
-    setTimeout(() => {
-      window.location.reload();
-    }, 2000);
-    setTimeout(() => {
-      window.location.reload();
-    }, 2000); // Adjust the timeout delay as needed
-    setTimeout(() => {
-      window.location.href = "/login";
-    }, 2000); // Adjust the timeout delay as needed
-    // router.push("/login");
+    setloader(true);
+    let resp = await dispatch(logoutuserNow());
+    console.log("resp logout", resp);
+    if (resp?.payload?.data.msg === "Logout Successful") {
+      toast.warn("Logout Successful", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+      setloader(false);
+
+      router.push("/login"); // Use router.push for redirection
+    }
   };
 
   return (
@@ -92,7 +100,22 @@ export default function AdminHeader({ open, setOpen }) {
               onClick={logoutUser}
               style={{ textDecoration: "none", color: "white" }}
             >
-              Logout
+              {loader ? (
+                <Box
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    flexDirection: "row",
+                    mb: "0px !important",
+                  }}
+                >
+                  <Typography sx={{ mb: "0px !important" }}>Logout</Typography>
+                  &nbsp; &nbsp;
+                  <CircularProgress size={20} color="inherit" />
+                </Box>
+              ) : (
+                "Logout"
+              )}
             </Button>
           </Box>
         </Toolbar>

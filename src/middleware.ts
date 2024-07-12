@@ -24,5 +24,12 @@ export function middleware(request: NextRequest) {
 
 // See "Matching Paths" below to learn more
 export const config = {
-  matcher: ['/adminPanel', '/login', '/signup', '/adminPanel/herosection'], // Adjusted matcher to include /signup
+  matcher: ['/adminPanel', '/login', '/signup', '/adminPanel/herosection',
+    '/adminPanel/featuresTop',
+    '/adminPanel/reputableLenders',
+    '/adminPanel/featuredservices',
+    '/adminPanel/featuredservicesImages',
+    '/adminPanel/applicationprocess',
+    '/adminPanel/faqs',
+  ], // Adjusted matcher to include /signup
 }

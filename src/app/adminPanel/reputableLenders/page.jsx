@@ -6,7 +6,6 @@ import "react-toastify/dist/ReactToastify.css";
 import Adminlayout from "../Adminlayout";
 import { useSelector, useDispatch } from "react-redux";
 import CenterFocusStrongIcon from "@mui/icons-material/CenterFocusStrong";
-
 import Breadcrumb from "./../../../components/Breadcrumbs/Breadcrumb";
 import {
   Box,
@@ -32,8 +31,6 @@ export default function ReputeableLenders(props) {
   useEffect(() => {
     const fetchData = async () => {
       let resp = await dispatch(getReputeableBanner());
-      console.log("getReputeableBanner", resp?.payload?.data?.data);
-      console.log("qasim", resp?.payload?.data?.data);
 
       setrecord2(resp?.payload?.data?.data);
       setidtoUpdate(resp?.payload?.data?.data[0]._id);
@@ -65,6 +62,22 @@ export default function ReputeableLenders(props) {
   const updateHomeBanner = async (e) => {
     e.preventDefault();
     console.log("Reputeable Lender state", state);
+
+    if (!state.image) {
+      toast.error("Please Upload Image!", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+
+      return;
+    }
+
     let obj = {
       ...state,
       idtoUpdate,

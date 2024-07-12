@@ -29,7 +29,6 @@ export default function HeroSection(props) {
       setrecord(resp?.payload?.data?.mydata);
       setidtoUpdate(resp?.payload?.data?.mydata[0]._id);
     };
-
     fetchData();
   }, []);
 

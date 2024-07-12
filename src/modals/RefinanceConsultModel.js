@@ -12,10 +12,13 @@ const Schema = new mongoose.Schema(
     phone: {
       type: String,
     },
-    loanType: {
+    whyRefinnancing: {
       type: String,
     },
-    message: {
+    loanAmount: {
+      type: String,
+    },
+    interestRate: {
       type: String,
     },
   },
@@ -23,5 +26,6 @@ const Schema = new mongoose.Schema(
     timestamps: { createdAt: "created_at", updatedAt: "updated_at" },
   }
 );
-export const TalkToUsModel =
-  mongoose.models.talkus || mongoose.model("talkus", Schema);
+export const RefinanceConsultModel =
+  mongoose.models.refinanceconsult ||
+  mongoose.model("refinanceconsult", Schema);

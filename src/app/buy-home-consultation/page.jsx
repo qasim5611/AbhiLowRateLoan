@@ -8,6 +8,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Email } from "@mui/icons-material";
 import { sendEmailBuyHome } from "./../../lib/page";
+import { Box, CircularProgress, Typography } from "@mui/material";
 
 export default function BuyHomeConsultaion(props) {
   const [state, setState] = useState({
@@ -23,6 +24,8 @@ export default function BuyHomeConsultaion(props) {
     position: "relative",
     top: "11px",
   };
+
+  const [loader, setloader] = useState(false);
 
   const [showFirstForm, setshowFirstForm] = useState(true);
   const [showSecondForm, setShowSecondForm] = useState(false);
@@ -104,10 +107,11 @@ export default function BuyHomeConsultaion(props) {
         radioState,
       };
       try {
+        setloader(true);
         // const req = await SendEmail(state, radioState);
         const req = await sendEmailBuyHome(
           // "qasimtahir5611@gmail.com",
-          "qasimtahir5611@gmail.com",
+          "info@lowratehomeloan.com.au",
           "Buy Home Consultation Form",
           obj
         );
@@ -121,6 +125,8 @@ export default function BuyHomeConsultaion(props) {
         console.log("abhijay", req2);
 
         if (req.data.result == true || req.status == 200) {
+          setloader(false);
+
           setshowFirstForm(false);
           setShowSecondForm(false);
           setShowThirdForm(false);
@@ -762,7 +768,7 @@ export default function BuyHomeConsultaion(props) {
                         onclick='if(window["gf_submitting_3"]){return false;}  if( !jQuery("#gform_3")[0].checkValidity || jQuery("#gform_3")[0].checkValidity()){window["gf_submitting_3"]=true;}  '
                         onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_3"]){return false;} if( !jQuery("#gform_3")[0].checkValidity || jQuery("#gform_3")[0].checkValidity()){window["gf_submitting_3"]=true;}  jQuery("#gform_3").trigger("submit",[true]); }'
                       />{" "}
-                      <input
+                      {/* <input
                         type="submit"
                         id="gform_submit_button_3"
                         className="gform_button button"
@@ -771,7 +777,29 @@ export default function BuyHomeConsultaion(props) {
                         onClick={ClickForFifthForm}
                         // onclick='if(window["gf_submitting_3"]){return false;}  if( !jQuery("#gform_3")[0].checkValidity || jQuery("#gform_3")[0].checkValidity()){window["gf_submitting_3"]=true;}  '
                         // onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_3"]){return false;} if( !jQuery("#gform_3")[0].checkValidity || jQuery("#gform_3")[0].checkValidity()){window["gf_submitting_3"]=true;}  jQuery("#gform_3").trigger("submit",[true]); }'
-                      />{" "}
+                      />{" "} */}
+                      <button
+                        id="gform_submit_button_3"
+                        className="gform_button button"
+                        onClick={ClickForFifthForm}
+                      >
+                        {loader ? (
+                          <Box
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              flexDirection: "row",
+                              alignItems: "inherit",
+                            }}
+                          >
+                            <Typography>Submit </Typography>
+                            &nbsp; &nbsp;
+                            <CircularProgress size={20} color="inherit" />
+                          </Box>
+                        ) : (
+                          "Submit"
+                        )}
+                      </button>
                       <input
                         type="hidden"
                         name="gform_ajax"

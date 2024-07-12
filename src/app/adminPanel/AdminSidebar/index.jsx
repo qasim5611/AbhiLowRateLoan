@@ -28,8 +28,8 @@ export default function AdminPanel({ open, setOpen }) {
   }
 
   const theme = useTheme();
-  const [submenuOpen, setSubmenuOpen] = useState(false);
-  const [submenuOpen2, setSubmenuOpen2] = useState(false);
+  const [submenuOpen, setSubmenuOpen] = useState(true);
+  const [submenuOpen2, setSubmenuOpen2] = useState(true);
 
   const drawerWidth = 240;
 
@@ -310,7 +310,7 @@ export default function AdminPanel({ open, setOpen }) {
                 </Link>
               </ListItem>
 
-              <ListItem disablePadding sx={{ display: "block" }}>
+              {/* <ListItem disablePadding sx={{ display: "block" }}>
                 <Link
                   href={"/adminPanel/testimonials"}
                   style={{ textDecoration: "none" }}
@@ -329,7 +329,7 @@ export default function AdminPanel({ open, setOpen }) {
                     />
                   </ListItemButton>
                 </Link>
-              </ListItem>
+              </ListItem> */}
 
               <ListItem disablePadding sx={{ display: "block" }}>
                 <Link

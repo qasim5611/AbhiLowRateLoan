@@ -3,7 +3,13 @@
 // let nodemailer;
 const nodemailer = require("nodemailer");
 import { NextResponse } from "next/server";
+
+import { Connect } from "./../../../dbconfig/dbconfig";
+import { BuyHomeConsultModel } from "./../../../modals/BuyHomeConsultModel";
+
 export const POST = async (request) => {
+  await Connect();
+
   const { email, subject, message } = await request.json();
   console.log("request body chali", email, subject, message);
 
@@ -40,34 +46,58 @@ export const POST = async (request) => {
           </div>
         <br/>
            <div style="width: 600px;">
-           <div style="width: 100%;background-color: #ffd08654;margin-bottom: 10px;height: 25px;padding-top: 7px;">
-               <div style="width: 50%; text-align: center; float: left">User Name</div>
-               <div style="width: 50%; text-align: center; float: left">${text.state.name}</div>
+           <div style="font-weight: bold ;width: 100%;background-color: #eaf3fa;margin-bottom: 10px;height: 25px;padding-top: 7px; padding-left: 5px;">
+              User Name
+             
            </div>
-           <div style="width: 100%;background-color: white;margin-bottom: 10px;height: 25px;padding-top: 7px;">
-               <div style="width: 50%; text-align: center; float: left">Email</div>
-               <div style="width: 50%; text-align: center; float: left">${text.state.email}</div>
-           </div>
-       
-           <div style="width: 100%;background-color: #ffd08654;margin-bottom: 10px;height: 25px;padding-top: 7px;">
-               <div style="width: 50%; text-align: center; float: left">Phone</div>
-               <div style="width: 50%; text-align: center; float: left">${text.state.phone}</div>
+           <div style="width: 100%;background-color: white;margin-bottom: 10px;height: 25px;padding-top: 7px; padding-left: 15px;">
+           ${text.state.name}
+           
            </div>
        
-           <div style="width: 100%;background-color: white; margin-bottom: 10px;height: 25px;padding-top: 7px;" ">
-               <div style="width: 50%; text-align: center; float: left">Current Loan Amount</div>
-               <div style="width: 50%; text-align: center; float: left">${text.state.loanAmount}</div>
+           <div style="font-weight: bold ;width: 100%;background-color: #eaf3fa;margin-bottom: 10px;height: 25px;padding-top: 7px; padding-left: 5px;">
+           Email
+           
            </div>
        
-           <div style="width: 100%;background-color: #ffd08654;margin-bottom: 10px;height: 25px;padding-top: 7px;">
-               <div style="width: 50%; text-align: center; float: left">Curretn Interest Rate</div>
-               <div style="width: 50%; text-align: center; float: left">${text.state.interestRate}</div>
+           <div style="width: 100%;background-color: white; margin-bottom: 10px;height: 25px;padding-top: 7px;padding-left: 15px; ">
+           ${text.state.email}
+          
            </div>
        
-           <div style="width: 100%;background-color: white;margin-bottom: 10px;height: 25px;padding-top: 7px;">
-               <div style="width: 50%; text-align: center; float: left">Why Refinancing?</div>
-               <div style="width: 50%; text-align: center; float: left">${text.radioState.whyRefinnancing}</div>
+           <div style="font-weight: bold ;width: 100%;background-color: #eaf3fa;margin-bottom: 10px;height: 25px;padding-top: 7px; padding-left: 5px;">
+           Phone
            </div>
+       
+           <div style="width: 100%;background-color: white;margin-bottom: 10px;height: 25px;padding-top: 7px; padding-left: 15px;">
+           ${text.state.phone} 
+           </div>
+
+
+           <div style="font-weight: bold ;width: 100%;background-color: #eaf3fa;margin-bottom: 10px;height: 25px;padding-top: 7px; padding-left: 5px;">
+           Current Loan Amount
+           </div>
+       
+           <div style="width: 100%;background-color: white;margin-bottom: 10px;height: 25px;padding-top: 7px; padding-left: 15px;">
+           ${text.state.loanAmount}
+           </div>
+
+           <div style="font-weight: bold ;width: 100%;background-color: #eaf3fa;margin-bottom: 10px;height: 25px;padding-top: 7px; padding-left: 5px;">
+           Curretn Interest Rate
+           </div>
+       
+           <div style="width: 100%;background-color: white;margin-bottom: 10px;height: 25px;padding-top: 7px; padding-left: 15px;">
+           ${text.state.interestRate}
+           </div>
+
+           <div style="font-weight: bold ;width: 100%;background-color: #eaf3fa;margin-bottom: 10px;height: 25px;padding-top: 7px; padding-left: 5px;">
+           Why Refinancing?
+           </div>
+       
+           <div style="width: 100%;background-color: white;margin-bottom: 10px;height: 25px;padding-top: 7px; padding-left: 15px;">
+           ${text.radioState.whyRefinnancing}
+           </div>
+
        </div>
 `,
         };
@@ -75,6 +105,16 @@ export const POST = async (request) => {
         const response = await smtpTransport.sendMail(mailOptions);
         console.log("Mail Response:", response);
         result = true;
+
+        let isclientSave = await BuyHomeConsultModel.create({
+          name: `${text.state.name}`,
+          email: `${text.state.email}`,
+          phone: `${text.state.phone}`,
+          loanAmount: `${text.state.loanAmount}`,
+          interestRate: `${text.state.interestRate}`,
+          whyRefinnancing: `${text.radioState.whyRefinnancing}`,
+        });
+        console.log("isclientSave", isclientSave);
         return true;
       } catch (error) {
         console.error("Error sending email:", error);

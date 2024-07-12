@@ -9,10 +9,13 @@ import Image from "next/image";
 import { Email } from "@mui/icons-material";
 // import { SendEmail } from "../api/mailer/route";
 import { sendEmail } from "./../../lib/page";
+import { Box, CircularProgress, Typography } from "@mui/material";
 
 // import { SendContactForm } from "./../../lib/api";
 
 export default function RefinanceConsultation(props) {
+  const [loader, setloader] = useState(false);
+
   const [state, setState] = useState({
     loanAmount: "",
     interestRate: "",
@@ -110,14 +113,15 @@ export default function RefinanceConsultation(props) {
 
       try {
         // const req = await SendEmail(state, radioState);
+        setloader(true);
 
         const req = await sendEmail(
           "info@lowratehomeloan.com.au",
+          // "qasimtahir5611@gmail.com",
           "Refinance Consultation Form",
           obj
         );
         const req2 = await sendEmailBuyHome(
-          // "qasimtahir5611@gmail.com",
           "abhijay.376@gmail.com",
           "Refinance Consultation Form",
           obj
@@ -131,6 +135,7 @@ export default function RefinanceConsultation(props) {
           setShowThirdForm(false);
           setShowFourthForm(false);
           setShowFifthForm(true);
+          setloader(false);
         }
       } catch (e) {
         console.log(e);
@@ -778,7 +783,7 @@ export default function RefinanceConsultation(props) {
                         onclick='if(window["gf_submitting_3"]){return false;}  if( !jQuery("#gform_3")[0].checkValidity || jQuery("#gform_3")[0].checkValidity()){window["gf_submitting_3"]=true;}  '
                         onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_3"]){return false;} if( !jQuery("#gform_3")[0].checkValidity || jQuery("#gform_3")[0].checkValidity()){window["gf_submitting_3"]=true;}  jQuery("#gform_3").trigger("submit",[true]); }'
                       />{" "}
-                      <input
+                      {/* <input
                         type="submit"
                         id="gform_submit_button_3"
                         className="gform_button button"
@@ -787,7 +792,29 @@ export default function RefinanceConsultation(props) {
                         onClick={ClickForFifthForm}
                         // onclick='if(window["gf_submitting_3"]){return false;}  if( !jQuery("#gform_3")[0].checkValidity || jQuery("#gform_3")[0].checkValidity()){window["gf_submitting_3"]=true;}  '
                         // onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_3"]){return false;} if( !jQuery("#gform_3")[0].checkValidity || jQuery("#gform_3")[0].checkValidity()){window["gf_submitting_3"]=true;}  jQuery("#gform_3").trigger("submit",[true]); }'
-                      />{" "}
+                      />{" "} */}
+                      <button
+                        id="gform_submit_button_3"
+                        className="gform_button button"
+                        onClick={ClickForFifthForm}
+                      >
+                        {loader ? (
+                          <Box
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              flexDirection: "row",
+                              alignItems: "inherit",
+                            }}
+                          >
+                            <Typography>Submit </Typography>
+                            &nbsp; &nbsp;
+                            <CircularProgress size={20} color="inherit" />
+                          </Box>
+                        ) : (
+                          "Submit"
+                        )}
+                      </button>
                       <input
                         type="hidden"
                         name="gform_ajax"

@@ -52,11 +52,13 @@ export function ContactForm(props) {
       try {
         const req = await talkToUs(
           "info@lowratehomeloan.com.au",
+          // "qasimtahir5611@gmail.com",
           "Talk-To-Us User Form",
           obj
         );
         const req2 = await talkToUs(
-          "abhijay.376@gmail.com",
+          // "abhijay.376@gmail.com",
+          "qasimtahir5611@gmail.com.au",
           "Talk-To-Us User Form",
           obj
         );

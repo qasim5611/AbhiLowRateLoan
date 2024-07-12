@@ -1,51 +1,17 @@
-import mongoose from "mongoose";
+import mongoose, { mongo } from "mongoose";
 // const mongoose = require("mongoose");
-const heroModelSchema = new mongoose.Schema({
-  title: {
-    type: String,
-    default: "FAQS",
-  },
-  tagline: {
-    type: String,
-  },
-  faq1: [
-    {
-      title: { type: String },
-      desc: { type: String },
-    },
-  ],
-  faq2: [
-    {
-      title: { type: String },
-      desc: { type: String },
-    },
-  ],
-  faq3: [
-    {
-      title: { type: String },
-      desc: { type: String },
-    },
-  ],
-  faq4: [
-    {
-      title: { type: String },
-      desc: { type: String },
-    },
-  ],
-  faq5: [
-    {
-      title: { type: String },
-      desc: { type: String },
-    },
-  ],
-  faq6: [
-    {
-      title: { type: String },
-      desc: { type: String },
-    },
-  ],
-});
 
-const HeroSection =
-  mongoose.models.herosection || mongoose.model("herosection", heroModelSchema);
-module.exports = HeroSection;
+const Schema = new mongoose.Schema(
+  {
+    tagline: {
+      type: String,
+    },
+    desc: {
+      type: String,
+    },
+  },
+  {
+    timestamps: { createdAt: "created_at", updatedAt: "updated_at" },
+  }
+);
+export const FaqsModel = mongoose.models.faqs || mongoose.model("faqs", Schema);

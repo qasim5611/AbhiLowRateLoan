@@ -40,7 +40,7 @@ export default function ReputeableLenders(props) {
   const [loader, setLoader] = useState(false);
 
   useEffect(() => {
-    return async () => {
+    const fetchData = async () => {
       let resp = await dispatch(getServiceContent());
       console.log("getReputeableBanner", resp);
       // const images = resp?.payload?.data?.data || [];
@@ -48,6 +48,8 @@ export default function ReputeableLenders(props) {
       setrecord(resp?.payload?.data?.data);
       setidtoUpdate(resp?.payload?.data?.data[0]._id);
     };
+
+    fetchData();
   }, []);
 
   const [state, setState] = useState({
@@ -76,6 +78,21 @@ export default function ReputeableLenders(props) {
   const updateHomeBanner = async (e) => {
     e.preventDefault();
     console.log("Reputeable Lender state", state, desc);
+
+    if (!desc) {
+      toast.error("Please Edit Description Too!", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+
+      return;
+    }
     let obj = {
       ...state,
       idtoUpdate,

@@ -54,18 +54,14 @@ export const logoutuserNow = createAsyncThunk(
   "auth/logoutuserNow",
   async () => {
     console.log("logout");
-    // return { type: "LOGOUT" };
-    // let response = await axios.post("/api/user/logout");
+
     let body = {
       name: "LowRateloanLogout",
     };
     let response = await axios.post("/api/user/logout", body);
 
     console.log("response logoutuserNow", response);
-
-    // if (response.data.msg === "Login Successfull") {
-    //   return { type: "DATA_LOGIN", payload: response.data };
-    // }
+    return response;
   }
 );
 
@@ -354,6 +350,60 @@ export const editServiceContent = createAsyncThunk(
     }
   }
 );
+
+export const editApplicationProcess = createAsyncThunk(
+  "auth/editApplicationProcess-save",
+  async (body) => {
+    try {
+      console.log(
+        ".................................>> editApplicationProcess Slice",
+        body
+      );
+      const config = {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      };
+      let formData = body;
+      // for (var item in body) {
+      //   formData.append(item, body[item]);
+      // }
+      // console.log("formData", formData);
+
+      let res = await axios.post(
+        "/api/useradmin/app-process-save",
+        formData,
+        config
+      );
+      console.log("res", res);
+      return res;
+    } catch (error) {
+      // Handle error
+      console.error(error);
+      throw error;
+    }
+  }
+);
+
+export const editFaqs = createAsyncThunk("auth/editFaqs-save", async (body) => {
+  try {
+    console.log(".................................>> editFaqs Slice", body);
+    const config = {
+      headers: {
+        "Content-Type": "multipart/form-data",
+      },
+    };
+    let formData = body;
+    let res = await axios.post("/api/useradmin/Faqs-save", formData, config);
+    console.log("res", res);
+    return res;
+  } catch (error) {
+    // Handle error
+    console.error(error);
+    throw error;
+  }
+});
+
 export const getHeroSection = createAsyncThunk(
   "auth/getHeroSection",
   async (body) => {
@@ -424,6 +474,32 @@ export const getServiceContent = createAsyncThunk(
     }
   }
 );
+
+export const getApplicationProcess = createAsyncThunk(
+  "auth/getApplicationProcess",
+  async (body) => {
+    try {
+      let res = await axios.get("/api/useradmin/app-process-get");
+      console.log(res);
+      return res;
+    } catch (error) {
+      console.error(error);
+      throw error;
+    }
+  }
+);
+
+export const getFaqs = createAsyncThunk("auth/getFaqs", async (body) => {
+  try {
+    let res = await axios.get("/api/useradmin/Faqs-get");
+    console.log(res);
+    return res;
+  } catch (error) {
+    console.error(error);
+    throw error;
+  }
+});
+
 export const globalSlice = createSlice({
   name: "global",
   initialState,

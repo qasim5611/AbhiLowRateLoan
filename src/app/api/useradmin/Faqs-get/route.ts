@@ -1,13 +1,17 @@
+
+
+
+
 import { NextRequest, NextResponse } from "next/server"; 
 import { Connect } from "../../../../dbconfig/dbconfig";
-import { FeatureMediaModel } from "../../../../modals/FeatureMediaModel";
+import { FaqsModel } from "../../../../modals/FaqsModel";
 export const GET = async(req: NextRequest)=>{ 
   await Connect();
   console.log("Get Route initiated");
- const Images = await FeatureMediaModel.find({});
-//  console.log("Images at server", Images);
+ const data = await FaqsModel.find({});
+//  console.log("data at server", data);
   return NextResponse.json(
-    { images: Images, total: Images.length },
+    { data: data },
     { 
       status: 200  
     }
