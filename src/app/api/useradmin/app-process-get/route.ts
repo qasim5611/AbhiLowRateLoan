@@ -6,6 +6,8 @@ export const GET = async(req: NextRequest)=>{
   console.log("Get Route initiated");
  const data = await ApplicationProcessModel.find({});
 //  console.log("data at server", data);
+//  console.log("data at server", data);
+
   return NextResponse.json(
     { data: data },
     { 
