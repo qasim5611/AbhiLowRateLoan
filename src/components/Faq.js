@@ -33,6 +33,13 @@ export function Faq(props) {
   const [open10, setOpen10] = useState(true);
   const [open11, setOpen11] = useState(true);
 
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleFaqDynamic = (index) => {
+    console.log("toggleFaqDynamic called");
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   const toogleFaq = () => {
     setOpen(!open);
   };
@@ -120,15 +127,15 @@ export function Faq(props) {
                                   onClick={() => do_resize()}
                                 >
                                   <span className="ac_open_cl_icon fa fa-minus">
-                                    {open ? (
-                                      <AddIcon sx={{ fontSize: "25px" }} />
-                                    ) : (
+                                    {openIndex === index + 1 ? (
                                       <RemoveIcon sx={{ fontSize: "25px" }} />
+                                    ) : (
+                                      <AddIcon sx={{ fontSize: "25px" }} />
                                     )}
                                   </span>
                                   <span
                                     className="ac_title_class"
-                                    onClick={toogleFaq}
+                                    onClick={() => toggleFaqDynamic(index + 1)}
                                   >
                                     {itm?.tagline}
                                   </span>
