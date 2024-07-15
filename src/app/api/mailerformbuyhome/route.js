@@ -1,9 +1,5 @@
-// "use server";
-// const nodemailer = require("nodemailer");
-// let nodemailer;
 const nodemailer = require("nodemailer");
 import { NextResponse } from "next/server";
-
 import { Connect } from "./../../../dbconfig/dbconfig";
 import { BuyHomeConsultModel } from "./../../../modals/BuyHomeConsultModel";
 
@@ -22,9 +18,7 @@ export const POST = async (request) => {
           service: "gmail",
           host: "smtp.gmail.com",
           port: 587,
-          // ssl:     true,
           secure: false,
-          //  requireTLS: true,
           auth: {
             user: "qmuhammad144@gmail.com",
             pass: "ovgytbqcdmdnaudo",
@@ -34,10 +28,13 @@ export const POST = async (request) => {
 
         console.log("smtpTransport", smtpTransport);
 
+        const uniqueSubject = `${title} - ${new Date().toISOString()}`;
+        const uniqueMessageId = `${new Date().getTime()}-${Math.random()}@example.com`;
+
         const mailOptions = {
           from: `"Buy A Home Consultation" ${text.state.email}`,
           to: `${to}`,
-          subject: `${title}`,
+          subject: uniqueSubject,
           html: `
           <div style="width: 600px;margin-bottom: 10px;height: 25px;padding-top: 7px;">
           <h3 style="font-family: 'Roboto';
@@ -65,42 +62,48 @@ export const POST = async (request) => {
           
            </div>
        
-           <div style="font-weight: bold ;width: 100%;background-color: #eaf3fa;margin-bottom: 10px;height: 25px;padding-top: 7px; padding-left: 5px;">
+           <div style="font-weight: bold ;width: 100%;background-color: #eaf3fa;margin-bottom: 10px;height: 25px;padding-top: 7px; padding left: 5px;">
            Phone
            </div>
        
-           <div style="width: 100%;background-color: white;margin-bottom: 10px;height: 25px;padding-top: 7px; padding-left: 15px;">
+           <div style="width: 100%;background-color: white;margin-bottom: 10px;height: 25px;padding-top: 7px; padding left: 15px;">
            ${text.state.phone} 
            </div>
 
 
-           <div style="font-weight: bold ;width: 100%;background-color: #eaf3fa;margin-bottom: 10px;height: 25px;padding-top: 7px; padding-left: 5px;">
+           <div style="font-weight: bold ;width: 100%;background-color: #eaf3fa;margin-bottom: 10px;height: 25px;padding-top: 7px; padding left: 5px;">
            Current Loan Amount
            </div>
        
-           <div style="width: 100%;background-color: white;margin-bottom: 10px;height: 25px;padding-top: 7px; padding-left: 15px;">
+           <div style="width: 100%;background-color: white;margin-bottom: 10px;height: 25px;padding-top: 7px; padding left: 15px;">
            ${text.state.loanAmount}
            </div>
 
-           <div style="font-weight: bold ;width: 100%;background-color: #eaf3fa;margin-bottom: 10px;height: 25px;padding-top: 7px; padding-left: 5px;">
+           <div style="font-weight: bold ;width: 100%;background-color: #eaf3fa;margin-bottom: 10px;height: 25px;padding-top: 7px; padding left: 5px;">
            Curretn Interest Rate
            </div>
        
-           <div style="width: 100%;background-color: white;margin-bottom: 10px;height: 25px;padding-top: 7px; padding-left: 15px;">
+           <div style="width: 100%;background-color: white;margin-bottom: 10px;height: 25px;padding-top: 7px; padding left: 15px;">
            ${text.state.interestRate}
            </div>
 
-           <div style="font-weight: bold ;width: 100%;background-color: #eaf3fa;margin-bottom: 10px;height: 25px;padding-top: 7px; padding-left: 5px;">
+           <div style="font-weight: bold ;width: 100%;background-color: #eaf3fa;margin-bottom: 10px;height: 25px;padding-top: 7px; padding left: 5px;">
            Why Refinancing?
            </div>
        
-           <div style="width: 100%;background-color: white;margin-bottom: 10px;height: 25px;padding-top: 7px; padding-left: 15px;">
+           <div style="width: 100%;background-color: white;margin-bottom: 10px;height: 25px;padding-top: 7px; padding left: 15px;">
            ${text.radioState.whyRefinnancing}
            </div>
 
        </div>
 `,
+          headers: {
+            "Message-ID": uniqueMessageId,
+            "In-Reply-To": uniqueMessageId,
+            References: uniqueMessageId,
+          },
         };
+
         console.log(mailOptions);
         const response = await smtpTransport.sendMail(mailOptions);
         console.log("Mail Response:", response);

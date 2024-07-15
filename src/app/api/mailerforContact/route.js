@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import { Connect } from "./../../../dbconfig/dbconfig";
 import { TalkToUsModel } from "./../../../modals/TalkToUsModel";
+
 export const POST = async (request) => {
   await Connect();
 
@@ -27,10 +28,13 @@ export const POST = async (request) => {
 
         console.log("SMTP Transport:", smtpTransport);
 
+        const uniqueSubject = `${title} - ${new Date().toISOString()}`;
+        const uniqueMessageId = `${new Date().getTime()}-${Math.random()}@example.com`;
+
         const mailOptions = {
           from: `"Talk To Us UserForm" <${text.email}>`,
           to: to,
-          subject: title,
+          subject: uniqueSubject,
           html: `
             <div style="width: 600px; margin-bottom: 10px; height: 25px; padding-top: 7px; ">
               <h3 style="font-family: 'Roboto'; font-size: 21px; color: green;">TalkToUs User Details</h3>
@@ -75,14 +79,17 @@ export const POST = async (request) => {
 
             </div>
           `,
+          headers: {
+            "Message-ID": uniqueMessageId,
+            "In-Reply-To": uniqueMessageId,
+            References: uniqueMessageId,
+          },
         };
 
         console.log("Mail Options:", mailOptions);
         const response = await smtpTransport.sendMail(mailOptions);
         console.log("Mail Response:", response);
         result = true;
-
-        //also save clien info to db
 
         return true;
       } catch (error) {
