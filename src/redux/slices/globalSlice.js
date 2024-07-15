@@ -543,14 +543,24 @@ export const globalSlice = createSlice({
     CLEAR_STATE: (state, action) => {
       state.PassUpdateMsg = action.payload.data;
     },
+    CLEAR_STATE: (state, action) => {
+      state.PassUpdateMsg = action.payload.data;
+    },
 
     DUPERR_MSG: (state, action) => {
       state.SignupMsg = action.payload.data.msg;
     },
 
     clearState: (state) => {
+      console.log("clearState called at globalSlice");
       state.PassUpdateMsg = "";
     },
+
+    clearLoginState: (state) => {
+      console.log("clearLoginState called");
+      state.LoginMsg = "";
+    },
+
     dupErrorMsg: (state, action) => {
       state.SignupMsg = action.payload.data.msg;
     },
@@ -563,6 +573,9 @@ export const globalSlice = createSlice({
     builder
       .addCase(authuser.fulfilled, (state, action) => {
         state.data = action.payload;
+        // setTimeout(() => {
+        //   state.data = "";
+        // }, 2000);
       })
       .addCase(authuser.rejected, (state, action) => {
         state.LoginMsg = action.payload.msg;
@@ -589,6 +602,7 @@ export const {
   CLEAR_STATE,
   DUPERR_MSG,
   clearState,
+  clearLoginState,
   dupErrorMsg,
   clearStateUpdatePass,
 } = globalSlice.actions;

@@ -58,8 +58,6 @@ export function ReputableLenders(props) {
                               decoding="async"
                               loading="lazy"
                               style={{
-                                height: "576px",
-                                width: "1366px",
                                 margin: "0px auto",
                               }}
                               src={itm.image_url}

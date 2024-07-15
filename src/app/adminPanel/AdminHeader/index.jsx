@@ -11,7 +11,10 @@ import Link from "next/link";
 import { Button } from "react-bootstrap";
 import { toast } from "react-toastify";
 
-import { logoutuserNow } from "../../../redux/slices/globalSlice";
+import {
+  logoutuserNow,
+  clearLoginState,
+} from "../../../redux/slices/globalSlice";
 import { CircularProgress, Box, Typography } from "@mui/material";
 
 const drawerWidth = 240;
@@ -48,6 +51,8 @@ export default function AdminHeader({ open, setOpen }) {
     setloader(true);
     let resp = await dispatch(logoutuserNow());
     console.log("resp logout", resp);
+    let resp2 = await dispatch(clearLoginState);
+    console.log("resp2 clearLoginState", resp2);
     if (resp?.payload?.data.msg === "Logout Successful") {
       toast.warn("Logout Successful", {
         position: "top-right",
@@ -60,7 +65,9 @@ export default function AdminHeader({ open, setOpen }) {
       });
       setloader(false);
 
-      router.push("/login"); // Use router.push for redirection
+      // also clear login redux state ms
+
+      router.replace("/login?reload=true");
     }
   };
 

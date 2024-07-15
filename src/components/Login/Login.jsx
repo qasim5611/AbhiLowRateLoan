@@ -104,15 +104,17 @@ const Login = () => {
     return isvalid;
   };
 
-  const Submithandler = (e) => {
+  const Submithandler = async (e) => {
     e.preventDefault();
     var isFormvalid = validate();
     console.log("isFormvalid", isFormvalid);
 
     if (isFormvalid) {
       setLoader(true);
-      dispatch(authuser(values));
+      await dispatch(authuser(values));
       console.log("ok");
+
+      window.location.reload();
     }
   };
 
