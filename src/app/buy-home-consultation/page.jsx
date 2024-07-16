@@ -116,6 +116,7 @@ export default function BuyHomeConsultaion(props) {
           "Buy Home Consultation Form",
           obj
         );
+
         // const req2 = await sendEmailBuyHome(
         //   // "qasimtahir5611@gmail.com",
         //   "abhijay.376@gmail.com",
@@ -125,15 +126,24 @@ export default function BuyHomeConsultaion(props) {
         console.log("ok", req);
         // console.log("abhijay", req2);
 
-        if (req.data.result == true || req.status == 200) {
-          setloader(false);
-
+        if (req.data.result == true) {
           setshowFirstForm(false);
           setShowSecondForm(false);
           setShowThirdForm(false);
           setShowFourthForm(false);
           setShowFifthForm(true);
+          setloader(false);
         }
+
+        // if (req.data.result == true || req.status == 200) {
+        //   setloader(false);
+
+        //   setshowFirstForm(false);
+        //   setShowSecondForm(false);
+        //   setShowThirdForm(false);
+        //   setShowFourthForm(false);
+        //   setShowFifthForm(true);
+        // }
       } catch (e) {
         console.log(e);
       }
