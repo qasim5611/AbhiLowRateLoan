@@ -798,6 +798,7 @@ export default function RefinanceConsultation(props) {
                         id="gform_submit_button_3"
                         className="gform_button button"
                         onClick={ClickForFifthForm}
+                        style={{ height: "42px" }}
                       >
                         {loader ? (
                           <Box

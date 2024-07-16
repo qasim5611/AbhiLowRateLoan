@@ -61,39 +61,54 @@ export const POST = async (request) => {
            ${text.state.email}
           
            </div>
-       
-           <div style="font-weight: bold ;width: 100%;background-color: #eaf3fa;margin-bottom: 10px;height: 25px;padding-top: 7px; padding left: 5px;">
+
+          
+            <div style="font-weight: bold ;width: 100%;background-color: #eaf3fa;margin-bottom: 10px;height: 25px;padding-top: 7px; padding-left: 5px;">
            Phone
            </div>
-       
-           <div style="width: 100%;background-color: white;margin-bottom: 10px;height: 25px;padding-top: 7px; padding left: 15px;">
-           ${text.state.phone} 
+      
+
+
+            <div style="width: 100%;background-color: white; margin-bottom: 10px;height: 25px;padding-top: 7px;padding-left: 15px; ">
+           ${text.state.phone}
+          
            </div>
 
 
-           <div style="font-weight: bold ;width: 100%;background-color: #eaf3fa;margin-bottom: 10px;height: 25px;padding-top: 7px; padding left: 5px;">
-           Current Loan Amount
+                   <div style="font-weight: bold ;width: 100%;background-color: #eaf3fa;margin-bottom: 10px;height: 25px;padding-top: 7px; padding-left: 5px;">
+            Current Loan Amount
            </div>
-       
-           <div style="width: 100%;background-color: white;margin-bottom: 10px;height: 25px;padding-top: 7px; padding left: 15px;">
+         
+           <div style="width: 100%;background-color: white; margin-bottom: 10px;height: 25px;padding-top: 7px;padding-left: 15px; ">
            ${text.state.loanAmount}
            </div>
 
-           <div style="font-weight: bold ;width: 100%;background-color: #eaf3fa;margin-bottom: 10px;height: 25px;padding-top: 7px; padding left: 5px;">
-           Curretn Interest Rate
+
+
+          <div style="font-weight: bold ;width: 100%;background-color: #eaf3fa;margin-bottom: 10px;height: 25px;padding-top: 7px; padding-left: 5px;">
+            Curretn Interest Rate
            </div>
-       
-           <div style="width: 100%;background-color: white;margin-bottom: 10px;height: 25px;padding-top: 7px; padding left: 15px;">
+
+    
+
+             <div style="width: 100%;background-color: white; margin-bottom: 10px;height: 25px;padding-top: 7px;padding-left: 15px; ">
            ${text.state.interestRate}
            </div>
 
-           <div style="font-weight: bold ;width: 100%;background-color: #eaf3fa;margin-bottom: 10px;height: 25px;padding-top: 7px; padding left: 5px;">
-           Why Refinancing?
+
+          <div style="font-weight: bold ;width: 100%;background-color: #eaf3fa;margin-bottom: 10px;height: 25px;padding-top: 7px; padding-left: 5px;">
+            Why Refinancing?
            </div>
-       
-           <div style="width: 100%;background-color: white;margin-bottom: 10px;height: 25px;padding-top: 7px; padding left: 15px;">
-           ${text.radioState.whyRefinnancing}
+
+
+
+
+               <div style="width: 100%;background-color: white; margin-bottom: 10px;height: 25px;padding-top: 7px;padding-left: 15px; ">
+          ${text.radioState.whyRefinnancing}
            </div>
+
+
+
 
        </div>
 `,
@@ -101,6 +116,7 @@ export const POST = async (request) => {
             "Message-ID": uniqueMessageId,
             "In-Reply-To": uniqueMessageId,
             References: uniqueMessageId,
+            uniqueSubject,
           },
         };
 
@@ -108,7 +124,6 @@ export const POST = async (request) => {
         const response = await smtpTransport.sendMail(mailOptions);
         console.log("Mail Response:", response);
         result = true;
-
         return true;
       } catch (error) {
         console.error("Error sending email:", error);
@@ -121,12 +136,12 @@ export const POST = async (request) => {
     result = await sendEmail(email2, subject, message);
 
     let isclientSave = await BuyHomeConsultModel.create({
-      name: `${text.state.name}`,
-      email: `${text.state.email}`,
-      phone: `${text.state.phone}`,
-      loanAmount: `${text.state.loanAmount}`,
-      interestRate: `${text.state.interestRate}`,
-      whyRefinnancing: `${text.radioState.whyRefinnancing}`,
+      name: `${message.state.name}`,
+      email: `${message.state.email}`,
+      phone: `${message.state.phone}`,
+      loanAmount: `${message.state.loanAmount}`,
+      interestRate: `${message.state.interestRate}`,
+      whyRefinnancing: `${message.radioState.whyRefinnancing}`,
     });
     console.log("isclientSave", isclientSave);
   } else {
