@@ -58,8 +58,10 @@ export function FeaturedTop() {
                                 text.split("upto");
                               return (
                                 <>
-                                  {firstPart}
-                                  <br />
+                                  <p className="spacing has-theme-palette-9-color has-text-color">
+                                    {firstPart}
+                                  </p>
+                                  {/* <br /> */}
                                   <span
                                     className="kt-adv-heading_41967a-b0 wp-block-kadence-advancedheading has-theme-palette-9-color has-text-color"
                                     data-kb-block="kb-adv-heading_41967a-b0"
@@ -70,10 +72,7 @@ export function FeaturedTop() {
                               );
                             };
                             return (
-                              <div
-                                key={index}
-                                className="wp-block-kadence-column inner-column-1 kadence-column_10fd86-13 top-button"
-                              >
+                              <div className="wp-block-kadence-column inner-column-1 kadence-column_10fd86-13 top-button">
                                 <div className="kt-inside-inner-col">
                                   <div className="wp-block-kadence-rowlayout alignnone">
                                     <div
@@ -85,33 +84,21 @@ export function FeaturedTop() {
                                           <div className="kt-inside-inner-col">
                                             <figure className="wp-block-image size-large">
                                               <img
-                                                decoding="async"
-                                                // width="59"
-                                                // height="62"
-                                                src={itm?.image_url}
                                                 style={{
                                                   width: "61px",
                                                   height: "61px",
                                                 }}
+                                                src={itm?.image_url}
                                                 alt=""
                                                 className="wp-image-3979"
                                               />
                                             </figure>
                                           </div>
                                         </div>
-                                        &nbsp;
+
                                         <div className="wp-block-kadence-column inner-column-2 kadence-column_84ab0e-e5">
                                           <div className="kt-inside-inner-col">
-                                            <p className="spacing has-theme-palette-9-color has-text-color">
-                                              {formatText(itm?.tagline)}
-                                            </p>
-
-                                            {/* <span
-                                              className="kt-adv-heading_41967a-b0 wp-block-kadence-advancedheading has-theme-palette-9-color has-text-color"
-                                              data-kb-block="kb-adv-heading_41967a-b0"
-                                            >
-                                              upto <strong>$6,000</strong>
-                                            </span> */}
+                                            {formatText(itm?.tagline)}
                                           </div>
                                         </div>
                                       </div>
@@ -136,9 +123,10 @@ export function FeaturedTop() {
                                       <div className="kt-inside-inner-col">
                                         <figure className="wp-block-image size-large">
                                           <img
-                                            decoding="async"
-                                            width="62"
-                                            height="62"
+                                            style={{
+                                              width: "61px",
+                                              height: "61px",
+                                            }}
                                             src="/pics/featuredTop/cash-back-icon.svg"
                                             alt=""
                                             className="wp-image-3979"
@@ -179,10 +167,10 @@ export function FeaturedTop() {
                                       <div className="kt-inside-inner-col">
                                         <figure className="wp-block-image size-large">
                                           <img
-                                            decoding="async"
-                                            loading="lazy"
-                                            width="62"
-                                            height="62"
+                                            style={{
+                                              width: "61px",
+                                              height: "61px",
+                                            }}
                                             src="/pics/featuredTop/icon-gift-card.svg"
                                             alt="icon gift card"
                                             className="wp-image-4355"
@@ -225,10 +213,10 @@ export function FeaturedTop() {
                                       <div className="kt-inside-inner-col">
                                         <figure className="wp-block-image size-large">
                                           <img
-                                            decoding="async"
-                                            loading="lazy"
-                                            width="62"
-                                            height="62"
+                                            style={{
+                                              width: "61px",
+                                              height: "61px",
+                                            }}
                                             src="/pics/featuredTop/icon-loan-long-term.svg"
                                             alt="icon long term loan"
                                             className="wp-image-4359"
@@ -269,10 +257,10 @@ export function FeaturedTop() {
                                       <div className="kt-inside-inner-col">
                                         <figure className="wp-block-image size-large">
                                           <img
-                                            decoding="async"
-                                            loading="lazy"
-                                            width="61"
-                                            height="62"
+                                            style={{
+                                              width: "61px",
+                                              height: "61px",
+                                            }}
                                             src="/pics/featuredTop/loan-term-icon.svg"
                                             alt="loan term icon"
                                             className="wp-image-3981"

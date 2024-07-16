@@ -116,9 +116,9 @@ export default function RefinanceConsultation(props) {
         setloader(true);
 
         const req = await sendEmail(
-          "info@lowratehomeloan.com.au",
+          // "info@lowratehomeloan.com.au",
           "abhijay.376@gmail.com",
-          // "qasimtahir5611@gmail.com",
+          "qasimtahir5611@gmail.com",
           "Refinance Consultation Form",
           obj
         );

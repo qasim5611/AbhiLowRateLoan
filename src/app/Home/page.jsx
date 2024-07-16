@@ -35,12 +35,13 @@ const HomeComp = () => {
 
   const formatTagline = (tagline) => {
     const words = tagline.split(" ");
-    const beforeUpto = words.slice(0, 4).join(" ");
-    const afterUpto = words.slice(4).join(" ");
+    const beforeUpto = words.slice(0, 5).join(" ");
+    const afterUpto = words.slice(5).join(" ");
     return (
       <>
         {beforeUpto} <br />
-        <span style={{ fontWeight: "bold" }}>upto</span> {afterUpto}
+        {/* <span style={{ fontWeight: "bold" }}>upto</span> */}
+        {afterUpto}
       </>
     );
   };
@@ -136,6 +137,7 @@ const HomeComp = () => {
                                           <Link
                                             href="/refinance-consultation"
                                             className="wp-block-button__link wp-element-button"
+                                            style={{ fontSize: "20.25px" }}
                                           >
                                             <strong>i want to refinance</strong>
                                           </Link>
@@ -145,6 +147,7 @@ const HomeComp = () => {
                                           <Link
                                             className="wp-block-button__link has-theme-palette-1-background-color has-background wp-element-button"
                                             href="/buy-home-consultation"
+                                            style={{ fontSize: "20.25px" }}
                                           >
                                             <strong>
                                               i want to buy a home

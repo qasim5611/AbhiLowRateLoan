@@ -35,9 +35,10 @@ sec and map, Manual */}
                     wonderful Hornsby NSW, you have come to the right place.
                   </p>
                   <p>
-                    If you’re already a resident of fabulous Hornsby, NSW and
-                    looking to Refinance, Debt Consolidation or want to Buy an
-                    Investment Property, you are on the right track.&nbsp;
+                    If you’re already a resident oWe will get youf fabulous
+                    Hornsby, NSW and looking to Refinance, Debt Consolidation or
+                    want to Buy an Investment Property, you are on the right
+                    track.&nbsp;
                   </p>
                   <h2 className="wp-block-heading">
                     <strong>
