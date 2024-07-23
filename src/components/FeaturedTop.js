@@ -79,29 +79,43 @@ export function FeaturedTop() {
                                       id="kt-layout-id_b35231-50"
                                       className="kt-row-layout-inner kt-layout-id_b35231-50"
                                     >
-                                      <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-none kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-right-golden  kt-custom-first-width-25  kt-custom-second-width-75">
-                                        <div className="wp-block-kadence-column inner-column-1 kadence-column_c5ffd3-77">
-                                          <div className="kt-inside-inner-col">
-                                            <figure className="wp-block-image size-large">
-                                              <img
-                                                style={{
-                                                  width: "61px",
-                                                  height: "61px",
-                                                }}
-                                                src={itm?.image_url}
-                                                alt=""
-                                                className="wp-image-3979"
-                                              />
-                                            </figure>
+                                      <Link
+                                        style={{ textDecoration: "none" }}
+                                        href={
+                                          index == 0
+                                            ? ""
+                                            : index == 1
+                                            ? "/gift-card-terms-condition"
+                                            : index == 2
+                                            ? ""
+                                            : index == 3
+                                            ? ""
+                                            : null
+                                        }
+                                      >
+                                        <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-none kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-right-golden  kt-custom-first-width-25  kt-custom-second-width-75">
+                                          <div className="wp-block-kadence-column inner-column-1 kadence-column_c5ffd3-77">
+                                            <div className="kt-inside-inner-col">
+                                              <figure className="wp-block-image size-large">
+                                                <img
+                                                  style={{
+                                                    width: "61px",
+                                                    height: "61px",
+                                                  }}
+                                                  src={itm?.image_url}
+                                                  alt=""
+                                                  className="wp-image-3979"
+                                                />
+                                              </figure>
+                                            </div>
+                                          </div>
+                                          <div className="wp-block-kadence-column inner-column-2 kadence-column_84ab0e-e5">
+                                            <div className="kt-inside-inner-col">
+                                              {formatText(itm?.tagline)}
+                                            </div>
                                           </div>
                                         </div>
-
-                                        <div className="wp-block-kadence-column inner-column-2 kadence-column_84ab0e-e5">
-                                          <div className="kt-inside-inner-col">
-                                            {formatText(itm?.tagline)}
-                                          </div>
-                                        </div>
-                                      </div>
+                                      </Link>
                                     </div>
                                   </div>
                                 </div>
@@ -137,13 +151,23 @@ export function FeaturedTop() {
 
                                     <div className="wp-block-kadence-column inner-column-2 kadence-column_84ab0e-e5">
                                       <div className="kt-inside-inner-col">
-                                        <p className="spacing has-theme-palette-9-color has-text-color">
+                                        <p
+                                          className="spacing has-theme-palette-9-color has-text-color"
+                                          style={{
+                                            fontSize: "18px",
+                                            fontFamily: "ubuntu",
+                                          }}
+                                        >
                                           CASH BACK
                                         </p>
 
                                         <span
                                           className="kt-adv-heading_41967a-b0 wp-block-kadence-advancedheading has-theme-palette-9-color has-text-color"
                                           data-kb-block="kb-adv-heading_41967a-b0"
+                                          style={{
+                                            fontSize: "21.6px",
+                                            fontFamily: "ubuntu",
+                                          }}
                                         >
                                           upto <strong>$6,000</strong>
                                         </span>
@@ -180,15 +204,25 @@ export function FeaturedTop() {
                                     </div>
 
                                     <div className="wp-block-kadence-column inner-column-2 kadence-column_c32719-db">
-                                      <Link href={"/gift-card-terms-condition"}>
+                                      <Link href="/gift-card-terms-condition">
                                         <div className="kt-inside-inner-col">
-                                          <p className="spacing has-theme-palette-9-color has-text-color">
+                                          <p
+                                            className="spacing has-theme-palette-9-color has-text-color"
+                                            style={{
+                                              fontSize: "18px",
+                                              fontFamily: "ubuntu",
+                                            }}
+                                          >
                                             BONUS
                                           </p>
 
                                           <span
                                             className="kt-adv-heading_70bfd6-1b wp-block-kadence-advancedheading has-theme-palette-9-color has-text-color"
                                             data-kb-block="kb-adv-heading_70bfd6-1b"
+                                            style={{
+                                              fontSize: "21.6px",
+                                              fontFamily: "ubuntu",
+                                            }}
                                           >
                                             upto <strong>$2,000</strong>
                                           </span>
@@ -227,13 +261,23 @@ export function FeaturedTop() {
 
                                     <div className="wp-block-kadence-column inner-column-2 kadence-column_52a2d9-69">
                                       <div className="kt-inside-inner-col">
-                                        <p className="spacing has-theme-palette-9-color has-text-color">
+                                        <p
+                                          className="spacing has-theme-palette-9-color has-text-color"
+                                          style={{
+                                            fontSize: "18px",
+                                            fontFamily: "ubuntu",
+                                          }}
+                                        >
                                           LONG LOAN TERM
                                         </p>
 
                                         <span
                                           className="kt-adv-heading_ee5b99-a6 wp-block-kadence-advancedheading has-theme-palette-9-color has-text-color"
                                           data-kb-block="kb-adv-heading_ee5b99-a6"
+                                          style={{
+                                            fontSize: "21.6px",
+                                            fontFamily: "ubuntu",
+                                          }}
                                         >
                                           upto <strong>35 years</strong>
                                         </span>
@@ -271,13 +315,23 @@ export function FeaturedTop() {
 
                                     <div className="wp-block-kadence-column inner-column-2 kadence-column_4ca723-e9">
                                       <div className="kt-inside-inner-col">
-                                        <p className="spacing has-theme-palette-9-color has-text-color">
+                                        <p
+                                          className="spacing has-theme-palette-9-color has-text-color"
+                                          style={{
+                                            fontSize: "18px",
+                                            fontFamily: "ubuntu",
+                                          }}
+                                        >
                                           PROCESSING TIME
                                         </p>
 
                                         <span
                                           className="kt-adv-heading_26473f-72 wp-block-kadence-advancedheading has-theme-palette-9-color has-text-color"
                                           data-kb-block="kb-adv-heading_26473f-72"
+                                          style={{
+                                            fontSize: "21.6px",
+                                            fontFamily: "ubuntu",
+                                          }}
                                         >
                                           upto <strong>2 hours</strong>
                                         </span>
