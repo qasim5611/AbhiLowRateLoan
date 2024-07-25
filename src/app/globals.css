@@ -1895,13 +1895,13 @@ body .is-layout-flex > * {
 }
 
 #wpsm_accordion_1713 .wpsm_panel-heading {
-  background-image: url(https://scoresbymortgagebroker.com.au/wp-content/plugins/responsive-accordion-and-collapse/img/style-soft.png);
+  background-image: url("/style-soft.png");
   background-position: 0 0;
   background-repeat: repeat-x;
 }
 
 #wpsm_accordion_1713 .ac_open_cl_icon {
-  background-image: url(https://scoresbymortgagebroker.com.au/wp-content/plugins/responsive-accordion-and-collapse/img/style-soft.png);
+  background-image: url("/style-soft.png");
   background-position: 0 0;
   background-repeat: repeat-x;
 }

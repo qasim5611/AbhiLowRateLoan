@@ -48,15 +48,15 @@ export default function RootLayout({ children }) {
           <link
             rel="stylesheet"
             id="ti-widget-css-google-css"
-            href="https://scoresbymortgagebroker.com.au/wp-content/uploads/trustindex-google-widget.css?ver=1673419651"
+            href="/trustindex-google-widget.css"
             media="all"
           />
-          <link
+          {/* <link
             rel="alternate"
             type="application/rss+xml"
             title="Low Rate Home Loan &raquo; Comments Feed"
             href="https://scoresbymortgagebroker.com.au/comments/feed/"
-          />
+          /> */}
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1, minimum-scale=1"
@@ -66,7 +66,7 @@ export default function RootLayout({ children }) {
             content='We will get you the best home loan in Melbourne I want to refinance I want to buy a home Featured Services How can we help? We understand that the diverse needs of most people do not have "one-size-fits-all" answers.We will acquire the best loan to suit your specific requirements by getting to know you,'
           />
           <meta name="robots" content="max-image-preview:large" />
-          <link rel="canonical" href="https://scoresbymortgagebroker.com.au/" />
+          <link rel="canonical" href="https://lowratehomeloan.com.au/" />
           <meta name="generator" content="All in One SEO (AIOSEO) 4.2.9 " />
           <meta property="og:locale" content="en_US" />
           <meta property="og:site_name" content="Low Rate Home Loan -" />
@@ -76,17 +76,11 @@ export default function RootLayout({ children }) {
             property="og:description"
             content='We will get you the best home loan in Melbourne I want to refinance I want to buy a home Featured Services How can we help? We understand that the diverse needs of most people do not have "one-size-fits-all" answers.We will acquire the best loan to suit your specific requirements by getting to know you,'
           />{" "}
-          <meta
-            property="og:url"
-            content="https://scoresbymortgagebroker.com.au/"
-          />
-          <meta
-            property="og:image"
-            content="https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/lowratehomeloan-logo.svg"
-          />
+          <meta property="og:url" content="https://lowratehomeloan.com.au/" />
+          <meta property="og:image" content="/lowratehomeloan-logo.svg" />
           <meta
             property="og:image:secure_url"
-            content="https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/lowratehomeloan-logo.svg"
+            content="/lowratehomeloan-logo.svg"
           />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="Home - Low Rate Home Loan" />
@@ -94,32 +88,29 @@ export default function RootLayout({ children }) {
             name="twitter:description"
             content='We will get you the best home loan in Melbourne I want to refinance I want to buy a home Featured Services How can we help? We understand that the diverse needs of most people do not have "one-size-fits-all" answers.We will acquire the best loan to suit your specific requirements by getting to know you,'
           />
-          <meta
-            name="twitter:image"
-            content="https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/lowratehomeloan-logo.svg"
-          />
+          <meta name="twitter:image" content="/lowratehomeloan-logo.svg" />
           <link
             rel="stylesheet"
             id="wp-block-library-css"
-            href="https://scoresbymortgagebroker.com.au/wp-includes/css/dist/block-library/style.min.css?ver=6.1.5"
+            href="/style.min.css"
             media="all"
           />
           <link
             rel="stylesheet"
             id="classic-theme-styles-css"
-            href="https://scoresbymortgagebroker.com.au/wp-includes/css/classic-themes.min.css?ver=1"
+            href="/classic-themes.min.css"
             media="all"
           />
           <link
             rel="stylesheet"
             id="wpsm_ac-font-awesome-front-css"
-            href="https://scoresbymortgagebroker.com.au/wp-content/plugins/responsive-accordion-and-collapse/css/font-awesome/css/font-awesome.min.css?ver=6.1.5"
+            href="/font-awesome.min.css"
             media="all"
           />
           <link
             rel="stylesheet"
             id="wpsm_ac_bootstrap-front-css"
-            href="https://scoresbymortgagebroker.com.au/wp-content/plugins/responsive-accordion-and-collapse/css/bootstrap-front.css?ver=6.1.5"
+            href="/bootstrap-front.css"
             media="all"
           />
           <link
@@ -137,87 +128,80 @@ export default function RootLayout({ children }) {
           <link
             rel="stylesheet"
             id="kadence-header-css"
-            href="https://scoresbymortgagebroker.com.au/wp-content/themes/kadence/assets/css/header.min.css?ver=1.1.31"
+            href="/header.min.css"
             media="all"
           />
           <link
             rel="stylesheet"
             id="kadence-content-css"
-            href="https://scoresbymortgagebroker.com.au/wp-content/themes/kadence/assets/css/content.min.css?ver=1.1.31"
+            href="/content.min.css"
             media="all"
           />
           <link
             rel="stylesheet"
             id="kadence-footer-css"
-            href="https://scoresbymortgagebroker.com.au/wp-content/themes/kadence/assets/css/footer.min.css?ver=1.1.31"
+            href="/footer.min.css"
             media="all"
           />
           <link
             rel="stylesheet"
             id="gform_basic-css"
-            href="https://scoresbymortgagebroker.com.au/wp-content/plugins/gravityforms/assets/css/dist/basic.min.css?ver=2.6.9"
+            href="/basic.min.css"
             media="all"
           />
-          <link
+          {/* <link
             rel="stylesheet"
             id="gform_theme_components-css"
             href="https://scoresbymortgagebroker.com.au/wp-content/plugins/gravityforms/assets/css/dist/theme-components.min.css?ver=2.6.9"
             media="all"
-          />
+          /> */}
           <link
             rel="stylesheet"
             id="gform_theme_ie11-css"
-            href="https://scoresbymortgagebroker.com.au/wp-content/plugins/gravityforms/assets/css/dist/theme-ie11.min.css?ver=2.6.9"
+            href="/theme-ie11.min.css"
             media="all"
           />
           <link
             rel="stylesheet"
             id="gform_theme-css"
-            href="https://scoresbymortgagebroker.com.au/wp-content/plugins/gravityforms/assets/css/dist/theme.min.css?ver=2.6.9"
+            href="/theme.min.css"
             media="all"
           />
           <link
             rel="stylesheet"
             id="kadence-blocks-rowlayout-css"
-            href="https://scoresbymortgagebroker.com.au/wp-content/plugins/kadence-blocks/dist/blocks/row.style.build.css?ver=2.4.22"
+            href="/row.style.build.css"
             media="all"
           />
           <link
             rel="stylesheet"
             id="kadence-blocks-column-css"
-            href="https://scoresbymortgagebroker.com.au/wp-content/plugins/kadence-blocks/dist/blocks/column.style.build.css?ver=2.4.22"
+            href="/column.style.build.css"
             media="all"
           />
           <link
             rel="stylesheet"
             id="kadence-fonts-css"
-            href="https://fonts.googleapis.com/css?family=Ubuntu:regular,500,700%7CPoppins:600,regular&#038;display=swap"
+            href="/fontFamily.css"
             media="all"
           />
           <link
             rel="icon"
-            href="https://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/logo-150x150.webp"
+            href="/insider2022/12/logo-150x150.webp"
             sizes="32x32"
           />
-          <link
-            rel="icon"
-            href="https://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/logo.webp"
-            sizes="192x192"
-          />
-          <link
-            rel="apple-touch-icon"
-            href="https://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/logo.webp"
-          />
+          <link rel="icon" href="/insider2022/12/logo.webp" sizes="192x192" />
+          <link rel="apple-touch-icon" href="/insider2022/12/logo.webp" />
           <meta
             name="msapplication-TileImage"
-            content="https://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/logo.webp"
+            content="/insider2022/12/logo.webp"
           />
-          <link
+          {/* <link
             rel="stylesheet"
             id="ti-widget-css-google-css"
             href="https://scoresbymortgagebroker.com.au/wp-content/uploads/trustindex-google-widget.css?ver=1673419651"
             media="all"
-          />
+          /> */}
         </head>
         <body
           style={{ display: "block !important" }}
@@ -266,67 +250,56 @@ export default function RootLayout({ children }) {
 
           <script src="assets/js/Kadence.js"></script>
 
-          <script
-            src="https://scoresbymortgagebroker.com.au/wp-includes/js/jquery/jquery.min.js?ver=3.6.1"
-            id="jquery-core-js"
-          ></script>
+          <script src="/jquery.min.js" id="jquery-core-js"></script>
 
           <script
-            src="https://scoresbymortgagebroker.com.au/wp-content/plugins/responsive-accordion-and-collapse/js/accordion-custom.js?ver=6.1.5"
+            src="/accordion-custom.js"
             id="call_ac-custom-js-front-js"
           ></script>
 
-          <script
-            src="https://scoresbymortgagebroker.com.au/wp-content/plugins/responsive-accordion-and-collapse/js/accordion.js?ver=6.1.5"
-            id="call_ac-js-front-js"
-          ></script>
+          <script src="/accordion.js" id="call_ac-js-front-js"></script>
 
           <script
-            src="https://scoresbymortgagebroker.com.au/wp-content/themes/kadence/assets/js/navigation.min.js?ver=1.1.31"
+            src="/navigation.min.js"
             id="kadence-navigation-js"
             async
           ></script>
 
-          <script
-            defer
-            async
-            src="https://cdn.trustindex.io/loader.js?ver=6.1.5"
-            id="trustindex-js-js"
-          ></script>
+          <script defer async src="/loader.js" id="trustindex-js-js"></script>
 
-          <script
+          {/* <script
             src="https://scoresbymortgagebroker.com.au/wp-content/plugins/responsive-accordion-and-collapse/js/accordion-custom.js?ver=6.1.5"
             id="call_ac-custom-js-front-js"
-          ></script>
+          ></script> */}
 
-          <script
+          {/* <script
             src="https://scoresbymortgagebroker.com.au/wp-content/plugins/responsive-accordion-and-collapse/js/accordion.js?ver=6.1.5"
             id="call_ac-js-front-js"
-          ></script>
+          ></script> */}
 
-          <script
+          {/* <script
             defer
             async
             src="https://cdn.trustindex.io/loader.js?ver=6.1.5"
             id="trustindex-js-js"
-          ></script>
+          ></script> */}
 
-          <script
+          {/* <script
             defer
             async
             src="https://cdn.trustindex.io/loader.js?ver=6.1.5"
             id="trustindex-js-js"
-          ></script>
+          ></script> */}
 
-          <script
+          {/* <script
             src="https://scoresbymortgagebroker.com.au/wp-content/plugins/responsive-accordion-and-collapse/js/accordion-custom.js?ver=6.1.5"
             id="call_ac-custom-js-front-js"
-          ></script>
+          ></script> */}
 
-          <script
+          {/* <script
             src="https://scoresbymortgagebroker.com.au/wp-content/plugins/responsive-accordion-and-collapse/js/accordion.js?ver=6.1.5"
             id="call_ac-js-front-js"
-          ></script>
+          ></script> */}
         </body>
       </html>
     </Provider>
