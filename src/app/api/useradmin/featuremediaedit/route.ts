@@ -15,9 +15,9 @@ export const POST = async(req: NextRequest)=>{
   const tagline = formData.get("tagline") as unknown as File; 
   const idtoUpdate = formData.get("idtoUpdate") as unknown as File; 
 
-  console.log("image", {image});
-  console.log("tagline", tagline);
-  console.log("idtoUpdate", idtoUpdate);
+  // console.log("image", {image});
+  // console.log("tagline", tagline);
+  // console.log("idtoUpdate", idtoUpdate);
 
 
 let mydata = await FeatureMediaModel.findOne({
