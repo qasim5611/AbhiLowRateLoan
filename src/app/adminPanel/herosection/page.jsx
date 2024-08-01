@@ -5,14 +5,13 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Adminlayout from "../Adminlayout";
 import { useSelector, useDispatch } from "react-redux";
-
+import Loading from "./../../../utils/loading";
 import Breadcrumb from "./../../../components/Breadcrumbs/Breadcrumb";
 import { Grid, TextField } from "@mui/material";
 import {
   editHeroSection,
   getHeroSection,
 } from "./../../../redux/slices/globalSlice";
-import axios from "axios";
 
 export default function HeroSection(props) {
   let dispatch = useDispatch();
@@ -184,7 +183,7 @@ export default function HeroSection(props) {
             })}
           </>
         ) : (
-          <div>Loading...</div>
+          <Loading />
         )}
       </div>
     </Adminlayout>

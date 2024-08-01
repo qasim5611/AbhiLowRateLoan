@@ -5,13 +5,38 @@
 import dynamic from "next/dynamic";
 const ApexChart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
-export default function DonutChart() {
+export default function DonutChart(props) {
+  console.log("props", props.monthlyData);
+  let monthlyData = props.monthlyData;
+  const categoriess = Object.keys(monthlyData).map((date) => {
+    const [year, month] = date.split("-");
+    const monthNames = [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "June",
+      "July",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ];
+    return `${monthNames[parseInt(month) - 1]}${year.slice(-2)}`;
+  });
+
+  const seriesData = Object.values(monthlyData).map(
+    (entries) => entries.length
+  );
+
   const option = {
     chart: {
       id: "apexchart-example",
     },
     xaxis: {
-      categories: ["June24", "May24", "April24", "March24", "Feb24", "Jan24"],
+      categories: categoriess,
     },
     colors: ["#FFA500"], // Change line color to orange
   };
@@ -19,7 +44,7 @@ export default function DonutChart() {
   const series = [
     {
       name: "series-1",
-      data: [30, 40, 35, 50, 49, 60],
+      data: seriesData,
     },
   ];
 

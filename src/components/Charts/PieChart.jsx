@@ -3,7 +3,8 @@
 import dynamic from "next/dynamic";
 const ApexChart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
-export default function DonutChart() {
+export default function DonutChart(props) {
+  console.log("props", props);
   const options = {
     chart: {
       id: "apexchart-example",
@@ -13,7 +14,7 @@ export default function DonutChart() {
     colors: ["#008000", "#ffd085"],
   };
 
-  const series = [70, 30]; // Series data
+  const series = [parseInt(props.refhomeper), parseInt(props.buyhomeper)]; // Series data
 
   return (
     <>

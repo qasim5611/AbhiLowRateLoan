@@ -10,6 +10,7 @@ import {
   editFeatureMedia,
   getFeatureMedia,
 } from "../../../redux/slices/globalSlice";
+import Loading from "./../../../utils/loading";
 import {
   Box,
   Button,
@@ -31,17 +32,9 @@ export default function FeatureTop(props) {
     const fetchData = async () => {
       let resp = await dispatch(getFeatureMedia());
       const images = resp?.payload?.data?.images || [];
+      console.log("images....", images);
       setRecord1(images);
 
-      // Initialize formData and loading state
-      const initialFormData = {};
-      const initialLoading = {};
-      images.forEach((item, index) => {
-        initialFormData[`tagline${index + 1}`] = item.tagline;
-        initialFormData[`image${index + 1}`] = null;
-        initialLoading[`loader${index + 1}`] = false;
-      });
-      setFormData(initialFormData);
       setLoading(initialLoading);
     };
 
@@ -197,10 +190,11 @@ export default function FeatureTop(props) {
                             zIndex: "9999",
                             mb: 2,
                             backgroundColor: "#fcc26e",
-                            "&:hover": {
-                              backgroundColor: "black",
-                              color: "white",
-                            },
+                            backgroundImage: `url(${itm.image_url})`,
+                            backgroundPosition: "center",
+                            backgroundSize: "cover",
+                            height: "64px",
+                            backgroundRepeat: "no-repeat",
                           }}
                         >
                           <CenterFocusStrongIcon /> Upload Image
@@ -212,6 +206,7 @@ export default function FeatureTop(props) {
                           />
                         </Button>
                       </Grid>
+
                       <Grid item sm={12} md={2} lg={2}>
                         <button
                           onClick={(e) => handleSubmit(e, index, itm._id)}
@@ -255,7 +250,7 @@ export default function FeatureTop(props) {
                 })}
               </>
             ) : (
-              <>Loading...</>
+              <Loading />
             )}
           </Box>
         </Box>

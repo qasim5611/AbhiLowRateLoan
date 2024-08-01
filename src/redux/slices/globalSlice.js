@@ -317,6 +317,39 @@ export const editReputeableBanner = createAsyncThunk(
   }
 );
 
+export const editAboutUsBanner = createAsyncThunk(
+  "auth/editAboutUsBanner",
+  async (body) => {
+    try {
+      console.log(
+        ".................................>> editAboutUsBanner Global Slice",
+        body
+      );
+      const config = {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      };
+      let formData = new FormData();
+      for (var item in body) {
+        formData.append(item, body[item]);
+      }
+      console.log("formData", formData);
+
+      let res = await axios.post(
+        "/api/useradmin/aboutus-edit",
+        formData,
+        config
+      );
+      console.log("res", res);
+      return res;
+    } catch (error) {
+      // Handle error
+      console.error(error);
+      throw error;
+    }
+  }
+);
 export const editServiceContent = createAsyncThunk(
   "auth/featureservice-save",
   async (body) => {
@@ -419,6 +452,21 @@ export const getHeroSection = createAsyncThunk(
   }
 );
 
+export const getDashboardStats = createAsyncThunk(
+  "auth/getHeroSection",
+  async (body) => {
+    try {
+      let res = await axios.get("/api/useradmin/DashbioardStatsGet");
+      // console.log(res);
+      return res;
+    } catch (error) {
+      // Handle error
+      console.error(error);
+      throw error;
+    }
+  }
+);
+
 export const getFeatureSection = createAsyncThunk(
   "auth/getFeatureSection",
   async (body) => {
@@ -452,6 +500,20 @@ export const getReputeableBanner = createAsyncThunk(
   async (body) => {
     try {
       let res = await axios.get("/api/useradmin/reputeable-get");
+      console.log(res);
+      return res;
+    } catch (error) {
+      console.error(error);
+      throw error;
+    }
+  }
+);
+
+export const getAboutusBanner = createAsyncThunk(
+  "auth/getAboutusBanner",
+  async (body) => {
+    try {
+      let res = await axios.get("/api/useradmin/aboutus-get");
       console.log(res);
       return res;
     } catch (error) {

@@ -6,8 +6,8 @@ import "react-toastify/dist/ReactToastify.css";
 import Adminlayout from "../Adminlayout";
 import { useSelector, useDispatch } from "react-redux";
 import CenterFocusStrongIcon from "@mui/icons-material/CenterFocusStrong";
-import Breadcrumb from "./../../../components/Breadcrumbs/Breadcrumb";
-import Loading from "./../../../utils/loading";
+import Breadcrumb from "../../../components/Breadcrumbs/Breadcrumb";
+import Loading from "../../../utils/loading";
 import {
   Box,
   Button,
@@ -17,8 +17,8 @@ import {
   Typography,
 } from "@mui/material";
 import {
-  editReputeableBanner,
-  getReputeableBanner,
+  editAboutUsBanner,
+  getAboutusBanner,
 } from "../../../redux/slices/globalSlice";
 import axios from "axios";
 
@@ -31,7 +31,7 @@ export default function ReputeableLenders(props) {
 
   useEffect(() => {
     const fetchData = async () => {
-      let resp = await dispatch(getReputeableBanner());
+      let resp = await dispatch(getAboutusBanner());
 
       setrecord2(resp?.payload?.data?.data);
       setidtoUpdate(resp?.payload?.data?.data[0]._id);
@@ -41,7 +41,7 @@ export default function ReputeableLenders(props) {
   }, []);
 
   const [state, setState] = useState({
-    tagline: "",
+    // tagline: "",
     image: null,
   });
 
@@ -60,7 +60,7 @@ export default function ReputeableLenders(props) {
     }
   };
 
-  const updateHomeBanner = async (e) => {
+  const updateAboutusBanner = async (e) => {
     e.preventDefault();
     console.log("Reputeable Lender state", state);
 
@@ -84,8 +84,8 @@ export default function ReputeableLenders(props) {
       idtoUpdate,
     };
     setLoader(true);
-    let resp = await dispatch(editReputeableBanner(obj));
-    console.log("resp editReputeableBanner", resp);
+    let resp = await dispatch(editAboutUsBanner(obj));
+    console.log("resp editAboutUsBanner", resp);
     if (resp.payload.status == 200) {
       toast.success("Updated Successful", {
         position: "top-right",
@@ -120,7 +120,7 @@ export default function ReputeableLenders(props) {
   return (
     <Adminlayout>
       <div style={{ marginTop: "65px", padding: "20px", width: "100%" }}>
-        <Breadcrumb pageName="Reputeable Lenders" />
+        <Breadcrumb pageName="AboutUs Banner" />
 
         {record2.length > 0 ? (
           <>
@@ -128,26 +128,6 @@ export default function ReputeableLenders(props) {
               return (
                 <>
                   <React.Fragment key={index}>
-                    <Grid container spacing={2}>
-                      <Grid item xs={7}>
-                        <label for="heroSec" className="lblform">
-                          Banner Tag Line:
-                        </label>
-                        <textarea
-                          id="heroSec"
-                          name="tagline"
-                          rows="3"
-                          cols="30"
-                          onChange={onChangeHandler}
-                          defaultValue={itm.tagline || "Please Enter:"}
-                          // defaultValue={"Please Enter:"}
-                        ></textarea>
-                      </Grid>
-                      <Grid item xs={5}>
-                        &nbsp;
-                      </Grid>
-                    </Grid>
-                    <br />
                     <Grid
                       item
                       sm={12}
@@ -156,7 +136,7 @@ export default function ReputeableLenders(props) {
                       style={{ textAlign: "left" }}
                     >
                       <label for="heroSec" className="lblform">
-                        Upload Banner Image
+                        Upload AboutUs Banner Image :
                       </label>
                       <br />
                       <Button
@@ -186,14 +166,14 @@ export default function ReputeableLenders(props) {
                         <img
                           src={itm.image_url}
                           alt="Preview"
-                          style={{ width: "500px", height: "200px" }}
+                          style={{ width: "400px", height: "250px" }}
                         />
                       )}
                     </Grid>
                     <br />
                     <Grid container spacing={2}>
                       <Grid item>
-                        <button onClick={updateHomeBanner}>
+                        <button onClick={updateAboutusBanner}>
                           {loader ? (
                             <Box
                               style={{
@@ -202,12 +182,12 @@ export default function ReputeableLenders(props) {
                                 flexDirection: "row",
                               }}
                             >
-                              <Typography>Update Reputable Lenders </Typography>
+                              <Typography>Update AboutUs Banner </Typography>
                               &nbsp; &nbsp;
                               <CircularProgress size={20} color="inherit" />
                             </Box>
                           ) : (
-                            "Update Reputable Lenders"
+                            "Update AboutUs Banner "
                           )}
                         </button>
                       </Grid>

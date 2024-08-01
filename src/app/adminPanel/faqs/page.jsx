@@ -6,6 +6,8 @@ import "react-toastify/dist/ReactToastify.css";
 import Adminlayout from "../Adminlayout";
 import { useDispatch } from "react-redux";
 import Breadcrumb from "../../../components/Breadcrumbs/Breadcrumb";
+import Loading from "./../../../utils/loading";
+
 import {
   Box,
   Button,
@@ -185,7 +187,7 @@ export default function FeaturTop(props) {
               ))}
             </>
           ) : (
-            <>Loading...</>
+            <Loading />
           )}
           <Box style={{ display: "flex", flexDirection: "row" }}>
             <Button

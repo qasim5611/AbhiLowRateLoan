@@ -9,6 +9,7 @@ import CenterFocusStrongIcon from "@mui/icons-material/CenterFocusStrong";
 import SunEditor from "suneditor-react";
 import "suneditor/dist/css/suneditor.min.css";
 import Breadcrumb from "./../../../components/Breadcrumbs/Breadcrumb";
+import Loading from "./../../../utils/loading";
 import {
   Box,
   Button,
@@ -226,7 +227,7 @@ export default function ReputeableLenders(props) {
             })}
           </>
         ) : (
-          <div style={{ textAlign: "center" }}>Loading...</div>
+          <Loading />
         )}
       </div>
     </Adminlayout>

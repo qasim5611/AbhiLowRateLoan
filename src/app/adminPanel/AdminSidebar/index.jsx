@@ -20,6 +20,17 @@ import MuiDrawer from "@mui/material/Drawer";
 
 import Image from "next/image";
 import Link from "next/link";
+import ViewCarouselIcon from "@mui/icons-material/ViewCarousel";
+import StorageIcon from "@mui/icons-material/Storage"; // service
+import WifiTetheringIcon from "@mui/icons-material/WifiTethering"; // global
+import AddPhotoAlternateIcon from "@mui/icons-material/AddPhotoAlternate"; //lender
+import AccountBalanceIcon from "@mui/icons-material/AccountBalance"; // Featu service
+import AccountTreeIcon from "@mui/icons-material/AccountTree"; // app process
+import QuizIcon from "@mui/icons-material/Quiz"; // faqs
+import DesignServicesIcon from "@mui/icons-material/DesignServices";
+import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
+
+import CollectionsIcon from "@mui/icons-material/Collections";
 
 export default function AdminPanel({ open, setOpen }) {
   // Ensure this component only runs on the client side
@@ -166,7 +177,7 @@ export default function AdminPanel({ open, setOpen }) {
                   justifyContent: "center",
                 }}
               >
-                <InboxIcon />
+                <AdminPanelSettingsIcon />
               </ListItemIcon>
               <ListItemText
                 primary="LowRateLoan"
@@ -193,6 +204,15 @@ export default function AdminPanel({ open, setOpen }) {
                       textAlign: "center",
                     }}
                   >
+                    <ListItemIcon
+                      sx={{
+                        minWidth: 0,
+                        mr: open ? 3 : "auto",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <ViewCarouselIcon />
+                    </ListItemIcon>
                     <ListItemText
                       primary="Hero Banner"
                       sx={{
@@ -218,6 +238,18 @@ export default function AdminPanel({ open, setOpen }) {
                       textAlign: "center",
                     }}
                   >
+                    <ListItemIcon
+                      sx={{
+                        minWidth: 0,
+                        mr: open ? 3 : "auto",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <StorageIcon />
+                      <div className="ripple">
+                        <div className="rippledot"></div>
+                      </div>
+                    </ListItemIcon>
                     <ListItemText
                       primary="Featured Top"
                       sx={{ opacity: open ? 1 : 0 }}
@@ -239,6 +271,15 @@ export default function AdminPanel({ open, setOpen }) {
                       textAlign: "center",
                     }}
                   >
+                    <ListItemIcon
+                      sx={{
+                        minWidth: 0,
+                        mr: open ? 3 : "auto",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <AddPhotoAlternateIcon />
+                    </ListItemIcon>
                     <ListItemText
                       primary="Lenders Banner"
                       sx={{ opacity: open ? 1 : 0 }}
@@ -260,6 +301,15 @@ export default function AdminPanel({ open, setOpen }) {
                       textAlign: "center",
                     }}
                   >
+                    <ListItemIcon
+                      sx={{
+                        minWidth: 0,
+                        mr: open ? 3 : "auto",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <DesignServicesIcon />
+                    </ListItemIcon>
                     <ListItemText
                       primary="Featured Service"
                       sx={{ opacity: open ? 1 : 0 }}
@@ -281,6 +331,18 @@ export default function AdminPanel({ open, setOpen }) {
                       textAlign: "center",
                     }}
                   >
+                    <ListItemIcon
+                      sx={{
+                        minWidth: 0,
+                        mr: open ? 3 : "auto",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <CollectionsIcon />
+                      <div className="ripple">
+                        <div className="rippledot"></div>
+                      </div>
+                    </ListItemIcon>
                     <ListItemText
                       primary="Services Images"
                       sx={{ opacity: open ? 1 : 0 }}
@@ -302,6 +364,15 @@ export default function AdminPanel({ open, setOpen }) {
                       textAlign: "center",
                     }}
                   >
+                    <ListItemIcon
+                      sx={{
+                        minWidth: 0,
+                        mr: open ? 3 : "auto",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <AccountTreeIcon />
+                    </ListItemIcon>
                     <ListItemText
                       primary="Application Process"
                       sx={{ opacity: open ? 1 : 0 }}
@@ -344,8 +415,50 @@ export default function AdminPanel({ open, setOpen }) {
                       textAlign: "center",
                     }}
                   >
+                    <ListItemIcon
+                      sx={{
+                        minWidth: 0,
+                        mr: open ? 3 : "auto",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <QuizIcon />
+                    </ListItemIcon>
                     <ListItemText
                       primary="FAQs"
+                      sx={{ opacity: open ? 1 : 0 }}
+                    />
+                  </ListItemButton>
+                </Link>
+              </ListItem>
+
+              <ListItem disablePadding sx={{ display: "block" }}>
+                <Link
+                  href={"/adminPanel/aboutUsBanner"}
+                  style={{ textDecoration: "none" }}
+                >
+                  <ListItemButton
+                    sx={{
+                      minHeight: 48,
+                      justifyContent: open ? "initial" : "center",
+                      px: 2.5,
+                      textAlign: "center",
+                    }}
+                  >
+                    <ListItemIcon
+                      sx={{
+                        minWidth: 0,
+                        mr: open ? 3 : "auto",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <AddPhotoAlternateIcon />{" "}
+                      <div className="ripple">
+                        <div className="rippledot"></div>
+                      </div>
+                    </ListItemIcon>
+                    <ListItemText
+                      primary="AboutUs Banner"
                       sx={{ opacity: open ? 1 : 0 }}
                     />
                   </ListItemButton>

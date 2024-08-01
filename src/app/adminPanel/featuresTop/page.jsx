@@ -10,6 +10,8 @@ import {
   editFeatureTopSection,
   getFeatureSection,
 } from "../../../redux/slices/globalSlice";
+import Loading from "./../../../utils/loading";
+
 import {
   Box,
   Button,
@@ -197,10 +199,11 @@ export default function FeatureTop(props) {
                             zIndex: "9999",
                             mb: 2,
                             backgroundColor: "#fcc26e",
-                            "&:hover": {
-                              backgroundColor: "black",
-                              color: "white",
-                            },
+                            backgroundImage: `url(${itm.image_url})`,
+                            backgroundPosition: "right",
+                            // backgroundSize: "cover",
+                            height: "64px",
+                            backgroundRepeat: "no-repeat",
                           }}
                         >
                           <CenterFocusStrongIcon /> Upload Image
@@ -255,7 +258,7 @@ export default function FeatureTop(props) {
                 })}
               </>
             ) : (
-              <>Loading...</>
+              <Loading />
             )}
           </Box>
         </Box>
