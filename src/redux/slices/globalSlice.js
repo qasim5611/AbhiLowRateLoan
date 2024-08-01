@@ -220,7 +220,7 @@ export const editFeatureTopSection = createAsyncThunk(
   async (body) => {
     try {
       console.log(
-        ".................................>> FeatureTop Global Slice",
+        ".................................>> editFeatureTopSection Global Slice",
         body
       );
       const config = {
