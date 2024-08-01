@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import Backdrop from "@mui/material/Backdrop";
-import { makeStyles } from "@mui/styles";
+// import { makeStyles } from "@mui/styles";
+import { styled } from "@mui/system";
 import { gsap } from "gsap";
 
 const Loader = () => {
@@ -31,19 +32,23 @@ const Loader = () => {
     </svg>
   );
 };
-const useStyles = makeStyles(() => ({
-  backdrop: {
-    zIndex: 2 + 220000000,
-    color: "#fff",
-  },
+// const useStyles = makeStyles(() => ({
+//   backdrop: {
+//     zIndex: 2 + 220000000,
+//     color: "#fff",
+//   },
+// }));
+const StyledBackdrop = styled(Backdrop)(({ theme }) => ({
+  zIndex: 2 + 220000000,
+  color: "#fff",
 }));
 export default function Loading({ loading }) {
-  const classes = useStyles();
+  // const classes = useStyles();
   return (
     <div>
-      <Backdrop className={classes.backdrop} open={true}>
+      <StyledBackdrop open={true}>
         <Loader />
-      </Backdrop>
+      </StyledBackdrop>
     </div>
   );
 }
