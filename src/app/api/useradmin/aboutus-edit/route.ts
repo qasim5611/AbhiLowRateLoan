@@ -15,7 +15,7 @@ export const POST = async(req: NextRequest)=>{
   const idtoUpdate = formData.get("idtoUpdate") as unknown as File; 
 
   console.log("image", {image});
-  console.log("idtoUpdate", idtoUpdate);
+  console.log("idtoUpdate aboutus", idtoUpdate);
 
 
 let mydata = await AboutusBannerModel.findOne({
@@ -30,8 +30,8 @@ let mydata = await AboutusBannerModel.findOne({
 
 
  const updatedRecord:any =  await UploadImage(image, "nextjs-imagegallary");
-//  console.log("image_url", updatedRecord?.secure_url);
-//  console.log("public_id", updatedRecord?.public_id);
+ console.log("image_url", updatedRecord?.secure_url);
+ console.log("public_id", updatedRecord?.public_id);
 
 
  const data = await AboutusBannerModel.findByIdAndUpdate(
