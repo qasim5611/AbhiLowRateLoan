@@ -18,7 +18,12 @@ export default function AboutUs(props) {
     const fetchData = async () => {
       try {
         let resp = await dispatch(getAboutusBanner()); // Adjust the endpoint as needed
-        // const data = await response.json();
+        const data = await response.json();
+        console.log(
+          "About Us pageresp?.payload?.data?.data ",
+          resp?.payload?.data?.data
+        );
+        console.log("data", data);
         setrecord2(resp?.payload?.data?.data || []); // Make sure to handle the structure of your response
       } catch (error) {
         console.error("Error fetching data:", error);
