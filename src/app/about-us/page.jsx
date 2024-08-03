@@ -1,12 +1,31 @@
+"use client";
+import React, { useState, useEffect, useContext } from "react";
+import { useSelector, useDispatch } from "react-redux";
+
 import { FeaturedTop } from "./../../components/FeaturedTop";
 import Footer from "./../../components/Footer";
 import Header from "./../../components/Header";
-import React from "react";
 import { Hardwork } from "../../components/Hardwork";
 import { ContactForm } from "../../components/ContactForm";
 import { Testimonial } from "../../components/Testimonial";
-
+import { getAboutusBanner } from "./../../redux/slices/globalSlice";
 export default function AboutUs(props) {
+  // const [record2, setrecord2] = useState([]);
+  const [record2, setrecord2] = useState([]);
+  let dispatch = useDispatch();
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        let resp = await dispatch(getAboutusBanner()); // Adjust the endpoint as needed
+        // const data = await response.json();
+        setrecord2(resp?.payload?.data?.data || []); // Make sure to handle the structure of your response
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+    fetchData();
+  }, []);
   return (
     <>
       <div id="inner-wrap" className="wrap hfeed kt-clear">
@@ -78,6 +97,23 @@ export default function AboutUs(props) {
                             <div className="wp-block-kadence-column inner-column-2 kadence-column_5f521d-62">
                               <div className="kt-inside-inner-col">
                                 <figure className="wp-block-image size-large">
+                                  {record2 && record2.length > 0 ? (
+                                    <>
+                                      {record2.map((itm, index) => {
+                                        return (
+                                          <img
+                                            key={index} // Add a key to each element in the list
+                                            decoding="async"
+                                            loading="lazy"
+                                            width={1024}
+                                            height={768}
+                                            src={itm?.image_url}
+                                            alt="low rate home loan pakenham office"
+                                          />
+                                        );
+                                      })}
+                                    </>
+                                  ) : null}
                                   {/* <img
                                     decoding="async"
                                     loading="lazy"
