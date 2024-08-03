@@ -2,8 +2,10 @@ import { NextRequest, NextResponse } from "next/server";
 import { UploadImage } from "../../../../lib/upload-images";
 import { DeleteImage } from "../../../../lib/upload-images";
 import { FeatureContentModal } from "../../../../modals/FeaturedServiceModel";
+import { Connect } from "../../../../dbconfig/dbconfig";
 
 export const POST = async (req: NextRequest) => {
+  await Connect();
   const formData = await req.formData();
   console.log("formData", formData);
 

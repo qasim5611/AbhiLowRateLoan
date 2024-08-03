@@ -5,7 +5,16 @@ import { UploadImage } from "../../../../lib/upload-images";
 // import { FeatureTopSection } from "../../../../modals/FeatureTopModel";
 import { AboutusBannerModel } from "../../../../modals/AboutusBannerModel";
 export const GET = async(req: NextRequest)=>{ 
-  await Connect();
+  const dbConnect = await Connect();
+  if(!dbConnect){
+    let data = "MongoDb Not Connected"
+    return NextResponse.json(
+      { data: data },
+      { 
+        status: 200  
+      }
+    )
+  }
   console.log("Get Route initiated");
  const data = await AboutusBannerModel.find({});
  console.log("data at server", data);
@@ -16,5 +25,11 @@ export const GET = async(req: NextRequest)=>{
     }
   )
 }
+
+
+
+
+
+
 
 

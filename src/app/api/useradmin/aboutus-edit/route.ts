@@ -1,15 +1,14 @@
 import { NextRequest, NextResponse } from "next/server"; 
 import { UploadImage } from "../../../../lib/upload-images";
 import { DeleteImage } from "../../../../lib/upload-images";
-
 import { AboutusBannerModel } from "../../../../modals/AboutusBannerModel";
 
-
+import { Connect } from "../../../../dbconfig/dbconfig";
 
 export const POST = async(req: NextRequest)=>{ 
+  await Connect();
   const formData = await req.formData(); 
   console.log("formData", formData);
-
   const image = formData.get("image") as unknown as File; 
 
   const idtoUpdate = formData.get("idtoUpdate") as unknown as File; 

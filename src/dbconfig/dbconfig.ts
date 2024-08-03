@@ -1,10 +1,11 @@
+
 import mongoose from "mongoose";
 
-export async function Connect() {
+export async function Connect(): Promise<boolean> {
   try {
-    await mongoose.connect(process.env.MONG_URL, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
+    await mongoose.connect(process.env.MONG_URL!, {
+      // useNewUrlParser: true,
+      // useUnifiedTopology: true,
       serverSelectionTimeoutMS: 30000, // Increase timeout to 30 seconds
     });
 
@@ -17,7 +18,10 @@ export async function Connect() {
     connection.on("error", (err) => {
       console.error("MongoDb Connection Error:", err);
     });
+
+    return true; // Indicate success
   } catch (error) {
     console.error("Something went wrong with the DB connection:", error);
+    return false; // Indicate failure
   }
 }

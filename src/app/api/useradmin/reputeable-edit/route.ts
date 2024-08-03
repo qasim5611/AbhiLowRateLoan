@@ -4,9 +4,11 @@ import { DeleteImage } from "../../../../lib/upload-images";
 
 import { LenderBannerModal } from "../../../../modals/LendersBannerModel";
 
+import { Connect } from "../../../../dbconfig/dbconfig";
 
 
 export const POST = async(req: NextRequest)=>{ 
+  await Connect();
   const formData = await req.formData(); 
   console.log("formData", formData);
 
