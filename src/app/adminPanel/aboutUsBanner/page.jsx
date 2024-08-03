@@ -32,7 +32,6 @@ export default function ReputeableLenders(props) {
   useEffect(() => {
     const fetchData = async () => {
       let resp = await dispatch(getAboutusBanner());
-
       setrecord2(resp?.payload?.data?.data);
       setidtoUpdate(resp?.payload?.data?.data[0]._id);
     };
