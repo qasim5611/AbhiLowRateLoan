@@ -127,5 +127,13 @@ export const POST = async (request) => {
     result = false;
   }
 
-  return NextResponse.json({ status: "200", result: result });
+  return NextResponse.json(
+    { status: "200", result: result },
+    {
+      headers: {
+        "Cache-Control":
+          "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
+      },
+    }
+  );
 };

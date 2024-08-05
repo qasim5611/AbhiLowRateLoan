@@ -31,6 +31,10 @@ export async function POST(NextRequest) {
       console.log("Email alredy exist");
       return NextResponse.json({
         msg: "Email Already Exist",
+        headers: {
+          "Cache-Control":
+            "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
+        },
       });
     }
 

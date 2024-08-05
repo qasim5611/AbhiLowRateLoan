@@ -44,21 +44,27 @@ export const POST = async (req: NextRequest) => {
     }
     return NextResponse.json(
       { msg: "Records created successfully", results },
-      { status: 200 }
+      { status: 200 ,   headers: {
+        "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+      }}
     );
     }
 
 
     return NextResponse.json(
       { msg: "Records created Failed" },
-      { status: 200 }
+      { status: 200 ,   headers: {
+        "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+      }}
     );
   
   } catch (error) {
     console.error("Error processing records:", error);
     return NextResponse.json(
       { msg: "Failed to process records", error: error.message },
-      { status: 500 }
+      { status: 500 ,   headers: {
+        "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+      }}
     );
   }
 };

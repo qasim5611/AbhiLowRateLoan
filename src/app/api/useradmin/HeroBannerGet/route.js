@@ -20,10 +20,18 @@ export async function GET(NextRequest) {
     console.log("mydata", mydata);
     console.log("mydata", mydata);
 
-    return NextResponse.json({
-      msg: "Get Successful",
-      mydata,
-    });
+    return NextResponse.json(
+      {
+        msg: "Get Successful",
+        mydata,
+      },
+      {
+        headers: {
+          "Cache-Control":
+            "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
+        },
+      }
+    );
   } catch (error) {
     return NextResponse.json({ error: error.message });
   }

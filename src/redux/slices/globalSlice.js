@@ -507,7 +507,7 @@ export const getReputeableBanner = createAsyncThunk(
   async (body) => {
     try {
       let res = await axios.get("/api/useradmin/reputeable-get");
-      console.log(res);
+      console.log("resp at globalSlice.........>>>>>>>", res);
       return res;
     } catch (error) {
       console.error(error);

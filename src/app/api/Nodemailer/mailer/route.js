@@ -88,5 +88,13 @@ export const POST = async (request) => {
     sendEmail(email, subject, message);
   }
 
-  return NextResponse.json({ status: "ok" });
+  return NextResponse.json(
+    { status: "ok" },
+    {
+      headers: {
+        "Cache-Control":
+          "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
+      },
+    }
+  );
 };

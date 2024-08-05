@@ -7,7 +7,7 @@ import { LenderBannerModal } from "../../../../modals/LendersBannerModel";
 export const GET = async(req: NextRequest)=>{ 
   await Connect();
   console.log("Get Route initiated");
- const data = await LenderBannerModal.find({});
+ const data = await LenderBannerModal.find();
  console.log("data at server LenderBannerModal get", data);
   return NextResponse.json(
     { data: data },

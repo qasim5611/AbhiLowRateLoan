@@ -26,11 +26,19 @@ export async function POST(NextRequest) {
     const user = await User.findOne({ email });
 
     if (!user) {
-      return NextResponse.json({
-        auth: false,
-        token: null,
-        msg: "Not available email",
-      });
+      return NextResponse.json(
+        {
+          auth: false,
+          token: null,
+          msg: "Not available email",
+        },
+        {
+          headers: {
+            "Cache-Control":
+              "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
+          },
+        }
+      );
     }
 
     var passwordIsValid = bcrypt.compareSync(password, user.passwordHash);
@@ -63,12 +71,20 @@ export async function POST(NextRequest) {
       });
       // return token
 
-      const responce = NextResponse.json({
-        user,
-        jwtToken,
-        msg: "Login Successfull",
-        success: true,
-      });
+      const responce = NextResponse.json(
+        {
+          user,
+          jwtToken,
+          msg: "Login Successfull",
+          success: true,
+        },
+        {
+          headers: {
+            "Cache-Control":
+              "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
+          },
+        }
+      );
 
       responce.cookies.set("token", jwtToken, {
         httpOnly: true,
@@ -77,12 +93,20 @@ export async function POST(NextRequest) {
       return responce;
     }
 
-    return NextResponse.json({
-      auth: false,
-      token: null,
-      msg: "Password Not Correct",
-      user,
-    });
+    return (
+      NextResponse.json({
+        auth: false,
+        token: null,
+        msg: "Password Not Correct",
+        user,
+      }),
+      {
+        headers: {
+          "Cache-Control":
+            "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
+        },
+      }
+    );
   } catch (error) {
     return NextResponse.json({ error: error.message });
   }
