@@ -35,10 +35,7 @@ export const POST = async(req: NextRequest)=>{
   return NextResponse.json(
     // { msg: data },
     { 
-      status: 200,
-      headers: {
-        "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
-      }
+      status: 200  
     }
   )
 }

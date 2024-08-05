@@ -11,11 +11,6 @@ export const GET = async(req: NextRequest)=>{
     { images: Images },
     { 
       status: 200  ,
-      headers: {
-        "Cache-Control": "no-cache, no-store, must-revalidate",
-        "Pragma": "no-cache",
-        "Expires": "0",
-      }
     }
   )
 }

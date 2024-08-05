@@ -53,15 +53,7 @@ export async function POST(NextRequest) {
     // return res.send({
     //   msg: "Verify your mail Now Plz",
     // });
-    return NextResponse.json(
-      { msg: "Verify your mail Now Plz" },
-      {
-        headers: {
-          "Cache-Control":
-            "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
-        },
-      }
-    );
+    return NextResponse.json({ msg: "Verify your mail Now Plz" });
   } catch (error) {
     return NextResponse.json({ error: error.message });
   }

@@ -26,18 +26,10 @@ export async function POST(request) {
       });
     }
 
-    return NextResponse.json(
-      {
-        msg: "Logout Not",
-        success: false,
-      },
-      {
-        headers: {
-          "Cache-Control":
-            "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
-        },
-      }
-    );
+    return NextResponse.json({
+      msg: "Logout Not",
+      success: false,
+    });
   } catch (error) {
     return NextResponse.json({ error: error.message });
   }

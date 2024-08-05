@@ -29,17 +29,9 @@ export async function POST(NextRequest) {
     if (result) {
       // send already registered error in email to prevent user enumeration
       console.log("Email alredy exist");
-      return NextResponse.json(
-        {
-          msg: "Email Already Exist",
-        },
-        {
-          headers: {
-            "Cache-Control":
-              "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
-          },
-        }
-      );
+      return NextResponse.json({
+        msg: "Email Already Exist",
+      });
     }
 
     // create user object
@@ -67,15 +59,7 @@ export async function POST(NextRequest) {
     // return res.send({
     //   msg: "Verify your mail Now Plz",
     // });
-    return NextResponse.json(
-      { msg: "Verify your mail Now Plz" },
-      {
-        headers: {
-          "Cache-Control":
-            "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
-        },
-      }
-    );
+    return NextResponse.json({ msg: "Verify your mail Now Plz" });
   } catch (error) {
     return NextResponse.json({ error: error.message });
   }

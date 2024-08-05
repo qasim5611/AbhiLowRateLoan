@@ -57,11 +57,6 @@ let mydata = await ImageGallaryModal.findOne({
     { msg: data },
     { 
       status: 200  ,
-      headers: {
-        "Cache-Control": "no-cache, no-store, must-revalidate",
-        "Pragma": "no-cache",
-        "Expires": "0",
-      }
     }
   )
 }

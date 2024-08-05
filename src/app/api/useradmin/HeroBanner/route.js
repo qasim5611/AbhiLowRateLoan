@@ -38,17 +38,9 @@ export async function POST(NextRequest) {
     if (update) {
       console.log("update", update);
 
-      return NextResponse.json(
-        {
-          msg: "Updated Successful",
-        },
-        {
-          headers: {
-            "Cache-Control":
-              "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
-          },
-        }
-      );
+      return NextResponse.json({
+        msg: "Updated Successful",
+      });
     }
   } catch (error) {
     return NextResponse.json({ error: error.message });

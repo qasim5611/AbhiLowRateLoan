@@ -37,9 +37,6 @@ export const POST = async(req: NextRequest)=>{
     // { msg: data },
     { 
       status: 200  ,
-      headers: {
-        "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
-      }
     },
   )
 }

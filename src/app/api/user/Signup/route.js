@@ -24,17 +24,9 @@ export async function POST(NextRequest) {
     const result = await User.findOne({ email: body.email });
     if (result) {
       console.log("Email alredy exist");
-      return NextResponse.json(
-        {
-          msg: "Email Already Exist",
-        },
-        {
-          headers: {
-            "Cache-Control":
-              "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
-          },
-        }
-      );
+      return NextResponse.json({
+        msg: "Email Already Exist",
+      });
     }
 
     // create user object

@@ -7,17 +7,12 @@ import { LenderBannerModal } from "../../../../modals/LendersBannerModel";
 export const GET = async(req: NextRequest)=>{ 
   await Connect();
   console.log("Get Route initiated");
- const data = await LenderBannerModal.find();
+ const data = await LenderBannerModal.find({});
  console.log("data at server LenderBannerModal get", data);
   return NextResponse.json(
     { data: data },
     { 
-      status: 200  ,
-      headers: {
-        "Cache-Control": "no-cache, no-store, must-revalidate",
-        "Pragma": "no-cache",
-        "Expires": "0",
-      }
+      status: 200  
     }
   )
 }
