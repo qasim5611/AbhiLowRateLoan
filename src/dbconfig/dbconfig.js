@@ -2,11 +2,14 @@ import mongoose from "mongoose";
 
 export async function Connect() {
   try {
-    await mongoose.connect(process.env.MONG_URL, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      serverSelectionTimeoutMS: 30000, // Increase timeout to 30 seconds
-    });
+    await mongoose.connect(
+      "mongodb+srv://info:FsEUxRCoqD4LNlct@cluster0.zrx72qz.mongodb.net/lowRateHomeLoan",
+      {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        serverSelectionTimeoutMS: 30000, // Increase timeout to 30 seconds
+      }
+    );
 
     const connection = mongoose.connection;
 
