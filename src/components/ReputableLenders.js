@@ -28,8 +28,11 @@ export function ReputableLenders(props) {
           },
         })
       );
-      console.log("getReputeableBanner", resp?.payload?.data?.data);
-      console.log("qasim", resp?.payload?.data?.data);
+      console.log(
+        ".......................>>>>>>>getReputeableBanner",
+        resp?.payload?.data?.data
+      );
+      // console.log("qasim", resp?.payload?.data?.data);
 
       setrecord2(resp?.payload?.data?.data);
     };
