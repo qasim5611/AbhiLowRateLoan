@@ -21,7 +21,13 @@ export function ReputableLenders(props) {
 
   useEffect(() => {
     const fetchData = async () => {
-      let resp = await dispatch(getReputeableBanner());
+      let resp = await dispatch(
+        getReputeableBanner({
+          headers: {
+            "Cache-Control": "no-cache",
+          },
+        })
+      );
       console.log("getReputeableBanner", resp?.payload?.data?.data);
       console.log("qasim", resp?.payload?.data?.data);
 

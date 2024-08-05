@@ -42,7 +42,13 @@ export default function ReputeableLenders(props) {
 
   useEffect(() => {
     const fetchData = async () => {
-      let resp = await dispatch(getServiceContent());
+      let resp = await dispatch(
+        getServiceContent({
+          headers: {
+            "Cache-Control": "no-cache",
+          },
+        })
+      );
       console.log("getReputeableBanner", resp);
       // const images = resp?.payload?.data?.data || [];
 

@@ -113,7 +113,6 @@ const Login = () => {
       setLoader(true);
       await dispatch(authuser(values));
       console.log("ok");
-
       window.location.reload();
     }
   };

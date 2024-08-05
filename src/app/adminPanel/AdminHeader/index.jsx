@@ -49,7 +49,13 @@ export default function AdminHeader({ open, setOpen }) {
 
   const logoutUser = async () => {
     setloader(true);
-    let resp = await dispatch(logoutuserNow());
+    let resp = await dispatch(
+      logoutuserNow({
+        headers: {
+          "Cache-Control": "no-cache",
+        },
+      })
+    );
     console.log("resp logout", resp);
     let resp2 = await dispatch(clearLoginState);
     console.log("resp2 clearLoginState", resp2);

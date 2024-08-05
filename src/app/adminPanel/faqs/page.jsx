@@ -31,7 +31,13 @@ export default function FeaturTop(props) {
 
   useEffect(() => {
     const fetchData = async () => {
-      let resp = await dispatch(getFaqs());
+      let resp = await dispatch(
+        getFaqs({
+          headers: {
+            "Cache-Control": "no-cache",
+          },
+        })
+      );
       console.log("getFaqs,", resp);
       console.log("herosection", resp?.payload?.data?.data[0]?.tagline);
       const data = resp?.payload?.data?.data || [];

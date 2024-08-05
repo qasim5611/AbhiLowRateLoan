@@ -32,7 +32,13 @@ export default function FeaturTop(props) {
   const [loader, setLoader] = useState(false);
   useEffect(() => {
     const fetchData = async () => {
-      let resp = await dispatch(getApplicationProcess());
+      let resp = await dispatch(
+        getApplicationProcess({
+          headers: {
+            "Cache-Control": "no-cache",
+          },
+        })
+      );
       console.log("getApplicationProcess,", resp);
       console.log(
         "getApplicationProcess",

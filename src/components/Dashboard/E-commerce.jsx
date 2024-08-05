@@ -49,7 +49,13 @@ const ECommerce = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      let resp = await dispatch(getDashboardStats());
+      let resp = await dispatch(
+        getDashboardStats({
+          headers: {
+            "Cache-Control": "no-cache",
+          },
+        })
+      );
       console.log(
         "resp?.payload?.data?.data?.RefinanceConsultData",
         resp?.payload?.data?.data?.RefinanceConsultData

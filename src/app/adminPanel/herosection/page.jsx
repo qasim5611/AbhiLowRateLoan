@@ -20,7 +20,13 @@ export default function HeroSection(props) {
 
   useEffect(() => {
     const fetchData = async () => {
-      let resp = await dispatch(getHeroSection());
+      let resp = await dispatch(
+        getHeroSection({
+          headers: {
+            "Cache-Control": "no-cache",
+          },
+        })
+      );
       console.log("herosection", resp?.payload?.data?.mydata);
       console.log("herosection", resp?.payload?.data?.mydata[0].tagline);
       console.log("qasim", resp?.payload?.data?.mydata[0].tagline);

@@ -16,7 +16,13 @@ export function FeatureServices(props) {
 
   useEffect(() => {
     const fetchData = async () => {
-      let resp = await dispatch(getServiceContent());
+      let resp = await dispatch(
+        getServiceContent({
+          headers: {
+            "Cache-Control": "no-cache",
+          },
+        })
+      );
       console.log("getReputeableBanner", resp);
       // const images = resp?.payload?.data?.data || [];
 
@@ -29,7 +35,13 @@ export function FeatureServices(props) {
 
   useEffect(() => {
     const fetchData = async () => {
-      let resp = await dispatch(getFeatureMedia());
+      let resp = await dispatch(
+        getFeatureMedia({
+          headers: {
+            "Cache-Control": "no-cache",
+          },
+        })
+      );
       const images = resp?.payload?.data?.images || [];
       setRecord1(images);
 

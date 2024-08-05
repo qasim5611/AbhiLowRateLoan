@@ -31,7 +31,13 @@ export default function ReputeableLenders(props) {
 
   useEffect(() => {
     const fetchData = async () => {
-      let resp = await dispatch(getReputeableBanner());
+      let resp = await dispatch(
+        getReputeableBanner({
+          headers: {
+            "Cache-Control": "no-cache",
+          },
+        })
+      );
 
       setrecord2(resp?.payload?.data?.data);
       setidtoUpdate(resp?.payload?.data?.data[0]._id);

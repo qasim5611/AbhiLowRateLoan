@@ -21,7 +21,13 @@ export default function ReputeableLenders(props) {
 
   useEffect(() => {
     return async () => {
-      let resp = await dispatch(getHeroSection());
+      let resp = await dispatch(
+        getHeroSection({
+          headers: {
+            "Cache-Control": "no-cache",
+          },
+        })
+      );
       console.log("herosection", resp?.payload?.data?.mydata);
       console.log("herosection", resp?.payload?.data?.mydata[0].tagline);
       setrecord(resp?.payload?.data?.mydata);

@@ -8,7 +8,13 @@ export function Hardwork(props) {
 
   useEffect(() => {
     const fetchData = async () => {
-      let resp = await dispatch(getApplicationProcess());
+      let resp = await dispatch(
+        getApplicationProcess({
+          headers: {
+            "Cache-Control": "no-cache",
+          },
+        })
+      );
       console.log("getApplicationProcess,", resp);
       console.log("herosection", resp?.payload?.data?.data[0]?.tagline);
       const data = resp?.payload?.data?.data || [];

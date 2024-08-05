@@ -226,6 +226,7 @@ export const editFeatureTopSection = createAsyncThunk(
       const config = {
         headers: {
           "Content-Type": "multipart/form-data",
+          "Cache-Control": "no-cache",
         },
       };
       let formData = new FormData();
@@ -260,6 +261,7 @@ export const editFeatureMedia = createAsyncThunk(
       const config = {
         headers: {
           "Content-Type": "multipart/form-data",
+          "Cache-Control": "no-cache",
         },
       };
       let formData = new FormData();
@@ -294,6 +296,7 @@ export const editReputeableBanner = createAsyncThunk(
       const config = {
         headers: {
           "Content-Type": "multipart/form-data",
+          "Cache-Control": "no-cache",
         },
       };
       let formData = new FormData();
@@ -328,6 +331,7 @@ export const editAboutUsBanner = createAsyncThunk(
       const config = {
         headers: {
           "Content-Type": "multipart/form-data",
+          "Cache-Control": "no-cache",
         },
       };
       let formData = new FormData();
@@ -361,6 +365,7 @@ export const editServiceContent = createAsyncThunk(
       const config = {
         headers: {
           "Content-Type": "multipart/form-data",
+          "Cache-Control": "no-cache",
         },
       };
       let formData = new FormData();
@@ -395,6 +400,7 @@ export const editApplicationProcess = createAsyncThunk(
       const config = {
         headers: {
           "Content-Type": "multipart/form-data",
+          "Cache-Control": "no-cache",
         },
       };
       let formData = body;
@@ -424,6 +430,7 @@ export const editFaqs = createAsyncThunk("auth/editFaqs-save", async (body) => {
     const config = {
       headers: {
         "Content-Type": "multipart/form-data",
+        "Cache-Control": "no-cache",
       },
     };
     let formData = body;

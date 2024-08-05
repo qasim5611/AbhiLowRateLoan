@@ -18,7 +18,13 @@ const HomeComp = () => {
   useEffect(() => {
     const fetchData = async () => {
       console.log("useEffect called");
-      let resp = await dispatch(getHeroSection());
+      let resp = await dispatch(
+        getHeroSection({
+          headers: {
+            "Cache-Control": "no-cache",
+          },
+        })
+      );
       console.log("herosection", resp?.payload?.data?.mydata);
       setRecord(resp?.payload?.data?.mydata);
     };

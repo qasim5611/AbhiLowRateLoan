@@ -30,7 +30,13 @@ export default function FeatureTop(props) {
 
   useEffect(() => {
     const fetchData = async () => {
-      let resp = await dispatch(getFeatureMedia());
+      let resp = await dispatch(
+        getFeatureMedia({
+          headers: {
+            "Cache-Control": "no-cache",
+          },
+        })
+      );
       const images = resp?.payload?.data?.images || [];
       console.log("images....", images);
       setRecord1(images);

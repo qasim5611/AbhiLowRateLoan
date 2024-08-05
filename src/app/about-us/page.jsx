@@ -17,7 +17,13 @@ export default function AboutUs(props) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        let resp = await dispatch(getAboutusBanner()); // Adjust the endpoint as needed
+        let resp = await dispatch(
+          getAboutusBanner({
+            headers: {
+              "Cache-Control": "no-cache",
+            },
+          })
+        ); // Adjust the endpoint as needed
         const data = await resp.json();
         console.log(
           "About Us pageresp?.payload?.data?.data ",
