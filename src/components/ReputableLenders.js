@@ -10,10 +10,7 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import {
-  editReputeableBanner,
-  getReputeableBanner,
-} from "./../redux/slices/globalSlice";
+import { getReputeableBanner } from "./../redux/slices/globalSlice";
 export function ReputableLenders(props) {
   let dispatch = useDispatch();
 
@@ -21,24 +18,12 @@ export function ReputableLenders(props) {
 
   useEffect(() => {
     const fetchData = async () => {
-      let resp = await dispatch(
-        getReputeableBanner({
-          headers: {
-            "Cache-Control": "no-cache",
-          },
-        })
-      );
-      console.log(
-        ".......................>>>>>>>getReputeableBanner",
-        resp?.payload?.data?.data
-      );
-      // console.log("qasim", resp?.payload?.data?.data);
-
+      let resp = await dispatch(getReputeableBanner());
+      console.log(".....>>>>>>>getReputeableBanner", resp?.payload?.data?.data);
       setrecord2(resp?.payload?.data?.data);
     };
-
     fetchData();
-  }, [dispatch]);
+  }, []);
 
   return (
     <>
@@ -104,57 +89,7 @@ export function ReputableLenders(props) {
                   })}
                 </>
               ) : (
-                <>
-                  <div className="kt-inside-inner-col">
-                    <h2
-                      className="kt-adv-heading_4fee88-b0 wp-block-kadence-advancedheading"
-                      data-kb-block="kb-adv-heading_4fee88-b0"
-                    >
-                      <strong>
-                        Home Loans from over 53+ Reputable Lenders{" "}
-                      </strong>
-                    </h2>
-
-                    <div className="wp-block-kadence-image kb-image_12d362-b2 desktop-lender-img">
-                      <figure className="aligncenter size-large">
-                        <img
-                          style={{ margin: "0px auto" }}
-                          decoding="async"
-                          loading="lazy"
-                          width="1366"
-                          height="576"
-                          src="/pics/home-loans-lenders2.png"
-                          alt="home loans lenders list"
-                          className="kb-img wp-image-4131"
-                          // srcSet="https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/home-loans-lenders-1024x432.webp 1024w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/home-loans-lenders-300x127.webp 300w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/home-loans-lenders-768x324.webp 768w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/home-loans-lenders.webp 1366w"
-                          // sizes="(max-width: 1024px) 100vw, 1024px"
-                        />
-                      </figure>
-                    </div>
-
-                    <div className="wp-block-image mobile-lender-img">
-                      <figure className="aligncenter size-full">
-                        <img
-                          decoding="async"
-                          loading="lazy"
-                          width="594"
-                          height="829"
-                          src="/images/lenders-vertical.webp"
-                          alt="loan lenders"
-                          className="wp-image-4718"
-                          srcSet="/images/lenders-vertical.webp"
-                          sizes="(max-width: 594px) 100vw, 594px"
-                        />
-                      </figure>
-                    </div>
-
-                    <div className="wp-block-kadence-spacer aligncenter kt-block-spacer-_a8a064-c7">
-                      <div className="kt-block-spacer kt-block-spacer-halign-center">
-                        <hr className="kt-divider" />
-                      </div>
-                    </div>
-                  </div>
-                </>
+                <>Loading...</>
               )}
             </div>
           </div>
