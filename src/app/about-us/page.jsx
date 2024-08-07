@@ -24,6 +24,7 @@ export default function AboutUs(props) {
         setrecord2(resp?.payload?.data?.data || []); // Make sure to handle the structure of your response
       } catch (error) {
         console.error("Error fetching data:", error);
+        // console.error("Error fetching data:", error);
       }
     };
     fetchData();
