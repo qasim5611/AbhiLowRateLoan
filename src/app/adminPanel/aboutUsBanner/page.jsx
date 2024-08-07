@@ -28,6 +28,8 @@ export default function ReputeableLenders(props) {
   const [idtoUpdate, setidtoUpdate] = useState(false);
 
   const [loader, setLoader] = useState(false);
+  // const [loader, setLoader] = useState(false);
+  //
 
   useEffect(() => {
     const fetchData = async () => {
