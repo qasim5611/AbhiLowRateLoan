@@ -45,7 +45,7 @@ export default function ReputeableLenders(props) {
     };
 
     fetchData();
-  }, []);
+  }, [editAboutUsBanner]);
 
   const [state, setState] = useState({
     // tagline: "",
