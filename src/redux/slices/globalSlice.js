@@ -324,10 +324,7 @@ export const editAboutUsBanner = createAsyncThunk(
   "auth/editAboutUsBanner",
   async (body) => {
     try {
-      console.log(
-        ".................................>> editAboutUsBanner Global Slice",
-        body
-      );
+      console.log("body", body);
       const config = {
         headers: {
           "Content-Type": "multipart/form-data",
@@ -338,7 +335,7 @@ export const editAboutUsBanner = createAsyncThunk(
       for (var item in body) {
         formData.append(item, body[item]);
       }
-      console.log("formData", formData);
+      // console.log("formData", formData);
 
       let res = await axios.post(
         "/api/useradmin/aboutus-edit",
