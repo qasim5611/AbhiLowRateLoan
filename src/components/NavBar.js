@@ -118,6 +118,10 @@ function DrawerAppBar(props) {
             flexDirection: "row-reverse",
             top: "26px",
             right: "15px",
+            width: "50%",
+            left: "198px",
+            width: "50%",
+            top: "18px",
           }}
         >
           <IconButton
