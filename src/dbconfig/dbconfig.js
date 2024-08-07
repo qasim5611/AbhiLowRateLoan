@@ -9,6 +9,7 @@ export async function Connect() {
     });
 
     const connection = mongoose.connection;
+    // const connection = mongoose.connection;
 
     connection.on("connected", () => {
       console.log("MongoDb Connected");
