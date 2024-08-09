@@ -19,6 +19,7 @@ import Footer from "./../components/Footer";
 import { usePathname } from "next/navigation";
 import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 // export const metadata = {
 //   title: "Low Rate Home Loan -",
