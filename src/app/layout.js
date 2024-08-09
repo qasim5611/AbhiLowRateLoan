@@ -9,27 +9,24 @@ import "flatpickr/dist/flatpickr.min.css";
 import "./../css/satoshi.css";
 import "./../css/style.css";
 // import CircularProgress from '@mui/material/CircularProgress';
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Loader from "./Loader";
 import { Provider } from "react-redux";
 import { store } from "./../redux/store";
-import Script from "next/script";
 import Header from "./../components/Header";
 import Footer from "./../components/Footer";
 // import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
-
+import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
+// export const metadata = {
+//   title: "Low Rate Home Loan -",
+//   description:
+//     'We will get you the best home loan in Melbourne I want to refinance I want to buy a home Featured Services How can we help? We understand that the diverse needs of most people do not have "one-size-fits-all" answers.We will acquire the best loan to suit your specific requirements by getting to know you,',
+// };
 export default function RootLayout({ children }) {
   const pathname = usePathname();
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    // Simulate loading data or any asynchronous operation
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000); // Simulating 3 seconds of loading time
-  }, []);
 
   return (
     <Provider store={store}>
@@ -202,6 +199,34 @@ export default function RootLayout({ children }) {
             href="https://scoresbymortgagebroker.com.au/wp-content/uploads/trustindex-google-widget.css?ver=1673419651"
             media="all"
           /> */}
+          {/* Facebook Pixel Code */}
+          <Script
+            id="facebook-pixel"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+              !function(f,b,e,v,n,t,s)
+              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+              n.queue=[];t=b.createElement(e);t.async=!0;
+              t.src=v;s=b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)}(window,document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '636387751425285'); 
+              fbq('track', 'PageView');
+            `,
+            }}
+          />
+          <noscript>
+            <img
+              height="1"
+              width="1"
+              style={{ display: "none" }}
+              src="https://www.facebook.com/tr?id=636387751425285&ev=PageView&noscript=1"
+            />
+          </noscript>
+          {/* End Facebook Pixel Code */}
         </head>
         <body
           style={{ display: "block !important" }}
