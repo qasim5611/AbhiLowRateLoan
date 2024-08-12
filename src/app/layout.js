@@ -237,6 +237,7 @@ export default function RootLayout({ children }) {
           pathname === "/adminPanelfeaturedTop" ||
           pathname === "/signup" ||
           pathname === "/login" ||
+          pathname === "/Forgotpass" ||
           pathname === "/buy-home-consultation" ||
           pathname === "/refinance-consultation" ||
           pathname === "/adminPanel/herosection" ||
@@ -261,6 +262,7 @@ export default function RootLayout({ children }) {
           pathname === "/login" ||
           pathname === "/buy-home-consultation" ||
           pathname === "/refinance-consultation" ||
+          pathname === "/Forgotpass" ||
           pathname === "/adminPanel/herosection" ||
           pathname === "/adminPanel/featuredtop" ||
           pathname === "/adminPanel/reputableLenders" ||
