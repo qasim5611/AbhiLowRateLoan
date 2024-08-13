@@ -65,10 +65,12 @@ export const logoutuserNow = createAsyncThunk(
   }
 );
 
-export const forgotpass = createAsyncThunk("auth/forgotpass", async (body) => {
+export const Forgotpass = createAsyncThunk("auth/Forgotpass", async (body) => {
   try {
-    const response = await axios.post(API + "/forgot-password", body);
-    if (response.data.msg === "Email Not Found.") {
+    let response = await axios.post("/api/user/forgotpass", body);
+    console.log("response forgotpass", response);
+    // const response = await axios.post(API + "/forgot-password", body);
+    if (response?.data?.msg === "Not available email") {
       toast.error("Email Not Found", {
         position: "top-right",
         autoClose: 5000,
@@ -79,9 +81,9 @@ export const forgotpass = createAsyncThunk("auth/forgotpass", async (body) => {
         progress: undefined,
       });
     } else if (
-      response.data.msg === "Cool Email Found, Redirecting to Change Password"
+      response?.data?.msg === "Cool Email Found, Redirecting to Verify Email"
     ) {
-      toast.info("Redirecting to Change Password", {
+      toast.info("Cool Email Found, Redirecting to Verify Email", {
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
@@ -92,6 +94,7 @@ export const forgotpass = createAsyncThunk("auth/forgotpass", async (body) => {
       });
       return { type: "FORG_PASSERR", payload: response.data };
     }
+    // return response;
   } catch (error) {
     console.error(error);
     throw error;
@@ -119,43 +122,38 @@ export const VerifyTokenForPass = createAsyncThunk(
   "auth/signupdata",
   async (body) => {
     try {
-      axios
-        .post(API + "/VerifyTokenforpass", body)
-        .then((resp) => {
-          console.log(resp.data);
-          if (resp.data.msg == "Sorry Your Token Is Not Correct") {
-            toast.error("Sorry Your Token Is Not Correct", {
-              position: "top-right",
-              autoClose: 5000,
-              hideProgressBar: false,
-              closeOnClick: true,
-              pauseOnHover: true,
-              draggable: true,
-              progress: undefined,
-            });
-          } else if (
-            resp.data.msg ==
-            "You Have Been Verified for Password Update. Redirecting..."
-          ) {
-            toast.success(
-              "You Have Been Verified for Password Update. Redirecting...",
-              {
-                position: "top-right",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-              }
-            );
+      let resp = await axios.post("/api/user/verifytoken", body);
+      console.log("resp", resp);
 
-            return { type: "ISTOKEN_OKTOEDIT", payload: { data: resp.data } };
-          }
-        })
-        .catch((err) => {
-          console.log(err);
+      if (resp.data.msg == "Sorry Your Token Is Not Correct") {
+        toast.error("Sorry Your Token Is Not Correct", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
         });
+      } else if (
+        resp.data.msg ==
+        "You Have Been Verified for Password Update. Redirecting..."
+      ) {
+        toast.success(
+          "You Have Been Verified For Password Update. Redirecting...",
+          {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          }
+        );
+
+        return { type: "ISTOKEN_OKTOEDIT", payload: { data: resp.data } };
+      }
     } catch (error) {
       // Handle error
       console.error(error);
@@ -164,36 +162,28 @@ export const VerifyTokenForPass = createAsyncThunk(
   }
 );
 
-export const resetpassw = createAsyncThunk(
-  "auth/resetpassword",
-  async (body) => {
-    try {
-      axios
-        .post(API + "/resetpassword", body)
-        .then((resp) => {
-          console.log(resp.data);
+export const Resetpassw = createAsyncThunk("auth/Resetpassw", async (body) => {
+  try {
+    let resp = await axios.post("/api/user/ResetPass", body);
+    console.log("Resetpassw", resp);
 
-          if (resp.data.msg === "Password Updated") {
-            toast.success("Password Updated, You can Login Now!", {
-              position: "top-right",
-              autoClose: 5000,
-              hideProgressBar: false,
-              closeOnClick: true,
-              pauseOnHover: true,
-              draggable: true,
-              progress: undefined,
-            });
-          }
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-    } catch (error) {
-      console.error(error);
-      throw error;
-    }
+    // if (resp.data.msg === "Password Updated") {
+    //   toast.success("Password Updated, You can Login Now!", {
+    //     position: "top-right",
+    //     autoClose: 5000,
+    //     hideProgressBar: false,
+    //     closeOnClick: true,
+    //     pauseOnHover: true,
+    //     draggable: true,
+    //     progress: undefined,
+    //   });
+    // }
+    return resp;
+  } catch (error) {
+    console.error(error);
+    throw error;
   }
-);
+});
 
 export const editHeroSection = createAsyncThunk(
   "auth/editHeroSection",
@@ -591,6 +581,7 @@ export const globalSlice = createSlice({
       cookies.remove("token");
     },
     FORG_PASSERR: (state, action) => {
+      console.log("FORG_PASSERR onside", action.payload);
       state.ForgPassMsg = action.payload.msg;
       state.ForgPassMsgMail = action.payload.user.email;
     },
@@ -601,6 +592,7 @@ export const globalSlice = createSlice({
       state.TokenMsg = action.payload.data.msg;
     },
     ISTOKEN_OKTOEDIT: (state, action) => {
+      console.log("action.payload ISTOKEN_OKTOEDIT", action.payload);
       state.TokenMsgPassUpdate = action.payload.data.msg;
     },
     UPDATEPASS_MSG: (state, action) => {
@@ -646,11 +638,19 @@ export const globalSlice = createSlice({
       .addCase(authuser.rejected, (state, action) => {
         state.LoginMsg = action.payload.msg;
       })
-      .addCase(forgotpass.fulfilled, (state, action) => {
-        state.ForgPassMsg = action.payload.msg;
-        state.ForgPassMsgMail = action.payload.user.email;
+      .addCase(Forgotpass.fulfilled, (state, action) => {
+        console.log("forgotpass addCase", action.payload.payload);
+        state.ForgPassMsg = action.payload.payload.msg;
+        state.ForgPassMsgMail = action.payload.payload.user.email;
       })
-      .addCase(forgotpass.rejected, (state, action) => {
+      .addCase(Forgotpass.rejected, (state, action) => {
+        console.error(action.payload);
+      })
+      .addCase(VerifyTokenForPass.fulfilled, (state, action) => {
+        console.log("VerifyTokenForPass addCase", action.payload.payload);
+        state.TokenMsgPassUpdate = action.payload.payload.data.msg;
+      })
+      .addCase(VerifyTokenForPass.rejected, (state, action) => {
         console.error(action.payload);
       });
   },

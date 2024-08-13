@@ -358,14 +358,14 @@ const Login = () => {
             </center>
           </Box>
           <Box mt={-1.8} mb={1} width="100%" textAlign="right">
-            {/* <Link
-              href="/forgotpass"
+            <Link
+              href="/Forgotpass"
               style={{ textDecoration: "none", color: "#ff6704" }}
             >
               <Box color="#ff6704" fontSize={{ md: "15px", xs: "13px" }}>
                 Forgot password?
               </Box>
-            </Link> */}
+            </Link>
           </Box>
           {/* **********Recaptcha code************ */}
           {/* <Box>

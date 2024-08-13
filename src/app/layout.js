@@ -238,6 +238,8 @@ export default function RootLayout({ children }) {
           pathname === "/signup" ||
           pathname === "/login" ||
           pathname === "/Forgotpass" ||
+          pathname === "/VerifyTockenMail" ||
+          pathname === "/ResetPass" ||
           pathname === "/buy-home-consultation" ||
           pathname === "/refinance-consultation" ||
           pathname === "/adminPanel/herosection" ||
@@ -260,6 +262,8 @@ export default function RootLayout({ children }) {
           pathname === "/adminPanel/featuresTop" ||
           pathname === "/signup" ||
           pathname === "/login" ||
+          pathname === "/ResetPass" ||
+          pathname === "/VerifyTockenMail" ||
           pathname === "/buy-home-consultation" ||
           pathname === "/refinance-consultation" ||
           pathname === "/Forgotpass" ||

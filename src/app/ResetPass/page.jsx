@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { AccountCircle } from "@mui/icons-material";
+import Image from "next/image";
+
 import {
   Container,
   FormControl,
@@ -24,12 +26,14 @@ import check from "../../images/check-mark.png";
 import marketing from "../../images/marketing.png";
 import robot from "../../images/robot.png";
 // import BelowHead from "../belowHead/belowHead";
-import { Link } from "react-router-dom";
+import Link from "next/link.js";
+import { useRouter } from "next/navigation";
+
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 // import ReCAPTCHA from "react-google-recaptcha";
 
-import { resetpassw } from "./../../redux/slices/globalSlice.js";
+import { Resetpassw } from "./../../redux/slices/globalSlice.js";
 import { BsCheckCircleFill } from "react-icons/bs";
 // import { BsCheckCircleFill } from "react-icons/bi";
 
@@ -39,6 +43,7 @@ const ResetPass = () => {
   }, []);
 
   let dispatch = useDispatch();
+  const router = useRouter();
 
   const [open, setOpen] = React.useState(false);
 
@@ -98,14 +103,14 @@ const ResetPass = () => {
 
   const [mailid, setMailid] = useState(false);
 
-  const RecoveryMail = useSelector((state) => state.Auth.ForgPassMsgMail);
+  const RecoveryMail = useSelector((state) => state.global.ForgPassMsgMail);
   console.log("RecoveryMail", RecoveryMail);
 
   useEffect(() => {
     setMailid(RecoveryMail);
   }, [RecoveryMail]);
 
-  const resetNow = (e) => {
+  const resetNow = async (e) => {
     console.log("reset called");
     e.preventDefault();
 
@@ -117,12 +122,40 @@ const ResetPass = () => {
         email: mailid,
         values,
       };
-      dispatch(resetpassw(obj));
+      console.log("befoire reset at somponent", obj);
+      toast.warn("Please wait...", {
+        position: "bottom-left",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+      let resp = await dispatch(Resetpassw(obj));
+      console.log("resp pass update comp", resp);
+      if (resp.payload.data.msg == "Password Updated") {
+        toast.success("Password Updated Successfully, Redirecting to login", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+        router.push("/login");
+      }
     }
   };
 
-  const SignUpResp = useSelector((state) => state.Auth.ErrMsg);
-  console.log("SignUp Responce is", SignUpResp);
+  const PassUpdateMsg = useSelector((state) => state.global.PassUpdateMsg);
+  console.log("PassUpdateMsg Responce is", PassUpdateMsg);
+  if (PassUpdateMsg == "Updated Successful") {
+    setTimeout(() => {
+      router.push("/login", { replace: true });
+    }, 2000);
+  }
 
   return (
     <Box
@@ -145,12 +178,13 @@ const ResetPass = () => {
           <Typography
             fontSize={{ xs: "28px", sm: "48px" }}
             sx={{
-              //   fontSize: "48px",
               fontWeight: "Bold",
-              color: "#903800",
-              borderBottom: "3px solid #903800",
-              my: "5%",
-              fontFamily: "MilkyNice",
+              color: "#371f00",
+              fontFamily: "Poppins, sans-serif",
+              position: "relative",
+              top: "2px",
+              marginTop: "70px",
+              marginBottom: "20px",
             }}
           >
             Reset Your Password
@@ -209,10 +243,18 @@ const ResetPass = () => {
               }}
             >
               <IconButton sx={{ p: "5px" }} aria-label="menu">
-                <img src={padlock} alt="" style={{ maxWidth: "40px" }} />
+                <Image src={padlock} alt="" style={{ maxWidth: "40px" }} />
               </IconButton>
               <InputBase
-                sx={{ ml: 1, flex: 1, color: "#903800" }}
+                sx={{
+                  color: "#903800",
+                  width: "100%",
+                  border: "none",
+                  "& .MuiInputBase-input": {
+                    border: "none",
+                    borderRadius: "40px",
+                  },
+                }}
                 placeholder="Enter New Password"
                 type="password"
                 onChange={handleChange("password")}
@@ -247,7 +289,15 @@ const ResetPass = () => {
                 />
               </IconButton>
               <InputBase
-                sx={{ ml: 1, flex: 1, color: "#903800" }}
+                sx={{
+                  color: "#903800",
+                  width: "100%",
+                  border: "none",
+                  "& .MuiInputBase-input": {
+                    border: "none",
+                    borderRadius: "40px",
+                  },
+                }}
                 placeholder="Confirm Your New Password"
                 type="password"
                 onChange={handleChange("cpassword")}
@@ -279,73 +329,34 @@ const ResetPass = () => {
             // onClick={notify}
             onClick={resetNow}
             sx={{
+              border: "1.5px solid white",
               borderRadius: "30px",
-              background: "#ff5100",
-              fontSize: { xs: "14px", md: "24px" },
-              "&:hover": {
-                background: "#ff5100a1",
-              },
-              color: "#371f00",
+              backgroundImage: "linear-gradient(to right, #FF8605, #FFAB24)",
+              fontSize: { xs: "17px", md: "20px" },
               fontWeight: "800",
               boxShadow: 4,
               textAlign: "center",
-              py: "10px",
-              px: "20px",
-              my: "5%",
+              py: "8px",
+              px: "40px",
+              color: "black",
+
+              "&:hover": {
+                backgroundImage: "linear-gradient(to right, #FFAB24, #FF8605)", // Reverse gradient
+                boxShadow: 6,
+              },
+              "&:active": {
+                backgroundImage: "linear-gradient(to right, #FF8605, #FFAB24)", // Original gradient
+                boxShadow: 2,
+              },
+              "&:focus": {
+                backgroundImage: "linear-gradient(to right, #FF8605, #FFAB24)", // Original gradient
+                boxShadow: 2,
+              },
             }}
           >
             {" "}
             Reset Now
           </Button>
-          <Box
-            sx={{
-              width: "100%",
-              height: "8px",
-              background: "#9e8164",
-              borderRadius: "20px",
-              mb: "5%",
-            }}
-          ></Box>
-          <Typography
-            fontSize={{ xs: "18px", sm: "30px" }}
-            sx={{
-              fontWeight: "Bold",
-              color: "#371f00",
-              //   fontFamily: "MilkyNice",
-              textAlign: "center",
-            }}
-          >
-            Already have an account?
-          </Typography>
-          <Box
-            border="2.5px solid #C96100"
-            borderRadius="30px"
-            mt={3}
-            sx={{ width: "fit-content" }}
-          >
-            <Link
-              to="/login"
-              style={{ textDecoration: "none", color: "black" }}
-            >
-              <Button
-                sx={{
-                  border: "1.5px solid white",
-                  borderRadius: "30px",
-                  backgroundImage:
-                    "linear-gradient(to right, #FF8605, #FFAB24)",
-                  fontSize: { xs: "17px", md: "24px" },
-                  fontWeight: "800",
-                  boxShadow: 4,
-                  textAlign: "center",
-                  py: "10px",
-                  px: "50px",
-                }}
-              >
-                {" "}
-                Log In
-              </Button>
-            </Link>
-          </Box>
         </Box>
       </Container>
     </Box>

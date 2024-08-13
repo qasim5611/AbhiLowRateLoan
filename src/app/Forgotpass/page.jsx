@@ -1,8 +1,9 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-
+import SyncLockIcon from "@mui/icons-material/SyncLock";
 import { useRouter } from "next/navigation";
+
 import Image from "next/image";
 
 import {
@@ -17,6 +18,7 @@ import {
   TextField,
   Typography,
   Button,
+  CircularProgress,
 } from "@mui/material";
 import { Box } from "@mui/system";
 import back from "../../images/welcome-back.png";
@@ -31,10 +33,11 @@ import Link from "next/link.js";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { forgotpass } from "../../redux/slices/globalSlice.js";
+import { Forgotpass } from "../../redux/slices/globalSlice.js";
 
 const ForgotPassword = () => {
   const router = useRouter();
+  const [loader, setLoader] = useState(false);
 
   const [authloginMsg, setauthloginMsg] = useState("");
 
@@ -44,23 +47,8 @@ const ForgotPassword = () => {
 
   const [newtest, setNewtest] = useState(false);
 
-  const EmailMsg = useSelector((state) => state.ForgPassMsg);
-
-  console.log("AllFormsData", EmailMsg);
-
-  useEffect(() => {
-    setNewtest(EmailMsg);
-  }, [EmailMsg]);
-
-  if (newtest == "Cool Email Found, Redirecting to Change Password") {
-    setTimeout(() => {
-      setNewtest(false);
-      // dispatch(clearstate());setNewtest
-
-      // navigate("/verifyTockenMail", { replace: true });
-      router.push("/verifyTockenMail");
-    }, 2000);
-  }
+  // const EmailMsg = useSelector((state) => state.global.ForgPassMsg);
+  // console.log("AllFormsData", EmailMsg);
 
   let dispatch = useDispatch();
 
@@ -102,20 +90,50 @@ const ForgotPassword = () => {
     return isvalid;
   };
 
-  const submitHandler = (e) => {
+  const submitHandler = async (e) => {
     e.preventDefault();
 
     var isFormvalid = validate();
     console.log("isvalid", isFormvalid);
 
     if (isFormvalid) {
-      dispatch(forgotpass(values));
-      console.log("ok");
+      // setLoader(true);s
+      toast.warn("Please wait...", {
+        position: "bottom-left",
+        autoClose: 8000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+      let req = await dispatch(Forgotpass(values));
+      console.log("forgotpass comp", req);
+      // setLoader(true);
     }
   };
 
-  function onChange(value) {
-    console.log("Captcha value:", value);
+  const ForgPassDetail = useSelector((store) => store.global);
+
+  let EmailMsg = ForgPassDetail.ForgPassMsg;
+  console.log("EmailMsg EmailMsg ...", EmailMsg);
+
+  useEffect(() => {
+    setNewtest(EmailMsg);
+  }, [EmailMsg]);
+
+  if (newtest == "Cool Email Found, Redirecting to Verify Email") {
+    // setLoader(false);
+    setTimeout(() => {
+      setNewtest(false);
+
+      router.push("/VerifyTockenMail", { replace: true });
+    }, 2000);
+  } else if (newtest == "Not available email") {
+    // setLoader(false);
+    setTimeout(() => {
+      setNewtest(false);
+    }, 2000);
   }
 
   return (
@@ -156,10 +174,13 @@ const ForgotPassword = () => {
               mb: "5%",
             }}
           >
-            <img
+            {/* <img
               src={back}
               alt=""
               style={{ marginRight: "30px", maxWidth: "80px", width: "100%" }}
+            /> */}
+            <SyncLockIcon
+              sx={{ fontSize: "65px", color: "black", marginRight: "10px" }}
             />
             <Box>
               <Typography
@@ -167,7 +188,9 @@ const ForgotPassword = () => {
                 sx={{
                   fontWeight: "Bold",
                   color: "#371f00",
-                  fontFamily: "MilkyNice",
+                  fontFamily: "Poppins, sans-serif",
+                  position: "relative",
+                  top: "2px",
                 }}
               >
                 Have an email?
@@ -177,7 +200,9 @@ const ForgotPassword = () => {
                 sx={{
                   fontWeight: "Bold",
                   color: "#371f00",
-                  fontFamily: "MilkyNice",
+                  fontFamily: "Poppins, sans-serif",
+                  position: "relative",
+                  top: "-8px",
                 }}
               >
                 Recover Now
@@ -238,7 +263,7 @@ const ForgotPassword = () => {
             my={3}
             sx={{ width: "fit-content" }}
           >
-            <Button
+            {/* <Button
               onClick={submitHandler}
               sx={{
                 border: "1.5px solid white",
@@ -253,6 +278,55 @@ const ForgotPassword = () => {
               }}
             >
               Recover
+            </Button> */}
+
+            <Button
+              // disabled={!isRecapVerfid}
+              onClick={submitHandler}
+              sx={{
+                border: "1.5px solid white",
+                borderRadius: "30px",
+                backgroundImage: "linear-gradient(to right, #FF8605, #FFAB24)",
+                fontSize: { xs: "17px", md: "20px" },
+                fontWeight: "800",
+                boxShadow: 4,
+                textAlign: "center",
+                py: "8px",
+                px: "40px",
+                color: "black",
+
+                "&:hover": {
+                  backgroundImage:
+                    "linear-gradient(to right, #FFAB24, #FF8605)", // Reverse gradient
+                  boxShadow: 6,
+                },
+                "&:active": {
+                  backgroundImage:
+                    "linear-gradient(to right, #FF8605, #FFAB24)", // Original gradient
+                  boxShadow: 2,
+                },
+                "&:focus": {
+                  backgroundImage:
+                    "linear-gradient(to right, #FF8605, #FFAB24)", // Original gradient
+                  boxShadow: 2,
+                },
+              }}
+            >
+              {loader ? (
+                <Box
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    flexDirection: "row",
+                  }}
+                >
+                  <Typography>Recover</Typography>
+                  &nbsp; &nbsp;
+                  <CircularProgress size={20} color="inherit" />
+                </Box>
+              ) : (
+                "Recover"
+              )}
             </Button>
           </Box>
 
