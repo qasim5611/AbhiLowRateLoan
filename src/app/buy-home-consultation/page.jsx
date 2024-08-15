@@ -110,8 +110,8 @@ export default function BuyHomeConsultaion(props) {
         setloader(true);
         // const req = await SendEmail(state, radioState);
         const req = await sendEmailBuyHome(
-          "qasimtahir5611@gmail.com",
-          // "info@lowratehomeloan.com.au",
+          // "qasimtahir5611@gmail.com",
+          "info@lowratehomeloan.com.au",
           "abhijay.376@gmail.com",
           "Buy Home Consultation Form Testing",
           obj

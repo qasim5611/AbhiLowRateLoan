@@ -367,14 +367,7 @@ const Login = () => {
               </Box>
             </Link>
           </Box>
-          {/* **********Recaptcha code************ */}
-          {/* <Box>
-            <ReCAPTCHA
-              sitekey="6LeVHaAfAAAAAMtTBCfxxlHsJULQDAJP8OUJGQQl"
-              onChange={onChange}
-            />
-          </Box> */}
-          {/* **********END Recaptcha code************ */}
+
           <Box
             border="2.5px solid #C96100"
             borderRadius="30px"
