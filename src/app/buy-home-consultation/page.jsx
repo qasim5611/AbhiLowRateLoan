@@ -110,10 +110,10 @@ export default function BuyHomeConsultaion(props) {
         setloader(true);
         // const req = await SendEmail(state, radioState);
         const req = await sendEmailBuyHome(
-          // "qasimtahir5611@gmail.com",
-          "info@lowratehomeloan.com.au",
+          "qasimtahir5611@gmail.com",
+          // "info@lowratehomeloan.com.au",
           "abhijay.376@gmail.com",
-          "Buy Home Consultation Form",
+          "Buy Home Consultation Form Testing",
           obj
         );
 
@@ -424,7 +424,7 @@ export default function BuyHomeConsultaion(props) {
                                   className="gfield-choice-input"
                                   name="whyRefinnancing"
                                   type="radio"
-                                  defaultValue="Decrease repayment"
+                                  defaultValue="Just exploring options"
                                   id="choice_3_8_0"
                                   onChange={onChangeHandlerRadio}
                                   tabIndex={54}
@@ -480,7 +480,7 @@ export default function BuyHomeConsultaion(props) {
                                   className="gfield-choice-input"
                                   name="whyRefinnancing"
                                   type="radio"
-                                  defaultValue="Pay off loan faster"
+                                  defaultValue="Plan to buy in the next 6 months"
                                   id="choice_3_8_1"
                                   // onchange="gformToggleRadioOther( this )"
                                   tabIndex={55}
@@ -536,7 +536,7 @@ export default function BuyHomeConsultaion(props) {
                                   className="gfield-choice-input"
                                   name="whyRefinnancing"
                                   type="radio"
-                                  defaultValue="Consolidate debt / get cash out"
+                                  defaultValue="Actively looking / Made an offer"
                                   id="choice_3_8_2"
                                   // onchange="gformToggleRadioOther( this )"
                                   onChange={onChangeHandlerRadio}

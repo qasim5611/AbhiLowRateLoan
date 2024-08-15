@@ -76,7 +76,7 @@ export const POST = async (request) => {
 
 
                    <div style="font-weight: bold ;width: 100%;background-color: #eaf3fa;margin-bottom: 10px;height: 25px;padding-top: 7px; padding-left: 5px;">
-            Current Loan Amount
+            Expected Purchase Price
            </div>
          
            <div style="width: 100%;background-color: white; margin-bottom: 10px;height: 25px;padding-top: 7px;padding-left: 15px; ">
@@ -86,7 +86,7 @@ export const POST = async (request) => {
 
 
           <div style="font-weight: bold ;width: 100%;background-color: #eaf3fa;margin-bottom: 10px;height: 25px;padding-top: 7px; padding-left: 5px;">
-            Curretn Interest Rate
+           How Much Deposit Do You Have?
            </div>
 
     
@@ -97,7 +97,7 @@ export const POST = async (request) => {
 
 
           <div style="font-weight: bold ;width: 100%;background-color: #eaf3fa;margin-bottom: 10px;height: 25px;padding-top: 7px; padding-left: 5px;">
-            Why Refinancing?
+            Why Buying?
            </div>
 
 
