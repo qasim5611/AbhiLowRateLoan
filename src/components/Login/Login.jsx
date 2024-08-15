@@ -111,9 +111,10 @@ const Login = () => {
 
     if (isFormvalid) {
       setLoader(true);
+      console.log("values", values);
       await dispatch(authuser(values));
-      console.log("ok");
-      window.location.reload();
+      // console.log("ok");
+      // window.location.reload();
     }
   };
 

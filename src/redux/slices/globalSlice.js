@@ -36,7 +36,7 @@ const initialState = {
 export const authuser = createAsyncThunk("auth/authuser", async (body) => {
   try {
     // const response = await axios.post(API + "/authenticate", body);
-    console.log("body at global Slice", body);
+    console.log("body at global Slice authuser", body);
     let response = await axios.post("/api/user/login", body);
     console.log("response at global Slice", response);
 
