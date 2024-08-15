@@ -571,6 +571,9 @@ export const globalSlice = createSlice({
         console.log(cookies.get("jwtToken")); // Pacman
       }
       state.data = action.payload;
+      setTimeout(() => {
+        state.data.msg = "";
+      }, 3000);
     },
     MSG_LOGINS: (state, action) => {
       console.log("reducer run", action.payload);
@@ -631,9 +634,9 @@ export const globalSlice = createSlice({
     builder
       .addCase(authuser.fulfilled, (state, action) => {
         state.data = action.payload;
-        // setTimeout(() => {
-        //   state.data = "";
-        // }, 2000);
+        setTimeout(() => {
+          state.data.msg = "";
+        }, 3000);
       })
       .addCase(authuser.rejected, (state, action) => {
         state.LoginMsg = action.payload.msg;

@@ -113,17 +113,17 @@ const Login = () => {
       setLoader(true);
       console.log("values", values);
       await dispatch(authuser(values));
-      // console.log("ok");
-      // window.location.reload();
+      console.log("ok");
+      window.location.reload();
     }
   };
 
-  const LoginMsg = useSelector((store) => store.global);
+  const LoginMsg = useSelector((store) => store.global.data);
 
-  console.log(LoginMsg?.data?.payload?.msg);
+  // console.log(LoginMsg?.data?.payload?.msg);
 
   useEffect(() => {
-    if (LoginMsg?.data?.payload?.msg == "Password Not Correct") {
+    if (LoginMsg?.payload?.msg == "Password Not Correct") {
       setLoader(false);
       toast.error("Password Not Correct!", {
         position: "top-right",
@@ -135,7 +135,7 @@ const Login = () => {
         progress: undefined,
       });
     } else if (
-      LoginMsg?.data?.payload?.msg ==
+      LoginMsg?.payload?.msg ==
       "NOT Verified, Check Mail, We Already Have Send you Email"
     ) {
       setLoader(false);
@@ -149,7 +149,7 @@ const Login = () => {
         draggable: true,
         progress: undefined,
       });
-    } else if (LoginMsg?.data?.payload?.msg == "Login Successfull") {
+    } else if (LoginMsg?.payload?.msg == "Login Successfull") {
       setLoader(false);
 
       toast.success("Admin Login Successfull", {
@@ -164,7 +164,7 @@ const Login = () => {
       console.log("Login Successfull");
       // navigate("/adminPanel", { replace: true });
       router.push("/adminPanel");
-    } else if (LoginMsg?.data?.payload?.msg == "Login Successfull") {
+    } else if (LoginMsg?.payload?.msg == "Login Successfull") {
       // dispatch(setSnackbar(true, "success", "Login Successfull"));
       setLoader(false);
 
@@ -178,7 +178,7 @@ const Login = () => {
         progress: undefined,
       });
       // navigate("/logo", { replace: true });
-    } else if (LoginMsg?.data?.payload?.msg == "Not available email") {
+    } else if (LoginMsg?.payload?.msg == "Not available email") {
       // dispatch(setSnackbar(true, "error", "Not available email"));
       setLoader(false);
 
