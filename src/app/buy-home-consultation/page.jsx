@@ -113,7 +113,7 @@ export default function BuyHomeConsultaion(props) {
           // "qasimtahir5611@gmail.com",
           "info@lowratehomeloan.com.au",
           "abhijay.376@gmail.com",
-          "Buy Home Consultation Form Testing",
+          "Buy Home Consultation Form",
           obj
         );
 
