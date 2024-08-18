@@ -30,7 +30,7 @@ export default function HomeLoans(props) {
                             data-kb-block="kb-adv-heading_2efba4-ea"
                           >
                             Your Key to Homeownership with Trusted Mortgage
-                            Broker Scoresby
+                            Broker
                           </h2>
                         </div>
                       </div>
@@ -327,7 +327,7 @@ export default function HomeLoans(props) {
                                       <div className="kt-inside-inner-col">
                                         <p>
                                           Get your first home by leveraging our
-                                          Mortgage Broker Scoresby expertise
+                                          Mortgage Broker expertise
                                           which allows you to find tailored loan
                                           options for you.
                                         </p>
