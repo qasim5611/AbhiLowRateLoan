@@ -88,9 +88,9 @@ export function FeaturedTop() {
                                       <Link
                                         style={{ textDecoration: "none" }}
                                         href={
-                                          index == 1
+                                          index == 0
                                             ? ""
-                                            : index == 0
+                                            : index == 1
                                             ? "/gift-card-terms-condition"
                                             : index == 2
                                             ? ""
