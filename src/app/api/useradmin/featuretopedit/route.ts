@@ -52,8 +52,8 @@ export const POST = async (req: NextRequest) => {
     {
       image_url: updatedRecord?.secure_url || mydata.image_url,
       public_id: updatedRecord?.public_id || mydata.public_id,
-      tagline: updatedTagline,
-      page_link: updatedPageLink,
+      tagline: updatedTagline?.trim() || mydata.tagline,
+      page_link: updatedPageLink?.trim() || mydata.page_link,
     },
     { new: true } // This option returns the updated document
   );
