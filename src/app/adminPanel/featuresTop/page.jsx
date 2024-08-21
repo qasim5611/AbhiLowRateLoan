@@ -124,9 +124,10 @@ export default function FeatureTop(props) {
       let result = await dispatch(editFeatureTopSection(obj));
 
       newLoading[`loader${index + 1}`] = false;
-      setLoading(newLoading);
+      setLoading(false);
 
       if (result) {
+        console.log("result", result);
         toast.success("Feature Top Updated Successfully", {
           position: "top-right",
           autoClose: 5000,
@@ -136,6 +137,7 @@ export default function FeatureTop(props) {
           draggable: true,
           progress: undefined,
         });
+        setLoading(false);
       } else {
         toast.error("Feature Top Update Failed!", {
           position: "top-right",
@@ -146,6 +148,7 @@ export default function FeatureTop(props) {
           draggable: true,
           progress: undefined,
         });
+        setLoading(newLoading);
       }
     } catch (err) {
       console.error(err, "Error Uploading File!");
@@ -185,7 +188,7 @@ export default function FeatureTop(props) {
                         alignItems: "center",
                       }}
                     >
-                      <Grid item sm={12} md={4} lg={4}>
+                      <Grid item sm={12} md={3} lg={3}>
                         <textarea
                           label="Tagline"
                           variant="outlined"
@@ -196,7 +199,7 @@ export default function FeatureTop(props) {
                           sx={{ mb: 2 }}
                         />
                       </Grid>
-                      <Grid item sm={12} md={4} lg={4}>
+                      <Grid item sm={12} md={2} lg={2}>
                         <textarea
                           label="Page Link"
                           variant="outlined"
@@ -210,8 +213,8 @@ export default function FeatureTop(props) {
                       <Grid
                         item
                         sm={12}
-                        md={4}
-                        lg={4}
+                        md={5}
+                        lg={5}
                         style={{ textAlign: "center" }}
                       >
                         <Button
@@ -236,7 +239,7 @@ export default function FeatureTop(props) {
                           />
                         </Button>
                       </Grid>
-                      <Grid item sm={12} md={12} lg={12}>
+                      <Grid item sm={12} md={2} lg={2}>
                         <button
                           onClick={(e) => handleSubmit(e, index, itm._id)}
                           style={{
