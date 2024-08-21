@@ -12,6 +12,9 @@ const Schema = new mongoose.Schema(
     public_id: {
       type: String,
     },
+    page_link: {
+      type: String,
+    },
   },
   {
     timestamps: { createdAt: "created_at", updatedAt: "updated_at" },

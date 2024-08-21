@@ -46,6 +46,7 @@ export default function FeatureTop(props) {
       const initialLoading = {};
       images.forEach((item, index) => {
         initialFormData[`tagline${index + 1}`] = item.tagline;
+        initialFormData[`page_link${index + 1}`] = item.page_link; // Add this line
         initialFormData[`image${index + 1}`] = null;
         initialLoading[`loader${index + 1}`] = false;
       });
@@ -59,14 +60,13 @@ export default function FeatureTop(props) {
   const handleChange = (e, index) => {
     const { name, value, files } = e.target;
     const newFormData = { ...formData };
-    const fieldName = `tagline${index + 1}`;
 
     if (files) {
       newFormData[`image${index + 1}`] = files[0];
       const url = URL.createObjectURL(files[0]);
       newFormData[`imagePreview${index + 1}`] = url;
     } else {
-      newFormData[fieldName] = value;
+      newFormData[name] = value; // Update this line to handle all fields dynamically
     }
     setFormData(newFormData);
   };
@@ -75,39 +75,42 @@ export default function FeatureTop(props) {
     e.preventDefault();
     const fieldName = `tagline${index + 1}`;
     const imageName = `image${index + 1}`;
+    const pageLinkName = `page_link${index + 1}`; // Add this line
 
-    if (!formData[imageName]) {
-      toast.error("Please Upload Image!", {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-      });
+    // if (!formData[imageName]) {
+    //   toast.error("Please Upload Image!", {
+    //     position: "top-right",
+    //     autoClose: 5000,
+    //     hideProgressBar: false,
+    //     closeOnClick: true,
+    //     pauseOnHover: true,
+    //     draggable: true,
+    //     progress: undefined,
+    //     theme: "light",
+    //   });
 
-      return;
-    } else if (!formData[fieldName]) {
-      toast.error("Please Enter Tagline!", {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-      });
-      return;
-    }
+    //   return;
+    // } else if (!formData[fieldName]) {
+    //   toast.error("Please Enter Tagline!", {
+    //     position: "top-right",
+    //     autoClose: 5000,
+    //     hideProgressBar: false,
+    //     closeOnClick: true,
+    //     pauseOnHover: true,
+    //     draggable: true,
+    //     progress: undefined,
+    //     theme: "light",
+    //   });
+    //   return;
+    // }
 
     const obj = {
       tagline: formData[fieldName],
+      page_link: formData[pageLinkName], // Add this line
       image: formData[imageName],
       idtoUpdate: id,
     };
+    console.log("obj", obj);
 
     try {
       const newLoading = { ...loading };
@@ -150,7 +153,6 @@ export default function FeatureTop(props) {
     }
   };
 
-  // Ensure this component only runs on the client side
   if (typeof window === "undefined") {
     return null;
   }
@@ -166,6 +168,7 @@ export default function FeatureTop(props) {
                 {record1.map((itm, index) => {
                   const fieldName = `tagline${index + 1}`;
                   const imageName = `image${index + 1}`;
+                  const pageLinkName = `page_link${index + 1}`; // Add this line
                   const loaderName = `loader${index + 1}`;
 
                   return (
@@ -180,7 +183,7 @@ export default function FeatureTop(props) {
                         alignItems: "center",
                       }}
                     >
-                      <Grid item sm={12} md={4} lg={4}>
+                      <Grid item sm={12} md={3} lg={3}>
                         <textarea
                           label="Tagline"
                           variant="outlined"
@@ -191,11 +194,25 @@ export default function FeatureTop(props) {
                           sx={{ mb: 2 }}
                         />
                       </Grid>
+                      <Grid item sm={12} md={2} lg={2}>
+                        <abbr title="Place Link Correctly only if you're sure the page exists, OR # for no Link">
+                          <textarea
+                            label="Page Link"
+                            variant="outlined"
+                            defaultValue={itm.page_link}
+                            name={pageLinkName} // Add this line
+                            onChange={(e) => handleChange(e, index)}
+                            fullWidth
+                            sx={{ mb: 2 }}
+                            placeholder="Paste Link"
+                          />
+                        </abbr>
+                      </Grid>
                       <Grid
                         item
                         sm={12}
-                        md={6}
-                        lg={6}
+                        md={5}
+                        lg={5}
                         style={{ textAlign: "center" }}
                       >
                         <Button
@@ -207,7 +224,6 @@ export default function FeatureTop(props) {
                             backgroundColor: "#fcc26e",
                             backgroundImage: `url(${itm.image_url})`,
                             backgroundPosition: "right",
-                            // backgroundSize: "cover",
                             height: "64px",
                             backgroundRepeat: "no-repeat",
                           }}
@@ -269,6 +285,7 @@ export default function FeatureTop(props) {
           </Box>
         </Box>
       </div>
+      <ToastContainer />
     </Adminlayout>
   );
 }
