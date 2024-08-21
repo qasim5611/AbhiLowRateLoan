@@ -122,6 +122,8 @@ export default function FeatureTop(props) {
       newLoading[`loader${index + 1}`] = false;
       setLoading(newLoading);
 
+      console.log("result editFeatureTopSection", result);
+
       if (result) {
         toast.success("Feature Top Updated Successfully", {
           position: "top-right",
