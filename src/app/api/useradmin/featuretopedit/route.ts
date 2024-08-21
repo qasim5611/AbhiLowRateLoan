@@ -10,7 +10,7 @@ export const POST = async (req: NextRequest) => {
     const formData = await req.formData(); 
     console.log("formData", formData);
 
-    const imageData = formData.get("image") as File | string | null; 
+    const imageData = formData.get("image"); 
     const tagline = formData.get("tagline") as string | null; 
     const page_link = formData.get("page_link") as string | null; 
     const idtoUpdate = formData.get("idtoUpdate") as string | null; 
@@ -32,7 +32,7 @@ export const POST = async (req: NextRequest) => {
     console.log("mydata", mydata);
 
     let updatedRecord;
-    if (imageData && imageData instanceof File && imageData.size > 0) {
+    if (imageData && typeof imageData === "object" && "size" in imageData) {
       try {
         console.log("mydata.public_id", mydata.public_id);
 
@@ -42,7 +42,7 @@ export const POST = async (req: NextRequest) => {
         }
         console.log("isDeleted", isDeleted);
 
-        updatedRecord = await UploadImage(imageData, "nextjs-imagegallary");
+        updatedRecord = await UploadImage(imageData as File, "nextjs-imagegallary");
         if (!updatedRecord) {
           throw new Error("Failed to upload new image.");
         }
@@ -51,6 +51,8 @@ export const POST = async (req: NextRequest) => {
       } catch (error) {
         throw new Error(`Image processing failed: ${error.message}`);
       }
+    } else {
+      console.log("No new image provided or image data is not a File.");
     }
 
     // If the user did not edit the input elements, use the existing values
