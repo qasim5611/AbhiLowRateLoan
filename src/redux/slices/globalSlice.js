@@ -411,6 +411,37 @@ export const editApplicationProcess = createAsyncThunk(
   }
 );
 
+export const saveFeatureTop = createAsyncThunk(
+  "auth/editApplicationProcess-save",
+  async (body) => {
+    try {
+      const config = {
+        headers: {
+          "Content-Type": "multipart/form-data",
+          "Cache-Control": "no-cache",
+        },
+      };
+      let formData = body;
+      // for (var item in body) {
+      //   formData.append(item, body[item]);
+      // }
+      // console.log("formData", formData);
+
+      let res = await axios.post(
+        "/api/useradmin/featuretopsave",
+        formData,
+        config
+      );
+      console.log("res", res);
+      return res;
+    } catch (error) {
+      // Handle error
+      console.error(error);
+      throw error;
+    }
+  }
+);
+
 export const editFaqs = createAsyncThunk("auth/editFaqs-save", async (body) => {
   try {
     console.log(".................................>> editFaqs Slice", body);

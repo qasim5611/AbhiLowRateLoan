@@ -50,14 +50,17 @@ export const POST = async (req: NextRequest) => {
   const data = await ImageGallaryModal.findByIdAndUpdate(
     idtoUpdate, // ID of the record you want to update
     {
+      tagline: updatedTagline?.trim() || mydata.tagline,
       image_url: updatedRecord?.secure_url || mydata.image_url,
       public_id: updatedRecord?.public_id || mydata.public_id,
-      tagline: updatedTagline?.trim() || mydata.tagline,
       page_link: updatedPageLink?.trim() || mydata.page_link,
+
+
+
     },
     { new: true } // This option returns the updated document
   );
-
+console.log("datadatadata", data);
   return NextResponse.json(
     { msg: data },
     { 

@@ -46,7 +46,6 @@ export default function FeatureTop(props) {
       const initialLoading = {};
       images.forEach((item, index) => {
         initialFormData[`tagline${index + 1}`] = item.tagline;
-        initialFormData[`page_link${index + 1}`] = item.page_link; // Add this line
         initialFormData[`image${index + 1}`] = null;
         initialLoading[`loader${index + 1}`] = false;
       });
@@ -60,13 +59,14 @@ export default function FeatureTop(props) {
   const handleChange = (e, index) => {
     const { name, value, files } = e.target;
     const newFormData = { ...formData };
+    const fieldName = `tagline${index + 1}`;
 
     if (files) {
       newFormData[`image${index + 1}`] = files[0];
       const url = URL.createObjectURL(files[0]);
       newFormData[`imagePreview${index + 1}`] = url;
     } else {
-      newFormData[name] = value; // Update this line to handle all fields dynamically
+      newFormData[fieldName] = value;
     }
     setFormData(newFormData);
   };
@@ -75,42 +75,39 @@ export default function FeatureTop(props) {
     e.preventDefault();
     const fieldName = `tagline${index + 1}`;
     const imageName = `image${index + 1}`;
-    const pageLinkName = `page_link${index + 1}`; // Add this line
 
-    // if (!formData[imageName]) {
-    //   toast.error("Please Upload Image!", {
-    //     position: "top-right",
-    //     autoClose: 5000,
-    //     hideProgressBar: false,
-    //     closeOnClick: true,
-    //     pauseOnHover: true,
-    //     draggable: true,
-    //     progress: undefined,
-    //     theme: "light",
-    //   });
+    if (!formData[imageName]) {
+      toast.error("Please Upload Image!", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
 
-    //   return;
-    // } else if (!formData[fieldName]) {
-    //   toast.error("Please Enter Tagline!", {
-    //     position: "top-right",
-    //     autoClose: 5000,
-    //     hideProgressBar: false,
-    //     closeOnClick: true,
-    //     pauseOnHover: true,
-    //     draggable: true,
-    //     progress: undefined,
-    //     theme: "light",
-    //   });
-    //   return;
-    // }
+      return;
+    } else if (!formData[fieldName]) {
+      toast.error("Please Enter Tagline!", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+      return;
+    }
 
     const obj = {
       tagline: formData[fieldName],
-      page_link: formData[pageLinkName], // Add this line
       image: formData[imageName],
       idtoUpdate: id,
     };
-    console.log("obj", obj);
 
     try {
       const newLoading = { ...loading };
@@ -121,8 +118,6 @@ export default function FeatureTop(props) {
 
       newLoading[`loader${index + 1}`] = false;
       setLoading(newLoading);
-
-      console.log("result editFeatureTopSection", result);
 
       if (result) {
         toast.success("Feature Top Updated Successfully", {
@@ -155,6 +150,7 @@ export default function FeatureTop(props) {
     }
   };
 
+  // Ensure this component only runs on the client side
   if (typeof window === "undefined") {
     return null;
   }
@@ -170,7 +166,6 @@ export default function FeatureTop(props) {
                 {record1.map((itm, index) => {
                   const fieldName = `tagline${index + 1}`;
                   const imageName = `image${index + 1}`;
-                  const pageLinkName = `page_link${index + 1}`; // Add this line
                   const loaderName = `loader${index + 1}`;
 
                   return (
@@ -197,16 +192,32 @@ export default function FeatureTop(props) {
                         />
                       </Grid>
                       <Grid item sm={12} md={2} lg={2}>
-                        <abbr title="Place Link Correctly only if you're sure the page exists, OR # for no Link">
+                        {/* <input
+                          type="text"
+                          name="refinancebtn"
+                          className="textfild"
+                          placeholder="Page Link"
+                          onChange={(e) => handleChange(e, index)}
+                          style={{ padding: "0px", fontSize: "13px" }}
+
+                        /> */}
+
+                        {/* <p
+                          htmlFor="heroSec"
+                          className="lblform"
+                          style={{ fontSize: "14px", lineHeight: "18px" }}
+                        >
+                          /gift-card-terms-condition
+                        </p> */}
+                        <abbr title="Placed Link Correctly only if you sured that page Exists, OR leave it blank for no Link">
                           <textarea
-                            label="Page Link"
+                            label="Tagline"
                             variant="outlined"
                             defaultValue={itm.page_link}
-                            name={pageLinkName} // Add this line
+                            name={fieldName}
                             onChange={(e) => handleChange(e, index)}
                             fullWidth
                             sx={{ mb: 2 }}
-                            placeholder="Paste Link"
                           />
                         </abbr>
                       </Grid>
@@ -226,6 +237,7 @@ export default function FeatureTop(props) {
                             backgroundColor: "#fcc26e",
                             backgroundImage: `url(${itm.image_url})`,
                             backgroundPosition: "right",
+                            // backgroundSize: "cover",
                             height: "64px",
                             backgroundRepeat: "no-repeat",
                           }}
@@ -287,7 +299,6 @@ export default function FeatureTop(props) {
           </Box>
         </Box>
       </div>
-      <ToastContainer />
     </Adminlayout>
   );
 }
