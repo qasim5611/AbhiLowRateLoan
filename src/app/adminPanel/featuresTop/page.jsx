@@ -11,10 +11,11 @@ import {
   getFeatureSection,
 } from "../../../redux/slices/globalSlice";
 import Loading from "./../../../utils/loading";
+
 import { Box, Button, Grid, Typography, CircularProgress } from "@mui/material";
 import CloudSyncIcon from "@mui/icons-material/CloudSync";
 
-export default function FeatureTop() {
+export default function FeatureTop(props) {
   const [record1, setRecord1] = useState([]);
   const [formData, setFormData] = useState({});
   const [loading, setLoading] = useState({});
@@ -23,7 +24,7 @@ export default function FeatureTop() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const resp = await dispatch(
+      let resp = await dispatch(
         getFeatureSection({
           headers: {
             "Cache-Control": "no-cache",
@@ -33,11 +34,12 @@ export default function FeatureTop() {
       const images = resp?.payload?.data?.images || [];
       setRecord1(images);
 
+      // Initialize formData and loading state
       const initialFormData = {};
       const initialLoading = {};
       images.forEach((item, index) => {
         initialFormData[`tagline${index + 1}`] = item.tagline;
-        initialFormData[`page_link${index + 1}`] = item.page_link;
+        initialFormData[`page_link${index + 1}`] = item.page_link; // Initialize page_link
         initialFormData[`image${index + 1}`] = null;
         initialLoading[`loader${index + 1}`] = false;
       });
@@ -54,7 +56,8 @@ export default function FeatureTop() {
 
     if (files) {
       newFormData[`image${index + 1}`] = files[0];
-      newFormData[`imagePreview${index + 1}`] = URL.createObjectURL(files[0]);
+      const url = URL.createObjectURL(files[0]);
+      newFormData[`imagePreview${index + 1}`] = url;
     } else {
       newFormData[name] = value;
     }
@@ -66,6 +69,45 @@ export default function FeatureTop() {
     const fieldName = `tagline${index + 1}`;
     const linkName = `page_link${index + 1}`;
     const imageName = `image${index + 1}`;
+
+    // if (!formData[imageName]) {
+    //   toast.error("Please Upload Image!", {
+    //     position: "top-right",
+    //     autoClose: 5000,
+    //     hideProgressBar: false,
+    //     closeOnClick: true,
+    //     pauseOnHover: true,
+    //     draggable: true,
+    //     progress: undefined,
+    //     theme: "light",
+    //   });
+
+    //   return;
+    // } else if (!formData[fieldName]) {
+    //   toast.error("Please Enter Tagline!", {
+    //     position: "top-right",
+    //     autoClose: 5000,
+    //     hideProgressBar: false,
+    //     closeOnClick: true,
+    //     pauseOnHover: true,
+    //     draggable: true,
+    //     progress: undefined,
+    //     theme: "light",
+    //   });
+    //   return;
+    // } else if (!formData[linkName]) {
+    //   toast.error("Please Enter Page Link!", {
+    //     position: "top-right",
+    //     autoClose: 5000,
+    //     hideProgressBar: false,
+    //     closeOnClick: true,
+    //     pauseOnHover: true,
+    //     draggable: true,
+    //     progress: undefined,
+    //     theme: "light",
+    //   });
+    //   return;
+    // }
 
     const obj = {
       tagline: formData[fieldName],
@@ -79,7 +121,7 @@ export default function FeatureTop() {
       newLoading[`loader${index + 1}`] = true;
       setLoading(newLoading);
 
-      const result = await dispatch(editFeatureTopSection(obj));
+      let result = await dispatch(editFeatureTopSection(obj));
 
       newLoading[`loader${index + 1}`] = false;
       setLoading(newLoading);
@@ -88,15 +130,25 @@ export default function FeatureTop() {
         toast.success("Feature Top Updated Successfully", {
           position: "top-right",
           autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
         });
       } else {
         toast.error("Feature Top Update Failed!", {
           position: "top-right",
           autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
         });
       }
     } catch (err) {
-      console.error("Error Uploading File!", err);
+      console.error(err, "Error Uploading File!");
       const newLoading = { ...loading };
       newLoading[`loader${index + 1}`] = false;
       setLoading(newLoading);
@@ -114,111 +166,118 @@ export default function FeatureTop() {
         <Box component="form" noValidate autoComplete="off">
           <Box display="flex" alignItems="center" mb={2} flexDirection="column">
             {record1.length > 0 ? (
-              record1.map((itm, index) => {
-                const fieldName = `tagline${index + 1}`;
-                const linkName = `page_link${index + 1}`;
-                const loaderName = `loader${index + 1}`;
+              <>
+                {record1.map((itm, index) => {
+                  const fieldName = `tagline${index + 1}`;
+                  const linkName = `page_link${index + 1}`;
+                  const imageName = `image${index + 1}`;
+                  const loaderName = `loader${index + 1}`;
 
-                return (
-                  <Grid
-                    key={index}
-                    container
-                    spacing={2}
-                    style={{
-                      borderLeft: "6px #fcc26e solid",
-                      display: "flex",
-                      flexDirection: "row",
-                      alignItems: "center",
-                    }}
-                  >
-                    <Grid item sm={12} md={3} lg={3}>
-                      <textarea
-                        label="Tagline"
-                        variant="outlined"
-                        defaultValue={itm.tagline}
-                        name={fieldName}
-                        onChange={(e) => handleChange(e, index)}
-                        fullWidth
-                        style={{ marginBottom: "8px" }}
-                      />
-                    </Grid>
-                    <Grid item sm={12} md={2} lg={2}>
-                      <textarea
-                        label="Page Link"
-                        variant="outlined"
-                        defaultValue={itm.page_link}
-                        name={linkName}
-                        onChange={(e) => handleChange(e, index)}
-                        fullWidth
-                        sx={{ mb: 2 }}
-                      />
-                    </Grid>
+                  return (
                     <Grid
-                      item
-                      sm={12}
-                      md={5}
-                      lg={5}
-                      style={{ textAlign: "center" }}
+                      key={index}
+                      container
+                      spacing={2}
+                      style={{
+                        borderLeft: "6px #fcc26e solid",
+                        display: "flex",
+                        flexDirection: "row",
+                        alignItems: "center",
+                      }}
                     >
-                      <Button
-                        variant="contained"
-                        component="label"
-                        sx={{
-                          zIndex: "9999",
-                          mb: 2,
-                          backgroundColor: "#fcc26e",
-                          backgroundImage: `url(${itm.image_url})`,
-                          backgroundPosition: "right",
-                          height: "64px",
-                          backgroundRepeat: "no-repeat",
-                        }}
-                      >
-                        <CenterFocusStrongIcon /> Upload Image
-                        <input
-                          sx={{ mb: 2, backgroundColor: "#fcc26e" }}
-                          type="file"
-                          name={`image${index + 1}`}
+                      <Grid item sm={12} md={4} lg={4}>
+                        <textarea
+                          label="Tagline"
+                          variant="outlined"
+                          defaultValue={itm.tagline}
+                          name={fieldName}
                           onChange={(e) => handleChange(e, index)}
+                          fullWidth
+                          sx={{ mb: 2 }}
                         />
-                      </Button>
-                    </Grid>
-                    <Grid item sm={12} md={2} lg={2}>
-                      <button
-                        onClick={(e) => handleSubmit(e, index, itm._id)}
-                        style={{
-                          padding: "1px 25px 4px 25px",
-                          display: "flex",
-                          flexDirection: "row",
-                          alignItems: "baseline",
-                        }}
+                      </Grid>
+                      <Grid item sm={12} md={4} lg={4}>
+                        <textarea
+                          label="Page Link"
+                          variant="outlined"
+                          defaultValue={itm.page_link}
+                          name={linkName}
+                          onChange={(e) => handleChange(e, index)}
+                          fullWidth
+                          sx={{ mb: 2 }}
+                        />
+                      </Grid>
+                      <Grid
+                        item
+                        sm={12}
+                        md={4}
+                        lg={4}
+                        style={{ textAlign: "center" }}
                       >
-                        <CloudSyncIcon
-                          style={{
-                            position: "relative",
-                            top: "5px",
-                            right: "3px",
+                        <Button
+                          variant="contained"
+                          component="label"
+                          sx={{
+                            zIndex: "9999",
+                            mb: 2,
+                            backgroundColor: "#fcc26e",
+                            backgroundImage: `url(${itm.image_url})`,
+                            backgroundPosition: "right",
+                            height: "64px",
+                            backgroundRepeat: "no-repeat",
                           }}
-                        />
-                        {loading[loaderName] ? (
-                          <Box
+                        >
+                          <CenterFocusStrongIcon /> Upload Image
+                          <input
+                            sx={{ mb: 2, backgroundColor: "#fcc26e" }}
+                            type="file"
+                            name={imageName}
+                            onChange={(e) => handleChange(e, index)}
+                          />
+                        </Button>
+                      </Grid>
+                      <Grid item sm={12} md={12} lg={12}>
+                        <button
+                          onClick={(e) => handleSubmit(e, index, itm._id)}
+                          style={{
+                            padding: "1px 25px 4px 25px",
+                            display: "flex",
+                            flexDirection: "row",
+                            alignItems: "baseline",
+                            "&:hover": {
+                              backgroundColor: "black",
+                              color: "white",
+                            },
+                          }}
+                        >
+                          <CloudSyncIcon
                             style={{
-                              display: "flex",
-                              alignItems: "center",
-                              flexDirection: "row",
+                              position: "relative",
+                              top: "5px",
+                              right: "3px",
                             }}
-                          >
-                            <Typography>Update </Typography>
-                            &nbsp; &nbsp;
-                            <CircularProgress size={10} color="inherit" />
-                          </Box>
-                        ) : (
-                          "Update"
-                        )}
-                      </button>
+                          />
+                          {loading[loaderName] ? (
+                            <Box
+                              style={{
+                                display: "flex",
+                                alignItems: "center",
+                                flexDirection: "row",
+                              }}
+                            >
+                              <Typography>Update </Typography>
+                              &nbsp; &nbsp;
+                              <CircularProgress size={10} color="inherit" />
+                            </Box>
+                          ) : (
+                            "Update"
+                          )}
+                        </button>
+                      </Grid>
                     </Grid>
-                  </Grid>
-                );
-              })
+                  );
+                })}
+              </>
             ) : (
               <Loading />
             )}
