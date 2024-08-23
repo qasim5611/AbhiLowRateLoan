@@ -80,6 +80,10 @@ export default function RootLayout({ children }) {
             property="og:image:secure_url"
             content="/lowratehomeloan-logo.svg"
           />
+          {/* <meta
+            property="og:image:secure_url"
+            content="/lowratehomeloan-logo.svg"
+          /> */}
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="Home - Low Rate Home Loan" />
           <meta
