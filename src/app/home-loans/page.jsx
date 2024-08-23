@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function HomeLoans(props) {
@@ -59,16 +60,14 @@ export default function HomeLoans(props) {
                                     <div className="wp-block-kadence-column inner-column-1 kadence-column_5d704a-b2">
                                       <div className="kt-inside-inner-col">
                                         <figure className="wp-block-image size-large">
-                                          <img
+                                          <Image
                                             decoding="async"
                                             loading="lazy"
+                                            width={70}
+                                            height={70}
                                             src="/insider2022/12/home-loan-icon.svg"
                                             alt="home loan icon"
                                             className="wp-image-3976"
-                                            sx={{
-                                              width: "70px",
-                                              height: "70px",
-                                            }}
                                           />
                                         </figure>
                                       </div>
@@ -118,13 +117,11 @@ export default function HomeLoans(props) {
                                     <div className="wp-block-kadence-column inner-column-1 kadence-column_1bf0b3-86">
                                       <div className="kt-inside-inner-col">
                                         <figure className="wp-block-image size-large">
-                                          <img
+                                          <Image
                                             decoding="async"
                                             loading="lazy"
-                                            sx={{
-                                              width: "70px",
-                                              height: "70px",
-                                            }}
+                                            width={70}
+                                            height={70}
                                             src="/insider2022/12/low-deposit-home-loan-icon.svg"
                                             alt="low deposit home loan icon"
                                             className="wp-image-3972"
@@ -180,12 +177,11 @@ export default function HomeLoans(props) {
                                     <div className="wp-block-kadence-column inner-column-1 kadence-column_af79fe-ed">
                                       <div className="kt-inside-inner-col">
                                         <figure className="wp-block-image size-large">
-                                          <img
+                                          <Image
                                             decoding="async"
-                                            sx={{
-                                              width: "70px",
-                                              height: "70px",
-                                            }}
+                                            loading="lazy"
+                                            width={70}
+                                            height={70}
                                             src="/insider2022/12/refinancing-icon.svg"
                                             alt="refinancing icon"
                                             className="wp-image-3973"
@@ -237,13 +233,11 @@ export default function HomeLoans(props) {
                                     <div className="wp-block-kadence-column inner-column-1 kadence-column_322489-00">
                                       <div className="kt-inside-inner-col">
                                         <figure className="wp-block-image size-large is-style-default">
-                                          <img
+                                          <Image
                                             decoding="async"
                                             loading="lazy"
-                                            sx={{
-                                              width: "70px",
-                                              height: "70px",
-                                            }}
+                                            width={70}
+                                            height={70}
                                             src="/insider2022/12/debt-consolidation.svg"
                                             alt="debt consolidation"
                                             className="wp-image-3974"
@@ -299,13 +293,11 @@ export default function HomeLoans(props) {
                                     <div className="wp-block-kadence-column inner-column-1 kadence-column_54be3b-91">
                                       <div className="kt-inside-inner-col">
                                         <figure className="wp-block-image size-large">
-                                          <img
+                                          <Image
                                             decoding="async"
                                             loading="lazy"
-                                            sx={{
-                                              width: "70px",
-                                              height: "70px",
-                                            }}
+                                            width={70}
+                                            height={70}
                                             src="/insider2022/12/first-home-buyer-icon.svg"
                                             alt="first home buyer icon"
                                             className="wp-image-3975"

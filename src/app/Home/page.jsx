@@ -71,7 +71,7 @@ const HomeComp = () => {
                     >
                       <div className="entry-content-wrap">
                         <div className="entry-content single-content">
-                          {record.length > 0 ? (
+                          {record && record.length > 0 ? (
                             <>
                               {record.map((itm, index) => (
                                 <div

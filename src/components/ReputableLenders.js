@@ -34,7 +34,7 @@ export function ReputableLenders(props) {
         >
           <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-right-to-left kt-mobile-layout-row kb-theme-content-width">
             <div className="wp-block-kadence-column inner-column-1 kadence-column_87516b-7b">
-              {record2.length > 0 ? (
+              {record2 && record2.length > 0 ? (
                 <>
                   {record2.map((itm, index) => {
                     return (
