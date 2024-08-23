@@ -62,11 +62,13 @@ export default function HomeLoans(props) {
                                           <img
                                             decoding="async"
                                             loading="lazy"
-                                            width={70}
-                                            height={70}
                                             src="/insider2022/12/home-loan-icon.svg"
                                             alt="home loan icon"
                                             className="wp-image-3976"
+                                            sx={{
+                                              width: "70px",
+                                              height: "70px",
+                                            }}
                                           />
                                         </figure>
                                       </div>
@@ -119,8 +121,10 @@ export default function HomeLoans(props) {
                                           <img
                                             decoding="async"
                                             loading="lazy"
-                                            width={70}
-                                            height={70}
+                                            sx={{
+                                              width: "70px",
+                                              height: "70px",
+                                            }}
                                             src="/insider2022/12/low-deposit-home-loan-icon.svg"
                                             alt="low deposit home loan icon"
                                             className="wp-image-3972"
@@ -178,9 +182,10 @@ export default function HomeLoans(props) {
                                         <figure className="wp-block-image size-large">
                                           <img
                                             decoding="async"
-                                            loading="lazy"
-                                            width={70}
-                                            height={70}
+                                            sx={{
+                                              width: "70px",
+                                              height: "70px",
+                                            }}
                                             src="/insider2022/12/refinancing-icon.svg"
                                             alt="refinancing icon"
                                             className="wp-image-3973"
@@ -235,8 +240,10 @@ export default function HomeLoans(props) {
                                           <img
                                             decoding="async"
                                             loading="lazy"
-                                            width={70}
-                                            height={70}
+                                            sx={{
+                                              width: "70px",
+                                              height: "70px",
+                                            }}
                                             src="/insider2022/12/debt-consolidation.svg"
                                             alt="debt consolidation"
                                             className="wp-image-3974"
@@ -295,8 +302,10 @@ export default function HomeLoans(props) {
                                           <img
                                             decoding="async"
                                             loading="lazy"
-                                            width={70}
-                                            height={70}
+                                            sx={{
+                                              width: "70px",
+                                              height: "70px",
+                                            }}
                                             src="/insider2022/12/first-home-buyer-icon.svg"
                                             alt="first home buyer icon"
                                             className="wp-image-3975"
@@ -327,9 +336,9 @@ export default function HomeLoans(props) {
                                       <div className="kt-inside-inner-col">
                                         <p>
                                           Get your first home by leveraging our
-                                          Mortgage Broker expertise
-                                          which allows you to find tailored loan
-                                          options for you.
+                                          Mortgage Broker expertise which allows
+                                          you to find tailored loan options for
+                                          you.
                                         </p>
                                       </div>
                                     </div>
