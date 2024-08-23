@@ -213,7 +213,7 @@ export function FeatureServices(props) {
                                 <img
                                   decoding="async"
                                   loading="lazy"
-                                  width="525"
+                                  // width="525"
                                   height="609"
                                   src="/pics/buy-a-home.webp"
                                   alt="first home buyer"
@@ -242,7 +242,7 @@ export function FeatureServices(props) {
                                 <img
                                   decoding="async"
                                   loading="lazy"
-                                  width="525"
+                                  // width="525"
                                   height="609"
                                   src="/pics/refinance-home.webp"
                                   alt="refinance your home"
@@ -271,7 +271,7 @@ export function FeatureServices(props) {
                                 <img
                                   decoding="async"
                                   loading="lazy"
-                                  width="527"
+                                  // width="527"
                                   height="609"
                                   src="/pics/buy-investment-property.webp"
                                   alt="buy investment property"
