@@ -179,7 +179,7 @@ export function FeatureServices(props) {
                                       decoding="async"
                                       loading="lazy"
                                       style={{
-                                        width: "375px",
+                                        // width: "375px",
                                         height: "435px",
                                       }}
                                       src={itmn.image_url}
