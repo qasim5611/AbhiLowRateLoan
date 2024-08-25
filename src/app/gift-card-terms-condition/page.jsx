@@ -42,22 +42,22 @@ sec and map, Manual */}
                   className="kt-adv-heading_828586-b8 wp-block-kadence-advancedheading"
                   data-kb-block="kb-adv-heading_828586-b8"
                 >
-                  The reward of up to $2,000 is contingent upon adhering to the
-                  following terms and conditions:
+                  The reward of up to $2,000 is subject to the following terms
+                  and conditions:
                 </h2>
                 <br />
                 <ol>
                   <li style={{ marginBottom: "5px" }}>
-                    To receive $2,000 bonus from us your combined loan amount
-                    must be above One & a half Million ($1,500,000).
+                    To Receive $2,000 Bonus from us, your combined loan amount
+                    must be above One and a half Million dollars ($1,500,000).
                   </li>
                   <li style={{ marginBottom: "5px" }}>
-                    To receive $1,000 bonus from us your loan amount must be
-                    above seven hundred & fifty thousand ($750,000).
+                    To Receive $1,000 Bonus from us, your loan amount must be
+                    above seven hundred and fifty thousand dollars ($750,000).
                   </li>
                   <li style={{ marginBottom: "5px" }}>
-                    To receive $500 bonus from us your loan amount must be above
-                    four hundred & fifty thousand dollars ($450,000).
+                    To Receive $500 Bonus from us, your loan amount must be
+                    above four hundred & fifty thousand dollars ($450,000).
                   </li>
                 </ol>
                 <h2
@@ -69,8 +69,8 @@ sec and map, Manual */}
                 <br />
                 <ol>
                   <li style={{ marginBottom: "5px" }}>
-                    - Your finance application must be submitted to the
-                    recommended lender by 31 JULY 2025.
+                    Your finance application must be submitted to the
+                    recommended lender by 30th June 2025.
                   </li>
                   <li style={{ marginBottom: "5px" }}>
                     Your reward is payable within 60 days of settlement of your
@@ -82,6 +82,14 @@ sec and map, Manual */}
                     any incentive or reward received from Melbourne Low Rate
                     Home Loan Pty Ltd shall be promptly refunded to Melbourne
                     Low Rate Home Loan Pty Ltd.
+                  </li>
+
+                  <li style={{ marginBottom: "5px" }}>
+                    Loan amount for eligibility is based on NET loan balance
+                    after factoring available redraw &/or linked offset account
+                    balance. Melbourne Low Rate Home Loan Pty Ltd reserves the
+                    right to amend or withdraw rebate offer upon confirmation
+                    from Lender regarding NET settlement amount.
                   </li>
                 </ol>
                 <p>

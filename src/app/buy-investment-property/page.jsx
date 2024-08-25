@@ -35,12 +35,15 @@ sec and map, Manual */}
                     the acquisition of a profitable investment property that
                     suits both your goals and risk tolerance.
                   </p>
+                  <br />
                   <p style={{ textAlign: "justify" }}>
                     Once you identify an attractive prospect, calculate whether
                     or not it will generate sufficient income after expenses –
                     and if there is any shortfall, determine if you are able to
                     bridge this gap indefinitely.
                   </p>
+                  <br />
+
                   <p style={{ textAlign: "justify" }}>
                     On top of that, make provisions for times when no one may
                     occupy the space temporarily. Finally, conduct market
@@ -48,7 +51,9 @@ sec and map, Manual */}
                     location of where you buy could spell out potential returns
                     over time.
                   </p>
-                  <h3 className="wp-block-heading">Where to buy</h3>
+                  <br />
+
+                  <h2 className="wp-block-heading">Where to buy</h2>
                   <ul>
                     <li>
                       Spending ample time researching familiar areas is highly
@@ -126,8 +131,7 @@ sec and map, Manual */}
                       property is generally less volatile and can be a reliable
                       option for those seeking stability.
                     </li>
-                  </ul>
-                  <ul>
+
                     <li>
                       Generating revenue&nbsp;– Enjoy a steady stream of income
                       when your property is leased to tenants.

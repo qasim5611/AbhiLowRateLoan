@@ -70,6 +70,7 @@ export default function AboutUs(props) {
                                   looking to refinance and pay off your existing
                                   home loan faster.
                                   <br />
+                                  <br />
                                   We make it happen.
                                 </p>
                                 <p>

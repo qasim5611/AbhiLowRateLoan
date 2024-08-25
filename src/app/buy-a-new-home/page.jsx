@@ -44,6 +44,7 @@ export default function BuyNewHome(props) {
                                 emotions. It can be daunting and very
                                 challenging.
                                 <br />
+                                <br />
                                 There are too many things to consider, including
                                 how much you can afford, the type of house you
                                 desire, and all those extra appointments you’ll

@@ -392,8 +392,10 @@ function Footer({ data, update }) {
                         <div className="textwidget">
                           <p>
                             {/* <Link href={""}> Talk to Us</Link> */}
-                            <a href="#">Privacy Policy</a>  | 
-                            <a href="#"> Disclaimer </a>| Website by Tripty
+                            <Link href="/privacy-policy">Privacy Policy</Link> 
+                            | 
+                            <Link href="/disclaimer">Disclaimer</Link>  |
+                            Website by Tripty
                           </p>
                         </div>
                       </section>

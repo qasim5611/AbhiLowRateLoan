@@ -215,7 +215,7 @@ export function ContactForm(props) {
   };
   return (
     <>
-      <div className="wp-block-kadence-rowlayout alignnone">
+      <div className="wp-block-kadence-rowlayout alignnone contactform">
         <div
           id="kt-layout-id_cd6d64-9a"
           className="kt-row-layout-inner kt-row-has-bg kt-layout-id_cd6d64-9a has-theme-palette-8-background-color"
@@ -864,7 +864,10 @@ export function ContactForm(props) {
                                         id="kt-layout-id_1847ff-f8"
                                         className="kt-row-layout-inner kt-layout-id_1847ff-f8"
                                       >
-                                        <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
+                                        <div
+                                          style={{ height: "30px" }}
+                                          className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row"
+                                        >
                                           <div className="wp-block-kadence-column inner-column-1 kadence-column_4520b6-43">
                                             <div className="kt-inside-inner-col">
                                               <ul className="is-nowrap is-layout-flex wp-container-5 wp-block-social-links alignleft has-icon-color is-style-logos-only">

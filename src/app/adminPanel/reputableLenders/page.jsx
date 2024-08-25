@@ -192,7 +192,7 @@ export default function ReputeableLenders(props) {
                         <img
                           src={itm.image_url}
                           alt="Preview"
-                          style={{ width: "500px", height: "200px" }}
+                          // style={{ width: "500px", height: "200px" }}
                         />
                       )}
                     </Grid>

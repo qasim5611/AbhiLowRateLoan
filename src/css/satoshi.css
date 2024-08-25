@@ -1294,3 +1294,39 @@ iframe{
       height:30px;
     }
   }
+
+
+  /* Define the hover effect for the entire link */
+.hover-effect:hover .changecol {
+    color: #00a651; /* Change text color on hover */
+  }
+  
+  .hover-effect:hover img {
+    /* filter: brightness(0) saturate(100%) invert(23%) sepia(68%) saturate(4961%) hue-rotate(121deg) brightness(95%) contrast(89%); */
+  }
+  
+  .hover-effect:hover {
+    text-decoration: none; /* Ensure text decoration is removed */
+  }
+  .contactform h6:first-child {
+    text-transform: uppercase;
+    color: #00a651 !important;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+
+.contactform h6.white-bold {
+    font-weight: bold;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 0 auto;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 0.5px;
+    line-height: 5px;
+}
+
+/* #kt-layout-id_1847ff-f9{
+    margin-bottom: 20px;
+} */

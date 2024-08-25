@@ -105,7 +105,7 @@ export function ReputableLenders(props) {
                         style={{
                           margin: "0px auto",
                         }}
-                        src="/pics/home-loans-lenders.webp"
+                        src="/pics/home-loans-lenders.jpg"
                         alt="home loans lenders list"
                         className="kb-img wp-image-4131"
                         // srcSet="https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/home-loans-lenders-1024x432.webp 1024w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/home-loans-lenders-300x127.webp 300w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/home-loans-lenders-768x324.webp 768w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2023/01/home-loans-lenders.webp 1366w"
