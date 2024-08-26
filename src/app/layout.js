@@ -24,7 +24,7 @@ const inter = Inter({ subsets: ["latin"] });
 // export const metadata = {
 //   title: "Low Rate Home Loan -",
 //   description:
-//     'We will get you the best home loan in Melbourne I want to refinance I want to buy a home Featured Services How can we help? We understand that the diverse needs of most people do not have "one-size-fits-all" answers.We will acquire the best loan to suit your specific requirements by getting to know you,',
+//     'We will get you the best home loan in Australia I want to refinance I want to buy a home Featured Services How can we help? We understand that the diverse needs of most people do not have "one-size-fits-all" answers.We will acquire the best loan to suit your specific requirements by getting to know you,',
 // };
 export default function RootLayout({ children }) {
   const pathname = usePathname();
@@ -61,7 +61,7 @@ export default function RootLayout({ children }) {
           />
           <meta
             name="description"
-            content='We will get you the best home loan in Melbourne I want to refinance I want to buy a home Featured Services How can we help? We understand that the diverse needs of most people do not have "one-size-fits-all" answers.We will acquire the best loan to suit your specific requirements by getting to know you,'
+            content='We will get you the best home loan in Australia I want to refinance I want to buy a home Featured Services How can we help? We understand that the diverse needs of most people do not have "one-size-fits-all" answers.We will acquire the best loan to suit your specific requirements by getting to know you,'
           />
           <meta name="robots" content="max-image-preview:large" />
           <link rel="canonical" href="https://lowratehomeloan.com.au/" />
@@ -72,7 +72,7 @@ export default function RootLayout({ children }) {
           <meta property="og:title" content="Home - Low Rate Home Loan" />
           <meta
             property="og:description"
-            content='We will get you the best home loan in Melbourne I want to refinance I want to buy a home Featured Services How can we help? We understand that the diverse needs of most people do not have "one-size-fits-all" answers.We will acquire the best loan to suit your specific requirements by getting to know you,'
+            content='We will get you the best home loan in Australia I want to refinance I want to buy a home Featured Services How can we help? We understand that the diverse needs of most people do not have "one-size-fits-all" answers.We will acquire the best loan to suit your specific requirements by getting to know you,'
           />{" "}
           <meta property="og:url" content="https://lowratehomeloan.com.au/" />
           <meta property="og:image" content="/lowratehomeloan-logo.svg" />
@@ -88,7 +88,7 @@ export default function RootLayout({ children }) {
           <meta name="twitter:title" content="Home - Low Rate Home Loan" />
           <meta
             name="twitter:description"
-            content='We will get you the best home loan in Melbourne I want to refinance I want to buy a home Featured Services How can we help? We understand that the diverse needs of most people do not have "one-size-fits-all" answers.We will acquire the best loan to suit your specific requirements by getting to know you,'
+            content='We will get you the best home loan in Australia I want to refinance I want to buy a home Featured Services How can we help? We understand that the diverse needs of most people do not have "one-size-fits-all" answers.We will acquire the best loan to suit your specific requirements by getting to know you,'
           />
           <meta name="twitter:image" content="/lowratehomeloan-logo.svg" />
           <link

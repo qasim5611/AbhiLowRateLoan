@@ -649,7 +649,7 @@ export function ContactForm(props) {
                                           <div className="wp-block-kadence-column inner-column-1 kadence-column_834c48-4e Address">
                                             <div className="kt-inside-inner-col">
                                               <div
-                                                className="wp-block-kadence-icon kt-svg-icons kt-svg-icons_d0f19c-51 alignnone"
+                                                className=" kt-svg-icons kt-svg-icons_d0f19c-51 alignnone"
                                                 style={{
                                                   textAlign: "left",
                                                 }}
@@ -727,7 +727,7 @@ export function ContactForm(props) {
                                           <div className="wp-block-kadence-column inner-column-1 kadence-column_81284c-d4 Address">
                                             <div className="kt-inside-inner-col">
                                               <div
-                                                className="wp-block-kadence-icon kt-svg-icons kt-svg-icons_ba0aae-f3 alignnone"
+                                                className=" kt-svg-icons kt-svg-icons_ba0aae-f3 alignnone"
                                                 style={{
                                                   textAlign: "left",
                                                 }}
@@ -804,7 +804,7 @@ export function ContactForm(props) {
                                           <div className="wp-block-kadence-column inner-column-1 kadence-column_35573c-64 Address">
                                             <div className="kt-inside-inner-col">
                                               <div
-                                                className="wp-block-kadence-icon kt-svg-icons kt-svg-icons_76d90b-55 alignnone"
+                                                className=" kt-svg-icons kt-svg-icons_76d90b-55 alignnone"
                                                 style={{
                                                   textAlign: "left",
                                                 }}
@@ -864,12 +864,12 @@ export function ContactForm(props) {
                                         id="kt-layout-id_1847ff-f8"
                                         className="kt-row-layout-inner kt-layout-id_1847ff-f8"
                                       >
-                                        <div
-                                          style={{ height: "30px" }}
-                                          className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row"
-                                        >
+                                        <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
                                           <div className="wp-block-kadence-column inner-column-1 kadence-column_4520b6-43">
-                                            <div className="kt-inside-inner-col">
+                                            <div
+                                              className="kt-inside-inner-col"
+                                              style={{ height: "20px" }}
+                                            >
                                               <ul className="is-nowrap is-layout-flex wp-container-5 wp-block-social-links alignleft has-icon-color is-style-logos-only">
                                                 <li
                                                   style={{
@@ -973,7 +973,7 @@ export function ContactForm(props) {
                                           <div className="wp-block-kadence-column inner-column-1 kadence-column_7bbdfa-34 Address">
                                             <div className="kt-inside-inner-col">
                                               <div
-                                                className="wp-block-kadence-icon kt-svg-icons kt-svg-icons_ac34c6-fe alignnone"
+                                                className=" kt-svg-icons kt-svg-icons_ac34c6-fe alignnone"
                                                 style={{
                                                   textAlign: "left",
                                                 }}

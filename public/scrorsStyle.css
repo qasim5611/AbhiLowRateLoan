@@ -395,7 +395,7 @@ text-transform: uppercase;
 
 .single-content h6.white-bold{
     font-weight: bold;
-    font-size:1.2em;
+    /* font-size: 16px; */
     letter-spacing: 1px;
     color:#fff;
     margin:0 auto;

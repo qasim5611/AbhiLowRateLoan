@@ -177,14 +177,14 @@ export function FeatureServices(props) {
                                   <figure className="wp-block-image size-full">
                                     <img
                                       decoding="async"
-                                      loading="lazy"
-                                      style={{
-                                        width: "100%",
-                                        height: "435px",
-                                      }}
+                                      // loading="lazy"
+                                      // style={{
+                                      //   width: "100%",
+                                      //   height: "435px",
+                                      // }}
                                       src={itmn.image_url}
                                       alt="first home buyer"
-                                      className="wp-image-3968"
+                                      // className="wp-image-3968"
                                       // srcSet="https://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/buy-a-home.webp 525w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/buy-a-home-259x300.webp 259w"
                                       // sizes="(max-width: 525px) 100vw, 525px"
                                     />
