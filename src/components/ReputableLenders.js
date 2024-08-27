@@ -68,13 +68,13 @@ export function ReputableLenders(props) {
                             <img
                               decoding="async"
                               loading="lazy"
-                              width="594"
-                              height="829"
-                              src="/images/lenders-vertical.webp"
+                              // width="594"
+                              // height="829"
+                              src="/images/lenders-vertical.jpg"
                               alt="loan lenders"
                               className="wp-image-4718"
-                              srcSet="/images/lenders-vertical.webp"
-                              sizes="(max-width: 594px) 100vw, 594px"
+                              // srcSet="/images/lenders-vertical.webp"
+                              // sizes="(max-width: 594px) 100vw, 594px"
                             />
                           </figure>
                         </div>
@@ -119,13 +119,13 @@ export function ReputableLenders(props) {
                       <img
                         decoding="async"
                         loading="lazy"
-                        width="594"
-                        height="829"
-                        src="/images/lenders-vertical.webp"
+                        // width="594"
+                        // height="829"
+                        src="/images/lenders-vertical.jpg"
                         alt="loan lenders"
                         className="wp-image-4718"
-                        srcSet="/images/lenders-vertical.webp"
-                        sizes="(max-width: 594px) 100vw, 594px"
+                        // srcSet="/images/lenders-vertical.webp"
+                        // sizes="(max-width: 594px) 100vw, 594px"
                       />
                     </figure>
                   </div>

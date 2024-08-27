@@ -10,7 +10,7 @@ import { Testimonial } from "../../components/Testimonial";
 export default function Page(props) {
   return (
     <div style={{ backgroundColor: "white" }}>
-      <PageTitle title="Reward Terms & Condition" />
+      <PageTitle title="Reward Terms & Conditions" />
       <FeaturedTop />
 
       {/* Manual 2
