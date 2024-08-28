@@ -142,8 +142,8 @@ const HomeComp = () => {
                                         <div className="wp-block-button has-custom-width wp-block-button__width-50">
                                           <Link
                                             href="/refinance-consultation"
-                                            className="wp-block-button__link wp-element-button"
-                                            style={{ fontSize: "20.25px" }}
+                                            className="wp-block-button__link has-theme-palette-1-background-color has-background wp-element-button"
+                                            // style={{ fontSize: "20.25px" }}
                                           >
                                             <strong>i want to refinance</strong>
                                           </Link>
@@ -153,7 +153,7 @@ const HomeComp = () => {
                                           <Link
                                             className="wp-block-button__link has-theme-palette-1-background-color has-background wp-element-button"
                                             href="/buy-home-consultation"
-                                            style={{ fontSize: "20.25px" }}
+                                            // style={{ fontSize: "20.25px" }}
                                           >
                                             <strong>
                                               i want to buy a home

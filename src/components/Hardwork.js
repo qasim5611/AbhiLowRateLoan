@@ -180,9 +180,11 @@ export function Hardwork(props) {
                                         </h6>
 
                                         <p>
-                                          Collect the necessary documents to
-                                          verify and assess your financial
-                                          situation.
+                                          Please gather all required documents
+                                          to verify and assess your financial
+                                          situation, ensuring they are accurate
+                                          and up-to-date for review and
+                                          evaluation.
                                         </p>
                                       </div>
                                     </div>

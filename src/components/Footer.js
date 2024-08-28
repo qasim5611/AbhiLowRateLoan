@@ -129,7 +129,7 @@ function Footer({ data, update }) {
                                       data-type="page"
                                       data-id="4217"
                                     >
-                                      Gift Card Terms &amp; Conditions
+                                      Reward Terms &amp; Conditions
                                     </Link>
                                   </p>
                                 </div>

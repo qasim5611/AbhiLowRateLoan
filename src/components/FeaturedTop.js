@@ -65,7 +65,12 @@ export function FeaturedTop() {
                                 const [firstPart, secondPart] =
                                   text.split("upto");
                                 return (
-                                  <>
+                                  <div
+                                    style={{
+                                      position: "relative",
+                                      left: "5px",
+                                    }}
+                                  >
                                     <p className="spacing has-theme-palette-9-color has-text-color changecol">
                                       {firstPart}
                                     </p>
@@ -76,7 +81,7 @@ export function FeaturedTop() {
                                     >
                                       upto <strong>{secondPart}</strong>
                                     </span>
-                                  </>
+                                  </div>
                                 );
                               };
                               return (

@@ -48,16 +48,17 @@ sec and map, Manual */}
                 <br />
                 <ol>
                   <li style={{ marginBottom: "5px" }}>
-                    To Receive $2,000 Bonus from us, your combined loan amount
-                    must be above One and a half Million dollars ($1,500,000).
+                    To Receive $2,000 Bonus from us, your total loan amount must
+                    be above One and a half Million dollars ($1,500,000).
                   </li>
                   <li style={{ marginBottom: "5px" }}>
-                    To Receive $1,000 Bonus from us, your loan amount must be
-                    above seven hundred and fifty thousand dollars ($750,000).
+                    To Receive $1,000 Bonus from us, your total loan amount must
+                    be above seven hundred and fifty thousand dollars
+                    ($750,000).
                   </li>
                   <li style={{ marginBottom: "5px" }}>
-                    To Receive $500 Bonus from us, your loan amount must be
-                    above four hundred & fifty thousand dollars ($450,000).
+                    To Receive $500 Bonus from us, your total loan amount must
+                    be above four hundred & fifty thousand dollars ($450,000).
                   </li>
                 </ol>
                 <h2
