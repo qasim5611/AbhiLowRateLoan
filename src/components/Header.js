@@ -41,13 +41,13 @@ function Header({ data, update }) {
                           >
                             <div className="site-branding branding-layout-standard site-brand-logo-only">
                               <Link href={"/"} className="brand has-logo-image">
-                                <Image
+                                <img
                                   src="lowratehomeloan-logo.svg"
                                   className="custom-logo svg-logo-image"
                                   alt="low rate home loan logo"
                                   decoding="async"
-                                  width={396}
-                                  height={310}
+                                  // width={396}
+                                  // height={310}
                                   style={{ cursor: "pointer" }}
                                 />
                               </Link>
