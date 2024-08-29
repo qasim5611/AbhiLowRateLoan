@@ -2577,22 +2577,22 @@ input[type="submit"]:active,
   }
 }
 
-.site-branding a.brand img {
+/* .site-branding a.brand img {
   max-width: 140px;
-}
+} */
 
-.site-branding a.brand img.svg-logo-image {
+/* .site-branding a.brand img.svg-logo-image {
   width: 140px;
-}
+} */
 
-@media all and (max-width: 767px) {
+/* @media all and (max-width: 767px) {
   .site-branding a.brand img {
     max-width: 100px;
   }
   .site-branding a.brand img.svg-logo-image {
     width: 100px;
   }
-}
+} */
 
 .site-branding {
   padding: 0px 0px 0px 0px;

@@ -222,9 +222,9 @@ function Header({ data, update }) {
                                 rel="home"
                                 aria-label="Low Rate Home Loan"
                               >
-                                <Image
-                                  width="396"
-                                  height="310"
+                                <img
+                                  // width="396"
+                                  // height="310"
                                   src="/pics/mobLogo.png"
                                   className="custom-logo svg-logo-image"
                                   alt="low rate home loan logo"
