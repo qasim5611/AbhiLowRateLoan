@@ -629,6 +629,14 @@ body .is-layout-flex > * {
   }
 }
 
+
+@media(min-width: 360px) and (max-width: 411px) {
+  .wp-block-kadence-advancedheading.kt-adv-heading_9de6d4-1d[data-kb-block="kb-adv-heading_9de6d4-1d"]{
+    font-size: 34px !important;
+
+  }
+}
+
 /* <style id='kb-rowlayout_3f6702-8d-inline-css'> */
 #kt-layout-id_3f6702-8d > .kt-row-column-wrap.kb-theme-content-width {
   max-width: 1440px;
