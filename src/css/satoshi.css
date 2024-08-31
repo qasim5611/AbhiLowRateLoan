@@ -1332,7 +1332,14 @@ iframe{
 } */
 
 @media(min-width: 1024px) and (max-width: 1201px) {
-    .main-navigation .primary-menu-container > ul li.menu-item > a {
+    /* .main-navigation .primary-menu-container > ul li.menu-item > a {
         letter-spacing: 0.0em !important;
+    } */
+    .main-navigation .primary-menu-container > ul li.menu-item > a{
+        font-size: 12px !important;
+    }
+    #phone > a{
+        font-size: 13px !important;
     }
 }
+
