@@ -1330,3 +1330,9 @@ iframe{
 /* #kt-layout-id_1847ff-f9{
     margin-bottom: 20px;
 } */
+
+@media(min-width: 1024px) and (max-width: 1201px) {
+    .main-navigation .primary-menu-container > ul li.menu-item > a {
+        letter-spacing: 0.0em !important;
+    }
+}
