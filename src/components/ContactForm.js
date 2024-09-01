@@ -4,6 +4,7 @@ import { talkToUs } from "./../lib/page";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { CircularProgress, Box, Typography } from "@mui/material";
+import { padding } from "@mui/system";
 
 export function ContactForm(props) {
   const [radioState, setRadioState] = useState({
@@ -532,6 +533,7 @@ export function ContactForm(props) {
                                                   alignItems: "center",
                                                   flexDirection: "row",
                                                   mb: "0px !important",
+                                                  padding: "5px 20px",
                                                 }}
                                               >
                                                 <Typography
@@ -546,7 +548,11 @@ export function ContactForm(props) {
                                                 />
                                               </Box>
                                             ) : (
-                                              "submit"
+                                              <div
+                                                style={{ padding: "5px 20px" }}
+                                              >
+                                                submit
+                                              </div>
                                             )}
                                           </button>
                                           <input
