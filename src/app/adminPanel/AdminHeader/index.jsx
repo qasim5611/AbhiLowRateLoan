@@ -122,12 +122,37 @@ export default function AdminHeader({ open, setOpen }) {
                     mb: "0px !important",
                   }}
                 >
-                  <Typography sx={{ mb: "0px !important" }}>Logout</Typography>
+                  <Typography
+                    sx={{
+                      mb: "0px !important",
+                      padding: "10px 20px !important",
+                    }}
+                  >
+                    Logout
+                  </Typography>
                   &nbsp; &nbsp;
                   <CircularProgress size={20} color="inherit" />
                 </Box>
               ) : (
-                "Logout"
+                <Box
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    flexDirection: "row",
+                    mb: "0px !important",
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      mb: "0px !important",
+                      padding: "1px 10px !important",
+                    }}
+                  >
+                    Logout
+                  </Typography>
+
+                  {/* <CircularProgress size={20} color="inherit" /> */}
+                </Box>
               )}
             </Button>
           </Box>

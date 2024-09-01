@@ -241,6 +241,7 @@ function Header({ data, update }) {
                           >
                             <div className="mobile-toggle-open-container">
                               <button
+                                style={{ display: "none" }}
                                 id="mobile-toggle"
                                 className="menu-toggle-open drawer-toggle menu-toggle-style-default"
                                 aria-label="Open menu"

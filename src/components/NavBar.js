@@ -34,7 +34,9 @@ function DrawerAppBar(props) {
   // const { window } = props;
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(null);
-  const matches = useMediaQuery("(max-width:600px)");
+  const matches = useMediaQuery("(max-width:1024px)");
+
+  const matches767 = useMediaQuery("(min-width:767px)");
 
   const handleLinkClick = (index) => {
     setActiveIndex(index);
@@ -107,21 +109,20 @@ function DrawerAppBar(props) {
       <AppBar
         component="nav"
         style={{
-          backgroundColor: "transparent",
+          // backgroundColor: "#8080807d",
           boxShadow: "none",
           background: "transparent",
+          height: "100px",
         }}
       >
         <Toolbar
           sx={{
             display: "flex",
             flexDirection: "row-reverse",
-            top: "26px",
+            top: matches767 ? "30px" : "20px",
             right: "15px",
-            width: "50%",
-            left: "198px",
-            width: "50%",
-            top: "18px",
+            width: "100%",
+            left: "0px",
           }}
         >
           <IconButton
@@ -131,7 +132,7 @@ function DrawerAppBar(props) {
             onClick={handleDrawerToggle}
             sx={{
               mr: 2,
-              display: { sm: "none" },
+              // display: { sm: "none" },
               backgroundColor: "transparent",
               "&:hover": {
                 backgroundColor: "transparent", // Change this to your desired hover color
@@ -143,13 +144,11 @@ function DrawerAppBar(props) {
           >
             <MenuIcon
               sx={{
-                color: "white",
-
+                color: "black",
                 // background: "black",
-
                 position: "absolute",
-                height: "47px",
-                width: "49px",
+                height: "55px",
+                width: "55px",
                 borderRadius: "50%",
                 padding: "8px",
                 top: "-1px",
@@ -165,7 +164,7 @@ function DrawerAppBar(props) {
           </Typography>
           <Box
             sx={{
-              display: { xs: "none", sm: "block", md: "none", lg: "none" },
+              display: { xs: "none", sm: "none", md: "none", lg: "none" },
               backgroundColor: "black",
             }}
           >
@@ -177,7 +176,7 @@ function DrawerAppBar(props) {
           </Box>
         </Toolbar>
       </AppBar>
-      <nav style={{ backgroundColor: "red" }}>
+      <nav>
         <Drawer
           // container={container}
           //  variant="temporary"
@@ -188,7 +187,7 @@ function DrawerAppBar(props) {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: "block", sm: "none" },
+            // display: { xs: "block", sm: "none" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               backgroundColor: "black",
@@ -224,6 +223,8 @@ function DrawerAppBar(props) {
                 marginTop: "20px",
                 borderBottom: "1px #222528 solid",
                 padding: "0px",
+                // backgroundColor: "red",
+                // color: "red",
               }}
             >
               <Link href={"/home-loans"}>

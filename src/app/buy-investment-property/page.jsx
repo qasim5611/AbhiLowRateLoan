@@ -113,9 +113,12 @@ sec and map, Manual */}
                       sizes="(max-width: 1024px) 100vw, 1024px"
                     />
                   </figure>
-                  <h1 className="wp-block-heading">
+
+                  <h2 className="wp-block-heading">
+                    {" "}
                     Pros and cons of investing in property
-                  </h1>
+                  </h2>
+
                   <p style={{ textAlign: "justify" }}>
                     Many view property investment as a safer option compared to
                     other forms of investments. But even though it appears more
