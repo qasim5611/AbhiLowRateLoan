@@ -1369,8 +1369,33 @@ div[class="wp-block-kadence-column inner-column-2 kadence-column_36d3ae-1d"]{
 .setmobarea .kt-row-column-wrap{
     padding: 0px 0 0px 0 !important;
 }
+
+.specialH2mob{
+    font-size: 70px !important;
 }
 
-button{
+}
+
+
+
+@media(max-width:960px) and (min-width: 871px){
+    .setmobarea h5{
+        font-size: 16px !important;
+    }
+}
+@media(max-width:870px){
+    .setmobarea h5{
+        font-size: 14px !important;
+    }
+}
+
+button {
     padding: 10px !important;
+}
+input[type="button"]{
+    padding: 10px 20px !important;
+}
+
+body{
+    background-color: #fff !important;
 }

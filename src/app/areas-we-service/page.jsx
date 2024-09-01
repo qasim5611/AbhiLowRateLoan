@@ -65,7 +65,7 @@ export default function AreasServices(props) {
                                     </div>
                                   </div>
                                 </div>
-                                <img src="/pics/areaservices.jpg" alt="" />
+                                {/* <img src="/pics/areaservices.jpg" alt="" /> */}
                                 <br />
                                 <div className="setmobarea">
                                   <div className="wp-block-kadence-rowlayout alignnone suburb">

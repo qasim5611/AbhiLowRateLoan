@@ -229,6 +229,12 @@ function Header({ data, update }) {
                                   className="custom-logo svg-logo-image"
                                   alt="low rate home loan logo"
                                   decoding="async"
+                                  // style={{
+                                  //   opacity: 1,
+                                  //   position: "absolute",
+                                  //   zIndex: 2,
+                                  //   top: "7px",
+                                  // }}
                                 />
                               </Link>
                             </div>

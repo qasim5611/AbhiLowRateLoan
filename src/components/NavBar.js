@@ -123,6 +123,8 @@ function DrawerAppBar(props) {
             right: "15px",
             width: "100%",
             left: "0px",
+            zIndex: 1,
+            position: "absolute",
           }}
         >
           <IconButton
@@ -159,20 +161,34 @@ function DrawerAppBar(props) {
             variant="h6"
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "none" } }}
+            style={{ color: "black" }}
           >
             MUI2
           </Typography>
           <Box
             sx={{
-              display: { xs: "none", sm: "none", md: "none", lg: "none" },
-              backgroundColor: "black",
+              // display: { xs: "none", sm: "none", md: "none", lg: "none" },
+              // backgroundColor: "black",
+              width: "50%",
             }}
           >
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: "red" }}>
-                {item}
-              </Button>
-            ))}
+            <h2>&nbsp;</h2>
+          </Box>
+          <Box
+            sx={{
+              // display: { xs: "none", sm: "none", md: "none", lg: "none" },
+              // backgroundColor: "black",
+              width: "50%",
+            }}
+          >
+            <Link href="/" style={{ textDecoration: "none" }}>
+              <h2
+                className="specialH2mob"
+                style={{ fontSize: "56px", color: "transparent" }}
+              >
+                Aboute
+              </h2>
+            </Link>
           </Box>
         </Toolbar>
       </AppBar>
@@ -188,6 +204,7 @@ function DrawerAppBar(props) {
           }}
           sx={{
             // display: { xs: "block", sm: "none" },
+            position: "initial",
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               backgroundColor: "black",
