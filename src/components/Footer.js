@@ -165,7 +165,7 @@ function Footer({ data, update }) {
                               className="kt-adv-heading_483c56-70 wp-block-kadence-advancedheading has-theme-palette-2-color has-text-color"
                               data-kb-block="kb-adv-heading_483c56-70"
                             >
-                              Join our happy clients across Australia including
+                              Join our happy clients across Australia
                             </h5>
                           </div>
                         </div>

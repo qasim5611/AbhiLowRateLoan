@@ -1377,17 +1377,64 @@ div[class="wp-block-kadence-column inner-column-2 kadence-column_36d3ae-1d"]{
 }
 
 
-
+@media(max-width:1060px) and (min-width: 1020px){
+    .setmobarea h5{
+        font-size: 16px !important;
+    }
+}
+@media(max-width:1019px) and (min-width: 959px){
+    .setmobarea h5{
+        font-size: 14px !important;
+    }
+}
 @media(max-width:960px) and (min-width: 871px){
     .setmobarea h5{
         font-size: 16px !important;
     }
 }
-@media(max-width:870px){
+@media(max-width:870px) and (min-width: 775px){
     .setmobarea h5{
         font-size: 14px !important;
     }
 }
+
+@media(max-width:774px){
+    .setmobarea h5{
+        font-size: 13px !important;
+    }
+}
+
+@media(max-width: 1020px){
+    .btn-over-img a{
+        font-size: 12px !important;
+    }
+}
+
+@media(max-width: 880px){
+    div[class="is-content-justification-center is-layout-flex wp-container-3 wp-block-buttons btn-over-img"] .wp-block-button{
+        background: transparent !important;
+    }
+
+    div[class="is-content-justification-center is-layout-flex wp-container-2 wp-block-buttons alignfull btn-over-img"] div[class="wp-block-button is-style-fill"]{
+        background: transparent !important;
+
+    }
+
+    div[class="is-content-justification-center is-layout-flex wp-container-4 wp-block-buttons btn-over-img"] .wp-block-button{
+        background: transparent !important;
+
+    }
+}
+
+
+
+
+@media(max-width: 1130px){
+    .inner-column-1{
+        margin-right: 30px !important;
+    }
+}
+
 
 button {
     padding: 10px !important;

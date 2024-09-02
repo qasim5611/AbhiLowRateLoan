@@ -80,7 +80,7 @@ export default function ReputeableLenders(props) {
   return (
     <Adminlayout>
       <div style={{ marginTop: "65px", padding: "20px", width: "100%" }}>
-        <Breadcrumb pageName="JOIN OUR HAPPY CLIENTS ACROSS Australia INCLUDING" />
+        <Breadcrumb pageName="JOIN OUR HAPPY CLIENTS ACROSS Australia" />
 
         {record ? (
           <>
