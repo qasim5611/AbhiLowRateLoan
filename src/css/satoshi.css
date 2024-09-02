@@ -1428,13 +1428,13 @@ div[class="wp-block-kadence-column inner-column-2 kadence-column_36d3ae-1d"]{
 
 
 
-/* 
+
 @media(max-width: 1130px){
-    .inner-column-1{
+   .harwork .inner-column-1{
         margin-right: 30px !important;
     }
   
-} */
+}
 
 
 @media(max-width: 1130px) and (min-width: 1039px) {

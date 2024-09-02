@@ -29,7 +29,7 @@ export function Hardwork(props) {
       <div className="wp-block-kadence-rowlayout alignnone">
         <div
           id="kt-layout-id_fa63cc-81"
-          className="kt-row-layout-inner kt-row-has-bg kt-layout-id_fa63cc-81"
+          className="kt-row-layout-inner kt-row-has-bg kt-layout-id_fa63cc-81 harwork"
         >
           <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row kb-theme-content-width">
             <div className="wp-block-kadence-column inner-column-1 kadence-column_783e95-20">
