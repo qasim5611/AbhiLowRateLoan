@@ -242,7 +242,7 @@ const ResetPass = () => {
                 mb: "20px",
               }}
             >
-              <IconButton sx={{ p: "5px" }} aria-label="menu">
+              <IconButton sx={{ p: "5px", padding: "10px" }} aria-label="menu">
                 <Image src={padlock} alt="" style={{ maxWidth: "40px" }} />
               </IconButton>
               <InputBase
@@ -272,7 +272,7 @@ const ResetPass = () => {
                 mb: "20px",
               }}
             >
-              <IconButton sx={{ p: "5px" }} aria-label="menu">
+              <IconButton sx={{ p: "5px", padding: "10px" }} aria-label="menu">
                 <BsCheckCircleFill
                   style={
                     values.password === values.cpassword &&

@@ -1428,19 +1428,71 @@ div[class="wp-block-kadence-column inner-column-2 kadence-column_36d3ae-1d"]{
 
 
 
-
+/* 
 @media(max-width: 1130px){
     .inner-column-1{
         margin-right: 30px !important;
     }
+  
+} */
+
+
+@media(max-width: 1130px) and (min-width: 1039px) {
+    .fServImages  a[class="wp-block-button__link has-theme-palette-2-background-color has-background wp-element-button"]{
+        font-size: 14px !important;
+    }
 }
+
+@media(max-width: 1038px) and (min-width: 959px){
+    .fServImages  a[class="wp-block-button__link has-theme-palette-2-background-color has-background wp-element-button"]{
+        font-size: 13px !important;
+    }
+}
+@media(max-width: 960px) and (min-width: 984px){
+    .fServImages  a[class="wp-block-button__link has-theme-palette-2-background-color has-background wp-element-button"]{
+        font-size: 12px !important;
+    }
+}
+@media(max-width: 985px) and (min-width: 870px){
+    .fServImages  a[class="wp-block-button__link has-theme-palette-2-background-color has-background wp-element-button"]{
+        font-size: 12px !important;
+    }
+}
+
+@media(max-width: 869px) and (min-width: 700px){
+    .fServImages  a[class="wp-block-button__link has-theme-palette-2-background-color has-background wp-element-button"]{
+        font-size: 10px !important;
+    }
+}
+@media(max-width: 795px) and (min-width: 765px){
+    .fServImages  a[class="wp-block-button__link has-theme-palette-2-background-color has-background wp-element-button"]{
+        font-size: 9px !important;
+    }
+}
+
+
+@media(max-width: 766px) and (min-width: 700px){
+    .fServImages  a[class="wp-block-button__link has-theme-palette-2-background-color has-background wp-element-button"]{
+        font-size: 10px !important;
+    }
+}
+
+.wp-block-kadence-column > .kt-inside-inner-col > .wp-block-image > img{
+    width: 100% !important;
+}
+/* @media(min-width: 1130px){
+    .fServImages  a[class="wp-block-button__link has-theme-palette-2-background-color has-background wp-element-button"]{
+        font-size: 16px !important;
+    }
+
+} */
 
 
 button {
-    padding: 10px !important;
+    padding: 5px 15px !important;
 }
 input[type="button"]{
-    padding: 10px 20px !important;
+    padding: 5px 15px !important;
 }
 
 body{

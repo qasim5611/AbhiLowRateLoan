@@ -280,6 +280,7 @@ export default function FeaturTop(props) {
                       "&:hover": {
                         backgroundColor: "black",
                         color: "white",
+                        padding: "10px",
                       },
                     }}
                   >

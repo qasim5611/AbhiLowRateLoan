@@ -299,7 +299,10 @@ const Login = () => {
                 mb: "20px",
               }}
             >
-              <IconButton sx={{ p: "5px" }} aria-label="menu">
+              <IconButton
+                sx={{ p: "5px", padding: "10px !important" }}
+                aria-label="menu"
+              >
                 <Image src={userName} alt="" style={{ maxWidth: "40px" }} />
               </IconButton>
               <InputBase
@@ -307,6 +310,7 @@ const Login = () => {
                   color: "#903800",
                   width: "100%",
                   border: "none",
+
                   "& .MuiInputBase-input": {
                     border: "none",
                     borderRadius: "40px",
@@ -335,7 +339,10 @@ const Login = () => {
                 mb: "20px",
               }}
             >
-              <IconButton sx={{ p: "5px" }} aria-label="menu">
+              <IconButton
+                sx={{ p: "5px", padding: "10px !important" }}
+                aria-label="menu"
+              >
                 {/* <img src={padlock} alt="" style={{ maxWidth: "40px" }} /> */}
                 <Image src={padlock} alt="" style={{ maxWidth: "40px" }} />
               </IconButton>

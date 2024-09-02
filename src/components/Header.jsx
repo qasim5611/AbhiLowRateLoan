@@ -148,7 +148,12 @@ export default function Header() {
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
-        <IconButton size="large" aria-label="show 4 new mails" color="inherit">
+        <IconButton
+          sx={{ padding: "10px !important" }}
+          size="large"
+          aria-label="show 4 new mails"
+          color="inherit"
+        >
           <Badge badgeContent={4} color="error">
             <MailIcon />
           </Badge>

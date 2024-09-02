@@ -125,7 +125,11 @@ export default function AdminPanel({ open, setOpen }) {
               height={100}
             />
           </Link>
-          <IconButton onClick={handleDrawerClose} style={{ color: "black" }}>
+
+          <IconButton
+            onClick={handleDrawerClose}
+            style={{ color: "black", padding: "10px" }}
+          >
             {theme.direction === "rtl" ? null : ( //   <ChevronRightIcon />
               <ChevronLeftIcon />
             )}

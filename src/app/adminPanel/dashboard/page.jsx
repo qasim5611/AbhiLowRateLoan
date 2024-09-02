@@ -133,6 +133,7 @@ export default function AdminPanel() {
             edge="start"
             sx={{
               marginRight: 5,
+              padding: "10px",
               ...(open && { display: "none" }),
             }}
           >
@@ -159,7 +160,11 @@ export default function AdminPanel() {
             width={60}
             height={100}
           />
-          <IconButton onClick={handleDrawerClose} style={{ color: "black" }}>
+
+          <IconButton
+            onClick={handleDrawerClose}
+            style={{ color: "black", padding: "10px" }}
+          >
             {theme.direction === "rtl" ? (
               <ChevronRightIcon />
             ) : (

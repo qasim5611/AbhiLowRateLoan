@@ -94,6 +94,7 @@ export default function AdminHeader({ open, setOpen }) {
             onClick={handleDrawerOpen}
             edge="start"
             sx={{
+              padding: "10px",
               marginRight: 5,
               ...(open && { display: "none" }),
             }}

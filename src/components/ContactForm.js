@@ -254,6 +254,7 @@ export function ContactForm(props) {
                                       Ready to get started or still have
                                       questions?
                                     </h2>
+                                    <br />
 
                                     <p>
                                       Call us on 03 7064 5204 or fill out the

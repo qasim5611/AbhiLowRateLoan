@@ -183,6 +183,7 @@ export default function FeaturTop(props) {
                           },
                           position: "relative",
                           top: "15px",
+                          padding: "10px",
                         }}
                       >
                         <DeleteIcon size={10} />
