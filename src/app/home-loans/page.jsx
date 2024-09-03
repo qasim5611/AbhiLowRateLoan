@@ -4,7 +4,7 @@ import React from "react";
 export default function HomeLoans(props) {
   return (
     <>
-      <div className="wp-block-kadence-rowlayout alignnone">
+      <div className="wp-block-kadence-rowlayout alignnone HomeLoanshere">
         <div
           id="kt-layout-id_e988e6-3c"
           className="kt-row-layout-inner kt-layout-id_e988e6-3c"
@@ -212,8 +212,8 @@ export default function HomeLoans(props) {
                                       <div className="kt-inside-inner-col">
                                         <p>
                                           Replace your current loan with a new
-                                          mortgage and secure better terms and
-                                          access to your home equity.
+                                          mortgage, and secure better terms and
+                                          access to the your home equity.
                                         </p>
                                       </div>
                                     </div>
