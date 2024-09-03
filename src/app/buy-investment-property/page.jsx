@@ -234,6 +234,7 @@ sec and map, Manual */}
                                       property, here are a few factors that you
                                       should bear in mind.
                                     </h2>
+                                    <br />
                                     <p style={{ textAlign: "justify" }}>
                                       When constructing your investment plan, be
                                       sure to factor in the acquisition of a
@@ -264,6 +265,8 @@ sec and map, Manual */}
                                     <h2 className="wp-block-heading">
                                       Where to buy
                                     </h2>
+                                    <br />
+
                                     <ul>
                                       <li>
                                         Spending ample time researching familiar
@@ -285,6 +288,8 @@ sec and map, Manual */}
                                     <h2 className="wp-block-heading">
                                       What to buy
                                     </h2>
+                                    <br />
+
                                     <ul>
                                       <li>
                                         When searching for a property, be sure
@@ -303,6 +308,8 @@ sec and map, Manual */}
                                     <h2 className="wp-block-heading">
                                       How to buy
                                     </h2>
+                                    <br />
+
                                     <ul>
                                       <li>
                                         Heed caution when it comes to obtaining
@@ -320,6 +327,7 @@ sec and map, Manual */}
                                       {" "}
                                       Pros and cons of investing in property
                                     </h2>
+                                    <br />
 
                                     <p style={{ textAlign: "justify" }}>
                                       Many view property investment as a safer
@@ -333,6 +341,8 @@ sec and map, Manual */}
                                     </p>
                                     <br />
                                     <h2 className="wp-block-heading">Pros</h2>
+                                    <br />
+
                                     <ul>
                                       <li>
                                         Enhanced stability&nbsp;– Unlike other
@@ -413,7 +423,10 @@ sec and map, Manual */}
                                         investor.
                                       </li>
                                     </ul>
+
                                     <h2 className="wp-block-heading">Cons</h2>
+                                    <br />
+
                                     <ul>
                                       <li>
                                         Budget–Although rental income may appear
