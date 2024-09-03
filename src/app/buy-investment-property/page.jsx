@@ -331,6 +331,16 @@ sec and map, Manual */}
                                       of the considerations for successful and
                                       secure property investment.
                                     </p>
+                                    <br />
+                                    <h2 className="wp-block-heading">Pros</h2>
+                                    <ul>
+                                      <li>
+                                        Enhanced stability&nbsp;– Unlike other
+                                        investments, property is generally less
+                                        volatile and can be a reliable option
+                                        for those seeking stability.
+                                      </li>
+                                    </ul>
                                   </div>
                                 </div>
                               </div>
@@ -368,15 +378,7 @@ sec and map, Manual */}
                                     </figure>
                                     <br />
 
-                                    <h2 className="wp-block-heading">Pros</h2>
                                     <ul>
-                                      <li>
-                                        Enhanced stability&nbsp;– Unlike other
-                                        investments, property is generally less
-                                        volatile and can be a reliable option
-                                        for those seeking stability.
-                                      </li>
-
                                       <li>
                                         Generating revenue&nbsp;– Enjoy a steady
                                         stream of income when your property is
