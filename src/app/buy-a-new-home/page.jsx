@@ -2,6 +2,7 @@ import { FeaturedTop } from "./../../components/FeaturedTop";
 import React from "react";
 import { ContactForm } from "../../components/ContactForm";
 import { Testimonial } from "../../components/Testimonial";
+import Image from "next/image";
 
 export default function BuyNewHome(props) {
   return (
@@ -121,14 +122,14 @@ export default function BuyNewHome(props) {
                                         <img
                                           decoding="async"
                                           loading="lazy"
-                                          width="1024"
-                                          height="683"
-                                          src="http://lowratehomeloan.com.au/wp-content/uploads/2022/12/first-home-buyer-1024x683.webp"
-                                          alt="Buy a new home"
-                                          class="wp-image-3970"
-                                          srcset="https://13.238.116.203/wp-content/uploads/2022/12/first-home-buyer-1024x683.webp 1024w, https://13.238.116.203/wp-content/uploads/2022/12/first-home-buyer-300x200.webp 300w, https://13.238.116.203/wp-content/uploads/2022/12/first-home-buyer-768x512.webp 768w, https://13.238.116.203/wp-content/uploads/2022/12/first-home-buyer.webp 1200w"
+                                          width={1024}
+                                          height={683}
+                                          src="first-home-buyer.webp"
+                                          alt="03 7064 5204"
+                                          className="wp-image-3970"
+                                          // srcSet="https://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/first-home-buyer-1024x683.webp 1024w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/first-home-buyer-300x200.webp 300w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/first-home-buyer-768x512.webp 768w, https://scoresbymortgagebroker.com.au/wp-content/uploads/2022/12/first-home-buyer.webp 1200w"
                                           sizes="(max-width: 1024px) 100vw, 1024px"
-                                        ></img>
+                                        />
                                       </figure>
                                     </div>
                                   </div>
