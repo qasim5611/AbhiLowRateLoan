@@ -1477,7 +1477,7 @@ div[class="wp-block-kadence-column inner-column-2 kadence-column_36d3ae-1d"]{
     }
 }
 
-.fServImages .wp-block-image img{
+.wp-block-kadence-column > .kt-inside-inner-col > .wp-block-image > img{
     width: 100% !important;
 }
 /* @media(min-width: 1130px){

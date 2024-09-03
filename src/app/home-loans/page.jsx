@@ -59,7 +59,7 @@ export default function HomeLoans(props) {
                                   <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-right-golden kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row  kt-custom-first-width-25  kt-custom-second-width-75">
                                     <div className="wp-block-kadence-column inner-column-1 kadence-column_5d704a-b2">
                                       <div className="kt-inside-inner-col">
-                                        <figure className="wp-block-image size-large">
+                                        <figure className=" size-large">
                                           <Image
                                             decoding="async"
                                             loading="lazy"
@@ -116,7 +116,7 @@ export default function HomeLoans(props) {
                                   <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-right-golden kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row  kt-custom-first-width-25  kt-custom-second-width-75">
                                     <div className="wp-block-kadence-column inner-column-1 kadence-column_1bf0b3-86">
                                       <div className="kt-inside-inner-col">
-                                        <figure className="wp-block-image size-large">
+                                        <figure className=" size-large">
                                           <Image
                                             decoding="async"
                                             loading="lazy"
@@ -176,7 +176,7 @@ export default function HomeLoans(props) {
                                   <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-right-golden kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
                                     <div className="wp-block-kadence-column inner-column-1 kadence-column_af79fe-ed">
                                       <div className="kt-inside-inner-col">
-                                        <figure className="wp-block-image size-large">
+                                        <figure className=" size-large">
                                           <Image
                                             decoding="async"
                                             loading="lazy"
@@ -232,7 +232,7 @@ export default function HomeLoans(props) {
                                   <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-right-golden kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
                                     <div className="wp-block-kadence-column inner-column-1 kadence-column_322489-00">
                                       <div className="kt-inside-inner-col">
-                                        <figure className="wp-block-image size-large is-style-default">
+                                        <figure className=" size-large is-style-default">
                                           <Image
                                             decoding="async"
                                             loading="lazy"
@@ -292,7 +292,7 @@ export default function HomeLoans(props) {
                                   <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-right-golden kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
                                     <div className="wp-block-kadence-column inner-column-1 kadence-column_54be3b-91">
                                       <div className="kt-inside-inner-col">
-                                        <figure className="wp-block-image size-large">
+                                        <figure className=" size-large">
                                           <Image
                                             decoding="async"
                                             loading="lazy"
