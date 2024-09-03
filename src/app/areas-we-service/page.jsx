@@ -39,7 +39,10 @@ export default function AreasServices(props) {
                           id="kt-layout-id_b18a39-5b"
                           className="kt-row-layout-inner kt-layout-id_b18a39-5b"
                         >
-                          <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row kb-theme-content-width">
+                          <div
+                            style={{ paddingBottom: "0px" }}
+                            className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row kb-theme-content-width"
+                          >
                             <div className="wp-block-kadence-column inner-column-1 kadence-column_99bbbe-ba">
                               <div className="kt-inside-inner-col">
                                 <div className="wp-block-kadence-rowlayout alignnone suburb">
@@ -689,7 +692,10 @@ export default function AreasServices(props) {
                           id="kt-layout-id_b18a39-5b"
                           className="kt-row-layout-inner kt-layout-id_b18a39-5b"
                         >
-                          <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row kb-theme-content-width">
+                          <div
+                            style={{ paddingTop: "0px" }}
+                            className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row kb-theme-content-width"
+                          >
                             <div className="wp-block-kadence-column inner-column-1 kadence-column_99bbbe-ba">
                               <div className="kt-inside-inner-col">
                                 <div className="wp-block-kadence-rowlayout alignnone suburb">
