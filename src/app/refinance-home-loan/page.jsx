@@ -21,173 +21,248 @@ export default function RefiinanceHomeLoan(props) {
       </div>
       <FeaturedTop />
 
-      <>
-        <div className="wp-block-kadence-rowlayout alignnone">
-          <div
-            id="kt-layout-id_feff37-f8"
-            className="kt-row-layout-inner kt-layout-id_feff37-f8"
-          >
-            <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-right-golden kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row  kt-custom-first-width-40  kt-custom-second-width-60 kb-theme-content-width">
-              <div className="wp-block-kadence-column inner-column-1 kadence-column_defee3-84">
-                <div className="kt-inside-inner-col">
-                  <h2 className="wp-block-heading">
-                    Refinance Now and Save with Low Rate Home Loan!
-                  </h2>
-                  <br />
-                  <p style={{ textAlign: "justify" }}>
-                    By refinancing your existing home loan, you could benefit
-                    from considerable savings with lower interest rates and
-                    fees. This is a fantastic approach to reduce the amount of
-                    money that goes towards paying off your mortgage each month!
-                  </p>
-                  <br />
-                  <h2 className="wp-block-heading">
-                    Discover how you can reduce your monthly mortgage payments
-                    with ease.
-                  </h2>
-                  <br />
+      <div
+        className="wp-block-kadence-rowlayout alignnone "
+        style={{ backgroundColor: "white" }}
+      >
+        <div
+          id="kt-layout-id_cd6d64-9a"
+          className="kt-row-layout-inner kt-row-has-bg kt-layout-id_cd6d64-9a has-theme-palette-8-background-color"
+          style={{ backgroundColor: "white" }}
+        >
+          <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
+            <div className="wp-block-kadence-column inner-column-1 kadence-column_257508-4b">
+              <div className="kt-inside-inner-col">
+                <div className="wp-block-kadence-rowlayout alignnone">
+                  <div
+                    id="kt-layout-id_9132fd-60"
+                    className="kt-row-layout-inner kt-layout-id_9132fd-60"
+                  >
+                    <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-right-golden kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row  kt-custom-first-width-40  kt-custom-second-width-60 kb-theme-content-width">
+                      <div className="wp-block-kadence-column inner-column-1 kadence-column_7f16ed-a0">
+                        <div className="kt-inside-inner-col">
+                          <div className="wp-block-kadence-rowlayout alignnone">
+                            <div
+                              id="kt-layout-id_038645-9b"
+                              className="kt-row-layout-inner kt-row-has-bg kt-layout-id_038645-9b has-theme-palette-8-background-color"
+                            >
+                              <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row kb-theme-content-width">
+                                <div className="wp-block-kadence-column inner-column-1 kadence-column_f51e5f-24">
+                                  <div
+                                    className="kt-inside-inner-col"
+                                    style={{ backgroundColor: "white" }}
+                                  >
+                                    <h2 className="wp-block-heading">
+                                      Refinance Now and Save with Low Rate Home
+                                      Loan!
+                                    </h2>
+                                    <br />
+                                    <p>
+                                      By refinancing your existing home loan,
+                                      you could benefit from considerable
+                                      savings with lower interest rates and
+                                      fees. This is a fantastic approach to
+                                      reduce the amount of money that goes
+                                      towards paying off your mortgage each
+                                      month!
+                                    </p>
+                                    <br />
+                                    <h2 className="wp-block-heading">
+                                      Discover how you can reduce your monthly
+                                      mortgage payments with ease.
+                                    </h2>
+                                    <br />
 
-                  <p style={{ textAlign: "justify" }}>
-                    Here, we’ll explain all the details you need to know when
-                    considering if refinancing is right for you.
-                  </p>
-                  <br />
+                                    <p>
+                                      Here, we’ll explain all the details you
+                                      need to know when considering if
+                                      refinancing is right for you.
+                                    </p>
+                                    <br />
 
-                  <h2 className="wp-block-heading">
-                    Have you been wondering what refinancing entails?
-                  </h2>
-                  <br />
+                                    <h2 className="wp-block-heading">
+                                      Have you been wondering what refinancing
+                                      entails?
+                                    </h2>
+                                    <br />
 
-                  <p style={{ textAlign: "justify" }}>
-                    Refinancing is the process of replacing your existing
-                    mortgage with a new loan. Whether you need a refinance
-                    broker or want to explore refinance mortgage brokers near
-                    you, we’ve got you covered. Refinancing can happen with the
-                    same lender or by changing providers.
-                  </p>
-                  <br />
-                  <p style={{ textAlign: "justify" }}>
-                    There are numerous reasons why homeowners opt for
-                    refinancing:
-                  </p>
-                  <ul>
-                    <li>
-                      obtaining more favourable interest rates and discounts;
-                    </li>
-                    <li>
-                      when the fixed-rate period on their mortgage expires; or
-                    </li>
-                    <li>
-                      tweaking the amount of money borrowed and term length of
-                      their loan.
-                    </li>
-                  </ul>
-                  <br />
+                                    <p>
+                                      Refinancing is the process of replacing
+                                      your existing mortgage with a new loan.
+                                      Whether you need a refinance broker or
+                                      want to explore refinance mortgage brokers
+                                      near you, we’ve got you covered.
+                                      Refinancing can happen with the same
+                                      lender or by changing providers.
+                                    </p>
+                                    <br />
+                                    <p>
+                                      There are numerous reasons why homeowners
+                                      opt for refinancing:
+                                    </p>
+                                    <ul>
+                                      <li>
+                                        obtaining more favourable interest rates
+                                        and discounts;
+                                      </li>
+                                      <li>
+                                        when the fixed-rate period on their
+                                        mortgage expires; or
+                                      </li>
+                                      <li>
+                                        tweaking the amount of money borrowed
+                                        and term length of their loan.
+                                      </li>
+                                    </ul>
+                                    <br />
 
-                  <h2 className="wp-block-heading">
-                    What’s needed to refinance a home?
-                  </h2>
-                  <br />
+                                    <h2 className="wp-block-heading">
+                                      What’s needed to refinance a home?
+                                    </h2>
+                                    <br />
 
-                  <p style={{ textAlign: "justify" }}>
-                    When you’re assessing different home loan options, there are
-                    a few key criteria to consider:
-                  </p>
-                  <p style={{ textAlign: "justify" }}>
-                    • Your current financial situation
-                  </p>
-                  <p style={{ textAlign: "justify" }}>• Your credit history</p>
-                  <p style={{ textAlign: "justify" }}>
-                    • The amount that you’re looking to refinance
-                  </p>
-                  <p style={{ textAlign: "justify" }}>• Loan term length</p>
-                  <br />
-                  <p style={{ textAlign: "justify" }}>
-                    Taking the time to review these details will help you obtain
-                    an informed decision about refinancing your home.
-                    Ultimately, it’s important that any loan fits your needs and
-                    budget.
-                  </p>
-                  <br />
-                  <p style={{ textAlign: "justify" }}>
-                    At Low Rate Home Loan, we take great pride in providing our
-                    customers with competitive rates and discounts for their
-                    refinancing needs. Our experienced team is here to assist
-                    with every step of the process so you can find the best home
-                    loan option for you.
-                  </p>
-                  <br />
-                </div>
-              </div>
-              <div className="wp-block-kadence-column inner-column-2 kadence-column_36d3ae-1d">
-                <div className="kt-inside-inner-col">
-                  <figure className="wp-block-image size-large">
-                    <img
-                      decoding="async"
-                      loading="lazy"
-                      width={1024}
-                      height={683}
-                      src="refinance-your-home.webp"
-                      // src="/insider2022/12/refinance-your-home-1024x683.webp"
-                      alt=""
-                      className="wp-image-3967"
-                      // srcSet="/insider2022/12/refinance-your-home-1024x683.webp 1024w, /insider2022/12/refinance-your-home-300x200.webp 300w, /insider2022/12/refinance-your-home-768x512.webp 768w, /insider2022/12/refinance-your-home.webp 1200w"
-                      sizes="(max-width: 1024px) 100vw, 1024px"
-                    />
-                  </figure>
-                  <h2 className="wp-block-heading">
-                    Are you considering refinancing your home loan?
-                  </h2>
-                  <br />
+                                    <p>
+                                      When you’re assessing different home loan
+                                      options, there are a few key criteria to
+                                      consider:
+                                    </p>
+                                    <p>• Your current financial situation</p>
+                                    <p>• Your credit history</p>
+                                    <p>
+                                      • The amount that you’re looking to
+                                      refinance
+                                    </p>
+                                    <p>• Loan term length</p>
+                                    <br />
+                                    <p>
+                                      Taking the time to review these details
+                                      will help you obtain an informed decision
+                                      about refinancing your home. Ultimately,
+                                      it’s important that any loan fits your
+                                      needs and budget.
+                                    </p>
+                                    <br />
+                                    <p>
+                                      At Low Rate Home Loan, we take great pride
+                                      in providing our customers with
+                                      competitive rates and discounts for their
+                                      refinancing needs.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
-                  <p style={{ textAlign: "justify" }}>
-                    If so, the process can be simple.
-                  </p>
-                  <p style={{ textAlign: "justify" }}>
-                    Start by comparing different lenders and their options
-                    before applying for a new loan.
-                  </p>
-                  <p style={{ textAlign: "justify" }}>
-                    Additionally, it’s important to research all of the benefits
-                    this could have on your financial situation: such as
-                    securing an introductory or fixed rate that is more
-                    competitive than your current interest rate.
-                  </p>
-                  <br />
-                  <p style={{ textAlign: "justify" }}>
-                    Refinancing may be beneficial in many ways; however, take
-                    into consideration all factors before making any final
-                    decisions about changing lenders.
-                  </p>
-                  <br />
-                  <p style={{ textAlign: "justify" }}>
-                    Before refinancing your home, it’s vital to consider what
-                    you’re aiming for. Is it to gain access to lower interest
-                    rates? Fortunately, our service can help simplify the
-                    process by providing tailored results that compare a range
-                    of loan options available.
-                  </p>
-                  <br />
+                      <div className="wp-block-kadence-column inner-column-2 kadence-column_76524a-2a">
+                        <div
+                          className="kt-inside-inner-col"
+                          style={{ padding: "0px" }}
+                        >
+                          <div className="wp-block-kadence-rowlayout alignnone">
+                            <div
+                              id="kt-layout-id_9259d0-6b"
+                              className="kt-row-layout-inner kt-layout-id_9259d0-6b"
+                            >
+                              <div className="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
+                                <div className="wp-block-kadence-column inner-column-1 kadence-column_c08293-7a">
+                                  <div className="kt-inside-inner-col">
+                                    <div className="wp-block-image">
+                                      <figure className="aligncenter size-large is-resized">
+                                        <img
+                                          decoding="async"
+                                          loading="lazy"
+                                          width={1024}
+                                          height={683}
+                                          src="refinance-your-home.webp"
+                                          // src="/insider2022/12/refinance-your-home-1024x683.webp"
+                                          alt=""
+                                          className="wp-image-3967"
+                                          // srcSet="/insider2022/12/refinance-your-home-1024x683.webp 1024w, /insider2022/12/refinance-your-home-300x200.webp 300w, /insider2022/12/refinance-your-home-768x512.webp 768w, /insider2022/12/refinance-your-home.webp 1200w"
+                                          sizes="(max-width: 1024px) 100vw, 1024px"
+                                        />
+                                      </figure>
+                                      <br />
+                                      <p>
+                                        Our experienced team is here to assist
+                                        with every step of the process so you
+                                        can find the best home loan option for
+                                        you.
+                                      </p>
+                                      <br />
+                                      <h2 className="wp-block-heading">
+                                        Are you considering refinancing your
+                                        home loan?
+                                      </h2>
+                                      <br />
 
-                  <h2 className="wp-block-heading">
-                    Ready to refinance your home?
-                  </h2>
-                  <br />
+                                      <p>If so, the process can be simple.</p>
+                                      <p>
+                                        Start by comparing different lenders and
+                                        their options before applying for a new
+                                        loan.
+                                      </p>
+                                      <p>
+                                        Additionally, it’s important to research
+                                        all of the benefits this could have on
+                                        your financial situation: such as
+                                        securing an introductory or fixed rate
+                                        that is more competitive than your
+                                        current interest rate.
+                                      </p>
+                                      <br />
+                                      <p>
+                                        Refinancing may be beneficial in many
+                                        ways; however, take into consideration
+                                        all factors before making any final
+                                        decisions about changing lenders.
+                                      </p>
+                                      <br />
+                                      <p>
+                                        Before refinancing your home, it’s vital
+                                        to consider what you’re aiming for. Is
+                                        it to gain access to lower interest
+                                        rates? Fortunately, our service can help
+                                        simplify the process by providing
+                                        tailored results that compare a range of
+                                        loan options available.
+                                      </p>
+                                      <br />
 
-                  <p style={{ textAlign: "justify" }}>
-                    At Low Rate Home Loan, we prioritise your best interests.
-                    Our{" "}
-                    <a href="/" title="">
-                      mortgage broker experts
-                    </a>{" "}
-                    will guide you through the refinancing process. Take
-                    advantage of our easy mortgage refinance solutions today!
-                  </p>
+                                      <h2 className="wp-block-heading">
+                                        Ready to refinance your home?
+                                      </h2>
+                                      <br />
+
+                                      <p>
+                                        At Low Rate Home Loan, we prioritise
+                                        your best interests. Our{" "}
+                                        <a href="/" title="">
+                                          mortgage broker experts
+                                        </a>{" "}
+                                        will guide you through the refinancing
+                                        process. Take advantage of our easy
+                                        mortgage refinance solutions today!
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <>
         <div className="kb-row-layout-wrap kb-row-layout-id1785_a623ed-cf alignnone kb-v-lg-hidden kb-v-md-hidden kb-v-sm-hidden wp-block-kadence-rowlayout">
           <div className="kt-row-column-wrap kt-has-1-columns kt-row-layout-equal kt-tab-layout-inherit kt-mobile-layout-row kt-row-valign-top kb-theme-content-width">
             <div className="wp-block-kadence-column kadence-column1785_3d58cf-13 inner-column-1">

@@ -8,6 +8,8 @@ import "react-toastify/dist/ReactToastify.css";
 import "flatpickr/dist/flatpickr.min.css";
 import "./../css/satoshi.css";
 import "./../css/style.css";
+import "./../css/style-blocks-rowlayout.css";
+
 // import CircularProgress from '@mui/material/CircularProgress';
 import React from "react";
 import Loader from "./Loader";
