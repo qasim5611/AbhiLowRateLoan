@@ -1203,13 +1203,15 @@ iframe{
 .setstyle p {
     /* margin: 20px 0px; */
     padding-right: 20px;
+    font-family: Ubuntu;
+    font-size: 18px;
 }
 .setstyle h2 {
     margin: 10px 0px;
 }
-.setstyle > .kb-row-layout-wrap > .kt-row-column-wrap > .inner-column-1 {
+/* .setstyle > .kb-row-layout-wrap > .kt-row-column-wrap > .inner-column-1 {
     padding-right: 30px !important;
-}
+} */
 
 /* .setstyle h5,
 .setstyle h2,

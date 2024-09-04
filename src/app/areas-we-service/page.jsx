@@ -660,19 +660,19 @@ export default function AreasServices(props) {
                                             </div>
                                           </Link>{" "}
                                         </div>
-                                        <div className="wp-block-kadence-column inner-column-4 kadence-column_14a5dc-fb">
+                                        <div className="wp-block-kadence-column inner-column-1 kadence-column_e44da7-8b">
                                           <Link
-                                            href="/mortgage-broker-adelaide"
+                                            href="/rose-bay-mortgage-brokers"
                                             title=""
                                           >
                                             <div className="kt-inside-inner-col">
                                               <h5
-                                                className="kt-adv-heading_45d315-0b wp-block-kadence-advancedheading"
-                                                data-kb-block="kb-adv-heading_45d315-0b"
+                                                className="kt-adv-heading_3f1958-8e wp-block-kadence-advancedheading"
+                                                data-kb-block="kb-adv-heading_3f1958-8e"
                                               >
-                                                Adelaide
+                                                Rose Bay,
                                                 <br />
-                                                SA 5000
+                                                NSW 2029
                                               </h5>{" "}
                                             </div>
                                           </Link>{" "}
@@ -740,7 +740,7 @@ export default function AreasServices(props) {
                                               >
                                                 Brisbane QLD
                                                 <br />
-                                                5000
+                                                4000
                                               </h5>{" "}
                                             </div>
                                           </Link>{" "}
@@ -1498,7 +1498,7 @@ export default function AreasServices(props) {
                                       className="kt-row-layout-inner kt-layout-id_d77f02-fb"
                                     >
                                       <div className="kt-row-column-wrap kt-has-4-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-two-grid">
-                                        <div className="wp-block-kadence-column inner-column-1 kadence-column_e44da7-8b">
+                                        {/* <div className="wp-block-kadence-column inner-column-1 kadence-column_e44da7-8b">
                                           <Link
                                             href="/rose-bay-mortgage-brokers"
                                             title=""
@@ -1514,7 +1514,7 @@ export default function AreasServices(props) {
                                               </h5>{" "}
                                             </div>
                                           </Link>{" "}
-                                        </div>
+                                        </div> */}
                                         <div className="wp-block-kadence-column inner-column-2 kadence-column_c95e5b-c7">
                                           {/* <Link href="#" title="">
                                           <div className="kt-inside-inner-col">
