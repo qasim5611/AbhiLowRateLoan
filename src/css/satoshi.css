@@ -1209,6 +1209,10 @@ iframe{
 .setstyle h2 {
     margin: 10px 0px;
 }
+
+iframe{
+    width: 100% !important;
+}
 /* .setstyle > .kb-row-layout-wrap > .kt-row-column-wrap > .inner-column-1 {
     padding-right: 30px !important;
 } */
