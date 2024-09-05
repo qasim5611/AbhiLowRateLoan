@@ -384,7 +384,11 @@ text-transform: uppercase;
     letter-spacing: 0.2em;
 }
 
-
+#main p,
+.alignnone p {
+	font-family: Ubuntu;
+    font-size: 18px;
+}
 .header-navigation .header-menu-container ul ul li.menu-item > a {
   font-size: 15px!important;
 }
@@ -1056,3 +1060,13 @@ padding-bottom: 10px;
     }
 }
 
+
+
+.HomeLoanshere h6[class="kt-adv-heading_e35bf2-0e wp-block-kadence-advancedheading has-theme-palette-1-color has-text-color"]{
+
+	text-transform: uppercase;
+    color: #00a651 !important;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+}
