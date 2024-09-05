@@ -85,6 +85,8 @@ export default function RootLayout({ children }) {
             property="og:image:secure_url"
             content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
           />
+          <meta property="og:image:width" content="200" />
+          <meta property="og:image:height" content="200" />
           {/* <meta
             property="og:image:secure_url"
             content="/lowratehomeloan-logo.svg"
