@@ -1206,8 +1206,25 @@ iframe{
     font-family: Ubuntu;
     font-size: 18px;
 }
+.fserviceprovider{
+    font-family: Ubuntu;
+    font-size: 18px;
+    
+}
+.setstyle ol li, .setstyle ul li{
+    font-family: Ubuntu;
+    padding-right: 20px;
+
+    font-size: 18px;
+}
 .setstyle h2 {
     margin: 10px 0px;
+}
+.setstyle div[class="kt-row-column-wrap kt-has-2-columns kt-gutter-wider kt-v-gutter-default kt-row-valign-middle kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row  kt-custom-first-width-40  kt-custom-second-width-60 kb-theme-content-width"],
+.setstyle div[class="kt-row-column-wrap kt-has-2-columns kt-row-layout-equal kt-tab-layout-inherit kt-mobile-layout-row kt-row-valign-middle kb-theme-content-width"]{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 iframe{

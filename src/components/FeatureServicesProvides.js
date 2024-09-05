@@ -3,7 +3,7 @@ import React from "react";
 export function FeatureServicesProvides(props) {
   return (
     <>
-      <div className="wp-block-kadence-rowlayout alignnone">
+      <div className="wp-block-kadence-rowlayout alignnone fserviceprovider">
         <div
           id="kt-layout-id_1d3f6d-df"
           className="kt-row-layout-inner kt-layout-id_1d3f6d-df"

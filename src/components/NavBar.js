@@ -26,11 +26,14 @@ import Link from "next/link";
 import { BorderBottom } from "@mui/icons-material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { styled } from "@mui/material";
+import { useRouter } from "next/navigation";
 
 const drawerWidth = 385;
 const navItems = ["Home", "About", "Contact"];
 // const navItems = [{}];
 function DrawerAppBar(props) {
+  const router = useRouter();
+
   // const { window } = props;
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(null);
@@ -83,6 +86,11 @@ function DrawerAppBar(props) {
   const handleClick = () => {
     setOpen(!open);
     // setMobileOpen((prevState) => !prevState);
+  };
+
+  const handleClickRoot = () => {
+    console.log("cliked");
+    router.push("/", { replace: true });
   };
 
   const drawer = (
@@ -181,14 +189,14 @@ function DrawerAppBar(props) {
               width: "50%",
             }}
           >
-            <Link href="/" style={{ textDecoration: "none" }}>
+            <div onClick={handleClickRoot} style={{ textDecoration: "none" }}>
               <h2
                 className="specialH2mob"
                 style={{ fontSize: "56px", color: "transparent" }}
               >
                 Aboute
               </h2>
-            </Link>
+            </div>
           </Box>
         </Toolbar>
       </AppBar>
