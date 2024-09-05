@@ -380,6 +380,7 @@ text-transform: uppercase;
     color:var(--global-palette2);
    
     font-weight: bold;
+	font-size: 20px;
     letter-spacing: 0.2em;
 }
 
