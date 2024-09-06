@@ -1220,7 +1220,8 @@ iframe{
 .setstyle h2 {
     margin: 10px 0px;
 }
-.setstyle div[class="kt-row-column-wrap kt-has-2-columns kt-gutter-wider kt-v-gutter-default kt-row-valign-middle kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row  kt-custom-first-width-40  kt-custom-second-width-60 kb-theme-content-width"],
+@media(min-width: 600px){
+    .setstyle div[class="kt-row-column-wrap kt-has-2-columns kt-gutter-wider kt-v-gutter-default kt-row-valign-middle kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row  kt-custom-first-width-40  kt-custom-second-width-60 kb-theme-content-width"],
 .setstyle div[class="kt-row-column-wrap kt-has-2-columns kt-row-layout-equal kt-tab-layout-inherit kt-mobile-layout-row kt-row-valign-middle kb-theme-content-width"],
 
 .setstyle div[class="kt-row-column-wrap kt-has-2-columns kt-gutter-wider kt-v-gutter-default kt-row-valign-middle kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row  kt-custom-first-width-50  kt-custom-second-width-50 kb-theme-content-width"]
@@ -1228,6 +1229,7 @@ iframe{
     display: flex;
     flex-direction: row;
     align-items: center;
+}
 }
 
 iframe{
@@ -1503,10 +1505,9 @@ div[class="wp-block-kadence-column inner-column-2 kadence-column_36d3ae-1d"]{
     }
 }
 
-@media(min-width: 600px){
-    .wp-block-kadence-column > .kt-inside-inner-col > .wp-block-image > img{
-        width: 100% !important;
-    }
+
+.wp-block-kadence-column > .kt-inside-inner-col > .wp-block-image > img{
+    width: 100% !important;
 }
 /* @media(min-width: 1130px){
     .fServImages  a[class="wp-block-button__link has-theme-palette-2-background-color has-background wp-element-button"]{
