@@ -165,7 +165,7 @@ export function FeatureServices(props) {
                     className="kt-row-layout-inner kt-layout-id_911d7e-81 fServImages"
                   >
                     <div className="kt-row-column-wrap kt-has-3-columns kt-gutter-narrow kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row kb-theme-content-width">
-                      {record1.length > 0 ? (
+                      {!record1.length > 0 ? (
                         <>
                           {record1.map((itmn, index) => {
                             return (
@@ -206,8 +206,8 @@ export function FeatureServices(props) {
                           })}
                         </>
                       ) : (
-                        <div className="fServImages">
-                          <div className="wp-block-kadence-column inner-column-1 kadence-column_84f3dc-85 pos-rel">
+                        <>
+                          <div className="wp-block-kadence-column inner-column-1 kadence-column_84f3dc-85 pos-rel fServImages">
                             <div className="kt-inside-inner-col">
                               <figure className="wp-block-image size-full">
                                 <img
@@ -238,7 +238,7 @@ export function FeatureServices(props) {
                             </div>
                           </div>
 
-                          <div className="wp-block-kadence-column inner-column-2 kadence-column_35a59f-51 pos-rel">
+                          <div className="wp-block-kadence-column inner-column-2 kadence-column_35a59f-51 pos-rel fServImages">
                             <div className="kt-inside-inner-col">
                               <figure className="wp-block-image size-full">
                                 <img
@@ -269,7 +269,7 @@ export function FeatureServices(props) {
                             </div>
                           </div>
 
-                          <div className="wp-block-kadence-column inner-column-3 kadence-column_326d88-6e pos-rel">
+                          <div className="wp-block-kadence-column inner-column-3 kadence-column_326d88-6e pos-rel fServImages">
                             <div className="kt-inside-inner-col">
                               <figure className="wp-block-image size-full">
                                 <img
@@ -299,7 +299,7 @@ export function FeatureServices(props) {
                               </div>
                             </div>
                           </div>
-                        </div>
+                        </>
                       )}
                     </div>
                   </div>

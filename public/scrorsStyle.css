@@ -844,6 +844,7 @@ footer h6{
 	color:#00A651;
 	text-transform:uppercase;
 	letter-spacing:1px;
+  font-size: 16px !important;
 }
 
 footer .widget-area a:where(:not(.button):not(.wp-block-button__link):not(.wp-element-button)) {
@@ -1062,11 +1063,24 @@ padding-bottom: 10px;
 
 
 
-.HomeLoanshere h6[class="kt-adv-heading_e35bf2-0e wp-block-kadence-advancedheading has-theme-palette-1-color has-text-color"]{
+
+ #kt-layout-id_883df2-ca h6,
+ 
+ h6[class~= "has-theme-palette-1-color"],
+ .alignnone h6[class~= "has-theme-palette-1-color"],
+ .setstyle h6[class~= "has-theme-palette-1-color"],
+ .fserviceprovider h6[class~= "has-theme-palette-1-color"],
+ .contactform h6[class~= "has-theme-palette-1-color"],
+ .HomeLoanshere h6[class~= "has-theme-palette-1-color"]
+
+
+ 
+ {
 
 	text-transform: uppercase;
     color: #00a651 !important;
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 0.2em;
+    font-weight: bold !important;
+    font-size: 20px !important;
+    letter-spacing: 0.2em !important;
+
 }

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export function FeatureServicesProvides(props) {
@@ -76,12 +77,9 @@ export function FeatureServicesProvides(props) {
                                           className="kt-adv-heading_140640-5c black-bold wp-block-kadence-advancedheading"
                                           data-kb-block="kb-adv-heading_140640-5c"
                                         >
-                                          <a
-                                            href="https://lowratehomeloan.com.au/home-loans/buy-a-new-home/"
-                                            title=""
-                                          >
+                                          <Link href="/home-loans" title="">
                                             Home Loans
-                                          </a>
+                                          </Link>
                                         </h6>
                                       </div>
                                     </div>
@@ -140,12 +138,12 @@ export function FeatureServicesProvides(props) {
                                           className="kt-adv-heading_3fbad7-9f black-bold wp-block-kadence-advancedheading"
                                           data-kb-block="kb-adv-heading_3fbad7-9f"
                                         >
-                                          <a
-                                            href="https://lowratehomeloan.com.au/home-loans/refinance-home-loan/"
+                                          <Link
+                                            href="/refinance-home-loan"
                                             title=""
                                           >
                                             Refinancing
-                                          </a>
+                                          </Link>
                                         </h6>
                                       </div>
                                     </div>
