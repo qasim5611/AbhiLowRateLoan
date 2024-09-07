@@ -1464,16 +1464,21 @@ div[class="wp-block-kadence-column inner-column-2 kadence-column_36d3ae-1d"]{
   
 }
 
+@media(min-width: 1130px) {
+    .fServImages  a[class="wp-block-button__link has-theme-palette-2-background-color has-background wp-element-button"]{
+        font-size: 15px !important;
+    }
+}
 
 @media(max-width: 1130px) and (min-width: 1039px) {
     .fServImages  a[class="wp-block-button__link has-theme-palette-2-background-color has-background wp-element-button"]{
-        font-size: 14.5px !important;
+        font-size: 12px !important;
     }
 }
 
 @media(max-width: 1038px) and (min-width: 959px){
     .fServImages  a[class="wp-block-button__link has-theme-palette-2-background-color has-background wp-element-button"]{
-        font-size: 13.2px !important;
+        font-size: 11px !important;
     }
 }
 @media(max-width: 960px) and (min-width: 984px){
@@ -1483,18 +1488,18 @@ div[class="wp-block-kadence-column inner-column-2 kadence-column_36d3ae-1d"]{
 }
 @media(max-width: 985px) and (min-width: 870px){
     .fServImages  a[class="wp-block-button__link has-theme-palette-2-background-color has-background wp-element-button"]{
-        font-size: 12.3px !important;
+        font-size: 9px !important;
     }
 }
 
 @media(max-width: 869px) and (min-width: 700px){
     .fServImages  a[class="wp-block-button__link has-theme-palette-2-background-color has-background wp-element-button"]{
-        font-size: 10.7px !important;
+        font-size: 9px !important;
     }
 }
 @media(max-width: 795px) and (min-width: 765px){
     .fServImages  a[class="wp-block-button__link has-theme-palette-2-background-color has-background wp-element-button"]{
-        font-size: 10px !important;
+        font-size: 8.5px !important;
     }
 }
 
