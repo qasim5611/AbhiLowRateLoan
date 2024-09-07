@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./../../components/Header";
 import Footer from "./../../components/Footer";
-import { FeatureServices } from "../../components/FeatureServices";
+import { FeatureServices } from "./../../components/FeatureServices";
 import { ReputableLenders } from "../../components/ReputableLenders";
 import Link from "next/link";
 import { FeaturedTop } from "../../components/FeaturedTop";
@@ -1573,7 +1573,7 @@ export default function AreasServices(props) {
         </div>
       </div>
       {/* <Footer /> */}
-      <div className="wp-block-kadence-rowlayout alignnone">
+      {/* <div className="wp-block-kadence-rowlayout alignnone">
         <div
           id="kt-layout-id_ea3438-01"
           className="kt-row-layout-inner kt-layout-id_ea3438-01"
@@ -1733,7 +1733,9 @@ export default function AreasServices(props) {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+
+      <FeatureServices />
       <ReputableLenders />
     </div>
   );

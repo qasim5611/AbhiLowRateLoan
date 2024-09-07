@@ -1483,10 +1483,10 @@ a.post-more-link:hover {
 .alignwide,
 .entry-content .alignwide,
 .entry-content .alignfull {
-    margin-left: calc(50% - (var(--global-vw, 100vw) / 2));
-    margin-right: calc(50% - (var(--global-vw, 100vw) / 2));
+    /* margin-left: calc(50% - (var(--global-vw, 100vw) / 2)); */
+    /* margin-right: calc(50% - (var(--global-vw, 100vw) / 2)); */
     max-width: 100vw;
-    width: var(--global-vw, 100vw);
+    /* width: var(--global-vw, 100vw); */
     padding-left: 0;
     padding-right: 0;
     clear: both;
