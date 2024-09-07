@@ -389,6 +389,14 @@ text-transform: uppercase;
 	font-family: Ubuntu;
     font-size: 18px;
 }
+
+@media(max-width: 650px){
+  .top-features .alignnone p {
+    font-family: Ubuntu;
+      font-size: 12px !important;
+  }
+}
+
 .header-navigation .header-menu-container ul ul li.menu-item > a {
   font-size: 15px!important;
 }
