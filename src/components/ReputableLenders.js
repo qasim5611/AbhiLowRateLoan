@@ -594,9 +594,9 @@ export function ReputableLenders(props) {
           <Grid item xs={6} sm={6} md={2} lg={2}>
             <Box style={{ textAlign: "center" }}>
               <Image
-                src="/pics/Health Professional bank .png"
+                src="/pics/Ubank.webp"
                 alt="brand"
-                width={170}
+                width={250}
                 height={200}
                 style={{ margin: "0px auto" }}
               />
@@ -641,9 +641,9 @@ export function ReputableLenders(props) {
           <Grid item xs={6} sm={6} md={2} lg={2}>
             <Box style={{ textAlign: "center" }}>
               <Image
-                src="/pics/Ubank.webp"
+                src="/pics/Health Professional bank .png"
                 alt="brand"
-                width={250}
+                width={170}
                 height={200}
                 style={{ margin: "0px auto" }}
               />
