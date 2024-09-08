@@ -1092,3 +1092,25 @@ padding-bottom: 10px;
     letter-spacing: 0.2em !important;
 
 }
+
+
+.parenlogonewbrand{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 50px;
+  justify-content: space-evenly;
+}
+.parenlogonewbrandmob{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* margin-bottom: 50px; */
+  justify-content: space-evenly;
+  /* padding: 20px; */
+}
+
+
+.parenlogonewbrandmob img{
+  margin-bottom: 20px !important;
+}
