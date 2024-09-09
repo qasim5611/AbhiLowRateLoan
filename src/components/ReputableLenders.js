@@ -381,20 +381,20 @@ export function ReputableLenders(props) {
 
         <Box className="lenderlogo">
           <Image
-            src="/pics/Mac logo with isolation zone (macquarie final)-01.png"
+            src="/pics/Suncorp_Hor_CMYK.jpg"
             alt="brand"
-            width={100}
-            height={100}
+            width={150}
+            height={200}
             style={{ margin: "0px auto" }}
           />
         </Box>
 
         <Box className="lenderlogo">
           <Image
-            src="/pics/Suncorp_Hor_CMYK.jpg"
+            src="/pics/Mac logo with isolation zone (macquarie final)-01.png"
             alt="brand"
-            width={150}
-            height={200}
+            width={100}
+            height={100}
             style={{ margin: "0px auto" }}
           />
         </Box>
