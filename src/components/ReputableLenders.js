@@ -159,7 +159,13 @@ export function ReputableLenders(props) {
           </div>
         </div>
       </div> */}
-
+      <h2
+        className="kt-adv-heading_4fee88-b0 wp-block-kadence-advancedheading"
+        data-kb-block="kb-adv-heading_4fee88-b0"
+        style={{ marginTop: "90px", marginBottom: "55px" }}
+      >
+        <strong>Home Loans from over 53+ Reputable Lenders</strong>
+      </h2>
       <Box className="Parentlenderlogo">
         <Box className="lenderlogo">
           <Image
@@ -400,6 +406,7 @@ export function ReputableLenders(props) {
         </Box>
       </Box>
 
+      <hr style={{ backgroundColor: "#cbd5e0", marginBottom: "0px" }} />
       {/* //////////////////////////////// Mobile Area //////////////////////// */}
       {/* //////////////////////////////// Mobile Area //////////////////////// */}
       {/* //////////////////////////////// Mobile Area //////////////////////// */}
