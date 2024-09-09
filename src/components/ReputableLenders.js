@@ -164,7 +164,9 @@ export function ReputableLenders(props) {
         data-kb-block="kb-adv-heading_4fee88-b0"
         style={{ marginTop: "90px", marginBottom: "55px" }}
       >
-        <strong>Home Loans from over 53+ Reputable Lenders</strong>
+        <strong>
+          We will compare thousands of home loans from 53+ leading Banks
+        </strong>
       </h2>
       <Box className="Parentlenderlogo">
         <Box className="lenderlogo">
