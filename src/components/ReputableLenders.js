@@ -393,7 +393,7 @@ export function ReputableLenders(props) {
           <Image
             src="/pics/Suncorp_Hor_CMYK.jpg"
             alt="brand"
-            width={180}
+            width={150}
             height={200}
             style={{ margin: "0px auto" }}
           />
