@@ -162,13 +162,19 @@ export function ReputableLenders(props) {
 
       <Box className="Parentlenderlogo">
         <Box className="lenderlogo">
-          <img src="/pics/CWBogo.png" />
+          <Image
+            src="/pics/New Project (7).png"
+            alt="brand"
+            width={190}
+            height={200}
+            style={{ margin: "0px auto" }}
+          />
         </Box>
         <Box className="lenderlogo">
           <Image
             src="/pics/firstmac.jpg"
             alt="brand"
-            width={200}
+            width={180}
             height={200}
             style={{ margin: "0px auto" }}
           />
@@ -251,7 +257,7 @@ export function ReputableLenders(props) {
         </Box>
         <Box className="lenderlogo">
           <Image
-            src="/pics/Teachers-Mutual-Bank-600.jpg"
+            src="/pics/Bluestone Secondary Logo .jpg"
             alt="brand"
             width={200}
             height={200}
@@ -269,7 +275,7 @@ export function ReputableLenders(props) {
         </Box>
         <Box className="lenderlogo">
           <Image
-            src="/pics/Bluestone Secondary Logo .jpg"
+            src="/pics/Teachers-Mutual-Bank-600.jpg"
             alt="brand"
             width={200}
             height={200}
@@ -280,7 +286,7 @@ export function ReputableLenders(props) {
           <Image
             src="/pics/bank_west_australia.JPG"
             alt="brand"
-            width={180}
+            width={160}
             height={200}
             style={{ margin: "0px auto" }}
           />
@@ -308,7 +314,7 @@ export function ReputableLenders(props) {
           <Image
             src="/pics/Full Colour_PRIMARY LOGO_Company Statement Tagline_300dpi.png"
             alt="brand"
-            width={1600}
+            width={200}
             height={100}
             style={{ margin: "0px auto" }}
           />
@@ -316,10 +322,10 @@ export function ReputableLenders(props) {
 
         <Box className="lenderlogo">
           <Image
-            src="/pics/Suncorp_Hor_CMYK.jpg"
+            src="/pics/Westpac-Logo-CMYK.JPG"
             alt="brand"
-            width={140}
-            height={200}
+            width={200}
+            height={100}
             style={{ margin: "0px auto" }}
           />
         </Box>
@@ -377,8 +383,18 @@ export function ReputableLenders(props) {
           <Image
             src="/pics/Mac logo with isolation zone (macquarie final)-01.png"
             alt="brand"
-            width={110}
+            width={100}
             height={100}
+            style={{ margin: "0px auto" }}
+          />
+        </Box>
+
+        <Box className="lenderlogo">
+          <Image
+            src="/pics/Suncorp_Hor_CMYK.jpg"
+            alt="brand"
+            width={180}
+            height={200}
             style={{ margin: "0px auto" }}
           />
         </Box>
