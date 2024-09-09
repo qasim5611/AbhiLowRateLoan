@@ -1150,6 +1150,16 @@ padding-bottom: 10px;
     width: 175px;
 
   }
+
+  .lastlenderlogo{
+    margin: 0px auto;
+  }
+  .Parentlenderlogo{   
+
+   margin-bottom: 62px !important;
+ 
+ 
+ }
 }
 
 @media(min-width: 1300px) and (max-width: 1700px){

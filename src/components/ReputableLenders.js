@@ -395,7 +395,7 @@ export function ReputableLenders(props) {
           />
         </Box>
 
-        <Box className="lenderlogo">
+        <Box className="lenderlogo lastlenderlogo">
           <Image
             src="/pics/Mac logo with isolation zone (macquarie final)-01.png"
             alt="brand"
