@@ -192,7 +192,11 @@ function DrawerAppBar(props) {
             <div onClick={handleClickRoot} style={{ textDecoration: "none" }}>
               <h2
                 className="specialH2mob"
-                style={{ fontSize: "56px", color: "transparent" }}
+                style={{
+                  fontSize: "56px",
+                  color: "transparent",
+                  visibility: "hidden",
+                }}
               >
                 Aboute
               </h2>
