@@ -287,9 +287,9 @@ function Footer({ data, update }) {
                                     <Link href="/mortgage-broker-south-yarra">
                                       South Yarra
                                     </Link>
-                                    <br />
+                                    {/* <br /> */}
                                     {/* <Link href="/mortgage-broker-south-yarra"> */}
-                                    WA & QLD
+                                    {/* WA & QLD */}
                                     {/* </Link> */}
                                   </p>
                                 </div>
@@ -329,6 +329,11 @@ function Footer({ data, update }) {
                                     <br />
                                     <Link href="/mortgage-broker-sydney-nsw">
                                       Sydney NSW
+                                    </Link>
+
+                                    <br />
+                                    <Link href="/mortgage-broker-perth">
+                                      Perth WA
                                     </Link>
                                   </p>
                                 </div>

@@ -160,7 +160,7 @@ export function ReputableLenders(props) {
         </div>
       </div> */}
       <h2
-        className="kt-adv-heading_4fee88-b0 wp-block-kadence-advancedheading"
+        className="kt-adv-heading_4fee88-b0 wp-block-kadence-advancedheading reputheadmob"
         data-kb-block="kb-adv-heading_4fee88-b0"
         style={{ marginTop: "90px", marginBottom: "55px" }}
       >
@@ -176,6 +176,7 @@ export function ReputableLenders(props) {
             width={190}
             height={200}
             style={{ margin: "0px auto" }}
+            className="image1"
           />
         </Box>
         <Box className="lenderlogo">
@@ -185,6 +186,7 @@ export function ReputableLenders(props) {
             width={180}
             height={200}
             style={{ margin: "0px auto" }}
+            className="image2"
           />
         </Box>
 
@@ -195,6 +197,7 @@ export function ReputableLenders(props) {
             width={200}
             height={200}
             style={{ margin: "0px auto" }}
+            className="image3"
           />
         </Box>
         <Box className="lenderlogo">
@@ -204,6 +207,7 @@ export function ReputableLenders(props) {
             width={200}
             height={200}
             style={{ margin: "0px auto" }}
+            className="image4"
           />
         </Box>
 
@@ -214,6 +218,7 @@ export function ReputableLenders(props) {
             width={200}
             height={200}
             style={{ margin: "0px auto" }}
+            className="image5"
           />
         </Box>
 
@@ -224,6 +229,7 @@ export function ReputableLenders(props) {
             width={90}
             height={100}
             style={{ margin: "0px auto" }}
+            className="image6"
           />
         </Box>
 
@@ -234,6 +240,7 @@ export function ReputableLenders(props) {
             width={200}
             height={200}
             style={{ margin: "0px auto" }}
+            className="image7"
           />
         </Box>
         <Box className="lenderlogo">
@@ -243,6 +250,7 @@ export function ReputableLenders(props) {
             width={150}
             height={200}
             style={{ margin: "0px auto" }}
+            className="image8"
           />
         </Box>
         <Box className="lenderlogo">
@@ -252,6 +260,7 @@ export function ReputableLenders(props) {
             width={180}
             height={200}
             style={{ margin: "0px auto" }}
+            className="image9"
           />
         </Box>
         <Box className="lenderlogo">
@@ -261,6 +270,7 @@ export function ReputableLenders(props) {
             width={150}
             height={200}
             style={{ margin: "0px auto" }}
+            className="image10"
           />
         </Box>
         <Box className="lenderlogo">
@@ -270,6 +280,7 @@ export function ReputableLenders(props) {
             width={200}
             height={200}
             style={{ margin: "0px auto" }}
+            className="image11"
           />
         </Box>
         <Box className="lenderlogo">
@@ -279,6 +290,7 @@ export function ReputableLenders(props) {
             width={200}
             height={200}
             style={{ margin: "0px auto" }}
+            className="image12"
           />
         </Box>
         <Box className="lenderlogo">
@@ -288,6 +300,7 @@ export function ReputableLenders(props) {
             width={200}
             height={200}
             style={{ margin: "0px auto" }}
+            className="image13"
           />
         </Box>
         <Box className="lenderlogo">
@@ -297,6 +310,7 @@ export function ReputableLenders(props) {
             width={160}
             height={200}
             style={{ margin: "0px auto" }}
+            className="image14"
           />
         </Box>
 
@@ -307,6 +321,7 @@ export function ReputableLenders(props) {
             width={200}
             height={200}
             style={{ margin: "0px auto" }}
+            className="image15"
           />
         </Box>
         <Box className="lenderlogo">
@@ -316,6 +331,7 @@ export function ReputableLenders(props) {
             width={170}
             height={200}
             style={{ margin: "0px auto" }}
+            className="image16"
           />
         </Box>
         <Box className="lenderlogo">
@@ -325,6 +341,7 @@ export function ReputableLenders(props) {
             width={200}
             height={100}
             style={{ margin: "0px auto" }}
+            className="image17"
           />
         </Box>
 
@@ -335,6 +352,7 @@ export function ReputableLenders(props) {
             width={200}
             height={100}
             style={{ margin: "0px auto" }}
+            className="image18"
           />
         </Box>
 
@@ -345,6 +363,7 @@ export function ReputableLenders(props) {
             width={200}
             height={100}
             style={{ margin: "0px auto" }}
+            className="image19"
           />
         </Box>
         <Box className="lenderlogo">
@@ -354,6 +373,7 @@ export function ReputableLenders(props) {
             width={200}
             height={200}
             style={{ margin: "0px auto" }}
+            className="image20"
           />
         </Box>
 
@@ -364,6 +384,7 @@ export function ReputableLenders(props) {
             width={140}
             height={200}
             style={{ margin: "0px auto" }}
+            className="image21"
           />
         </Box>
 
@@ -374,6 +395,7 @@ export function ReputableLenders(props) {
             width={140}
             height={100}
             style={{ margin: "0px auto" }}
+            className="image22"
           />
         </Box>
 
@@ -384,6 +406,7 @@ export function ReputableLenders(props) {
             width={90}
             height={200}
             style={{ margin: "0px auto" }}
+            className="image23"
           />
         </Box>
 
@@ -394,6 +417,7 @@ export function ReputableLenders(props) {
             width={150}
             height={200}
             style={{ margin: "0px auto" }}
+            className="image24"
           />
         </Box>
 
@@ -404,6 +428,7 @@ export function ReputableLenders(props) {
             width={100}
             height={100}
             style={{ margin: "0px auto" }}
+            className="image25"
           />
         </Box>
       </Box>
