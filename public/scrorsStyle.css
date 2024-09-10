@@ -1214,7 +1214,7 @@ padding-bottom: 10px;
 
     @media(min-width: 2201px) and (max-width: 3000px){
       .lenderlogo {
-        width: 600px !important;
+        width: 350px !important;
         height: 93px !important;
       }
       }
