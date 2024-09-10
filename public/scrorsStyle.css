@@ -1227,12 +1227,19 @@ padding-bottom: 10px;
     width: 301px !important;
     height: 93px !important;
   }
-  }@media(min-width: 2001px) and (max-width: 2200px){
+  }@media(min-width: 2001px) and (max-width: 2100px){
     .lenderlogo {
-      width: 450px !important;
+      width: 350px !important;
       height: 93px !important;
     }
     }
+
+    @media(min-width: 2101px) and (max-width: 2200px){
+      .lenderlogo {
+        width: 450px !important;
+        height: 93px !important;
+      }
+      }
 
     @media(min-width: 2201px) and (max-width: 3000px){
       .lenderlogo {
