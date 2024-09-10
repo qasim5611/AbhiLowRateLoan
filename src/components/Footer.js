@@ -338,7 +338,7 @@ function Footer({ data, update }) {
 
                                     <br />
                                     <Link href="/mortgage-broker-brisbane">
-                                      Brisbane, QLD
+                                      Brisbane QLD
                                     </Link>
                                   </p>
                                 </div>

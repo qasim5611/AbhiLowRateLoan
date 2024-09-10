@@ -336,6 +336,27 @@ export function ReputableLenders(props) {
         </Box>
         <Box className="lenderlogo">
           <Image
+            src="/pics/Resimac logo.jpeg"
+            alt="brand"
+            width={90}
+            height={200}
+            style={{ margin: "0px auto" }}
+            className="image23"
+          />
+        </Box>
+
+        <Box className="lenderlogo">
+          <Image
+            src="/pics/Mac logo with isolation zone (macquarie final)-01.png"
+            alt="brand"
+            width={100}
+            height={100}
+            style={{ margin: "0px auto" }}
+            className="image25"
+          />
+        </Box>
+        <Box className="lenderlogo">
+          <Image
             src="/pics/Full Colour_PRIMARY LOGO_Company Statement Tagline_300dpi.png"
             alt="brand"
             width={200}
@@ -399,36 +420,14 @@ export function ReputableLenders(props) {
           />
         </Box>
 
-        <Box className="lenderlogo">
-          <Image
-            src="/pics/Resimac logo.jpeg"
-            alt="brand"
-            width={90}
-            height={200}
-            style={{ margin: "0px auto" }}
-            className="image23"
-          />
-        </Box>
-
-        <Box className="lenderlogo">
+        <Box className="lenderlogo lastlenderlogo">
           <Image
             src="/pics/Suncorp_Hor_CMYK.jpg"
             alt="brand"
-            width={150}
+            width={200}
             height={200}
             style={{ margin: "0px auto" }}
             className="image24"
-          />
-        </Box>
-
-        <Box className="lenderlogo lastlenderlogo">
-          <Image
-            src="/pics/Mac logo with isolation zone (macquarie final)-01.png"
-            alt="brand"
-            width={100}
-            height={100}
-            style={{ margin: "0px auto" }}
-            className="image25"
           />
         </Box>
       </Box>

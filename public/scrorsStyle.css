@@ -1183,9 +1183,7 @@ padding-bottom: 10px;
  .image17,
  .image18,
  .image19,
- .image20,
- .image21,
- .image22
+ .image20
 
  {
   width: 80% !important;
@@ -1193,6 +1191,26 @@ padding-bottom: 10px;
  }
  .image6{
   width: 40% !important;
+
+ }
+
+ .image21,
+ .image22
+ {
+  width: 65% !important;
+
+ }
+
+ .image24{
+  width: 75% !important;
+
+ }
+ .image23{
+  width: 44% !important;
+
+ }
+ .image25{
+  width: 48% !important;
 
  }
 }
