@@ -13,8 +13,23 @@ export default function Page(props) {
     <>
       <PageTitle title="Thank You" />
 
-      <div className="setstyle">
-        Thank you for contacting us! We will get in touch with you shortly.
+      <div className="">
+        <br />
+        <p
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            fontSize: "18px",
+            fontFamily: "'Ubuntu'",
+            textAlign: "center",
+          }}
+          className="cardThankyou"
+        >
+          {" "}
+          Thank you for contacting us! <br /> We will get in touch with you
+          shortly.
+        </p>
+        <br />
       </div>
     </>
   );

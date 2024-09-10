@@ -6,6 +6,8 @@ import "react-toastify/dist/ReactToastify.css";
 import { CircularProgress, Box, Typography } from "@mui/material";
 import { padding } from "@mui/system";
 
+import { useRouter } from "next/navigation";
+
 export function ContactForm(props) {
   const [radioState, setRadioState] = useState({
     loanType: "",
@@ -26,6 +28,8 @@ export function ContactForm(props) {
   const [phoneErr, setphoneErr] = useState("");
   const [loanTypeErr, setloanTypeErr] = useState("");
   const [messageErr, setmessageErr] = useState("");
+
+  const router = useRouter();
 
   const errmsg = {
     color: "red",
@@ -68,15 +72,16 @@ export function ContactForm(props) {
 
         if (req.data.result == true || req.status == 200) {
           setLoader(false);
-          toast.success("Form Send Successfully", {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
+          // toast.success("Form Send Successfully", {
+          //   position: "top-right",
+          //   autoClose: 5000,
+          //   hideProgressBar: false,
+          //   closeOnClick: true,
+          //   pauseOnHover: true,
+          //   draggable: true,
+          //   progress: undefined,
+          // });
+          router.push("/thank-you", { replace: true });
         } else {
           setLoader(false);
           toast.error("Error On SMTP Mailer!", {

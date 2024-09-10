@@ -9,6 +9,7 @@ import Image from "next/image";
 import { Email } from "@mui/icons-material";
 import { sendEmailBuyHome } from "./../../lib/page";
 import { Box, CircularProgress, Typography } from "@mui/material";
+import { useRouter } from "next/navigation";
 
 export default function BuyHomeConsultaion(props) {
   const [state, setState] = useState({
@@ -26,6 +27,8 @@ export default function BuyHomeConsultaion(props) {
   };
 
   const [loader, setloader] = useState(false);
+
+  const router = useRouter();
 
   const [showFirstForm, setshowFirstForm] = useState(true);
   const [showSecondForm, setShowSecondForm] = useState(false);
@@ -131,8 +134,9 @@ export default function BuyHomeConsultaion(props) {
           setShowSecondForm(false);
           setShowThirdForm(false);
           setShowFourthForm(false);
-          setShowFifthForm(true);
+          setShowFifthForm(false);
           setloader(false);
+          router.push("/thank-you", { replace: true });
         }
 
         // if (req.data.result == true || req.status == 200) {

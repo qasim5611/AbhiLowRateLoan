@@ -10,12 +10,13 @@ import { Email } from "@mui/icons-material";
 // import { SendEmail } from "../api/mailer/route";
 import { sendEmail } from "./../../lib/page";
 import { Box, CircularProgress, Typography } from "@mui/material";
-
+import { useRouter } from "next/navigation";
 // import { SendContactForm } from "./../../lib/api";
 
 export default function RefinanceConsultation(props) {
   const [loader, setloader] = useState(false);
 
+  const router = useRouter();
   const [state, setState] = useState({
     loanAmount: "",
     interestRate: "",
@@ -135,8 +136,9 @@ export default function RefinanceConsultation(props) {
           setShowSecondForm(false);
           setShowThirdForm(false);
           setShowFourthForm(false);
-          setShowFifthForm(true);
+          setShowFifthForm(false);
           setloader(false);
+          router.push("/thank-you", { replace: true });
         }
       } catch (e) {
         console.log(e);
