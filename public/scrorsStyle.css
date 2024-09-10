@@ -1147,7 +1147,7 @@ padding-bottom: 10px;
 
 @media(max-width: 550px){
   .lenderlogo{
-    width: 175px;
+    width: 155px;
 
   }
 
@@ -1169,7 +1169,7 @@ padding-bottom: 10px;
  .image3,
  .image4,
  .image5,
- .image6,
+ 
  .image7,
  .image8,
  .image9,
@@ -1189,6 +1189,10 @@ padding-bottom: 10px;
 
  {
   width: 80% !important;
+
+ }
+ .image6{
+  width: 50% !important;
 
  }
 }

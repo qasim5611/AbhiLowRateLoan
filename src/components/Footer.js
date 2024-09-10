@@ -335,6 +335,11 @@ function Footer({ data, update }) {
                                     <Link href="/mortgage-broker-perth">
                                       Perth WA
                                     </Link>
+
+                                    <br />
+                                    <Link href="/mortgage-broker-brisbane">
+                                      Brisbane, QLD
+                                    </Link>
                                   </p>
                                 </div>
                               </div>
