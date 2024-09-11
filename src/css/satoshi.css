@@ -1528,13 +1528,22 @@ div[class="wp-block-kadence-column inner-column-2 kadence-column_36d3ae-1d"]{
 } */
 
 
-button {
+
+div[class="gform_page_footer top_label"]  button{
     padding: 5px 15px !important;
+
 }
 input[type="button"]{
     padding: 5px 15px !important;
 }
+.LoginButon{
+    padding: 5px 55px !important;
+
+}
 
 body{
     background-color: #fff !important;
+}
+p, div{
+    font-family: ubuntu;
 }

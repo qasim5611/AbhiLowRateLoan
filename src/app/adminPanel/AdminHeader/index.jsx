@@ -126,7 +126,6 @@ export default function AdminHeader({ open, setOpen }) {
                   <Typography
                     sx={{
                       mb: "0px !important",
-                      padding: "10px 20px !important",
                     }}
                   >
                     Logout

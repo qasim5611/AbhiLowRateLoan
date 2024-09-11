@@ -371,7 +371,7 @@ const Login = () => {
               style={{ textDecoration: "none", color: "#ff6704" }}
             >
               <Box color="#ff6704" fontSize={{ md: "15px", xs: "13px" }}>
-                Forgot password?
+                <p>Forgot password?</p>
               </Box>
             </Link>
           </Box>
@@ -402,17 +402,8 @@ const Login = () => {
                     "linear-gradient(to right, #FFAB24, #FF8605)", // Reverse gradient
                   boxShadow: 6,
                 },
-                "&:active": {
-                  backgroundImage:
-                    "linear-gradient(to right, #FF8605, #FFAB24)", // Original gradient
-                  boxShadow: 2,
-                },
-                "&:focus": {
-                  backgroundImage:
-                    "linear-gradient(to right, #FF8605, #FFAB24)", // Original gradient
-                  boxShadow: 2,
-                },
               }}
+              className="LoginButon"
             >
               {loader ? (
                 <Box
