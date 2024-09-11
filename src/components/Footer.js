@@ -353,7 +353,7 @@ function Footer({ data, update }) {
                       >
                         <p className="has-text-align-center">
                           ABN- 44650773489 | ACN- 650773489 | Credit
-                          representative details: Australia Low Rate Home Loan
+                          representative details: Melbourne Low Rate Home Loan
                           Pty Ltd:
                           <br />
                           Credit Representative Number: 535162 is authorised
