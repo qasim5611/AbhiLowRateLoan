@@ -18,7 +18,7 @@ import { Provider } from "react-redux";
 import { store } from "./../redux/store";
 import Header from "./../components/Header";
 import Footer from "./../components/Footer";
-// import { useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
@@ -31,8 +31,11 @@ const inter = Inter({ subsets: ["latin"] });
 // };
 export default function RootLayout({ children }) {
   const pathname = usePathname();
+  const router = useRouter();
 
+  const currentUrl = `https://lowratehomeloan.com.au${pathname}`;
   // Trigger GTM on route change
+  console.log("currentUrl", pathname);
   useEffect(() => {
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({ event: "pageview", page: pathname });
@@ -73,7 +76,8 @@ export default function RootLayout({ children }) {
             content='We will get you the best home loan in Australia I want to refinance I want to buy a home Featured Services How can we help? We understand that the diverse needs of most people do not have "one-size-fits-all" answers.We will acquire the best loan to suit your specific requirements by getting to know you,'
           />
           <meta name="robots" content="max-image-preview:large" />
-          <link rel="canonical" href="https://lowratehomeloan.com.au/" />
+          {/* <link rel="canonical" href="https://lowratehomeloan.com.au/" /> */}
+          <link rel="canonical" href={currentUrl} />
           <meta name="generator" content="All in One SEO (AIOSEO) 4.2.9 " />
           <meta property="og:locale" content="en_US" />
           <meta property="og:site_name" content="Low Rate Home Loan -" />
