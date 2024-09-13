@@ -268,23 +268,11 @@ export default function RootLayout({ children }) {
             ></iframe>
           </noscript>
           {/* End Facebook Pixel Code */}
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PXHTV9X');</script>
-<!-- End Google Tag Manager -->
         </head>
         <body
           style={{ display: "block !important" }}
           className="home page-template-default page page-id-4 wp-custom-logo wp-embed-responsive footer-on-bottom animate-body-popup hide-focus-outline link-style-no-underline content-title-style-hide content-width-fullwidth content-style-unboxed content-vertical-padding-hide non-transparent-header mobile-non-transparent-header"
         >
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXHTV9X"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->            
           {pathname === "/adminPanel" ||
           pathname === "/adminPanelfeaturedTop" ||
           pathname === "/signup" ||
