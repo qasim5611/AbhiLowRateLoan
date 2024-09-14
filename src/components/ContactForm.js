@@ -427,6 +427,13 @@ export function ContactForm(props) {
                                                   aria-invalid="false"
                                                   onChange={onChangeHandler}
                                                 >
+                                                  <option
+                                                    value=""
+                                                    disabled
+                                                    selected
+                                                  >
+                                                    Select one
+                                                  </option>
                                                   <option value="New Home Loan">
                                                     New Home Loan
                                                   </option>
