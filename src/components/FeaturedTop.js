@@ -92,7 +92,7 @@ export function FeaturedTop() {
                                         id="kt-layout-id_b35231-50"
                                         className="kt-row-layout-inner kt-layout-id_b35231-50"
                                       >
-                                        <Link
+                                        {/* <Link
                                           className="hover-effect"
                                           style={{
                                             textDecoration: "none",
@@ -103,29 +103,31 @@ export function FeaturedTop() {
                                           }}
                                           href={itm.page_link} // Replace href with to
                                         >
-                                          <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-none kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-right-golden kt-custom-first-width-25 kt-custom-second-width-75">
-                                            <div className="wp-block-kadence-column inner-column-1 kadence-column_c5ffd3-77">
-                                              <div className="kt-inside-inner-col">
-                                                <figure className="wp-block-image size-large">
-                                                  <img
-                                                    style={{
-                                                      width: "61px",
-                                                      height: "61px",
-                                                    }}
-                                                    src={itm?.image_url}
-                                                    alt=""
-                                                    className="wp-image-3979"
-                                                  />
-                                                </figure>
-                                              </div>
-                                            </div>
-                                            <div className="wp-block-kadence-column inner-column-2 kadence-column_84ab0e-e5">
-                                              <div className="kt-inside-inner-col">
-                                                {formatText(itm?.tagline)}
-                                              </div>
+                                          
+                                        </Link> */}
+
+                                        <div className="kt-row-column-wrap kt-has-2-columns kt-gutter-none kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-right-golden kt-custom-first-width-25 kt-custom-second-width-75">
+                                          <div className="wp-block-kadence-column inner-column-1 kadence-column_c5ffd3-77">
+                                            <div className="kt-inside-inner-col">
+                                              <figure className="wp-block-image size-large">
+                                                <img
+                                                  style={{
+                                                    width: "61px",
+                                                    height: "61px",
+                                                  }}
+                                                  src={itm?.image_url}
+                                                  alt=""
+                                                  className="wp-image-3979"
+                                                />
+                                              </figure>
                                             </div>
                                           </div>
-                                        </Link>
+                                          <div className="wp-block-kadence-column inner-column-2 kadence-column_84ab0e-e5">
+                                            <div className="kt-inside-inner-col">
+                                              {formatText(itm?.tagline)}
+                                            </div>
+                                          </div>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
