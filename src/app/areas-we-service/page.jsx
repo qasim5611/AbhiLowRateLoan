@@ -10,64 +10,6 @@ import Head from "next/head"; // Import Head component
 export default function AreasServices(props) {
   return (
     <div>
-      <Head>
-        <title>Areas Service - Low Rate Home Loan</title>
-        <meta
-          name="description"
-          content="Join our happy clients across Melbourne including Altona VIC 3018 Berwick VIC 3806 Burwood VIC 3125 Caroline Springs VIC 3023 Clyde VIC 3978 Craigieburn VIC 3064 Cranbourne VIC 3977 Dandenong VIC 3175 Fitzroy VIC 3065 Footscray VIC 3011 Glen Waverley VIC 3150 Hampton Park VIC 3976 Hoppers Crossing VIC 3029 Keysborough VIC 3173 Laverton VIC"
-        />
-        <meta name="robots" content="max-image-preview:large" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:site_name" content="Low Rate Home Loan -" />
-        <meta name="keywords" content="service, area, your keywords here" />
-        <meta
-          property="og:title"
-          content="Areas we Service - Low Rate Home Loan"
-        />
-        <meta
-          property="og:description"
-          content="Join our happy clients across Melbourne including Altona VIC 3018 Berwick VIC 3806 Burwood VIC 3125 Caroline Springs VIC 3023 Clyde VIC 3978 Craigieburn VIC 3064 Cranbourne VIC 3977 Dandenong VIC 3175 Fitzroy VIC 3065 Footscray VIC 3011 Glen Waverley VIC 3150 Hampton Park VIC 3976 Hoppers Crossing VIC 3029 Keysborough VIC 3173 Laverton VIC"
-        />
-        <meta property="og:type" content="article" />
-        <meta
-          property="og:url"
-          // content="https://yourwebsite.com/areas-services"
-          content="https://lowratehomeloan.com.au/areas-we-service/"
-        />
-        <meta
-          property="og:image"
-          content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
-        />
-
-        <meta
-          property="og:image:secure_url"
-          content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
-        />
-        <meta
-          property="article:published_time"
-          content="2022-12-14T12:31:37+00:00"
-        />
-        <meta
-          property="article:modified_time"
-          content="2023-01-24T12:53:54+00:00"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Areas we Service - Low Rate Home Loan"
-        />
-        <meta
-          name="twitter:description"
-          content="Join our happy clients across Melbourne including Altona VIC 3018 Berwick VIC 3806 Burwood VIC 3125 Caroline Springs VIC 3023 Clyde VIC 3978 Craigieburn VIC 3064 Cranbourne VIC 3977 Dandenong VIC 3175 Fitzroy VIC 3065 Footscray VIC 3011 Glen Waverley VIC 3150 Hampton Park VIC 3976 Hoppers Crossing VIC 3029 Keysborough VIC 3173 Laverton VIC"
-        />
-        <meta
-          name="twitter:image"
-          content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
-        />
-
-        {/* Add more meta tags as needed */}
-      </Head>
       {/* <Header /> */}
       <div id="inner-wrap" className="wrap hfeed kt-clear">
         <section className="entry-hero page-hero-section entry-hero-layout-fullwidth">

@@ -67,51 +67,118 @@ export default function RootLayout({ children }) {
             title="Low Rate Home Loan &raquo; Comments Feed"
             href="https://scoresbymortgagebroker.com.au/comments/feed/"
           /> */}
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, minimum-scale=1"
-          />
-          <meta
-            name="description"
-            content='We will get you the best home loan in Australia I want to refinance I want to buy a home Featured Services How can we help? We understand that the diverse needs of most people do not have "one-size-fits-all" answers.We will acquire the best loan to suit your specific requirements by getting to know you,'
-          />
-          <meta name="robots" content="max-image-preview:large" />
-          {/* <link rel="canonical" href="https://lowratehomeloan.com.au/" /> */}
-          <link rel="canonical" href={currentUrl} />
-          <meta name="generator" content="All in One SEO (AIOSEO) 4.2.9 " />
-          <meta property="og:locale" content="en_US" />
-          <meta property="og:site_name" content="Low Rate Home Loan -" />
-          <meta property="og:type" content="website" />
-          <meta property="og:title" content="Home - Low Rate Home Loan" />
-          <meta
-            property="og:description"
-            content='We will get you the best home loan in Australia I want to refinance I want to buy a home Featured Services How can we help? We understand that the diverse needs of most people do not have "one-size-fits-all" answers.We will acquire the best loan to suit your specific requirements by getting to know you,'
-          />{" "}
-          <meta property="og:url" content="https://lowratehomeloan.com.au/" />
-          <meta
-            property="og:image"
-            content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
-          />
-          <meta
-            property="og:image:secure_url"
-            content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
-          />
-          <meta property="og:image:width" content="200" />
-          <meta property="og:image:height" content="200" />
-          {/* <meta
+          {pathname === "/areas-we-service" ? (
+            <>
+              <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1, minimum-scale=1"
+              />
+              <meta
+                name="description"
+                content="Join our happy clients across Melbourne including Altona VIC 3018 Berwick VIC 3806 Burwood VIC 3125 Caroline Springs VIC 3023 Clyde VIC 3978 Craigieburn VIC 3064 Cranbourne VIC 3977 Dandenong VIC 3175 Fitzroy VIC 3065 Footscray VIC 3011 Glen Waverley VIC 3150 Hampton Park VIC 3976 Hoppers Crossing VIC 3029 Keysborough VIC 3173 Laverton VIC"
+              />
+              <meta name="robots" content="max-image-preview:large" />
+              <meta property="og:locale" content="en_US" />
+              <meta property="og:site_name" content="Low Rate Home Loan -" />
+              <meta
+                name="keywords"
+                content="service, area, your keywords here"
+              />
+              <meta
+                property="og:title"
+                content="Areas we Service - Low Rate Home Loan"
+              />
+              <meta
+                property="og:description"
+                content="Join our happy clients across Melbourne including Altona VIC 3018 Berwick VIC 3806 Burwood VIC 3125 Caroline Springs VIC 3023 Clyde VIC 3978 Craigieburn VIC 3064 Cranbourne VIC 3977 Dandenong VIC 3175 Fitzroy VIC 3065 Footscray VIC 3011 Glen Waverley VIC 3150 Hampton Park VIC 3976 Hoppers Crossing VIC 3029 Keysborough VIC 3173 Laverton VIC"
+              />
+              <meta property="og:type" content="article" />
+              <meta
+                property="og:url"
+                // content="https://yourwebsite.com/areas-services"
+                content="https://lowratehomeloan.com.au/areas-we-service/"
+              />
+              <meta
+                property="og:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+
+              <meta
+                property="og:image:secure_url"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="article:published_time"
+                content="2022-12-14T12:31:37+00:00"
+              />
+              <meta
+                property="article:modified_time"
+                content="2023-01-24T12:53:54+00:00"
+              />
+
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta
+                name="twitter:title"
+                content="Areas we Service - Low Rate Home Loan"
+              />
+              <meta
+                name="twitter:description"
+                content="Join our happy clients across Melbourne including Altona VIC 3018 Berwick VIC 3806 Burwood VIC 3125 Caroline Springs VIC 3023 Clyde VIC 3978 Craigieburn VIC 3064 Cranbourne VIC 3977 Dandenong VIC 3175 Fitzroy VIC 3065 Footscray VIC 3011 Glen Waverley VIC 3150 Hampton Park VIC 3976 Hoppers Crossing VIC 3029 Keysborough VIC 3173 Laverton VIC"
+              />
+              <meta
+                name="twitter:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+            </>
+          ) : (
+            <>
+              <meta
+                name="description"
+                content='We will get you the best home loan in Australia I want to refinance I want to buy a home Featured Services How can we help? We understand that the diverse needs of most people do not have "one-size-fits-all" answers.We will acquire the best loan to suit your specific requirements by getting to know you,'
+              />
+              <meta name="generator" content="All in One SEO (AIOSEO) 4.2.9 " />
+              <meta property="og:locale" content="en_US" />
+              <meta property="og:site_name" content="Low Rate Home Loan -" />
+              <meta property="og:type" content="website" />
+              <meta property="og:title" content="Home - Low Rate Home Loan" />
+              <meta
+                property="og:description"
+                content='We will get you the best home loan in Australia I want to refinance I want to buy a home Featured Services How can we help? We understand that the diverse needs of most people do not have "one-size-fits-all" answers.We will acquire the best loan to suit your specific requirements by getting to know you,'
+              />{" "}
+              <meta
+                property="og:url"
+                content="https://lowratehomeloan.com.au/"
+              />
+              <meta
+                property="og:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="og:image:secure_url"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta property="og:image:width" content="200" />
+              <meta property="og:image:height" content="200" />
+              {/* <meta
             property="og:image:secure_url"
             content="/lowratehomeloan-logo.svg"
           /> */}
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Home - Low Rate Home Loan" />
-          <meta
-            name="twitter:description"
-            content='We will get you the best home loan in Australia I want to refinance I want to buy a home Featured Services How can we help? We understand that the diverse needs of most people do not have "one-size-fits-all" answers.We will acquire the best loan to suit your specific requirements by getting to know you,'
-          />
-          <meta
-            name="twitter:image"
-            content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
-          />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta name="twitter:title" content="Home - Low Rate Home Loan" />
+              <meta
+                name="twitter:description"
+                content='We will get you the best home loan in Australia I want to refinance I want to buy a home Featured Services How can we help? We understand that the diverse needs of most people do not have "one-size-fits-all" answers.We will acquire the best loan to suit your specific requirements by getting to know you,'
+              />
+              <meta
+                name="twitter:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+            </>
+          )}
+          <meta name="robots" content="max-image-preview:large" />
+          {/* <link rel="canonical" href="https://lowratehomeloan.com.au/" /> */}
+          <link rel="canonical" href={currentUrl} />
+
           <link
             rel="stylesheet"
             id="wp-block-library-css"
