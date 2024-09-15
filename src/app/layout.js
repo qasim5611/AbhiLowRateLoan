@@ -67,7 +67,78 @@ export default function RootLayout({ children }) {
             title="Low Rate Home Loan &raquo; Comments Feed"
             href="https://scoresbymortgagebroker.com.au/comments/feed/"
           /> */}
-          {pathname === "/areas-we-service" ? (
+          {pathname === "/areas-we-service" ||
+          pathname === "/mortgage-broker-altona" ||
+          pathname === "/mortgage-broker-berwick" ||
+          pathname === "/mortgage-broker-burwood" ||
+          pathname === "/mortgage-broker-caroline-springs" ||
+          pathname === "/mortgage-broker-clyde" ||
+          pathname === "/mortgage-broker-craigieburn" ||
+          pathname === "/mortgage-broker-cranbourne" ||
+          pathname === "/mortgage-broker-dandenong" ||
+          pathname === "/mortgage-broker-fitzroy" ||
+          pathname === "/mortgage-broker-footscray" ||
+          pathname === "/mortgage-broker-glen-waverley" ||
+          pathname === "/mortgage-broker-hampton-park" ||
+          pathname === "/mortgage-broker-hoppers-crossing" ||
+          pathname === "/mortgage-broker-keysborough" ||
+          pathname === "/mortgage-broker-laverton" ||
+          pathname === "/mortgage-broker-mitcham" ||
+          pathname === "/mortgage-broker-mornington-peninsula" ||
+          pathname === "/mortgage-broker-mount-waverley" ||
+          pathname === "/mortgage-broker-pakenham" ||
+          pathname === "/mortgage-broker-ringwood" ||
+          pathname === "/mortgage-broker-rockbank" ||
+          pathname === "/mortgage-broker-scoresby" ||
+          pathname === "/mortgage-broker-south-yarra" ||
+          pathname === "/mortgage-broker-springvale" ||
+          pathname === "/mortgage-broker-tarneit" ||
+          pathname === "/mortgage-broker-wheelers-hill" ||
+          pathname === "/mortgage-broker-williams-landing" ||
+          pathname === "/mortgage-broker-wyndham-vale" ||
+          pathname === "/mortgage-broker-sydney-nsw" ||
+          pathname === "/mortgage-broker-perth" ||
+          pathname === "/rose-bay-mortgage-brokers" ||
+          pathname === "/mortgage-broker-brisbane" ||
+          pathname === "/mortgage-broker-lansvale-nsw" ||
+          pathname === "/mortgage-brokers-in-sutherland-nsw" ||
+          pathname === "/turramurra-mortgage-brokers" ||
+          pathname === "/mortgage-broker-gold-coast" ||
+          pathname === "/mortgage-broker-hoxton-park-nsw" ||
+          pathname === "/hornsby-mortgage-brokers" ||
+          pathname === "/lane-cove-mortgage-brokers" ||
+          pathname === "/mortgage-broker-liverpool-nsw-2170" ||
+          pathname === "/mortgage-broker-moorebank" ||
+          pathname === "/north-sydney-mortgage-brokers" ||
+          pathname === "/mosman-mortgage-brokers" ||
+          pathname === "/mortgage-brokers-cabramatta" ||
+          pathname === "/mortgage-broker-abbotsbury" ||
+          pathname === "/st-ives-mortgage-brokers-nsw-2075" ||
+          pathname === "/waitara-mortgage-brokers" ||
+          pathname === "/mortgage-broker-prestons-nsw-2170" ||
+          pathname === "/mortgage-brokers-len-waters-estate-nsw" ||
+          pathname === "/crows-nest-mortgage-brokers" ||
+          pathname === "/castle-cove-mortgage-brokers" ||
+          pathname === "/mortgage-broker-middleton-grange" ||
+          pathname === "/ashcroft-mortgage-brokers" ||
+          pathname === "/artarmon-mortgage-brokers" ||
+          pathname === "/bondi-junction-mortgage-brokers" ||
+          pathname === "/mortgage-broker-lurnea-nsw" ||
+          pathname === "/mortgage-brokers-in-parramatta-nsw" ||
+          pathname === "/chatswood-mortgage-brokers" ||
+          pathname === "/randwick-mortgage-brokers" ||
+          pathname === "/mortgage-broker-casula-nsw" ||
+          pathname === "/mortgage-brokers-in-ryde-nsw" ||
+          pathname === "/kirribilli-mortgage-brokers" ||
+          pathname === "/clovelly-mortgage-brokers" ||
+          pathname === "/bellevue-hill-mortgage-brokers" ||
+          pathname === "/paddington-mortgage-brokers" ||
+          pathname === "/double-bay-mortgage-brokers" ||
+          pathname === "/darling-point-mortgage-brokers" ||
+          pathname === "/dover-heights-mortgage-brokers" ||
+          pathname === "/bondi-beach-mortgage-brokers" ||
+          pathname === "/coogee-mortgage-brokers" ||
+          pathname === "/point-piper-mortgage-brokers" ? (
             <>
               <meta
                 name="viewport"
