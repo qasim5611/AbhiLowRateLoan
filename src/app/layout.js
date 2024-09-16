@@ -61,12 +61,7 @@ export default function RootLayout({ children }) {
             href="/trustindex-google-widget.css"
             media="all"
           />
-          {/* <link
-            rel="alternate"
-            type="application/rss+xml"
-            title="Low Rate Home Loan &raquo; Comments Feed"
-            href="https://scoresbymortgagebroker.com.au/comments/feed/"
-          /> */}
+
           {pathname === "/areas-we-service" ||
           pathname === "/mortgage-broker-altona" ||
           pathname === "/mortgage-broker-berwick" ||
@@ -201,6 +196,869 @@ export default function RootLayout({ children }) {
                 content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
               />
             </>
+          ) : pathname === "/about-us" ? (
+            <>
+              <meta
+                name="description"
+                content="Regardless of whether you are a first-time home buyer, upgrading to your next house, interested in real estate investing, or looking to refinance and pay off your existing home loan faster.We make it happen. No one like paying more than necessary, so we compare and select from our panel of over 53+ lenders to discover"
+              />
+              <meta name="robots" content="max-image-preview:large" />
+              <meta name="generator" content="All in One SEO (AIOSEO) 4.2.9 " />
+              <meta property="og:locale" content="en_US" />
+              <meta property="og:site_name" content="Low Rate Home Loan -" />
+              <meta property="og:type" content="article" />
+              <meta
+                property="og:title"
+                content="About Us - Low Rate Home Loan"
+              />
+              <meta
+                property="og:description"
+                content="Regardless of whether you are a first-time home buyer, upgrading to your next house, interested in real estate investing, or looking to refinance and pay off your existing home loan faster.We make it happen. No one like paying more than necessary, so we compare and select from our panel of over 53+ lenders to discover"
+              />
+              <meta
+                property="og:url"
+                content="https://lowratehomeloan.com.au/about-us/"
+              />
+              <meta
+                property="og:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="og:image:secure_url"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="article:published_time"
+                content="2020-11-12T14:48:34+00:00"
+              />
+              <meta
+                property="article:modified_time"
+                content="2023-01-24T12:17:09+00:00"
+              />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta
+                name="twitter:title"
+                content="About Us - Low Rate Home Loan"
+              />
+              <meta
+                name="twitter:description"
+                content="Regardless of whether you are a first-time home buyer, upgrading to your next house, interested in real estate investing, or looking to refinance and pay off your existing home loan faster.We make it happen. No one like paying more than necessary, so we compare and select from our panel of over 53+ lenders to discover"
+              />
+              <meta
+                name="twitter:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+            </>
+          ) : pathname === "/buy-home-consultation" ? (
+            <>
+              <meta
+                name="description"
+                content="Regardless of whether you are a first-time home buyer, upgrading to your next house, interested in real estate investing, or looking to refinance and pay off your existing home loan faster.We make it happen. No one like paying more than necessary, so we compare and select from our panel of over 53+ lenders to discover"
+              />
+              <meta name="robots" content="max-image-preview:large" />
+              <meta name="generator" content="All in One SEO (AIOSEO) 4.2.9 " />
+              <meta property="og:locale" content="en_US" />
+              <meta property="og:site_name" content="Low Rate Home Loan -" />
+              <meta property="og:type" content="article" />
+              <meta
+                property="og:title"
+                content="Buy Home Consultation - Low Rate Home Loan"
+              />
+              <meta
+                property="og:description"
+                content="Regardless of whether you are a first-time home buyer, upgrading to your next house, interested in real estate investing, or looking to refinance and pay off your existing home loan faster.We make it happen. No one like paying more than necessary, so we compare and select from our panel of over 53+ lenders to discover"
+              />
+              <meta
+                property="og:url"
+                content="https://lowratehomeloan.com.au/about-us/"
+              />
+              <meta
+                property="og:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="og:image:secure_url"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="article:published_time"
+                content="2020-11-12T14:48:34+00:00"
+              />
+              <meta
+                property="article:modified_time"
+                content="2023-01-24T12:17:09+00:00"
+              />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta
+                name="twitter:title"
+                content="Buy Home Consultation - Low Rate Home Loan"
+              />
+              <meta
+                name="twitter:description"
+                content="Regardless of whether you are a first-time home buyer, upgrading to your next house, interested in real estate investing, or looking to refinance and pay off your existing home loan faster.We make it happen. No one like paying more than necessary, so we compare and select from our panel of over 53+ lenders to discover"
+              />
+              <meta
+                name="twitter:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+            </>
+          ) : pathname === "/compliments-and-concerns" ? (
+            <>
+              <meta
+                name="description"
+                content="We always work hard to build strong and lasting relationships with our valued customers. By listening to your feedback, not only can we address any immediate concerns you may have, we will also continually improve our products and services. We know there are times when you may wish to compliment us on something we have"
+              />
+              <meta name="robots" content="max-image-preview:large" />
+
+              <meta name="generator" content="All in One SEO (AIOSEO) 4.2.9 " />
+              <meta property="og:locale" content="en_US" />
+              <meta property="og:site_name" content="Low Rate Home Loan -" />
+              <meta property="og:type" content="article" />
+              <meta
+                property="og:title"
+                content="Compliments and Concerns - Low Rate Home Loan"
+              />
+              <meta
+                property="og:description"
+                content="We always work hard to build strong and lasting relationships with our valued customers. By listening to your feedback, not only can we address any immediate concerns you may have, we will also continually improve our products and services. We know there are times when you may wish to compliment us on something we have"
+              />
+              <meta
+                property="og:url"
+                content="https://lowratehomeloan.com.au/compliments-and-concerns/"
+              />
+              <meta
+                property="og:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="og:image:secure_url"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="article:published_time"
+                content="2023-01-13T11:12:26+00:00"
+              />
+              <meta
+                property="article:modified_time"
+                content="2023-01-23T22:45:59+00:00"
+              />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta
+                name="twitter:title"
+                content="Compliments and Concerns - Low Rate Home Loan"
+              />
+              <meta
+                name="twitter:description"
+                content="We always work hard to build strong and lasting relationships with our valued customers. By listening to your feedback, not only can we address any immediate concerns you may have, we will also continually improve our products and services. We know there are times when you may wish to compliment us on something we have"
+              />
+              <meta
+                name="twitter:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+            </>
+          ) : pathname === "/disclaimer" ? (
+            <>
+              <meta
+                name="description"
+                content="Disclaimer statement: Low Rate Home Loan website provides general information only and has been prepared without taking into account your objectives, financial situation or needs. We recommend that you consider whether it is appropriate for your circumstances and your full financial situation will need to be reviewed prior to acceptance of any offer or product."
+              />
+              <meta name="robots" content="max-image-preview:large" />
+
+              <meta name="generator" content="All in One SEO (AIOSEO) 4.2.9 " />
+              <meta property="og:locale" content="en_US" />
+              <meta property="og:site_name" content="Low Rate Home Loan -" />
+              <meta property="og:type" content="article" />
+              <meta
+                property="og:title"
+                content="Disclaimer - Low Rate Home Loan"
+              />
+              <meta
+                property="og:description"
+                content="Disclaimer statement: Low Rate Home Loan website provides general information only and has been prepared without taking into account your objectives, financial situation or needs. We recommend that you consider whether it is appropriate for your circumstances and your full financial situation will need to be reviewed prior to acceptance of any offer or product."
+              />
+              <meta
+                property="og:url"
+                content="https://lowratehomeloan.com.au/disclaimer/"
+              />
+              <meta
+                property="og:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="og:image:secure_url"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="article:published_time"
+                content="2023-01-13T11:53:29+00:00"
+              />
+              <meta
+                property="article:modified_time"
+                content="2023-01-23T22:14:43+00:00"
+              />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta
+                name="twitter:title"
+                content="Disclaimer - Low Rate Home Loan"
+              />
+              <meta
+                name="twitter:description"
+                content="Disclaimer statement: Low Rate Home Loan website provides general information only and has been prepared without taking into account your objectives, financial situation or needs. We recommend that you consider whether it is appropriate for your circumstances and your full financial situation will need to be reviewed prior to acceptance of any offer or product."
+              />
+              <meta
+                name="twitter:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+            </>
+          ) : pathname === "/gift-card-terms-condition" ? (
+            <>
+              <meta
+                name="description"
+                content="$500 Myer &amp; Coles Gift Voucher Subject to following terms and conditions: Your application for finance must be submitted to the recommended lender by August 31st 2023. Your $500 Myer &amp; Coles Gift Voucher is payable within 60 days of settlement of your new loan. Your new loan amount must exceed $300,000 to obtain Gift"
+              />
+              <meta name="robots" content="max-image-preview:large" />
+
+              <meta name="generator" content="All in One SEO (AIOSEO) 4.2.9 " />
+              <meta property="og:locale" content="en_US" />
+              <meta property="og:site_name" content="Low Rate Home Loan -" />
+              <meta property="og:type" content="article" />
+              <meta
+                property="og:title"
+                content="Gift Card Terms &amp; Condition - Low Rate Home Loan"
+              />
+              <meta
+                property="og:description"
+                content="$500 Myer &amp; Coles Gift Voucher Subject to following terms and conditions: Your application for finance must be submitted to the recommended lender by August 31st 2023. Your $500 Myer &amp; Coles Gift Voucher is payable within 60 days of settlement of your new loan. Your new loan amount must exceed $300,000 to obtain Gift"
+              />
+              <meta
+                property="og:url"
+                content="https://lowratehomeloan.com.au/gift-card-terms-condition/"
+              />
+              <meta
+                property="og:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="og:image:secure_url"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="article:published_time"
+                content="2023-01-04T00:56:03+00:00"
+              />
+              <meta
+                property="article:modified_time"
+                content="2023-01-23T22:44:50+00:00"
+              />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta
+                name="twitter:title"
+                content="Gift Card Terms &amp; Condition - Low Rate Home Loan"
+              />
+              <meta
+                name="twitter:description"
+                content="$500 Myer &amp; Coles Gift Voucher Subject to following terms and conditions: Your application for finance must be submitted to the recommended lender by August 31st 2023. Your $500 Myer &amp; Coles Gift Voucher is payable within 60 days of settlement of your new loan. Your new loan amount must exceed $300,000 to obtain Gift"
+              />
+              <meta
+                name="twitter:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+            </>
+          ) : pathname === "/home-loans" ? (
+            <>
+              <meta
+                name="description"
+                content="Featured Services Trusted, Reliable, and Genuine Mortgage Broker Glen Waverley Services Home Loans Acquire low-interest home mortgage solutions specific to your loan requirements with features such as offset, redraw accounts, fixed-rate, variable-rate mortgages, etc. Low Deposit Home Loans Obtain a mortgage for your home even with low initial deposits from our multiple money lenders and"
+              />
+              <meta name="robots" content="max-image-preview:large" />
+              <meta name="generator" content="All in One SEO (AIOSEO) 4.2.9 " />
+              <meta property="og:locale" content="en_US" />
+              <meta property="og:site_name" content="Low Rate Home Loan -" />
+              <meta property="og:type" content="article" />
+              <meta
+                property="og:title"
+                content="Home Loans - Low Rate Home Loan"
+              />
+              <meta
+                property="og:description"
+                content="Featured Services Trusted, Reliable, and Genuine Mortgage Broker Glen Waverley Services Home Loans Acquire low-interest home mortgage solutions specific to your loan requirements with features such as offset, redraw accounts, fixed-rate, variable-rate mortgages, etc. Low Deposit Home Loans Obtain a mortgage for your home even with low initial deposits from our multiple money lenders and"
+              />
+              <meta
+                property="og:url"
+                content="https://lowratehomeloan.com.au/"
+              />
+              <meta
+                property="og:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="og:image:secure_url"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="article:published_time"
+                content="2022-12-14T12:27:36+00:00"
+              />
+              <meta
+                property="article:modified_time"
+                content="2023-07-04T11:49:40+00:00"
+              />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta
+                name="twitter:title"
+                content="Home Loans - Low Rate Home Loan"
+              />
+              <meta
+                name="twitter:description"
+                content="Featured Services Trusted, Reliable, and Genuine Mortgage Broker Glen Waverley Services Home Loans Acquire low-interest home mortgage solutions specific to your loan requirements with features such as offset, redraw accounts, fixed-rate, variable-rate mortgages, etc. Low Deposit Home Loans Obtain a mortgage for your home even with low initial deposits from our multiple money lenders and"
+              />
+              <meta
+                name="twitter:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+            </>
+          ) : pathname === "/buy-a-new-home" ? (
+            <>
+              <meta
+                name="description"
+                content="Buying a new home is an exciting and challenging experience that requires huge attention as it certainly may be your biggest financial investment. However, with our refined Mortgage Broker Glen Waverley services, you can relieve your worries and thoroughly rely on us to find the right home mortgage solutions. We have a team of certified"
+              />
+              <meta name="robots" content="max-image-preview:large" />
+
+              <meta name="generator" content="All in One SEO (AIOSEO) 4.2.9 " />
+              <meta property="og:locale" content="en_US" />
+              <meta property="og:site_name" content="Low Rate Home Loan -" />
+              <meta property="og:type" content="article" />
+              <meta
+                property="og:title"
+                content="Buy a New Home - Low Rate Home Loan"
+              />
+              <meta
+                property="og:description"
+                content="Buying a new home is an exciting and challenging experience that requires huge attention as it certainly may be your biggest financial investment. However, with our refined Mortgage Broker Glen Waverley services, you can relieve your worries and thoroughly rely on us to find the right home mortgage solutions. We have a team of certified"
+              />
+              <meta
+                property="og:url"
+                content="https://lowratehomeloan.com.au/buy-a-new-home/"
+              />
+              <meta
+                property="og:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="og:image:secure_url"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="article:published_time"
+                content="2022-12-14T12:28:20+00:00"
+              />
+              <meta
+                property="article:modified_time"
+                content="2023-07-04T11:53:00+00:00"
+              />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta
+                name="twitter:title"
+                content="Buy a New Home - Low Rate Home Loan"
+              />
+              <meta
+                name="twitter:description"
+                content="Buying a new home is an exciting and challenging experience that requires huge attention as it certainly may be your biggest financial investment. However, with our refined Mortgage Broker Glen Waverley services, you can relieve your worries and thoroughly rely on us to find the right home mortgage solutions. We have a team of certified"
+              />
+              <meta
+                name="twitter:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+            </>
+          ) : pathname === "/buy-investment-property" ? (
+            <>
+              <meta
+                name="description"
+                content="What to consider when buying an investment property? Where to buy, what to buy and how to buy. Once you identify the property, calculate whether or not it will generate sufficient income after expenses."
+              />
+              <meta name="robots" content="max-image-preview:large" />
+              <meta name="generator" content="All in One SEO (AIOSEO) 4.2.9 " />
+              <meta property="og:locale" content="en_US" />
+              <meta property="og:site_name" content="Low Rate Home Loan -" />
+              <meta property="og:type" content="article" />
+              <meta
+                property="og:title"
+                content="Buy an Investment Property - Low Rate Home Loan"
+              />
+              <meta
+                property="og:description"
+                content="What to consider when buying an investment property? Where to buy, what to buy and how to buy. Once you identify the property, calculate whether or not it will generate sufficient income after expenses."
+              />
+              <meta
+                property="og:url"
+                content="https://lowratehomeloan.com.au/buy-investment-property/"
+              />
+              <meta
+                property="og:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="og:image:secure_url"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="article:published_time"
+                content="2022-12-14T12:29:20+00:00"
+              />
+              <meta
+                property="article:modified_time"
+                content="2023-07-04T12:12:20+00:00"
+              />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta
+                name="twitter:title"
+                content="Buy an Investment Property - Low Rate Home Loan"
+              />
+              <meta
+                name="twitter:description"
+                content="What to consider when buying an investment property? Where to buy, what to buy and how to buy. Once you identify the property, calculate whether or not it will generate sufficient income after expenses."
+              />
+              <meta
+                name="twitter:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+            </>
+          ) : pathname === "/refinance-home-loan" ? (
+            <>
+              <meta
+                name="description"
+                content="Refinancing means it is the process of taking out a fresh loan to pay off an existing one. Refinancing can happen with the same lender or by changing providers."
+              />
+              <meta name="robots" content="max-image-preview:large" />
+
+              <meta name="generator" content="All in One SEO (AIOSEO) 4.2.9 " />
+              <meta property="og:locale" content="en_US" />
+              <meta property="og:site_name" content="Low Rate Home Loan -" />
+              <meta property="og:type" content="article" />
+              <meta
+                property="og:title"
+                content="Refinance My Home Loan - Low Rate Home Loan"
+              />
+              <meta
+                property="og:description"
+                content="Refinancing means it is the process of taking out a fresh loan to pay off an existing one. Refinancing can happen with the same lender or by changing providers."
+              />
+              <meta
+                property="og:url"
+                content="https://lowratehomeloan.com.au/refinance-home-loan/"
+              />
+              <meta
+                property="og:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="og:image:secure_url"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="article:published_time"
+                content="2022-12-14T12:28:49+00:00"
+              />
+              <meta
+                property="article:modified_time"
+                content="2023-07-04T12:03:00+00:00"
+              />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta
+                name="twitter:title"
+                content="Refinance My Home Loan - Low Rate Home Loan"
+              />
+              <meta
+                name="twitter:description"
+                content="Refinancing means it is the process of taking out a fresh loan to pay off an existing one. Refinancing can happen with the same lender or by changing providers."
+              />
+              <meta
+                name="twitter:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+            </>
+          ) : pathname === "/compare-rates" ? (
+            <>
+              <meta
+                name="description"
+                content="Take the guesswork out of shopping for a home loan by meeting with our Low Rate Home Loan Broker. Shopping for a home loan can be an overwhelming experience. It is important to do your research and find the best interest rate available so that you can save money in the long run. That&#039;s why"
+              />
+              <meta name="robots" content="max-image-preview:large" />
+              <link
+                rel="canonical"
+                href="https://lowratehomeloan.com.au/compare-rates/"
+              />
+              <meta name="generator" content="All in One SEO (AIOSEO) 4.2.9 " />
+              <meta property="og:locale" content="en_US" />
+              <meta property="og:site_name" content="Low Rate Home Loan -" />
+              <meta property="og:type" content="article" />
+              <meta
+                property="og:title"
+                content="Compare Rates - Low Rate Home Loan"
+              />
+              <meta
+                property="og:description"
+                content="Take the guesswork out of shopping for a home loan by meeting with our Low Rate Home Loan Broker. Shopping for a home loan can be an overwhelming experience. It is important to do your research and find the best interest rate available so that you can save money in the long run. That&#039;s why"
+              />
+              <meta
+                property="og:url"
+                content="https://lowratehomeloan.com.au/compare-rates/"
+              />
+              <meta
+                property="og:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="og:image:secure_url"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="article:published_time"
+                content="2022-12-14T12:29:45+00:00"
+              />
+              <meta
+                property="article:modified_time"
+                content="2023-01-23T22:34:07+00:00"
+              />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta
+                name="twitter:title"
+                content="Compare Rates - Low Rate Home Loan"
+              />
+              <meta
+                name="twitter:description"
+                content="Take the guesswork out of shopping for a home loan by meeting with our Low Rate Home Loan Broker. Shopping for a home loan can be an overwhelming experience. It is important to do your research and find the best interest rate available so that you can save money in the long run. That&#039;s why"
+              />
+              <meta
+                name="twitter:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+            </>
+          ) : pathname === "/mortgage-broker-berwick" ? (
+            <>
+              <meta
+                name="description"
+                content="Our mortgage Brokers in Berwick are experts in home loans, car loans, debt consolidation, business loans. We have an amazing team of Mortgage Brokers in Berwick. call us on 03 7064 5204"
+              />
+              <meta name="robots" content="max-image-preview:large" />
+              <link
+                rel="canonical"
+                href="https://lowratehomeloan.com.au/mortgage-broker-berwick/"
+              />
+              <meta name="generator" content="All in One SEO (AIOSEO) 4.2.9 " />
+              <meta property="og:locale" content="en_US" />
+              <meta property="og:site_name" content="Low Rate Home Loan -" />
+              <meta property="og:type" content="article" />
+              <meta
+                property="og:title"
+                content="Mortgage Broker Berwick - Low Rate Home Loan"
+              />
+              <meta
+                property="og:description"
+                content="Our mortgage Brokers in Berwick are experts in home loans, car loans, debt consolidation, business loans. We have an amazing team of Mortgage Brokers in Berwick. call us on 03 7064 5204"
+              />
+              <meta
+                property="og:url"
+                content="https://lowratehomeloan.com.au/mortgage-broker-berwick/"
+              />
+              <meta
+                property="og:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="og:image:secure_url"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="article:published_time"
+                content="2023-01-14T00:57:35+00:00"
+              />
+              <meta
+                property="article:modified_time"
+                content="2023-02-08T08:29:11+00:00"
+              />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta
+                name="twitter:title"
+                content="Mortgage Broker Berwick - Low Rate Home Loan"
+              />
+              <meta
+                name="twitter:description"
+                content="Our mortgage Brokers in Berwick are experts in home loans, car loans, debt consolidation, business loans. We have an amazing team of Mortgage Brokers in Berwick. call us on 03 7064 5204"
+              />
+              <meta
+                name="twitter:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+            </>
+          ) : pathname === "/mortgage-broker-pakenham" ? (
+            <>
+              <meta
+                name="description"
+                content="Our mortgage Brokers in Pakenham are experts in home loans, car loans, debt consolidation, business loans. Meet us at 87 Treloar Lane, Pakenham VIC 3810."
+              />
+              <meta name="robots" content="max-image-preview:large" />
+
+              <meta name="generator" content="All in One SEO (AIOSEO) 4.2.9 " />
+              <meta property="og:locale" content="en_US" />
+              <meta property="og:site_name" content="Low Rate Home Loan -" />
+              <meta property="og:type" content="article" />
+              <meta
+                property="og:title"
+                content="Mortgage Broker Pakenham - Low Rate Home Loan"
+              />
+              <meta
+                property="og:description"
+                content="Our mortgage Brokers in Pakenham are experts in home loans, car loans, debt consolidation, business loans. Meet us at 87 Treloar Lane, Pakenham VIC 3810."
+              />
+              <meta
+                property="og:url"
+                content="https://lowratehomeloan.com.au/mortgage-broker-pakenham/"
+              />
+              <meta
+                property="og:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="og:image:secure_url"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="article:published_time"
+                content="2022-12-26T20:59:10+00:00"
+              />
+              <meta
+                property="article:modified_time"
+                content="2023-01-24T12:13:45+00:00"
+              />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta
+                name="twitter:title"
+                content="Mortgage Broker Pakenham - Low Rate Home Loan"
+              />
+              <meta
+                name="twitter:description"
+                content="Our mortgage Brokers in Pakenham are experts in home loans, car loans, debt consolidation, business loans. Meet us at 87 Treloar Lane, Pakenham VIC 3810."
+              />
+              <meta
+                name="twitter:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+            </>
+          ) : pathname === "/privacy-policy" ? (
+            <>
+              <meta
+                name="description"
+                content="At Melbourne Low Rate Home Loan, we are committed to protecting your privacy in accordance with the Privacy Act 1988 (Cth). This Privacy Policy describes our current policies and practices in relation to the handling and use of personal information. What information do we collect and how do we use it? We will ask you"
+              />
+              <meta name="robots" content="max-image-preview:large" />
+              <link
+                rel="canonical"
+                href="https://lowratehomeloan.com.au/privacy-policy/"
+              />
+              <meta name="generator" content="All in One SEO (AIOSEO) 4.2.9 " />
+              <meta property="og:locale" content="en_US" />
+              <meta property="og:site_name" content="Low Rate Home Loan -" />
+              <meta property="og:type" content="article" />
+              <meta
+                property="og:title"
+                content="Privacy Policy - Low Rate Home Loan"
+              />
+              <meta
+                property="og:description"
+                content="At Melbourne Low Rate Home Loan, we are committed to protecting your privacy in accordance with the Privacy Act 1988 (Cth). This Privacy Policy describes our current policies and practices in relation to the handling and use of personal information. What information do we collect and how do we use it? We will ask you"
+              />
+              <meta
+                property="og:url"
+                content="https://lowratehomeloan.com.au/privacy-policy/"
+              />
+              <meta
+                property="og:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="og:image:secure_url"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="article:published_time"
+                content="2022-11-28T04:03:59+00:00"
+              />
+              <meta
+                property="article:modified_time"
+                content="2023-01-13T10:26:04+00:00"
+              />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta
+                name="twitter:title"
+                content="Privacy Policy - Low Rate Home Loan"
+              />
+              <meta
+                name="twitter:description"
+                content="At Melbourne Low Rate Home Loan, we are committed to protecting your privacy in accordance with the Privacy Act 1988 (Cth). This Privacy Policy describes our current policies and practices in relation to the handling and use of personal information. What information do we collect and how do we use it? We will ask you"
+              />
+              <meta
+                name="twitter:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+            </>
+          ) : pathname === "/refinance-consultation" ? (
+            <>
+              <meta name="robots" content="max-image-preview:large" />
+              <link
+                rel="canonical"
+                href="https://lowratehomeloan.com.au/refinance-consultation/"
+              />
+              <meta name="generator" content="All in One SEO (AIOSEO) 4.2.9 " />
+              <meta property="og:locale" content="en_US" />
+              <meta property="og:site_name" content="Low Rate Home Loan -" />
+              <meta property="og:type" content="article" />
+              <meta
+                property="og:title"
+                content="Refinance Consultation - Low Rate Home Loan"
+              />
+              <meta
+                property="og:url"
+                content="https://lowratehomeloan.com.au/refinance-consultation/"
+              />
+              <meta
+                property="og:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="og:image:secure_url"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="article:published_time"
+                content="2022-12-27T11:15:42+00:00"
+              />
+              <meta
+                property="article:modified_time"
+                content="2022-12-27T11:15:42+00:00"
+              />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta
+                name="twitter:title"
+                content="Refinance Consultation - Low Rate Home Loan"
+              />
+              <meta
+                name="twitter:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+            </>
+          ) : pathname === "/contact" ? (
+            <>
+              <meta
+                name="description"
+                content="CASH BACK upto $6,000 GIFT CARD upto $2,000 LONG LOAN TERM upto 30 years PROCESSING TIME upto 8 hours"
+              />
+              <meta name="robots" content="max-image-preview:large" />
+
+              <meta name="generator" content="All in One SEO (AIOSEO) 4.2.9 " />
+              <meta property="og:locale" content="en_US" />
+              <meta property="og:site_name" content="Low Rate Home Loan -" />
+              <meta property="og:type" content="article" />
+              <meta
+                property="og:title"
+                content="Talk to Us - Low Rate Home Loan"
+              />
+              <meta
+                property="og:description"
+                content="CASH BACK upto $6,000 GIFT CARD upto $2,000 LONG LOAN TERM upto 35 years PROCESSING TIME upto 8 hours"
+              />
+              <meta
+                property="og:url"
+                content="https://lowratehomeloan.com.au/contact/"
+              />
+              <meta
+                property="og:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="og:image:secure_url"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="article:published_time"
+                content="2020-11-12T15:19:27+00:00"
+              />
+              <meta
+                property="article:modified_time"
+                content="2023-01-24T06:37:34+00:00"
+              />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta
+                name="twitter:title"
+                content="Talk to Us - Low Rate Home Loan"
+              />
+              <meta
+                name="twitter:description"
+                content="CASH BACK upto $6,000 GIFT CARD upto $2,000 LONG LOAN TERM upto 30 years PROCESSING TIME upto 8 hours"
+              />
+              <meta
+                name="twitter:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+            </>
+          ) : pathname === "/thank-you" ? (
+            <>
+              <meta
+                name="description"
+                content="Thank you for contacting us! We will get in touch with you shortly."
+              />
+              <meta name="robots" content="max-image-preview:large" />
+              <link
+                rel="canonical"
+                href="https://lowratehomeloan.com.au/thank-you/"
+              />
+              <meta name="generator" content="All in One SEO (AIOSEO) 4.2.9 " />
+              <meta property="og:locale" content="en_US" />
+              <meta property="og:site_name" content="Low Rate Home Loan -" />
+              <meta property="og:type" content="article" />
+              <meta
+                property="og:title"
+                content="Thank You - Low Rate Home Loan"
+              />
+              <meta
+                property="og:description"
+                content="Thank you for contacting us! We will get in touch with you shortly."
+              />
+              <meta
+                property="og:url"
+                content="https://lowratehomeloan.com.au/thank-you/"
+              />
+              <meta
+                property="og:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="og:image:secure_url"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+              <meta
+                property="article:published_time"
+                content="2023-01-11T12:44:28+00:00"
+              />
+              <meta
+                property="article:modified_time"
+                content="2023-01-12T03:21:37+00:00"
+              />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta
+                name="twitter:title"
+                content="Thank You - Low Rate Home Loan"
+              />
+              <meta
+                name="twitter:description"
+                content="Thank you for contacting us! We will get in touch with you shortly."
+              />
+              <meta
+                name="twitter:image"
+                content="https://lowratehomeloan.com.au/lowratehomeloan-logo.svg"
+              />
+            </>
           ) : (
             <>
               <meta
@@ -246,6 +1104,7 @@ export default function RootLayout({ children }) {
               />
             </>
           )}
+
           <meta name="robots" content="max-image-preview:large" />
           {/* <link rel="canonical" href="https://lowratehomeloan.com.au/" /> */}
           <link rel="canonical" href={currentUrl} />
