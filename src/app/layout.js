@@ -45,6 +45,10 @@ export default function RootLayout({ children }) {
     <Provider store={store}>
       <html lang="en">
         <head>
+          <meta
+            name="google-site-verification"
+            content="1PQAbq04M1gnTeA3WReQg9RyWdUyV8XftNzq0sFJMHo"
+          />
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
