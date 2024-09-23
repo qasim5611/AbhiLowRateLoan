@@ -10,6 +10,8 @@ import "./../css/satoshi.css";
 import "./../css/style.css";
 import "./../css/style-blocks-rowlayout.css";
 
+import sitemapConfig from "./../../next-sitemap.js";
+
 // import CircularProgress from '@mui/material/CircularProgress';
 import React from "react";
 import { useEffect } from "react";
@@ -32,6 +34,8 @@ const inter = Inter({ subsets: ["latin"] });
 export default function RootLayout({ children }) {
   const pathname = usePathname();
   const router = useRouter();
+
+  console.log("sitemapConfig.siteUrl", sitemapConfig.siteUrl);
 
   const currentUrl = `https://lowratehomeloan.com.au${pathname}`;
   // Trigger GTM on route change
