@@ -1,15 +1,237 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <url>
-    <loc>https://lowratehomeloan.com.au</loc>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
-  <url>
-    <loc>https://lowratehomeloan.com.au/about-us</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-    </urlset>
+        <url>
+        <loc>https://lowratehomeloan.com.au</loc>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/about-us</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/buy-a-new-home</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/refinance-home-loan</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/buy-investment-property</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/compare-rates</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/areas-we-service</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-altona</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-berwick</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-burwood</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-caroline-springs</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-clyde</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-craigieburn</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-cranbourne</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-dandenong</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-fitzroy</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-footscray</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-glen-waverley</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-hampton-park</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-hoppers-crossing</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-keysborough</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-laverton</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-mitcham</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-mornington-peninsula</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-mount-waverley</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-pakenham</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-ringwood</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-rockbank</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-scoresby</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-south-yarra</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-springvale</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-tarneit</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-wheelers-hill</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-williams-landing</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-wyndham-vale</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-sydney-nsw</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-perth</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/rose-bay-mortgage-brokers</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        
+        <url>
+        <loc>https://lowratehomeloan.com.au/mortgage-broker-brisbane</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        </url>
+        </urlset>

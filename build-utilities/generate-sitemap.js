@@ -1,5 +1,4 @@
 const fs = require("fs");
-const { url } = require("inspector");
 const path = require("path");
 
 function generateSitemap() {
@@ -175,17 +174,19 @@ function generateSitemapXml(pages) {
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     `;
 
-  pages.forEach((pages) => {
+  pages.forEach((page) => {
     xml += `
         <url>
-        <loc> ${pages.url} </loc>
-        <changefreq> ${pages.changefreq} </changefreq>
-        <priority> ${pages.priority || "0.5"}  </priority>
-
+        <loc>${page.url}</loc>
+        <changefreq>${page.changefreq}</changefreq>
+        <priority>${page.priority || "0.5"}</priority>
         </url>
         `;
   });
 
-  xml += `<urlset>`;
+  xml += `</urlset>`; // Fixing the closing tag here
   return xml;
 }
+
+// Call the function to generate the sitemap
+generateSitemap();
