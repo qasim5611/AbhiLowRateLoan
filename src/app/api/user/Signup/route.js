@@ -1,5 +1,5 @@
 import { Connect } from "../../../../dbconfig/dbconfig";
-import User from "../../../../modals/userModel";
+import User from "./../../../../modals/userModel";
 import { NextRequest, NextResponse } from "next/server";
 
 import bcrypt from "bcrypt";
