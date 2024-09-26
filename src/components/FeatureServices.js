@@ -215,7 +215,7 @@ export function FeatureServices(props) {
                                   loading="lazy"
                                   style={{
                                     width: "100%",
-                                    height: "435px",
+                                    // height: "435px",
                                   }}
                                   src="/pics/buy-a-home.webp"
                                   alt="first home buyer"
@@ -246,7 +246,7 @@ export function FeatureServices(props) {
                                   loading="lazy"
                                   style={{
                                     width: "100%",
-                                    height: "435px",
+                                    // height: "435px",
                                   }}
                                   src="/pics/refinance-home.webp"
                                   alt="refinance your home"
@@ -277,7 +277,7 @@ export function FeatureServices(props) {
                                   loading="lazy"
                                   style={{
                                     width: "100%",
-                                    height: "435px",
+                                    // height: "435px",
                                   }}
                                   src="/pics/buy-investment-property.webp"
                                   alt="buy investment property"

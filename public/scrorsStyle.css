@@ -387,7 +387,7 @@ text-transform: uppercase;
 #main p,
 .alignnone p {
 	font-family: Ubuntu;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 @media(max-width: 650px){
