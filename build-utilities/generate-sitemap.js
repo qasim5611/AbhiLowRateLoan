@@ -249,10 +249,7 @@ function generateSitemap() {
       url: "https://lowratehomeloan.com.au/gift-card-terms-condition",
       changefreq: "weekly",
     },
-    {
-      url: "https://lowratehomeloan.com.au/Home",
-      changefreq: "weekly",
-    },
+
     {
       url: "https://lowratehomeloan.com.au/home-loans",
       changefreq: "weekly",
